@@ -1,0 +1,76 @@
+name: daily-digest
+
+on:
+  schedule:
+    # 毎日 06:00 JST（= 前日 21:00 UTC）に起動する。
+    # cron は混雑時に遅れることがあるため、06:30 に間に合うよう余裕を見ている。
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "今日の分が生成済みでも作り直す"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # 公開先の URL（完了メールに載せる）
+      SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: 型チェックとテスト
+        run: |
+          npm run typecheck
+          npm test
+
+      - name: 収集・選定・要約・ページ生成
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.force && '1' || '0' }}
+        run: npm run build
+
+      - name: 生成したページと状態をコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "digest: $(TZ=Asia/Tokyo date +%F)"
+            git push
+          fi
+
+      - name: 完了メールを送る
+        env:
+          CI: "true"
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: npm run notify:success
+
+      - name: 失敗メールを送る
+        if: failure()
+        env:
+          CI: "true"
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: npm run notify:failure
