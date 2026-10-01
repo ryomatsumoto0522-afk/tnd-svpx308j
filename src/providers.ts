@@ -79,31 +79,52 @@ function isRetryable(e: unknown): boolean {
   return status === 429 || status === 500 || status === 503 || status === 504;
 }
 
+/** 429 のメッセージにある「Please retry in 5.9s」「retryDelay: 5s」から待ち時間（ミリ秒）を読む */
+export function retryDelayMs(e: unknown): number | null {
+  const m = /retry in ([\d.]+)s|"retryDelay":\s*"([\d.]+)s"/i.exec(String((e as Error)?.message ?? ""));
+  const sec = m ? Number(m[1] ?? m[2]) : NaN;
+  return Number.isFinite(sec) ? Math.ceil(sec * 1000) : null;
+}
+
 export class GeminiProvider implements LlmProvider {
   readonly name = "gemini";
   // 無料枠の対象モデル。有料に切り替えなくても使える（ただし無料枠の入力は Google の製品改善に使われ得る）
   readonly models: ModelNames = { selection: "gemini-3.5-flash-lite", summary: "gemini-3.8-flash" };
-  // 無料枠は 1 分あたりのリクエスト数が少ないので、同時実行は控えめにする
   readonly concurrency = 2;
 
+  /** モデルごとの、次にリクエストを始めてよい時刻 */
+  private readonly nextSlot = new Map<string, number>();
+
+  /**
+   * 無料枠は 1 分あたり 5 リクエスト（gemini-3.8-flash）なので、
+   * モデルごとに minIntervalMs（既定 13 秒）以上あけてリクエストを始める。
+   */
   constructor(
     private readonly ai: Pick<GoogleGenAI, "models"> = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }),
     private readonly sleep: (ms: number) => Promise<void> = (ms) => new Promise((r) => setTimeout(r, ms)),
+    private readonly minIntervalMs = 13_000,
   ) {}
 
+  private async pace(model: string): Promise<void> {
+    const now = Date.now();
+    const at = Math.max(now, this.nextSlot.get(model) ?? 0);
+    // 待つ前に枠を確保するので、同時に呼ばれても順番に間隔があく
+    this.nextSlot.set(model, at + this.minIntervalMs);
+    if (at > now) await this.sleep(at - now);
+  }
+
   async generateJson(req: JsonRequest): Promise<JsonResult> {
-    let lastError: unknown;
-    // 429（レート制限）と 5xx は待って再試行する
-    for (let attempt = 0; attempt < 5; attempt++) {
+    const maxAttempts = 6;
+    // 429（レート制限）と 5xx は待って再試行する。429 は API が示す待ち時間に従う
+    for (let attempt = 1; ; attempt++) {
+      await this.pace(req.model);
       try {
         return await this.once(req);
       } catch (e) {
-        lastError = e;
-        if (!isRetryable(e) || attempt === 4) throw e;
-        await this.sleep(Math.min(2_000 * 2 ** attempt, 30_000));
+        if (!isRetryable(e) || attempt >= maxAttempts) throw e;
+        await this.sleep((retryDelayMs(e) ?? Math.min(2_000 * 2 ** attempt, 30_000)) + 1_000);
       }
     }
-    throw lastError;
   }
 
   private async once(req: JsonRequest): Promise<JsonResult> {
