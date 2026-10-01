@@ -115,7 +115,8 @@ export class GeminiProvider implements LlmProvider {
    * （どれも無料枠の対象。品質は同等かやや劣る程度）
    */
   private readonly fallbacks: Record<string, string[]> = {
-    "gemini-3.8-flash": ["gemini-3.7-flash", "gemini-3.6-flash"],
+    // Flash-Lite 系は 1 日の上限が大きいので、最後の受け皿にする（要約の質はやや落ちる）
+    "gemini-3.8-flash": ["gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"],
     "gemini-3.5-flash-lite": ["gemini-3.1-flash-lite"],
   };
   private readonly exhausted = new Set<string>();
@@ -147,18 +148,20 @@ export class GeminiProvider implements LlmProvider {
       try {
         return { ...(await this.withRetry({ ...req, model })), model };
       } catch (e) {
-        if (!(e instanceof DailyQuotaError)) throw e;
+        // 1 日の上限に達した、または混雑（5xx）が続くモデルは、この実行では使うのをやめて次へ
+        if (!(e instanceof DailyQuotaError) && !isRetryable(e)) throw e;
         this.exhausted.add(model);
-        console.warn(`無料枠の 1 日の上限に達したため ${model} を使うのをやめます`);
+        const why = e instanceof DailyQuotaError ? "無料枠の 1 日の上限に達した" : "混雑や制限が続いている";
+        console.warn(`${model} は${why}ため、この実行では使いません`);
       }
     }
     throw new AllModelsExhaustedError(
-      `Gemini の無料枠の 1 日の上限に達しました（${[req.model, ...(this.fallbacks[req.model] ?? [])].join(" / ")}）。明日（太平洋時間の 0 時以降）にもう一度実行するか、LLM_PROVIDER=anthropic に切り替えてください`,
+      `使える Gemini モデルがありません（無料枠の 1 日の上限、または混雑: ${[req.model, ...(this.fallbacks[req.model] ?? [])].join(" / ")}）。時間をおいて（上限は太平洋時間の 0 時＝日本時間 16 時ごろに戻ります）もう一度実行するか、LLM_PROVIDER=anthropic に切り替えてください`,
     );
   }
 
   private async withRetry(req: JsonRequest): Promise<JsonResult> {
-    const maxAttempts = 6;
+    const maxAttempts = 4;
     // 429（レート制限）と 5xx は待って再試行する。429 は API が示す待ち時間に従う
     for (let attempt = 1; ; attempt++) {
       await this.pace(req.model);

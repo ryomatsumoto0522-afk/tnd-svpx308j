@@ -147,10 +147,20 @@ test("Gemini: 1 日の上限（PerDay）は待たずに次のモデルへ切り�
 
 test("Gemini: すべてのモデルが日次上限なら、実行全体を止めるエラー（致命的）にする", async () => {
   const daily = Object.assign(new Error('"quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier"'), { status: 429 });
-  const { ai } = fakeGemini([daily, daily, daily]);
+  const { ai } = fakeGemini(Array.from({ length: 5 }, () => daily));
   const p = new GeminiProvider(ai, noSleep, 0);
   const err = await p.generateJson({ ...req, model: "gemini-3.8-flash" }).catch((e) => e);
   assert.ok(err instanceof AllModelsExhaustedError);
   assert.equal(p.isFatal(err), true);
   assert.match(err.message, /LLM_PROVIDER=anthropic/);
+});
+
+test("Gemini: 混雑（503）が続くモデルは見切って次のモデルへ切り替える", async () => {
+  const busy = Object.assign(new Error("high demand"), { status: 503 });
+  const ok = { text: "{}", candidates: [{ finishReason: "STOP" }], usageMetadata: {} };
+  // 3.8 は 4 回連続で 503 → 3.7 に切り替わって成功
+  const { ai, calls } = fakeGemini([busy, busy, busy, busy, ok]);
+  const r = await new GeminiProvider(ai, noSleep, 0).generateJson({ ...req, model: "gemini-3.8-flash" });
+  assert.equal(r.model, "gemini-3.7-flash");
+  assert.equal(calls.length, 5);
 });
