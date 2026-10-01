@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-01T07:16:08.774Z",
+  "items": [
+    {
+      "rank": 7,
+      "url": "https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/",
+      "title": "Cursor Uses S3 WAL to Scale Git Storage to More than 300 Pushes per Second",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-09-30T13:47:00.000Z",
+      "summary": "Cursorは、S3を基盤とした先行書き込みログ（WAL）を信頼できる唯一の情報源として活用するGitストレージ設計「Continuity」を開発しました。従来のレプリカ間の同期間調整を不要にすることで、S3 Express One Zone利用時に毎秒300回以上のプッシュと最大100レプリカへの線形読み取りスケーリングを実現したと報告しています。この設計は、負荷の高いCI処理を抱える大規模リポジトリやAIコーディングエージェントによる多数のリポジトリ管理の効率化につながります。",
+      "glossary": [
+        {
+          "term": "WAL",
+          "explanation": "データ変更を確定前にログへ記録し耐障害性を高める手法のこと。"
+        },
+        {
+          "term": "レプリカ",
+          "explanation": "負荷分散や障害対策のために作成されたデータの複製のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/",
+      "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
+      "source": "AWS News Blog",
+      "genre": "backend",
+      "publishedAt": "2026-09-30T17:22:31.000Z",
+      "summary": "Amazon Aurora PostgreSQLにおいて、データレイク内のApache IcebergやParquet形式のデータを直接クエリできる新機能が発表されました。組み込まれたDuckDBにより、データを複製するETL処理を行わずに、運用データとデータレイクのデータを単一のクエリで結合して分析できます。これにより運用の複雑さが低減され、バージョン17（17.11以降）や18（18.6以降）で既存ツールを用いた分析やAI開発が容易になります。",
+      "glossary": [
+        {
+          "term": "Apache Iceberg",
+          "explanation": "大規模な分析データを効率的かつ安全に管理するためのオープンソースのテーブル形式です。"
+        },
+        {
+          "term": "ETL",
+          "explanation": "データを抽出（Extract）、変換（Transform）、格納（Load）する一連のデータ統合処理です。"
+        },
+        {
+          "term": "データレイク",
+          "explanation": "様々な形式の大規模なデータを、加工を行わずにそのまま集約して保管するストレージ基盤です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 124,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 15
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 6422,
+    "outputTokens": 1843
+  },
+  "offline": false
+}
