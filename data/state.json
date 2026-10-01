@@ -1,7 +1,21 @@
 {
-  "lastRun": "2026-10-01T07:16:08.774Z",
+  "lastRun": "2026-10-01T07:59:25.779Z",
   "seen": {
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
+    "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
+    "https://zenn.dev/niqostudio/articles/5030c534b2c5d4": "2026-10-01",
+    "https://www.infoq.com/news/2026/10/typesafe-ai-jev-released": "2026-10-01",
+    "https://github.com/magnitudedev/magnitude": "2026-10-01",
+    "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr": "2026-10-01",
+    "https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling": "2026-10-01",
     "https://www.infoq.com/news/2026/09/cursor-continuity-git-storage": "2026-10-01",
-    "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake": "2026-10-01"
+    "https://www.netlify.com/blog/edge-functions-firecracker-microvms": "2026-10-01",
+    "https://inside.java/2026/09/30/faster-post-quantum-cryptography-with-jdk-intrinsics": "2026-10-01",
+    "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake": "2026-10-01",
+    "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types": "2026-10-01",
+    "https://zenn.dev/okssusucha/articles/20260725-skillcorpus-agent-skill-ecosystem": "2026-10-01",
+    "https://github.com/nanaism/yomiyasu": "2026-10-01",
+    "https://zenn.dev/algoartis/articles/0b1c731881b25c": "2026-10-01",
+    "https://zenn.dev/mskbhd/articles/lab-801-natural-japanese-lint-py-ai": "2026-10-01"
   }
 }
