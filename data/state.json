@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-01T07:59:25.779Z",
+  "lastRun": "2026-10-01T23:10:40.997Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -16,6 +16,23 @@
     "https://zenn.dev/okssusucha/articles/20260725-skillcorpus-agent-skill-ecosystem": "2026-10-01",
     "https://github.com/nanaism/yomiyasu": "2026-10-01",
     "https://zenn.dev/algoartis/articles/0b1c731881b25c": "2026-10-01",
-    "https://zenn.dev/mskbhd/articles/lab-801-natural-japanese-lint-py-ai": "2026-10-01"
+    "https://zenn.dev/mskbhd/articles/lab-801-natural-japanese-lint-py-ai": "2026-10-01",
+    "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": "2026-10-02",
+    "https://blog.cloudflare.com/clef-decision-models": "2026-10-02",
+    "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview": "2026-10-02",
+    "https://qiita.com/picnic/items/c78fb9b182bca71b5956": "2026-10-02",
+    "https://zenn.dev/syoshida07/articles/f98e09eb1d64f5": "2026-10-02",
+    "https://qiita.com/sescore/items/93fec44ce16c433ad726": "2026-10-02",
+    "https://aws.amazon.com/jp/blogs/news/automated-reasoning-checks-rewriting-chatbot-reference-implementation": "2026-10-02",
+    "https://inside.java/2026/09/28/performance-update-jdk27": "2026-10-02",
+    "https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray": "2026-10-02",
+    "https://github.com/maanHimself/OpenDLSS-NR": "2026-10-02",
+    "https://github.com/streetcomplete/StreetComplete/issues/5421": "2026-10-02",
+    "https://blog.cloudflare.com/cloudflare-k2-streams": "2026-10-02",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-org-enablement-policies": "2026-10-02",
+    "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-8-sept-2026-updates": "2026-10-02",
+    "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator": "2026-10-02",
+    "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html": "2026-10-02",
+    "https://www.infoq.com/news/2026/10/snapdragon-x2-linux": "2026-10-02"
   }
 }

@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-01T23:10:40.997Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-09-30T20:01:45.000Z",
+      "summary": "Google DeepMindが、ソフトウェア開発やサイバーセキュリティ防御などの複雑な業務に対応する新フロンティアモデル「Gemini 4 Argon」を発表しました。長時間のワークフローにおける深い推論を維持できる設計で、出力トークン上限が従来の64Kから1Mへ大幅に拡大されています。まずはFairwind Programを通じた信頼できる防御者向けに提供され、安全対策を検証しながら開発者や企業へ段階的に展開される予定です。",
+      "glossary": [
+        {
+          "term": "フロンティアモデル",
+          "explanation": "最先端の能力を持ち、複雑なタスクを実行できる最高水準のAIモデル。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIが自然言語を処理する際にテキストを分割する最小単位のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T15:41:25.000Z",
+      "summary": "Cloudflareが、Workers AI上で動作する意思決定向けAIモデル「Clef」および「Clef-flash」を発表し、オープンソースとして公開しました。このモデルは入力に対して迅速かつ安価に構造化された確率付きの出力を返し、人間を介さず自律的な判断を行えるエージェント構築を支援します。画像入力に対応するビジョンエンコーダーや64kのコンテキスト長を備えており、用途に応じた強化学習による微調整機能も提供されます。",
+      "glossary": [
+        {
+          "term": "意思決定モデル",
+          "explanation": "入力情報から次の行動や分類を確率に基づいて素早く判定するAIモデル。"
+        },
+        {
+          "term": "強化学習",
+          "explanation": "試行錯誤を通じて環境から得られる報酬を最大化するように学習する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
+      "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
+      "source": "AWS News Blog",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T20:04:04.000Z",
+      "summary": "AWSは、クラウド環境を分析してコストやセキュリティなどの改善案を提供する「AWS Well-Architected Agent」のパブリックプレビューを開始しました。65以上のAWSサービスを対象にリソース設定や利用状況を分析し、ユーザーが設定したビジネス目標に応じた優先順位付きの推奨事項を作成します。個別のリソース修正手順からIaCのコード変更まで提示されるため、手動監査を行わずに効果的な環境最適化が可能です。",
+      "glossary": [
+        {
+          "term": "IaC",
+          "explanation": "サーバーやネットワークなどのインフラ構成をコードで定義・管理する手法。"
+        },
+        {
+          "term": "パブリックプレビュー",
+          "explanation": "正式リリース前に一般のユーザーが試用できるように公開される先行版のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://qiita.com/picnic/items/c78fb9b182bca71b5956",
+      "title": "Claude Code v2.1.287 解説：Claude Mods追加とセキュリティ修正・1Mコンテキスト既定化",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T22:40:41.000Z",
+      "summary": "Claude Codeのバージョンv2.1.287がリリースされ、プラグインを拡張するClaude Modsの追加やセキュリティ修正が実施されました。BedrockやVertexなどのクラウド環境では既定のコンテキスト長が1Mに拡大され、安全機能として危険なファイル書き込み時に人の確認を求める挙動が強化されています。さらに、テレメトリでのプロンプト漏えい対策やMCPサーバーの接続設定など、既存環境への影響を考慮した対応が必要です。",
+      "glossary": [
+        {
+          "term": "コンテキスト長",
+          "explanation": "AIモデルが一度に処理・記憶できる入力テキストの最大量のこと。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを接続するための共通規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/syoshida07/articles/f98e09eb1d64f5",
+      "title": "AIに監査ログを管理させてはいけない、自律型エージェント時代に求められるセキュリティと多重証跡の構築",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T12:50:51.000Z",
+      "summary": "AIエージェントが自身の行動履歴である監査ログを誤って削除してしまう可能性を指摘する研究が発表されました。AIの普及が進む中、システム設計ではAIから隔離された外部基盤や多重の証跡を用意することが重要になります。",
+      "glossary": [
+        {
+          "term": "監査ログ",
+          "explanation": "システムやソフトウェアがいつ、誰によってどのような操作が行われたかを記録した履歴データのこと。"
+        },
+        {
+          "term": "報酬ハッキング",
+          "explanation": "AIが本来の目的とは異なり、与えられた評価指標（スコア）を最大化させるために予期せぬ行動をとる現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://qiita.com/sescore/items/93fec44ce16c433ad726",
+      "title": "Claude Codeを1年使って固まった実践Tipsと、単価を見直した夜の話",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T23:04:51.000Z",
+      "summary": "AIコーディングツールであるClaude Codeを実務で効率的に活用するための具体的な設定やルールの管理方法が紹介されています。権限の厳格な制御や自動チェックの導入により、安全かつ円滑な開発体制を築くことができます。",
+      "glossary": [
+        {
+          "term": "CLAUDE.md",
+          "explanation": "AIコーディングツールの挙動やコーディング規約などをプロジェクトごとに指定するための設定ファイルのこと。"
+        },
+        {
+          "term": "CI",
+          "explanation": "プログラムの変更を継続的にテスト・ビルドし、品質を保つための自動化の仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/jp/blogs/news/automated-reasoning-checks-rewriting-chatbot-reference-implementation/",
+      "title": "自動推論チェックで回答を書き換えてハルシネーションを抑えるチャットボットのリファレンス実装",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-01T02:25:38.000Z",
+      "summary": "自動推論チェックを用いて生成AIの回答を反復的に書き換えることで、ハルシネーションを抑制するチャットボットのリファレンス実装が公開されました。数学的な検証に基づく監査ログを生成し、企業の規制環境でも透明性の高い運用を可能にします。",
+      "glossary": [
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実とは異なる不正確な情報を、もっともらしく自信を持って生成してしまう現象のこと。"
+        },
+        {
+          "term": "自動推論",
+          "explanation": "論理学や数学のルールに基づいて、前提から確実に正しい結論を導き出す仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://inside.java/2026/09/28/performance-update-jdk27/",
+      "title": "Performance Improvements in JDK 27",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "summary": "JDK 27におけるパフォーマンス改善の動向について、ライブラリやガベージコレクションなどの最適化が報告されました。コンパクトオブジェクトヘッダがデフォルト有効化されるなど、多くのコミットを経て全体の処理効率が向上しています。",
+      "glossary": [
+        {
+          "term": "JDK",
+          "explanation": "Javaのプログラムを開発・実行するために必要なソフトウェアやツールの開発キットのこと。"
+        },
+        {
+          "term": "JITコンパイラ",
+          "explanation": "プログラムの実行時にコードを機械語へ動的に翻訳し、処理を高速化する仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray",
+      "title": "A Bootiful Podcast: JReleaser creator and fellow Java Champion Andres Almiray",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "summary": "ポッドキャスト番組にて、JavaチャンピオンのAndres Almiray氏がゲストとして登場しました。デスクトップJavaの未来や、Javaアプリケーションのビルドやリリースを自動化するツールJReleaserについて熱く語られています。ソフトウェアを円滑に出荷し、開発者の生活をより良くするための貴重な洞察が詰まっています。",
+      "glossary": [
+        {
+          "term": "JReleaser",
+          "explanation": "Javaプロジェクトのリリース作成やパッケージング、配信を自動化するためのツールです。"
+        },
+        {
+          "term": "JavaFX",
+          "explanation": "Javaでリッチなクライアントアプリケーションを構築するためのユーザーインターフェースフレームワークです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://github.com/maanHimself/OpenDLSS-NR",
+      "title": "OpenDLSS: A Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering Network",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-09-30T08:43:21Z",
+      "summary": "NVIDIAのニューラルレンダリングネットワークDLSS 5をVulkan環境で再実装したオープンソースプロジェクトOpenDLSSが公開されました。オリジナルとバイト単位で一致する処理をGPUのテンソルコア上で実行し、高解像度化ではなく生成AIによるディテールの追加を行います。ブラウザ向けのWebGPUポートも用意されており、多様な環境での動作検証が可能です。",
+      "glossary": [
+        {
+          "term": "Vulkan",
+          "explanation": "高効率でグラフィックスやコンピュートを制御できる、クロスプラットフォーム対応のローレベルAPIです。"
+        },
+        {
+          "term": "WebGPU",
+          "explanation": "ブラウザ上で高性能な3Dグラフィックスや並列計算処理を実行するためのモダンなWeb標準APIです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
+      "title": "StreetComplete on iOS is now in public beta",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-01T10:59:57Z",
+      "summary": "オープンソースの地図編集アプリStreetCompleteのiOS版がパブリックベータ版として公開されました。Kotlin MultiplatformとCompose Multiplatformを活用することで、Android版とコードベースを共有しながら効率的な移植が進められています。現在は機能の移植が約50%完了しており、コミュニティからのコントリビューションや開発への参加が広く歓迎されています。",
+      "glossary": [
+        {
+          "term": "Kotlin Multiplatform",
+          "explanation": "複数のプラットフォーム間でビジネスロジックなどのコードを共有できるKotlinの仕組みです。"
+        },
+        {
+          "term": "Compose Multiplatform",
+          "explanation": "宣言型のUI構築フレームワークを複数のプラットフォームで共有して利用できるようにする技術です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "title": "Cloudflare K2: serverless event streams",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-01T14:09:10Z",
+      "summary": "Cloudflareは、イベントの送受信元を分離してデータを蓄積できるサーバーレスのイベントストリーミング基盤Cloudflare K2のパブリックベータ版を発表しました。R2オブジェクトストレージを活用して順序づけられたログを構築し、大規模なデータ量と長期保存に対応します。分散システムの複雑さを軽減しつつ、ダウンタイム発生時でもデータの損失を防ぐことが可能です。",
+      "glossary": [
+        {
+          "term": "サーバーレス",
+          "explanation": "開発者がサーバーの管理やプロビジョニングを行うことなく、コードやアプリケーションを実行できる仕組みです。"
+        },
+        {
+          "term": "オブジェクトストレージ",
+          "explanation": "データをファイル単位でメタデータとともにフラットな構造で保存する、大容量データ向けのエッジストレージです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-org-enablement-policies/",
+      "title": "Amazon GuardDuty now supports centralized management using AWS Organizations declarative policies",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-01T16:01:00.000Z",
+      "summary": "Amazon GuardDutyがAWS Organizationsの宣言型ポリシーに対応し、組織内の全アカウントとリージョンで脅威検知の中央管理が可能になりました。管理者は組織全体で一貫した設定ベースラインを適用でき、大規模な環境での設定の不整合を防ぐことができます。",
+      "glossary": [
+        {
+          "term": "AWS Organizations",
+          "explanation": "複数のAWSアカウントを集中管理し、一元的なガバナンスやポリシー適用を行えるサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-8-sept-2026-updates/",
+      "title": "Amazon Corretto 8 September 2026 Patch Updates",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-01T14:00:00.000Z",
+      "summary": "Amazonは、OpenJDKの長期サポート（LTS）版であるAmazon Corretto 8のパッチアップデート「Corretto 8u504」の提供を開始しました。このパッチにはtzdata 2026dの更新が含まれており、各Linuxのリポジトリなどから導入できます。",
+      "glossary": [
+        {
+          "term": "OpenJDK",
+          "explanation": "Javaのオープンソース開発環境であるJava Development Kitのオープンソース実装。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/",
+      "title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-01T16:44:00.000Z",
+      "summary": "AWSは、Amazon DynamoDB Accelerator（DAX）を新たに17のリージョンで利用可能にすると発表しました。これにより、対象地域のユーザーはインメモリキャッシュによる高速な読み込み処理の恩恵を受けつつ、現地のデータレジデンシー要件に対応しやすくなります。",
+      "glossary": [
+        {
+          "term": "インメモリキャッシュ",
+          "explanation": "頻繁にアクセスされるデータを高速な主記憶装置上に一時保存し、処理を高速化する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+      "title": "How to speed up the Rust compiler in September 2026",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-01T12:44:38Z",
+      "summary": "直近2ヶ月間でRustコンパイラの性能が大幅に向上し、ベンチマークの平均処理時間が約4.57%短縮されました。LLVMのアップグレードや新しい借用チェッカーなどの導入に伴うコンパイル時間の増加に対し、様々な最適化が行われています。",
+      "glossary": [
+        {
+          "term": "コンパイラ",
+          "explanation": "人間が書いたプログラミング言語のコードを、コンピュータが実行できる機械語に翻訳するソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://www.infoq.com/news/2026/10/snapdragon-x2-linux/",
+      "title": "Qualcomm Unveils Linux Preview on Snapdragon X2 to Accelerate Upstream ARM Laptops",
+      "source": "InfoQ",
+      "genre": "other",
+      "publishedAt": "2026-10-01T14:14:00.000Z",
+      "summary": "Qualcommは、次世代ノートPC向けプロセッサ「Snapdragon X2」シリーズにおける、Linuxの早期開発者向けプレビューを発表しました。カーネル貢献者やディストリビューションメンテナを対象としており、従来のARM製ノートPCで課題となっていた独自パッチへの依存やソフトウェアの摩擦を解消することを目的としています。この取り組みにより、標準的なオープンソースインターフェースを活用した開発環境の構築が可能となり、今後のLinux対応の加速が期待されます。",
+      "glossary": [
+        {
+          "term": "Upstream",
+          "explanation": "ソフトウェアの開発元や本流のプロジェクトを指し、修正や機能が公式に統合されること."
+        },
+        {
+          "term": "ARM",
+          "explanation": "低消費電力に優れたプロセッサのアーキテクチャで、スマートフォンや近年のノートPCに広く採用されている."
+        },
+        {
+          "term": "UEFI",
+          "explanation": "PCの起動時にOSとハードウェアを仲介する、従来のBIOSに代わる標準的なファームウェアインターフェース."
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 125,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 22957,
+    "outputTokens": 3626
+  },
+  "offline": false
+}
