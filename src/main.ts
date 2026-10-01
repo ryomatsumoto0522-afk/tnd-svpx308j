@@ -1,8 +1,8 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { getBody, type BodyResult } from "./body.ts";
 import { collectAll } from "./collect.ts";
 import { PIPELINE, SOURCES } from "./config.ts";
-import { CostTracker, isFatalApiError, selectPicks, summarize, type Pick } from "./llm.ts";
+import { CostTracker, selectPicks, summarize, type Pick } from "./llm.ts";
+import { createProvider } from "./providers.ts";
 import { guessGenre } from "./offline.ts";
 import { writeSite } from "./render.ts";
 import { mergeAndFilter, shortlist } from "./shortlist.ts";
@@ -46,11 +46,8 @@ async function main(): Promise<void> {
     for (const [url, date] of Object.entries(state.seen)) if (date === today) delete state.seen[url];
   }
 
-  if (!offline && !process.env.ANTHROPIC_API_KEY) {
-    throw new Error("ANTHROPIC_API_KEY が未設定です（LLM なしで確認するなら --offline）");
-  }
-  const client = offline ? null : new Anthropic();
-  const cost = new CostTracker();
+  const provider = offline ? null : createProvider();
+  const cost = new CostTracker(provider?.name ?? "offline");
 
   // 1. 収集：前回実行からの期間（24〜72 時間）を対象にする
   const elapsedHours = state.lastRun ? (now.getTime() - new Date(state.lastRun).getTime()) / 3_600_000 : 0;
@@ -67,8 +64,8 @@ async function main(): Promise<void> {
   if (short.length === 0) throw new Error("候補が 0 件でした");
 
   // 3. LLM による選定（重要な順、ジャンル付き）
-  const picks: Pick[] = client
-    ? await selectPicks(client, cost, short)
+  const picks: Pick[] = provider
+    ? await selectPicks(provider, cost, short)
     : short.slice(0, PIPELINE.selectionSize).map((candidate) => ({ candidate, genre: guessGenre(candidate) }));
   log(`選定: ${picks.length}件（控えを含む）`);
 
@@ -99,16 +96,16 @@ async function main(): Promise<void> {
     }
     if (wave.length === 0) break;
 
-    const results = await mapLimit(wave, 4, async (e) => {
+    const results = await mapLimit(wave, provider?.concurrency ?? 4, async (e) => {
       const c = e.pick.candidate;
-      if (!client) {
+      if (!provider) {
         const excerpt = truncate(c.excerpt || e.body.text, 200);
         return { e, s: { summary: `${excerpt}…`, glossary: [] } };
       }
       try {
-        return { e, s: await summarize(client, cost, c, e.body.text) };
+        return { e, s: await summarize(provider, cost, c, e.body.text) };
       } catch (err) {
-        if (isFatalApiError(err)) throw err;
+        if (provider.isFatal(err)) throw err;
         summaryFailures++;
         console.warn(`要約失敗（次点に差し替え）: ${c.title}: ${err instanceof Error ? err.message : err}`);
         return { e, s: null };

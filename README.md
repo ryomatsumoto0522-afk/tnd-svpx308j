@@ -3,15 +3,16 @@
 毎朝、AI・フロントエンド・バックエンド・インフラの技術ニュースを集め、日本語で要約して、出典リンク付きの 1 枚のページにまとめる個人用ツールです。
 
 - 公式ブログ・Hacker News・はてブ・Zenn・Qiita などの RSS / API から収集
-- 機械的に約 60 件へ絞り、Claude Haiku 4.5 が関心プロファイル（`src/config.ts`）に沿って選定
-- 選んだ記事の本文を取得し、Claude Sonnet 5.5 が丁寧な日本語で要約（用語メモ付き）
+- 機械的に約 60 件へ絞り、LLM（軽量モデル）が関心プロファイル（`src/config.ts`）に沿って選定
+- 選んだ記事の本文を取得し、LLM が丁寧な日本語で要約（用語メモ付き）
+- LLM は既定で Gemini の無料枠（選定 `gemini-3.5-flash-lite`、要約 `gemini-3.8-flash`）。環境変数で Claude API にも切り替えられる
 - 本文を取得できない記事、要約できない記事は、次点の記事に自動で差し替え
 - `docs/` に静的ページを生成し、GitHub Pages で公開。完了と失敗は Resend でメール通知
 
 ## セットアップ
 
 1. リポジトリの Settings → Secrets and variables → Actions に次を登録する。
-   - `ANTHROPIC_API_KEY`: Anthropic の API キー
+   - `GEMINI_API_KEY`: Google AI Studio（https://aistudio.google.com/apikey）で発行する API キー。無料枠で使えて、カード登録は不要
    - `RESEND_API_KEY`: Resend の API キー（送信専用）
    - `MAIL_TO`: 通知の宛先（Resend に登録したメールアドレス）
 2. Settings → Pages で Source を「Deploy from a branch」、Branch を `main` / `/docs` にする。
@@ -36,11 +37,19 @@ npm test
 | `INTEREST_PROFILE` | LLM が選定するときの関心プロファイル |
 | `PIPELINE.totalItems` / `genreCaps` | 1 日の記事数、ジャンルごとの上限 |
 | `PIPELINE.bodyChars` | 要約に渡す本文の最大文字数。費用に直結する |
-| `MODELS` | 選定と要約に使うモデル |
 
-## 費用
+## LLM と費用
 
-ページ上部に、その日の LLM 費用の概算を表示します。月の目標は 1,000 円です。超えそうなら、`totalItems` か `bodyChars` を下げるか、`MODELS.summary` を `claude-haiku-4-5` に変えてください。
+| `LLM_PROVIDER` | 使うモデル | 費用 | 必要な Secret |
+|---|---|---|---|
+| `gemini`（既定） | 選定 `gemini-3.5-flash-lite` / 要約 `gemini-3.8-flash` | 無料枠（0 円） | `GEMINI_API_KEY` |
+| `anthropic` | 選定 `claude-haiku-4-5` / 要約 `claude-sonnet-5-5` | 従量課金（月 1,000 円前後の見込み） | `ANTHROPIC_API_KEY` |
+
+- 切り替えは、リポジトリの Settings → Secrets and variables → Actions → Variables に `LLM_PROVIDER` を作って値を設定します（ローカルでは環境変数）。
+- モデル名は `src/providers.ts`、単価は `src/config.ts` の `PRICES` にあります。
+- **Gemini の無料枠では、入力した内容が Google の製品改善に使われ得ます。** このツールが送るのは公開記事の本文と関心プロファイルだけです。機密を含む記事を扱うようにしたら、有料枠か Claude に切り替えてください。
+- 無料枠にはリクエスト数の上限があります。上限に当たると、待って再試行し、それでも失敗した記事は次点に差し替えます。
+- ページ上部に、その日の費用（無料枠なら「0円」）を表示します。
 
 ## 注意
 

@@ -1,6 +1,6 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { INTEREST_PROFILE, JPY_PER_USD, MODELS, PIPELINE, PRICES } from "./config.ts";
+import { INTEREST_PROFILE, JPY_PER_USD, PIPELINE, PRICES } from "./config.ts";
+import type { JsonResult, LlmProvider } from "./providers.ts";
 import { GENRES, type Candidate, type DigestCost, type Genre, type GlossaryEntry } from "./types.ts";
 
 export class CostTracker {
@@ -8,27 +8,25 @@ export class CostTracker {
   private input = 0;
   private output = 0;
 
-  add(model: string, usage: { input_tokens: number; output_tokens: number }): void {
+  constructor(private readonly provider = "") {}
+
+  add(model: string, usage: { input: number; output: number }): void {
     const price = PRICES[model];
     if (!price) throw new Error(`単価が未定義のモデル: ${model}`);
-    this.usd += (usage.input_tokens * price.input + usage.output_tokens * price.output) / 1_000_000;
-    this.input += usage.input_tokens;
-    this.output += usage.output_tokens;
+    this.usd += (usage.input * price.input + usage.output * price.output) / 1_000_000;
+    this.input += usage.input;
+    this.output += usage.output;
   }
 
   snapshot(): DigestCost {
     return {
+      provider: this.provider,
       usd: Math.round(this.usd * 10_000) / 10_000,
       jpy: Math.round(this.usd * JPY_PER_USD * 10) / 10,
       inputTokens: this.input,
       outputTokens: this.output,
     };
   }
-}
-
-/** 認証や権限の誤りは全記事で失敗するので、個別の失敗として握りつぶさず実行全体を止める */
-export function isFatalApiError(e: unknown): boolean {
-  return e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError;
 }
 
 export interface Pick {
@@ -64,11 +62,10 @@ function parseGenre(value: string, fallback: Genre | null): Genre {
   return (GENRES as readonly string[]).includes(value) ? (value as Genre) : (fallback ?? "other");
 }
 
-/** 構造化出力のレスポンスから JSON テキストを取り出してパースする */
-function readJson(response: Anthropic.Message): unknown {
-  const block = response.content.find((b) => b.type === "text");
-  if (!block || block.type !== "text") throw new Error(`テキスト出力がありません (stop_reason=${response.stop_reason})`);
-  return JSON.parse(block.text);
+/** 構造化出力のテキストを JSON としてパースする */
+function readJson(result: JsonResult): unknown {
+  if (!result.text) throw new Error("テキスト出力がありません");
+  return JSON.parse(result.text);
 }
 
 const SELECTION_SYSTEM = `あなたは技術ニュースの編集者です。候補記事の一覧から、読者が朝に読むべき記事を選び、重要な順に並べて返します。
@@ -87,7 +84,7 @@ const SELECTION_SYSTEM = `あなたは技術ニュースの編集者です。候
 
 /** 機械的に絞った候補から、LLM（Haiku）が関心に沿って順位付きで選ぶ */
 export async function selectPicks(
-  client: Anthropic,
+  provider: LlmProvider,
   cost: CostTracker,
   shortlist: Candidate[],
 ): Promise<Pick[]> {
@@ -99,25 +96,24 @@ export async function selectPicks(
     return `${n}. [${c.source}${extra ? ` | ${extra}` : ""}] ${c.title}${hint}`;
   });
 
-  const response = await client.messages.create({
-    model: MODELS.selection,
-    max_tokens: 4000,
+  const model = provider.models.selection;
+  const result = await provider.generateJson({
+    model,
     system: SELECTION_SYSTEM,
-    messages: [
-      {
-        role: "user",
-        content: `次の候補から、重要な順に最大 ${PIPELINE.selectionSize} 件を選んでください。\n\n<candidates>\n${lines.join("\n")}\n</candidates>`,
-      },
-    ],
-    output_config: { format: { type: "json_schema", schema: SELECTION_JSON_SCHEMA } },
+    user: `次の候補から、重要な順に最大 ${PIPELINE.selectionSize} 件を選んでください。\n\n<candidates>\n${lines.join("\n")}\n</candidates>`,
+    schema: SELECTION_JSON_SCHEMA,
+    // 推論を持つモデルでは、考える分のトークンも含めて余裕を持たせる
+    maxTokens: 8000,
   });
-  cost.add(MODELS.selection, response.usage);
+  cost.add(model, result.usage);
 
   let parsed: z.infer<typeof SelectionSchema>;
   try {
-    parsed = SelectionSchema.parse(readJson(response));
+    parsed = SelectionSchema.parse(readJson(result));
   } catch (e) {
-    throw new Error(`選定の出力を解釈できませんでした (stop_reason=${response.stop_reason}): ${e instanceof Error ? e.message : e}`);
+    throw new Error(
+      `選定の出力を解釈できませんでした (blocked=${result.blocked}, truncated=${result.truncated}): ${e instanceof Error ? e.message : e}`,
+    );
   }
 
   const seen = new Set<number>();
@@ -180,33 +176,30 @@ export class SummaryError extends Error {}
 
 /** 記事 1 件を要約する（Sonnet）。拒否や解釈失敗は SummaryError として呼び出し側で差し替える */
 export async function summarize(
-  client: Anthropic,
+  provider: LlmProvider,
   cost: CostTracker,
   c: Candidate,
   body: string,
 ): Promise<Summary> {
-  const response = await client.messages.create({
-    model: MODELS.summary,
-    max_tokens: 1500,
+  const model = provider.models.summary;
+  const result = await provider.generateJson({
+    model,
     system: SUMMARY_SYSTEM,
-    messages: [
-      {
-        role: "user",
-        content: `<article>\nタイトル: ${c.title}\n出典: ${c.source}\nURL: ${c.url}\n\n${body}\n</article>`,
-      },
-    ],
-    output_config: { effort: "low", format: { type: "json_schema", schema: SUMMARY_JSON_SCHEMA } },
+    user: `<article>\nタイトル: ${c.title}\n出典: ${c.source}\nURL: ${c.url}\n\n${body}\n</article>`,
+    schema: SUMMARY_JSON_SCHEMA,
+    maxTokens: 4000,
+    lowEffort: true,
   });
-  cost.add(MODELS.summary, response.usage);
+  cost.add(model, result.usage);
 
-  if (response.stop_reason === "refusal") {
-    throw new SummaryError(`モデルが要約を拒否しました (${response.stop_details?.category ?? "unknown"})`);
-  }
+  if (result.blocked) throw new SummaryError(`モデルが要約を拒否しました (${result.blocked})`);
   let parsed: z.infer<typeof SummarySchema>;
   try {
-    parsed = SummarySchema.parse(readJson(response));
+    parsed = SummarySchema.parse(readJson(result));
   } catch (e) {
-    throw new SummaryError(`要約の出力を解釈できませんでした (stop_reason=${response.stop_reason}): ${e instanceof Error ? e.message : e}`);
+    throw new SummaryError(
+      `要約の出力を解釈できませんでした (truncated=${result.truncated}): ${e instanceof Error ? e.message : e}`,
+    );
   }
   const summary = parsed.summary.trim();
   if (summary.length < 40) throw new SummaryError("要約が短すぎます");

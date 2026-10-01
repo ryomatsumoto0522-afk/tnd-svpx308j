@@ -98,15 +98,15 @@ export const PIPELINE = {
   seenRetentionDays: 30,
 };
 
-export const MODELS = {
-  selection: "claude-haiku-4-5",
-  summary: "claude-sonnet-5-5",
-} as const;
-
-/** 100 万トークンあたりの USD 単価 */
+/**
+ * 100 万トークンあたりの USD 単価。
+ * Gemini は無料枠で使う前提なので 0。有料枠に切り替えたら実際の単価に直すこと。
+ */
 export const PRICES: Record<string, { input: number; output: number }> = {
   "claude-haiku-4-5": { input: 1, output: 5 },
   "claude-sonnet-5-5": { input: 2, output: 10 },
+  "gemini-3.5-flash-lite": { input: 0, output: 0 },
+  "gemini-3.8-flash": { input: 0, output: 0 },
 };
 
 /** 費用の概算表示に使う為替レート（円/USD）。厳密でなくてよい */

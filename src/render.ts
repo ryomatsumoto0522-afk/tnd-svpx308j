@@ -155,7 +155,9 @@ export function renderPage(day: DigestDay, ctx: PageContext): string {
 
   const cost = day.offline
     ? "オフラインプレビュー（LLM 未使用）"
-    : `本日の費用の概算 約${Math.round(day.cost.jpy)}円（$${day.cost.usd.toFixed(3)}）`;
+    : day.cost.usd === 0
+      ? `LLM 費用 0円（${day.cost.provider === "gemini" ? "Gemini 無料枠" : "無料枠"}）`
+      : `本日の費用の概算 約${Math.round(day.cost.jpy)}円（$${day.cost.usd.toFixed(3)}）`;
   const s = day.stats;
 
   const pager = `<div class="pager">${

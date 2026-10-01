@@ -1,0 +1,152 @@
+import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI } from "@google/genai";
+
+export interface JsonRequest {
+  model: string;
+  system: string;
+  user: string;
+  /** 構造化出力に使う JSON スキーマ（enum などは制約として効く形で書く） */
+  schema: Record<string, unknown>;
+  maxTokens: number;
+  /** 推論の深さを抑えたい場合（対応するモデルだけで効く） */
+  lowEffort?: boolean;
+}
+
+export interface JsonResult {
+  text: string;
+  usage: { input: number; output: number };
+  /** 安全性の判断で出力が拒否された場合の理由。拒否されていなければ null */
+  blocked: string | null;
+  /** 出力が長さの上限で打ち切られた */
+  truncated: boolean;
+}
+
+export interface ModelNames {
+  selection: string;
+  summary: string;
+}
+
+export interface LlmProvider {
+  readonly name: string;
+  readonly models: ModelNames;
+  /** 同時に投げてよいリクエスト数（無料枠のレート制限に合わせる） */
+  readonly concurrency: number;
+  generateJson(req: JsonRequest): Promise<JsonResult>;
+  /** 認証や権限の誤りなど、全記事で失敗するので実行全体を止めるべきエラーか */
+  isFatal(e: unknown): boolean;
+}
+
+export const PROVIDER_NAMES = ["gemini", "anthropic"] as const;
+export type ProviderName = (typeof PROVIDER_NAMES)[number];
+
+export class AnthropicProvider implements LlmProvider {
+  readonly name = "anthropic";
+  readonly models: ModelNames = { selection: "claude-haiku-4-5", summary: "claude-sonnet-5-5" };
+  readonly concurrency = 4;
+
+  constructor(private readonly client: Anthropic = new Anthropic()) {}
+
+  async generateJson(req: JsonRequest): Promise<JsonResult> {
+    const response = await this.client.messages.create({
+      model: req.model,
+      max_tokens: req.maxTokens,
+      system: req.system,
+      messages: [{ role: "user", content: req.user }],
+      output_config: {
+        ...(req.lowEffort ? { effort: "low" as const } : {}),
+        format: { type: "json_schema", schema: req.schema },
+      },
+    });
+    const block = response.content.find((b) => b.type === "text");
+    return {
+      text: block && block.type === "text" ? block.text : "",
+      usage: { input: response.usage.input_tokens, output: response.usage.output_tokens },
+      blocked: response.stop_reason === "refusal" ? (response.stop_details?.category ?? "unknown") : null,
+      truncated: response.stop_reason === "max_tokens",
+    };
+  }
+
+  isFatal(e: unknown): boolean {
+    return e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError;
+  }
+}
+
+const BLOCKING_FINISH_REASONS = new Set(["SAFETY", "PROHIBITED_CONTENT", "BLOCKLIST", "SPII", "RECITATION"]);
+
+/** 一時的なエラー（レート制限・過負荷）かどうか */
+function isRetryable(e: unknown): boolean {
+  const status = (e as { status?: number }).status;
+  return status === 429 || status === 500 || status === 503 || status === 504;
+}
+
+export class GeminiProvider implements LlmProvider {
+  readonly name = "gemini";
+  // 無料枠の対象モデル。有料に切り替えなくても使える（ただし無料枠の入力は Google の製品改善に使われ得る）
+  readonly models: ModelNames = { selection: "gemini-3.5-flash-lite", summary: "gemini-3.8-flash" };
+  // 無料枠は 1 分あたりのリクエスト数が少ないので、同時実行は控えめにする
+  readonly concurrency = 2;
+
+  constructor(
+    private readonly ai: Pick<GoogleGenAI, "models"> = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }),
+    private readonly sleep: (ms: number) => Promise<void> = (ms) => new Promise((r) => setTimeout(r, ms)),
+  ) {}
+
+  async generateJson(req: JsonRequest): Promise<JsonResult> {
+    let lastError: unknown;
+    // 429（レート制限）と 5xx は待って再試行する
+    for (let attempt = 0; attempt < 5; attempt++) {
+      try {
+        return await this.once(req);
+      } catch (e) {
+        lastError = e;
+        if (!isRetryable(e) || attempt === 4) throw e;
+        await this.sleep(Math.min(2_000 * 2 ** attempt, 30_000));
+      }
+    }
+    throw lastError;
+  }
+
+  private async once(req: JsonRequest): Promise<JsonResult> {
+    const response = await this.ai.models.generateContent({
+      model: req.model,
+      contents: req.user,
+      config: {
+        systemInstruction: req.system,
+        responseMimeType: "application/json",
+        responseJsonSchema: req.schema,
+        maxOutputTokens: req.maxTokens,
+      },
+    });
+    const candidate = response.candidates?.[0];
+    const finish = candidate?.finishReason ? String(candidate.finishReason) : "";
+    const blockReason = response.promptFeedback?.blockReason ? String(response.promptFeedback.blockReason) : null;
+    const usage = response.usageMetadata;
+    return {
+      text: response.text ?? "",
+      // 推論（thinking）に使ったトークンも出力として数える
+      usage: {
+        input: usage?.promptTokenCount ?? 0,
+        output: (usage?.candidatesTokenCount ?? 0) + (usage?.thoughtsTokenCount ?? 0),
+      },
+      blocked: blockReason ?? (BLOCKING_FINISH_REASONS.has(finish) ? finish : null),
+      truncated: finish === "MAX_TOKENS",
+    };
+  }
+
+  isFatal(e: unknown): boolean {
+    const status = (e as { status?: number }).status;
+    return status === 401 || status === 403 || (status === 400 && /api key/i.test(String((e as Error).message)));
+  }
+}
+
+export function createProvider(name: string = process.env.LLM_PROVIDER ?? "gemini"): LlmProvider {
+  if (name === "gemini") {
+    if (!process.env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY が未設定です（LLM なしで確認するなら --offline）");
+    return new GeminiProvider();
+  }
+  if (name === "anthropic") {
+    if (!process.env.ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY が未設定です（LLM なしで確認するなら --offline）");
+    return new AnthropicProvider();
+  }
+  throw new Error(`未対応の LLM_PROVIDER: ${name}（gemini か anthropic）`);
+}

@@ -43,6 +43,9 @@ jobs:
 
       - name: 収集・選定・要約・ページ生成
         env:
+          # 既定は Gemini（無料枠）。Claude を使うなら Variables に LLM_PROVIDER=anthropic を設定する
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE: ${{ inputs.force && '1' || '0' }}
         run: npm run build

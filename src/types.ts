@@ -56,6 +56,8 @@ export interface DigestStats {
 }
 
 export interface DigestCost {
+  /** 使った LLM（gemini / anthropic）。古いデータには無い */
+  provider?: string;
   usd: number;
   jpy: number;
   inputTokens: number;
