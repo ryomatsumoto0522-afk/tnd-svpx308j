@@ -13,6 +13,8 @@ export interface JsonRequest {
 }
 
 export interface JsonResult {
+  /** 実際に使われたモデル（フォールバックした場合は要求と異なる） */
+  model?: string;
   text: string;
   usage: { input: number; output: number };
   /** 安全性の判断で出力が拒否された場合の理由。拒否されていなければ null */
@@ -31,6 +33,8 @@ export interface LlmProvider {
   readonly models: ModelNames;
   /** 同時に投げてよいリクエスト数（無料枠のレート制限に合わせる） */
   readonly concurrency: number;
+  /** 1 回のリクエストにまとめて要約する記事数（無料枠は 1 日のリクエスト数が少ないのでまとめる） */
+  readonly summaryBatchSize: number;
   generateJson(req: JsonRequest): Promise<JsonResult>;
   /** 認証や権限の誤りなど、全記事で失敗するので実行全体を止めるべきエラーか */
   isFatal(e: unknown): boolean;
@@ -43,6 +47,8 @@ export class AnthropicProvider implements LlmProvider {
   readonly name = "anthropic";
   readonly models: ModelNames = { selection: "claude-haiku-4-5", summary: "claude-sonnet-5-5" };
   readonly concurrency = 4;
+  // 従量課金なので、1 記事ずつ丁寧に読ませる
+  readonly summaryBatchSize = 1;
 
   constructor(private readonly client: Anthropic = new Anthropic()) {}
 
@@ -86,11 +92,33 @@ export function retryDelayMs(e: unknown): number | null {
   return Number.isFinite(sec) ? Math.ceil(sec * 1000) : null;
 }
 
+/** 無料枠の 1 日あたりの上限（PerDay）に達した。待っても回復しないので再試行しない */
+export class DailyQuotaError extends Error {}
+
+/** 使えるモデルがすべて 1 日の上限に達した */
+export class AllModelsExhaustedError extends Error {}
+
+function isDailyQuota(e: unknown): boolean {
+  return (e as { status?: number }).status === 429 && /PerDay/i.test(String((e as Error).message ?? ""));
+}
+
 export class GeminiProvider implements LlmProvider {
   readonly name = "gemini";
   // 無料枠の対象モデル。有料に切り替えなくても使える（ただし無料枠の入力は Google の製品改善に使われ得る）
   readonly models: ModelNames = { selection: "gemini-3.5-flash-lite", summary: "gemini-3.8-flash" };
   readonly concurrency = 2;
+  // 無料枠は 1 日 20 リクエスト/モデル（gemini-3.8-flash）。4 件ずつまとめれば 1 日 5〜10 回で足りる
+  readonly summaryBatchSize = 4;
+
+  /**
+   * モデルごとの無料枠は別々に数えられるので、1 日の上限に当たったら次のモデルに切り替える。
+   * （どれも無料枠の対象。品質は同等かやや劣る程度）
+   */
+  private readonly fallbacks: Record<string, string[]> = {
+    "gemini-3.8-flash": ["gemini-3.7-flash", "gemini-3.6-flash"],
+    "gemini-3.5-flash-lite": ["gemini-3.1-flash-lite"],
+  };
+  private readonly exhausted = new Set<string>();
 
   /** モデルごとの、次にリクエストを始めてよい時刻 */
   private readonly nextSlot = new Map<string, number>();
@@ -114,6 +142,22 @@ export class GeminiProvider implements LlmProvider {
   }
 
   async generateJson(req: JsonRequest): Promise<JsonResult> {
+    const chain = [req.model, ...(this.fallbacks[req.model] ?? [])].filter((m) => !this.exhausted.has(m));
+    for (const model of chain) {
+      try {
+        return { ...(await this.withRetry({ ...req, model })), model };
+      } catch (e) {
+        if (!(e instanceof DailyQuotaError)) throw e;
+        this.exhausted.add(model);
+        console.warn(`無料枠の 1 日の上限に達したため ${model} を使うのをやめます`);
+      }
+    }
+    throw new AllModelsExhaustedError(
+      `Gemini の無料枠の 1 日の上限に達しました（${[req.model, ...(this.fallbacks[req.model] ?? [])].join(" / ")}）。明日（太平洋時間の 0 時以降）にもう一度実行するか、LLM_PROVIDER=anthropic に切り替えてください`,
+    );
+  }
+
+  private async withRetry(req: JsonRequest): Promise<JsonResult> {
     const maxAttempts = 6;
     // 429（レート制限）と 5xx は待って再試行する。429 は API が示す待ち時間に従う
     for (let attempt = 1; ; attempt++) {
@@ -121,6 +165,7 @@ export class GeminiProvider implements LlmProvider {
       try {
         return await this.once(req);
       } catch (e) {
+        if (isDailyQuota(e)) throw new DailyQuotaError((e as Error).message);
         if (!isRetryable(e) || attempt >= maxAttempts) throw e;
         await this.sleep((retryDelayMs(e) ?? Math.min(2_000 * 2 ** attempt, 30_000)) + 1_000);
       }
@@ -155,6 +200,7 @@ export class GeminiProvider implements LlmProvider {
   }
 
   isFatal(e: unknown): boolean {
+    if (e instanceof AllModelsExhaustedError) return true;
     const status = (e as { status?: number }).status;
     return status === 401 || status === 403 || (status === 400 && /api key/i.test(String((e as Error).message)));
   }

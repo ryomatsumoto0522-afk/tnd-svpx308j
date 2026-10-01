@@ -105,7 +105,7 @@ export async function selectPicks(
     // 推論を持つモデルでは、考える分のトークンも含めて余裕を持たせる
     maxTokens: 8000,
   });
-  cost.add(model, result.usage);
+  cost.add(result.model ?? model, result.usage);
 
   let parsed: z.infer<typeof SelectionSchema>;
   try {
@@ -129,30 +129,46 @@ export async function selectPicks(
   return picks;
 }
 
+const GLOSSARY_JSON_SCHEMA = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: { term: { type: "string" }, explanation: { type: "string" } },
+    required: ["term", "explanation"],
+    additionalProperties: false,
+  },
+} as const;
+
 const SUMMARY_JSON_SCHEMA = {
   type: "object",
   properties: {
-    summary: { type: "string" },
-    glossary: {
+    items: {
       type: "array",
       items: {
         type: "object",
-        properties: { term: { type: "string" }, explanation: { type: "string" } },
-        required: ["term", "explanation"],
+        properties: { n: { type: "integer" }, summary: { type: "string" }, glossary: GLOSSARY_JSON_SCHEMA },
+        required: ["n", "summary", "glossary"],
         additionalProperties: false,
       },
     },
   },
-  required: ["summary", "glossary"],
+  required: ["items"],
   additionalProperties: false,
 } as const;
 
 const SummarySchema = z.object({
-  summary: z.string(),
-  glossary: z.array(z.object({ term: z.string(), explanation: z.string() })),
+  items: z.array(
+    z.object({
+      n: z.number(),
+      summary: z.string(),
+      glossary: z.array(z.object({ term: z.string(), explanation: z.string() })),
+    }),
+  ),
 });
 
 const SUMMARY_SYSTEM = `あなたは技術ニュースを初学者にも分かりやすく伝える編集者です。与えられた記事の本文を読み、日本語で要約します。
+
+記事は <article n="番号"> ... </article> の形で 1 件以上渡されます。記事ごとに items の要素を 1 つ、番号 n を付けて返してください。記事同士の内容を混ぜないこと。
 
 要約 (summary) の書き方:
 - 丁寧な文体（です・ます調）で、2〜3 文、全体で 150〜250 字にする。
@@ -174,40 +190,71 @@ export interface Summary {
 
 export class SummaryError extends Error {}
 
-/** 記事 1 件を要約する（Sonnet）。拒否や解釈失敗は SummaryError として呼び出し側で差し替える */
+export interface SummaryInput {
+  candidate: Candidate;
+  body: string;
+}
+
+/**
+ * 記事を 1 回のリクエストでまとめて要約する。結果は入力と同じ順序で、
+ * 要約できなかった記事は SummaryError が入る（呼び出し側で次点に差し替える）。
+ * リクエスト全体が拒否・解釈不能だった場合は SummaryError を投げる。
+ */
+export async function summarizeBatch(
+  provider: LlmProvider,
+  cost: CostTracker,
+  inputs: SummaryInput[],
+): Promise<(Summary | SummaryError)[]> {
+  const model = provider.models.summary;
+  const articles = inputs
+    .map(({ candidate: c, body }, n) => `<article n="${n}">\nタイトル: ${c.title}\n出典: ${c.source}\nURL: ${c.url}\n\n${body}\n</article>`)
+    .join("\n\n");
+  const result = await provider.generateJson({
+    model,
+    system: SUMMARY_SYSTEM,
+    user: articles,
+    schema: SUMMARY_JSON_SCHEMA,
+    // 推論を持つモデルでは、考える分のトークンも含めて余裕を持たせる
+    maxTokens: 2000 + inputs.length * 1500,
+    lowEffort: true,
+  });
+  cost.add(result.model ?? model, result.usage);
+
+  if (result.blocked) throw new SummaryError(`モデルが要約を拒否しました (${result.blocked})`);
+  let parsed: z.infer<typeof SummarySchema>;
+  try {
+    if (!result.text) throw new Error("テキスト出力がありません");
+    parsed = SummarySchema.parse(JSON.parse(result.text));
+  } catch (e) {
+    throw new SummaryError(
+      `要約の出力を解釈できませんでした (truncated=${result.truncated}): ${e instanceof Error ? e.message : e}`,
+    );
+  }
+
+  const byN = new Map(parsed.items.map((item) => [Math.round(item.n), item]));
+  return inputs.map((_, n) => {
+    const item = byN.get(n);
+    if (!item) return new SummaryError("出力にこの記事の要約がありません");
+    const summary = item.summary.trim();
+    if (summary.length < 40) return new SummaryError("要約が短すぎます");
+    return {
+      summary,
+      glossary: item.glossary
+        .filter((g) => g.term.trim() && g.explanation.trim())
+        .slice(0, 3)
+        .map((g) => ({ term: g.term.trim(), explanation: g.explanation.trim() })),
+    };
+  });
+}
+
+/** 記事 1 件を要約する。失敗したら SummaryError を投げる */
 export async function summarize(
   provider: LlmProvider,
   cost: CostTracker,
   c: Candidate,
   body: string,
 ): Promise<Summary> {
-  const model = provider.models.summary;
-  const result = await provider.generateJson({
-    model,
-    system: SUMMARY_SYSTEM,
-    user: `<article>\nタイトル: ${c.title}\n出典: ${c.source}\nURL: ${c.url}\n\n${body}\n</article>`,
-    schema: SUMMARY_JSON_SCHEMA,
-    maxTokens: 4000,
-    lowEffort: true,
-  });
-  cost.add(model, result.usage);
-
-  if (result.blocked) throw new SummaryError(`モデルが要約を拒否しました (${result.blocked})`);
-  let parsed: z.infer<typeof SummarySchema>;
-  try {
-    parsed = SummarySchema.parse(readJson(result));
-  } catch (e) {
-    throw new SummaryError(
-      `要約の出力を解釈できませんでした (truncated=${result.truncated}): ${e instanceof Error ? e.message : e}`,
-    );
-  }
-  const summary = parsed.summary.trim();
-  if (summary.length < 40) throw new SummaryError("要約が短すぎます");
-  return {
-    summary,
-    glossary: parsed.glossary
-      .filter((g) => g.term.trim() && g.explanation.trim())
-      .slice(0, 3)
-      .map((g) => ({ term: g.term.trim(), explanation: g.explanation.trim() })),
-  };
+  const [result] = await summarizeBatch(provider, cost, [{ candidate: c, body }]);
+  if (!result || result instanceof SummaryError) throw result ?? new SummaryError("結果がありません");
+  return result;
 }

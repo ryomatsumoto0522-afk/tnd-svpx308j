@@ -1,7 +1,7 @@
 import { getBody, type BodyResult } from "./body.ts";
 import { collectAll } from "./collect.ts";
 import { PIPELINE, SOURCES } from "./config.ts";
-import { CostTracker, selectPicks, summarize, type Pick } from "./llm.ts";
+import { CostTracker, selectPicks, summarize, summarizeBatch, SummaryError, type Pick, type Summary } from "./llm.ts";
 import { createProvider } from "./providers.ts";
 import { guessGenre } from "./offline.ts";
 import { writeSite } from "./render.ts";
@@ -96,21 +96,46 @@ async function main(): Promise<void> {
     }
     if (wave.length === 0) break;
 
-    const results = await mapLimit(wave, provider?.concurrency ?? 4, async (e) => {
-      const c = e.pick.candidate;
+    const batchSize = provider?.summaryBatchSize ?? 1;
+    const groups: Entry[][] = [];
+    for (let i = 0; i < wave.length; i += batchSize) groups.push(wave.slice(i, i + batchSize));
+
+    const grouped = await mapLimit(groups, provider?.concurrency ?? 4, async (group) => {
       if (!provider) {
-        const excerpt = truncate(c.excerpt || e.body.text, 200);
-        return { e, s: { summary: `${excerpt}…`, glossary: [] } };
+        return group.map((e) => {
+          const excerpt = truncate(e.pick.candidate.excerpt || e.body.text, 200);
+          return { e, s: { summary: `${excerpt}…`, glossary: [] } as Summary | null };
+        });
       }
+      const fail = (e: Entry, err: unknown) => {
+        summaryFailures++;
+        console.warn(`要約失敗（次点に差し替え）: ${e.pick.candidate.title}: ${err instanceof Error ? err.message : err}`);
+        return { e, s: null as Summary | null };
+      };
       try {
-        return { e, s: await summarize(provider, cost, c, e.body.text) };
+        const out = await summarizeBatch(provider, cost, group.map((e) => ({ candidate: e.pick.candidate, body: e.body.text })));
+        return group.map((e, i) => {
+          const r = out[i];
+          return r instanceof SummaryError || !r ? fail(e, r) : { e, s: r as Summary | null };
+        });
       } catch (err) {
         if (provider.isFatal(err)) throw err;
-        summaryFailures++;
-        console.warn(`要約失敗（次点に差し替え）: ${c.title}: ${err instanceof Error ? err.message : err}`);
-        return { e, s: null };
+        if (group.length === 1) return [fail(group[0] as Entry, err)];
+        // まとめて失敗した（1 件が拒否された場合など）ので、1 件ずつやり直して他の記事を救う
+        console.warn(`まとめての要約に失敗したので 1 件ずつやり直します: ${err instanceof Error ? err.message : err}`);
+        const each: { e: Entry; s: Summary | null }[] = [];
+        for (const e of group) {
+          try {
+            each.push({ e, s: await summarize(provider, cost, e.pick.candidate, e.body.text) });
+          } catch (err2) {
+            if (provider.isFatal(err2)) throw err2;
+            each.push(fail(e, err2));
+          }
+        }
+        return each;
       }
     });
+    const results = grouped.flat();
     for (const { e, s } of results) {
       if (!s) continue;
       counts[e.pick.genre]++;

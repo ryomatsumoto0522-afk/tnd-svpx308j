@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type Anthropic from "@anthropic-ai/sdk";
-import { AnthropicProvider, createProvider, GeminiProvider, retryDelayMs } from "./providers.ts";
+import { AllModelsExhaustedError, AnthropicProvider, createProvider, GeminiProvider, retryDelayMs } from "./providers.ts";
 
 const req = { model: "m", system: "sys", user: "usr", schema: { type: "object" }, maxTokens: 100 };
 const noSleep = async () => {};
@@ -30,7 +30,7 @@ test("Gemini: JSON スキーマと system をそのまま渡し、思考トー�
     },
   ]);
   const r = await new GeminiProvider(ai, noSleep, 0).generateJson(req);
-  assert.deepEqual(r, { text: '{"a":1}', usage: { input: 100, output: 50 }, blocked: null, truncated: false });
+  assert.deepEqual(r, { text: '{"a":1}', usage: { input: 100, output: 50 }, blocked: null, truncated: false, model: "m" });
   assert.equal(calls[0].config.responseMimeType, "application/json");
   assert.deepEqual(calls[0].config.responseJsonSchema, { type: "object" });
   assert.equal(calls[0].config.systemInstruction, "sys");
@@ -122,4 +122,35 @@ test("Gemini: 429 のメッセージにある待ち時間に従い、リクエ�
   await Promise.all([p.generateJson(req), p.generateJson(req), p.generateJson({ ...req, model: "other" })]);
   assert.equal(spaced.length, 1);
   assert.ok(spaced[0]! > 12_000 && spaced[0]! <= 13_000);
+});
+
+test("Gemini: 1 日の上限（PerDay）は待たずに次のモデルへ切り替え、使えたモデル名を返す", async () => {
+  const daily = Object.assign(
+    new Error('Quota exceeded ... "quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier" Please retry in 45s.'),
+    { status: 429 },
+  );
+  const ok = { text: "{}", candidates: [{ finishReason: "STOP" }], usageMetadata: {} };
+  const waits: number[] = [];
+  const { ai, calls } = fakeGemini([daily, ok, ok]);
+  const p = new GeminiProvider(ai, async (ms) => void waits.push(ms), 0);
+
+  const r1 = await p.generateJson({ ...req, model: "gemini-3.8-flash" });
+  assert.equal(r1.model, "gemini-3.7-flash");
+  assert.deepEqual(calls.map((c) => c.model), ["gemini-3.8-flash", "gemini-3.7-flash"]);
+  assert.deepEqual(waits, []); // 日次上限では待たない
+
+  // 上限に達したモデルは、以降のリクエストで最初から使わない
+  const r2 = await p.generateJson({ ...req, model: "gemini-3.8-flash" });
+  assert.equal(r2.model, "gemini-3.7-flash");
+  assert.equal(calls[2].model, "gemini-3.7-flash");
+});
+
+test("Gemini: すべてのモデルが日次上限なら、実行全体を止めるエラー（致命的）にする", async () => {
+  const daily = Object.assign(new Error('"quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier"'), { status: 429 });
+  const { ai } = fakeGemini([daily, daily, daily]);
+  const p = new GeminiProvider(ai, noSleep, 0);
+  const err = await p.generateJson({ ...req, model: "gemini-3.8-flash" }).catch((e) => e);
+  assert.ok(err instanceof AllModelsExhaustedError);
+  assert.equal(p.isFatal(err), true);
+  assert.match(err.message, /LLM_PROVIDER=anthropic/);
 });
