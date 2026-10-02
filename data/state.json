@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-02T03:38:26.288Z",
+  "lastRun": "2026-10-02T23:47:48.358Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -35,6 +35,19 @@
     "https://qiita.com/uni928/items/2434c7875a298ea00c3e": "2026-10-02",
     "https://www.infoq.com/presentations/ai-production-operations": "2026-10-02",
     "https://www.infoq.com/news/2026/10/snapdragon-x2-linux": "2026-10-02",
-    "https://tangled.org/burrito.space/bez": "2026-10-02"
+    "https://tangled.org/burrito.space/bez": "2026-10-02",
+    "https://www.infoq.com/news/2026/10/openai-devday-2026": "2026-10-03",
+    "https://zenn.dev/every_ai_recipe/articles/claude-slides-no-powerpoint-recipe": "2026-10-03",
+    "https://gigazine.net/news/20261002-claude-code-customize-mod": "2026-10-03",
+    "https://gigazine.net/news/20261002-pi-1-0": "2026-10-03",
+    "https://spring.io/blog/2026/10/02/spring-ai-modular-rag-typesafe-jev": "2026-10-03",
+    "https://www.infoq.com/news/2026/10/uber-eats-search-latency": "2026-10-03",
+    "https://zenn.dev/kipcop/articles/f35-vue-01-browser-rendering": "2026-10-03",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37": "2026-10-03",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions": "2026-10-03",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc": "2026-10-03",
+    "https://www.infoq.com/news/2026/10/docker-sandbox-ai-agent": "2026-10-03",
+    "https://aws.amazon.com/jp/blogs/news/this-month-in-aws-observability-august-september-2026": "2026-10-03",
+    "https://www.47news.jp/15026982.html": "2026-10-03"
   }
 }

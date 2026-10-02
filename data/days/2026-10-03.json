@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-02T23:47:48.358Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.infoq.com/news/2026/10/openai-devday-2026/",
+      "title": "OpenAI DevDay 2026 Recap for Developers",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T10:39:00.000Z",
+      "summary": "コンピュータ操作機能を持つAgents APIや、低価格な新モデルGPT-6.1 Solなどが発表されました。GPT-6.1 SolはGPT-6 Astraと同等の性能を目指しつつ、入力と出力のトークン価格をAstraの5分の1に抑えています。クラウド版Codex環境や、テキストや画像から回答を選択するDecisions APIが利用可能になりました。",
+      "headline": "OpenAIがDevDay 2026でGPT-6.1 Solやエージェント機能を発表",
+      "points": [
+        "コンピュータ操作機能を持つAgents APIや、低価格な新モデルGPT-6.1 Solなどが発表されました。",
+        "GPT-6.1 SolはGPT-6 Astraと同等の性能を目指しつつ、入力と出力のトークン価格をAstraの5分の1に抑えています。",
+        "クラウド版Codex環境や、テキストや画像から回答を選択するDecisions APIが利用可能になりました。"
+      ],
+      "impact": "開発者は新しいAPIやモデルを利用して、継続的に動作するエージェントやクラウド開発環境を構築できます。",
+      "glossary": [
+        {
+          "term": "API",
+          "explanation": "異なるソフトウェアやプログラム同士が機能を連携するための仕組みです。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストを処理する際の、言葉や文字の細かな分割単位です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://zenn.dev/every_ai_recipe/articles/claude-slides-no-powerpoint-recipe",
+      "title": "Claude Slides/Docsの中身は「制約されたHTMLサブセットのDSL」だった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T21:17:14.000Z",
+      "summary": "Claude SlidesとDocsは、任意のHTMLやCSSではなく特定のプロパティのみを許可した閉じたHTMLサブセットで動作します。独自タグを用いて図形やアイコンを配置し、デザイントークンでアクセシビリティ基準の配色やタイポグラフィを規定しています。表現力を絞ることで、LLMが安全に生成でき決定論的に描画できる出力を保証する設計になっています。",
+      "headline": "Claude SlidesとDocsの内部構造は制約されたHTMLサブセット",
+      "points": [
+        "Claude SlidesとDocsは、任意のHTMLやCSSではなく特定のプロパティのみを許可した閉じたHTMLサブセットで動作します。",
+        "独自タグを用いて図形やアイコンを配置し、デザイントークンでアクセシビリティ基準の配色やタイポグラフィを規定しています。",
+        "表現力を絞ることで、LLMが安全に生成でき決定論的に描画できる出力を保証する設計になっています。"
+      ],
+      "impact": "開発者はClaudeの新機能における、LLMの出力制御やデザイン生成の仕組みを理解できます。",
+      "glossary": [
+        {
+          "term": "DSL",
+          "explanation": "特定の用途や目的に特化して設計された、簡易的なプログラミング言語や記述言語です。"
+        },
+        {
+          "term": "アクセシビリティ",
+          "explanation": "障害のある人や高齢者も含め、誰もが利用しやすいように製品やサービスを設計することです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://gigazine.net/news/20261002-claude-code-customize-mod/",
+      "title": "Claude Codeを自分好みにカスタムできるMod機能が登場",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T03:24:03.000Z",
+      "summary": "TypeScriptを使って数行で独自のModを作成し、Claude Codeの動作やUIをカスタマイズできるようになりました。Modはすべてのイベントをリアルタイムで監視し、CLI版とデスクトップ版の両方で動作します。危険なコマンドの実行時に説明を表示する機能や、ファイル操作の差分を記録するサンプルが公開されています。",
+      "headline": "Claude Codeの動作やUIをTypeScriptで変更できるMod機能が登場",
+      "points": [
+        "TypeScriptを使って数行で独自のModを作成し、Claude Codeの動作やUIをカスタマイズできるようになりました。",
+        "Modはすべてのイベントをリアルタイムで監視し、CLI版とデスクトップ版の両方で動作します。",
+        "危険なコマンドの実行時に説明を表示する機能や、ファイル操作の差分を記録するサンプルが公開されています。"
+      ],
+      "impact": "利用者はClaude Codeの機能を拡張し、自身の好みに合わせた開発環境を構築できます。",
+      "glossary": [
+        {
+          "term": "CLI",
+          "explanation": "キーボードで文字を入力してコンピューターを操作するインターフェースです。"
+        },
+        {
+          "term": "TypeScript",
+          "explanation": "JavaScriptに型定義などの機能を追加し、大規模な開発をしやすくしたプログラミング言語です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://gigazine.net/news/20261002-pi-1-0/",
+      "title": "無料＆オープンソースのAIコーディングツール「Pi 1.0」が正式リリース、MCP対応や複数のAIモデルを切り替える機能を追加",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T08:55:01.000Z",
+      "summary": "Pi 1.0は標準でMCPに対応し、複数のAIモデルを会話の途中でも切り替えて利用できるようになりました。複数のツール操作をJavaScriptでまとめて実行するCodemodeや、必要なツールを後から読み込む機能が追加されました。長時間動作するAIエージェントを構築するための実験的パッケージPi Durableも同時に公開されました。",
+      "headline": "オープンソースのAIコーディングツールPi 1.0が正式リリース",
+      "points": [
+        "Pi 1.0は標準でMCPに対応し、複数のAIモデルを会話の途中でも切り替えて利用できるようになりました。",
+        "複数のツール操作をJavaScriptでまとめて実行するCodemodeや、必要なツールを後から読み込む機能が追加されました。",
+        "長時間動作するAIエージェントを構築するための実験的パッケージPi Durableも同時に公開されました。"
+      ],
+      "impact": "開発者は複数のAIモデルや外部ツールを効率的に組み合わせた、柔軟なコーディング環境を利用できます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のデータソースやツールを接続するための共通規格です。"
+        },
+        {
+          "term": "オープンソース",
+          "explanation": "ソフトウェアの設計図であるソースコードが無償で公開され、誰でも改良や再配布ができる仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://spring.io/blog/2026/10/02/spring-ai-modular-rag-typesafe-jev",
+      "title": "Spring AI Modular RAG and TypeSafe Jev: Retrieve More, Keep Only What Answers",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "summary": "検索前の質問変換や検索後のJevによる文書評価を組み合わせ、回答品質を高める構成を紹介しました。Spring AIのモジュラーRAGでは検索の各フェーズが独立したインターフェースとして交換可能です。spring-ai-starter-typesafe 0.3.0などの依存関係を追加して設定できます。",
+      "headline": "Spring AIがTypeSafe Jevと連携するモジュラーRAGを解説",
+      "points": [
+        "検索前の質問変換や検索後のJevによる文書評価を組み合わせ、回答品質を高める構成を紹介しました。",
+        "Spring AIのモジュラーRAGでは検索の各フェーズが独立したインターフェースとして交換可能です。",
+        "spring-ai-starter-typesafe 0.3.0などの依存関係を追加して設定できます。"
+      ],
+      "impact": "Spring AIで高精度な検索拡張生成を構築したい開発者は、各モジュールを組み込んで利用できます。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部文書を検索してその内容をプロンプトに含め、モデルの回答精度を高める手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/",
+      "title": "Uber Eats Rebuilds Search Pipeline to Cut End-to-End Latency by 50%",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-02T14:22:00.000Z",
+      "summary": "検索候補の選定やデータ取得、広告処理などの全面的な最適化により、エンドツーエンドの検索遅延を半減させました。評価指標を従来のAPI応答時間から、最初の画面描画が完了するまでの時間に変更しました。商品単位の埋め込み採用や不要な依存関係の排除により、データ取得や処理時間を大きく短縮しています。",
+      "headline": "UberがUber Eatsの検索基盤を刷新し遅延を50%削減",
+      "points": [
+        "検索候補の選定やデータ取得、広告処理などの全面的な最適化により、エンドツーエンドの検索遅延を半減させました。",
+        "評価指標を従来のAPI応答時間から、最初の画面描画が完了するまでの時間に変更しました。",
+        "商品単位の埋め込み採用や不要な依存関係の排除により、データ取得や処理時間を大きく短縮しています。"
+      ],
+      "glossary": [
+        {
+          "term": "キャッシュ",
+          "explanation": "頻繁に使うデータを一時的に高速な領域へ保存し、再取得の手間や時間を省く仕組みです。"
+        },
+        {
+          "term": "ガベージコレクション",
+          "explanation": "プログラムが使わなくなったメモリ領域を自動的に検出し、解放して再利用可能にする機能です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-01-browser-rendering",
+      "title": "35日でフロントエンドの基礎を完全に理解する #1 - ブラウザはどう画面を作るか",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-02T16:31:44.000Z",
+      "summary": "HTMLの解析からDOMの構築、レイアウト計算、描画に至るブラウザ内部の流れを解説しています。画面の動的な変更はJavaScriptがDOMのツリー構造を書き換えることで起きると説明しました。JavaScriptは基本シングルスレッドで動くため、重い処理で画面が停止する仕組みに言及しています。",
+      "headline": "Webブラウザが画面を描画する仕組みを解説する入門記事が公開",
+      "points": [
+        "HTMLの解析からDOMの構築、レイアウト計算、描画に至るブラウザ内部の流れを解説しています。",
+        "画面の動的な変更はJavaScriptがDOMのツリー構造を書き換えることで起きると説明しました。",
+        "JavaScriptは基本シングルスレッドで動くため、重い処理で画面が停止する仕組みに言及しています。"
+      ],
+      "impact": "Web開発の基礎を学びたい読者は、開発者ツールを使ってDOM構造の確認や操作の動作を体験できます。",
+      "glossary": [
+        {
+          "term": "DOM",
+          "explanation": "HTML文書をプログラムから参照・操作できるように、階層構造のオブジェクトとして表現したものです。"
+        },
+        {
+          "term": "イベントループ",
+          "explanation": "発生したイベントやタスクをキューから取り出し、1つのスレッドで順番に実行し続ける仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37",
+      "title": "Amazon EKS and Amazon EKS Distro now support Kubernetes version 1.37",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-02T17:30:00.000Z",
+      "summary": "Amazon EKSおよびEKS DistroでKubernetes 1.37クラスターの作成や既存環境の更新が可能になりました。Metrics APIが正式提供となり、HPAのゼロスケール機能がベータ版として標準有効化されました。AWS GovCloudを含むEKSが利用可能なすべてのAWSリージョンで提供されます。",
+      "headline": "Amazon EKSがKubernetes 1.37のサポートを開始",
+      "points": [
+        "Amazon EKSおよびEKS DistroでKubernetes 1.37クラスターの作成や既存環境の更新が可能になりました。",
+        "Metrics APIが正式提供となり、HPAのゼロスケール機能がベータ版として標準有効化されました。",
+        "AWS GovCloudを含むEKSが利用可能なすべてのAWSリージョンで提供されます。"
+      ],
+      "impact": "EKSの管理者は、マネジメントコンソールやeksctlを使ってクラスターを1.37へ作成または更新できます。",
+      "glossary": [
+        {
+          "term": "Kubernetes",
+          "explanation": "コンテナ化されたアプリケーションの配備、スケーリング、管理を自動化する基盤ソフトウェアです。"
+        },
+        {
+          "term": "Pod",
+          "explanation": "Kubernetes上で管理される、1つ以上のコンテナがまとまった最小の実行単位です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions/",
+      "title": "The AWS MCP Server is now available in six additional AWS Regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "summary": "AWS APIsとAIエージェントを繋ぐ管理型サーバーが新たに6リージョンで提供されました。今回の追加により東京やロンドンなど計8つの商業リージョンで実行可能となりました。開発者は低レイテンシで実行でき、リクエストデータを同一リージョン内に保持できます。",
+      "headline": "AWS MCP Serverが東京を含む6リージョンで追加提供開始",
+      "points": [
+        "AWS APIsとAIエージェントを繋ぐ管理型サーバーが新たに6リージョンで提供されました。",
+        "今回の追加により東京やロンドンなど計8つの商業リージョンで実行可能となりました。",
+        "開発者は低レイテンシで実行でき、リクエストデータを同一リージョン内に保持できます。"
+      ],
+      "impact": "対象リージョンの開発者は、データ保持要件を満たしつつローカルなエンドポイントを使ってインフラ構築やデバッグができます。",
+      "glossary": [
+        {
+          "term": "Model Context Protocol (MCP)",
+          "explanation": "AIモデルやエージェントが外部ツールやデータソースと安全に通信するための標準規格です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc/",
+      "title": "AgentCore Gateway supports private TLS certificates for VPC endpoints",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "summary": "独自CAが発行した証明書を用い、ゲートウェイターゲットへ安全に接続できるようになりました。中間のALBを介さずにAmazon VPC Lattice経由のプライベートエンドポイントに接続可能です。MCPやOpenAPI、HTTPプロキシのターゲットで利用でき、証明書はS3等から取得されます。",
+      "headline": "AgentCore GatewayがプライベートCA署名のTLS証明書に対応",
+      "points": [
+        "独自CAが発行した証明書を用い、ゲートウェイターゲットへ安全に接続できるようになりました。",
+        "中間のALBを介さずにAmazon VPC Lattice経由のプライベートエンドポイントに接続可能です。",
+        "MCPやOpenAPI、HTTPプロキシのターゲットで利用でき、証明書はS3等から取得されます。"
+      ],
+      "impact": "両サービスが利用可能なリージョンで、社内CAの証明書を用いるエンドポイントへ直接安全に接続したい利用者が設定できます。",
+      "glossary": [
+        {
+          "term": "認証局 (CA)",
+          "explanation": "デジタル証明書を発行し、通信相手の身元や公開鍵の正当性を証明する信頼された機関やシステムです。"
+        },
+        {
+          "term": "TLS",
+          "explanation": "インターネットなどのネットワーク上で通信を暗号化し、盗聴や改ざんを防ぐための通信プロトコルです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.infoq.com/news/2026/10/docker-sandbox-ai-agent/",
+      "title": "Docker Sandbox Kit Spec: Packaging AI Agent Permissions as OCI Images",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-02T09:00:00.000Z",
+      "summary": "エージェント本体とツール、資格情報や通信先などの権限要求を通常のOCIイメージにまとめます。バージョン3では専用の成果物形式を廃止し、docker pullなどで扱えるようになりました。初の準拠ランタイムはDocker Sandboxesで、権限を認めるかどうかはホスト側が判断します。",
+      "headline": "DockerがAIエージェントの権限を標準化する仕様をCNCFに寄贈",
+      "points": [
+        "エージェント本体とツール、資格情報や通信先などの権限要求を通常のOCIイメージにまとめます。",
+        "バージョン3では専用の成果物形式を廃止し、docker pullなどで扱えるようになりました。",
+        "初の準拠ランタイムはDocker Sandboxesで、権限を認めるかどうかはホスト側が判断します。"
+      ],
+      "impact": "開発者はGitHubリポジトリやsbx CLIを利用して、エージェントの権限定義の記述例を試用・検証できます。",
+      "glossary": [
+        {
+          "term": "OCI",
+          "explanation": "コンテナの画像フォーマットやランタイムの標準規格を策定・推進する業界標準化団体です。"
+        },
+        {
+          "term": "CNCF",
+          "explanation": "クラウドネイティブなオープンソース技術の普及とエコシステム育成を推進する非営利組織です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/jp/blogs/news/this-month-in-aws-observability-august-september-2026/",
+      "title": "今月の AWS オブザーバビリティ: 2026 年 8 月と 9 月",
+      "source": "AWS 日本語ブログ",
+      "genre": "other",
+      "publishedAt": "2026-10-02T11:22:51.000Z",
+      "summary": "複数クラウドのテレメトリを一元集約するCloudWatch Omniが一般提供されました。アラームに1〜2,880分のウォームアップ期間やカレンダー境界に揃える評価機能が加わりました。EC2上の自己管理型PostgreSQLやAurora DSQL向けのモニタリング機能が拡充されました。",
+      "headline": "CloudWatch Omniの一般提供やアラーム改善など新機能が発表",
+      "points": [
+        "複数クラウドのテレメトリを一元集約するCloudWatch Omniが一般提供されました。",
+        "アラームに1〜2,880分のウォームアップ期間やカレンダー境界に揃える評価機能が加わりました。",
+        "EC2上の自己管理型PostgreSQLやAurora DSQL向けのモニタリング機能が拡充されました。"
+      ],
+      "impact": "アラームの誤検知を減らしたい運用担当者や、マルチクラウド環境を一括監視したい管理者が新機能を活用できます。",
+      "glossary": [
+        {
+          "term": "オブザーバビリティ",
+          "explanation": "システムの出力データ（メトリクスやログなど）から内部の状態を把握・推測できる度合いのことです。"
+        },
+        {
+          "term": "テレメトリ",
+          "explanation": "遠隔のシステムから自動的に計測・収集されて送信されるログやメトリクスなどのデータ群です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.47news.jp/15026982.html",
+      "title": "【速報】ヤマト運輸、不正アクセスで顧客情報流出か",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-02T09:50:04.000Z",
+      "summary": "ヤマト運輸の通販向け決済サービスが不正アクセスを受け、顧客の個人情報が流出した可能性があると発表しました。流出の可能性があるのは氏名や住所、電話番号などで、クレジットカード情報やパスワードは含まれていません。",
+      "headline": "ヤマト運輸の決済サービスに不正アクセス、顧客情報流出の恐れ",
+      "points": [
+        "ヤマト運輸の通販向け決済サービスが不正アクセスを受け、顧客の個人情報が流出した可能性があると発表しました。",
+        "流出の可能性があるのは氏名や住所、電話番号などで、クレジットカード情報やパスワードは含まれていません。"
+      ],
+      "glossary": [
+        {
+          "term": "不正アクセス",
+          "explanation": "アクセス権限を持たない者がサーバーや情報システムへ不正に侵入し、データを閲覧・改ざんなどを行う行為です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 113,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 19186,
+    "outputTokens": 6449
+  },
+  "offline": false
+}
