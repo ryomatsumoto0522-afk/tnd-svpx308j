@@ -148,6 +148,9 @@ async function main(): Promise<void> {
         genre: e.pick.genre,
         publishedAt: c.publishedAt,
         summary: s.summary,
+        headline: s.headline,
+        points: s.points,
+        impact: s.impact,
         glossary: s.glossary,
         bodyMode: e.body.mode,
       });

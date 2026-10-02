@@ -7,11 +7,15 @@ const CSS = `
 :root{
   --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
   --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
 }
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
     --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
   }
 }
 *{box-sizing:border-box}
@@ -38,14 +42,28 @@ h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
 .panel[hidden]{display:none}
 .panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
 .js .panel>h2{display:none}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
-.card h3{font-size:1.02rem;line-height:1.5;margin:0 0 4px}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
 .card h3 a{text-decoration:none;color:var(--text)}
 .card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
 .src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
 .src a{color:var(--muted)}
 .tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
 .summary{margin:0}
+.top3{margin:16px 0 4px}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
 details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
 details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
 details.gloss dl{margin:8px 0 0}
@@ -106,21 +124,46 @@ function weekdayLabel(date: string): string {
   }).format(d);
 }
 
-function renderItem(item: DigestItem): string {
+/** 構造化された要約があればそれを、なければ（旧データ・オフライン）従来の要約文を出す */
+function renderBody(item: DigestItem): string {
+  const points = item.points ?? [];
+  if (!item.headline || points.length === 0) return `<p class="summary">${h(item.summary)}</p>`;
+  const impact = item.impact ? `<p class="impact"><b>影響</b>${h(item.impact)}</p>` : "";
+  return `<ul class="points">${points.map((p) => `<li>${h(p)}</li>`).join("")}</ul>${impact}`;
+}
+
+function renderItem(item: DigestItem, opts: { id?: string; num?: number } = {}): string {
   const safeUrl = isHttpUrl(item.url) ? item.url : "#";
   const modeTag = item.bodyMode === "feed" ? `<span class="tag">フィード本文から要約</span>` : "";
+  const structured = Boolean(item.headline && item.points?.length);
   const gloss =
     item.glossary.length > 0
       ? `<details class="gloss"><summary>用語メモ（${item.glossary.length}）</summary><dl>${item.glossary
           .map((g) => `<dt>${h(g.term)}</dt><dd>${h(g.explanation)}</dd>`)
           .join("")}</dl></details>`
       : "";
-  return `<article class="card">
-<h3><a href="${h(safeUrl)}" target="_blank" rel="noopener noreferrer">${h(item.title)}</a></h3>
-<p class="src">出典: <a href="${h(safeUrl)}" target="_blank" rel="noopener noreferrer">${h(item.source)}</a> · ${h(jstDate(new Date(item.publishedAt)))}${modeTag}</p>
-<p class="summary">${h(item.summary)}</p>
+  const link = (text: string) => `<a href="${h(safeUrl)}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+  const num = opts.num ? `<span class="num">${opts.num}</span>` : "";
+  // 構造化されていれば見出しを主役に、元タイトルは小さく添える
+  const head = structured
+    ? `<h3>${num}${link(h(item.headline ?? ""))}</h3>\n<p class="orig">原題: ${h(item.title)}</p>`
+    : `<h3>${num}${link(h(item.title))}</h3>`;
+  return `<article class="card g-${item.genre}"${opts.id ? ` id="${opts.id}"` : ""}>
+<span class="badge">${h(GENRE_LABEL[item.genre])}</span>
+${head}
+<p class="src">出典: ${link(h(item.source))} · ${h(jstDate(new Date(item.publishedAt)))}${modeTag}</p>
+${renderBody(item)}
 ${gloss}
 </article>`;
+}
+
+/** ページ先頭の「今日の注目」。重要度順の上位 3 件を目立たせる */
+function renderTop3(items: DigestItem[]): string {
+  const top = [...items].sort((a, b) => a.rank - b.rank).slice(0, 3);
+  if (top.length === 0) return "";
+  return `<section class="top3" aria-label="今日の注目"><h2>今日の注目 ${top.length}選</h2>${top
+    .map((it, i) => renderItem(it, { num: i + 1 }))
+    .join("\n")}</section>`;
 }
 
 export function renderPage(day: DigestDay, ctx: PageContext): string {
@@ -148,7 +191,7 @@ export function renderPage(day: DigestDay, ctx: PageContext): string {
       ? genres
           .map(
             (g) =>
-              `<section class="panel" id="panel-${g}" role="tabpanel"><h2>${h(GENRE_LABEL[g])}</h2>${(byGenre.get(g) ?? []).map(renderItem).join("\n")}</section>`,
+              `<section class="panel" id="panel-${g}" role="tabpanel"><h2>${h(GENRE_LABEL[g])}</h2>${(byGenre.get(g) ?? []).map((it) => renderItem(it)).join("\n")}</section>`,
           )
           .join("\n")
       : `<p class="empty">この日は掲載できる記事がありませんでした。</p>`;
@@ -189,6 +232,7 @@ ${day.offline ? `<p class="notice">オフラインプレビューです。要約
 <nav class="tabs" role="tablist" aria-label="ジャンル">${tabs}</nav>
 </header>
 <main>
+${renderTop3(day.items)}
 ${panels}
 </main>
 <footer>

@@ -40,7 +40,14 @@ export interface DigestItem {
   source: string;
   genre: Genre;
   publishedAt: string;
+  /** 全文の要約。新形式ではポイントをつなげたもの。旧データや構造化できない場合の表示に使う */
   summary: string;
+  /** ひとこと見出し（新形式のみ） */
+  headline?: string;
+  /** 要点（2〜3 個。新形式のみ） */
+  points?: string[];
+  /** 誰にどう影響するか。本文に書かれている場合だけ入る（新形式のみ） */
+  impact?: string;
   glossary: GlossaryEntry[];
   /** full = 記事本文から要約 / feed = フィード掲載の本文から要約 */
   bodyMode: "full" | "feed";
