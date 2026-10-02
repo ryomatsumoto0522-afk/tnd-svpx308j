@@ -146,7 +146,7 @@ function renderItem(item: DigestItem, opts: { id?: string; num?: number } = {}):
   const num = opts.num ? `<span class="num">${opts.num}</span>` : "";
   // 構造化されていれば見出しを主役に、元タイトルは小さく添える
   const head = structured
-    ? `<h3>${num}${link(h(item.headline ?? ""))}</h3>\n<p class="orig">原題: ${h(item.title)}</p>`
+    ? `<h3>${num}${link(h((item.headline ?? "").replace(/[。.]$/, "")))}</h3>\n<p class="orig">原題: ${h(item.title)}</p>`
     : `<h3>${num}${link(h(item.title))}</h3>`;
   return `<article class="card g-${item.genre}"${opts.id ? ` id="${opts.id}"` : ""}>
 <span class="badge">${h(GENRE_LABEL[item.genre])}</span>

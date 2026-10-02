@@ -38,6 +38,11 @@ test("構造化された要約は、見出し・ポイント・影響として�
   assert.match(html, /原題: Original Title/);
 });
 
+test("見出しの末尾の句点は表示しない", () => {
+  const html = renderPage(day([{ ...base, headline: "発表されました。", points: ["a点", "b点"] }]), ctx);
+  assert.match(html, />発表されました<\/a><\/h3>/);
+});
+
 test("影響が空なら影響ブロックを出さない", () => {
   const html = renderPage(day([{ ...base, headline: "見出し", points: ["a点", "b点"] }]), ctx);
   assert.doesNotMatch(html, /class="impact"/);
