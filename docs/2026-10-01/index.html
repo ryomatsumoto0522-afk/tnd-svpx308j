@@ -11,11 +11,15 @@
 :root{
   --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
   --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
 }
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
     --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
   }
 }
 *{box-sizing:border-box}
@@ -42,14 +46,28 @@ h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
 .panel[hidden]{display:none}
 .panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
 .js .panel>h2{display:none}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
-.card h3{font-size:1.02rem;line-height:1.5;margin:0 0 4px}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
 .card h3 a{text-decoration:none;color:var(--text)}
 .card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
 .src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
 .src a{color:var(--muted)}
 .tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
 .summary{margin:0}
+.top3{margin:16px 0 4px}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
 details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
 details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
 details.gloss dl{margin:8px 0 0}
@@ -74,97 +92,134 @@ footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font
 <nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">5</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button></nav>
 </header>
 <main>
-<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card">
+<section class="top3" aria-label="今日の注目"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer">Gemini 4 Argon: our next era of frontier intelligence</a></h3>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
+<p class="summary">Googleが、複雑な長期ワークフローやサイバーセキュリティ等に対応する最新のフロンティアモデル「Gemini 4 Argon」を発表しました。本モデルは出力トークン上限を従来の64Kから1Mトークンへと拡大しており、一回の処理でより深い思考や推論が可能です。初期価格は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルと設定され、テストを経て開発者や企業へ広く提供される予定です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>フロンティアモデル</dt><dd>最先端の能力や大規模な計算資源を用いて開発されるAIモデル。</dd><dt>トークン</dt><dd>AIがテキストを処理する際の基本となる単語や文字の単位。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3" target="_blank" rel="noopener noreferrer">トランプ政権とAI大手6社トップ、自主的な安全協定に署名 — AIを「SI」と呼ぶ大統領令も</a></h3>
+<p class="src">出典: <a href="https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
+<p class="summary">トランプ米大統領と主要テック企業6社のトップは、AI開発に関する自主的な安全協定「White House Accord on Super Intelligence」に署名しました。参加企業は社内監視や外部監査を含む4層の安全体制を構築することを約束しています。あわせて連邦機関の文書でAIを「スーパーインテリジェンス（SI）」と表記する大統領令も公布され、企業の自主規制を重視した安全基準の標準化が進むと考えられます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>自主規制</dt><dd>法律による強制ではなく、企業自身がルールを定めて守ること。</dd><dt>外部監査</dt><dd>組織の活動や安全対策を独立した第三者が検査・評価すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://zenn.dev/niqostudio/articles/5030c534b2c5d4" target="_blank" rel="noopener noreferrer">【2026年9月】OpenAI Agents APIの公開、サンドボックスの切り離しほか | AIアプリの技術スタックの変化を追う</a></h3>
+<p class="src">出典: <a href="https://zenn.dev/niqostudio/articles/5030c534b2c5d4" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
+<p class="summary">2026年9月、OpenAIが「Agents API」のパブリックベータを公開し、AIエージェントのセッション管理や復旧処理を任せられる仕組みを提供し始めました。これによりエージェントの実行環境とコード・ファイルを扱うサンドボックスを分離した構成などが可能になっています。さらに、文章生成ではなく選択やスコアなどの判断結果のみを返す判断モデルや機能拡張も相次いで登場しており、開発者が用途に合わせて柔軟にAI基盤を選択できるようになっています。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>サンドボックス</dt><dd>外部に影響を与えずにプログラムを安全に実行できる隔離環境。</dd><dt>API</dt><dd>アプリ同士がデータや機能を相互にやり取りするための仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
 <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer">Gemini 4 Argon: our next era of frontier intelligence</a></h3>
 <p class="src">出典: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
 <p class="summary">Googleが、複雑な長期ワークフローやサイバーセキュリティ等に対応する最新のフロンティアモデル「Gemini 4 Argon」を発表しました。本モデルは出力トークン上限を従来の64Kから1Mトークンへと拡大しており、一回の処理でより深い思考や推論が可能です。初期価格は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルと設定され、テストを経て開発者や企業へ広く提供される予定です。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>フロンティアモデル</dt><dd>最先端の能力や大規模な計算資源を用いて開発されるAIモデル。</dd><dt>トークン</dt><dd>AIがテキストを処理する際の基本となる単語や文字の単位。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-ai">
+<span class="badge">AI</span>
 <h3><a href="https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3" target="_blank" rel="noopener noreferrer">トランプ政権とAI大手6社トップ、自主的な安全協定に署名 — AIを「SI」と呼ぶ大統領令も</a></h3>
 <p class="src">出典: <a href="https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
 <p class="summary">トランプ米大統領と主要テック企業6社のトップは、AI開発に関する自主的な安全協定「White House Accord on Super Intelligence」に署名しました。参加企業は社内監視や外部監査を含む4層の安全体制を構築することを約束しています。あわせて連邦機関の文書でAIを「スーパーインテリジェンス（SI）」と表記する大統領令も公布され、企業の自主規制を重視した安全基準の標準化が進むと考えられます。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>自主規制</dt><dd>法律による強制ではなく、企業自身がルールを定めて守ること。</dd><dt>外部監査</dt><dd>組織の活動や安全対策を独立した第三者が検査・評価すること。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-ai">
+<span class="badge">AI</span>
 <h3><a href="https://zenn.dev/niqostudio/articles/5030c534b2c5d4" target="_blank" rel="noopener noreferrer">【2026年9月】OpenAI Agents APIの公開、サンドボックスの切り離しほか | AIアプリの技術スタックの変化を追う</a></h3>
 <p class="src">出典: <a href="https://zenn.dev/niqostudio/articles/5030c534b2c5d4" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
 <p class="summary">2026年9月、OpenAIが「Agents API」のパブリックベータを公開し、AIエージェントのセッション管理や復旧処理を任せられる仕組みを提供し始めました。これによりエージェントの実行環境とコード・ファイルを扱うサンドボックスを分離した構成などが可能になっています。さらに、文章生成ではなく選択やスコアなどの判断結果のみを返す判断モデルや機能拡張も相次いで登場しており、開発者が用途に合わせて柔軟にAI基盤を選択できるようになっています。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>サンドボックス</dt><dd>外部に影響を与えずにプログラムを安全に実行できる隔離環境。</dd><dt>API</dt><dd>アプリ同士がデータや機能を相互にやり取りするための仕組み。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-ai">
+<span class="badge">AI</span>
 <h3><a href="https://www.infoq.com/news/2026/10/typesafe-ai-jev-released/" target="_blank" rel="noopener noreferrer">TypeSafe AI Releases Jev: A Decision-Only Model That Returns Typed Probabilities Instead of Text</a></h3>
 <p class="src">出典: <a href="https://www.infoq.com/news/2026/10/typesafe-ai-jev-released/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-01</p>
 <p class="summary">TypeSafe AIは、文章生成を行わず型付きの確率的判断のみを返すAIモデル「Jev」を公開しました。Jevはテキストの代わりに選択肢やスコア、確率分布を返すため、プログラムから直接高速かつ低コストで利用することができます。Vercelなどのプラットフォームで急速に導入が進んでおり、従来の生成AIモデルと比べて応答の高速化や大幅な費用削減が見込めるため、問い合わせ分類や判断処理を行う開発者にとって強力な選択肢となります。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>レイテンシ</dt><dd>データ処理のリクエストから結果が返るまでの遅延時間。</dd><dt>分類器</dt><dd>データを事前に定めたカテゴリに自動で振り分けるプログラム。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-ai">
+<span class="badge">AI</span>
 <h3><a href="https://github.com/magnitudedev/magnitude" target="_blank" rel="noopener noreferrer">Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents</a></h3>
 <p class="src">出典: <a href="https://github.com/magnitudedev/magnitude" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
 <p class="summary">Magnitude（YC S25）は、使用している端末のハードウェアに合わせて自身を最適化するオープンソースの推論エンジンです。モデル実行前にデバイス上でカーネルをコンパイルおよびチューニングすることで、llama.cppよりも最大2倍高速にオープンモデルを実行できます。Apple Silicon、NVIDIA、AMD、CPUに対応しており、ワンクリックでPiやCodexなどの主要なエージェントと接続可能です。完全無料でデータが外部に出ないため、ローカルで安全にAIを活用できます。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>推論エンジン</dt><dd>学習済みAIモデルを用いて入力データに対する予測や処理を実行するソフトウェア。</dd><dt>カーネル</dt><dd>AI処理などの計算をハードウェア上で効率的に実行するための基盤的なプログラム。</dd></dl></details>
 </article></section>
-<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card">
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
 <h3><a href="https://inside.java/2026/09/30/faster-post-quantum-cryptography-with-jdk-intrinsics/" target="_blank" rel="noopener noreferrer">Faster Post-Quantum Cryptography with JDK Intrinsics</a></h3>
 <p class="src">出典: <a href="https://inside.java/2026/09/30/faster-post-quantum-cryptography-with-jdk-intrinsics/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-09-30</p>
 <p class="summary">JavaのJDKは、ML-KEMやML-DSAなどの耐量子暗号アルゴリズムにおいて、特定の処理を最適化されたマシン語に置き換えるイントリンシックに対応しました。これにより、CPUの機能を活用して暗号化処理のパフォーマンスを大幅に向上させることが可能です。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>イントリンシック</dt><dd>コンパイラが特定の処理を高速なCPU固有の命令へ直接置き換える仕組みです。</dd><dt>耐量子暗号</dt><dd>量子コンピュータでも解読が困難とされる次世代の暗号技術です。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
 <h3><a href="https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/" target="_blank" rel="noopener noreferrer">Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake</a></h3>
 <p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-01</p>
 <p class="summary">Amazon Aurora PostgreSQLは、データレイク内のApache IcebergやParquet形式のデータを直接クエリする機能に対応しました。ETL処理によるデータの複製や移動が不要になり、既存のPostgreSQLのツールやアプリケーションから統合的なデータ活用が可能になります。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ETL</dt><dd>データを抽出し、変換し、別の場所にロードする一連のデータ統合プロセスです。</dd><dt>データレイク</dt><dd>構造化データや非構造化データをそのままの形式で一元的に保存する巨大な保管庫です。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
 <h3><a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/" target="_blank" rel="noopener noreferrer">Amazon S3 Tables now support all Apache Iceberg V3 data types</a></h3>
 <p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-01</p>
 <p class="summary">Amazon S3 Tablesは、Apache Icebergの最新仕様であるV3の全データ型と新機能のサポートを開始しました。削除ベクターやvariant型などの新機能により、大規模な分析データの効率的な管理や処理の高速化が実現します。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Apache Iceberg</dt><dd>ペタバイト規模の大規模な分析データを管理するために設計されたオープンなテーブルフォーマットです。</dd><dt>スキーマ</dt><dd>データベースにおけるデータ構造や関係性の定義ルールのことです。</dd></dl></details>
 </article></section>
-<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card">
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
 <h3><a href="https://zenn.dev/okssusucha/articles/20260725-skillcorpus-agent-skill-ecosystem" target="_blank" rel="noopener noreferrer">SkillCorpusが80万個で測った、スキルは多いほど効くのか</a></h3>
 <p class="src">出典: <a href="https://zenn.dev/okssusucha/articles/20260725-skillcorpus-agent-skill-ecosystem" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
 <p class="summary">エージェント用スキルの数を増やすことが成果に直結するかを検証した研究「SkillCorpus」によると、スキルの数や見栄えの良い品質スコアはタスクの成功率を予測しませんでした。効き目を左右するのは、タスクに適合するスキルの在庫があることと、エージェントが実行と検証のループを回せる仕組みであることが明らかになりました。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>LLM</dt><dd>膨大なテキストデータを学習し、人間のように自然な文章生成や対話を行う大規模言語モデルのことです。</dd><dt>ベンチマーク</dt><dd>システムやソフトウェアの性能、処理速度、成果などを客観的に比較・測定するための評価基準やテストのことです。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
 <h3><a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener noreferrer">GitHub - nanaism/yomiyasu: AI生成された文章の不自然さを取り除き、人間にとって自然な日本語へ書き直すためのAgent Skill</a></h3>
 <p class="src">出典: <a href="https://github.com/nanaism/yomiyasu" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
 <p class="summary">AIが生成した日本語特有の不自然さを解消し、人間が読みやすい文章へ書き直すためのエージェントスキル『yomiyasu』が公開されました。動作主や目的語を明確にするなど統語構造に関する7つの原則を適用することで、情報密度の高い自然な日本語へ推敲します。</p>
 <details class="gloss"><summary>用語メモ（1）</summary><dl><dt>エージェントスキル</dt><dd>AIコーディング環境などで、特定のタスクを効率的に実行させるために手順やルールをまとめた定義ファイルのことです。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
 <h3><a href="https://zenn.dev/algoartis/articles/0b1c731881b25c" target="_blank" rel="noopener noreferrer">AI-Slopな日本語を構造レベルで読みやすくするSkill『yomiyasu（よみやす）』を作りました</a></h3>
 <p class="src">出典: <a href="https://zenn.dev/algoartis/articles/0b1c731881b25c" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
 <p class="summary">AI生成文章に見られる不自然な表現である「AI-Slop」の原因を言語学的な観点から分析し、統語構造の復元によって自然な日本語に修正するスキル『yomiyasu』がリリースされました。英語の直訳調の表現や比喩動詞を排除し、具体的な動作主や因果関係を明確にするのが特徴です。</p>
 <details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コーパス</dt><dd>言語の研究や分析を行うために、自然言語の文章を大規模に収集してデータベース化したもののことです。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
 <h3><a href="https://zenn.dev/mskbhd/articles/lab-801-natural-japanese-lint-py-ai" target="_blank" rel="noopener noreferrer">natural-japanese の lint.py を自分の記事74本にかけて誤検知を数えた</a></h3>
 <p class="src">出典: <a href="https://zenn.dev/mskbhd/articles/lab-801-natural-japanese-lint-py-ai" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
 <p class="summary">AI生成された日本語の「AI臭さ」を検出するツール『natural-japanese』の検証記事では、自身の技術記事74本に対して実行した結果、指摘された件数の過半数が機械的な誤検知であったことが報告されています。固有名詞が文頭に並ぶケースなどが誤検知の大部分を占めており、自動の推敲ループに組み込むには人間による仕分けが必要であると結論づけています。</p>
 <details class="gloss"><summary>用語メモ（1）</summary><dl><dt>形態素解析</dt><dd>文章を意味を持つ最小単位の単語に分割し、それぞれの品詞などを判別する言語処理技術のことです。</dd></dl></details>
 </article></section>
-<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card">
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
 <h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/" target="_blank" rel="noopener noreferrer">Amazon Bedrock expands Claude models in-region support in the UK (London)</a></h3>
 <p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-01</p>
 <p class="summary">AWSは、Amazon Bedrockの英国（ロンドン）リージョンにおいて、AnthropicのClaude Opus 5.5およびClaude Sonnet 5のインリージョンサポートを開始しました。このアップデートにより、金融サービス、ヘルスケア、公共部門などの顧客は、推論処理やデータの取り扱いを英国国内のリージョン内に留めたまま、モデルを大規模に活用できます。データ処理が領域外に出ないため、厳しいデータ規制を遵守しながら最新のAIを利用可能です。</p>
 <details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Amazon Bedrock</dt><dd>AWSが提供する、複数の高性能なAIモデルをAPI経由で利用できるフルマネージドサービス。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-infra">
+<span class="badge">インフラ</span>
 <h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/" target="_blank" rel="noopener noreferrer">Amazon Aurora serverless now scales faster to support agentic AI and other bursty workloads</a></h3>
 <p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-01</p>
 <p class="summary">Amazon Aurora serverlessの機能が拡張され、1秒以内に最大16 ACUまで即座に容量を追加し、最大256 ACUまで急速にスケーリングできるようになりました。ワークロード完了後は自動で容量がゼロまで縮小するため、コスト管理が容易です。これにより、突然のアクセス負荷や長い待機時間が発生しやすいエージェント型AIアプリケーションなどの急激な負荷変動に迅速に対応できるようになります。</p>
 <details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ACU</dt><dd>Aurora Capacity Unitの略で、データベースのメモリやCPUリソースの割り当てを示す単位。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-infra">
+<span class="badge">インフラ</span>
 <h3><a href="https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/" target="_blank" rel="noopener noreferrer">Cursor Uses S3 WAL to Scale Git Storage to More than 300 Pushes per Second</a></h3>
 <p class="src">出典: <a href="https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-09-30</p>
 <p class="summary">Cursorは、S3のWAL（書き込み前ログ）を信頼できる情報源として活用する新しいGitストレージアーキテクチャ「Continuity」を開発しました。従来のレプリカ間同期への依存を無くしたことで、S3 Express One Zoneを使用したテストでは毎秒300回を超えるプッシュ処理を記録しました。この設計変更により、大規模なCI処理やコーディングエージェントが作成する多数のリポジトリに対して、整合性を保ちながら読み書きを効率的に拡張できます。</p>
 <details class="gloss"><summary>用語メモ（2）</summary><dl><dt>WAL</dt><dd>データの変更内容をデータベース等へ反映する前に、ログファイルに先行して記録する手法。</dd><dt>レプリカ</dt><dd>主なデータストアから複製され、バックアップや負荷分散のために同期維持されるデータのコピー。</dd></dl></details>
 </article>
-<article class="card">
+<article class="card g-infra">
+<span class="badge">インフラ</span>
 <h3><a href="https://www.netlify.com/blog/edge-functions-firecracker-microvms/" target="_blank" rel="noopener noreferrer">5x faster Edge Functions: V8 isolates to Firecracker MicroVMs</a></h3>
 <p class="src">出典: <a href="https://www.netlify.com/blog/edge-functions-firecracker-microvms/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
 <p class="summary">NetlifyはEdge Functionsの基盤を従来のV8 isolatesからMicroVMsに変更し、中央値で約5倍の高速化を実現しました。これにより、開発者はコードの書き方を変えることなく、より高速で信頼性の高いエッジコンピューティングを利用できるようになります。</p>

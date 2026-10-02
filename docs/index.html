@@ -11,11 +11,15 @@
 :root{
   --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
   --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
 }
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
     --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
   }
 }
 *{box-sizing:border-box}
@@ -42,14 +46,28 @@ h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
 .panel[hidden]{display:none}
 .panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
 .js .panel>h2{display:none}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
-.card h3{font-size:1.02rem;line-height:1.5;margin:0 0 4px}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
 .card h3 a{text-decoration:none;color:var(--text)}
 .card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
 .src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
 .src a{color:var(--muted)}
 .tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
 .summary{margin:0}
+.top3{margin:16px 0 4px}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
 details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
 details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
 details.gloss dl{margin:8px 0 0}
@@ -69,112 +87,186 @@ footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font
 <header class="top">
 <h1>毎朝のテックニュース</h1>
 <p class="date">2026年10月2日(金)</p>
-<p class="meta">更新 2026-10-02 08:10 · 取得ソース 18/18 · 選定 17件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+<p class="meta">更新 2026-10-02 12:38 · 取得ソース 18/18 · 選定 19件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
 
-<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">5</span></button></nav>
 </header>
 <main>
-<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card">
-<h3><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Gemini 4 Argon: our next era of frontier intelligence</a></h3>
+<section class="top3" aria-label="今日の注目"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Googleが新型AIモデル「Gemini 4 Argon」を発表しました。</a></h3>
+<p class="orig">原題: Gemini 4 Argon: our next era of frontier intelligence</p>
 <p class="src">出典: <a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-10-01</p>
-<p class="summary">Google DeepMindが、ソフトウェア開発やサイバーセキュリティ防御などの複雑な業務に対応する新フロンティアモデル「Gemini 4 Argon」を発表しました。長時間のワークフローにおける深い推論を維持できる設計で、出力トークン上限が従来の64Kから1Mへ大幅に拡大されています。まずはFairwind Programを通じた信頼できる防御者向けに提供され、安全対策を検証しながら開発者や企業へ段階的に展開される予定です。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>フロンティアモデル</dt><dd>最先端の能力を持ち、複雑なタスクを実行できる最高水準のAIモデル。</dd><dt>トークン</dt><dd>AIが自然言語を処理する際にテキストを分割する最小単位のこと。</dd></dl></details>
+<ul class="points"><li>長時間の推論ワークフローに対応し、一部の防御者向けに先行提供されます。</li><li>出力トークン上限が従来の64Kから1Mトークンへと大幅に拡大されました。</li><li>価格は入力100万トークンあたり2ドル、出力10ドルに設定されています。</li></ul><p class="impact"><b>影響</b>開発者や企業は、段階的な展開や安全対策の検証を経て一般提供されるのを待つ必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIが文章を処理する際の最小の文字列の単位のこと。</dd></dl></details>
 </article>
-<article class="card">
-<h3><a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener noreferrer">Introducing Clef: our open-source decision models, and new RL fine-tuning platform</a></h3>
-<p class="src">出典: <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-02</p>
-<p class="summary">Cloudflareが、Workers AI上で動作する意思決定向けAIモデル「Clef」および「Clef-flash」を発表し、オープンソースとして公開しました。このモデルは入力に対して迅速かつ安価に構造化された確率付きの出力を返し、人間を介さず自律的な判断を行えるエージェント構築を支援します。画像入力に対応するビジョンエンコーダーや64kのコンテキスト長を備えており、用途に応じた強化学習による微調整機能も提供されます。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>意思決定モデル</dt><dd>入力情報から次の行動や分類を確率に基づいて素早く判定するAIモデル。</dd><dt>強化学習</dt><dd>試行錯誤を通じて環境から得られる報酬を最大化するように学習する手法。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)</a></h3>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">AWSがクラウド環境を最適化するAI機能のプレビュー版を発表した。</a></h3>
+<p class="orig">原題: Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)</p>
 <p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-02</p>
-<p class="summary">AWSは、クラウド環境を分析してコストやセキュリティなどの改善案を提供する「AWS Well-Architected Agent」のパブリックプレビューを開始しました。65以上のAWSサービスを対象にリソース設定や利用状況を分析し、ユーザーが設定したビジネス目標に応じた優先順位付きの推奨事項を作成します。個別のリソース修正手順からIaCのコード変更まで提示されるため、手動監査を行わずに効果的な環境最適化が可能です。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>IaC</dt><dd>サーバーやネットワークなどのインフラ構成をコードで定義・管理する手法。</dd><dt>パブリックプレビュー</dt><dd>正式リリース前に一般のユーザーが試用できるように公開される先行版のこと。</dd></dl></details>
+<ul class="points"><li>AWS環境を分析し、コストやセキュリティ等の改善策を提示するサービスです。</li><li>65以上のAWSサービスにわたるベストプラクティスを基に推奨事項を生成します。</li><li>エージェントプロファイル作成後、24時間以内に改善策が提示されます。</li></ul><p class="impact"><b>影響</b>利用を始めるには、エージェントプロファイルの作成やIAMロールの設定を行い権限を付与する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IaC</dt><dd>インフラの構成や構築手順をコードとして管理・自動化する手法。</dd></dl></details>
 </article>
-<article class="card">
-<h3><a href="https://qiita.com/picnic/items/c78fb9b182bca71b5956" target="_blank" rel="noopener noreferrer">Claude Code v2.1.287 解説：Claude Mods追加とセキュリティ修正・1Mコンテキスト既定化</a></h3>
-<p class="src">出典: <a href="https://qiita.com/picnic/items/c78fb9b182bca71b5956" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-02</p>
-<p class="summary">Claude Codeのバージョンv2.1.287がリリースされ、プラグインを拡張するClaude Modsの追加やセキュリティ修正が実施されました。BedrockやVertexなどのクラウド環境では既定のコンテキスト長が1Mに拡大され、安全機能として危険なファイル書き込み時に人の確認を求める挙動が強化されています。さらに、テレメトリでのプロンプト漏えい対策やMCPサーバーの接続設定など、既存環境への影響を考慮した対応が必要です。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンテキスト長</dt><dd>AIモデルが一度に処理・記憶できる入力テキストの最大量のこと。</dd><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを接続するための共通規格。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://zenn.dev/syoshida07/articles/f98e09eb1d64f5" target="_blank" rel="noopener noreferrer">AIに監査ログを管理させてはいけない、自律型エージェント時代に求められるセキュリティと多重証跡の構築</a></h3>
-<p class="src">出典: <a href="https://zenn.dev/syoshida07/articles/f98e09eb1d64f5" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
-<p class="summary">AIエージェントが自身の行動履歴である監査ログを誤って削除してしまう可能性を指摘する研究が発表されました。AIの普及が進む中、システム設計ではAIから隔離された外部基盤や多重の証跡を用意することが重要になります。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>監査ログ</dt><dd>システムやソフトウェアがいつ、誰によってどのような操作が行われたかを記録した履歴データのこと。</dd><dt>報酬ハッキング</dt><dd>AIが本来の目的とは異なり、与えられた評価指標（スコア）を最大化させるために予期せぬ行動をとる現象。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://qiita.com/sescore/items/93fec44ce16c433ad726" target="_blank" rel="noopener noreferrer">Claude Codeを1年使って固まった実践Tipsと、単価を見直した夜の話</a></h3>
-<p class="src">出典: <a href="https://qiita.com/sescore/items/93fec44ce16c433ad726" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-02</p>
-<p class="summary">AIコーディングツールであるClaude Codeを実務で効率的に活用するための具体的な設定やルールの管理方法が紹介されています。権限の厳格な制御や自動チェックの導入により、安全かつ円滑な開発体制を築くことができます。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>CLAUDE.md</dt><dd>AIコーディングツールの挙動やコーディング規約などをプロジェクトごとに指定するための設定ファイルのこと。</dd><dt>CI</dt><dd>プログラムの変更を継続的にテスト・ビルドし、品質を保つための自動化の仕組みのこと。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://aws.amazon.com/jp/blogs/news/automated-reasoning-checks-rewriting-chatbot-reference-implementation/" target="_blank" rel="noopener noreferrer">自動推論チェックで回答を書き換えてハルシネーションを抑えるチャットボットのリファレンス実装</a></h3>
-<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/automated-reasoning-checks-rewriting-chatbot-reference-implementation/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-01</p>
-<p class="summary">自動推論チェックを用いて生成AIの回答を反復的に書き換えることで、ハルシネーションを抑制するチャットボットのリファレンス実装が公開されました。数学的な検証に基づく監査ログを生成し、企業の規制環境でも透明性の高い運用を可能にします。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ハルシネーション</dt><dd>AIが事実とは異なる不正確な情報を、もっともらしく自信を持って生成してしまう現象のこと。</dd><dt>自動推論</dt><dd>論理学や数学のルールに基づいて、前提から確実に正しい結論を導き出す仕組みのこと。</dd></dl></details>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer">英バークレイズ銀行が「Claude」の全社的な導入拡大を発表した。</a></h3>
+<p class="orig">原題: Barclays scales Claude to upgrade operations and improve client experience</p>
+<p class="src">出典: <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-10-01</p>
+<ul class="points"><li>ソフトウェア開発の加速や業務効率化に向け、全社でClaudeの導入を進めます。</li><li>開発者向けツールClaude Codeの採用率を2026年末までに50%にする計画です。</li><li>市場部門では毎日約12万件の顧客メールの自動分類などに活用されています。</li></ul>
+
 </article></section>
-<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card">
-<h3><a href="https://inside.java/2026/09/28/performance-update-jdk27/" target="_blank" rel="noopener noreferrer">Performance Improvements in JDK 27</a></h3>
-<p class="src">出典: <a href="https://inside.java/2026/09/28/performance-update-jdk27/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-09-28</p>
-<p class="summary">JDK 27におけるパフォーマンス改善の動向について、ライブラリやガベージコレクションなどの最適化が報告されました。コンパクトオブジェクトヘッダがデフォルト有効化されるなど、多くのコミットを経て全体の処理効率が向上しています。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JDK</dt><dd>Javaのプログラムを開発・実行するために必要なソフトウェアやツールの開発キットのこと。</dd><dt>JITコンパイラ</dt><dd>プログラムの実行時にコードを機械語へ動的に翻訳し、処理を高速化する仕組みのこと。</dd></dl></details>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Googleが新型AIモデル「Gemini 4 Argon」を発表しました。</a></h3>
+<p class="orig">原題: Gemini 4 Argon: our next era of frontier intelligence</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-10-01</p>
+<ul class="points"><li>長時間の推論ワークフローに対応し、一部の防御者向けに先行提供されます。</li><li>出力トークン上限が従来の64Kから1Mトークンへと大幅に拡大されました。</li><li>価格は入力100万トークンあたり2ドル、出力10ドルに設定されています。</li></ul><p class="impact"><b>影響</b>開発者や企業は、段階的な展開や安全対策の検証を経て一般提供されるのを待つ必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIが文章を処理する際の最小の文字列の単位のこと。</dd></dl></details>
 </article>
-<article class="card">
-<h3><a href="https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray" target="_blank" rel="noopener noreferrer">A Bootiful Podcast: JReleaser creator and fellow Java Champion Andres Almiray</a></h3>
-<p class="src">出典: <a href="https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-01</p>
-<p class="summary">ポッドキャスト番組にて、JavaチャンピオンのAndres Almiray氏がゲストとして登場しました。デスクトップJavaの未来や、Javaアプリケーションのビルドやリリースを自動化するツールJReleaserについて熱く語られています。ソフトウェアを円滑に出荷し、開発者の生活をより良くするための貴重な洞察が詰まっています。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JReleaser</dt><dd>Javaプロジェクトのリリース作成やパッケージング、配信を自動化するためのツールです。</dd><dt>JavaFX</dt><dd>Javaでリッチなクライアントアプリケーションを構築するためのユーザーインターフェースフレームワークです。</dd></dl></details>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer">英バークレイズ銀行が「Claude」の全社的な導入拡大を発表した。</a></h3>
+<p class="orig">原題: Barclays scales Claude to upgrade operations and improve client experience</p>
+<p class="src">出典: <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-10-01</p>
+<ul class="points"><li>ソフトウェア開発の加速や業務効率化に向け、全社でClaudeの導入を進めます。</li><li>開発者向けツールClaude Codeの採用率を2026年末までに50%にする計画です。</li><li>市場部門では毎日約12万件の顧客メールの自動分類などに活用されています。</li></ul>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener noreferrer">Cloudflareがオープンな意思決定AIモデル「Clef」を公開した。</a></h3>
+<p class="orig">原題: Clef: Open-weight decision models, and new RL fine-tuning platform</p>
+<p class="src">出典: <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>エージェントの高速な状況判断に特化した決定モデルClefとClef-flashを提供します。</li><li>Apache 2.0ライセンスで公開され、JevのAPIと完全な互換性を持ちます。</li><li>画像を扱えるビジョンエンコーダーを備え、文脈長は64kに対応しています。</li></ul><p class="impact"><b>影響</b>開発者は、Workers AIやHugging Faceを通じてモデルを入手し実行できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ファインチューニング</dt><dd>事前学習済みモデルを用途に合わせて追加学習させ、最適化する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://earendil.com/posts/pi-1-0/" target="_blank" rel="noopener noreferrer">Earendil社が、拡張性と安定性を高めたAIエージェント基盤「Pi 1.0」をリリースしました。</a></h3>
+<p class="orig">原題: Pi 1.0 | Earendil</p>
+<p class="src">出典: <a href="https://earendil.com/posts/pi-1-0/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-02</p>
+<ul class="points"><li>Pi 1.0では、MCPのネイティブサポートや拡張機能のサポートなどが新たに追加されました。</li><li>長時間のタスクを実行するための実験的パッケージ「Pi Durable」も同時に公開されました。</li></ul><p class="impact"><b>影響</b>開発者は指定のインストールコマンドを使用してPi 1.0や実験的パッケージを利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部データソースやツールを安全に接続するためのオープンな標準プロトコルです。</dd><dt>TUI</dt><dd>テキストベースの画面で操作を行う、CUIを拡張したユーザーインターフェースです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://tellme.tokyo/post/2026/10/01/ai-agent-first-dotfiles/" target="_blank" rel="noopener noreferrer">ターミナルの主な利用者がAIになったため、dotfilesをAI向けに作り直した</a></h3>
+<p class="orig">原題: dotfiles を AI agent のために作り変えた</p>
+<p class="src">出典: <a href="https://tellme.tokyo/post/2026/10/01/ai-agent-first-dotfiles/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
+<ul class="points"><li>シェルのデフォルト設定をAI向けとし、人間向けの設定は条件に合致した場合のみ読み込む仕組みにした。</li><li>AIが標準的なコマンド挙動で迷わず作業できるよう、エイリアスの削除や必要なツールの事前導入を行った。</li><li>ファイルをゴミ箱へ安全に送る自作コマンド「gomi」に「rm」のふりをさせ、誤操作を防ぎつつ再利用可能にした。</li></ul><p class="impact"><b>影響</b>AIエージェントとターミナル環境を共同利用する開発者が、環境設定を見直す必要がある。</p>
+<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>dotfiles</dt><dd>Unix系OSにおいて、シェルやエディタなどの設定を保存するドットから始まるファイル群の総称。</dd><dt>エイリアス</dt><dd>長いコマンドやオプション付きのコマンドに、短い別の名前を付けて呼び出せるようにする機能。</dd><dt>TTY</dt><dd>ユーザーがキーボードから入力し画面に出力するための、端末や仮想端末を表す入出力インタフェース。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.lifehacker.jp/article/2610-use-claude-code-every-day-tasks-nothing-coding/" target="_blank" rel="noopener noreferrer">Claude Codeは非エンジニアの日常的なPC作業も効率化する</a></h3>
+<p class="orig">原題: Claude Codeは、コードを書かない人こそ使える。散らかったフォルダもWindowsのエラーも「頼むだけ」で片づいた | ライフハッカー・ジャパン</p>
+<p class="src">出典: <a href="https://www.lifehacker.jp/article/2610-use-claude-code-every-day-tasks-nothing-coding/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-01</p>
+<ul class="points"><li>Claude Codeはファイル整理や画像処理、エラー調査などを対話形式で実行できます。</li><li>ダウンロードフォルダの整理や、ImageMagickを用いた一括画像変換などをコマンドの暗記なしで行えます。</li><li>Windowsのエラー調査や3Dモデリング、スマートホームの管理なども対話を通じてサポートを受けられます。</li></ul><p class="impact"><b>影響</b>PCでのファイル管理やツール操作を効率化したいユーザーが、確認を行いながら安全に活用できます。</p>
+<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>シェルコマンド</dt><dd>オペレーティングシステムを操作するためのテキストベースの命令や指示のこと。</dd><dt>ImageMagick</dt><dd>画像ファイルの変換やリサイズなどをコマンドラインで処理できるソフトウェアのこと。</dd><dt>YAML</dt><dd>設定ファイルなどでよく使われる、人間にとって読み書きしやすいデータシリアライズ言語のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://note.com/npaka/n/n4a1185074686" target="_blank" rel="noopener noreferrer">一般的なGPUとPCリソースで巨大なMoEモデルを動かす「Strata」</a></h3>
+<p class="orig">原題: 12GB VRAMで125Bモデルを動かす「Strata」の概要｜npaka</p>
+<p class="src">出典: <a href="https://note.com/npaka/n/n4a1185074686" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-02</p>
+<ul class="points"><li>StrataはGPU・CPU・RAM・SSDを組み合わせて巨大モデルを動かすオープンソースのAI推論エンジンです。</li><li>125Bパラメータ級のモデルを、RTX 5070 12GBのような一般的なGPUでも実行できるように設計されています。</li><li>頻繁に使うExpertをVRAMへキャッシュし、投機적デコードを用いて約1.6〜1.8倍の高速化を実現します。</li></ul><p class="impact"><b>影響</b>64GB以上のRAMと12〜24GBのVRAMを持つPCで、100Bを超える大規模なローカルLLMを実行したい開発者が利用できます。</p>
+<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>VRAM</dt><dd>画像や動画の描画、およびAIの処理で使われるデータを一時的に保存するためのGPU専用のメモリです。</dd><dt>MoE</dt><dd>入力に応じて専門家（Expert）と呼ばれる複数の小規模なモデルを切り替えながら処理を行うAIのアーキテクチャです。</dd><dt>量子化</dt><dd>モデルの重みの精度を落とすことで、ファイルサイズやメモリ使用量を削減し、実行速度を向上させる技術です。</dd></dl></details>
 </article></section>
-<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card">
-<h3><a href="https://github.com/maanHimself/OpenDLSS-NR" target="_blank" rel="noopener noreferrer">OpenDLSS: A Vulkan Reimplementation of Nvidia&#39;s DLSS 5 Neural Rendering Network</a></h3>
-<p class="src">出典: <a href="https://github.com/maanHimself/OpenDLSS-NR" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-09-30</p>
-<p class="summary">NVIDIAのニューラルレンダリングネットワークDLSS 5をVulkan環境で再実装したオープンソースプロジェクトOpenDLSSが公開されました。オリジナルとバイト単位で一致する処理をGPUのテンソルコア上で実行し、高解像度化ではなく生成AIによるディテールの追加を行います。ブラウザ向けのWebGPUポートも用意されており、多様な環境での動作検証が可能です。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Vulkan</dt><dd>高効率でグラフィックスやコンピュートを制御できる、クロスプラットフォーム対応のローレベルAPIです。</dd><dt>WebGPU</dt><dd>ブラウザ上で高性能な3Dグラフィックスや並列計算処理を実行するためのモダンなWeb標準APIです。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://github.com/streetcomplete/StreetComplete/issues/5421" target="_blank" rel="noopener noreferrer">StreetComplete on iOS is now in public beta</a></h3>
-<p class="src">出典: <a href="https://github.com/streetcomplete/StreetComplete/issues/5421" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
-<p class="summary">オープンソースの地図編集アプリStreetCompleteのiOS版がパブリックベータ版として公開されました。Kotlin MultiplatformとCompose Multiplatformを活用することで、Android版とコードベースを共有しながら効率的な移植が進められています。現在は機能の移植が約50%完了しており、コミュニティからのコントリビューションや開発への参加が広く歓迎されています。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Kotlin Multiplatform</dt><dd>複数のプラットフォーム間でビジネスロジックなどのコードを共有できるKotlinの仕組みです。</dd><dt>Compose Multiplatform</dt><dd>宣言型のUI構築フレームワークを複数のプラットフォームで共有して利用できるようにする技術です。</dd></dl></details>
-</article></section>
-<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card">
-<h3><a href="https://blog.cloudflare.com/cloudflare-k2-streams/" target="_blank" rel="noopener noreferrer">Cloudflare K2: serverless event streams</a></h3>
-<p class="src">出典: <a href="https://blog.cloudflare.com/cloudflare-k2-streams/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
-<p class="summary">Cloudflareは、イベントの送受信元を分離してデータを蓄積できるサーバーレスのイベントストリーミング基盤Cloudflare K2のパブリックベータ版を発表しました。R2オブジェクトストレージを活用して順序づけられたログを構築し、大規模なデータ量と長期保存に対応します。分散システムの複雑さを軽減しつつ、ダウンタイム発生時でもデータの損失を防ぐことが可能です。</p>
-<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>サーバーレス</dt><dd>開発者がサーバーの管理やプロビジョニングを行うことなく、コードやアプリケーションを実行できる仕組みです。</dd><dt>オブジェクトストレージ</dt><dd>データをファイル単位でメタデータとともにフラットな構造で保存する、大容量データ向けのエッジストレージです。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-org-enablement-policies/" target="_blank" rel="noopener noreferrer">Amazon GuardDuty now supports centralized management using AWS Organizations declarative policies</a></h3>
-<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-org-enablement-policies/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-02</p>
-<p class="summary">Amazon GuardDutyがAWS Organizationsの宣言型ポリシーに対応し、組織内の全アカウントとリージョンで脅威検知の中央管理が可能になりました。管理者は組織全体で一貫した設定ベースラインを適用でき、大規模な環境での設定の不整合を防ぐことができます。</p>
-<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AWS Organizations</dt><dd>複数のAWSアカウントを集中管理し、一元的なガバナンスやポリシー適用を行えるサービス。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-8-sept-2026-updates/" target="_blank" rel="noopener noreferrer">Amazon Corretto 8 September 2026 Patch Updates</a></h3>
-<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-8-sept-2026-updates/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-01</p>
-<p class="summary">Amazonは、OpenJDKの長期サポート（LTS）版であるAmazon Corretto 8のパッチアップデート「Corretto 8u504」の提供を開始しました。このパッチにはtzdata 2026dの更新が含まれており、各Linuxのリポジトリなどから導入できます。</p>
-<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>OpenJDK</dt><dd>Javaのオープンソース開発環境であるJava Development Kitのオープンソース実装。</dd></dl></details>
-</article>
-<article class="card">
-<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/" target="_blank" rel="noopener noreferrer">Amazon DynamoDB Accelerator (DAX) is now available in additional Regions</a></h3>
-<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-02</p>
-<p class="summary">AWSは、Amazon DynamoDB Accelerator（DAX）を新たに17のリージョンで利用可能にすると発表しました。これにより、対象地域のユーザーはインメモリキャッシュによる高速な読み込み処理の恩恵を受けつつ、現地のデータレジデンシー要件に対応しやすくなります。</p>
-<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>インメモリキャッシュ</dt><dd>頻繁にアクセスされるデータを高速な主記憶装置上に一時保存し、処理を高速化する仕組み。</dd></dl></details>
-</article></section>
-<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card">
-<h3><a href="https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html" target="_blank" rel="noopener noreferrer">How to speed up the Rust compiler in September 2026</a></h3>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html" target="_blank" rel="noopener noreferrer">Rustコンパイラのビルド時間が直近2ヶ月で約4.6%高速化した。</a></h3>
+<p class="orig">原題: How to speed up the Rust compiler in September 2026</p>
 <p class="src">出典: <a href="https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
-<p class="summary">直近2ヶ月間でRustコンパイラの性能が大幅に向上し、ベンチマークの平均処理時間が約4.57%短縮されました。LLVMのアップグレードや新しい借用チェッカーなどの導入に伴うコンパイル時間の増加に対し、様々な最適化が行われています。</p>
-<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンパイラ</dt><dd>人間が書いたプログラミング言語のコードを、コンピュータが実行できる機械語に翻訳するソフトウェア。</dd></dl></details>
+<ul class="points"><li>2026年7月から9月の2ヶ月間でRustコンパイラの平均処理時間が4.57%削減されました。</li><li>LLVM 23への移行やClippyへのPGO導入などにより一部で大幅な高速化を達成しています。</li><li>Nightlyで有効化された新ボローチェッカーの性能低下に向け、データ構造の最適化などが進行中です。</li></ul><p class="impact"><b>影響</b>コンパイラ性能の詳細に関心がある開発者は、公開された解説記事で取り組みを確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>PGO</dt><dd>実際のプログラム実行データを用いてコンパイラが生成コードを最適化する手法。</dd><dt>Nightly</dt><dd>開発中の最新コードから毎日自動生成される、新機能を先行テストするための版。</dd></dl></details>
 </article>
-<article class="card">
-<h3><a href="https://www.infoq.com/news/2026/10/snapdragon-x2-linux/" target="_blank" rel="noopener noreferrer">Qualcomm Unveils Linux Preview on Snapdragon X2 to Accelerate Upstream ARM Laptops</a></h3>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://blog.gitbutler.com/git-3-sha-256" target="_blank" rel="noopener noreferrer">次期Git 3.0でハッシュがSHA-256に変更されることに懸念が出た。</a></h3>
+<p class="orig">原題: Git 3.0&#39;s upcoming SHA-256 default will be a costly mistake</p>
+<p class="src">出典: <a href="https://blog.gitbutler.com/git-3-sha-256" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>Git 3.0で既定ハッシュ関数をSHA-1からSHA-256へ変更する計画に対し批判的意見が上がっています。</li><li>SHA-1の理論的脆弱性は報告されていますが、通常利用での偶発的な衝突は発生しません。</li><li>アルゴリズム変更のメリットに比べ、互換性の喪失や移行コストなどの弊害が大きいと主張されています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ハッシュ関数</dt><dd>任意の長さのデータを固定長の数値や文字列に変換する不可逆な計算手法。</dd><dt>衝突攻撃</dt><dd>同じハッシュ値を出力する異なる2つのデータを意図的に作成するサイバー攻撃手法。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://turbopuffer.com/blog/rip-vector-database" target="_blank" rel="noopener noreferrer">turbopufferが検索性能向上のためストレージ構造を変更する</a></h3>
+<p class="orig">原題: RIP, vector database</p>
+<p class="src">出典: <a href="https://turbopuffer.com/blog/rip-vector-database" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>turbopufferは、検索速度をさらに高めるためにv3へのストレージ構造の変更を行っている。</li><li>従来のANNベクトルインデックスを中心とした設計から、新たなプライマリインデックスへの移行を進めている。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ベクトルデータベース</dt><dd>高次元ベクトルデータを効率的に保存し、類似性検索を高速に行うためのデータベースのこと。</dd><dt>インデックス</dt><dd>データベースの検索速度を向上させるために作成されるデータの索引のこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://qiita.com/uni928/items/2434c7875a298ea00c3e" target="_blank" rel="noopener noreferrer">仕様一覧とコードコメントの併用でAIの暗黙の仕様変更を防ぐ</a></h3>
+<p class="orig">原題: 暗黙の仕様変更を防ぐ小さな対策</p>
+<p class="src">出典: <a href="https://qiita.com/uni928/items/2434c7875a298ea00c3e" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-02</p>
+<ul class="points"><li>AIにコードを修正させる際、過去に決めた仕様が会話の流れから抜けてしまう課題がある。</li><li>Markdownによる仕様一覧の作成とコード内コメントの記載を組み合わせる対策を提案している。</li></ul><p class="impact"><b>影響</b>開発者はカスタム指示を活用し、意図しない仕様変更を防ぐ対策を試すことができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>カスタム指示</dt><dd>AIモデルに対して、応答のルールや前提条件をあらかじめ設定しておく機能のこと。</dd><dt>Markdown</dt><dd>文章を記述するための軽量マークアップ言語の一つで、読み書きのしやすさが特徴のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://svelte.dev/blog/sveltekit-3-is-here" target="_blank" rel="noopener noreferrer">SvelteKit 3.0が公開され自動移行ツールなどが提供された。</a></h3>
+<p class="orig">原題: SvelteKit 3</p>
+<p class="src">出典: <a href="https://svelte.dev/blog/sveltekit-3-is-here" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>Svelteの公式WebフレームワークであるSvelteKit 3.0が正式リリースされました。</li><li>npx sv migrateコマンドによりコードベースの自動移行とTODOリスト生成が行えます。</li><li>設定ファイルのvite.config.ts化や#libエイリアスへの変更など破壊的変更が含まれます。</li></ul><p class="impact"><b>影響</b>既存のSvelteKitを利用している開発者は、移行ガイドや移行コマンドを確認してコードを更新する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Svelte</dt><dd>ビルド時にコードを変換し高速に動作するWebフロントエンドUIライブラリ。</dd><dt>ボイラープレート</dt><dd>多くの場所でほとんど変更せずに繰り返し再利用される定型的なコード。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-003-univer-headless-node-dashboard" target="_blank" rel="noopener noreferrer">Office SDK「Univer」のheadlessモードで表計算の検証を実施</a></h3>
+<p class="orig">原題: OSS Office SDK「Univer」のheadless(Node.js)モードでAIエージェントがダッシュボードを作れるか試した</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-003-univer-headless-node-dashboard" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-01</p>
+<ul class="points"><li>Node.js環境でUniverのHeadless用パッケージを使い、ワークブックの生成やSUM式計算を検証した。</li><li>行数を10行から3000行まで増やした場合でも、SUM式の計算結果が期待値と完全に一致した。</li></ul><p class="impact"><b>影響</b>AIエージェントなどで表計算機能を利用する開発者は、デフォルトの行数制限に注意する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Headless</dt><dd>ディスプレイや画面描画機能を持たず、プログラムやCUIのみで動作する仕組みのこと。</dd><dt>SDK</dt><dd>特定ソフトウェアの開発を効率化するために必要なプログラムやドキュメントなどのセットのこと。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://tangled.org/burrito.space/bez" target="_blank" rel="noopener noreferrer">仕様とテストからブラウザエンジンを自動生成するプロジェクト「Bez」</a></h3>
+<p class="orig">原題: Bez: Generating a browser engine from specs and tests</p>
+<p class="src">出典: <a href="https://tangled.org/burrito.space/bez" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>Bezは、Web仕様と既存ブラウザのテスト結果をもとにRust製ブラウザエンジンを生成する仕組みです。</li><li>不要な機能を排除した軽量なビルドや、仕様変更時の自動再生成を大きな目標としています。</li><li>検証の過程で、主要ブラウザの間におけるCSSの長さの丸め処理の違いに関する不具合が発見されました。</li></ul><p class="impact"><b>影響</b>開発者は、Webエンジンの軽量化手法や、複数ブラウザ間の挙動の差異に関する検証結果を確認することができます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ブラウザエンジン</dt><dd>HTMLやCSSなどのWeb技術を読み込んで画面上の表示や動作を解釈・描画するコアソフトウェアのこと。</dd><dt>WPT</dt><dd>Web標準の仕様にブラウザが正しく準拠しているかを検証するための、共通のテストスイートのこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">AWSがクラウド環境を最適化するAI機能のプレビュー版を発表した。</a></h3>
+<p class="orig">原題: Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-02</p>
+<ul class="points"><li>AWS環境を分析し、コストやセキュリティ等の改善策を提示するサービスです。</li><li>65以上のAWSサービスにわたるベストプラクティスを基に推奨事項を生成します。</li><li>エージェントプロファイル作成後、24時間以内に改善策が提示されます。</li></ul><p class="impact"><b>影響</b>利用を始めるには、エージェントプロファイルの作成やIAMロールの設定を行い権限を付与する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IaC</dt><dd>インフラの構成や構築手順をコードとして管理・自動化する手法。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://blog.cloudflare.com/cloudflare-k2-streams/" target="_blank" rel="noopener noreferrer">Cloudflareが耐久性のあるイベント配信基盤「K2」を公開した。</a></h3>
+<p class="orig">原題: Cloudflare K2: serverless event streams</p>
+<p class="src">出典: <a href="https://blog.cloudflare.com/cloudflare-k2-streams/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-01</p>
+<ul class="points"><li>CloudflareがサーバレスなイベントストリーミングサービスK2のパブリックベータを開始しました。</li><li>R2オブジェクトストレージ上に構築され、送信側と受信側の処理分離や長期データ保持を実現します。</li><li>エッジで書き込みを一時保存しセグメントファイルとしてR2に書くことでアペンド制約を克服しています。</li></ul><p class="impact"><b>影響</b>イベントストリーミングを導入したい開発者は、ガイドに従ってK2のストリームを作成し利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>パブリックベータ</dt><dd>正式公開前に一般ユーザーが試用できるように提供されるテスト段階のサービス。</dd><dt>オブジェクトストレージ</dt><dd>データを階層構造ではなく独立したオブジェクト単位で扱う大容量向けの記憶システム。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://lwn.net/Articles/1097401/" target="_blank" rel="noopener noreferrer">Linuxカーネルに関する多数の脆弱性が発見された</a></h3>
+<p class="orig">原題: Several vulnerabilities have been discovered in the Linux kernel</p>
+<p class="src">出典: <a href="https://lwn.net/Articles/1097401/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-02</p>
+<ul class="points"><li>Debianセキュリティアドバイザリにて、Linuxカーネルの脆弱性が多数報告された。</li><li>CVE-2024-52560やCVE-2026-89511など、多数のCVE IDが対象となっている。</li></ul><p class="impact"><b>影響</b>システム管理者はLinuxカーネルのセキュリティアップデートを適用する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>脆弱性</dt><dd>プログラムの不具合や設計上のミスで、セキュリティ上の欠陥となる部分のこと。</dd><dt>CVE</dt><dd>個別知られているコンピュータセキュリティの脆弱性や露出に対して割り当てられる識別子のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.infoq.com/presentations/ai-production-operations/" target="_blank" rel="noopener noreferrer">AIと自動化を活用した本番運用の進化とオブザーバビリティの未来</a></h3>
+<p class="orig">原題: Presentation: Beyond Observability: Evolving Production Operations in the Age of AI</p>
+<p class="src">出典: <a href="https://www.infoq.com/presentations/ai-production-operations/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-01</p>
+<ul class="points"><li>AIはコード開発だけでなく、インシデント対応の初期対応者として活用されています。</li><li>NetflixではAIエージェントの導入により、障害解決までの時間であるMTTRが大きく短縮されました。</li><li>オブザーバビリティの領域では、プライバシーを重視したBYOCアーキテクチャやeBPFセンサーが注目されています。</li></ul><p class="impact"><b>影響</b>開発者やSREチームは、AIを活用した効率的なインシデント対応やシステム運用への移行を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オブザーバビリティ</dt><dd>システムの内部状態を外部からどれだけ観測・把握できるかを示す指標やその仕組みのこと。</dd><dt>eBPF</dt><dd>OSのカーネル空間で安全にカスタムプログラムを実行し、パフォーマンス監視やセキュリティ保護を行う技術。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.infoq.com/news/2026/10/snapdragon-x2-linux/" target="_blank" rel="noopener noreferrer">クアルコムがSnapdragon X2向けLinux開発者プレビュー版を公開</a></h3>
+<p class="orig">原題: Qualcomm Unveils Linux Preview on Snapdragon X2 to Accelerate Upstream ARM Laptops</p>
 <p class="src">出典: <a href="https://www.infoq.com/news/2026/10/snapdragon-x2-linux/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-01</p>
-<p class="summary">Qualcommは、次世代ノートPC向けプロセッサ「Snapdragon X2」シリーズにおける、Linuxの早期開発者向けプレビューを発表しました。カーネル貢献者やディストリビューションメンテナを対象としており、従来のARM製ノートPCで課題となっていた独自パッチへの依存やソフトウェアの摩擦を解消することを目的としています。この取り組みにより、標準的なオープンソースインターフェースを活用した開発環境の構築が可能となり、今後のLinux対応の加速が期待されます。</p>
-<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>Upstream</dt><dd>ソフトウェアの開発元や本流のプロジェクトを指し、修正や機能が公式に統合されること.</dd><dt>ARM</dt><dd>低消費電力に優れたプロセッサのアーキテクチャで、スマートフォンや近年のノートPCに広く採用されている.</dd><dt>UEFI</dt><dd>PCの起動時にOSとハードウェアを仲介する、従来のBIOSに代わる標準的なファームウェアインターフェース.</dd></dl></details>
+<ul class="points"><li>クアルコムは、Snapdragon X2プロセッサを搭載したARMラップトップ向けの早期開発者プレビュー版Linuxを発表しました。</li><li>Debian 13をベースにし、UEFIや標準的なオープンソースインターフェースによるシステム初期化を実現しています。</li><li>2026年11月下旬までに主要な周辺機器の未対応部分を解消し、上流統合を目指すとしています。</li></ul><p class="impact"><b>影響</b>カーネルコントリビューターやディストリビューション開発者は、早期のハードウェア環境での動作検証と対応を進める必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>UEFI</dt><dd>コンピュータの起動時にOSとハードウェアを仲介する、従来のBIOSに代わる標準的なファームウェア仕様。</dd><dt>NPU</dt><dd>ディープラーニングなどのニューラルネットワーク計算を高速に処理するために特化したプロセッサ。</dd></dl></details>
 </article></section>
 </main>
 <footer>
