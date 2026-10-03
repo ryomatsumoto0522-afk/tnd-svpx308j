@@ -1,4 +1,4 @@
-import { sendMail } from "./email.ts";
+import { deliveryTime, sendMail } from "./email.ts";
 import { loadAllDays } from "./state.ts";
 import { escapeHtml } from "./util.ts";
 
@@ -30,8 +30,10 @@ async function success(): Promise<void> {
   const html = `<p>${escapeHtml(day.date)} のテックニュース（${day.items.length}件）ができました。</p>
 <p><a href="${escapeHtml(siteUrl)}">ページを開く</a></p>
 <p>今日の注目:</p><ol>${top.map((t) => `<li>${escapeHtml(t.title)}（${escapeHtml(t.source)}）</li>`).join("")}</ol>`;
-  await sendMail({ subject: `【テックニュース】${day.date} のまとめができました`, text, html });
-  console.log("完了通知を送信しました");
+  // 朝 7 時（JST）に届くよう予約する。8 時を過ぎていればすぐ送る。MAIL_HOUR で変えられる
+  const scheduledAt = deliveryTime(new Date(), Number(process.env.MAIL_HOUR) || 7);
+  await sendMail({ subject: `【テックニュース】${day.date} のまとめができました`, text, html, scheduledAt });
+  console.log(scheduledAt ? `完了通知を予約しました（${scheduledAt.toISOString()}）` : "完了通知を送信しました");
 }
 
 async function failure(): Promise<void> {

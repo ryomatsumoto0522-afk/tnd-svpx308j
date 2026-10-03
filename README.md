@@ -16,7 +16,7 @@
    - `RESEND_API_KEY`: Resend の API キー（送信専用）
    - `MAIL_TO`: 通知の宛先（Resend に登録したメールアドレス）
 2. Settings → Pages で Source を「Deploy from a branch」、Branch を `main` / `/docs` にする。
-3. Actions タブから `daily-digest` を手動実行（Run workflow）して動作を確かめる。以降は毎朝 05:17 JST に自動で動く。
+3. Actions タブから `daily-digest` を手動実行（Run workflow）して動作を確かめる。以降は毎朝 未明（02:17 / 03:47 / 05:17 JST の最大 3 回。生成済みならスキップ）に自動で動き、メールは 7:00 JST に届くよう予約送信する。
 
 ## ローカルで試す
 

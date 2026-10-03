@@ -2,9 +2,12 @@ name: daily-digest
 
 on:
   schedule:
-    # 毎日 05:17 JST（= 前日 20:17 UTC）に起動する。
-    # 毎時ちょうどは GitHub 側が混雑して遅延・欠落しやすいため、わざとずらしている。
-    - cron: "17 20 * * *"
+    # GitHub の cron は数時間遅れたり、飛ばされたりすることがある（実測で最大 3.5 時間遅れ）。
+    # 7:00 JST のメールに間に合うよう、未明に 3 回起動する。今日の分が生成済みなら 2 回目以降は何もしない。
+    # 毎時ちょうどは混雑しやすいので分をずらしている。
+    - cron: "17 17 * * *" # 02:17 JST
+    - cron: "47 18 * * *" # 03:47 JST
+    - cron: "17 20 * * *" # 05:17 JST
   workflow_dispatch:
     inputs:
       force:
@@ -29,19 +32,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: 今日の分が生成済みか確認
+        id: check
+        run: |
+          today="$(TZ=Asia/Tokyo date +%F)"
+          if [ -f "data/days/${today}.json" ] && [ "${{ inputs.force }}" != "true" ]; then
+            echo "${today} は生成済みなので何もしません"
+            echo "done=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.check.outputs.done != 'true'
+        uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
 
-      - run: npm ci
+      - if: steps.check.outputs.done != 'true'
+        run: npm ci
 
       - name: 型チェックとテスト
+        if: steps.check.outputs.done != 'true'
         run: |
           npm run typecheck
           npm test
 
       - name: 収集・選定・要約・ページ生成
+        if: steps.check.outputs.done != 'true'
         env:
           # 既定は Gemini（無料枠）。Claude を使うなら Variables に LLM_PROVIDER=anthropic を設定する
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
@@ -51,6 +67,7 @@ jobs:
         run: npm run build
 
       - name: 生成したページと状態をコミット
+        if: steps.check.outputs.done != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -63,6 +80,7 @@ jobs:
           fi
 
       - name: 完了メールを送る
+        if: steps.check.outputs.done != 'true'
         env:
           CI: "true"
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
