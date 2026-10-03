@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-03T22:30:12.931Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14",
+      "title": "新しい日本語推敲スキル「yomiyasu」がバズっていたので、Claudeで日本語推敲スキル3つを比べてみた - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T15:17:29.000Z",
+      "summary": "Claude Code上で日本語推敲スキル3種類を同じ原文と条件で動かし、修正方針の違いを比較検証しました。yomiyasuは構成を残しつつ装飾を整え、他2種は段落の再構成や不要な表現の削減を行いました。",
+      "headline": "Claudeの日本語推敲スキル3種の修正傾向が検証される",
+      "points": [
+        "Claude Code上で日本語推敲スキル3種類を同じ原文と条件で動かし、修正方針の違いを比較検証しました。",
+        "yomiyasuは構成を残しつつ装飾を整え、他2種は段落の再構成や不要な表現の削減を行いました。"
+      ],
+      "impact": "AI生成文の推敲スキルを導入したい開発者は、修正方針の性格に応じて適切なスキルを選択する必要があります。",
+      "glossary": [
+        {
+          "term": "lint",
+          "explanation": "文章やプログラムのソースコードを解析し、不自然な点や文法的な誤りを自動で検出するツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://zenn.dev/headwaters/articles/37ba1b0736cbb6",
+      "title": "AI駆動開発とは何か ── 設計・実装・テスト・レビューにAIを組み込む開発プロセス",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T15:17:50.000Z",
+      "summary": "コード生成に留まらず設計やテストなど全工程にAIを組み込み、判断材料を人間が検証する開発手法が示されました。AIへの入力データの選別と、何を正しい出力とするかの評価基準を事前に対で設計することの重要性が説かれています。",
+      "headline": "開発全工程に生成AIを組み込むAI駆動開発の手法が解説される",
+      "points": [
+        "コード生成に留まらず設計やテストなど全工程にAIを組み込み、判断材料を人間が検証する開発手法が示されました。",
+        "AIへの入力データの選別と、何を正しい出力とするかの評価基準を事前に対で設計することの重要性が説かれています。"
+      ],
+      "impact": "開発プロセスに生成AIを導入する技術者は、AIに与える前提条件や出力の評価条件をあらかじめ設計する必要があります。",
+      "glossary": [
+        {
+          "term": "トレードオフ",
+          "explanation": "一方を追求すると他方を犠牲にせざるを得ない、互いに両立できない関係のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://zenn.dev/coworker_jp/articles/claude-code-loop-engineering-brakes",
+      "title": "Claude Code で開発ループを回す：auto mode の権限設定と hook による検証",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T13:11:10.000Z",
+      "summary": "Claude Codeで作業を反復させる手法について、停止させず暴走も防ぐための権限設定や検証手順が解説されました。auto modeでは分類器が操作を審査し、承認疲れを防ぎつつ本番環境の破壊や未承認PRのマージを自動で阻止します。v2.1.283以降の起動でautoが既定となり、ルールと権限設計を組み合わせた多層防御の重要性が示されています。",
+      "headline": "Claude Codeで反復作業を自動化する設計と権限管理が解説される",
+      "points": [
+        "Claude Codeで作業を反復させる手法について、停止させず暴走も防ぐための権限設定や検証手順が解説されました。",
+        "auto modeでは分類器が操作を審査し、承認疲れを防ぎつつ本番環境の破壊や未承認PRのマージを自動で阻止します。",
+        "v2.1.283以降の起動でautoが既定となり、ルールと権限設計を組み合わせた多層防御の重要性が示されています。"
+      ],
+      "impact": "Claude Codeで長時間の自動タスクを回す開発者は、トリガーや検証条件に加え、確実な停止ルールを設計する必要があります。",
+      "glossary": [
+        {
+          "term": "CI",
+          "explanation": "ソフトウェアの変更時にビルドやテストを自動実行し、品質を維持しながら統合を続ける仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://zenn.dev/ml/articles/6d0f27a130c0a6",
+      "title": "Claude Code で他社製モデルをサブエージェントとして Claude と協働させる",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T16:23:37.000Z",
+      "summary": "Claudeの消費トークンを抑えるため、他社の安価なAIモデルをサブエージェントとして呼び出す仕組みが考案されました。開発されたcameoは約400行のGoプログラムで、プロキシとして動作しAnthropic互換APIへリクエストを転送します。",
+      "headline": "Claude Codeで安価な他社製モデルを協働させるツールが開発",
+      "points": [
+        "Claudeの消費トークンを抑えるため、他社の安価なAIモデルをサブエージェントとして呼び出す仕組みが考案されました。",
+        "開発されたcameoは約400行のGoプログラムで、プロキシとして動作しAnthropic互換APIへリクエストを転送します。"
+      ],
+      "impact": "Claude Codeのトークン消費を節約したい利用者は、安価な外部モデルをサブエージェントとして併用する構成を検討できます。",
+      "glossary": [
+        {
+          "term": "プロキシ",
+          "explanation": "クライアントとサーバーの間に介在し、代理として通信の中継や転送を行う中継システム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/humanos_lab/articles/80c13016cf9daa",
+      "title": "AIが研究チームになった——Geminiを使う「Cogentic」が5つの未解決問題に新成果",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T14:44:49.000Z",
+      "summary": "複数のAIが探索と検証を分担し、確認済みの中間成果を台帳に残しながら研究を進める仕組みです。Geminiを基盤とし、オンライン学習など5つの未解決問題で新しい成果や境界の改善を得ました。多くの問題は約100回、最難関は約1000回のモデル呼び出しで自律的に論文形式にまとめられました。",
+      "headline": "Google Researchが複数AI協働システムCogenticを発表",
+      "points": [
+        "複数のAIが探索と検証を分担し、確認済みの中間成果を台帳に残しながら研究を進める仕組みです。",
+        "Geminiを基盤とし、オンライン学習など5つの未解決問題で新しい成果や境界の改善を得ました。",
+        "多くの問題は約100回、最難関は約1000回のモデル呼び出しで自律的に論文形式にまとめられました。"
+      ],
+      "glossary": [
+        {
+          "term": "プレプリント",
+          "explanation": "専門家による査読を受ける前に早期公開される研究論文のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://qiita.com/quotidia/items/71240f654144219349bd",
+      "title": "OpenAI「dots」の仕組みと対象プラン (GPT-6 Astra・専用クラウドPC・操作ルール)",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T21:01:14.000Z",
+      "summary": "ChatGPT上で指示を受けて自分で作業を進める新しいAIエージェントです。GPT-6 Astraで稼働し、専用のクラウドPCとブラウザーを持ち4,000以上のアプリと連携します。操作ごとに許可や承認必須を設定でき、パスワード変更などは本人の操作が必要です。",
+      "headline": "OpenAIが自律型AIエージェントのdotsを発表",
+      "points": [
+        "ChatGPT上で指示を受けて自分で作業を進める新しいAIエージェントです。",
+        "GPT-6 Astraで稼働し、専用のクラウドPCとブラウザーを持ち4,000以上のアプリと連携します。",
+        "操作ごとに許可や承認必須を設定でき、パスワード変更などは本人の操作が必要です。"
+      ],
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "指示された目標に向けて自律的に情報収集や作業を実行するAIです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray",
+      "title": "A Bootiful Podcast: JReleaser creator and fellow Java Champion Andres Almiray",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "summary": "Javaのリリース作業を自動化するツールJReleaserについて開発者が語り合いました。デスクトップJavaの未来やJavaFXの活用、環境や依存関係の管理手順が話題に挙がりました。",
+      "headline": "Spring公式ポッドキャストがJReleaserの作者と対談",
+      "points": [
+        "Javaのリリース作業を自動化するツールJReleaserについて開発者が語り合いました。",
+        "デスクトップJavaの未来やJavaFXの活用、環境や依存関係の管理手順が話題に挙がりました。"
+      ],
+      "glossary": [
+        {
+          "term": "JVM",
+          "explanation": "Javaのプログラムを各環境で動作させるための仮想マシンです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/istio-1-31-agentgateway/",
+      "title": "Istio 1.31 Adds Agentgateway Waypoints and Moves Release Artifacts off Google Cloud",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-03T08:30:00.000Z",
+      "summary": "agentgatewayをL7ウェイポイントプロキシとして実行できるようになりました。コンテナイメージやHelmチャートのGoogle Cloudでの公開を停止し移行を進めます。10月13日に予定されている停止テストや12月の廃止に向けて移行が求められます。",
+      "headline": "Istio 1.31が公開され配信先をGoogle Cloudから移行",
+      "points": [
+        "agentgatewayをL7ウェイポイントプロキシとして実行できるようになりました。",
+        "コンテナイメージやHelmチャートのGoogle Cloudでの公開を停止し移行を進めます。",
+        "10月13日に予定されている停止テストや12月の廃止に向けて移行が求められます。"
+      ],
+      "impact": "従来のGoogle Cloudリポジトリを利用しているチームは停止テスト前に移行する必要があります。",
+      "glossary": [
+        {
+          "term": "プロキシ",
+          "explanation": "クライアントとサーバーの間に入り通信を中継・制御する仕組みです。"
+        },
+        {
+          "term": "カナリア",
+          "explanation": "新しいバージョンを一部のトラフィックだけに流して安全性を確かめる手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://azukiazusa.dev/blog/css-margin-trim/",
+      "title": "CSS の margin-trim でコンテナーの端の余白を取り除く",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-02T15:01:33.000Z",
+      "summary": "コンテナー側の指定だけで、端に接する子要素の余分なマージンを取り除けます。セレクターを深く指定する従来の手法と比べ、HTML構造への依存を減らせます。2026年9月27日時点でSafari 16.4が対応し、Chromium等は未対応です。",
+      "headline": "CSSのmargin-trimで端の余白を取り除く方法の解説",
+      "points": [
+        "コンテナー側の指定だけで、端に接する子要素の余分なマージンを取り除けます。",
+        "セレクターを深く指定する従来の手法と比べ、HTML構造への依存を減らせます。",
+        "2026年9月27日時点でSafari 16.4が対応し、Chromium等は未対応です。"
+      ],
+      "impact": "対応ブラウザーの状況に注意しながら、カード要素などのレイアウト指定を簡略化したいWeb開発者が活用できます。",
+      "glossary": [
+        {
+          "term": "マージンの相殺",
+          "explanation": "隣り合う要素の上下マージンが重なり合って1つに統合されるCSSの仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/engineer_yone3/articles/21c5b7ddbab362",
+      "title": "Laravel + ViteでReact/Vueを動かす — 素直な構築手順を整理する",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-03T16:40:05.000Z",
+      "summary": "Laravel標準のViteを活用し、ReactやVueを動作させる構成手順を整理しました。専用プラグインを導入し、Bladeビュー内にコンポーネントを差し込んで描画します。開発サーバーではHMRによる即時反映、本番環境ではビルド済みファイルを出力します。",
+      "headline": "Laravel 12とViteでReactやVueを動かす手順を整理",
+      "points": [
+        "Laravel標準のViteを活用し、ReactやVueを動作させる構成手順を整理しました。",
+        "専用プラグインを導入し、Bladeビュー内にコンポーネントを差し込んで描画します。",
+        "開発サーバーではHMRによる即時反映、本番環境ではビルド済みファイルを出力します。"
+      ],
+      "impact": "Laravel環境にReactやVueを段階的に導入したいエンジニアが構築手順の理解に活用できます。",
+      "glossary": [
+        {
+          "term": "HMR",
+          "explanation": "コードの変更時にページ全体を再読み込みせず、変更箇所のみを即時反映する機能。"
+        },
+        {
+          "term": "Blade",
+          "explanation": "PHPフレームワークのLaravelに標準搭載されているテンプレートエンジン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/jp/blogs/news/best-practices-for-writing-aws-devops-agent-skills/",
+      "title": "AWS DevOps Agent Skills を作成するためのベストプラクティス",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-03T06:18:08.000Z",
+      "summary": "調査ノウハウをSkillsに定義することで属人化を防ぎ、インシデント解決を早めます。常時有効なエージェント指示と、必要な時だけ読み込むSkillsの使い分けを解説。エージェントが適切に起動できるよう、descriptionを具体的に記述します。",
+      "headline": "AWS DevOps Agent Skills作成のベストプラクティス",
+      "points": [
+        "調査ノウハウをSkillsに定義することで属人化を防ぎ、インシデント解決を早めます。",
+        "常時有効なエージェント指示と、必要な時だけ読み込むSkillsの使い分けを解説。",
+        "エージェントが適切に起動できるよう、descriptionを具体的に記述します。"
+      ],
+      "impact": "AWS DevOps Agentを導入し、インシデント調査の手順をチームで再利用・標準化したい運用担当者が参考にできます。",
+      "glossary": [
+        {
+          "term": "MTTR",
+          "explanation": "システムに障害が発生してから正常に復旧するまでにかかる平均時間。"
+        },
+        {
+          "term": "オンコール",
+          "explanation": "障害発生に備え、業務時間外などに連絡を受けて対応できるように待機すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://gigazine.net/news/20261003-ministack/",
+      "title": "無料でAWSをローカルでシミュレーションできるエミュレーター「MiniStack」、60以上のAWSサービスを単一ポートで利用可能でマルチアカウント＆マルチリージョン対応、セルフホスト可能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-03T03:06:02.000Z",
+      "summary": "60以上のAWSサービスをPC上かつ無料でシミュレーションできるツールです。RDSなどの検証用に実際のPostgreSQLコンテナ等を起動しSQLを発行できます。複数アカウントやリージョンの分離に対応し、単一ポートでリクエストを振り分けます。",
+      "headline": "AWS環境をローカルで再現するエミュレーターMiniStack",
+      "points": [
+        "60以上のAWSサービスをPC上かつ無料でシミュレーションできるツールです。",
+        "RDSなどの検証用に実際のPostgreSQLコンテナ等を起動しSQLを発行できます。",
+        "複数アカウントやリージョンの分離に対応し、単一ポートでリクエストを振り分けます。"
+      ],
+      "impact": "AWSの利用料金や環境構築の手間を省き、ローカルで連携アプリをテストしたい開発者が利用できます。",
+      "glossary": [
+        {
+          "term": "エミュレーター",
+          "explanation": "特定のハードウェアやシステムの挙動を、別の環境上で模倣して動作させる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities/",
+      "title": "GitLab Vulnerability Under Active Exploitation Enables Unauthenticated Data Exfiltration",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-03T16:00:00.000Z",
+      "summary": "GitLab CE/EEにおいて未認証で任意ファイルを読み取れる重篤な脆弱性の悪用が確認されました。影響を受けるのはバージョン18.7以降で、公開プロジェクトが1つ以上あるとCVSS 10.0の悪用が可能です。修正版（19.3.2や19.2.6など）への更新に加え、露出したトークンや鍵の破棄と再発行が推奨されています。",
+      "headline": "GitLabの重篤な脆弱性が悪用され未認証でデータが漏洩する恐れ",
+      "points": [
+        "GitLab CE/EEにおいて未認証で任意ファイルを読み取れる重篤な脆弱性の悪用が確認されました。",
+        "影響を受けるのはバージョン18.7以降で、公開プロジェクトが1つ以上あるとCVSS 10.0の悪用が可能です。",
+        "修正版（19.3.2や19.2.6など）への更新に加え、露出したトークンや鍵の破棄と再発行が推奨されています。"
+      ],
+      "impact": "セルフホスト型GitLabの管理者は、修正版への更新とログ調査を行い、影響を受けた認証情報を直ちに再発行する必要があります。",
+      "glossary": [
+        {
+          "term": "パス・トラバーサル",
+          "explanation": "ディレクトリを遡る記述を用いて想定外のファイルへアクセスする攻撃手段。"
+        },
+        {
+          "term": "CVSS",
+          "explanation": "共通脆弱性評価システムであり、脆弱性の深刻度を数値で表す標準的指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://ftl-os.org/",
+      "title": "FTL: A new operating system for clouds",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-03T15:02:36Z",
+      "summary": "クラウド向けOS「FTL」は、ライブラリのように機能するユーザー空間OSとして開発されています。Linuxバイナリと互換性を持ち、カーネルを安全かつ容易に機能拡張できる設計が特徴です。v0.0.1とv0.1.0が公開済みで、今後Node.jsや64ビットArm対応などが予定されています。",
+      "headline": "ライブラリとして動作するクラウド向けユーザー空間OS「FTL」が登場",
+      "points": [
+        "クラウド向けOS「FTL」は、ライブラリのように機能するユーザー空間OSとして開発されています。",
+        "Linuxバイナリと互換性を持ち、カーネルを安全かつ容易に機能拡張できる設計が特徴です。",
+        "v0.0.1とv0.1.0が公開済みで、今後Node.jsや64ビットArm対応などが予定されています。"
+      ],
+      "impact": "軽量かつ安全なコンテナ環境やカスタムOSの構築を検討する開発者が、開発やテストに利用できます。",
+      "glossary": [
+        {
+          "term": "ユーザー空間",
+          "explanation": "OSのカーネル以外の領域で、一般のアプリケーションが制限を受けて実行される場所。"
+        },
+        {
+          "term": "マイクロカーネル",
+          "explanation": "OSに必要な最小限の機能のみをカーネル空間で実行し、安全性を高める構造。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 91,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26149,
+    "outputTokens": 9490
+  },
+  "offline": false
+}

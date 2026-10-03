@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-02T23:47:48.358Z",
+  "lastRun": "2026-10-03T22:30:12.931Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -48,6 +48,20 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc": "2026-10-03",
     "https://www.infoq.com/news/2026/10/docker-sandbox-ai-agent": "2026-10-03",
     "https://aws.amazon.com/jp/blogs/news/this-month-in-aws-observability-august-september-2026": "2026-10-03",
-    "https://www.47news.jp/15026982.html": "2026-10-03"
+    "https://www.47news.jp/15026982.html": "2026-10-03",
+    "https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14": "2026-10-04",
+    "https://zenn.dev/headwaters/articles/37ba1b0736cbb6": "2026-10-04",
+    "https://zenn.dev/coworker_jp/articles/claude-code-loop-engineering-brakes": "2026-10-04",
+    "https://zenn.dev/ml/articles/6d0f27a130c0a6": "2026-10-04",
+    "https://zenn.dev/humanos_lab/articles/80c13016cf9daa": "2026-10-04",
+    "https://qiita.com/quotidia/items/71240f654144219349bd": "2026-10-04",
+    "https://spring.io/blog/2026/10/01/a-bootiful-podcast-andres-almiray": "2026-10-04",
+    "https://www.infoq.com/news/2026/10/istio-1-31-agentgateway": "2026-10-04",
+    "https://azukiazusa.dev/blog/css-margin-trim": "2026-10-04",
+    "https://zenn.dev/engineer_yone3/articles/21c5b7ddbab362": "2026-10-04",
+    "https://aws.amazon.com/jp/blogs/news/best-practices-for-writing-aws-devops-agent-skills": "2026-10-04",
+    "https://gigazine.net/news/20261003-ministack": "2026-10-04",
+    "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities": "2026-10-04",
+    "https://ftl-os.org/": "2026-10-04"
   }
 }
