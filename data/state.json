@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-03T22:30:12.931Z",
+  "lastRun": "2026-10-04T20:12:22.272Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -62,6 +62,18 @@
     "https://aws.amazon.com/jp/blogs/news/best-practices-for-writing-aws-devops-agent-skills": "2026-10-04",
     "https://gigazine.net/news/20261003-ministack": "2026-10-04",
     "https://www.infoq.com/news/2026/10/gitlab-critical-vulnerabilities": "2026-10-04",
-    "https://ftl-os.org/": "2026-10-04"
+    "https://ftl-os.org/": "2026-10-04",
+    "https://www.itmedia.co.jp/news/article/2610/04/2000001987": "2026-10-05",
+    "https://www.itmedia.co.jp/news/article/2610/04/2000001986": "2026-10-05",
+    "https://github.com/Niko1221/Strata": "2026-10-05",
+    "https://www.anthropic.com/news/claude-frontier-academy": "2026-10-05",
+    "https://www.infoq.com/news/2026/10/pizza-bot-ai-agents": "2026-10-05",
+    "https://www.infoq.com/news/2026/10/open-APPA-zero-security-breach": "2026-10-05",
+    "https://gigazine.net/news/20261004-cloudflare-quick-tunnels": "2026-10-05",
+    "https://www.infoq.com/news/2026/10/android-security-state-libs": "2026-10-05",
+    "https://github.com/PowderworksCode/headstart": "2026-10-05",
+    "https://zenn.dev/kipcop/articles/f35-vue-02-javascript-basics": "2026-10-05",
+    "https://zenn.dev/metasyntax/articles/vueuse-v-element-size-border-box": "2026-10-05",
+    "https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000": "2026-10-05"
   }
 }

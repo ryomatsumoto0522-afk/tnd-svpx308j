@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-04T20:12:22.272Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/news/article/2610/04/2000001987/",
+      "title": "個人向けGeminiのモデル選択が厳格化 無料ユーザーが使えるのは「Flash-Lite」のみに",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-04T02:37:40.000Z",
+      "summary": "GoogleはGeminiで使えるAIモデルを契約プランごとに変更すると告知しました。無料ユーザーは10月9日から「Flash-Lite」のみが利用可能になります。FlashはAI Plus以上、ProはAI Pro以上の契約が必要になります。",
+      "headline": "GoogleがGeminiの無料版で選べるモデルを制限",
+      "points": [
+        "GoogleはGeminiで使えるAIモデルを契約プランごとに変更すると告知しました。",
+        "無料ユーザーは10月9日から「Flash-Lite」のみが利用可能になります。",
+        "FlashはAI Plus以上、ProはAI Pro以上の契約が必要になります。"
+      ],
+      "impact": "GeminiのFlashやProモデルを使いたい無料ユーザーは、有料プランへの加入を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "推論",
+          "explanation": "AIが学習した知識をもとに、新しい入力に対して予測や回答を導き出す処理のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2610/04/2000001986/",
+      "title": "「OpenAIの文化は壊れている」──安全性報告書を統括した従業員が退社し、寄稿",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T23:32:18.000Z",
+      "summary": "OpenAIで安全性報告書を統括していたデビッド・ロビンソン氏が退社し寄稿を公開しました。同氏は反復開発手法が失敗を招いているとし、原子力や航空のような安全体制を求めました。外部からAI企業へ安全性を高める動機付けを行う活動に今後取り組むとしています。",
+      "headline": "OpenAIの安全性報告書統括者が同社の文化を批判して退社",
+      "points": [
+        "OpenAIで安全性報告書を統括していたデビッド・ロビンソン氏が退社し寄稿を公開しました。",
+        "同氏は反復開発手法が失敗を招いているとし、原子力や航空のような安全体制を求めました。",
+        "外部からAI企業へ安全性を高める動機付けを行う活動に今後取り組むとしています。"
+      ],
+      "glossary": [
+        {
+          "term": "アライメント",
+          "explanation": "AIの振る舞いや判断基準を、人間の価値観や意図、安全基準に適合させる技術や取り組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://github.com/Niko1221/Strata",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-04T12:51:53Z",
+      "summary": "オープンソースのStrataにより125Bモデルを通常のPCで実行可能になりました。動作には12GB以上のVRAMを持つGPUと32GB以上のRAMが必要です。全ての処理がローカルPC上で完結し、外部へデータが送信されません。",
+      "headline": "125BのAIモデルを家庭用PCで動かすStrataが公開",
+      "points": [
+        "オープンソースのStrataにより125Bモデルを通常のPCで実行可能になりました。",
+        "動作には12GB以上のVRAMを持つGPUと32GB以上のRAMが必要です。",
+        "全ての処理がローカルPC上で完結し、外部へデータが送信されません。"
+      ],
+      "impact": "自分のPCで大規模なQwenモデルを動かしたい人は、GPUやメモリ等の動作環境を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "VRAM",
+          "explanation": "画像処理やAIの計算処理を高速に行うため、GPU（グラフィックスカード）に搭載された専用メモリです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "summary": "AnthropicはAI人材不足の解消に向けClaude Frontier Academyを設立しました。1億ドルを投じ2027年末までに1万人の最前線エンジニアを育成する計画です。参加組織からの推薦を受けた技術者が対面研修と12週間の実践プログラムを受けます。",
+      "headline": "AnthropicがAI人材育成に1億ドルを投じると発表",
+      "points": [
+        "AnthropicはAI人材不足の解消に向けClaude Frontier Academyを設立しました。",
+        "1億ドルを投じ2027年末までに1万人の最前線エンジニアを育成する計画です。",
+        "参加組織からの推薦を受けた技術者が対面研修と12週間の実践プログラムを受けます。"
+      ],
+      "impact": "研修への参加を希望する企業は、Anthropicの担当チームやパートナー窓口に受講資格を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "LLM",
+          "explanation": "大量のテキストデータを学習し、人間のように自然な文章を生成・理解できる大規模言語モデルのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/",
+      "title": "Pizza Bot: Open-Source Inbox for Background AI Agents",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-04T06:34:00.000Z",
+      "summary": "AIエージェントをバックグラウンド実行し、受信トレイ形式で管理できる「Pizza Bot」が公開されました。Apache 2.0ライセンスで、データや状態をローカルに保持したまま複数モデルやMCPに対応します。AWSの公式サービスではなくコミュニティ主導で、公式サポートやSLAは提供されません。",
+      "headline": "AWSの技術者がAIエージェント管理用OSSを公開",
+      "points": [
+        "AIエージェントをバックグラウンド実行し、受信トレイ形式で管理できる「Pizza Bot」が公開されました。",
+        "Apache 2.0ライセンスで、データや状態をローカルに保持したまま複数モデルやMCPに対応します。",
+        "AWSの公式サービスではなくコミュニティ主導で、公式サポートやSLAは提供されません。"
+      ],
+      "impact": "利用する開発者は、公式サポートがないためツールの運用保守や更新を自ら行う必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを連携させるための標準規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/open-APPA-zero-security-breach/",
+      "title": "New Archestra's OpenAPPA Saturates Two Major Security Benchmarks with a 0% Attack Success Rate",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-03T23:41:00.000Z",
+      "summary": "ArchestraがAIからのデータ流出を防ぐオープンソースのセキュリティエンジン「OpenAPPA」を公開しました。2大ベンチマークで攻撃成功率0%を記録し、Claude Codeなどの既存手法を上回る防御力を示しました。エージェントの実行ループ外で、設定ファイルに基づき決定論的にデータフローとアクセス権限を制御します。",
+      "headline": "Archestraがデータ流出を防ぐAI向けOSSを発表",
+      "points": [
+        "ArchestraがAIからのデータ流出を防ぐオープンソースのセキュリティエンジン「OpenAPPA」を公開しました。",
+        "2大ベンチマークで攻撃成功率0%を記録し、Claude Codeなどの既存手法を上回る防御力を示しました。",
+        "エージェントの実行ループ外で、設定ファイルに基づき決定論的にデータフローとアクセス権限を制御します。"
+      ],
+      "impact": "安全なAIエージェントを運用したい開発者は、設定ファイルを記述して決定論的なアクセス制御を導入できます。",
+      "glossary": [
+        {
+          "term": "プロンプトインジェクション",
+          "explanation": "悪意ある入力により、AIに開発者の意図しない動作をさせる攻撃手法。"
+        },
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実に基づかない誤った情報を、もっともらしく生成してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://gigazine.net/news/20261004-cloudflare-quick-tunnels/",
+      "title": "localhostを爆速でインターネットへ安全に公開する「Cloudflare Quick Tunnels」、たった1つのコマンドで暗号化された公開URLを作成可能でアカウント・DNSレコード・ポート開放は一切不要",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-04T03:07:44.000Z",
+      "summary": "「Cloudflare Quick Tunnels」を使い、1コマンドでlocalhostを外部へ安全に公開できます。アカウントやポート開放が不要で、メールによるワンタイムPIN認証やJSON出力にも対応します。一時的な開発向け機能であり、同時処理リクエストは最大200件でSSEには対応していません。",
+      "headline": "Cloudflareがローカル環境を即時公開する機能を解説",
+      "points": [
+        "「Cloudflare Quick Tunnels」を使い、1コマンドでlocalhostを外部へ安全に公開できます。",
+        "アカウントやポート開放が不要で、メールによるワンタイムPIN認証やJSON出力にも対応します。",
+        "一時的な開発向け機能であり、同時処理リクエストは最大200件でSSEには対応していません。"
+      ],
+      "impact": "機密情報を扱う開発者は、URLの公開範囲を制限するためにメール認証オプションを併用する必要があります。",
+      "glossary": [
+        {
+          "term": "ポート開放",
+          "explanation": "外部からの通信を特定端末へ届けるため、ルーターの特定接続口を開く設定。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/android-security-state-libs/",
+      "title": "Google's Android Security State Libraries Enable Component-Level Security Verification",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-04T17:00:00.000Z",
+      "summary": "GoogleがOSコンポーネント単位でセキュリティパッチの適用状況を検証できるライブラリ群を発表しました。システム、Playモジュール、カーネルごとに、現在の適用状態や入手可能な更新を判別できます。特定の脆弱性に対する修正の有無を確認し、更新案内ページのURLを生成する関数も備えます。",
+      "headline": "GoogleがAndroidで個別パッチ検証ライブラリを発表",
+      "points": [
+        "GoogleがOSコンポーネント単位でセキュリティパッチの適用状況を検証できるライブラリ群を発表しました。",
+        "システム、Playモジュール、カーネルごとに、現在の適用状態や入手可能な更新を判別できます。",
+        "特定の脆弱性に対する修正の有無を確認し、更新案内ページのURLを生成する関数も備えます。"
+      ],
+      "impact": "金融や企業向けアプリの開発者は、機密処理の前に端末のパッチ状況を確認し更新を促す必要があります。",
+      "glossary": [
+        {
+          "term": "CVE",
+          "explanation": "公開されているセキュリティ脆弱性に割り当てられる世界共通の識別番号。"
+        },
+        {
+          "term": "MDM",
+          "explanation": "企業などで複数のモバイル端末の設定やセキュリティを一元管理する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://github.com/PowderworksCode/headstart",
+      "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-04T06:26:57Z",
+      "summary": "依存クレートの型検査完了を待たずに早期メタデータを用いて後続処理を先行させます。16コア環境の実プロジェクトでcargo checkが最大54%、buildが最大42%高速化しました。rustcとcargo向けパッチとして実装され、アップストリームへの提案を目指しています。",
+      "headline": "Rustのビルドを早期メタデータ出力で最大2倍高速化する手法が公開",
+      "points": [
+        "依存クレートの型検査完了を待たずに早期メタデータを用いて後続処理を先行させます。",
+        "16コア環境の実プロジェクトでcargo checkが最大54%、buildが最大42%高速化しました。",
+        "rustcとcargo向けパッチとして実装され、アップストリームへの提案を目指しています。"
+      ],
+      "impact": "Rust開発者は、提供されたパッチや設定を適用することでビルド時間の短縮を検証できます。",
+      "glossary": [
+        {
+          "term": "crate",
+          "explanation": "Rustにおけるコンパイルやコード配布の基本単位となるパッケージのことです。"
+        },
+        {
+          "term": "cargo",
+          "explanation": "Rustの公式パッケージマネージャ兼ビルドシステムです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-02-javascript-basics",
+      "title": "35日でフロントエンドの基礎を完全に理解する #2 - モダンJavaScript基礎",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-04T12:02:31.000Z",
+      "summary": "変数はconstを基本に再代入時のみletを使い、varは使わない方針を推奨しています。配列操作ではfor文の代わりにmap、filter、findの活用を解説しています。オブジェクトの分割代入やモジュールのimport・exportの仕組みも紹介しています。",
+      "headline": "フロントエンド開発に必要なモダンJavaScriptの基礎解説記事が公開",
+      "points": [
+        "変数はconstを基本に再代入時のみletを使い、varは使わない方針を推奨しています。",
+        "配列操作ではfor文の代わりにmap、filter、findの活用を解説しています。",
+        "オブジェクトの分割代入やモジュールのimport・exportの仕組みも紹介しています。"
+      ],
+      "impact": "Vueなどを学び始めるフロントエンド初学者が、実務で頻出するJavaScriptの記法を確認できます。",
+      "glossary": [
+        {
+          "term": "テンプレートリテラル",
+          "explanation": "バッククォートで文字列を囲み、変数を直接埋め込めるJavaScriptの記法です。"
+        },
+        {
+          "term": "分割代入",
+          "explanation": "配列やオブジェクトから要素やプロパティを取り出し、別々の変数に代入する記法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/metasyntax/articles/vueuse-v-element-size-border-box",
+      "title": "VueUseのIssue対応記録: v-element-sizeの修正から見るResizeObserverの値をwatchする際の注意点",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-04T08:04:33.000Z",
+      "summary": "boxオプションにborder-boxを指定した際に、マウント時にハンドラが呼ばれない不具合を修正しました。初期値とResizeObserverの初回値が同じため変更検知されないことが原因でした。マウント時の戻り値をboxに合わせ、watchにimmediate: trueを追加して解決しました。",
+      "headline": "VueUseのv-element-sizeでマウント時に動かない不具合が修正",
+      "points": [
+        "boxオプションにborder-boxを指定した際に、マウント時にハンドラが呼ばれない不具合を修正しました。",
+        "初期値とResizeObserverの初回値が同じため変更検知されないことが原因でした。",
+        "マウント時の戻り値をboxに合わせ、watchにimmediate: trueを追加して解決しました。"
+      ],
+      "impact": "VueUseでv-element-sizeディレクティブや要素サイズ監視機能を使う開発者は動作の違いに注意が必要です。",
+      "glossary": [
+        {
+          "term": "ResizeObserver",
+          "explanation": "DOM要素のサイズ変更を非同期で監視するためのWeb標準APIです。"
+        },
+        {
+          "term": "Composition API",
+          "explanation": "Vue 3で導入された、コンポーネントのロジックを柔軟に記述・再利用するための仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000/",
+      "title": "日経にサイバー攻撃 情報漏洩、不審メール9000件送信 - 日本経済新聞",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-04T08:03:25.000Z",
+      "summary": "社員のマイクロソフト365アカウントが不正ログインされ、悪性サイトへ誘導するメールが送信されました。取材先などに送信され、メールアドレスや氏名、一部メール内容が漏洩したとみられます。パスワードを変更して不正ログインを停止し、送信先へ個別にメール削除を依頼しました。",
+      "headline": "日経の業務ソフトがサイバー攻撃を受け不審メール約9000件が送信",
+      "points": [
+        "社員のマイクロソフト365アカウントが不正ログインされ、悪性サイトへ誘導するメールが送信されました。",
+        "取材先などに送信され、メールアドレスや氏名、一部メール内容が漏洩したとみられます。",
+        "パスワードを変更して不正ログインを停止し、送信先へ個別にメール削除を依頼しました。"
+      ],
+      "impact": "日経やグループ関係者を装った不審メールを受信した人は、メールを削除し専用窓口へ連絡する必要があります。",
+      "glossary": [
+        {
+          "term": "マイクロソフト365",
+          "explanation": "マイクロソフトが提供するメールや業務アプリなどのクラウド統合サービスです。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 84,
+    "shortlisted": 59,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 18211,
+    "outputTokens": 8966
+  },
+  "offline": false
+}
