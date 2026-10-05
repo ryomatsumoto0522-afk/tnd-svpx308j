@@ -1,0 +1,26 @@
+name: resend-mail
+
+# 最新日のまとめメールだけを送り直す（生成はしない。LLM の無料枠は使わない）。
+# メールが届かなかったときの確認や、メール本文の見た目の確認に使う。
+on:
+  workflow_dispatch:
+
+env:
+  SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run notify:success
+        env:
+          CI: "true"
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
