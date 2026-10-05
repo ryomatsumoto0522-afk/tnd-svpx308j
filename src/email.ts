@@ -6,7 +6,7 @@ export function clean(value: string | undefined): string {
 }
 
 /** Resend の API でメールを 1 通送る。宛先は 1 つ（自分宛て） */
-export async function sendMail(opts: { subject: string; text: string; html?: string; scheduledAt?: Date }): Promise<void> {
+export async function sendMail(opts: { subject: string; text: string; html?: string; scheduledAt?: Date }): Promise<string> {
   const apiKey = clean(process.env.RESEND_API_KEY);
   const to = clean(process.env.MAIL_TO);
   if (!apiKey || !to) throw new Error("RESEND_API_KEY または MAIL_TO が設定されていません");
@@ -23,6 +23,9 @@ export async function sendMail(opts: { subject: string; text: string; html?: str
     signal: AbortSignal.timeout(20_000),
   });
   if (!res.ok) throw new Error(`Resend ${res.status}: ${await res.text()}`);
+  // 届かないときに Resend のダッシュボードで追えるよう、メール ID を返す
+  const body = (await res.json().catch(() => ({}))) as { id?: string };
+  return body.id ?? "(id なし)";
 }
 
 /**

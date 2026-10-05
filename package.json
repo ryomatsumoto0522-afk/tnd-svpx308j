@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test src/**/*.test.ts",
     "notify:success": "tsx src/notify.ts success",
-    "notify:failure": "tsx src/notify.ts failure"
+    "notify:failure": "tsx src/notify.ts failure",
+    "resend:status": "tsx src/resend-status.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
