@@ -1,0 +1,466 @@
+{
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-05T23:10:39.337Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/jp/blogs/news/sonnet-5-5/",
+      "title": "Claude Sonnet 5.5 が Kiro で利用可能になりました",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T03:15:36.000Z",
+      "summary": "Claude Sonnet 5.5が2026年10月2日よりKiroのIDE、CLI、Crew、Webで利用可能になりました。Sonnet 5より30%以上高速に出力を生成し、Terminal-Bench 4.0で70.6%のスコアを記録しています。effort設定による思考深さの調整や、1Mトークンのコンテキストウィンドウに対応しています。",
+      "headline": "Claude Sonnet 5.5がKiroの各環境で利用可能になる",
+      "points": [
+        "Claude Sonnet 5.5が2026年10月2日よりKiroのIDE、CLI、Crew、Webで利用可能になりました。",
+        "Sonnet 5より30%以上高速に出力を生成し、Terminal-Bench 4.0で70.6%のスコアを記録しています。",
+        "effort設定による思考深さの調整や、1Mトークンのコンテキストウィンドウに対応しています。"
+      ],
+      "impact": "us-east-1およびeu-central-1のKiro Pro、Pro+、Pro Max、Powerの利用者が実験的サポートとして利用できます。",
+      "glossary": [
+        {
+          "term": "IDE",
+          "explanation": "プログラムの記述や編集、実行などを効率的に行うための統合開発環境のことです。"
+        },
+        {
+          "term": "CLI",
+          "explanation": "文字を入力してコンピュータを操作するコマンドラインインターフェースのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
+      "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+      "source": "AWS News Blog",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T15:41:19.000Z",
+      "summary": "OpenAIのAgents APIをベースにしたAmazon Bedrock Managed Agentsのパブリックプレビューが発表されました。Amazon BedrockにOpenAI GPT-6.1 SolやAnthropic Claude Sonnet 5.5などの新しいフロンティアモデルが追加されました。Amazon Aurora PostgreSQLでApache IcebergやParquetデータの直接クエリが可能になりました。",
+      "headline": "Amazon Bedrockの新機能やモデル追加に関する週次アップデート",
+      "points": [
+        "OpenAIのAgents APIをベースにしたAmazon Bedrock Managed Agentsのパブリックプレビューが発表されました。",
+        "Amazon BedrockにOpenAI GPT-6.1 SolやAnthropic Claude Sonnet 5.5などの新しいフロンティアモデルが追加されました。",
+        "Amazon Aurora PostgreSQLでApache IcebergやParquetデータの直接クエリが可能になりました。"
+      ],
+      "impact": "開発者はAWS環境内でOpenAIモデル向けのAIエージェント構築や新しいLLMの利用ができるようになります。",
+      "glossary": [
+        {
+          "term": "ETL",
+          "explanation": "データを抽出し、変換し、保存先へ書き出す一連のデータ処理プロセスのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr34-shihipar-summary",
+      "title": "Claude Code の作り手が語る CLAUDE.md の終わり・Mods・エージェントの事故（#34 解説）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T10:33:03.000Z",
+      "summary": "多くのユーザーは自分で思っている以上に問題の要件を把握できていないと開発者が指摘しています。モデルが進化するにつれて失敗モードが変わるため、CLAUDE.mdは極限では不要になると予想されています。エージェントのセキュリティ事故を防ぐため、モデル訓練から権限管理まで多層的な防御が導入されています。",
+      "headline": "Claude Codeのエンジニアが語る機能やセキュリティの仕組み",
+      "points": [
+        "多くのユーザーは自分で思っている以上に問題の要件を把握できていないと開発者が指摘しています。",
+        "モデルが進化するにつれて失敗モードが変わるため、CLAUDE.mdは極限では不要になると予想されています。",
+        "エージェントのセキュリティ事故を防ぐため、モデル訓練から権限管理まで多層的な防御が導入されています。"
+      ],
+      "impact": "Claude CodeなどのAI開発ツールやエージェントを利用するエンジニアは、新しいツールやハーネスの仕組みを理解する必要があります。",
+      "glossary": [
+        {
+          "term": "サンドボックス",
+          "explanation": "外部から切り離された安全な仮想環境で、システムへの悪影響を防ぎながらプログラムを実行する仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T21:00:21Z",
+      "summary": "AIエージェントチームと研究者が、スピントronics向けの新しい磁性体材料の候補を発見・設計しました。強磁性体と反強磁性体の特徴を持つ中間的な状態の材料について計算が行われました。",
+      "headline": "AIエージェントが室温磁気半導体の候補を新たに発見した",
+      "points": [
+        "AIエージェントチームと研究者が、スピントronics向けの新しい磁性体材料の候補を発見・設計しました。",
+        "強磁性体と反強磁性体の特徴を持つ中間的な状態の材料について計算が行われました。"
+      ],
+      "impact": "コンピュータメモリやストレージの研究開発において、新しい磁性半導体候補の特性を活用できるようになります。",
+      "glossary": [
+        {
+          "term": "スピントronics",
+          "explanation": "電子の持つ磁気的性質を利用して情報の記録や処理を行う技術分野のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "title": "Beam: Reflection's 501B open-weight model",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T19:16:35Z",
+      "summary": "総パラメータ5010億・アクティブ230億のオープンウェイトモデル「Beam」が発表されました。23.8兆トークンの事前学習と1万枚超のGPUによる大規模強化学習で推論効率を高めています。コーディングやエージェント用途に特化し、重みなどは今月後半に公開される予定です。",
+      "headline": "Reflectionが501BモデルのBeamを発表",
+      "points": [
+        "総パラメータ5010億・アクティブ230億のオープンウェイトモデル「Beam」が発表されました。",
+        "23.8兆トークンの事前学習と1万枚超のGPUによる大規模強化学習で推論効率を高めています。",
+        "コーディングやエージェント用途に特化し、重みなどは今月後半に公開される予定です。"
+      ],
+      "impact": "早期アクセスを希望する開発者は、専用フォームから利用登録を行うことができます。",
+      "glossary": [
+        {
+          "term": "Mixture-of-Experts",
+          "explanation": "入力に応じて複数の専門ネットワークの一部のみを選択・実行して効率化する構造。"
+        },
+        {
+          "term": "オープンウェイト",
+          "explanation": "モデルの学習済みパラメータ（重み情報）が一般に公開されている状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "title": "Qwen3.8 27B addition in words",
+      "source": "Simon Willison",
+      "genre": "ai",
+      "publishedAt": "2026-10-04T23:34:00.000Z",
+      "summary": "ローカルモデル「Qwen3.8-27B」を用いて、計算結果を英単語で出力する実験が行われました。推論無効時の数値正解率は23.57%にとどまり、桁数が増えるほど精度が低下しました。推論を有効にしたテストでは、169回の試行中167回で正しい答えを出力しました。",
+      "headline": "Qwen3.8の英単語による加算能力を検証",
+      "points": [
+        "ローカルモデル「Qwen3.8-27B」を用いて、計算結果を英単語で出力する実験が行われました。",
+        "推論無効時の数値正解率は23.57%にとどまり、桁数が増えるほど精度が低下しました。",
+        "推論を有効にしたテストでは、169回の試行中167回で正しい答えを出力しました。"
+      ],
+      "glossary": [
+        {
+          "term": "GGUF",
+          "explanation": "ローカル環境で効率的に大規模言語モデルを動かすために設計されたファイル形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://inside.java/2026/10/05/confined-pools/",
+      "title": "Making Arena.ofConfined() Even Cheaper in JDK 28",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "summary": "JDK 28からArena.ofConfined()で再利用可能なネイティブメモリプールが導入されます。コード変更なしで、64バイト以下の小さな割り当てに伴うオーバーヘッドを大幅に削減します。仮想スレッドではキャリアスレッドから一時取得することで、軽量性を維持しつつ最適化します。",
+      "headline": "JDK 28でFFM APIの小さなメモリ割り当てが高速化",
+      "points": [
+        "JDK 28からArena.ofConfined()で再利用可能なネイティブメモリプールが導入されます。",
+        "コード変更なしで、64バイト以下の小さな割り当てに伴うオーバーヘッドを大幅に削減します。",
+        "仮想スレッドではキャリアスレッドから一時取得することで、軽量性を維持しつつ最適化します。"
+      ],
+      "impact": "FFM APIを利用するJava開発者は、既存コードを変更することなく小規模割り当てを高速化できます。",
+      "glossary": [
+        {
+          "term": "FFM API",
+          "explanation": "Javaからネイティブコードや外部メモリを安全かつ効率的に扱うための標準API。"
+        },
+        {
+          "term": "仮想スレッド",
+          "explanation": "OSのスレッドに依存せず、JVM上で軽量に多数管理できるスレッド機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://www.infoq.com/news/2026/10/java-news-roundup-sep28-2026/",
+      "title": "Java News Roundup: JobRunr 9, OpenXava 8, Quarkus, LangChain4j, JNoSQL, Introducing Lathe",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-05T17:00:00.000Z",
+      "summary": "JobRunr 9.0やOpenXava 8.0のGAリリース、各種ライブラリの更新が発表されました。アプリ起動時間を短縮するAOTコンパイルのJEP 544がJDK 28の対象機能に指定されました。Jakarta EE 12の公開日程が確定し、NoSQL仕様の追加に関する議論が進んでいます。",
+      "headline": "Java最新動向でJobRunr 9やJEP 544が前進",
+      "points": [
+        "JobRunr 9.0やOpenXava 8.0のGAリリース、各種ライブラリの更新が発表されました。",
+        "アプリ起動時間を短縮するAOTコンパイルのJEP 544がJDK 28の対象機能に指定されました。",
+        "Jakarta EE 12の公開日程が確定し、NoSQL仕様の追加に関する議論が進んでいます。"
+      ],
+      "impact": "JDK 28早期アクセス版を検証する開発者は、発見したバグをJava Bug Databaseへ報告できます。",
+      "glossary": [
+        {
+          "term": "AOTコンパイル",
+          "explanation": "プログラムの実行前（事前）にネイティブコードへと変換しておくコンパイル方式。"
+        },
+        {
+          "term": "Jakarta EE",
+          "explanation": "企業向けJavaアプリケーション開発のための標準仕様群。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/dotnet-aspire-13-6-release/",
+      "title": "Aspire 13.6 Adds Persistent Dashboard Telemetry and First-Party Java and Rust Hosting",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-05T09:39:00.000Z",
+      "summary": "ダッシュボードでの履歴永続化やJava・Rustの初ホスティング対応を含む「Aspire 13.6」が公開されました。ダッシュボードはデータをSQLiteに保存し、アプリごとに最大10回分の実行履歴を保持します。MongoDBのローカルTLS接続デフォルト化など複数の破壊的変更が含まれます。",
+      "headline": "マイクロソフトが「Aspire 13.6」をリリース",
+      "points": [
+        "ダッシュボードでの履歴永続化やJava・Rustの初ホスティング対応を含む「Aspire 13.6」が公開されました。",
+        "ダッシュボードはデータをSQLiteに保存し、アプリごとに最大10回分の実行履歴を保持します。",
+        "MongoDBのローカルTLS接続デフォルト化など複数の破壊的変更が含まれます。"
+      ],
+      "impact": "Aspireを利用する開発者は、新機能の活用や破壊的変更に伴う移行手順の確認を行う必要があります。",
+      "glossary": [
+        {
+          "term": "Native AOT",
+          "explanation": "プログラムを事前に機械語へ直接コンパイルし高速に起動させる技術。"
+        },
+        {
+          "term": "REPL",
+          "explanation": "入力したコマンドやコードを即座に実行して結果を返す対話型の実行環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/uiuifree/articles/5da49cf438ded9",
+      "title": "Claude Code の並行作業を1画面で回す「agent-calendar」を作った",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-05T03:05:44.000Z",
+      "summary": "Claude CodeとCodexのセッションをブラウザ1画面で並行管理できる「agent-calendar」が公開されました。カレンダー画面から指示出しや実行許可、Git worktreeの作成や片付けまで行えます。Rustの単一バイナリで構成され、端末のローカル環境でのみ動作します。",
+      "headline": "AIコーディングの並行作業を1画面で管理するツールが公開",
+      "points": [
+        "Claude CodeとCodexのセッションをブラウザ1画面で並行管理できる「agent-calendar」が公開されました。",
+        "カレンダー画面から指示出しや実行許可、Git worktreeの作成や片付けまで行えます。",
+        "Rustの単一バイナリで構成され、端末のローカル環境でのみ動作します。"
+      ],
+      "impact": "複数のAIコーディングエージェントを並行して使う開発者は、本ツールを導入して作業を一元管理できます。",
+      "glossary": [
+        {
+          "term": "worktree",
+          "explanation": "1つのGitリポジトリから複数のブランチを別ディレクトリに同時展開する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/npm_tech/articles/c589433eb5ef52",
+      "title": "ユーザー検索した作品名の人気キーワード機能",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-05T14:12:40.000Z",
+      "summary": "作品名検索のログを非同期で集計し、上位キーワードを表示するアーキテクチャが解説されました。RedisのキューとPostgreSQLを用い、直近7日間の検索回数から上位15件を集計します。検索の応答速度を最優先し、ログの重複排除や確実な保存を行わない設計を採用しています。",
+      "headline": "検索負荷を抑えた人気キーワード集計機能の設計方針が公開",
+      "points": [
+        "作品名検索のログを非同期で集計し、上位キーワードを表示するアーキテクチャが解説されました。",
+        "RedisのキューとPostgreSQLを用い、直近7日間の検索回数から上位15件を集計します。",
+        "検索の応答速度を最優先し、ログの重複排除や確実な保存を行わない設計を採用しています。"
+      ],
+      "impact": "検索ログの集計機能を設計する開発者は、応答性やDB負荷を考慮した非同期設計の判断基準を参考にできます。",
+      "glossary": [
+        {
+          "term": "非同期処理",
+          "explanation": "時間のかかる処理の完了を待たずに次の処理を進め、後から結果を受け取る方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-03-async",
+      "title": "35日でフロントエンドの基礎を完全に理解する #3 - 非同期処理（Promise・async/await・fetch）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-05T12:44:37.000Z",
+      "summary": "通信時に画面を固めないための非同期処理の仕組みや、Promiseとasync/awaitの基礎が解説されました。サーバーからデータを取得するfetch関数と、通信エラーに備えるtry/catchの書き方を紹介しています。コード例とクイズを通じて、処理の実行順序や構文ルールを段階的に確認できます。",
+      "headline": "JavaScriptの非同期処理とfetchの基礎を学ぶ解説が公開",
+      "points": [
+        "通信時に画面を固めないための非同期処理の仕組みや、Promiseとasync/awaitの基礎が解説されました。",
+        "サーバーからデータを取得するfetch関数と、通信エラーに備えるtry/catchの書き方を紹介しています。",
+        "コード例とクイズを通じて、処理の実行順序や構文ルールを段階的に確認できます。"
+      ],
+      "impact": "フロントエンド開発の初学者は、API通信や非同期処理の基本的な書き方を学習・確認できます。",
+      "glossary": [
+        {
+          "term": "Promise",
+          "explanation": "非同期処理の最終的な完了または失敗の結果を表すオブジェクト。"
+        },
+        {
+          "term": "async/await",
+          "explanation": "Promiseを同期的で読みやすいコードのように記述できる構文。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries/",
+      "title": "AWS Batch now supports Amazon EKS access entry authentication",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-05T15:31:00.000Z",
+      "summary": "AWS Batchの計算環境においてAmazon EKSのアクセスエントリ認証がサポートされました。API経由でIAMプリンシパルにクラスターのアクセス権を付与でき、管理が簡素化されます。APIでaccessEntry.desiredStateをENABLEDに設定することで有効化できます。",
+      "headline": "AWS BatchがAmazon EKSのアクセスエントリ認証に対応",
+      "points": [
+        "AWS Batchの計算環境においてAmazon EKSのアクセスエントリ認証がサポートされました。",
+        "API経由でIAMプリンシパルにクラスターのアクセス権を付与でき、管理が簡素化されます。",
+        "APIでaccessEntry.desiredStateをENABLEDに設定することで有効化できます。"
+      ],
+      "impact": "EKSを利用するAWS Batchのユーザーは、APIでaccessEntryの設定を有効にする必要があります。",
+      "glossary": [
+        {
+          "term": "Amazon EKS",
+          "explanation": "AWS上でKubernetesコンテナ環境を実行・管理するためのマネージドサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-iceberg-materialized-views",
+      "title": "Amazon Redshift adds support for creating and refreshing Apache Iceberg materialized views",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-05T21:57:18.000Z",
+      "summary": "RedshiftでApache Iceberg形式のマテリアライズドビューの作成と更新が可能になりました。計算結果はS3に保存され、AthenaやSparkなど他のオープンなエンジンからも参照可能です。手動の増分更新をサポートしており、変更されたデータのみを再計算して更新できます。",
+      "headline": "Amazon RedshiftがApache Icebergマテリアライズドビューに対応",
+      "points": [
+        "RedshiftでApache Iceberg形式のマテリアライズドビューの作成と更新が可能になりました。",
+        "計算結果はS3に保存され、AthenaやSparkなど他のオープンなエンジンからも参照可能です。",
+        "手動の増分更新をサポートしており、変更されたデータのみを再計算して更新できます。"
+      ],
+      "impact": "データの加工や共有を行うデータチームは、SQLコマンドを用いて作成や参照を行えます。",
+      "glossary": [
+        {
+          "term": "マテリアライズドビュー",
+          "explanation": "クエリの実行結果をあらかじめ計算してテーブルとして保存し、検索を高速化する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs/",
+      "title": "AWS Private CA now provides detailed certificate issuance logs",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-05T09:00:00.000Z",
+      "summary": "AWS Private CAにおいて証明書発行の完全な内容などを記録する詳細ログが追加されました。X.509フィールドの全内容や発行失敗の理由がIssueCertificateDetailsイベントで取得できます。追加の事前設定や追加料金は不要で、CloudTrailの管理イベントとして自動配信されます。",
+      "headline": "AWS Private CAが証明書発行の詳細ログ記録に対応",
+      "points": [
+        "AWS Private CAにおいて証明書発行の完全な内容などを記録する詳細ログが追加されました。",
+        "X.509フィールドの全内容や発行失敗の理由がIssueCertificateDetailsイベントで取得できます。",
+        "追加の事前設定や追加料金は不要で、CloudTrailの管理イベントとして自動配信されます。"
+      ],
+      "impact": "コンプライアンス監査や証明書管理を行う担当者は、CloudTrailで詳細なイベントログを確認できます。",
+      "glossary": [
+        {
+          "term": "AWS CloudTrail",
+          "explanation": "AWSアカウント内の操作やAPI呼び出しの履歴をログとして記録・監視するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/",
+      "title": "AWS Continuum for Penetration Testing now supports continuous penetration testing integrated directly into your CI/CD pipeline",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-05T18:32:00.000Z",
+      "summary": "AWS Continuum for Penetration TestingがCI/CDと直接統合可能になりました。デプロイ時にテストが自動実行され、開発者はパイプライン上で診断結果や修正ガイドを確認できます。自動生成されたスニペットをパイプラインに追加するだけで、5分未満で設定できます。",
+      "headline": "AWS ContinuumがCI/CDパイプラインとの統合に対応",
+      "points": [
+        "AWS Continuum for Penetration TestingがCI/CDと直接統合可能になりました。",
+        "デプロイ時にテストが自動実行され、開発者はパイプライン上で診断結果や修正ガイドを確認できます。",
+        "自動生成されたスニペットをパイプラインに追加するだけで、5分未満で設定できます。"
+      ],
+      "impact": "開発チームは、自動生成されたスニペットを既存のCI/CDパイプラインに追加して導入できます。",
+      "glossary": [
+        {
+          "term": "CI/CD",
+          "explanation": "ソフトウェアの構築やテスト、デプロイなどのプロセスを自動化して継続的に行う手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://type.jp/et/feature/31834/",
+      "title": "AIでコード生成は加速、でも人間の確認が追いつかない問題。t-wadaが示す「レビュー解体」という答え - エンジニアtype | 転職type",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-05T07:03:43.000Z",
+      "summary": "AIの進化によりコードの物的生産性において人間が完全に凌駕された。AIを活用した開発スタイルには伴走と委託の二つが存在する。コードレビューのボトルネックを解消するため五つの工程への分散が求められる。",
+      "headline": "AIによるコード生成の普及でコードレビューの重要性が増す",
+      "points": [
+        "AIの進化によりコードの物的生産性において人間が完全に凌駕された。",
+        "AIを活用した開発スタイルには伴走と委託の二つが存在する。",
+        "コードレビューのボトルネックを解消するため五つの工程への分散が求められる。"
+      ],
+      "impact": "エンジニアや組織は、AIを活用した開発におけるレビュー負荷や理解を維持する方法を検討する必要がある。",
+      "glossary": [
+        {
+          "term": "テスト駆動開発",
+          "explanation": "実装前にテストコードを書き、それをパスさせることを繰り返して開発を進める手法。"
+        },
+        {
+          "term": "型システム",
+          "explanation": "プログラムのデータ型を定義し、不正な操作やエラーを静的に検知する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/mizchi/articles/ai-coding-loop-formal",
+      "title": "俺のAIプログラミング手法(2026/10/05)",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T06:52:58.000Z",
+      "summary": "人間の役割はAIの行動を観察し評価指標やループを構築することである。AIに指示を与える際は数値化できる評価指標やテストを設定することが重要である。形式手法を用いて実装しようとしている仕様の正しさを検査できる。",
+      "headline": "AIプログラミングにおいて人間の役割は評価指標の設計とループ構築にある",
+      "points": [
+        "人間の役割はAIの行動を観察し評価指標やループを構築することである。",
+        "AIに指示を与える際は数値化できる評価指標やテストを設定することが重要である。",
+        "形式手法を用いて実装しようとしている仕様の正しさを検査できる。"
+      ],
+      "impact": "開発者はAIにタスクを自動化させつつ、評価指標やテストをチューニングして品質を管理する必要がある。",
+      "glossary": [
+        {
+          "term": "CI",
+          "explanation": "コードを変更するたびにビルドやテストを自動で実行し、品質を保つ仕組み。"
+        },
+        {
+          "term": "形式手法",
+          "explanation": "数学的な厳密さを用いてシステムの仕様や設計が正しいことを検証する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 109,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26424,
+    "outputTokens": 8850
+  },
+  "offline": false
+}

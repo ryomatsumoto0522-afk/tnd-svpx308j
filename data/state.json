@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-04T20:12:22.272Z",
+  "lastRun": "2026-10-05T23:10:39.337Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -74,6 +74,24 @@
     "https://github.com/PowderworksCode/headstart": "2026-10-05",
     "https://zenn.dev/kipcop/articles/f35-vue-02-javascript-basics": "2026-10-05",
     "https://zenn.dev/metasyntax/articles/vueuse-v-element-size-border-box": "2026-10-05",
-    "https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000": "2026-10-05"
+    "https://www.nikkei.com/article/DGXZQOUD02B5F0S6A001C2000000": "2026-10-05",
+    "https://aws.amazon.com/jp/blogs/news/sonnet-5-5": "2026-10-06",
+    "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026": "2026-10-06",
+    "https://zenn.dev/talks_tldr_jp/articles/tldr34-shihipar-summary": "2026-10-06",
+    "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors": "2026-10-06",
+    "https://reflection.ai/blog/introducing-beam": "2026-10-06",
+    "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words": "2026-10-06",
+    "https://inside.java/2026/10/05/confined-pools": "2026-10-06",
+    "https://www.infoq.com/news/2026/10/java-news-roundup-sep28-2026": "2026-10-06",
+    "https://www.infoq.com/news/2026/10/dotnet-aspire-13-6-release": "2026-10-06",
+    "https://zenn.dev/uiuifree/articles/5da49cf438ded9": "2026-10-06",
+    "https://zenn.dev/npm_tech/articles/c589433eb5ef52": "2026-10-06",
+    "https://zenn.dev/kipcop/articles/f35-vue-03-async": "2026-10-06",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries": "2026-10-06",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-iceberg-materialized-views": "2026-10-06",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs": "2026-10-06",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing": "2026-10-06",
+    "https://type.jp/et/feature/31834": "2026-10-06",
+    "https://zenn.dev/mizchi/articles/ai-coding-loop-formal": "2026-10-06"
   }
 }
