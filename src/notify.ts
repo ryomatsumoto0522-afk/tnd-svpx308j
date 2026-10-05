@@ -87,8 +87,10 @@ ${rest.length ? `<h2 style="font-size:15px;margin:22px 0 0;color:#5c6776">ほか
 <p style="margin:24px 0 0;font-size:12px;color:#8a94a3">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
 </div>`;
 
-  // 朝 7 時（JST）に届くよう予約する。7 時を過ぎていればすぐ送る。MAIL_HOUR で変えられる
-  const scheduledAt = deliveryTime(new Date(), Number(process.env.MAIL_HOUR) || 7);
+  // 既定は生成が終わり次第すぐ送る（未明に生成するので、遅くとも朝 7 時までには届く）。
+  // 届く時刻をそろえたいときだけ MAIL_HOUR（JST の時）を設定する。ただし予約送信は 10/5 に届かなかった実績があるので既定にしない
+  const mailHour = Number(process.env.MAIL_HOUR);
+  const scheduledAt = mailHour > 0 ? deliveryTime(new Date(), mailHour) : undefined;
   const id = await sendMail({ subject: `【テックニュース】${day.date} のまとめができました`, text, html, scheduledAt });
   console.log(
     `${scheduledAt ? `完了通知を予約しました（${scheduledAt.toISOString()}）` : "完了通知を送信しました"} Resend id=${id}`,
