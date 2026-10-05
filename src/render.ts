@@ -58,7 +58,6 @@ h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
 .impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
 .impact b{margin-right:6px}
 .summary{margin:0}
-.top3{margin:16px 0 4px}
 .top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
 .top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
 .top3 .card h3{font-size:1.12rem}
@@ -89,7 +88,6 @@ const JS = `
     if(!ok)return show(tabs[0].dataset.tab,push);
     panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
     try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
-    try{localStorage.setItem('tnd-tab',id);}catch(e){}
   }
   tabs.forEach(function(t,i){
     t.addEventListener('click',function(){show(t.dataset.tab,true);});
@@ -101,7 +99,6 @@ const JS = `
   });
   window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
   var start=location.hash.slice(1);
-  if(!start){try{start=localStorage.getItem('tnd-tab')||'';}catch(e){}}
   show(start||tabs[0].dataset.tab,false);
 })();
 `;
@@ -157,11 +154,13 @@ ${gloss}
 </article>`;
 }
 
-/** ページ先頭の「今日の注目」。重要度順の上位 3 件を目立たせる */
-function renderTop3(items: DigestItem[]): string {
-  const top = [...items].sort((a, b) => a.rank - b.rank).slice(0, 3);
-  if (top.length === 0) return "";
-  return `<section class="top3" aria-label="今日の注目"><h2>今日の注目 ${top.length}選</h2>${top
+/** 「注目」タブの中身。重要度順の上位 3 件を番号つきで出す */
+function topItems(items: DigestItem[]): DigestItem[] {
+  return [...items].sort((x, y) => x.rank - y.rank).slice(0, 3);
+}
+
+function renderTopPanel(top: DigestItem[]): string {
+  return `<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 ${top.length}選</h2>${top
     .map((it, i) => renderItem(it, { num: i + 1 }))
     .join("\n")}</section>`;
 }
@@ -179,7 +178,14 @@ export function renderPage(day: DigestDay, ctx: PageContext): string {
   const prev = idx > 0 ? ctx.dates[idx - 1] : undefined;
   const next = idx >= 0 && idx < ctx.dates.length - 1 ? ctx.dates[idx + 1] : undefined;
 
-  const tabs = genres
+  const top = topItems(day.items);
+  const topTab =
+    top.length > 0
+      ? `<button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">${top.length}</span></button>`
+      : "";
+  const tabs =
+    topTab +
+    genres
     .map(
       (g) =>
         `<button class="tab" role="tab" type="button" data-tab="${g}" aria-selected="false" aria-controls="panel-${g}">${h(GENRE_LABEL[g])}<span class="n">${byGenre.get(g)?.length ?? 0}</span></button>`,
@@ -188,11 +194,11 @@ export function renderPage(day: DigestDay, ctx: PageContext): string {
 
   const panels =
     genres.length > 0
-      ? genres
+      ? [renderTopPanel(top), ...genres
           .map(
             (g) =>
               `<section class="panel" id="panel-${g}" role="tabpanel"><h2>${h(GENRE_LABEL[g])}</h2>${(byGenre.get(g) ?? []).map((it) => renderItem(it)).join("\n")}</section>`,
-          )
+          )]
           .join("\n")
       : `<p class="empty">この日は掲載できる記事がありませんでした。</p>`;
 
@@ -232,7 +238,6 @@ ${day.offline ? `<p class="notice">オフラインプレビューです。要約
 <nav class="tabs" role="tablist" aria-label="ジャンル">${tabs}</nav>
 </header>
 <main>
-${renderTop3(day.items)}
 ${panels}
 </main>
 <footer>

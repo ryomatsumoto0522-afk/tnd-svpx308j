@@ -62,7 +62,6 @@ h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
 .impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
 .impact b{margin-right:6px}
 .summary{margin:0}
-.top3{margin:16px 0 4px}
 .top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
 .top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
 .top3 .card h3{font-size:1.12rem}
@@ -89,10 +88,10 @@ footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font
 <p class="date">2026年10月2日(金)</p>
 <p class="meta">更新 2026-10-02 12:38 · 取得ソース 18/18 · 選定 19件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
 
-<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">5</span></button></nav>
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">5</span></button></nav>
 </header>
 <main>
-<section class="top3" aria-label="今日の注目"><h2>今日の注目 3選</h2><article class="card g-ai">
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
 <span class="badge">AI</span>
 <h3><span class="num">1</span><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank" rel="noopener noreferrer">Googleが新型AIモデル「Gemini 4 Argon」を発表しました</a></h3>
 <p class="orig">原題: Gemini 4 Argon: our next era of frontier intelligence</p>
@@ -286,7 +285,6 @@ footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font
     if(!ok)return show(tabs[0].dataset.tab,push);
     panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
     try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
-    try{localStorage.setItem('tnd-tab',id);}catch(e){}
   }
   tabs.forEach(function(t,i){
     t.addEventListener('click',function(){show(t.dataset.tab,true);});
@@ -298,7 +296,6 @@ footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font
   });
   window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
   var start=location.hash.slice(1);
-  if(!start){try{start=localStorage.getItem('tnd-tab')||'';}catch(e){}}
   show(start||tabs[0].dataset.tab,false);
 })();
 </script>
