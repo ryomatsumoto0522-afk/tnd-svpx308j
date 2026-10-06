@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-05T23:10:39.337Z",
+  "lastRun": "2026-10-06T21:39:49.253Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -92,6 +92,19 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs": "2026-10-06",
     "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing": "2026-10-06",
     "https://type.jp/et/feature/31834": "2026-10-06",
-    "https://zenn.dev/mizchi/articles/ai-coding-loop-formal": "2026-10-06"
+    "https://zenn.dev/mizchi/articles/ai-coding-loop-formal": "2026-10-06",
+    "https://simonwillison.net/2026/Oct/6/hn-49982139": "2026-10-07",
+    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model": "2026-10-07",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-glm-5-3": "2026-10-07",
+    "https://www.infoq.com/news/2026/10/cloudflare-cf-cli": "2026-10-07",
+    "https://pola.rs/posts/release-polars-2": "2026-10-07",
+    "https://dbushell.com/2026/10/03/deno-to-node": "2026-10-07",
+    "https://zenn.dev/kipcop/articles/f35-vue-04-typescript-basics": "2026-10-07",
+    "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore": "2026-10-07",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics": "2026-10-07",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/AWS-Certificate-Manager-ACME-Privatelink": "2026-10-07",
+    "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ": "2026-10-07",
+    "https://github.com/FeSens/openTPU": "2026-10-07",
+    "https://www.nobelprize.org/prizes/physics/2026": "2026-10-07"
   }
 }

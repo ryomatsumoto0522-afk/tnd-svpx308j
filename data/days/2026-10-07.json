@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-06T21:39:49.253Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
+      "title": "Mistral Large 4",
+      "source": "Simon Willison",
+      "genre": "ai",
+      "publishedAt": "2026-10-06T18:20:58.000Z",
+      "summary": "ベンチマーク飽和を受け、火星で信号無視するアルマジロを描く難問プロンプトを実験しました。Mistral Large 4やGPT-6.1-solなど4種類のモデルで検証しています。",
+      "headline": "複数の最新AIモデルによるSVG画像生成の比較結果が公開",
+      "points": [
+        "ベンチマーク飽和を受け、火星で信号無視するアルマジロを描く難問プロンプトを実験しました。",
+        "Mistral Large 4やGPT-6.1-solなど4種類のモデルで検証しています。"
+      ],
+      "glossary": [
+        {
+          "term": "SVG",
+          "explanation": "拡大縮小しても画質が劣化しない、ベクター形式で画像を表現するデータ形式です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-06T19:57:04.000Z",
+      "summary": "テキストや画像、音声、動画を同じ空間に統合する740MのモデルEmbeddingGemma 2を公開しました。商用利用可能なApache 2.0で提供され、端末上での単独動作に最適化されています。出力ベクトルを最大128次元まで縮小でき、ストレージ消費量を最大6分の1に抑えられます。",
+      "headline": "Googleが軽量マルチモーダル埋め込みモデルを発表",
+      "points": [
+        "テキストや画像、音声、動画を同じ空間に統合する740MのモデルEmbeddingGemma 2を公開しました。",
+        "商用利用可能なApache 2.0で提供され、端末上での単独動作に最適化されています。",
+        "出力ベクトルを最大128次元まで縮小でき、ストレージ消費量を最大6分の1に抑えられます。"
+      ],
+      "impact": "アプリ開発者は、エッジ端末上でプライバシーを守りながらオフラインで動く検索やRAGを構築できます。",
+      "glossary": [
+        {
+          "term": "埋め込みモデル",
+          "explanation": "テキストや画像などのデータを、意味の近さを計算できる数値ベクトルに変換するモデルです。"
+        },
+        {
+          "term": "RAG",
+          "explanation": "外部の文書データを検索し、その内容を参照しながらAIに回答を生成させる手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-glm-5-3/",
+      "title": "GLM 5.3 by Z.ai is now generally available on Amazon Bedrock",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-05T21:42:00.000Z",
+      "summary": "Z.aiの旗艦モデルGLM 5.3がAmazon Bedrockで一般提供され、エージェント型開発などに利用可能になりました。総パラメータ数753BのMoE構成で、100万トークンの文脈長と最大128Kの出力に対応します。プロンプトキャッシュに対応し、再利用時の待機時間と入力コストを抑えられます。",
+      "headline": "Amazon Bedrockで最新LLMのGLM 5.3が提供開始",
+      "points": [
+        "Z.aiの旗艦モデルGLM 5.3がAmazon Bedrockで一般提供され、エージェント型開発などに利用可能になりました。",
+        "総パラメータ数753BのMoE構成で、100万トークンの文脈長と最大128Kの出力に対応します。",
+        "プロンプトキャッシュに対応し、再利用時の待機時間と入力コストを抑えられます。"
+      ],
+      "impact": "対象となる企業顧客は、Amazon BedrockのコンソールやAPI経由で新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "MoE",
+          "explanation": "複数の専門ネットワークを持ち、処理に応じて必要な部分だけを動かす効率的な構造です。"
+        },
+        {
+          "term": "プロンプトキャッシュ",
+          "explanation": "過去に送信した共通の指示文を保持しておき、再利用して処理を高速化する仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-cf-cli/",
+      "title": "Cloudflare Introduces CLI for AI Agents, Sunsetting Wrangler",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-06T04:59:00.000Z",
+      "summary": "新CLIツールcfのオープンベータを開始し、従来のWranglerを将来的に廃止すると発表しました。TypeScript製でJSON出力を標準とし、Wranglerの約280機能を大幅に上回る3000以上のAPIに対応します。ベータ終了後にWranglerの最終版が提供され、18か月の移行サポート期間が設けられます。",
+      "headline": "CloudflareがAIエージェント向け新CLIツールを公開",
+      "points": [
+        "新CLIツールcfのオープンベータを開始し、従来のWranglerを将来的に廃止すると発表しました。",
+        "TypeScript製でJSON出力を標準とし、Wranglerの約280機能を大幅に上回る3000以上のAPIに対応します。",
+        "ベータ終了後にWranglerの最終版が提供され、18か月の移行サポート期間が設けられます。"
+      ],
+      "impact": "Cloudflareを使う開発者は、将来の廃止に向けて既存のWranglerから新CLIのcfへの移行準備が必要です。",
+      "glossary": [
+        {
+          "term": "CLI",
+          "explanation": "画面上の文字入力によってコマンドを実行し、サービスやシステムを操作するツールです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://pola.rs/posts/release-polars-2/",
+      "title": "Polars 2.0",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-06T11:59:01Z",
+      "summary": "Polars 2.0が公開され、SQLの強化やディスク退避（Out-of-core）がデフォルト有効化されました。LazyFrameのcollect呼び出しでストリーミングエンジンが標準適用されます。TPC-H等のベンチマークでDuckDBやDataFusionを上回る性能を示しました。",
+      "headline": "Polars 2.0が公開されSQL対応やディスク退避が強化",
+      "points": [
+        "Polars 2.0が公開され、SQLの強化やディスク退避（Out-of-core）がデフォルト有効化されました。",
+        "LazyFrameのcollect呼び出しでストリーミングエンジンが標準適用されます。",
+        "TPC-H等のベンチマークでDuckDBやDataFusionを上回る性能を示しました。"
+      ],
+      "impact": "行の順序保証が必要な操作を行う利用者は、maintain_order=Trueの設定を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "Out-of-core",
+          "explanation": "メモリ容量を超える大規模データを、ディスクを併用して処理する手法。"
+        },
+        {
+          "term": "ストリーミングエンジン",
+          "explanation": "データを一度に全件読み込まず、少しずつ流しながら順次処理する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://dbushell.com/2026/10/03/deno-to-node/",
+      "title": "Friendship ended with Deno, now Node is my best friend",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-05T22:30:02Z",
+      "summary": "著者がDenoからNode.js v26.10.0へ静的サイト生成環境を移行した事例が紹介されました。最新APIへの置き換えにより修正が少なく済み、ビルド速度が15%高速化したと報告されています。パッケージマネージャにはPNPMを採用し、更新遅延などのセキュリティ設定を行っています。",
+      "headline": "Node.jsの進化によりDenoから移行した体験談が公開",
+      "points": [
+        "著者がDenoからNode.js v26.10.0へ静的サイト生成環境を移行した事例が紹介されました。",
+        "最新APIへの置き換えにより修正が少なく済み、ビルド速度が15%高速化したと報告されています。",
+        "パッケージマネージャにはPNPMを採用し、更新遅延などのセキュリティ設定を行っています。"
+      ],
+      "glossary": [
+        {
+          "term": "ランタイム",
+          "explanation": "作成されたプログラムを実行するために必要な動作環境や基盤ソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-04-typescript-basics",
+      "title": "35日でフロントエンドの基礎を完全に理解する #4 - TypeScript基礎（型・推論・interface）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-06T13:31:55.000Z",
+      "summary": "JavaScriptの弱点である実行時エラーを未然に防ぐTypeScriptの基本が解説されました。基本の型や型推論の仕組み、オブジェクトの構造を定義するinterfaceの役割が紹介されています。tscコンパイラやエディタにより、実行前にバグを特定できる利点が示されています。",
+      "headline": "TypeScriptの型やinterfaceの基礎を解説する記事が公開",
+      "points": [
+        "JavaScriptの弱点である実行時エラーを未然に防ぐTypeScriptの基本が解説されました。",
+        "基本の型や型推論の仕組み、オブジェクトの構造を定義するinterfaceの役割が紹介されています。",
+        "tscコンパイラやエディタにより、実行前にバグを特定できる利点が示されています。"
+      ],
+      "glossary": [
+        {
+          "term": "型推論",
+          "explanation": "代入された値などから、言語処理系が自動的にデータ型を推測して決定する仕組み。"
+        },
+        {
+          "term": "interface",
+          "explanation": "オブジェクトが持つべきプロパティ名や型の構造をあらかじめ定義する宣言。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+      "title": "Gleam doesn't compile to Erlang source anymore",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-06T08:08:20Z",
+      "summary": "Gleam v1.19.0が公開され、Erlangソースコードの代わりに中間表現を出力する設計に変更されました。コンパイル時間が大幅に削減され、プロジェクトのビルドが高速化しました。クラッシュ時のスタックトレースなどで、元のGleamコードの行番号が正確に示されるよう改善されました。",
+      "headline": "Gleam 1.19.0が公開されErlangコード生成方式を刷新",
+      "points": [
+        "Gleam v1.19.0が公開され、Erlangソースコードの代わりに中間表現を出力する設計に変更されました。",
+        "コンパイル時間が大幅に削減され、プロジェクトのビルドが高速化しました。",
+        "クラッシュ時のスタックトレースなどで、元のGleamコードの行番号が正確に示されるよう改善されました。"
+      ],
+      "glossary": [
+        {
+          "term": "中間表現",
+          "explanation": "ソースコードを最終的な実行コードへ変換する過程で使われる、内部的なデータ構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics/",
+      "title": "AWS Batch now publishes job metrics to Amazon CloudWatch",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-06T17:30:00.000Z",
+      "summary": "AWS Batchがジョブのライフサイクル全体のメトリクスをAmazon CloudWatchへ自動発行するようになりました。ジョブの状態遷移数や滞在時間などを追跡でき、AWS/Batch名前空間に記録されます。AWS Batchが利用可能なすべてのAWSリージョンで提供が開始されています。",
+      "headline": "AWS BatchがジョブメトリクスをCloudWatchに出力可能に",
+      "points": [
+        "AWS Batchがジョブのライフサイクル全体のメトリクスをAmazon CloudWatchへ自動発行するようになりました。",
+        "ジョブの状態遷移数や滞在時間などを追跡でき、AWS/Batch名前空間に記録されます。",
+        "AWS Batchが利用可能なすべてのAWSリージョンで提供が開始されています。"
+      ],
+      "impact": "AWS Batch利用者はマネジメントコンソールやCloudWatch、AWS CLIなどからジョブの稼働状況を確認できます。",
+      "glossary": [
+        {
+          "term": "Amazon CloudWatch",
+          "explanation": "AWSリソースやアプリの稼働状況を監視・収集するサービス。"
+        },
+        {
+          "term": "メトリクス",
+          "explanation": "システムの稼働状態や性能を把握するための測定データや指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/AWS-Certificate-Manager-ACME-Privatelink",
+      "title": "AWS Certificate Manager now supports ACME issuance through AWS PrivateLink",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-06T14:01:00.000Z",
+      "summary": "AWS Certificate Manager（ACM）がAWS PrivateLink経由でのパブリックTLS証明書発行に対応しました。インターネットを経由せずVPC内の閉域網を通じた通信で証明書のリクエストや更新が可能になります。既存のACMEクライアントの設定やディレクトリURLを変更せずに導入できます。",
+      "headline": "ACMがPrivateLink経由のACME証明書発行に対応",
+      "points": [
+        "AWS Certificate Manager（ACM）がAWS PrivateLink経由でのパブリックTLS証明書発行に対応しました。",
+        "インターネットを経由せずVPC内の閉域網を通じた通信で証明書のリクエストや更新が可能になります。",
+        "既存のACMEクライアントの設定やディレクトリURLを変更せずに導入できます。"
+      ],
+      "impact": "ACMでACMEを利用する開発者は、VPCインターフェイスエンドポイントを作成することで閉域網経由の発行に移行できます。",
+      "glossary": [
+        {
+          "term": "ACME",
+          "explanation": "SSL/TLS証明書の発行や更新を自動化するためのプロトコル。"
+        },
+        {
+          "term": "AWS PrivateLink",
+          "explanation": "AWSの内部ネットワークを通じてサービス間を安全に接続する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/",
+      "title": "OpenTelemetry Makes Kubernetes Attributes Processor Stable as Observability Schema Matures",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "summary": "OpenTelemetryのKubernetes Attributes Processorがv1.0.0として安定版に達しました。ログやメトリクス、トレースにKubernetesメタデータを付与するコンポーネントです。安定版セマンティック規則の採用に伴い、一部の属性名が変更されるなど非互換な変更が含まれます。",
+      "headline": "OpenTelemetryのK8sプロセッサがv1.0で安定版に",
+      "points": [
+        "OpenTelemetryのKubernetes Attributes Processorがv1.0.0として安定版に達しました。",
+        "ログやメトリクス、トレースにKubernetesメタデータを付与するコンポーネントです。",
+        "安定版セマンティック規則の採用に伴い、一部の属性名が変更されるなど非互換な変更が含まれます。"
+      ],
+      "impact": "移行する運用チームは、変更前の属性名を参照するダッシュボードやアラートルール、クエリなどの更新が必要です。",
+      "glossary": [
+        {
+          "term": "OpenTelemetry",
+          "explanation": "アプリのトレースやログなどの観測データを収集する標準規格。"
+        },
+        {
+          "term": "メタデータ",
+          "explanation": "データそのものではなく、データの付帯情報や属性を表す情報。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://github.com/FeSens/openTPU",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-06T16:23:25Z",
+      "summary": "オープンソースのAIアクセラレータ「openTPU」が公開されました。ハードウェア設計から命令セット、シミュレータ、コンパイラ、ホストソフトまでを1つのリポジトリに収録しています。FPGAカード上で複数のモデルを実行し、シミュレータと完全に一致する出力を確認しています。",
+      "headline": "AIがハードウェアを設計したOSSのAIアクセラレータが登場",
+      "points": [
+        "オープンソースのAIアクセラレータ「openTPU」が公開されました。",
+        "ハードウェア設計から命令セット、シミュレータ、コンパイラ、ホストソフトまでを1つのリポジトリに収録しています。",
+        "FPGAカード上で複数のモデルを実行し、シミュレータと完全に一致する出力を確認しています。"
+      ],
+      "glossary": [
+        {
+          "term": "AIアクセラレータ",
+          "explanation": "AIモデルの計算処理を高速化するために特化した専用ハードウェア。"
+        },
+        {
+          "term": "FPGA",
+          "explanation": "製造後でも回路構成をプログラムによって書き換え可能な集積回路。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.nobelprize.org/prizes/physics/2026/",
+      "title": "Nobel Prize in Physics 2026: Francis Halzen",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-06T09:48:46Z",
+      "summary": "アイスキューブニュートリノ観測所への貢献と高エネルギーニュートリノの発見が受賞理由です受賞者はフランシス・ハルゼン氏で、賞金は単独受賞により全額が授与されます",
+      "headline": "2026年のノーベル物理学賞にフランシス・ハルゼン氏が決定",
+      "points": [
+        "アイスキューブニュートリノ観測所への貢献と高エネルギーニュートリノの発見が受賞理由です",
+        "受賞者はフランシス・ハルゼン氏で、賞金は単独受賞により全額が授与されます"
+      ],
+      "impact": "科学や物理学に関心のある人は、10月5日から12日にかけて配信されるノーベル賞の発表を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "ニュートリノ",
+          "explanation": "電気を持たず、他の物質とほとんど反応しない極めて小さな素粒子の一種です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 107,
+    "shortlisted": 60,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 16936,
+    "outputTokens": 5253
+  },
+  "offline": false
+}
