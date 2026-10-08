@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-07T22:01:22.527Z",
+  "lastRun": "2026-10-08T22:07:11.282Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -123,6 +123,24 @@
     "https://aws.amazon.com/jp/blogs/news/how-autodesk-migrated-2-3-billion-documents-to-amazon-opensearch-service-using-migration-assistant-and-intelligent-routing": "2026-10-08",
     "https://github.com/docker/docker-agent": "2026-10-08",
     "https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html": "2026-10-08",
-    "https://newsdig.tbs.co.jp/articles/-/2995228": "2026-10-08"
+    "https://newsdig.tbs.co.jp/articles/-/2995228": "2026-10-08",
+    "https://zenn.dev/neotechpark/articles/cb406fd221d986": "2026-10-09",
+    "https://zenn.dev/sugawara_ai/articles/ai-news-20261008": "2026-10-09",
+    "https://qiita.com/picnic/items/39382bbb3d2077cafa1c": "2026-10-09",
+    "https://qiita.com/quotidia/items/08f435a186f38bac07bb": "2026-10-09",
+    "https://zenn.dev/hwemo/articles/9efda56f4985a7": "2026-10-09",
+    "https://zenn.dev/dely_jp/articles/8cb51d42a64b81": "2026-10-09",
+    "https://aws.amazon.com/jp/blogs/news/how-automated-reasoning-checks-in-amazon-bedrock-transform-generative-ai-compliance": "2026-10-09",
+    "https://spring.io/blog/2026/10/08/a-bootiful-podcast-kohsuke-kawaguchi": "2026-10-09",
+    "https://aws.amazon.com/jp/blogs/news/introducing-filtered-export-from-amazon-dynamodb-to-amazon-s3": "2026-10-09",
+    "https://aws.amazon.com/jp/blogs/news/timestream-for-influxdb-3-workload-analysis-and-best-practices": "2026-10-09",
+    "https://forest.watch.impress.co.jp/docs/news/2146735.html": "2026-10-09",
+    "https://www.idcf.jp/news/topics/20261008001": "2026-10-09",
+    "https://www.watch.impress.co.jp/docs/news/2146931.html": "2026-10-09",
+    "https://www.jpcert.or.jp/at/2026/at260030.html": "2026-10-09",
+    "https://www.47news.jp/15055808.html": "2026-10-09",
+    "https://coliss.com/wp-content/cache/all/articles/build-websites/operation/work/crafting-apps-20261008.html/index.html": "2026-10-09",
+    "https://qiita.com/kotowazaman/items/74621592ace2ff968670": "2026-10-09",
+    "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html": "2026-10-09"
   }
 }

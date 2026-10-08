@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-08T22:07:11.282Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://zenn.dev/neotechpark/articles/cb406fd221d986",
+      "title": "Claude Haiku 5.5 Costs the Same as Luna. Your Bill Won't.",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T11:07:50.000Z",
+      "summary": "AnthropicのClaude Haiku 5.5はプロンプトが10万トークンを超えると単価が5倍になります。超過時は一部ではなくリクエスト全体が高価格帯で再計算される仕組みです。新トークナイザー採用により同じ文章でもトークン数が約30%増加します。",
+      "headline": "Claude Haiku 5.5の長文利用で料金が急増する注意点",
+      "points": [
+        "AnthropicのClaude Haiku 5.5はプロンプトが10万トークンを超えると単価が5倍になります。",
+        "超過時は一部ではなくリクエスト全体が高価格帯で再計算される仕組みです。",
+        "新トークナイザー採用により同じ文章でもトークン数が約30%増加します。"
+      ],
+      "impact": "API利用者は事前にトークン数を計測し、10万トークンの境界を超えないよう管理する必要があります。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIが自然言語を処理する際にテキストを分割する最小単位のことです。"
+        },
+        {
+          "term": "トークナイザー",
+          "explanation": "文章をAIが理解できるトークンの並びに分割・変換するプログラムです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261008",
+      "title": "安くて速いHaiku 5.5登場、ChatGPTは図で答える時代へ",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T10:43:22.000Z",
+      "summary": "軽量モデルのHaiku 5.5登場や図表を表示するChatGPTの機能拡充が発表されました。OpenAIはAIによる数学論文722本を公開し、PC上で動くWindows AIも披露されました。",
+      "headline": "対話AIのUI刷新や小型モデル登場など重要発表が相次ぐ",
+      "points": [
+        "軽量モデルのHaiku 5.5登場や図表を表示するChatGPTの機能拡充が発表されました。",
+        "OpenAIはAIによる数学論文722本を公開し、PC上で動くWindows AIも披露されました。"
+      ],
+      "impact": "AIを活用する企業や個人は、用途に応じたモデルの使い分けや手元での処理への対応を検討する必要があります。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://qiita.com/picnic/items/39382bbb3d2077cafa1c",
+      "title": "Anthropic「2026 Usage Policy update」公表:Claude API利用者が確認すべき点",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T18:11:50.000Z",
+      "summary": "Anthropicが公式ニュースでClaudeの利用規約改定を発表しました。禁止事項の変更点や適用開始日などの具体的な改定内容は現時点で未公開です。",
+      "headline": "Anthropicが2026年版の利用ポリシー改定を公表",
+      "points": [
+        "Anthropicが公式ニュースでClaudeの利用規約改定を発表しました。",
+        "禁止事項の変更点や適用開始日などの具体的な改定内容は現時点で未公開です。"
+      ],
+      "impact": "Claude APIやサービスを運用する事業者は、原文を確認して自社の利用実態と規約を照合する必要があります。",
+      "glossary": [
+        {
+          "term": "API",
+          "explanation": "外部のプログラムからサービスや機能を手軽に呼び出して使うための仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://qiita.com/quotidia/items/08f435a186f38bac07bb",
+      "title": "Geminiアプリのプラン別モデル変更：無料はFlash-Liteのみ、AI PlusもProなし (2026年10月)",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T21:01:17.000Z",
+      "summary": "GoogleはGeminiアプリで無料アカウント向けに提供するモデルの変更を告知しました。2026年10月9日より、無料枠で利用できるモデルがFlash-Liteの1つに絞られます。",
+      "headline": "Gemini無料版の提供モデルがFlash-Lite単一に変更",
+      "points": [
+        "GoogleはGeminiアプリで無料アカウント向けに提供するモデルの変更を告知しました。",
+        "2026年10月9日より、無料枠で利用できるモデルがFlash-Liteの1つに絞られます。"
+      ],
+      "impact": "Geminiを無料プランで利用中の個人は、利用可能なモデルの変更を確認する必要があります。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/hwemo/articles/9efda56f4985a7",
+      "title": "Claude Code と OpenCode の許可設定（allow/ask/deny）：評価順の違いと、試して分かった注意点",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T11:14:36.000Z",
+      "summary": "Claude Codeはdeny→ask→allowの順で評価され、OpenCodeは最後に一致したルールが優先されます。Claude Codeの未信頼フォルダでは、対話モードで承認するまでallowルールが無視されます。",
+      "headline": "Claude CodeとOpenCodeの許可ルールの評価順や注意点を解説",
+      "points": [
+        "Claude Codeはdeny→ask→allowの順で評価され、OpenCodeは最後に一致したルールが優先されます。",
+        "Claude Codeの未信頼フォルダでは、対話モードで承認するまでallowルールが無視されます。"
+      ],
+      "impact": "両ツールを使う開発者は、評価順の違いや初期の自動承認設定を把握してルールを書く必要があります。",
+      "glossary": [
+        {
+          "term": "サンドボックス",
+          "explanation": "外部に影響を与えないよう隔離された環境でプログラムを実行する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/dely_jp/articles/8cb51d42a64b81",
+      "title": "AgentCore RuntimeでリモートMCPサーバーを作り手動運用をAIにより効率化しました",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T09:39:52.000Z",
+      "summary": "管理画面でのCSV作成・登録作業をClaudeから直接完結できるよう、リモートMCP基盤をAWS上に構築しました。参照用DB権限をSELECTのみにし、書き込みはS3経由で人間の承認を必須とする安全策を講じました。",
+      "headline": "クラシルがAWS上にリモートMCP基盤を構築し運用業務を効率化",
+      "points": [
+        "管理画面でのCSV作成・登録作業をClaudeから直接完結できるよう、リモートMCP基盤をAWS上に構築しました。",
+        "参照用DB権限をSELECTのみにし、書き込みはS3経由で人間の承認を必須とする安全策を講じました。"
+      ],
+      "impact": "運用業務をAIで自動化したいエンジニアは、DB権限や承認フローをインフラ層で制限する設計を参考にできます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のツールやデータソースと接続して連携するためのプロトコル。"
+        },
+        {
+          "term": "JWT",
+          "explanation": "認証情報などを安全にやり取りするために署名された、JSON形式のトークン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/jp/blogs/news/how-automated-reasoning-checks-in-amazon-bedrock-transform-generative-ai-compliance/",
+      "title": "Amazon Bedrock の自動推論チェックが変える生成 AI のコンプライアンス",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T04:38:26.000Z",
+      "summary": "形式的検証を活用し、AIの生成結果が定義済みルールを満たすかを数学的に証明して監査可能にします。Amazon LogisticsやLucid Motorsなどで手作業によるレビュー時間を大幅に削減しました。",
+      "headline": "AWSがBedrockの自動推論チェックでAI出力の数学的検証を提供",
+      "points": [
+        "形式的検証を活用し、AIの生成結果が定義済みルールを満たすかを数学的に証明して監査可能にします。",
+        "Amazon LogisticsやLucid Motorsなどで手作業によるレビュー時間を大幅に削減しました。"
+      ],
+      "impact": "規制業界でAI出力を扱う担当者は、自動推論チェックを使って監査に耐える検証結果を生成できます。",
+      "glossary": [
+        {
+          "term": "形式的検証",
+          "explanation": "システムや論理が仕様どおりに正しく動作することを数学的な手法で証明する技術。"
+        },
+        {
+          "term": "LLM-as-a-judge",
+          "explanation": "生成AIモデルの出力を、別の大規模言語モデルを使って評価・判定する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://spring.io/blog/2026/10/08/a-bootiful-podcast-kohsuke-kawaguchi",
+      "title": "A Bootiful Podcast: legendary Java developer Kohsuke Kawaguchi",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "summary": "Jenkinsの生みの親である川口耕介氏が、Sun時代やCI基盤の開発秘話、自身のキャリアを語りました。コーディングAIに対し、既存の開発ワークフローへ知能を組み込むシステムが重要になるとの見解を示しました。",
+      "headline": "ポッドキャストに川口耕介氏が出演しJenkinsやAIを語る",
+      "points": [
+        "Jenkinsの生みの親である川口耕介氏が、Sun時代やCI基盤の開発秘話、自身のキャリアを語りました。",
+        "コーディングAIに対し、既存の開発ワークフローへ知能を組み込むシステムが重要になるとの見解を示しました。"
+      ],
+      "impact": "CI/CDや開発ツールに関心がある開発者は、ポッドキャストで川口氏のキャリアやAIへの見解を確認できます。",
+      "glossary": [
+        {
+          "term": "CI/CD",
+          "explanation": "ソフトウェアのビルド、テスト、本番配備を自動化して継続的に行う手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://aws.amazon.com/jp/blogs/news/introducing-filtered-export-from-amazon-dynamodb-to-amazon-s3/",
+      "title": "Amazon DynamoDB から Amazon S3 へのフィルター付きエクスポート機能のご紹介",
+      "source": "AWS 日本語ブログ",
+      "genre": "backend",
+      "publishedAt": "2026-10-08T05:58:45.000Z",
+      "summary": "テーブルキャパシティを消費せずに必要な項目や属性のみをS3へ出力できる。フルエクスポートと増分エクスポートの両方に対応しPITRから読み取る。FilterSpecificationでキー条件や属性の絞り込みを指定できる。",
+      "headline": "DynamoDBがS3へのフィルター付きエクスポート機能を提供",
+      "points": [
+        "テーブルキャパシティを消費せずに必要な項目や属性のみをS3へ出力できる。",
+        "フルエクスポートと増分エクスポートの両方に対応しPITRから読み取る。",
+        "FilterSpecificationでキー条件や属性の絞り込みを指定できる。"
+      ],
+      "impact": "DynamoDBのデータをS3へ抽出したい開発者は、新機能を用いてテーブル負荷なく特定データのみを復旧や移行できる。",
+      "glossary": [
+        {
+          "term": "PITR",
+          "explanation": "ポイントインタイムリカバリの略で、過去の特定時点の状態にデータを復元できる機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/jp/blogs/news/timestream-for-influxdb-3-workload-analysis-and-best-practices/",
+      "title": "Timestream for InfluxDB 3 のワークロード分析とベストプラクティス",
+      "source": "AWS 日本語ブログ",
+      "genre": "backend",
+      "publishedAt": "2026-10-08T03:12:19.000Z",
+      "summary": "適切なインスタンス選択に向けてワークロード特性に応じた指針が示された。書き込みレートやクエリの同時実行数などを考慮してサイジングを行う。インスタンス監視にはCloudWatchやメトリクス収集環境の活用を推奨する。",
+      "headline": "AWSがTimestream for InfluxDB 3のサイジング指針を公開",
+      "points": [
+        "適切なインスタンス選択に向けてワークロード特性に応じた指針が示された。",
+        "書き込みレートやクエリの同時実行数などを考慮してサイジングを行う。",
+        "インスタンス監視にはCloudWatchやメトリクス収集環境の活用を推奨する。"
+      ],
+      "impact": "Timestream for InfluxDB 3の利用者は、要件を見積もり適切なインスタンスサイズを選定して監視する必要がある。",
+      "glossary": [
+        {
+          "term": "カーディナリティ",
+          "explanation": "データのユニークな値の多さを表し、時系列データではタグの組み合わせ数などを指す。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2146735.html",
+      "title": "「Microsoft Execution Containers」が一般提供、AIエージェントを安全に動かす基盤／Windows/macOS/Linuxで「Rust」「.NET」「Node.js」対応のSDKを提供",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-08T09:20:27.000Z",
+      "summary": "AIエージェントのアクセス範囲をOSレベルのコンテナーで封じ込める。WindowsやmacOS、Linuxに対応しRustなどのSDKを提供する。プロセスやセッションなど複数の隔離方式と3種類の動作モードを備える。",
+      "headline": "MSがAIエージェントの安全な実行基盤MXCの一般提供を開始",
+      "points": [
+        "AIエージェントのアクセス範囲をOSレベルのコンテナーで封じ込める。",
+        "WindowsやmacOS、Linuxに対応しRustなどのSDKを提供する。",
+        "プロセスやセッションなど複数の隔離方式と3種類の動作モードを備える。"
+      ],
+      "impact": "AIエージェントを導入する開発者は、MXCのSDKや設定スキーマを用いて安全な実行環境を構成・管理できる。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "自律的に環境を認識し、設定された目標の達成に向けて判断や作業を行うプログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.idcf.jp/news/topics/20261008001",
+      "title": "【第3報】当社サービスの一部システムへの不正アクセスによる障害について | IDCフロンティア",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-08T14:00:07.000Z",
+      "summary": "東日本リージョン1の一部ゾーンでサーバー停止や再起動不可が生じた。495の企業や自治体に影響し対象ゾーンのデータは復元困難な見通しだ。データの復旧は利用者自身が保持しているバックアップからのみ可能となる。",
+      "headline": "IDCFクラウドでランサムウェア被害が発生し一部データが復元困難に",
+      "points": [
+        "東日本リージョン1の一部ゾーンでサーバー停止や再起動不可が生じた。",
+        "495の企業や自治体に影響し対象ゾーンのデータは復元困難な見通しだ。",
+        "データの復旧は利用者自身が保持しているバックアップからのみ可能となる。"
+      ],
+      "impact": "被害ゾーンの利用者は自社バックアップから別環境へ再構築し、他ゾーンの利用者は速やかにバックアップを取る必要がある。",
+      "glossary": [
+        {
+          "term": "ランサムウェア",
+          "explanation": "データを暗号化するなどして使用不能にし、復元と引き換えに対価を要求する不正プログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://www.watch.impress.co.jp/docs/news/2146931.html",
+      "title": "IDCFクラウドの障害、データは「取り出しや復元が困難な見通し」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-08T13:23:12.000Z",
+      "summary": "不正アクセスにより、東日本リージョン1の一部の顧客データが取り出しや復元困難な状態となっています。障害は10月7日に発生し、契約している495の企業や自治体などに影響が及んでいます。同社はデータの復元は顧客側のバックアップからのみ可能とし、別環境での再構築を案内しています。",
+      "headline": "IDCFクラウドの一部データが障害で復元困難な見通しに",
+      "points": [
+        "不正アクセスにより、東日本リージョン1の一部の顧客データが取り出しや復元困難な状態となっています。",
+        "障害は10月7日に発生し、契約している495の企業や自治体などに影響が及んでいます。",
+        "同社はデータの復元は顧客側のバックアップからのみ可能とし、別環境での再構築を案内しています。"
+      ],
+      "impact": "対象ゾーンの利用者は別環境での再構築が必要で、他ゾーンの利用者も自身でバックアップを取る必要があります。",
+      "glossary": [
+        {
+          "term": "ランサムウェア",
+          "explanation": "感染した端末のデータを暗号化し、復旧と引き換えに金銭を要求する不正プログラム。"
+        },
+        {
+          "term": "リージョン",
+          "explanation": "クラウドサービスが提供される拠点となる、地理的に独立したデータセンターの地域区分。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+      "title": "直近で相次いでいる国内組織における不正アクセスに関する注意喚起",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-08T02:17:29.000Z",
+      "summary": "2026年9月前後に国内で情報漏えい被害が相次いだことを受け、攻撃手法と対策が公開されました。既知の脆弱性の探索やAPIの不正操作、Metabaseの脆弱性などを悪用した攻撃が確認されています。APIのレート制限やアクセス制御、管理機能の公開停止、修正アップデートの適用などが推奨されています。",
+      "headline": "JPCERT/CCが国内で相次ぐ不正アクセスについて注意喚起",
+      "points": [
+        "2026年9月前後に国内で情報漏えい被害が相次いだことを受け、攻撃手法と対策が公開されました。",
+        "既知の脆弱性の探索やAPIの不正操作、Metabaseの脆弱性などを悪用した攻撃が確認されています。",
+        "APIのレート制限やアクセス制御、管理機能の公開停止、修正アップデートの適用などが推奨されています。"
+      ],
+      "impact": "Webサービスや社内システムを運用する事業者は、APIのアクセス権限や既知の脆弱性の点検を行う必要があります。",
+      "glossary": [
+        {
+          "term": "脆弱性",
+          "explanation": "プログラムの不具合や設計上のミスなどによって生じる、セキュリティ上の弱点。"
+        },
+        {
+          "term": "API",
+          "explanation": "外部のアプリケーションや機能同士がデータをやり取りして連携するための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://www.47news.jp/15055808.html",
+      "title": "【速報】ローソンに不正アクセス、215万件漏えい",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-08T11:09:55.000Z",
+      "summary": "アカウントサービス「ローソンID」に対する不正アクセスが確認されました。利用者の個人情報が漏えいし、対象人数は約215万5千件に上ります。",
+      "headline": "ローソンで不正アクセスにより約215万件の個人情報が漏えい",
+      "points": [
+        "アカウントサービス「ローソンID」に対する不正アクセスが確認されました。",
+        "利用者の個人情報が漏えいし、対象人数は約215万5千件に上ります。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://coliss.com/wp-content/cache/all/articles/build-websites/operation/work/crafting-apps-20261008.html/index.html",
+      "title": "PhotoshopやIllustratorをオープンソースで再構築した「Crafting Apps」が日本語フォント、UIの日本語化に対応",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-08T00:48:05.000Z",
+      "summary": "PhotoshopなどAdobe製7種を再構築したオープンソース群が、日本語UIや日本語フォントに対応しました。WindowsやMac、ブラウザ上で動作し、商用利用を含めて無料で利用できます。現在はRC版（リリース候補版）のため、大切なファイルでの操作は推奨されていません。",
+      "headline": "Adobe代替のオープンソース「Crafting Apps」が日本語に対応",
+      "points": [
+        "PhotoshopなどAdobe製7種を再構築したオープンソース群が、日本語UIや日本語フォントに対応しました。",
+        "WindowsやMac、ブラウザ上で動作し、商用利用を含めて無料で利用できます。",
+        "現在はRC版（リリース候補版）のため、大切なファイルでの操作は推奨されていません。"
+      ],
+      "impact": "各アプリを試したい利用者はGitHubから導入できますが、RC版のため重要な作業での利用は避ける必要があります。",
+      "glossary": [
+        {
+          "term": "オープンソース",
+          "explanation": "ソフトウェアの設計図にあたるソースコードが無償で公開され、改変や再配布が可能な仕組み。"
+        },
+        {
+          "term": "RC版",
+          "explanation": "正式版として公開される直前のテスト段階にあるソフトウェアのバージョンのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://qiita.com/kotowazaman/items/74621592ace2ff968670",
+      "title": "すでにWEBデザイナーの8割は不要である - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-08T01:21:53.000Z",
+      "summary": "生成AIやライブラリの進化で標準的なUI制作需要が減少し二極化が進んでいます。業務システム等ではAIを活用した方が品質と納品スピードが向上すると評価されています。今後生き残るのはtoCで数値成果を出す人とデザインの根拠を語れる2割とされています。",
+      "headline": "WEBデザイナーの需要は二極化し成果や根拠を示せる人材のみが残る",
+      "points": [
+        "生成AIやライブラリの進化で標準的なUI制作需要が減少し二極化が進んでいます。",
+        "業務システム等ではAIを活用した方が品質と納品スピードが向上すると評価されています。",
+        "今後生き残るのはtoCで数値成果を出す人とデザインの根拠を語れる2割とされています。"
+      ],
+      "impact": "WEBデザイナーはツールの習得にとどまらず数字での成果や明確なデザイン根拠を示す必要があります。",
+      "glossary": [
+        {
+          "term": "UI",
+          "explanation": "利用者と製品やサービスとの接点となる画面や操作性のことです。"
+        },
+        {
+          "term": "Figma",
+          "explanation": "チームでリアルタイムに画面デザインやプロトタイプを作成できるWebツールです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "title": "OpenAI annualised revenues $20B less than previously signalled",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-08T16:45:58Z",
+      "summary": "OpenAIが投資家に示した9月末時点の年換算売上は約500億ドルで従来報道を下回りました。売上報告を受けてNvidiaやOracleなど主要AI関連企業の株価が下落しました。一方でOpenAIの第3四半期エンタープライズ事業のランレート成長率は107%を記録しました。",
+      "headline": "OpenAIの年換算売上が従来想定を下回り関連企業の株価が下落した",
+      "points": [
+        "OpenAIが投資家に示した9月末時点の年換算売上は約500億ドルで従来報道を下回りました。",
+        "売上報告を受けてNvidiaやOracleなど主要AI関連企業の株価が下落しました。",
+        "一方でOpenAIの第3四半期エンタープライズ事業のランレート成長率は107%を記録しました。"
+      ],
+      "impact": "AI分野の投資家は企業の発表する売上指標と市場の予測との乖離を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "年換算売上高",
+          "explanation": "直近の実績データを基に1年間の売上規模に引き直して試算した指標のことです。"
+        },
+        {
+          "term": "IPO",
+          "explanation": "企業が自社の株式を株式市場に新規公開して一般投資家に売り出すことです。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 101,
+    "shortlisted": 60,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 31942,
+    "outputTokens": 12063
+  },
+  "offline": false
+}
