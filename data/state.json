@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-08T22:07:11.282Z",
+  "lastRun": "2026-10-09T21:42:53.270Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -141,6 +141,19 @@
     "https://www.47news.jp/15055808.html": "2026-10-09",
     "https://coliss.com/wp-content/cache/all/articles/build-websites/operation/work/crafting-apps-20261008.html/index.html": "2026-10-09",
     "https://qiita.com/kotowazaman/items/74621592ace2ff968670": "2026-10-09",
-    "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html": "2026-10-09"
+    "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html": "2026-10-09",
+    "https://news.mynavi.jp/techplus/article/20261009-5099252": "2026-10-10",
+    "https://zenn.dev/ai_news_bot/articles/ainews-20261009-t2": "2026-10-10",
+    "https://www.infoq.com/news/2026/10/github-copilot-rust-migration": "2026-10-10",
+    "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out": "2026-10-10",
+    "https://deno.com/blog/cloudflare": "2026-10-10",
+    "https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us": "2026-10-10",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai": "2026-10-10",
+    "https://zenn.dev/sugawara_ai/articles/ai-news-20261009": "2026-10-10",
+    "https://qiita.com/quotidia/items/9f7ea7e4de76116728d2": "2026-10-10",
+    "https://www.infoq.com/news/2026/10/shopify-web-components": "2026-10-10",
+    "https://www.infoq.com/news/2026/10/terraform-google-cloud-provider": "2026-10-10",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm": "2026-10-10",
+    "https://www.non-standardworld.co.jp/stone-engine-js": "2026-10-10"
   }
 }

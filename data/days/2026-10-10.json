@@ -1,0 +1,356 @@
+{
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-09T21:42:53.270Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://news.mynavi.jp/techplus/article/20261009-5099252/",
+      "title": "Claude、SQL不要でデータ分析可能に - ダッシュボードを自動生成する新機能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T08:31:27.000Z",
+      "summary": "自然言語の指示からダッシュボードを自動生成する機能などをベータ版として公開しました。BigQueryやSnowflakeなどに対応し、SQL不要でデータ分析が行えます。Dashboardsは有料プラン向けで、Enterpriseでは管理者の有効化が必要です。",
+      "headline": "Anthropicが自然言語で分析画面を作る新機能を公開",
+      "points": [
+        "自然言語の指示からダッシュボードを自動生成する機能などをベータ版として公開しました。",
+        "BigQueryやSnowflakeなどに対応し、SQL不要でデータ分析が行えます。",
+        "Dashboardsは有料プラン向けで、Enterpriseでは管理者の有効化が必要です。"
+      ],
+      "impact": "Enterpriseプランの管理者は、Dashboards機能を利用する際に初期状態から有効化する必要があります。",
+      "glossary": [
+        {
+          "term": "SQL",
+          "explanation": "リレーショナルデータベースのデータを操作・抽出するための問い合わせ言語です。"
+        },
+        {
+          "term": "データウェアハウス",
+          "explanation": "複数の業務システムから集めた大量のデータを分析用に蓄積・整理する基盤です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20261009-t2",
+      "title": "Anthropic、利用ポリシーを改定 — モデルへの執拗な虐待を禁止、選挙・監視の規定も見直し",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T10:12:54.000Z",
+      "summary": "11月12日に発効する改定で、モデルへの持続的な虐待を禁止事項に追加しました。選挙妨害や兵器、不同意の監視に関する規定を整理し、高リスク機器の制御要件を明記しました。",
+      "headline": "AnthropicがClaudeの利用規約改定を発表",
+      "points": [
+        "11月12日に発効する改定で、モデルへの持続的な虐待を禁止事項に追加しました。",
+        "選挙妨害や兵器、不同意の監視に関する規定を整理し、高リスク機器の制御要件を明記しました。"
+      ],
+      "impact": "Claudeを用いたサービスを提供する開発者は、11月12日までに自社の用途が新規定に抵触しないか確認する必要があります。",
+      "glossary": [
+        {
+          "term": "コンテンツモデレーション",
+          "explanation": "Webサービスなどで不適切な投稿や規約違反のコンテンツを検知・対処する運用です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/",
+      "title": "Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-09T14:29:00.000Z",
+      "summary": "Copilotの実行基盤をTypeScriptからRustへ、AI支援を活用して移行しました。起動などの処理時間が5.25秒から292ミリ秒に短縮し、クライアントのメモリ消費も削減されました。14.5週間で128件のプルリクエストを処理し、80万行超の本番コードを段階的に置き換えました。",
+      "headline": "GitHubがCopilot基盤をRustへ移行",
+      "points": [
+        "Copilotの実行基盤をTypeScriptからRustへ、AI支援を活用して移行しました。",
+        "起動などの処理時間が5.25秒から292ミリ秒に短縮し、クライアントのメモリ消費も削減されました。",
+        "14.5週間で128件のプルリクエストを処理し、80万行超の本番コードを段階的に置き換えました。"
+      ],
+      "glossary": [
+        {
+          "term": "ランタイム",
+          "explanation": "プログラムを実行するために必要な環境や基本ソフトウェアのことです。"
+        },
+        {
+          "term": "ABI",
+          "explanation": "プログラム同士がバイナリレベルで連携するためのインターフェース規格です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "title": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-08T00:14:48Z",
+      "summary": "DeepSeek 4.1 Flashが上位モデル並みの性能を持ちながら極めて安価に利用できると報告しました。V1モデルと比較してKVキャッシュを約437倍削減し、GPUメモリ消費を大幅に抑えています。",
+      "headline": "筆者がDeepSeek 4.1 Flashの性能と低コストを評価",
+      "points": [
+        "DeepSeek 4.1 Flashが上位モデル並みの性能を持ちながら極めて安価に利用できると報告しました。",
+        "V1モデルと比較してKVキャッシュを約437倍削減し、GPUメモリ消費を大幅に抑えています。"
+      ],
+      "glossary": [
+        {
+          "term": "KVキャッシュ",
+          "explanation": "LLMが過去に処理した単語の計算結果を保持し、再計算を防いで高速化する仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://deno.com/blog/cloudflare",
+      "title": "Deno is joining Cloudflare | Deno",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-09T13:21:58.000Z",
+      "summary": "DenoチームがCloudflareに合流し、Workers等の開発に注力します。Denoランタイムは月次更新を1年間提供した後に開発を終了します。Deno Deployは6か月後に停止し、JSRは運用を継続します。",
+      "headline": "Denoチーム全体がCloudflareに合流し独自開発を終了へ",
+      "points": [
+        "DenoチームがCloudflareに合流し、Workers等の開発に注力します。",
+        "Denoランタイムは月次更新を1年間提供した後に開発を終了します。",
+        "Deno Deployは6か月後に停止し、JSRは運用を継続します。"
+      ],
+      "impact": "Deno Deployの有償ユーザーは、支援を受けながらCloudflare Workersへの移行を行う必要があります。",
+      "glossary": [
+        {
+          "term": "ランタイム",
+          "explanation": "プログラムを実行するために必要な機能を提供するソフトウェア環境のことです。"
+        },
+        {
+          "term": "Cloudflare Workers",
+          "explanation": "クラウドフレアのサーバー群でプログラムを実行できるサーバーレス環境です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us/",
+      "title": "Anthropic Claude Sonnet 5.5 and Claude Opus 5.5 are now available on Kiro in AWS GovCloud (US)",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T17:13:00.000Z",
+      "summary": "AWS GovCloud (US)のKiro IDEとCLIでClaude Opus 5.5とSonnet 5.5が提供開始されました。Opus 5.5はツール呼び出しを約40%削減し、Sonnet 5.5は出力速度が30%以上向上しています。両モデルともに1Mコンテキストウィンドウに対応し、クレジット倍率が設定されています。",
+      "headline": "AWS GovCloudのKiroでClaude 5.5系モデルが利用可能に",
+      "points": [
+        "AWS GovCloud (US)のKiro IDEとCLIでClaude Opus 5.5とSonnet 5.5が提供開始されました。",
+        "Opus 5.5はツール呼び出しを約40%削減し、Sonnet 5.5は出力速度が30%以上向上しています。",
+        "両モデルともに1Mコンテキストウィンドウに対応し、クレジット倍率が設定されています。"
+      ],
+      "impact": "利用者はIDEやCLIを最新バージョンに更新して再起動することで、モデル選択画面から利用可能になります。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度に入力として処理できるテキストの最大長のことです。"
+        },
+        {
+          "term": "AWS GovCloud",
+          "explanation": "米国政府機関などの厳格なコンプライアンス要件に対応する専用のAWSリージョンです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/",
+      "title": "Amazon Bedrock now supports reasoning summaries for OpenAI models",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T17:44:00.000Z",
+      "summary": "Responses APIでreasoning.summaryパラメータが利用可能になり、推論要約を取得できます。要約はreasoning出力のsummary配列で返され、回答の評価やデバッグに活用できます。OpenAI GPTモデルが提供される全AWSリージョンや各種クロスリージョン推論で利用可能です。",
+      "headline": "BedrockのOpenAIモデルで推論プロセスの要約取得に対応",
+      "points": [
+        "Responses APIでreasoning.summaryパラメータが利用可能になり、推論要約を取得できます。",
+        "要約はreasoning出力のsummary配列で返され、回答の評価やデバッグに活用できます。",
+        "OpenAI GPTモデルが提供される全AWSリージョンや各種クロスリージョン推論で利用可能です。"
+      ],
+      "impact": "BedrockでOpenAIモデルを使う開発者は、複雑なタスクでの思考プロセスの把握やアプリのデバッグに活用できます。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "複数の生成AIモデルをAPI経由で安全に利用できるAWSのマネージドサービスです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261009",
+      "title": "OpenAIの売上、実は500億ドル。AI株が下落",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T11:44:24.000Z",
+      "summary": "OpenAIの9月末時点の年換算売上は約500億ドルとされ、集計方法の差異を背景に関連銘柄が下落しました。Googleは自律的に業務を進めるGemini新機能や、通信なしで動く無料の会議メモアプリを発表しました。OpenAIによる数学論文の取り下げや、AIを悪用した韓国大手銀行への単独サイバー攻撃疑惑も報告されました。",
+      "headline": "OpenAIの売上実績やGoogleの最新AI機能など主要動向が報じられた",
+      "points": [
+        "OpenAIの9月末時点の年換算売上は約500億ドルとされ、集計方法の差異を背景に関連銘柄が下落しました。",
+        "Googleは自律的に業務を進めるGemini新機能や、通信なしで動く無料の会議メモアプリを発表しました。",
+        "OpenAIによる数学論文の取り下げや、AIを悪用した韓国大手銀行への単独サイバー攻撃疑惑も報告されました。"
+      ],
+      "impact": "経営者や学習者は、AI生成物の確認やセキュリティ対策の徹底、定期業務の洗い出しなどを進める必要があります。",
+      "glossary": [
+        {
+          "term": "エージェント",
+          "explanation": "人間の代わりに状況を判断し、自律的に一連の作業や操作を代行するAIのこと。"
+        },
+        {
+          "term": "侵入テスト",
+          "explanation": "システムの安全性を確かめるために、意図的に攻撃を仕掛けて弱点を探る検証手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/quotidia/items/9f7ea7e4de76116728d2",
+      "title": "OpenAIのAI数学論文722本と3本の取り下げ：符号1つの誤りとLean形式化42% (2026年10月)",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T21:01:42.000Z",
+      "summary": "OpenAIが未公開AIモデルで作成した数学論文722本を公開したが、公開後2日以内に3本を取り下げた。取り下げは符号の誤りが原因で、同時に14本の修正や6本の形式化追加などの更新も行われた。論文はモデルへ出題した約4,000問から絞り込まれ、1件あたり平均約3時間の推論計算が費やされた。",
+      "headline": "OpenAIがAI作成の数学論文722本を公開し符号誤りで3本を取り下げた",
+      "points": [
+        "OpenAIが未公開AIモデルで作成した数学論文722本を公開したが、公開後2日以内に3本を取り下げた。",
+        "取り下げは符号の誤りが原因で、同時に14本の修正や6本の形式化追加などの更新も行われた。",
+        "論文はモデルへ出題した約4,000問から絞り込まれ、1件あたり平均約3時間の推論計算が費やされた。"
+      ],
+      "glossary": [
+        {
+          "term": "形式化",
+          "explanation": "数学の命題や証明を、コンピューターが論理的に検証可能な厳密なコードとして記述すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://www.infoq.com/news/2026/10/shopify-web-components/",
+      "title": "Shopify Upgrades Checkout Blocks to Polaris Web Components, Cutting Bundle Sizes up to 85%",
+      "source": "InfoQ",
+      "genre": "frontend",
+      "publishedAt": "2026-10-09T15:01:00.000Z",
+      "summary": "ReactからPreactやPolarisのWeb Components等へ刷新しました。バンドルサイズが40〜85%削減され、読込速度も中央値で約8%改善しました。2026年10月1日以降はAPIバージョン2026-01より前のデプロイが遮断されます。",
+      "headline": "Shopifyがチェックアウト拡張を刷新しバンドルを最大85%削減",
+      "points": [
+        "ReactからPreactやPolarisのWeb Components等へ刷新しました。",
+        "バンドルサイズが40〜85%削減され、読込速度も中央値で約8%改善しました。",
+        "2026年10月1日以降はAPIバージョン2026-01より前のデプロイが遮断されます。"
+      ],
+      "impact": "開発者は2026年10月1日までに、拡張機能をAPIバージョン2026-01以降へ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "Web Components",
+          "explanation": "ブラウザの標準機能を使って再利用可能な独自のHTML要素を作る技術です。"
+        },
+        {
+          "term": "Preact",
+          "explanation": "Reactと高い互換性を保ちながら、データ容量を小さく抑えた軽量なUIライブラリです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://www.infoq.com/news/2026/10/terraform-google-cloud-provider/",
+      "title": "HashiCorp Relased Terraform Google Cloud Provider 8.0 in General Availability",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-09T08:00:00.000Z",
+      "summary": "HashiCorpがTerraform Google Cloud Provider 8.0を一般公開しました。負荷分散の既定値がEXTERNAL_MANAGEDへ変更され、従来型構成の維持には明示的指定が必要です。廃止されたサービスのリソースが削除され、差分発生を防ぐため一部属性がリストからセットに変更されました。",
+      "headline": "HashiCorpがGoogle Cloud向けTerraformプロバイダー8.0を公開",
+      "points": [
+        "HashiCorpがTerraform Google Cloud Provider 8.0を一般公開しました。",
+        "負荷分散の既定値がEXTERNAL_MANAGEDへ変更され、従来型構成の維持には明示的指定が必要です。",
+        "廃止されたサービスのリソースが削除され、差分発生を防ぐため一部属性がリストからセットに変更されました。"
+      ],
+      "impact": "利用者は最新7.xで警告を解消し、削除対象リソースや負荷分散設定を確認・修正した上で8.0へ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "Terraformプロバイダー",
+          "explanation": "クラウド等の外部APIと連携し、インフラリソースを管理・操作するための拡張プラグインのこと。"
+        },
+        {
+          "term": "破壊的変更",
+          "explanation": "既存の設定やコードとの下位互換性が失われ、修正作業が必要になる更新のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/",
+      "title": "AWS Lambda supports OAuth authentication for self-managed Apache Kafka event sources",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-09T16:30:00.000Z",
+      "summary": "セルフマネージドKafkaのイベントソースマッピングでOAuth認証が利用可能になりました。自前運用のほかConfluent CloudやAiven、Redpandaなどのクラスターに対応します。Amazon CognitoやOktaなどのIDプロバイダーを用いた認証連携が可能です。",
+      "headline": "AWS LambdaがセルフマネージドKafkaのOAuth認証に対応",
+      "points": [
+        "セルフマネージドKafkaのイベントソースマッピングでOAuth認証が利用可能になりました。",
+        "自前運用のほかConfluent CloudやAiven、Redpandaなどのクラスターに対応します。",
+        "Amazon CognitoやOktaなどのIDプロバイダーを用いた認証連携が可能です。"
+      ],
+      "impact": "OAuth認証が必要なKafka利用者は、AWSコンソールやCLIなどから認証設定を行った新規ESMを作成して利用できます。",
+      "glossary": [
+        {
+          "term": "イベントソースマッピング (ESM)",
+          "explanation": "Lambda関数を呼び出すイベントの発生源と関数を関連付けるAWSの設定のこと。"
+        },
+        {
+          "term": "OAuth",
+          "explanation": "安全に外部サービス同士でユーザーの認証や認可を連携するための標準的な仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.non-standardworld.co.jp/stone-engine-js/",
+      "title": "印刷物基準の文字組みをウェブの世界で。日本デザインセンター様から生まれたiOS用文字組みエンジンをJavaScriptに移植しました。 | non-standard world株式会社",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-09T08:06:29.000Z",
+      "summary": "iOS用文字組エンジン「stone engine」を移植した「stone-engine.js」がOSSとして無償公開されました。縦書きや縦中横、約物の詰め、厳格な禁則処理など、印刷物水準の高度な日本語組版をウェブ上で再現できます。1行のコマンドで手軽に導入でき、和文や欧文など文字種ごとのフォント設定や装飾にも対応しています。",
+      "headline": "iOS用文字組エンジンをJSに移植したstone-engine.jsが無償公開",
+      "points": [
+        "iOS用文字組エンジン「stone engine」を移植した「stone-engine.js」がOSSとして無償公開されました。",
+        "縦書きや縦中横、約物の詰め、厳格な禁則処理など、印刷物水準の高度な日本語組版をウェブ上で再現できます。",
+        "1行のコマンドで手軽に導入でき、和文や欧文など文字種ごとのフォント設定や装飾にも対応しています。"
+      ],
+      "impact": "Webで高品質な日本語組版や縦書きを扱いたい開発者は、1行のコマンドで導入して自サイトに組み込めます。",
+      "glossary": [
+        {
+          "term": "組版",
+          "explanation": "文字や図版を美しく読みやすく配置して紙面や画面を構成する作業のこと。"
+        },
+        {
+          "term": "禁則処理",
+          "explanation": "行頭や行末に特定の約物や小書き仮名が配置されないように調整する処理のこと。"
+        },
+        {
+          "term": "約物",
+          "explanation": "句読点や括弧、感嘆符など、文章で使われる文字以外の記号の総称。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 118,
+    "shortlisted": 60,
+    "bodyFailures": 0,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 20881,
+    "outputTokens": 12456
+  },
+  "offline": false
+}
