@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-09T21:42:53.270Z",
+  "lastRun": "2026-10-10T20:34:56.823Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -154,6 +154,20 @@
     "https://www.infoq.com/news/2026/10/shopify-web-components": "2026-10-10",
     "https://www.infoq.com/news/2026/10/terraform-google-cloud-provider": "2026-10-10",
     "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm": "2026-10-10",
-    "https://www.non-standardworld.co.jp/stone-engine-js": "2026-10-10"
+    "https://www.non-standardworld.co.jp/stone-engine-js": "2026-10-10",
+    "https://zenn.dev/densan_techblog/articles/b55141e636da7c": "2026-10-11",
+    "https://qiita.com/picnic/items/54cd70948168472291b4": "2026-10-11",
+    "https://pc.watch.impress.co.jp/docs/news/2147318.html": "2026-10-11",
+    "https://zenn.dev/non_miyan/articles/52d001e68a04cc": "2026-10-11",
+    "https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta": "2026-10-11",
+    "https://zenn.dev/namespace/articles/nuxt-static-portfolio-seo-cloudflare-workers": "2026-10-11",
+    "https://zenn.dev/kipcop/articles/f35-vue-08-directives": "2026-10-11",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json": "2026-10-11",
+    "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare": "2026-10-11",
+    "https://news.yahoo.co.jp/expert/articles/cce6d03439ffb1d2d6de2500240634b394731753": "2026-10-11",
+    "https://motherduck.com/blog/why-duckdb-20-is-faster": "2026-10-11",
+    "https://github.com/rociiu/talorys": "2026-10-11",
+    "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents": "2026-10-11",
+    "https://piyolog.hatenadiary.jp/entry/2026/10/11/004353": "2026-10-11"
   }
 }

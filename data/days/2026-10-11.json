@@ -1,0 +1,391 @@
+{
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-10T20:34:56.823Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://zenn.dev/densan_techblog/articles/b55141e636da7c",
+      "title": "新モデル「Gemini 4 Argon」発表！（Gemini at Work 2026 発表まとめ）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-10T15:12:06.000Z",
+      "summary": "新フラッグシップモデル「Gemini 4 Argon」と自律的にタスクを遂行する新機能が発表されました。実務ベンチマークVAS Indexやコーディング評価で他社を上回る優位なスコアを記録しています。画面上でのClaudeモデル選択やタスク進捗管理、定期実行スケジュール機能などが紹介されました。",
+      "headline": "新モデル「Gemini 4 Argon」発表とエージェント機能拡充",
+      "points": [
+        "新フラッグシップモデル「Gemini 4 Argon」と自律的にタスクを遂行する新機能が発表されました。",
+        "実務ベンチマークVAS Indexやコーディング評価で他社を上回る優位なスコアを記録しています。",
+        "画面上でのClaudeモデル選択やタスク進捗管理、定期実行スケジュール機能などが紹介されました。"
+      ],
+      "impact": "提供開始時期や国内展開の日程は明かされていないため、利用を検討するユーザーは続報を待つ必要があります。",
+      "glossary": [
+        {
+          "term": "リファクタリング",
+          "explanation": "プログラムの外部の動作を変えずに、内部の構造を整理して保守しやすく改善する作業。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://qiita.com/picnic/items/54cd70948168472291b4",
+      "title": "Gemini 3.5 Flash が非推奨に:gemini-3.6-flash への自動ルーティングと移行手順",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-10T16:34:08.000Z",
+      "summary": "gemini-3.5-flashが非推奨となり、リクエストは後継のgemini-3.6-flashへ自動ルーティングされます。既存コードは即時停止しないものの、応答モデルが変わるため出力結果や挙動が変化するリスクがあります。自動ルーティングの開始日や旧エンドポイントの完全停止日は記載されていません。",
+      "headline": "gemini-3.5-flashが非推奨化、3.6へ自動転送",
+      "points": [
+        "gemini-3.5-flashが非推奨となり、リクエストは後継のgemini-3.6-flashへ自動ルーティングされます。",
+        "既存コードは即時停止しないものの、応答モデルが変わるため出力結果や挙動が変化するリスクがあります。",
+        "自動ルーティングの開始日や旧エンドポイントの完全停止日は記載されていません。"
+      ],
+      "impact": "対象モデルを指定している開発者は、指定文字列を3.6などに更新し出力の回帰テストを実施する必要があります。",
+      "glossary": [
+        {
+          "term": "非推奨 (deprecated)",
+          "explanation": "将来の廃止が予定されており、新規の採用や継続的な利用が推奨されない状態。"
+        },
+        {
+          "term": "回帰テスト",
+          "explanation": "システムの変更や更新によって、既存の機能や挙動に不具合が発生していないか確認するテスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147318.html",
+      "title": "写真も動画も声もまとめて0.74Bで検索。ローカルRAG向け「EmbeddingGemma 2」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-09T23:24:10.000Z",
+      "summary": "写真や動画、音声、文字、コードを1つで横断検索できる0.74Bパラメータの埋め込みモデルが無償公開されました。処理が端末内で完結し、量子化によりPixel 11 Pro上で全機能構成時も約567MBのメモリで動作します。重みデータはHugging Face等で公開され、Apache 2.0ライセンスで商用利用が認められます。",
+      "headline": "Googleが検索用小型モデル「EmbeddingGemma 2」公開",
+      "points": [
+        "写真や動画、音声、文字、コードを1つで横断検索できる0.74Bパラメータの埋め込みモデルが無償公開されました。",
+        "処理が端末内で完結し、量子化によりPixel 11 Pro上で全機能構成時も約567MBのメモリで動作します。",
+        "重みデータはHugging Face等で公開され、Apache 2.0ライセンスで商用利用が認められます。"
+      ],
+      "impact": "端末内での検索やRAG構築を行いたい開発者は、公開プラットフォームからモデルをダウンロードして利用できます。",
+      "glossary": [
+        {
+          "term": "埋め込み (Embedding)",
+          "explanation": "文字や画像などの意味を、コンピュータが比較しやすい数値の並び（ベクトル）に変換する技術。"
+        },
+        {
+          "term": "RAG (検索拡張生成)",
+          "explanation": "手元の資料や外部データベースから関連情報を検索し、それを根拠にしてAIに回答を生成させる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://zenn.dev/non_miyan/articles/52d001e68a04cc",
+      "title": "Data Agent Kitでデータマートを簡単に実現する",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-10T15:31:26.000Z",
+      "summary": "AIコーディングエージェントからGoogle Cloudのデータリソースを直接操作できる無料セットが発表されました。BigQueryなど15以上のサービスに接続するMCPツールと、SQL最適化などの指示書スキルで構成されます。Knowledge Catalogと連携し、エージェントがデータ構造を理解してデータマートを自動構築できます。",
+      "headline": "Googleがデータ基盤連携ツール「Data Agent Kit」発表",
+      "points": [
+        "AIコーディングエージェントからGoogle Cloudのデータリソースを直接操作できる無料セットが発表されました。",
+        "BigQueryなど15以上のサービスに接続するMCPツールと、SQL最適化などの指示書スキルで構成されます。",
+        "Knowledge Catalogと連携し、エージェントがデータ構造を理解してデータマートを自動構築できます。"
+      ],
+      "impact": "Google Cloudで分析を行うエンジニアは、普段のコーディングエージェントと連携させて開発を自動化できます。",
+      "glossary": [
+        {
+          "term": "データマート",
+          "explanation": "特定の部署や目的に応じた分析のために、利用しやすい形へ集計・整理されたデータ群。"
+        },
+        {
+          "term": "MCP (Model Context Protocol)",
+          "explanation": "AIモデルを外部のツールやデータベースと接続し、相互にやり取りするための共通規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/",
+      "title": "Cloudflare Traces Turns the Proxy Layer into OpenTelemetry Spans, with New Volume-Based Pricing",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-10T07:12:00.000Z",
+      "summary": "プロキシ全体の処理がOpenTelemetryスパンとして自動記録されます。OTLPで外部ツールへ転送でき、MCPサーバー経由のAI分析にも対応します。課金体系は2026年12月1日からスパン数単位からデータ容量と保持期間に基づく形式に変わります。",
+      "headline": "Cloudflareがプロキシ層を可視化するTracesの公開ベータを開始",
+      "points": [
+        "プロキシ全体の処理がOpenTelemetryスパンとして自動記録されます。",
+        "OTLPで外部ツールへ転送でき、MCPサーバー経由のAI分析にも対応します。",
+        "課金体系は2026年12月1日からスパン数単位からデータ容量と保持期間に基づく形式に変わります。"
+      ],
+      "impact": "Workers Tracingの利用者は、データ容量に応じた課金への変更に伴い、サンプリング設定やコストを確認する必要があります。",
+      "glossary": [
+        {
+          "term": "OpenTelemetry",
+          "explanation": "システムのログやトレースなどの監視データを収集・送信するための標準規格。"
+        },
+        {
+          "term": "スパン",
+          "explanation": "分散トレーシングにおいて、一連の処理の中の1区間と所要時間を表す単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/namespace/articles/nuxt-static-portfolio-seo-cloudflare-workers",
+      "title": "Nuxt 4 のポートフォリオを完全静的にして Cloudflare Workers に載せるまで — SEO のためにやったこと全部",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-10T07:14:06.000Z",
+      "summary": "全ページの事前生成やメタ情報の設定を行い、サイトをCloudflare Workersへデプロイしました。SupabaseのSDKを外してfetchに変更し、JS容量を590KBから373KBへ約37%削減しました。日本語Webフォントをやめてシステムフォントを採用し、CSS容量を648KBから212KBに削減しました。",
+      "headline": "Nuxt 4製ポートフォリオを完全静的化してSEOを最適化した知見が公開",
+      "points": [
+        "全ページの事前生成やメタ情報の設定を行い、サイトをCloudflare Workersへデプロイしました。",
+        "SupabaseのSDKを外してfetchに変更し、JS容量を590KBから373KBへ約37%削減しました。",
+        "日本語Webフォントをやめてシステムフォントを採用し、CSS容量を648KBから212KBに削減しました。"
+      ],
+      "glossary": [
+        {
+          "term": "JSON-LD",
+          "explanation": "Webページの内容や構造を検索エンジンへ正しく伝えるためのデータ記述形式です。"
+        },
+        {
+          "term": "プリレンダリング",
+          "explanation": "WebページのHTMLをアクセス前（ビルド時）にあらかじめ生成しておく仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-08-directives",
+      "title": "35日でフロントエンドの基礎を完全に理解する #8 - ディレクティブとレンダリング（v-if・v-for・バインディング）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-10T15:27:51.000Z",
+      "summary": "v-bindやv-if、v-forなどの指示を用いて、状態とテンプレートを連携させる基本が説明されています。v-ifはDOM自体を削除し、v-showはCSSのdisplay: noneで表示を切り替えます。v-forには配列変更時のDOM更新を最小化するため、名札となるkeyをセットで指定します。",
+      "headline": "Vueの主要ディレクティブの基本とレンダリングの仕組みを解説",
+      "points": [
+        "v-bindやv-if、v-forなどの指示を用いて、状態とテンプレートを連携させる基本が説明されています。",
+        "v-ifはDOM自体を削除し、v-showはCSSのdisplay: noneで表示を切り替えます。",
+        "v-forには配列変更時のDOM更新を最小化するため、名札となるkeyをセットで指定します。"
+      ],
+      "impact": "Vueのテンプレートを扱う開発者は、切り替え頻度に応じてv-ifとv-showを使い分ける必要があります。",
+      "glossary": [
+        {
+          "term": "ディレクティブ",
+          "explanation": "HTML属性の形式で記述し、フレームワークに特定の動作を指示する特別な命令のことです。"
+        },
+        {
+          "term": "DOM",
+          "explanation": "HTML文書の各要素をプログラムから参照・操作できるようにツリー構造で表現した仕組みのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/",
+      "title": "AWS Security Hub now exports findings to S3 in CSV or JSON format",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-09T22:00:00.000Z",
+      "summary": "コンソールの各検出結果ページから、オンデマンドでS3バケットへ結果を出力できるようになりました。スプレッドシート向けのCSV形式や、OCSF仕様に準拠したJSON形式を選択可能です。独自の抽出パイプラインを構築せず、監査証拠やコンプライアンス報告などに活用できます。",
+      "headline": "AWS Security Hubが検出結果のS3へのCSV/JSON出力に対応",
+      "points": [
+        "コンソールの各検出結果ページから、オンデマンドでS3バケットへ結果を出力できるようになりました。",
+        "スプレッドシート向けのCSV形式や、OCSF仕様に準拠したJSON形式を選択可能です。",
+        "独自の抽出パイプラインを構築せず、監査証拠やコンプライアンス報告などに活用できます。"
+      ],
+      "impact": "セキュリティチームは、Security Hubが利用可能な全リージョンで、コンソールから直接S3へのエクスポート機能を利用できます。",
+      "glossary": [
+        {
+          "term": "AWS Security Hub",
+          "explanation": "AWS環境全体のセキュリティ状態を一元的に管理し、検出結果を集約・監視するサービス。"
+        },
+        {
+          "term": "OCSF",
+          "explanation": "サイバーセキュリティデータを標準化するために策定された、オープンな共通データ形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+      "title": "Deno is joining Cloudflare",
+      "source": "Simon Willison",
+      "genre": "backend",
+      "publishedAt": "2026-10-09T22:48:37.000Z",
+      "summary": "CloudflareがDenoを買収し、celldを基にworkerdのセルフホスト支援を進めます。Deno自体の保守は今後1年間の月次更新にとどまり、その後開発を終了します。DenoはOSSとして残り、他の開発者による継続的な開発を歓迎する方針です。",
+      "headline": "CloudflareがDenoを買収し、Deno自体の開発は1年後に終了へ",
+      "points": [
+        "CloudflareがDenoを買収し、celldを基にworkerdのセルフホスト支援を進めます。",
+        "Deno自体の保守は今後1年間の月次更新にとどまり、その後開発を終了します。",
+        "DenoはOSSとして残り、他の開発者による継続的な開発を歓迎する方針です。"
+      ],
+      "impact": "Denoを利用する開発者は、Cloudflareによるランタイムの開発保守が1年後に終了することに注意する必要があります。",
+      "glossary": [
+        {
+          "term": "Deno",
+          "explanation": "JavaScriptやTypeScriptを実行するためのオープンソースの実行環境です。"
+        },
+        {
+          "term": "セルフホスト",
+          "explanation": "外部のクラウドサービスに依存せず、自身のサーバー環境でソフトウェアを運用することです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://news.yahoo.co.jp/expert/articles/cce6d03439ffb1d2d6de2500240634b394731753",
+      "title": "「IDCFクラウド」で何が起きたのか 情報漏洩や復旧の可能性について現在分かっていること（山口健太） - エキスパート - Yahoo!ニュース",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-10T10:29:31.000Z",
+      "summary": "10月7日にランサムウェア攻撃を受け、495の企業や自治体で仮想マシンが起動できず影響が出ています。事業者側のデータによる復旧は困難で、利用者自身が保持するバックアップからのみ復元可能とされています。仮想化基盤VMware ESXiが標的となり、多数の仮想マシンディスクが暗号化されたとみられます。",
+      "headline": "IDCFクラウドがランサムウェア被害を受け仮想マシンが暗号化",
+      "points": [
+        "10月7日にランサムウェア攻撃を受け、495の企業や自治体で仮想マシンが起動できず影響が出ています。",
+        "事業者側のデータによる復旧は困難で、利用者自身が保持するバックアップからのみ復元可能とされています。",
+        "仮想化基盤VMware ESXiが標的となり、多数の仮想マシンディスクが暗号化されたとみられます。"
+      ],
+      "impact": "利用企業や自治体は、自前のバックアップからの復旧対応や情報漏洩の可能性についての確認を進める必要があります。",
+      "glossary": [
+        {
+          "term": "VMware ESXi",
+          "explanation": "1台の物理サーバー上で複数の仮想マシンを効率よく動作させるための基盤ソフトウェアです。"
+        },
+        {
+          "term": "イミュータブルストレージ",
+          "explanation": "書き込んだデータを管理者権限でも変更や削除ができないように保護するストレージのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
+      "title": "Why DuckDB 2.0 is faster",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-10T18:08:49Z",
+      "summary": "今秋公開予定のDuckDB 2.0のalpha版が登場し、処理速度が向上しました。S3上のファイル読込検証では、1.5.5の18.8秒からalpha版で7.7秒へ短縮しました。非同期I/Oにより、ダウンロード処理とデータ解析処理が並行して動作します。",
+      "headline": "DuckDB 2.0のalpha版が登場、非同期I/OでS3読込を高速化",
+      "points": [
+        "今秋公開予定のDuckDB 2.0のalpha版が登場し、処理速度が向上しました。",
+        "S3上のファイル読込検証では、1.5.5の18.8秒からalpha版で7.7秒へ短縮しました。",
+        "非同期I/Oにより、ダウンロード処理とデータ解析処理が並行して動作します。"
+      ],
+      "impact": "速度向上の恩恵を得るため、テーブルやパイプラインの構築者はデータ形状やモデリングを理解する必要があります。",
+      "glossary": [
+        {
+          "term": "非同期I/O",
+          "explanation": "データの入出力完了を待たずに、別の処理を並行して進める方式です。"
+        },
+        {
+          "term": "Parquet",
+          "explanation": "列単位でデータを効率よく保存・圧縮できるファイル形式です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://github.com/rociiu/talorys",
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-10T10:52:09Z",
+      "summary": "Cloudflare環境内で完結し、外部サーバー不要で動作するオープンソースの個人向けAIアシスタントです。PagesやWorkers、Durable Objects等を使い、追加費用なしでチャットやタスク管理が可能です。コマンド「npx create-talorys@latest」を実行するだけで手軽に導入できます。",
+      "headline": "Cloudflare無料枠で動く個人用AI「Talorys」が公開",
+      "points": [
+        "Cloudflare環境内で完結し、外部サーバー不要で動作するオープンソースの個人向けAIアシスタントです。",
+        "PagesやWorkers、Durable Objects等を使い、追加費用なしでチャットやタスク管理が可能です。",
+        "コマンド「npx create-talorys@latest」を実行するだけで手軽に導入できます。"
+      ],
+      "impact": "Cloudflareアカウント上で自分専用のAIエージェントを自前運用したい開発者が導入できます。",
+      "glossary": [
+        {
+          "term": "Durable Objects",
+          "explanation": "Cloudflare Workers上で状態を保持し、一貫したデータ処理を行う仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "title": "Mxc: Microsoft Execution Containers version 1.0.0",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-09T06:52:49Z",
+      "summary": "AIエージェントが扱えるファイルや通信先をポリシーに基づきコンテナで制限し、安全に実行する仕組みです。開発者は統一JSONスキーマと多言語SDKで定義でき、WindowsやmacOS、Linuxに対応します。Windows 365の対応も一般提供され、クラウドPC上でエージェントを分離して実行できます。",
+      "headline": "マイクロソフトがAI隔離技術「MXC」バージョン1.0.0を提供開始",
+      "points": [
+        "AIエージェントが扱えるファイルや通信先をポリシーに基づきコンテナで制限し、安全に実行する仕組みです。",
+        "開発者は統一JSONスキーマと多言語SDKで定義でき、WindowsやmacOS、Linuxに対応します。",
+        "Windows 365の対応も一般提供され、クラウドPC上でエージェントを分離して実行できます。"
+      ],
+      "impact": "AIエージェントを安全に動かしたい開発者や、組織内の利用を統制したいIT管理者が活用できます。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "目的に応じて自律的にツールを呼び出したり外部と連携してタスクを実行するAI。"
+        },
+        {
+          "term": "一般提供",
+          "explanation": "開発や検証段階を終え、製品がすべての利用者に向けて正式に提供・サポートされる状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/11/004353",
+      "title": "国内で相次ぐ不正アクセスに対する注意喚起についてまとめてみた - piyolog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-10T15:48:52.000Z",
+      "summary": "2026年9月前後に個人情報等の漏洩が相次ぎ、個人情報保護委員会やJPCERT/CC各機関が注意喚起を出しました。JPCERT/CCは既知の脆弱性探索やAPI不正操作、Webシェル設置など4つの攻撃類型を挙げました。攻撃者は多数のIPを使い分け、過剰な権限を持つAPIや設計不備を広く探索していることが確認されています。",
+      "headline": "国内組織での不正アクセス急増を受けJPCERTや政府機関が注意喚起",
+      "points": [
+        "2026年9月前後に個人情報等の漏洩が相次ぎ、個人情報保護委員会やJPCERT/CC各機関が注意喚起を出しました。",
+        "JPCERT/CCは既知の脆弱性探索やAPI不正操作、Webシェル設置など4つの攻撃類型を挙げました。",
+        "攻撃者は多数のIPを使い分け、過剰な権限を持つAPIや設計不備を広く探索していることが確認されています。"
+      ],
+      "impact": "個人情報や外部公開APIを扱う事業者のシステム管理者が、脆弱性や設定不備、アクセスログを確認する必要があります。",
+      "glossary": [
+        {
+          "term": "Webシェル",
+          "explanation": "サーバーへ不正侵入した攻撃者が、外部からコマンドを実行して遠隔操作するためのプログラム。"
+        },
+        {
+          "term": "API",
+          "explanation": "ソフトウェアやアプリケーション同士がデータや機能をやり取りするための接続窓口。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 87,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 1
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26837,
+    "outputTokens": 11532
+  },
+  "offline": false
+}

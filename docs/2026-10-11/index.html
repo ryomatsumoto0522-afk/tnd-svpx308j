@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-11</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月11日(日)</p>
+<p class="meta">更新 2026-10-11 05:34 · 取得ソース 17/18 · 選定 14件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">5</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://zenn.dev/densan_techblog/articles/b55141e636da7c" target="_blank" rel="noopener noreferrer">新モデル「Gemini 4 Argon」発表とエージェント機能拡充</a></h3>
+<p class="orig">原題: 新モデル「Gemini 4 Argon」発表！（Gemini at Work 2026 発表まとめ）</p>
+<p class="src">出典: <a href="https://zenn.dev/densan_techblog/articles/b55141e636da7c" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-11</p>
+<ul class="points"><li>新フラッグシップモデル「Gemini 4 Argon」と自律的にタスクを遂行する新機能が発表されました。</li><li>実務ベンチマークVAS Indexやコーディング評価で他社を上回る優位なスコアを記録しています。</li><li>画面上でのClaudeモデル選択やタスク進捗管理、定期実行スケジュール機能などが紹介されました。</li></ul><p class="impact"><b>影響</b>提供開始時期や国内展開の日程は明かされていないため、利用を検討するユーザーは続報を待つ必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リファクタリング</dt><dd>プログラムの外部の動作を変えずに、内部の構造を整理して保守しやすく改善する作業。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://qiita.com/picnic/items/54cd70948168472291b4" target="_blank" rel="noopener noreferrer">gemini-3.5-flashが非推奨化、3.6へ自動転送</a></h3>
+<p class="orig">原題: Gemini 3.5 Flash が非推奨に:gemini-3.6-flash への自動ルーティングと移行手順</p>
+<p class="src">出典: <a href="https://qiita.com/picnic/items/54cd70948168472291b4" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-11</p>
+<ul class="points"><li>gemini-3.5-flashが非推奨となり、リクエストは後継のgemini-3.6-flashへ自動ルーティングされます。</li><li>既存コードは即時停止しないものの、応答モデルが変わるため出力結果や挙動が変化するリスクがあります。</li><li>自動ルーティングの開始日や旧エンドポイントの完全停止日は記載されていません。</li></ul><p class="impact"><b>影響</b>対象モデルを指定している開発者は、指定文字列を3.6などに更新し出力の回帰テストを実施する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>非推奨 (deprecated)</dt><dd>将来の廃止が予定されており、新規の採用や継続的な利用が推奨されない状態。</dd><dt>回帰テスト</dt><dd>システムの変更や更新によって、既存の機能や挙動に不具合が発生していないか確認するテスト。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://pc.watch.impress.co.jp/docs/news/2147318.html" target="_blank" rel="noopener noreferrer">Googleが検索用小型モデル「EmbeddingGemma 2」公開</a></h3>
+<p class="orig">原題: 写真も動画も声もまとめて0.74Bで検索。ローカルRAG向け「EmbeddingGemma 2」</p>
+<p class="src">出典: <a href="https://pc.watch.impress.co.jp/docs/news/2147318.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-10</p>
+<ul class="points"><li>写真や動画、音声、文字、コードを1つで横断検索できる0.74Bパラメータの埋め込みモデルが無償公開されました。</li><li>処理が端末内で完結し、量子化によりPixel 11 Pro上で全機能構成時も約567MBのメモリで動作します。</li><li>重みデータはHugging Face等で公開され、Apache 2.0ライセンスで商用利用が認められます。</li></ul><p class="impact"><b>影響</b>端末内での検索やRAG構築を行いたい開発者は、公開プラットフォームからモデルをダウンロードして利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>埋め込み (Embedding)</dt><dd>文字や画像などの意味を、コンピュータが比較しやすい数値の並び（ベクトル）に変換する技術。</dd><dt>RAG (検索拡張生成)</dt><dd>手元の資料や外部データベースから関連情報を検索し、それを根拠にしてAIに回答を生成させる仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/densan_techblog/articles/b55141e636da7c" target="_blank" rel="noopener noreferrer">新モデル「Gemini 4 Argon」発表とエージェント機能拡充</a></h3>
+<p class="orig">原題: 新モデル「Gemini 4 Argon」発表！（Gemini at Work 2026 発表まとめ）</p>
+<p class="src">出典: <a href="https://zenn.dev/densan_techblog/articles/b55141e636da7c" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-11</p>
+<ul class="points"><li>新フラッグシップモデル「Gemini 4 Argon」と自律的にタスクを遂行する新機能が発表されました。</li><li>実務ベンチマークVAS Indexやコーディング評価で他社を上回る優位なスコアを記録しています。</li><li>画面上でのClaudeモデル選択やタスク進捗管理、定期実行スケジュール機能などが紹介されました。</li></ul><p class="impact"><b>影響</b>提供開始時期や国内展開の日程は明かされていないため、利用を検討するユーザーは続報を待つ必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リファクタリング</dt><dd>プログラムの外部の動作を変えずに、内部の構造を整理して保守しやすく改善する作業。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/picnic/items/54cd70948168472291b4" target="_blank" rel="noopener noreferrer">gemini-3.5-flashが非推奨化、3.6へ自動転送</a></h3>
+<p class="orig">原題: Gemini 3.5 Flash が非推奨に:gemini-3.6-flash への自動ルーティングと移行手順</p>
+<p class="src">出典: <a href="https://qiita.com/picnic/items/54cd70948168472291b4" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-11</p>
+<ul class="points"><li>gemini-3.5-flashが非推奨となり、リクエストは後継のgemini-3.6-flashへ自動ルーティングされます。</li><li>既存コードは即時停止しないものの、応答モデルが変わるため出力結果や挙動が変化するリスクがあります。</li><li>自動ルーティングの開始日や旧エンドポイントの完全停止日は記載されていません。</li></ul><p class="impact"><b>影響</b>対象モデルを指定している開発者は、指定文字列を3.6などに更新し出力の回帰テストを実施する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>非推奨 (deprecated)</dt><dd>将来の廃止が予定されており、新規の採用や継続的な利用が推奨されない状態。</dd><dt>回帰テスト</dt><dd>システムの変更や更新によって、既存の機能や挙動に不具合が発生していないか確認するテスト。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://pc.watch.impress.co.jp/docs/news/2147318.html" target="_blank" rel="noopener noreferrer">Googleが検索用小型モデル「EmbeddingGemma 2」公開</a></h3>
+<p class="orig">原題: 写真も動画も声もまとめて0.74Bで検索。ローカルRAG向け「EmbeddingGemma 2」</p>
+<p class="src">出典: <a href="https://pc.watch.impress.co.jp/docs/news/2147318.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-10</p>
+<ul class="points"><li>写真や動画、音声、文字、コードを1つで横断検索できる0.74Bパラメータの埋め込みモデルが無償公開されました。</li><li>処理が端末内で完結し、量子化によりPixel 11 Pro上で全機能構成時も約567MBのメモリで動作します。</li><li>重みデータはHugging Face等で公開され、Apache 2.0ライセンスで商用利用が認められます。</li></ul><p class="impact"><b>影響</b>端末内での検索やRAG構築を行いたい開発者は、公開プラットフォームからモデルをダウンロードして利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>埋め込み (Embedding)</dt><dd>文字や画像などの意味を、コンピュータが比較しやすい数値の並び（ベクトル）に変換する技術。</dd><dt>RAG (検索拡張生成)</dt><dd>手元の資料や外部データベースから関連情報を検索し、それを根拠にしてAIに回答を生成させる仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/non_miyan/articles/52d001e68a04cc" target="_blank" rel="noopener noreferrer">Googleがデータ基盤連携ツール「Data Agent Kit」発表</a></h3>
+<p class="orig">原題: Data Agent Kitでデータマートを簡単に実現する</p>
+<p class="src">出典: <a href="https://zenn.dev/non_miyan/articles/52d001e68a04cc" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-11</p>
+<ul class="points"><li>AIコーディングエージェントからGoogle Cloudのデータリソースを直接操作できる無料セットが発表されました。</li><li>BigQueryなど15以上のサービスに接続するMCPツールと、SQL最適化などの指示書スキルで構成されます。</li><li>Knowledge Catalogと連携し、エージェントがデータ構造を理解してデータマートを自動構築できます。</li></ul><p class="impact"><b>影響</b>Google Cloudで分析を行うエンジニアは、普段のコーディングエージェントと連携させて開発を自動化できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>データマート</dt><dd>特定の部署や目的に応じた分析のために、利用しやすい形へ集計・整理されたデータ群。</dd><dt>MCP (Model Context Protocol)</dt><dd>AIモデルを外部のツールやデータベースと接続し、相互にやり取りするための共通規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener noreferrer">Cloudflare無料枠で動く個人用AI「Talorys」が公開</a></h3>
+<p class="orig">原題: Talorys – A self-hosted personal AI agent on Cloudflare&#39;s free tier</p>
+<p class="src">出典: <a href="https://github.com/rociiu/talorys" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-10</p>
+<ul class="points"><li>Cloudflare環境内で完結し、外部サーバー不要で動作するオープンソースの個人向けAIアシスタントです。</li><li>PagesやWorkers、Durable Objects等を使い、追加費用なしでチャットやタスク管理が可能です。</li><li>コマンド「npx create-talorys@latest」を実行するだけで手軽に導入できます。</li></ul><p class="impact"><b>影響</b>Cloudflareアカウント上で自分専用のAIエージェントを自前運用したい開発者が導入できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Durable Objects</dt><dd>Cloudflare Workers上で状態を保持し、一貫したデータ処理を行う仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/" target="_blank" rel="noopener noreferrer">Cloudflareがプロキシ層を可視化するTracesの公開ベータを開始</a></h3>
+<p class="orig">原題: Cloudflare Traces Turns the Proxy Layer into OpenTelemetry Spans, with New Volume-Based Pricing</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-10</p>
+<ul class="points"><li>プロキシ全体の処理がOpenTelemetryスパンとして自動記録されます。</li><li>OTLPで外部ツールへ転送でき、MCPサーバー経由のAI分析にも対応します。</li><li>課金体系は2026年12月1日からスパン数単位からデータ容量と保持期間に基づく形式に変わります。</li></ul><p class="impact"><b>影響</b>Workers Tracingの利用者は、データ容量に応じた課金への変更に伴い、サンプリング設定やコストを確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>OpenTelemetry</dt><dd>システムのログやトレースなどの監視データを収集・送信するための標準規格。</dd><dt>スパン</dt><dd>分散トレーシングにおいて、一連の処理の中の1区間と所要時間を表す単位。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener noreferrer">CloudflareがDenoを買収し、Deno自体の開発は1年後に終了へ</a></h3>
+<p class="orig">原題: Deno is joining Cloudflare</p>
+<p class="src">出典: <a href="https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/" target="_blank" rel="noopener noreferrer">Simon Willison</a> · 2026-10-10</p>
+<ul class="points"><li>CloudflareがDenoを買収し、celldを基にworkerdのセルフホスト支援を進めます。</li><li>Deno自体の保守は今後1年間の月次更新にとどまり、その後開発を終了します。</li><li>DenoはOSSとして残り、他の開発者による継続的な開発を歓迎する方針です。</li></ul><p class="impact"><b>影響</b>Denoを利用する開発者は、Cloudflareによるランタイムの開発保守が1年後に終了することに注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Deno</dt><dd>JavaScriptやTypeScriptを実行するためのオープンソースの実行環境です。</dd><dt>セルフホスト</dt><dd>外部のクラウドサービスに依存せず、自身のサーバー環境でソフトウェアを運用することです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://motherduck.com/blog/why-duckdb-20-is-faster/" target="_blank" rel="noopener noreferrer">DuckDB 2.0のalpha版が登場、非同期I/OでS3読込を高速化</a></h3>
+<p class="orig">原題: Why DuckDB 2.0 is faster</p>
+<p class="src">出典: <a href="https://motherduck.com/blog/why-duckdb-20-is-faster/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-11</p>
+<ul class="points"><li>今秋公開予定のDuckDB 2.0のalpha版が登場し、処理速度が向上しました。</li><li>S3上のファイル読込検証では、1.5.5の18.8秒からalpha版で7.7秒へ短縮しました。</li><li>非同期I/Oにより、ダウンロード処理とデータ解析処理が並行して動作します。</li></ul><p class="impact"><b>影響</b>速度向上の恩恵を得るため、テーブルやパイプラインの構築者はデータ形状やモデリングを理解する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>非同期I/O</dt><dd>データの入出力完了を待たずに、別の処理を並行して進める方式です。</dd><dt>Parquet</dt><dd>列単位でデータを効率よく保存・圧縮できるファイル形式です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/namespace/articles/nuxt-static-portfolio-seo-cloudflare-workers" target="_blank" rel="noopener noreferrer">Nuxt 4製ポートフォリオを完全静的化してSEOを最適化した知見が公開</a></h3>
+<p class="orig">原題: Nuxt 4 のポートフォリオを完全静的にして Cloudflare Workers に載せるまで — SEO のためにやったこと全部</p>
+<p class="src">出典: <a href="https://zenn.dev/namespace/articles/nuxt-static-portfolio-seo-cloudflare-workers" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-10</p>
+<ul class="points"><li>全ページの事前生成やメタ情報の設定を行い、サイトをCloudflare Workersへデプロイしました。</li><li>SupabaseのSDKを外してfetchに変更し、JS容量を590KBから373KBへ約37%削減しました。</li><li>日本語Webフォントをやめてシステムフォントを採用し、CSS容量を648KBから212KBに削減しました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JSON-LD</dt><dd>Webページの内容や構造を検索エンジンへ正しく伝えるためのデータ記述形式です。</dd><dt>プリレンダリング</dt><dd>WebページのHTMLをアクセス前（ビルド時）にあらかじめ生成しておく仕組みです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-08-directives" target="_blank" rel="noopener noreferrer">Vueの主要ディレクティブの基本とレンダリングの仕組みを解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #8 - ディレクティブとレンダリング（v-if・v-for・バインディング）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-08-directives" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-11</p>
+<ul class="points"><li>v-bindやv-if、v-forなどの指示を用いて、状態とテンプレートを連携させる基本が説明されています。</li><li>v-ifはDOM自体を削除し、v-showはCSSのdisplay: noneで表示を切り替えます。</li><li>v-forには配列変更時のDOM更新を最小化するため、名札となるkeyをセットで指定します。</li></ul><p class="impact"><b>影響</b>Vueのテンプレートを扱う開発者は、切り替え頻度に応じてv-ifとv-showを使い分ける必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ディレクティブ</dt><dd>HTML属性の形式で記述し、フレームワークに特定の動作を指示する特別な命令のことです。</dd><dt>DOM</dt><dd>HTML文書の各要素をプログラムから参照・操作できるようにツリー構造で表現した仕組みのことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/" target="_blank" rel="noopener noreferrer">AWS Security Hubが検出結果のS3へのCSV/JSON出力に対応</a></h3>
+<p class="orig">原題: AWS Security Hub now exports findings to S3 in CSV or JSON format</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-10</p>
+<ul class="points"><li>コンソールの各検出結果ページから、オンデマンドでS3バケットへ結果を出力できるようになりました。</li><li>スプレッドシート向けのCSV形式や、OCSF仕様に準拠したJSON形式を選択可能です。</li><li>独自の抽出パイプラインを構築せず、監査証拠やコンプライアンス報告などに活用できます。</li></ul><p class="impact"><b>影響</b>セキュリティチームは、Security Hubが利用可能な全リージョンで、コンソールから直接S3へのエクスポート機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Security Hub</dt><dd>AWS環境全体のセキュリティ状態を一元的に管理し、検出結果を集約・監視するサービス。</dd><dt>OCSF</dt><dd>サイバーセキュリティデータを標準化するために策定された、オープンな共通データ形式。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://news.yahoo.co.jp/expert/articles/cce6d03439ffb1d2d6de2500240634b394731753" target="_blank" rel="noopener noreferrer">IDCFクラウドがランサムウェア被害を受け仮想マシンが暗号化</a></h3>
+<p class="orig">原題: 「IDCFクラウド」で何が起きたのか 情報漏洩や復旧の可能性について現在分かっていること（山口健太） - エキスパート - Yahoo!ニュース</p>
+<p class="src">出典: <a href="https://news.yahoo.co.jp/expert/articles/cce6d03439ffb1d2d6de2500240634b394731753" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-10</p>
+<ul class="points"><li>10月7日にランサムウェア攻撃を受け、495の企業や自治体で仮想マシンが起動できず影響が出ています。</li><li>事業者側のデータによる復旧は困難で、利用者自身が保持するバックアップからのみ復元可能とされています。</li><li>仮想化基盤VMware ESXiが標的となり、多数の仮想マシンディスクが暗号化されたとみられます。</li></ul><p class="impact"><b>影響</b>利用企業や自治体は、自前のバックアップからの復旧対応や情報漏洩の可能性についての確認を進める必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>VMware ESXi</dt><dd>1台の物理サーバー上で複数の仮想マシンを効率よく動作させるための基盤ソフトウェアです。</dd><dt>イミュータブルストレージ</dt><dd>書き込んだデータを管理者権限でも変更や削除ができないように保護するストレージのことです。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/" target="_blank" rel="noopener noreferrer">マイクロソフトがAI隔離技術「MXC」バージョン1.0.0を提供開始</a></h3>
+<p class="orig">原題: Mxc: Microsoft Execution Containers version 1.0.0</p>
+<p class="src">出典: <a href="https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-09</p>
+<ul class="points"><li>AIエージェントが扱えるファイルや通信先をポリシーに基づきコンテナで制限し、安全に実行する仕組みです。</li><li>開発者は統一JSONスキーマと多言語SDKで定義でき、WindowsやmacOS、Linuxに対応します。</li><li>Windows 365の対応も一般提供され、クラウドPC上でエージェントを分離して実行できます。</li></ul><p class="impact"><b>影響</b>AIエージェントを安全に動かしたい開発者や、組織内の利用を統制したいIT管理者が活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIエージェント</dt><dd>目的に応じて自律的にツールを呼び出したり外部と連携してタスクを実行するAI。</dd><dt>一般提供</dt><dd>開発や検証段階を終え、製品がすべての利用者に向けて正式に提供・サポートされる状態。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://piyolog.hatenadiary.jp/entry/2026/10/11/004353" target="_blank" rel="noopener noreferrer">国内組織での不正アクセス急増を受けJPCERTや政府機関が注意喚起</a></h3>
+<p class="orig">原題: 国内で相次ぐ不正アクセスに対する注意喚起についてまとめてみた - piyolog</p>
+<p class="src">出典: <a href="https://piyolog.hatenadiary.jp/entry/2026/10/11/004353" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-11</p>
+<ul class="points"><li>2026年9月前後に個人情報等の漏洩が相次ぎ、個人情報保護委員会やJPCERT/CC各機関が注意喚起を出しました。</li><li>JPCERT/CCは既知の脆弱性探索やAPI不正操作、Webシェル設置など4つの攻撃類型を挙げました。</li><li>攻撃者は多数のIPを使い分け、過剰な権限を持つAPIや設計不備を広く探索していることが確認されています。</li></ul><p class="impact"><b>影響</b>個人情報や外部公開APIを扱う事業者のシステム管理者が、脆弱性や設定不備、アクセスログを確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Webシェル</dt><dd>サーバーへ不正侵入した攻撃者が、外部からコマンドを実行して遠隔操作するためのプログラム。</dd><dt>API</dt><dd>ソフトウェアやアプリケーション同士がデータや機能をやり取りするための接続窓口。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-10/">← 2026-10-10</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（11）</summary><ul><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
