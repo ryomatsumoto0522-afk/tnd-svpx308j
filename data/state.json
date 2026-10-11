@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-10T20:34:56.823Z",
+  "lastRun": "2026-10-11T20:58:41.619Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -168,6 +168,24 @@
     "https://motherduck.com/blog/why-duckdb-20-is-faster": "2026-10-11",
     "https://github.com/rociiu/talorys": "2026-10-11",
     "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents": "2026-10-11",
-    "https://piyolog.hatenadiary.jp/entry/2026/10/11/004353": "2026-10-11"
+    "https://piyolog.hatenadiary.jp/entry/2026/10/11/004353": "2026-10-11",
+    "https://piyolog.hatenadiary.jp/entry/2026/10/11/012014": "2026-10-12",
+    "https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses": "2026-10-12",
+    "https://speakerdeck.com/yutobara/gekkan-100-mannin-no-sabisu-sasshin-de-gijutsu-sentei-o-hono-ni-furikita-hanashi-e49c651f-8130-48bb-b6ef-eac3cc9f358a": "2026-10-12",
+    "https://www.infoq.com/news/2026/10/context-language-models": "2026-10-12",
+    "https://www.infoq.com/news/2026/10/gremlin-foresight-ai": "2026-10-12",
+    "https://zenn.dev/caron14/articles/google-cloud-data-agent-kit-intro": "2026-10-12",
+    "https://duckdb.org/2026/10/09/agent-mode": "2026-10-12",
+    "https://zenn.dev/matsushima_a/articles/day-012-video-shotcraft-ink-press-render": "2026-10-12",
+    "https://zenn.dev/emilk1225/articles/d37feb664ed8e5": "2026-10-12",
+    "https://zenn.dev/yukimemi/articles/2026-10-10-magi": "2026-10-12",
+    "https://gigazine.net/news/20261011-hayamimi": "2026-10-12",
+    "https://piyolog.hatenadiary.jp/entry/2026/10/11/011521": "2026-10-12",
+    "https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback": "2026-10-12",
+    "https://songmu.jp/riji/entry/2026-10-11-github-actions-artifact-attestations.html": "2026-10-12",
+    "https://verdagon.dev/blog/valen-group-borrowing": "2026-10-12",
+    "https://slides.yusu.ke/honoconf-2026": "2026-10-12",
+    "https://note.com/kenichiota0711/n/n7c8035175167": "2026-10-12",
+    "https://fabscene.com/new/make/solvecraft-open-source-parametric-3d-cad-rust-fusion-76-parts-mcp": "2026-10-12"
   }
 }
