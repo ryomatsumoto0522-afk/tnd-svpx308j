@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-13</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月13日(火)</p>
+<p class="meta">更新 2026-10-13 08:38 · 取得ソース 18/18 · 選定 17件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">5</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><span class="num">1</span><a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/" target="_blank" rel="noopener noreferrer">AWSが標準的なWebアプリを実行できる新機能をLambdaに追加</a></h3>
+<p class="orig">原題: Announcing AWS Lambda Web Functions</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-13</p>
+<ul class="points"><li>Expressなどの標準的なHTTPサーバーをコード書き換えなしでそのままデプロイできます。</li><li>1環境あたり最大128並行リクエストを処理し、CPU使用時間に基づき課金されます。</li><li>AWS CLIの「aws lambda-web deploy」コマンドで素早くデプロイできます。</li></ul><p class="impact"><b>影響</b>Web開発者は、アダプターを使わずに既存のWebアプリをLambda環境へ直接移行・運用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Firecracker</dt><dd>仮想マシンをミリ秒単位で素早く起動・分離できる軽量仮想化技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.infoq.com/news/2026/10/gitlab-19-4-goal-driven-agents/" target="_blank" rel="noopener noreferrer">GitLabが自律型エージェントやAIコスト管理機能を含む19.4を公開</a></h3>
+<p class="orig">原題: GitLab 19.4 Adds Goal-Driven Agents and Tighter Cost Controls</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/gitlab-19-4-goal-driven-agents/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>目標を設定すると自律的に作業を進める「/goal」コマンドがCLIに追加されました。</li><li>Kimi K3など3種のモデルに対応し、クレジット消費を抑えた運用が可能になりました。</li><li>ユーザーごとの利用上限設定や詳細な利用実績のエクスポート機能が導入されました。</li></ul><p class="impact"><b>影響</b>GitLab管理者は、チームごとに利用可能なモデルや利用上限額を設定して支出を管理できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Model Context Protocol</dt><dd>AIが外部ツールやデータと接続するためのオープンな標準仕様。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/" target="_blank" rel="noopener noreferrer">SpotifyがAI開発導入で月間コード変更を倍増させ品質管理体制を強化</a></h3>
+<p class="orig">原題: Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>マージされた月間変更数が約8,100件から1万7,000件へと前年比で2倍以上に増加しました。</li><li>変更量の急増を受け、監視強化やロールバック能力の拡張など信頼性対策を刷新しました。</li><li>障害調査ではAIコード自体の問題ではなく、検証制御が変更量に追いつかないことが判明しました。</li></ul>
+
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/gitlab-19-4-goal-driven-agents/" target="_blank" rel="noopener noreferrer">GitLabが自律型エージェントやAIコスト管理機能を含む19.4を公開</a></h3>
+<p class="orig">原題: GitLab 19.4 Adds Goal-Driven Agents and Tighter Cost Controls</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/gitlab-19-4-goal-driven-agents/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>目標を設定すると自律的に作業を進める「/goal」コマンドがCLIに追加されました。</li><li>Kimi K3など3種のモデルに対応し、クレジット消費を抑えた運用が可能になりました。</li><li>ユーザーごとの利用上限設定や詳細な利用実績のエクスポート機能が導入されました。</li></ul><p class="impact"><b>影響</b>GitLab管理者は、チームごとに利用可能なモデルや利用上限額を設定して支出を管理できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Model Context Protocol</dt><dd>AIが外部ツールやデータと接続するためのオープンな標準仕様。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/" target="_blank" rel="noopener noreferrer">SpotifyがAI開発導入で月間コード変更を倍増させ品質管理体制を強化</a></h3>
+<p class="orig">原題: Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>マージされた月間変更数が約8,100件から1万7,000件へと前年比で2倍以上に増加しました。</li><li>変更量の急増を受け、監視強化やロールバック能力の拡張など信頼性対策を刷新しました。</li><li>障害調査ではAIコード自体の問題ではなく、検証制御が変更量に追いつかないことが判明しました。</li></ul>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing" target="_blank" rel="noopener noreferrer">AWSがBedrock AgentCore短期メモリに従量課金制を導入</a></h3>
+<p class="orig">原題: Announcing consumption-based pricing for short-term memory in Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-13</p>
+<ul class="points"><li>イベント単位の定額制から、データの取り込み・取得・保存量に基づく従量課金に変更されました。</li><li>取り込みは1GBあたり1ドル、取得は0.20ドル、保存は1GB月額0.10ドルです。</li><li>頻繁に小さなイベントを処理するワークロードを中心に利用コストが削減されます。</li></ul><p class="impact"><b>影響</b>エージェント開発者は、メモリのTTLを短く設定することでストレージコストを管理できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>TTL</dt><dd>データの有効期限を設定し、期限後に自動で削除させる仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/tatsuqumo/articles/4c74f5748442d2" target="_blank" rel="noopener noreferrer">エージェント間通信のオープン規格A2A Protocolが注目を集める</a></h3>
+<p class="orig">原題: AIエージェントのための規格「A2A」とは？ 〜 MCPとの違い〜</p>
+<p class="src">出典: <a href="https://zenn.dev/tatsuqumo/articles/4c74f5748442d2" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-12</p>
+<ul class="points"><li>異なるAIエージェント同士が互いに業務を自律的に委任し合える共通規格です。</li><li>既存のWeb技術を基盤とし、長時間の処理や人間への承認確認ステートを備えます。</li><li>道具を呼ぶMCPに対し、エージェント同士を同僚のようにつなぐ役割を担います。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルが外部のツールやデータソースと接続するための標準プロトコルです。</dd><dt>SSE</dt><dd>サーバーからクライアントへリアルタイムにデータを単方向送信するWeb技術です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/joinclass/items/f0fcbab31320afd23556" target="_blank" rel="noopener noreferrer">MCPの3機能の適切な使い分けとTypeScript実装の知見が共有される</a></h3>
+<p class="orig">原題: MCPのTools/Resources/Promptsを使い分ける — 3機能の実装比較【TypeScript】</p>
+<p class="src">出典: <a href="https://qiita.com/joinclass/items/f0fcbab31320afd23556" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-13</p>
+<ul class="points"><li>副作用のある動詞操作はTools、読み取り専用の名詞はResourcesに分類します。</li><li>定型的な指示文はPromptsとして登録し、安全で効率的な運用を実現します。</li></ul><p class="impact"><b>影響</b>MCPサーバーを自作する開発者は、操作の副作用と読み取りを明確に分離して設計できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>副作用</dt><dd>プログラムがデータの取得だけでなく、状態の変更や外部への書き込みを行うことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/k_iijima/articles/ae926619c45882" target="_blank" rel="noopener noreferrer">Claude Codeのdeny設定だけではgit pushを阻止できないと判明</a></h3>
+<p class="orig">原題: Claude Code の deny だけでは git push を止めきれない話</p>
+<p class="src">出典: <a href="https://zenn.dev/k_iijima/articles/ae926619c45882" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-12</p>
+<ul class="points"><li>denyのルールは文字列照合のため、引数の指定順など別の書き方ですり抜けてしまいます。</li><li>実行直前に動くPreToolUse hookでコマンドを解析し、危険な操作を止める対策が有効です。</li></ul><p class="impact"><b>影響</b>Claude CodeにGit操作を制限したい開発者は、hook等を併用した対策を講じる必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>hook</dt><dd>特定の処理が行われる直前や直後に、独自のプログラムを割り込ませて実行する仕組みです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/yureki_lab/items/c10207f98d65e1f03a69" target="_blank" rel="noopener noreferrer">Claude Codeで作業メモとgit状態を自動注入する実装例が公開</a></h3>
+<p class="orig">原題: Claude Code の SessionStart hook で前回の作業メモと git 状態をセッション開始時に自動注入する実装手順 — /compact 後に消える・export が Bash に効かない・exit 2 で止まらない、3つのハマりどころ【2026】</p>
+<p class="src">出典: <a href="https://qiita.com/yureki_lab/items/c10207f98d65e1f03a69" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-13</p>
+<ul class="points"><li>SessionStart hookを使って作業メモやgit情報をClaudeのコンテキストに注入します。</li><li>matcherにcompact等を含めないと会話圧縮後に情報が消える問題など3点の注意点が挙げられています。</li><li>環境変数をBashツールに渡すにはCLAUDE_ENV_FILEへ追記する必要があります。</li></ul><p class="impact"><b>影響</b>Claude Codeで複数セッションの作業状況説明を省略したい利用者は、hookの設定やスクリプトを確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>hook</dt><dd>特定のイベント発生時に独自の処理を自動実行する仕組み。</dd><dt>コンテキスト</dt><dd>AIが応答を生成する際に参照する会話履歴や前提情報のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/xcode-json-project-format/" target="_blank" rel="noopener noreferrer">AppleがXcode 27.2でJSON形式のプロジェクト設定を導入</a></h3>
+<p class="orig">原題: Xcode 27.2 Introduces an Agent- and Merge-Friendly JSON Format for Project Configuration</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/xcode-json-project-format/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>従来のplist形式に代わり、人間やAIが読み書きしやすいJSON形式を採用しました。</li><li>変更履歴が見やすくなり、チーム開発におけるマージ衝突のリスクを低減します。</li><li>Swiftパッケージも提供され、既存プロジェクトからの移行も容易です。</li></ul><p class="impact"><b>影響</b>移行前にfastlaneやCocoaPodsなど利用ツールが新形式に対応しているか確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マージコンフリクト</dt><dd>複数人が同じファイルの同じ箇所を同時に変更した際に発生する競合のことです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct05-2026/" target="_blank" rel="noopener noreferrer">JDK 28向けJEP提案やGrails 8.0公開などJava最新動向が発表</a></h3>
+<p class="orig">原題: Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct05-2026/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>JDK 28向けにZGC改善や構造化並行性の確定を提案するJEPが移行されました。</li><li>Apache Grails 8.0.0が一般提供され、JDK 21とGradle 9.7に対応しました。</li><li>GlassFish 8.0.5やTornadoVM 7.2.0などの更新もあわせて公開されています。</li></ul><p class="impact"><b>影響</b>Java開発者はJDK 28の新機能提案や各ライブラリの最新バージョンの仕様を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JEP</dt><dd>Javaへの機能追加や仕様変更を提案・管理するための公式文書。</dd><dt>ガベージコレクション</dt><dd>プログラムが不要になったメモリ領域を自動的に解放する仕組み。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/" target="_blank" rel="noopener noreferrer">レイクハウスのデータ配置戦略を比較した検証結果が公開</a></h3>
+<p class="orig">原題: Article: When Should You Use Liquid Clustering? Benchmarking Lakehouse Layout Strategies</p>
+<p class="src">出典: <a href="https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-12</p>
+<ul class="points"><li>Delta LakeにおいてLiquid Clustering、ZOrder、パーティショニングの性能を比較検証しました。</li><li>クエリのパターンが多様な場合はLiquid Clusteringが有効とされています。</li><li>安定した特定列で常に絞り込む場合はZOrderの方が高速になることが示されています。</li></ul><p class="impact"><b>影響</b>レイクハウスでデータ分析を行う技術者は、自身の主要クエリに適したデータ配置構成を検証できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>レイクハウス</dt><dd>生データの蓄積と高速なデータ分析基盤を統合したデータアーキテクチャ。</dd><dt>プルーニング</dt><dd>クエリ実行時に不要なファイルやデータを読み込まず除外して高速化する手法。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html" target="_blank" rel="noopener noreferrer">Deno開発元がCloudflareに合流しDenoの開発は終了へ</a></h3>
+<p class="orig">原題: Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力</p>
+<p class="src">出典: <a href="https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-12</p>
+<ul class="points"><li>Deno開発元のDeno LandがCloudflareに合流し、Denoの開発は今後1年のアップデートを経て終了する</li><li>商用サービスのDeno Deployは6カ月後に終了し、JSRはCloudflareへインフラが移行される</li><li>今後はCloudflare WorkersとDurable Objectsのオープンソース実装の発展に注力する</li></ul><p class="impact"><b>影響</b>Deno Deployの利用者やDenoを使用している開発者は、Cloudflare Workersなどへの移行や今後の対応を確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JavaScriptランタイム</dt><dd>ブラウザ以外の環境でJavaScriptプログラムを実行するための実行環境のこと。</dd><dt>オープンソース</dt><dd>ソフトウェアの設計図であるソースコードが無償で公開され、誰でも改良や再配布ができる仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://kdy1.dev/2026-10-12-ai-ui" target="_blank" rel="noopener noreferrer">開発者がAIを活用したUI作成と並列実装のワークフローを公開</a></h3>
+<p class="orig">原題: How I Build UIs with AI</p>
+<p class="src">出典: <a href="https://kdy1.dev/2026-10-12-ai-ui" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-12</p>
+<ul class="points"><li>開発者はAIに画像生成でモックアップを作成させて承認を得るワークフローを紹介している</li><li>承認されたモックアップとプロンプトを課題に添付し、並列で実装を進める手法をとっている</li><li>公開されているスクリプトやスキルを活用して、AIによる一連の作業を効率化している</li></ul><p class="impact"><b>影響</b>UI開発におけるAIの活用方法や、効率的なタスクの並列処理ワークフローに関心のある開発者が参考にできる。</p>
+
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/" target="_blank" rel="noopener noreferrer">AWSが標準的なWebアプリを実行できる新機能をLambdaに追加</a></h3>
+<p class="orig">原題: Announcing AWS Lambda Web Functions</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-13</p>
+<ul class="points"><li>Expressなどの標準的なHTTPサーバーをコード書き換えなしでそのままデプロイできます。</li><li>1環境あたり最大128並行リクエストを処理し、CPU使用時間に基づき課金されます。</li><li>AWS CLIの「aws lambda-web deploy」コマンドで素早くデプロイできます。</li></ul><p class="impact"><b>影響</b>Web開発者は、アダプターを使わずに既存のWebアプリをLambda環境へ直接移行・運用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Firecracker</dt><dd>仮想マシンをミリ秒単位で素早く起動・分離できる軽量仮想化技術。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/" target="_blank" rel="noopener noreferrer">AWS Lambdaが直接HTTPリクエストを処理できる新機能を発表</a></h3>
+<p class="orig">原題: AWS Lambda announces Lambda Web Functions</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-13</p>
+<ul class="points"><li>Lambda Web Functionsにより、アダプターなしでExpressやHonoなどのフレームワークを扱えます。</li><li>待機時間ではなくアクティブなCPU時間とメモリ保持量に対して課金されます。</li><li>Node.jsに対応し、単一のウォーム環境で複数リクエストの同時処理が可能です。</li></ul><p class="impact"><b>影響</b>サーバーレスでウェブアプリやAPIを構築する開発者は、東京を含む対象リージョンで新機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>サーバーレス</dt><dd>サーバー管理をクラウド側に任せ、実行したリソース分のみ支払う仕組み。</dd><dt>コールドスタート</dt><dd>サーバーレス環境でリクエスト時に新しい実行環境が立ち上がる際の遅延。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark/" target="_blank" rel="noopener noreferrer">Amazon EMRがApache Sparkジョブでのデータ品質検証に対応</a></h3>
+<p class="orig">原題: Amazon EMR now supports native data quality checks in Apache Spark jobs</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-12</p>
+<ul class="points"><li>Amazon EMRはAWS Glueを基盤として、Apache Sparkジョブ内でデータ品質をネイティブに検証できる機能をリリースした</li><li>追加料金なしで利用でき、30種類以上のルールや履歴に基づく動的ルール、機械学習による異常検知が使用できる</li><li>EC2、EKS、Serverlessの各デプロイモードに対応し、結果をデータセットやルール、行単位で取得できる</li></ul><p class="impact"><b>影響</b>データエンジニアリングチームは、別途インフラを構築せずにSparkジョブ内でデータ品質の検証と問題への対処を行う必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Apache Spark</dt><dd>大規模なデータを高速に分散処理するためのオープンソースのフレームワーク。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption" target="_blank" rel="noopener noreferrer">Amazon OpenSearch Serviceがインデックス単位の暗号化に対応</a></h3>
+<p class="orig">原題: Amazon OpenSearch Service now supports index-level encryption</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-12</p>
+<ul class="points"><li>Amazon OpenSearch Serviceは、各インデックスを個別のAWS KMSカスタマーマネージドキーで暗号化できるようになった</li><li>OpenSearchバージョン3.3以降を実行する14のAWSリージョンで追加料金なしで利用できる</li><li>AWS管理コンソールまたはAWS CLIを使用して新規ドメイン作成時にネイティブモードを設定して有効化する</li></ul><p class="impact"><b>影響</b>利用者はマルチテナントアプリケーションなどで機密性や所有権が異なるデータを同じドメイン内の個別キーで保護できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>暗号化</dt><dd>データを第三者が読めない別の形式のデータに変換し、セキュリティを保護すること。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://pc.watch.impress.co.jp/docs/news/2147412.html" target="_blank" rel="noopener noreferrer">Microsoftが次世代AIチップMaia 300を発表</a></h3>
+<p class="orig">原題: 脱NVIDIAを急ぐMicrosoft、わずか9カ月で次世代AIチップ「Maia 300」</p>
+<p class="src">出典: <a href="https://pc.watch.impress.co.jp/docs/news/2147412.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-12</p>
+<ul class="points"><li>MicrosoftがAzure向けAIアクセラレータ「Maia 300」を発表し、2027年から導入します。</li><li>チップレット構造や288GBのHBM4を採用し、Maia 200比で2倍となるラックあたり96基を集積可能です。</li><li>GPUと比べて1メガワットあたりに処理できるトークン数が40%増加し、AI推論コストを削減します。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>チップレット</dt><dd>複数の異なる機能を持つ半導体ダイを1つのパッケージに集積する技術。</dd><dt>AIアクセラレータ</dt><dd>AIの学習や推論などの処理を高速化することに特化した演算装置。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-12/">← 2026-10-12</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（13）</summary><ul><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

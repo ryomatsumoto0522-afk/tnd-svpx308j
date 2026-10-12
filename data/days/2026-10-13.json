@@ -1,0 +1,426 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-12T23:38:16.538Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
+      "title": "Announcing AWS Lambda Web Functions",
+      "source": "AWS News Blog",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T22:34:47.000Z",
+      "summary": "Expressなどの標準的なHTTPサーバーをコード書き換えなしでそのままデプロイできます。1環境あたり最大128並行リクエストを処理し、CPU使用時間に基づき課金されます。AWS CLIの「aws lambda-web deploy」コマンドで素早くデプロイできます。",
+      "headline": "AWSが標準的なWebアプリを実行できる新機能をLambdaに追加",
+      "points": [
+        "Expressなどの標準的なHTTPサーバーをコード書き換えなしでそのままデプロイできます。",
+        "1環境あたり最大128並行リクエストを処理し、CPU使用時間に基づき課金されます。",
+        "AWS CLIの「aws lambda-web deploy」コマンドで素早くデプロイできます。"
+      ],
+      "impact": "Web開発者は、アダプターを使わずに既存のWebアプリをLambda環境へ直接移行・運用できます。",
+      "glossary": [
+        {
+          "term": "Firecracker",
+          "explanation": "仮想マシンをミリ秒単位で素早く起動・分離できる軽量仮想化技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.infoq.com/news/2026/10/gitlab-19-4-goal-driven-agents/",
+      "title": "GitLab 19.4 Adds Goal-Driven Agents and Tighter Cost Controls",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T09:00:00.000Z",
+      "summary": "目標を設定すると自律的に作業を進める「/goal」コマンドがCLIに追加されました。Kimi K3など3種のモデルに対応し、クレジット消費を抑えた運用が可能になりました。ユーザーごとの利用上限設定や詳細な利用実績のエクスポート機能が導入されました。",
+      "headline": "GitLabが自律型エージェントやAIコスト管理機能を含む19.4を公開",
+      "points": [
+        "目標を設定すると自律的に作業を進める「/goal」コマンドがCLIに追加されました。",
+        "Kimi K3など3種のモデルに対応し、クレジット消費を抑えた運用が可能になりました。",
+        "ユーザーごとの利用上限設定や詳細な利用実績のエクスポート機能が導入されました。"
+      ],
+      "impact": "GitLab管理者は、チームごとに利用可能なモデルや利用上限額を設定して支出を管理できます。",
+      "glossary": [
+        {
+          "term": "Model Context Protocol",
+          "explanation": "AIが外部ツールやデータと接続するためのオープンな標準仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "title": "Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T13:57:00.000Z",
+      "summary": "マージされた月間変更数が約8,100件から1万7,000件へと前年比で2倍以上に増加しました。変更量の急増を受け、監視強化やロールバック能力の拡張など信頼性対策を刷新しました。障害調査ではAIコード自体の問題ではなく、検証制御が変更量に追いつかないことが判明しました。",
+      "headline": "SpotifyがAI開発導入で月間コード変更を倍増させ品質管理体制を強化",
+      "points": [
+        "マージされた月間変更数が約8,100件から1万7,000件へと前年比で2倍以上に増加しました。",
+        "変更量の急増を受け、監視強化やロールバック能力の拡張など信頼性対策を刷新しました。",
+        "障害調査ではAIコード自体の問題ではなく、検証制御が変更量に追いつかないことが判明しました。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing",
+      "title": "Announcing consumption-based pricing for short-term memory in Amazon Bedrock AgentCore",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T16:00:00.000Z",
+      "summary": "イベント単位の定額制から、データの取り込み・取得・保存量に基づく従量課金に変更されました。取り込みは1GBあたり1ドル、取得は0.20ドル、保存は1GB月額0.10ドルです。頻繁に小さなイベントを処理するワークロードを中心に利用コストが削減されます。",
+      "headline": "AWSがBedrock AgentCore短期メモリに従量課金制を導入",
+      "points": [
+        "イベント単位の定額制から、データの取り込み・取得・保存量に基づく従量課金に変更されました。",
+        "取り込みは1GBあたり1ドル、取得は0.20ドル、保存は1GB月額0.10ドルです。",
+        "頻繁に小さなイベントを処理するワークロードを中心に利用コストが削減されます。"
+      ],
+      "impact": "エージェント開発者は、メモリのTTLを短く設定することでストレージコストを管理できます。",
+      "glossary": [
+        {
+          "term": "TTL",
+          "explanation": "データの有効期限を設定し、期限後に自動で削除させる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/xcode-json-project-format/",
+      "title": "Xcode 27.2 Introduces an Agent- and Merge-Friendly JSON Format for Project Configuration",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-12T09:00:00.000Z",
+      "summary": "従来のplist形式に代わり、人間やAIが読み書きしやすいJSON形式を採用しました。変更履歴が見やすくなり、チーム開発におけるマージ衝突のリスクを低減します。Swiftパッケージも提供され、既存プロジェクトからの移行も容易です。",
+      "headline": "AppleがXcode 27.2でJSON形式のプロジェクト設定を導入",
+      "points": [
+        "従来のplist形式に代わり、人間やAIが読み書きしやすいJSON形式を採用しました。",
+        "変更履歴が見やすくなり、チーム開発におけるマージ衝突のリスクを低減します。",
+        "Swiftパッケージも提供され、既存プロジェクトからの移行も容易です。"
+      ],
+      "impact": "移行前にfastlaneやCocoaPodsなど利用ツールが新形式に対応しているか確認する必要があります。",
+      "glossary": [
+        {
+          "term": "マージコンフリクト",
+          "explanation": "複数人が同じファイルの同じ箇所を同時に変更した際に発生する競合のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/tatsuqumo/articles/4c74f5748442d2",
+      "title": "AIエージェントのための規格「A2A」とは？ 〜 MCPとの違い〜",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T06:39:29.000Z",
+      "summary": "異なるAIエージェント同士が互いに業務を自律的に委任し合える共通規格です。既存のWeb技術を基盤とし、長時間の処理や人間への承認確認ステートを備えます。道具を呼ぶMCPに対し、エージェント同士を同僚のようにつなぐ役割を担います。",
+      "headline": "エージェント間通信のオープン規格A2A Protocolが注目を集める",
+      "points": [
+        "異なるAIエージェント同士が互いに業務を自律的に委任し合える共通規格です。",
+        "既存のWeb技術を基盤とし、長時間の処理や人間への承認確認ステートを備えます。",
+        "道具を呼ぶMCPに対し、エージェント同士を同僚のようにつなぐ役割を担います。"
+      ],
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のツールやデータソースと接続するための標準プロトコルです。"
+        },
+        {
+          "term": "SSE",
+          "explanation": "サーバーからクライアントへリアルタイムにデータを単方向送信するWeb技術です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://qiita.com/joinclass/items/f0fcbab31320afd23556",
+      "title": "MCPのTools/Resources/Promptsを使い分ける — 3機能の実装比較【TypeScript】",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T23:30:02.000Z",
+      "summary": "副作用のある動詞操作はTools、読み取り専用の名詞はResourcesに分類します。定型的な指示文はPromptsとして登録し、安全で効率的な運用を実現します。",
+      "headline": "MCPの3機能の適切な使い分けとTypeScript実装の知見が共有される",
+      "points": [
+        "副作用のある動詞操作はTools、読み取り専用の名詞はResourcesに分類します。",
+        "定型的な指示文はPromptsとして登録し、安全で効率的な運用を実現します。"
+      ],
+      "impact": "MCPサーバーを自作する開発者は、操作の副作用と読み取りを明確に分離して設計できます。",
+      "glossary": [
+        {
+          "term": "副作用",
+          "explanation": "プログラムがデータの取得だけでなく、状態の変更や外部への書き込みを行うことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/k_iijima/articles/ae926619c45882",
+      "title": "Claude Code の deny だけでは git push を止めきれない話",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T08:45:21.000Z",
+      "summary": "denyのルールは文字列照合のため、引数の指定順など別の書き方ですり抜けてしまいます。実行直前に動くPreToolUse hookでコマンドを解析し、危険な操作を止める対策が有効です。",
+      "headline": "Claude Codeのdeny設定だけではgit pushを阻止できないと判明",
+      "points": [
+        "denyのルールは文字列照合のため、引数の指定順など別の書き方ですり抜けてしまいます。",
+        "実行直前に動くPreToolUse hookでコマンドを解析し、危険な操作を止める対策が有効です。"
+      ],
+      "impact": "Claude CodeにGit操作を制限したい開発者は、hook等を併用した対策を講じる必要があります。",
+      "glossary": [
+        {
+          "term": "hook",
+          "explanation": "特定の処理が行われる直前や直後に、独自のプログラムを割り込ませて実行する仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/yureki_lab/items/c10207f98d65e1f03a69",
+      "title": "Claude Code の SessionStart hook で前回の作業メモと git 状態をセッション開始時に自動注入する実装手順 — /compact 後に消える・export が Bash に効かない・exit 2 で止まらない、3つのハマりどころ【2026】",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-12T23:01:12.000Z",
+      "summary": "SessionStart hookを使って作業メモやgit情報をClaudeのコンテキストに注入します。matcherにcompact等を含めないと会話圧縮後に情報が消える問題など3点の注意点が挙げられています。環境変数をBashツールに渡すにはCLAUDE_ENV_FILEへ追記する必要があります。",
+      "headline": "Claude Codeで作業メモとgit状態を自動注入する実装例が公開",
+      "points": [
+        "SessionStart hookを使って作業メモやgit情報をClaudeのコンテキストに注入します。",
+        "matcherにcompact等を含めないと会話圧縮後に情報が消える問題など3点の注意点が挙げられています。",
+        "環境変数をBashツールに渡すにはCLAUDE_ENV_FILEへ追記する必要があります。"
+      ],
+      "impact": "Claude Codeで複数セッションの作業状況説明を省略したい利用者は、hookの設定やスクリプトを確認できます。",
+      "glossary": [
+        {
+          "term": "hook",
+          "explanation": "特定のイベント発生時に独自の処理を自動実行する仕組み。"
+        },
+        {
+          "term": "コンテキスト",
+          "explanation": "AIが応答を生成する際に参照する会話履歴や前提情報のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/java-news-roundup-oct05-2026/",
+      "title": "Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-12T10:10:00.000Z",
+      "summary": "JDK 28向けにZGC改善や構造化並行性の確定を提案するJEPが移行されました。Apache Grails 8.0.0が一般提供され、JDK 21とGradle 9.7に対応しました。GlassFish 8.0.5やTornadoVM 7.2.0などの更新もあわせて公開されています。",
+      "headline": "JDK 28向けJEP提案やGrails 8.0公開などJava最新動向が発表",
+      "points": [
+        "JDK 28向けにZGC改善や構造化並行性の確定を提案するJEPが移行されました。",
+        "Apache Grails 8.0.0が一般提供され、JDK 21とGradle 9.7に対応しました。",
+        "GlassFish 8.0.5やTornadoVM 7.2.0などの更新もあわせて公開されています。"
+      ],
+      "impact": "Java開発者はJDK 28の新機能提案や各ライブラリの最新バージョンの仕様を確認できます。",
+      "glossary": [
+        {
+          "term": "JEP",
+          "explanation": "Javaへの機能追加や仕様変更を提案・管理するための公式文書。"
+        },
+        {
+          "term": "ガベージコレクション",
+          "explanation": "プログラムが不要になったメモリ領域を自動的に解放する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/",
+      "title": "Article: When Should You Use Liquid Clustering? Benchmarking Lakehouse Layout Strategies",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-12T11:00:00.000Z",
+      "summary": "Delta LakeにおいてLiquid Clustering、ZOrder、パーティショニングの性能を比較検証しました。クエリのパターンが多様な場合はLiquid Clusteringが有効とされています。安定した特定列で常に絞り込む場合はZOrderの方が高速になることが示されています。",
+      "headline": "レイクハウスのデータ配置戦略を比較した検証結果が公開",
+      "points": [
+        "Delta LakeにおいてLiquid Clustering、ZOrder、パーティショニングの性能を比較検証しました。",
+        "クエリのパターンが多様な場合はLiquid Clusteringが有効とされています。",
+        "安定した特定列で常に絞り込む場合はZOrderの方が高速になることが示されています。"
+      ],
+      "impact": "レイクハウスでデータ分析を行う技術者は、自身の主要クエリに適したデータ配置構成を検証できます。",
+      "glossary": [
+        {
+          "term": "レイクハウス",
+          "explanation": "生データの蓄積と高速なデータ分析基盤を統合したデータアーキテクチャ。"
+        },
+        {
+          "term": "プルーニング",
+          "explanation": "クエリ実行時に不要なファイルやデータを読み込まず除外して高速化する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/",
+      "title": "AWS Lambda announces Lambda Web Functions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T19:30:00.000Z",
+      "summary": "Lambda Web Functionsにより、アダプターなしでExpressやHonoなどのフレームワークを扱えます。待機時間ではなくアクティブなCPU時間とメモリ保持量に対して課金されます。Node.jsに対応し、単一のウォーム環境で複数リクエストの同時処理が可能です。",
+      "headline": "AWS Lambdaが直接HTTPリクエストを処理できる新機能を発表",
+      "points": [
+        "Lambda Web Functionsにより、アダプターなしでExpressやHonoなどのフレームワークを扱えます。",
+        "待機時間ではなくアクティブなCPU時間とメモリ保持量に対して課金されます。",
+        "Node.jsに対応し、単一のウォーム環境で複数リクエストの同時処理が可能です。"
+      ],
+      "impact": "サーバーレスでウェブアプリやAPIを構築する開発者は、東京を含む対象リージョンで新機能を利用できます。",
+      "glossary": [
+        {
+          "term": "サーバーレス",
+          "explanation": "サーバー管理をクラウド側に任せ、実行したリソース分のみ支払う仕組み。"
+        },
+        {
+          "term": "コールドスタート",
+          "explanation": "サーバーレス環境でリクエスト時に新しい実行環境が立ち上がる際の遅延。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.publickey1.jp/blog/26/denocloudflaredenocloudflare_workersdurable_objects.html",
+      "title": "Deno開発元がCloudflareに合流。Denoの開発は終了へ、今後はCloudflare WorkersとDurable Objectsのオープンソース実装に注力",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-12T14:19:28.000Z",
+      "summary": "Deno開発元のDeno LandがCloudflareに合流し、Denoの開発は今後1年のアップデートを経て終了する商用サービスのDeno Deployは6カ月後に終了し、JSRはCloudflareへインフラが移行される今後はCloudflare WorkersとDurable Objectsのオープンソース実装の発展に注力する",
+      "headline": "Deno開発元がCloudflareに合流しDenoの開発は終了へ",
+      "points": [
+        "Deno開発元のDeno LandがCloudflareに合流し、Denoの開発は今後1年のアップデートを経て終了する",
+        "商用サービスのDeno Deployは6カ月後に終了し、JSRはCloudflareへインフラが移行される",
+        "今後はCloudflare WorkersとDurable Objectsのオープンソース実装の発展に注力する"
+      ],
+      "impact": "Deno Deployの利用者やDenoを使用している開発者は、Cloudflare Workersなどへの移行や今後の対応を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "JavaScriptランタイム",
+          "explanation": "ブラウザ以外の環境でJavaScriptプログラムを実行するための実行環境のこと。"
+        },
+        {
+          "term": "オープンソース",
+          "explanation": "ソフトウェアの設計図であるソースコードが無償で公開され、誰でも改良や再配布ができる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark/",
+      "title": "Amazon EMR now supports native data quality checks in Apache Spark jobs",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T07:00:00.000Z",
+      "summary": "Amazon EMRはAWS Glueを基盤として、Apache Sparkジョブ内でデータ品質をネイティブに検証できる機能をリリースした追加料金なしで利用でき、30種類以上のルールや履歴に基づく動的ルール、機械学習による異常検知が使用できるEC2、EKS、Serverlessの各デプロイモードに対応し、結果をデータセットやルール、行単位で取得できる",
+      "headline": "Amazon EMRがApache Sparkジョブでのデータ品質検証に対応",
+      "points": [
+        "Amazon EMRはAWS Glueを基盤として、Apache Sparkジョブ内でデータ品質をネイティブに検証できる機能をリリースした",
+        "追加料金なしで利用でき、30種類以上のルールや履歴に基づく動的ルール、機械学習による異常検知が使用できる",
+        "EC2、EKS、Serverlessの各デプロイモードに対応し、結果をデータセットやルール、行単位で取得できる"
+      ],
+      "impact": "データエンジニアリングチームは、別途インフラを構築せずにSparkジョブ内でデータ品質の検証と問題への対処を行う必要がある。",
+      "glossary": [
+        {
+          "term": "Apache Spark",
+          "explanation": "大規模なデータを高速に分散処理するためのオープンソースのフレームワーク。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption",
+      "title": "Amazon OpenSearch Service now supports index-level encryption",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T02:30:00.000Z",
+      "summary": "Amazon OpenSearch Serviceは、各インデックスを個別のAWS KMSカスタマーマネージドキーで暗号化できるようになったOpenSearchバージョン3.3以降を実行する14のAWSリージョンで追加料金なしで利用できるAWS管理コンソールまたはAWS CLIを使用して新規ドメイン作成時にネイティブモードを設定して有効化する",
+      "headline": "Amazon OpenSearch Serviceがインデックス単位の暗号化に対応",
+      "points": [
+        "Amazon OpenSearch Serviceは、各インデックスを個別のAWS KMSカスタマーマネージドキーで暗号化できるようになった",
+        "OpenSearchバージョン3.3以降を実行する14のAWSリージョンで追加料金なしで利用できる",
+        "AWS管理コンソールまたはAWS CLIを使用して新規ドメイン作成時にネイティブモードを設定して有効化する"
+      ],
+      "impact": "利用者はマルチテナントアプリケーションなどで機密性や所有権が異なるデータを同じドメイン内の個別キーで保護できる。",
+      "glossary": [
+        {
+          "term": "暗号化",
+          "explanation": "データを第三者が読めない別の形式のデータに変換し、セキュリティを保護すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://kdy1.dev/2026-10-12-ai-ui",
+      "title": "How I Build UIs with AI",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-12T08:45:46.000Z",
+      "summary": "開発者はAIに画像生成でモックアップを作成させて承認を得るワークフローを紹介している承認されたモックアップとプロンプトを課題に添付し、並列で実装を進める手法をとっている公開されているスクリプトやスキルを活用して、AIによる一連の作業を効率化している",
+      "headline": "開発者がAIを活用したUI作成と並列実装のワークフローを公開",
+      "points": [
+        "開発者はAIに画像生成でモックアップを作成させて承認を得るワークフローを紹介している",
+        "承認されたモックアップとプロンプトを課題に添付し、並列で実装を進める手法をとっている",
+        "公開されているスクリプトやスキルを活用して、AIによる一連の作業を効率化している"
+      ],
+      "impact": "UI開発におけるAIの活用方法や、効率的なタスクの並列処理ワークフローに関心のある開発者が参考にできる。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://pc.watch.impress.co.jp/docs/news/2147412.html",
+      "title": "脱NVIDIAを急ぐMicrosoft、わずか9カ月で次世代AIチップ「Maia 300」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T13:23:38.000Z",
+      "summary": "MicrosoftがAzure向けAIアクセラレータ「Maia 300」を発表し、2027年から導入します。チップレット構造や288GBのHBM4を採用し、Maia 200比で2倍となるラックあたり96基を集積可能です。GPUと比べて1メガワットあたりに処理できるトークン数が40%増加し、AI推論コストを削減します。",
+      "headline": "Microsoftが次世代AIチップMaia 300を発表",
+      "points": [
+        "MicrosoftがAzure向けAIアクセラレータ「Maia 300」を発表し、2027年から導入します。",
+        "チップレット構造や288GBのHBM4を採用し、Maia 200比で2倍となるラックあたり96基を集積可能です。",
+        "GPUと比べて1メガワットあたりに処理できるトークン数が40%増加し、AI推論コストを削減します。"
+      ],
+      "glossary": [
+        {
+          "term": "チップレット",
+          "explanation": "複数の異なる機能を持つ半導体ダイを1つのパッケージに集積する技術。"
+        },
+        {
+          "term": "AIアクセラレータ",
+          "explanation": "AIの学習や推論などの処理を高速化することに特化した演算装置。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 95,
+    "shortlisted": 60,
+    "bodyFailures": 0,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 24945,
+    "outputTokens": 10605
+  },
+  "offline": false
+}
