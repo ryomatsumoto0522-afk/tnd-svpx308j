@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-12T23:38:16.538Z",
+  "lastRun": "2026-10-13T21:52:20.795Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -203,6 +203,26 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark": "2026-10-13",
     "https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption": "2026-10-13",
     "https://kdy1.dev/2026-10-12-ai-ui": "2026-10-13",
-    "https://pc.watch.impress.co.jp/docs/news/2147412.html": "2026-10-13"
+    "https://pc.watch.impress.co.jp/docs/news/2147412.html": "2026-10-13",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon": "2026-10-14",
+    "https://deepmind.google/models/gemini": "2026-10-14",
+    "https://www.anthropic.com/engineering/redesigning-source-control": "2026-10-14",
+    "https://www.itmedia.co.jp/news/article/2610/13/2000002204": "2026-10-14",
+    "https://qiita.com/picnic/items/8d83fca6b400ccfaf141": "2026-10-14",
+    "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026": "2026-10-14",
+    "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261005": "2026-10-14",
+    "https://forest.watch.impress.co.jp/docs/news/2147319.html": "2026-10-14",
+    "https://github.com/rust-lang/rust/issues/164250": "2026-10-14",
+    "https://inside.java/2026/10/11/devoxxbelgium-runtime-year-keynote": "2026-10-14",
+    "https://inside.java/2026/10/12/devoxxbelgium-structured-concurrency": "2026-10-14",
+    "https://eg2.haku.sh/": "2026-10-14",
+    "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development": "2026-10-14",
+    "https://www.firefox.com/en-US/enterprise": "2026-10-14",
+    "https://www.apple.com/apple-homeview": "2026-10-14",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin": "2026-10-14",
+    "https://www.infoq.com/news/2026/10/aws-eventbridge-scaling": "2026-10-14",
+    "https://machinelearning.apple.com/research/distributed-gpu-cloud": "2026-10-14",
+    "https://www.infoq.com/news/2026/10/backstage-1-55-task-recovery": "2026-10-14",
+    "https://www.nict.go.jp/press/2026/10/13-1.html": "2026-10-14"
   }
 }

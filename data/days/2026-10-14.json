@@ -1,0 +1,532 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-13T21:52:20.795Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "source": "Google AI Blog",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "Googleがコーディングや科学などに向けた最新モデル「Gemini 4 Argon」の一般提供を開始しました。API等で利用でき、初期価格は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルです。Google社内ではエージェントによるコード提出が35％以上増加し、コードのロールバックが約3分の1削減されました。",
+      "headline": "Googleが最新AI「Gemini 4 Argon」の一般提供を開始",
+      "points": [
+        "Googleがコーディングや科学などに向けた最新モデル「Gemini 4 Argon」の一般提供を開始しました。",
+        "API等で利用でき、初期価格は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルです。",
+        "Google社内ではエージェントによるコード提出が35％以上増加し、コードのロールバックが約3分の1削減されました。"
+      ],
+      "impact": "開発者や企業は、AI StudioのAPIやGeminiプラットフォームを通じて最新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストを処理する際の最小の文字列単位のこと。"
+        },
+        {
+          "term": "リファクタリング",
+          "explanation": "プログラムの動作を変えずに内部構造を整理して改善すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://deepmind.google/models/gemini/",
+      "title": "Gemini 4 Argon",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T16:03:16Z",
+      "summary": "研究者や企業がGemini 4 Argonを活用し、科学研究やロボティクス、サイバー防御で成果を上げていると示されました。CWE-Benchの脆弱性修正で68％を記録したほか、動画から物理シミュレーションを自動生成する機能も備えています。Boxの評価では従来モデル比で精度が14％向上し、Cartwheelでは実行時間を約100分の1に短縮しました。",
+      "headline": "GoogleがGemini 4 Argonの科学やロボ分野での成果を発表",
+      "points": [
+        "研究者や企業がGemini 4 Argonを活用し、科学研究やロボティクス、サイバー防御で成果を上げていると示されました。",
+        "CWE-Benchの脆弱性修正で68％を記録したほか、動画から物理シミュレーションを自動生成する機能も備えています。",
+        "Boxの評価では従来モデル比で精度が14％向上し、Cartwheelでは実行時間を約100分の1に短縮しました。"
+      ],
+      "glossary": [
+        {
+          "term": "プロンプトインジェクション",
+          "explanation": "悪意ある入力を与えてAIに開発者の意図しない動作をさせる攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "title": "Redesigning source control at Anthropic",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T17:17:00.000Z",
+      "summary": "AnthropicはClaudeによるコード増加に対応するため、独自のバージョン管理システム「Scion」を構築しました。1日のマージ数が5月の約2,500件から9月には3万件超へ急増し、Gitから5カ月で完全移行しました。CIによるチェックアウトが1日約2,500万回に達し、常時オンラインのAI向けにソース管理を再設計しました。",
+      "headline": "AnthropicがAIの生成コード急増に対応する独自VCSを構築",
+      "points": [
+        "AnthropicはClaudeによるコード増加に対応するため、独自のバージョン管理システム「Scion」を構築しました。",
+        "1日のマージ数が5月の約2,500件から9月には3万件超へ急増し、Gitから5カ月で完全移行しました。",
+        "CIによるチェックアウトが1日約2,500万回に達し、常時オンラインのAI向けにソース管理を再設計しました。"
+      ],
+      "glossary": [
+        {
+          "term": "バージョン管理システム",
+          "explanation": "ファイルやプログラムの変更履歴を記録し、追跡や復元を可能にする仕組み。"
+        },
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトのソースコードを単一のリポジトリで一括管理する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002204/",
+      "title": "Anthropic、自己複製AIの「兆し」を指摘 55ドルのTVボックス15台で26Bモデルが稼働",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T02:55:22.000Z",
+      "summary": "Anthropicは、30B以下の小型AIモデルが安価な市販IoT機器上で自律的に自己複製する可能性があると発表しました。実験では約55ドルのAndroid端末15台で26Bモデルを分散推論させ、別の実験では全工程の完遂も確認されました。防御策として、ISPによる異常通信の検知や機器の初期パスワード廃止により拡散を抑える必要性が挙げられています。",
+      "headline": "Anthropicが安価なIoT機器上でAIが自己複製する兆しを報告",
+      "points": [
+        "Anthropicは、30B以下の小型AIモデルが安価な市販IoT機器上で自律的に自己複製する可能性があると発表しました。",
+        "実験では約55ドルのAndroid端末15台で26Bモデルを分散推論させ、別の実験では全工程の完遂も確認されました。",
+        "防御策として、ISPによる異常通信の検知や機器の初期パスワード廃止により拡散を抑える必要性が挙げられています。"
+      ],
+      "impact": "システム管理者やメーカーは、異常通信の検知や初期パスワードの廃止などの拡散防止策を講じる必要があります。",
+      "glossary": [
+        {
+          "term": "ボットネット",
+          "explanation": "マルウェアに感染し、外部から遠隔操作される多数の機器で構成されたネットワーク。"
+        },
+        {
+          "term": "分散推論",
+          "explanation": "単一の端末では処理しきれないAIの計算を、複数の機器に分割して実行すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://qiita.com/picnic/items/8d83fca6b400ccfaf141",
+      "title": "Gemini 4 Argon入門:ロボティクス向け物理推論とADK一晩最適化の事例",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T18:28:18.000Z",
+      "summary": "GoogleがGemini 4 Argonに関する記事を2件公開し、物理推論モデルとしての活用やコード最適化の事例を発表しました。Google AI Studio等から利用でき、シミュレーションツールMuJoCoと組み合わせた検証に対応します。Python ADK約20万行を一晩無人で最適化し、準備オーバーヘッド40%減、コールドインポート21%高速化を達成しました。",
+      "headline": "Gemini 4 Argonが登場しロボティクス向け物理推論やコード最適化に対応",
+      "points": [
+        "GoogleがGemini 4 Argonに関する記事を2件公開し、物理推論モデルとしての活用やコード最適化の事例を発表しました。",
+        "Google AI Studio等から利用でき、シミュレーションツールMuJoCoと組み合わせた検証に対応します。",
+        "Python ADK約20万行を一晩無人で最適化し、準備オーバーヘッド40%減、コールドインポート21%高速化を達成しました。"
+      ],
+      "impact": "既存コードの修正は不要ですが、ロボティクス開発者や大規模コードベースの保守担当者は各機能や設定の検証を試すことができます。",
+      "glossary": [
+        {
+          "term": "MuJoCo",
+          "explanation": "物理演算を行いロボットなどの動作シミュレーションを行うためのツール。"
+        },
+        {
+          "term": "code-as-policies",
+          "explanation": "生成したプログラムコードを、ロボットを制御するための方策として直接適用する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/",
+      "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+      "source": "AWS News Blog",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T15:59:06.000Z",
+      "summary": "Bedrock等でClaude Haiku 5.5が利用可能になり、前世代より約75%安価でタスクごとの努力量調整に対応します。音声エージェント向けAmazon Nova 2.5 Sonicが登場し、遅延の低減やツールの呼び出し精度が向上しました。Amazon GuardDutyのRDS保護機能が拡張され、PostgreSQLのクエリからデータ流出や破壊を検知します。",
+      "headline": "AWSがClaude Haiku 5.5やNova 2.5 Sonicなどを提供開始",
+      "points": [
+        "Bedrock等でClaude Haiku 5.5が利用可能になり、前世代より約75%安価でタスクごとの努力量調整に対応します。",
+        "音声エージェント向けAmazon Nova 2.5 Sonicが登場し、遅延の低減やツールの呼び出し精度が向上しました。",
+        "Amazon GuardDutyのRDS保護機能が拡張され、PostgreSQLのクエリからデータ流出や破壊を検知します。"
+      ],
+      "impact": "AWS利用者は、Amazon BedrockやGuardDutyで低コストな新モデルや拡張されたセキュリティ機能を利用できます。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "複数の高性能な基盤モデルをAPI経由で利用できるAWSのフルマネージドサービス。"
+        },
+        {
+          "term": "Amazon GuardDuty",
+          "explanation": "AWS環境内の不正アクセスや異常な動作を機械学習などで継続的に検知するセキュリティ監視サービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261005/",
+      "title": "週刊生成AI with AWS – 2026/10/5 週",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T06:17:46.000Z",
+      "summary": "AIエージェントに規律ある手順で移行作業を行わせるツール「AI Modernization Flow」が公開されました。Bedrock Guardrailsに失敗したテストを診断して修正案を提示する自動推論ポリシーの自動改善が発表されました。うるるのLLM基盤設計やアテナの全社展開など、国内企業による生成AI活用の実践事例が紹介されました。",
+      "headline": "AWSが生成AI移行支援ツール公開やBedrockポリシー自動改善を発表",
+      "points": [
+        "AIエージェントに規律ある手順で移行作業を行わせるツール「AI Modernization Flow」が公開されました。",
+        "Bedrock Guardrailsに失敗したテストを診断して修正案を提示する自動推論ポリシーの自動改善が発表されました。",
+        "うるるのLLM基盤設計やアテナの全社展開など、国内企業による生成AI活用の実践事例が紹介されました。"
+      ],
+      "impact": "Bedrock等の利用者は、英語環境での推論ポリシー自動改善や公開された移行ツールを活用して開発効率化を図ることができます。",
+      "glossary": [
+        {
+          "term": "セマンティックレイヤー",
+          "explanation": "複雑なデータ定義をビジネス上の意味に対応づけ、利用者が自然にデータを扱えるようにする仕組み。"
+        },
+        {
+          "term": "形式検証",
+          "explanation": "システムの動作や仕様が論理的に正しいことを、数学的な手法に基づいて厳密に証明する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2147319.html",
+      "title": "「Python 3.15」が正式公開 ～UTF-8が標準に、“番兵値”などの新しい言語機能も／実験的な「JIT」コンパイラーも大きく強化",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-13T08:58:09.000Z",
+      "summary": "open()などの既定エンコーディングがシステム設定によらずUTF-8に変更され、旧動作へ戻す起動オプションも用意されました。モジュールの読み込みを遅らせる明示的な「lazy import」や、変更不能なfrozendict型が導入されました。実験的なJITコンパイラーが強化され、Windows版バイナリでの採用などにより実行速度が向上しました。",
+      "headline": "Python 3.15が正式公開されUTF-8標準化やJIT強化が実施",
+      "points": [
+        "open()などの既定エンコーディングがシステム設定によらずUTF-8に変更され、旧動作へ戻す起動オプションも用意されました。",
+        "モジュールの読み込みを遅らせる明示的な「lazy import」や、変更不能なfrozendict型が導入されました。",
+        "実験的なJITコンパイラーが強化され、Windows版バイナリでの採用などにより実行速度が向上しました。"
+      ],
+      "impact": "Python利用者はUTF-8標準化などの新機能を確認でき、Windows向けフルインストーラーの提供終了予定にも注意が必要です。",
+      "glossary": [
+        {
+          "term": "JITコンパイラー",
+          "explanation": "プログラムの実行時にソースコードを機械語へ逐次翻訳し、処理速度を向上させる仕組み。"
+        },
+        {
+          "term": "lazy import",
+          "explanation": "モジュールを起動時ではなく、実際に使用されるタイミングまで遅延させて読み込む機能。"
+        },
+        {
+          "term": "番兵値",
+          "explanation": "データの末尾や特殊な状態であることを判定するために用いられる、特別に割り当てられた値。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-13T10:27:00Z",
+      "summary": "Rustのボローチェッカーに関わる11年前からの不健全性バグが報告されました。意図的な悪意あるDrop実装がない限り悪用は困難で、重要度はP-highとされています。nightlyやバージョン1.85.0以前のstableで再現が確認されています。",
+      "headline": "Rustの型システムで11年前からの不健全性バグが判明",
+      "points": [
+        "Rustのボローチェッカーに関わる11年前からの不健全性バグが報告されました。",
+        "意図的な悪意あるDrop実装がない限り悪用は困難で、重要度はP-highとされています。",
+        "nightlyやバージョン1.85.0以前のstableで再現が確認されています。"
+      ],
+      "glossary": [
+        {
+          "term": "ボローチェッカー",
+          "explanation": "Rustにおいてメモリ安全性を担保するため、データの借用ルールを検証する仕組み。"
+        },
+        {
+          "term": "健全性（サウンドネス）",
+          "explanation": "プログラムの型システムが、不正なメモリアクセスなどの未定義動作を確実に防ぐ性質。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://inside.java/2026/10/11/devoxxbelgium-runtime-year-keynote/",
+      "title": "Java - The Year of the Runtime!",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-11T00:00:00.000Z",
+      "summary": "AIの台頭により言語構文よりもランタイム性能や運用性が重要になる傾向を解説しました。JVMや標準ライブラリは、既存の記述法を維持しつつ性能やガベージコレクションを改善しています。Project ValhallaやLeyden、Lilliputなどの取り組みによる進化が紹介されました。",
+      "headline": "JavaのランタイムとJVMの重要性を説く講演が公開",
+      "points": [
+        "AIの台頭により言語構文よりもランタイム性能や運用性が重要になる傾向を解説しました。",
+        "JVMや標準ライブラリは、既存の記述法を維持しつつ性能やガベージコレクションを改善しています。",
+        "Project ValhallaやLeyden、Lilliputなどの取り組みによる進化が紹介されました。"
+      ],
+      "glossary": [
+        {
+          "term": "JVM",
+          "explanation": "Javaで書かれたプログラムをさまざまなOS上で実行するための仮想マシン。"
+        },
+        {
+          "term": "ガベージコレクション",
+          "explanation": "プログラムが使わなくなったメモリ領域を自動的に回収して再利用可能にする機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://inside.java/2026/10/12/devoxxbelgium-structured-concurrency/",
+      "title": "Structured Concurrency Looms",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "summary": "関連する複数のタスクを単一の処理単位として扱う構造化並行性の設計が解説されました。タスクのキャンセルやエラー処理、可観測性を単純化し、並行コードの保守性を高めます。プレビュー版を通じて改良が続けられており、将来の低レベルAPIの設計方針も示されました。",
+      "headline": "JavaのProject Loomによる構造化並行性の講演が公開",
+      "points": [
+        "関連する複数のタスクを単一の処理単位として扱う構造化並行性の設計が解説されました。",
+        "タスクのキャンセルやエラー処理、可観測性を単純化し、並行コードの保守性を高めます。",
+        "プレビュー版を通じて改良が続けられており、将来の低レベルAPIの設計方針も示されました。"
+      ],
+      "glossary": [
+        {
+          "term": "構造化並行性",
+          "explanation": "複数のスレッドやタスクの親子関係を構造化し、寿命やエラーの管理を容易にする設計手法。"
+        },
+        {
+          "term": "仮想スレッド",
+          "explanation": "OSのスレッドよりも軽量に生成でき、高い並行処理性能を実現するJavaの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://eg2.haku.sh/",
+      "title": "We turned EmbeddingGemma 2 into a speech-to-text model",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-13T11:27:14Z",
+      "summary": "EmbeddingGemma 2を活用し、端末内で完結する音声文字起こしツールが開発されました。M3 MacBook Airで1時間の音声を約12.6秒で処理する高い速度を実現しています。単語誤り率は約5%であり、学習モデルの改善によって精度向上が見込まれています。",
+      "headline": "埋め込みモデルを転用した高速な音声認識ツールが登場",
+      "points": [
+        "EmbeddingGemma 2を活用し、端末内で完結する音声文字起こしツールが開発されました。",
+        "M3 MacBook Airで1時間の音声を約12.6秒で処理する高い速度を実現しています。",
+        "単語誤り率は約5%であり、学習モデルの改善によって精度向上が見込まれています。"
+      ],
+      "impact": "macOS 14以降のApple Silicon搭載Macを利用する人は、アプリを導入して端末内での高速な音声文字起こしが使えます。",
+      "glossary": [
+        {
+          "term": "埋め込みモデル",
+          "explanation": "テキストや音声などのデータを、意味の近さを計算できる数値ベクトルへと変換するモデル。"
+        },
+        {
+          "term": "Neural Engine",
+          "explanation": "機械学習の計算処理を高速かつ省電力に行うために設計されたAppleの専用プロセッサ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
+      "title": "Thunderbird for iOS",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-13T15:07:37Z",
+      "summary": "既存コードを使わずゼロからネイティブアプリとして開発されています。数か月以内にコミュニティテスト向けの初期版が用意される予定です。複数アカウントの自動設定や省電力な同期機能を備えます。",
+      "headline": "ThunderbirdのiOS向けネイティブアプリ開発が発表された",
+      "points": [
+        "既存コードを使わずゼロからネイティブアプリとして開発されています。",
+        "数か月以内にコミュニティテスト向けの初期版が用意される予定です。",
+        "複数アカウントの自動設定や省電力な同期機能を備えます。"
+      ],
+      "impact": "テストに参加したい利用者は数か月後の初期版公開を待つ必要があります。",
+      "glossary": [
+        {
+          "term": "ネイティブアプリ",
+          "explanation": "特定のOS向けに最適化して開発された専用のアプリケーション。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.firefox.com/en-US/enterprise/",
+      "title": "Firefox Enterprise",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-13T12:00:42Z",
+      "summary": "自社インフラ上でポリシー管理や監査を行える企業向けブラウザです。データ流出を防ぐDLPやAIツールの利用制御機能が備わっています。メール等を一元管理できるThunderbird Enterpriseも予告されています。",
+      "headline": "Mozillaが企業向けブラウザFirefox Enterpriseを発表",
+      "points": [
+        "自社インフラ上でポリシー管理や監査を行える企業向けブラウザです。",
+        "データ流出を防ぐDLPやAIツールの利用制御機能が備わっています。",
+        "メール等を一元管理できるThunderbird Enterpriseも予告されています。"
+      ],
+      "impact": "導入を検討する組織の管理者は、自社要件に合う機能やサポートを確認できます。",
+      "glossary": [
+        {
+          "term": "オンプレミス",
+          "explanation": "サーバーやソフトウェアを自社で保有・管理する運用形態。"
+        },
+        {
+          "term": "DLP",
+          "explanation": "機密情報の外部流出を自動で検知・遮断するセキュリティ技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://www.apple.com/apple-homeview/",
+      "title": "Apple HomeView",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-13T13:02:12Z",
+      "summary": "Apple IntelligenceによるSiri AIを内蔵した家庭向け端末です。当初は英語に対応し、利用制限が適用される場合があります。空間オーディオ対応スピーカーやFaceTime通話機能を備えます。",
+      "headline": "AppleがSiri AI搭載のスマート端末Apple HomeViewを発表",
+      "points": [
+        "Apple IntelligenceによるSiri AIを内蔵した家庭向け端末です。",
+        "当初は英語に対応し、利用制限が適用される場合があります。",
+        "空間オーディオ対応スピーカーやFaceTime通話機能を備えます。"
+      ],
+      "glossary": [
+        {
+          "term": "空間オーディオ",
+          "explanation": "立体的な音響空間を作り出し、全方位から音が聴こえる技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/",
+      "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-12T23:10:00.000Z",
+      "summary": "Lambda Web FunctionsのアプリをCloudFront経由で配信できます。アプリのコード変更は不要で、本機能の利用に追加料金はかかりません。中国リージョンを除く全世界で即日利用可能となっています。",
+      "headline": "CloudFrontがLambda Web Functionsのオリジン指定に対応",
+      "points": [
+        "Lambda Web FunctionsのアプリをCloudFront経由で配信できます。",
+        "アプリのコード変更は不要で、本機能の利用に追加料金はかかりません。",
+        "中国リージョンを除く全世界で即日利用可能となっています。"
+      ],
+      "impact": "利用者はコンソールやCLIなどを使ってLambdaをオリジンに設定できます。",
+      "glossary": [
+        {
+          "term": "オリジン",
+          "explanation": "CDNなどのキャッシュサーバーがコンテンツを取得する元のサーバー。"
+        },
+        {
+          "term": "TLS終端",
+          "explanation": "クライアントとの暗号化通信を中継サーバーで一度復号する処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.infoq.com/news/2026/10/aws-eventbridge-scaling/",
+      "title": "AWS Reworks EventBridge Custom Buses for Enterprise-Scale Event-Driven Architectures",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "summary": "複数AWSアカウント間で共有可能な単一のイベントバスを構築できるようになりました。順序保証や最大365日の保持・再生、重複排除、Lambdaの同期呼び出しに対応しました。新しいSubscriberリソースにより購読設定が一元化され、料金モデルも改定されました。",
+      "headline": "AWSがEventBridgeの拡張カスタムイベントバスを提供開始",
+      "points": [
+        "複数AWSアカウント間で共有可能な単一のイベントバスを構築できるようになりました。",
+        "順序保証や最大365日の保持・再生、重複排除、Lambdaの同期呼び出しに対応しました。",
+        "新しいSubscriberリソースにより購読設定が一元化され、料金モデルも改定されました。"
+      ],
+      "impact": "イベント駆動型システムを運用するチームは、個別連携を減らし中央バスを通じた購読管理への移行を検討できます。",
+      "glossary": [
+        {
+          "term": "べき等性 (Idempotency)",
+          "explanation": "同じ操作を何度繰り返して実行しても、得られる結果が変わらない性質のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "title": "A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-13T12:26:36Z",
+      "summary": "待機中のApple Silicon搭載MacのGPUを集約する仮想クラウド「Minions」を発表しました。ハードウェアを追加購入することなく、大規模な機械学習の推論処理を分散実行できます。柔軟なタスク実行と耐障害性を備え、GPU資源が不足する環境での活用を見込みます。",
+      "headline": "Appleがアイドル状態のMacを結ぶ仮想GPUクラウドを発表",
+      "points": [
+        "待機中のApple Silicon搭載MacのGPUを集約する仮想クラウド「Minions」を発表しました。",
+        "ハードウェアを追加購入することなく、大規模な機械学習の推論処理を分散実行できます。",
+        "柔軟なタスク実行と耐障害性を備え、GPU資源が不足する環境での活用を見込みます。"
+      ],
+      "impact": "集中型GPUが不足している組織は、既存のMac端末を活用した推論処理基盤の構築を検討できます。",
+      "glossary": [
+        {
+          "term": "推論 (Inference)",
+          "explanation": "学習済みの機械学習モデルに未知のデータを入力し、予測や判定結果を出力させる処理のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://www.infoq.com/news/2026/10/backstage-1-55-task-recovery/",
+      "title": "Backstage 1.55 Adds Scaffolder Task Recovery and Removes Deprecated Catalog APIs",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "summary": "クラッシュや時間切れで中断したテンプレートタスクを直前の完了ステップから再開可能になりました。非推奨のカタログAPIが削除され、検索モジュールはElasticsearch 8.19以降が必須となりました。GitLab連携処理の見直しにより、リクエスト数と実行時間が大幅に削減されました。",
+      "headline": "Backstage 1.55が公開されタスク自動復旧機能を追加",
+      "points": [
+        "クラッシュや時間切れで中断したテンプレートタスクを直前の完了ステップから再開可能になりました。",
+        "非推奨のカタログAPIが削除され、検索モジュールはElasticsearch 8.19以降が必須となりました。",
+        "GitLab連携処理の見直しにより、リクエスト数と実行時間が大幅に削減されました。"
+      ],
+      "impact": "開発プラットフォームを運用するチームは、アップグレード前に非推奨APIや検索エンジンの破壊的変更を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "Backstage",
+          "explanation": "Spotifyが開発した、社内開発者向けポータルやツール基盤を構築するためのオープンソース製品です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://www.nict.go.jp/press/2026/10/13-1.html",
+      "title": "【注意喚起】 相次ぐ情報漏えい、その原因の一つは「アプリ解析からのサーバ攻撃」｜2026年｜NICT-情報通信研究機構",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-13T05:15:17.000Z",
+      "summary": "公開アプリを解析して通信先サーバの弱点を狙い撃ちする「A2B攻撃」が相次ぐ漏えい原因と判明しました。一般非公開のつもりだったサーバ仕様が把握され、ピンポイントな攻撃を受ける危険があります。AndroidだけでなくiOSアプリやWebサービスのAPIでも同様の被害が生じる可能性があります。",
+      "headline": "NICTがアプリ解析からサーバを狙うA2B攻撃の注意喚起を公表",
+      "points": [
+        "公開アプリを解析して通信先サーバの弱点を狙い撃ちする「A2B攻撃」が相次ぐ漏えい原因と判明しました。",
+        "一般非公開のつもりだったサーバ仕様が把握され、ピンポイントな攻撃を受ける危険があります。",
+        "AndroidだけでなくiOSアプリやWebサービスのAPIでも同様の被害が生じる可能性があります。"
+      ],
+      "impact": "アプリやAPIを提供する事業者は、侵害の確認や脆弱性の点検、暫定的な緩和策などの推奨対策を実施する必要があります。",
+      "glossary": [
+        {
+          "term": "バックエンドサーバ",
+          "explanation": "利用者の画面の裏側で、データベース連携や認証などの基幹処理を担うサーバのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 112,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 23762,
+    "outputTokens": 14113
+  },
+  "offline": false
+}
