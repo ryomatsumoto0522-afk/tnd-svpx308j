@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-15</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月15日(木)</p>
+<p class="meta">更新 2026-10-15 05:43 · 取得ソース 18/18 · 選定 20件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://gigazine.net/news/20261014-anthropic-scion-version-control-system/" target="_blank" rel="noopener noreferrer">AnthropicがGit代替の独自システム「Scion」に移行</a></h3>
+<p class="orig">原題: AnthropicがGit代替のバージョン管理システム「Scion」を開発し社内移行済み、AIでコードが爆増してGitの限界に達したので耐えられるシステムを開発</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261014-anthropic-scion-version-control-system/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>AI活用によるコード急増でGitが限界に達し新システムを開発しました。</li><li>サーバー処理により最新取得が25倍、状態表示が207倍高速化しました。</li><li>一般向けではなく、数万人や大量のAIが動く巨大モノレポ向けです。</li></ul><p class="impact"><b>影響</b>Anthropicは成果適用のためにGit開発コミュニティやGitHub等と協力する方針です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のプロジェクトやサービスのコードを単一のリポジトリでまとめて管理する手法。</dd><dt>バージョン管理システム</dt><dd>ファイルの変更履歴を記録し、過去の状態への復帰や複数人での共同作業を容易にするシステム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://note.com/shi3zblog/n/ncb38d2978074" target="_blank" rel="noopener noreferrer">Claude Codeを用いた動画編集や字幕付けの実用例が報告</a></h3>
+<p class="orig">原題: Claude Codeがほとんどの場合、動画編集してくれる。8時間の素材を30分で1時間に編集。字幕もつけられる｜shi3z</p>
+<p class="src">出典: <a href="https://note.com/shi3zblog/n/ncb38d2978074" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>Claude Codeが動画内容を認識し、自動で粗編集やテロップ付与を行いました。</li><li>従来は数週間かかっていた動画の編集作業が大幅に短縮されたと報告されています。</li></ul>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://gigazine.net/news/20261014-lfm2-5-24b-a2b/" target="_blank" rel="noopener noreferrer">Liquid AIが端末向けモデル「LFM2.5-24B-A2B」を公開</a></h3>
+<p class="orig">原題: 「LFM2.5-24B-A2B」が登場、Gemma 4 26B-A4BやQwen3.6 35B-A3Bより高性能でローカルエージェントとして能力を発揮</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261014-lfm2-5-24b-a2b/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>総パラメーター数240億、アクティブ24億5000万のMoEモデルです。</li><li>エージェント性能テストでGemma 4やQwen3.6を上回りました。</li><li>llama.cpp等に対応し、MacやWindows環境で高速に推論可能です。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MoE</dt><dd>処理内容に応じて一部の専門ネットワークを選択して動作させることで効率化するモデル構造。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261014-anthropic-scion-version-control-system/" target="_blank" rel="noopener noreferrer">AnthropicがGit代替の独自システム「Scion」に移行</a></h3>
+<p class="orig">原題: AnthropicがGit代替のバージョン管理システム「Scion」を開発し社内移行済み、AIでコードが爆増してGitの限界に達したので耐えられるシステムを開発</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261014-anthropic-scion-version-control-system/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>AI活用によるコード急増でGitが限界に達し新システムを開発しました。</li><li>サーバー処理により最新取得が25倍、状態表示が207倍高速化しました。</li><li>一般向けではなく、数万人や大量のAIが動く巨大モノレポ向けです。</li></ul><p class="impact"><b>影響</b>Anthropicは成果適用のためにGit開発コミュニティやGitHub等と協力する方針です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のプロジェクトやサービスのコードを単一のリポジトリでまとめて管理する手法。</dd><dt>バージョン管理システム</dt><dd>ファイルの変更履歴を記録し、過去の状態への復帰や複数人での共同作業を容易にするシステム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://note.com/shi3zblog/n/ncb38d2978074" target="_blank" rel="noopener noreferrer">Claude Codeを用いた動画編集や字幕付けの実用例が報告</a></h3>
+<p class="orig">原題: Claude Codeがほとんどの場合、動画編集してくれる。8時間の素材を30分で1時間に編集。字幕もつけられる｜shi3z</p>
+<p class="src">出典: <a href="https://note.com/shi3zblog/n/ncb38d2978074" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>Claude Codeが動画内容を認識し、自動で粗編集やテロップ付与を行いました。</li><li>従来は数週間かかっていた動画の編集作業が大幅に短縮されたと報告されています。</li></ul>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261014-lfm2-5-24b-a2b/" target="_blank" rel="noopener noreferrer">Liquid AIが端末向けモデル「LFM2.5-24B-A2B」を公開</a></h3>
+<p class="orig">原題: 「LFM2.5-24B-A2B」が登場、Gemma 4 26B-A4BやQwen3.6 35B-A3Bより高性能でローカルエージェントとして能力を発揮</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261014-lfm2-5-24b-a2b/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>総パラメーター数240億、アクティブ24億5000万のMoEモデルです。</li><li>エージェント性能テストでGemma 4やQwen3.6を上回りました。</li><li>llama.cpp等に対応し、MacやWindows環境で高速に推論可能です。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MoE</dt><dd>処理内容に応じて一部の専門ネットワークを選択して動作させることで効率化するモデル構造。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener noreferrer">AIの不正アクセスは基本的セキュリティの欠如と専門家が指摘</a></h3>
+<p class="orig">原題: AI agents aren&#39;t &#39;going rogue.&#39; Frontier labs are skipping security basics</p>
+<p class="src">出典: <a href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-15</p>
+<ul class="points"><li>相次ぐ侵入事案はAI暴走ではなく長年確立された基本対策の不備とされました。</li><li>サンドボックスなど隔離環境の設定ミスが主な原因として挙げられています。</li><li>一部の大手AI企業が専門家によるリスク管理の助言を拒絶した点も指摘されました。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>サンドボックス</dt><dd>プログラムが外部システムに悪影響を与えないよう隔離された安全な仮想実行環境。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/aiplus/article/2610/14/2000002262/" target="_blank" rel="noopener noreferrer">AIが後継を自ら訓練する確率が2027年に50％超と予測されました</a></h3>
+<p class="orig">原題: 「AIがAIを作れるようになる確率は2027年に50%超」 Anthropic共同創業者が予測を前倒し、「ただし実行は“片道切符&quot;」</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/aiplus/article/2610/14/2000002262/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>クラーク氏は自らの後継を訓練できるAIが2027年に登場する確率が50％以上になると予測を引き上げました。</li><li>2026年に入りAnthropic社内のコード作業の26％をAIが主導するなど、自律開発が進んでいます。</li><li>自動化システムを止める仕組みは未完成であり、開発には人の判断やブレーキが必要だと強調しました。</li></ul><p class="impact"><b>影響</b>AI開発や利用に関わる人は、システムの暴走を防ぎ停止させる仕組みや人の判断プロセスを維持する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>再帰的自己改善</dt><dd>AIが自らのコードやモデルを自律的に改変・改善し、急速に能力を高めていく仕組みのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/building-a-production-ai-agent-on-aws-a-six-pillar-walkthrough/" target="_blank" rel="noopener noreferrer">AWSが本番向けAIエージェントを構築する6つの柱を解説しました</a></h3>
+<p class="orig">原題: AWS で本番 AI エージェントを構築する: 6つの柱によるウォークスルー</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/building-a-production-ai-agent-on-aws-a-six-pillar-walkthrough/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-14</p>
+<ul class="points"><li>本番運用に必要な要件として、構築、テスト、実行、セキュリティ、観測、ガバナンスの6つの柱を挙げています。</li><li>自動車工場の部品在庫エージェントを例に、モデル選定やフレームワーク、ツールの活用法を解説しています。</li></ul><p class="impact"><b>影響</b>AIエージェントを本番運用する開発者は、6つの柱に沿ってモデル選定やセキュリティ、監視体制を整える必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを標準的な手順で安全に接続するための共通規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/ai-agent-integration-for-invoice-payments-via-card-amazon-bedrock-agentcore-remote-mcp-server/" target="_blank" rel="noopener noreferrer">インフキュリオンが請求書カード払いの遠隔MCPサーバーを公開</a></h3>
+<p class="orig">原題: 請求書カード払いにおけるAIエージェント連携 ― Amazon Bedrock AgentCore Runtime を用いたリモート MCP サーバー構築</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/ai-agent-integration-for-invoice-payments-via-card-amazon-bedrock-agentcore-remote-mcp-server/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-14</p>
+<ul class="points"><li>Winvoiceの機能をAIエージェントから呼び出せるリモートMCPサーバーを約1か月で構築し公開しました。</li><li>利用者の環境構築が不要なリモート方式を選び、基盤にはAmazon Bedrock AgentCoreを採用しました。</li></ul><p class="impact"><b>影響</b>Winvoiceを利用する経理担当者は、URLを設定するだけでAIエージェントを通じた業務連携が可能になります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リモートMCPサーバー</dt><dd>ローカル端末ではなくクラウド等のサーバー上で動作させ、URL経由で機能を呼び出すMCPの構成。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-gen-limit-increase/" target="_blank" rel="noopener noreferrer">AWS Lambda durable functionsの上限値と容量が大幅に緩和</a></h3>
+<p class="orig">原題: AWS Lambda durable functions increases durable operation and checkpoint payload limits</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-gen-limit-increase/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-14</p>
+<ul class="points"><li>1実行あたりのdurable operation上限が3,000から30,000へと10倍に引き上げられました。</li><li>チェックポイントの最大ペイロードサイズが256KBから1MBに拡張され、状態保持が容易になりました。</li></ul><p class="impact"><b>影響</b>長時間ワークフローやAI処理を実装する開発者は、外部ストレージを使わずに大規模な状態管理を行えるようになります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>チェックポイント</dt><dd>処理の途中で実行状態を保存し、障害発生時にその時点から安全に再開できるようにする仕組み。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/" target="_blank" rel="noopener noreferrer">AWS STSがセッショントークンのサイズ制限を4,096バイトに一本化</a></h3>
+<p class="orig">原題: AWS STS のセッショントークンのサイズ制限を簡素化、サイズのモニタリングにも対応</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-14</p>
+<ul class="points"><li>パックされたポリシーと全体の2つのサイズ制限を廃止し、組み立て後4,096バイトの単一制限に変更しました。</li><li>APIレスポンスやCloudWatch、CloudTrailでトークンのサイズや使用率のモニタリングが可能になりました。</li><li>新パラメータMinimumSessionTokenSizeで任意サイズのトークンを生成しテストできます。</li></ul><p class="impact"><b>影響</b>セッショントークンを保存・転送するDBやプロキシを運用する利用者は、最大サイズを処理できるか確認が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS STS</dt><dd>一時的なセキュリティ認証情報をオンデマンドで生成・提供するAWSのサービス。</dd><dt>セッショントークン</dt><dd>一時認証情報の一部として発行され、アクセス権限やコンテキスト情報を含む文字列。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/10/14/devoxxbelgium-everyday-json/" target="_blank" rel="noopener noreferrer">Java標準機能としてJSONを扱う新しいAPIの提案が発表</a></h3>
+<p class="orig">原題: Everyday JSON in Java</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/14/devoxxbelgium-everyday-json/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-14</p>
+<ul class="points"><li>外部ライブラリを追加せずに日常的なJSON処理を行えるインキュベートAPIのJEPが提案されました。</li><li>既存ライブラリの代替ではなく、導入コストを抑えて手軽にパースや生成を行いたい用途向けに設計されています。</li></ul><p class="impact"><b>影響</b>Java開発者は、小規模な用途で外部依存関係を追加せずに標準機能でJSON処理を行えるようになります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>JEP</dt><dd>JDK Enhancement Proposalの略で、Javaの機能拡張や改善を提案・検討する仕組み。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/13/this-week-in-spring-october-13th-2026" target="_blank" rel="noopener noreferrer">開発者向けまとめ「This Week in Spring」の最新版が公開</a></h3>
+<p class="orig">原題: This Week in Spring - October 13th, 2026</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/13/this-week-in-spring-october-13th-2026" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-13</p>
+<ul class="points"><li>Jobrunr 9の新機能やSpring Modulithによる設計手法の推奨記事が紹介されました。</li><li>IntelliJ IDEAの新機能やSpring AIによるエージェントパターンの解説動画などが共有されています。</li></ul><p class="impact"><b>影響</b>Springを利用する開発者は、関連ツールの新機能や設計アプローチに関する最新情報を確認できます。</p>
+
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-09-components" target="_blank" rel="noopener noreferrer">Vueにおけるコンポーネント分割と親子間連携の基礎解説記事が公開</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #9 - コンポーネント分割（props・emit・slots）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-09-components" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-14</p>
+<ul class="points"><li>画面を部品化し、props・emit・slotsを用いて親子コンポーネント間で連携する方法を解説しています。</li><li>propsで親から子へデータを渡し、emitで子から親へイベントを伝える一方向のデータフローを説明しています。</li><li>slotsを利用することで、外枠を共通化しつつ表示するテンプレートの中身を柔軟に差し替えられます。</li></ul><p class="impact"><b>影響</b>Vueを学ぶ初学者は、再利用性と保守性の高いコンポーネント設計やデータ連携の基本手順を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンポーネント</dt><dd>Webページを構成するUIや機能を、再利用可能な独立した部品として切り出したもの。</dd><dt>props</dt><dd>親コンポーネントから子コンポーネントへデータを引き渡すためのVueの仕組み。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/metasyntax/articles/vue-nexttick-flush-promise" target="_blank" rel="noopener noreferrer">VueのnextTickの内部動作とDOM更新の仕組みが解説された</a></h3>
+<p class="orig">原題: ソースで理解するVue: nextTickは何を待ってる？</p>
+<p class="src">出典: <a href="https://zenn.dev/metasyntax/articles/vue-nexttick-flush-promise" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-14</p>
+<ul class="points"><li>Vueはstate変更時にDOMを即座に更新せず、ジョブをキューに積んで同期処理後にまとめて実行します。</li><li>nextTick()は、キューに積んだ更新処理（flush）のPromiseをそのまま返します。</li><li>await nextTick()で待機することで、DOM更新が完了した後に処理を続けられます。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>nextTick</dt><dd>Vueでデータ変更後のDOM更新完了を待機するための非同期関数です。</dd><dt>マイクロタスク</dt><dd>JavaScriptで同期処理の実行完了直後に割り込んで実行される非同期タスクです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/cloudflare-viteplus-stable/" target="_blank" rel="noopener noreferrer">VoidZeroが統合JSツールチェーン「Vite+ 1.0」を公開した</a></h3>
+<p class="orig">原題: Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/cloudflare-viteplus-stable/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-14</p>
+<ul class="points"><li>単一のvpコマンドでNode.jsやパッケージマネージャ、Vite 8などのフロントエンドスタックを一元管理します。</li><li>GitLab CI/CD対応やtsupからの移行機能、Gitフック管理コマンドなどが追加されました。</li><li>Vitest 5の安定版対応や、高速なOxcのReact Compilerサポートが含まれます。</li></ul><p class="impact"><b>影響</b>Vite+へ移行するチームは、大規模案件の移行前にガイドを確認して追工作業の有無を把握する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ツールチェーン</dt><dd>ソフトウェア開発に必要なコンパイラやリンカなどの一連のツール群のことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records" target="_blank" rel="noopener noreferrer">AWS Agent Registryがレコードのカスタムメタデータに対応した</a></h3>
+<p class="orig">原題: AWS Agent Registry now supports custom metadata for registry records</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-14</p>
+<ul class="points"><li>レジストリレコードに所有チームやデータ分類など、組織独自の構造化フィールドを追加できるようになりました。</li><li>スキーマはレジストリ単位で定義し、自由記述テキストやURL、ブール値、選択リストを検証可能です。</li><li>マネジメントコンソールやCLI、SDK、MCPエンドポイントからカスタム属性による検索結果の絞り込みができます。</li></ul><p class="impact"><b>影響</b>エージェントの管理者は、カスタムメタデータのスキーマを定義して各レコードに属性を設定できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>メタデータ</dt><dd>データそのものではなく、作成日時や所有者などデータに関する付帯情報のことです。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-resource-fallback-for-Nextflow/" target="_blank" rel="noopener noreferrer">AWS HealthOmicsがNextflow向けリソースフォールバックを導入</a></h3>
+<p class="orig">原題: AWS HealthOmics introduces resource fallback order for Nextflow workflows</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-resource-fallback-for-Nextflow/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-15</p>
+<ul class="points"><li>Nextflowのタスクで希望するアクセラレータの優先順位を定義し、利用できない場合はCPUに切り替えられます。</li><li>各プロファイルにタイムアウトを設定でき、手動で再送信することなく自動で次の候補へフォールバックします。</li><li>東京を含むAWS HealthOmicsの全リージョンで利用可能です。</li></ul><p class="impact"><b>影響</b>Nextflowを使用する研究者は、指示子を設定することでリソース不足によるジョブ停止を防げます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>フォールバック</dt><dd>指定した手段が利用できない場合に、あらかじめ用意した代替手段へ切り替える仕組みです。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand/" target="_blank" rel="noopener noreferrer">AWS BackupがNZリージョンでAmazon FSxに対応</a></h3>
+<p class="orig">原題: AWS Backup now supports Amazon FSx file systems in the Asia Pacific (New Zealand) Region</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-14</p>
+<ul class="points"><li>アジアパシフィック（ニュージーランド）リージョンで、Amazon FSxファイルシステムの保護に対応しました。</li><li>LustreやNetApp ONTAPなどのバックアップ計画作成、暗号化保存、復元が一元管理できます。</li></ul><p class="impact"><b>影響</b>当該リージョンでAmazon FSxを使う管理者は、AWS Backupでの自動バックアップ運用を開始できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon FSx</dt><dd>AWSが提供する、高機能で完全マネージド型の共有ファイルストレージサービス。</dd><dt>AWS Backup</dt><dd>AWSサービスやオンプレミス環境のデータ保護を一元的に自動化・管理するサービス。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.idcf.jp/news/topics/20261014001" target="_blank" rel="noopener noreferrer">IDCFクラウドへの不正アクセスでデータ流出なしと発表</a></h3>
+<p class="orig">原題: 【第5報】不正アクセスによる障害に関する調査の進捗について | IDCフロンティア</p>
+<p class="src">出典: <a href="https://www.idcf.jp/news/topics/20261014001" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>不正アクセスの調査の結果、顧客の仮想サーバー内データの照会や外部流出の痕跡はないと判断されました。</li><li>障害を受けた495の企業・自治体のうち、スナップショット機能を利用していた194件でデータ取り出しが可能です。</li><li>ポータルで48社の登録情報への不正照会が確認されたものの、外部への持ち出し痕跡はありませんでした。</li></ul><p class="impact"><b>影響</b>対象ゾーンを利用していた顧客は、個別連絡に基づきバックアップデータの復元可否や提供方法を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>スナップショット</dt><dd>ある特定の時点におけるストレージやシステムのデータ状態をそのまま記録・保存したデータ。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002249/" target="_blank" rel="noopener noreferrer">SBI証券のFXで作業ミスによる誤ロスカットが発生</a></h3>
+<p class="orig">原題: SBI証券のFXで“誤ロスカット” 再委託先IIJが作業ミス、システムでも検知できず 779口座が対象</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2610/14/2000002249/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>再委託先の作業ミスと検知不備により、FXの株券担保サービスで779口座が誤って強制決済されました。</li><li>担保株情報のファイル取り込み漏れにより保証金不足と誤判定され、12日から13日にかけて執行されました。</li><li>未取引の407口座はポジションを復元済みで、取引等を行った372口座などは利用者の意向を確認して対応します。</li></ul><p class="impact"><b>影響</b>誤ロスカットの影響を受けた利用者は、ログイン後の案内に従いポジションの復元希望など意向を伝える必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ロスカット</dt><dd>損失の拡大を防ぐために、証券会社が保有ポジションを強制的に反対売買して決済する仕組み。</dd><dt>ポジション</dt><dd>金融商品取引において、決済を行わずに保有し続けている建玉（取引残高）のこと。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss/" target="_blank" rel="noopener noreferrer">仏スーパー等の冷却制御装置に脆弱性、加温攻撃受ける</a></h3>
+<p class="orig">原題: フランス全土のスーパーマーケットの冷蔵庫を無理矢理50度まで上げたサイバー攻撃の詳細、パスワードは毎日自動更新で「本日の日付」になるという脆弱性</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-14</p>
+<ul class="points"><li>ダンフォス製の冷却制御装置の脆弱性を悪用され、スーパーなどの冷蔵庫が50度まで上げられる被害が発生しました。</li><li>当日の日付がパスワードになる欠陥やコマンドインジェクションなど、3件の深刻な脆弱性が指摘されました。</li><li>ダンフォスは修正アップデートを配信済みですが、被害を受けたのは更新提供が終了した旧世代製品でした。</li></ul><p class="impact"><b>影響</b>当該制御装置を運用している事業者は、使用中製品の世代やアップデート状況、外部接続の設定を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コマンドインジェクション</dt><dd>外部からの不正な入力値により、サーバーやOSの意図しないコマンドを実行させる攻撃手法。</dd><dt>ファームウェア</dt><dd>電子機器のハードウェアを制御するために、内部のメモリにあらかじめ書き込まれた基本ソフトウェア。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-14/">← 2026-10-14</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（15）</summary><ul><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

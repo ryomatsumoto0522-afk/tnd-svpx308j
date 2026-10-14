@@ -1,0 +1,489 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-14T20:43:56.396Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://gigazine.net/news/20261014-anthropic-scion-version-control-system/",
+      "title": "AnthropicがGit代替のバージョン管理システム「Scion」を開発し社内移行済み、AIでコードが爆増してGitの限界に達したので耐えられるシステムを開発",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T04:36:13.000Z",
+      "summary": "AI活用によるコード急増でGitが限界に達し新システムを開発しました。サーバー処理により最新取得が25倍、状態表示が207倍高速化しました。一般向けではなく、数万人や大量のAIが動く巨大モノレポ向けです。",
+      "headline": "AnthropicがGit代替の独自システム「Scion」に移行",
+      "points": [
+        "AI活用によるコード急増でGitが限界に達し新システムを開発しました。",
+        "サーバー処理により最新取得が25倍、状態表示が207倍高速化しました。",
+        "一般向けではなく、数万人や大量のAIが動く巨大モノレポ向けです。"
+      ],
+      "impact": "Anthropicは成果適用のためにGit開発コミュニティやGitHub等と協力する方針です。",
+      "glossary": [
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトやサービスのコードを単一のリポジトリでまとめて管理する手法。"
+        },
+        {
+          "term": "バージョン管理システム",
+          "explanation": "ファイルの変更履歴を記録し、過去の状態への復帰や複数人での共同作業を容易にするシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://note.com/shi3zblog/n/ncb38d2978074",
+      "title": "Claude Codeがほとんどの場合、動画編集してくれる。8時間の素材を30分で1時間に編集。字幕もつけられる｜shi3z",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T06:49:13.000Z",
+      "summary": "Claude Codeが動画内容を認識し、自動で粗編集やテロップ付与を行いました。従来は数週間かかっていた動画の編集作業が大幅に短縮されたと報告されています。",
+      "headline": "Claude Codeを用いた動画編集や字幕付けの実用例が報告",
+      "points": [
+        "Claude Codeが動画内容を認識し、自動で粗編集やテロップ付与を行いました。",
+        "従来は数週間かかっていた動画の編集作業が大幅に短縮されたと報告されています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://gigazine.net/news/20261014-lfm2-5-24b-a2b/",
+      "title": "「LFM2.5-24B-A2B」が登場、Gemma 4 26B-A4BやQwen3.6 35B-A3Bより高性能でローカルエージェントとして能力を発揮",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T07:37:01.000Z",
+      "summary": "総パラメーター数240億、アクティブ24億5000万のMoEモデルです。エージェント性能テストでGemma 4やQwen3.6を上回りました。llama.cpp等に対応し、MacやWindows環境で高速に推論可能です。",
+      "headline": "Liquid AIが端末向けモデル「LFM2.5-24B-A2B」を公開",
+      "points": [
+        "総パラメーター数240億、アクティブ24億5000万のMoEモデルです。",
+        "エージェント性能テストでGemma 4やQwen3.6を上回りました。",
+        "llama.cpp等に対応し、MacやWindows環境で高速に推論可能です。"
+      ],
+      "glossary": [
+        {
+          "term": "MoE",
+          "explanation": "処理内容に応じて一部の専門ネットワークを選択して動作させることで効率化するモデル構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "title": "AI agents aren't 'going rogue.' Frontier labs are skipping security basics",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T17:45:23Z",
+      "summary": "相次ぐ侵入事案はAI暴走ではなく長年確立された基本対策の不備とされました。サンドボックスなど隔離環境の設定ミスが主な原因として挙げられています。一部の大手AI企業が専門家によるリスク管理の助言を拒絶した点も指摘されました。",
+      "headline": "AIの不正アクセスは基本的セキュリティの欠如と専門家が指摘",
+      "points": [
+        "相次ぐ侵入事案はAI暴走ではなく長年確立された基本対策の不備とされました。",
+        "サンドボックスなど隔離環境の設定ミスが主な原因として挙げられています。",
+        "一部の大手AI企業が専門家によるリスク管理の助言を拒絶した点も指摘されました。"
+      ],
+      "glossary": [
+        {
+          "term": "サンドボックス",
+          "explanation": "プログラムが外部システムに悪影響を与えないよう隔離された安全な仮想実行環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/14/2000002262/",
+      "title": "「AIがAIを作れるようになる確率は2027年に50%超」 Anthropic共同創業者が予測を前倒し、「ただし実行は“片道切符\"」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T08:06:09.000Z",
+      "summary": "クラーク氏は自らの後継を訓練できるAIが2027年に登場する確率が50％以上になると予測を引き上げました。2026年に入りAnthropic社内のコード作業の26％をAIが主導するなど、自律開発が進んでいます。自動化システムを止める仕組みは未完成であり、開発には人の判断やブレーキが必要だと強調しました。",
+      "headline": "AIが後継を自ら訓練する確率が2027年に50％超と予測されました",
+      "points": [
+        "クラーク氏は自らの後継を訓練できるAIが2027年に登場する確率が50％以上になると予測を引き上げました。",
+        "2026年に入りAnthropic社内のコード作業の26％をAIが主導するなど、自律開発が進んでいます。",
+        "自動化システムを止める仕組みは未完成であり、開発には人の判断やブレーキが必要だと強調しました。"
+      ],
+      "impact": "AI開発や利用に関わる人は、システムの暴走を防ぎ停止させる仕組みや人の判断プロセスを維持する必要があります。",
+      "glossary": [
+        {
+          "term": "再帰的自己改善",
+          "explanation": "AIが自らのコードやモデルを自律的に改変・改善し、急速に能力を高めていく仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/jp/blogs/news/building-a-production-ai-agent-on-aws-a-six-pillar-walkthrough/",
+      "title": "AWS で本番 AI エージェントを構築する: 6つの柱によるウォークスルー",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T07:55:51.000Z",
+      "summary": "本番運用に必要な要件として、構築、テスト、実行、セキュリティ、観測、ガバナンスの6つの柱を挙げています。自動車工場の部品在庫エージェントを例に、モデル選定やフレームワーク、ツールの活用法を解説しています。",
+      "headline": "AWSが本番向けAIエージェントを構築する6つの柱を解説しました",
+      "points": [
+        "本番運用に必要な要件として、構築、テスト、実行、セキュリティ、観測、ガバナンスの6つの柱を挙げています。",
+        "自動車工場の部品在庫エージェントを例に、モデル選定やフレームワーク、ツールの活用法を解説しています。"
+      ],
+      "impact": "AIエージェントを本番運用する開発者は、6つの柱に沿ってモデル選定やセキュリティ、監視体制を整える必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを標準的な手順で安全に接続するための共通規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/jp/blogs/news/ai-agent-integration-for-invoice-payments-via-card-amazon-bedrock-agentcore-remote-mcp-server/",
+      "title": "請求書カード払いにおけるAIエージェント連携 ― Amazon Bedrock AgentCore Runtime を用いたリモート MCP サーバー構築",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-14T07:20:40.000Z",
+      "summary": "Winvoiceの機能をAIエージェントから呼び出せるリモートMCPサーバーを約1か月で構築し公開しました。利用者の環境構築が不要なリモート方式を選び、基盤にはAmazon Bedrock AgentCoreを採用しました。",
+      "headline": "インフキュリオンが請求書カード払いの遠隔MCPサーバーを公開",
+      "points": [
+        "Winvoiceの機能をAIエージェントから呼び出せるリモートMCPサーバーを約1か月で構築し公開しました。",
+        "利用者の環境構築が不要なリモート方式を選び、基盤にはAmazon Bedrock AgentCoreを採用しました。"
+      ],
+      "impact": "Winvoiceを利用する経理担当者は、URLを設定するだけでAIエージェントを通じた業務連携が可能になります。",
+      "glossary": [
+        {
+          "term": "リモートMCPサーバー",
+          "explanation": "ローカル端末ではなくクラウド等のサーバー上で動作させ、URL経由で機能を呼び出すMCPの構成。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-gen-limit-increase/",
+      "title": "AWS Lambda durable functions increases durable operation and checkpoint payload limits",
+      "source": "AWS What's New",
+      "genre": "backend",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "summary": "1実行あたりのdurable operation上限が3,000から30,000へと10倍に引き上げられました。チェックポイントの最大ペイロードサイズが256KBから1MBに拡張され、状態保持が容易になりました。",
+      "headline": "AWS Lambda durable functionsの上限値と容量が大幅に緩和",
+      "points": [
+        "1実行あたりのdurable operation上限が3,000から30,000へと10倍に引き上げられました。",
+        "チェックポイントの最大ペイロードサイズが256KBから1MBに拡張され、状態保持が容易になりました。"
+      ],
+      "impact": "長時間ワークフローやAI処理を実装する開発者は、外部ストレージを使わずに大規模な状態管理を行えるようになります。",
+      "glossary": [
+        {
+          "term": "チェックポイント",
+          "explanation": "処理の途中で実行状態を保存し、障害発生時にその時点から安全に再開できるようにする仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/",
+      "title": "AWS STS のセッショントークンのサイズ制限を簡素化、サイズのモニタリングにも対応",
+      "source": "AWS 日本語ブログ",
+      "genre": "backend",
+      "publishedAt": "2026-10-14T08:04:08.000Z",
+      "summary": "パックされたポリシーと全体の2つのサイズ制限を廃止し、組み立て後4,096バイトの単一制限に変更しました。APIレスポンスやCloudWatch、CloudTrailでトークンのサイズや使用率のモニタリングが可能になりました。新パラメータMinimumSessionTokenSizeで任意サイズのトークンを生成しテストできます。",
+      "headline": "AWS STSがセッショントークンのサイズ制限を4,096バイトに一本化",
+      "points": [
+        "パックされたポリシーと全体の2つのサイズ制限を廃止し、組み立て後4,096バイトの単一制限に変更しました。",
+        "APIレスポンスやCloudWatch、CloudTrailでトークンのサイズや使用率のモニタリングが可能になりました。",
+        "新パラメータMinimumSessionTokenSizeで任意サイズのトークンを生成しテストできます。"
+      ],
+      "impact": "セッショントークンを保存・転送するDBやプロキシを運用する利用者は、最大サイズを処理できるか確認が必要です。",
+      "glossary": [
+        {
+          "term": "AWS STS",
+          "explanation": "一時的なセキュリティ認証情報をオンデマンドで生成・提供するAWSのサービス。"
+        },
+        {
+          "term": "セッショントークン",
+          "explanation": "一時認証情報の一部として発行され、アクセス権限やコンテキスト情報を含む文字列。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://inside.java/2026/10/14/devoxxbelgium-everyday-json/",
+      "title": "Everyday JSON in Java",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "summary": "外部ライブラリを追加せずに日常的なJSON処理を行えるインキュベートAPIのJEPが提案されました。既存ライブラリの代替ではなく、導入コストを抑えて手軽にパースや生成を行いたい用途向けに設計されています。",
+      "headline": "Java標準機能としてJSONを扱う新しいAPIの提案が発表",
+      "points": [
+        "外部ライブラリを追加せずに日常的なJSON処理を行えるインキュベートAPIのJEPが提案されました。",
+        "既存ライブラリの代替ではなく、導入コストを抑えて手軽にパースや生成を行いたい用途向けに設計されています。"
+      ],
+      "impact": "Java開発者は、小規模な用途で外部依存関係を追加せずに標準機能でJSON処理を行えるようになります。",
+      "glossary": [
+        {
+          "term": "JEP",
+          "explanation": "JDK Enhancement Proposalの略で、Javaの機能拡張や改善を提案・検討する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://spring.io/blog/2026/10/13/this-week-in-spring-october-13th-2026",
+      "title": "This Week in Spring - October 13th, 2026",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "summary": "Jobrunr 9の新機能やSpring Modulithによる設計手法の推奨記事が紹介されました。IntelliJ IDEAの新機能やSpring AIによるエージェントパターンの解説動画などが共有されています。",
+      "headline": "開発者向けまとめ「This Week in Spring」の最新版が公開",
+      "points": [
+        "Jobrunr 9の新機能やSpring Modulithによる設計手法の推奨記事が紹介されました。",
+        "IntelliJ IDEAの新機能やSpring AIによるエージェントパターンの解説動画などが共有されています。"
+      ],
+      "impact": "Springを利用する開発者は、関連ツールの新機能や設計アプローチに関する最新情報を確認できます。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-09-components",
+      "title": "35日でフロントエンドの基礎を完全に理解する #9 - コンポーネント分割（props・emit・slots）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-14T12:58:40.000Z",
+      "summary": "画面を部品化し、props・emit・slotsを用いて親子コンポーネント間で連携する方法を解説しています。propsで親から子へデータを渡し、emitで子から親へイベントを伝える一方向のデータフローを説明しています。slotsを利用することで、外枠を共通化しつつ表示するテンプレートの中身を柔軟に差し替えられます。",
+      "headline": "Vueにおけるコンポーネント分割と親子間連携の基礎解説記事が公開",
+      "points": [
+        "画面を部品化し、props・emit・slotsを用いて親子コンポーネント間で連携する方法を解説しています。",
+        "propsで親から子へデータを渡し、emitで子から親へイベントを伝える一方向のデータフローを説明しています。",
+        "slotsを利用することで、外枠を共通化しつつ表示するテンプレートの中身を柔軟に差し替えられます。"
+      ],
+      "impact": "Vueを学ぶ初学者は、再利用性と保守性の高いコンポーネント設計やデータ連携の基本手順を確認できます。",
+      "glossary": [
+        {
+          "term": "コンポーネント",
+          "explanation": "Webページを構成するUIや機能を、再利用可能な独立した部品として切り出したもの。"
+        },
+        {
+          "term": "props",
+          "explanation": "親コンポーネントから子コンポーネントへデータを引き渡すためのVueの仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://zenn.dev/metasyntax/articles/vue-nexttick-flush-promise",
+      "title": "ソースで理解するVue: nextTickは何を待ってる？",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-14T09:28:20.000Z",
+      "summary": "Vueはstate変更時にDOMを即座に更新せず、ジョブをキューに積んで同期処理後にまとめて実行します。nextTick()は、キューに積んだ更新処理（flush）のPromiseをそのまま返します。await nextTick()で待機することで、DOM更新が完了した後に処理を続けられます。",
+      "headline": "VueのnextTickの内部動作とDOM更新の仕組みが解説された",
+      "points": [
+        "Vueはstate変更時にDOMを即座に更新せず、ジョブをキューに積んで同期処理後にまとめて実行します。",
+        "nextTick()は、キューに積んだ更新処理（flush）のPromiseをそのまま返します。",
+        "await nextTick()で待機することで、DOM更新が完了した後に処理を続けられます。"
+      ],
+      "glossary": [
+        {
+          "term": "nextTick",
+          "explanation": "Vueでデータ変更後のDOM更新完了を待機するための非同期関数です。"
+        },
+        {
+          "term": "マイクロタスク",
+          "explanation": "JavaScriptで同期処理の実行完了直後に割り込んで実行される非同期タスクです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-viteplus-stable/",
+      "title": "Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration",
+      "source": "InfoQ",
+      "genre": "frontend",
+      "publishedAt": "2026-10-14T06:15:00.000Z",
+      "summary": "単一のvpコマンドでNode.jsやパッケージマネージャ、Vite 8などのフロントエンドスタックを一元管理します。GitLab CI/CD対応やtsupからの移行機能、Gitフック管理コマンドなどが追加されました。Vitest 5の安定版対応や、高速なOxcのReact Compilerサポートが含まれます。",
+      "headline": "VoidZeroが統合JSツールチェーン「Vite+ 1.0」を公開した",
+      "points": [
+        "単一のvpコマンドでNode.jsやパッケージマネージャ、Vite 8などのフロントエンドスタックを一元管理します。",
+        "GitLab CI/CD対応やtsupからの移行機能、Gitフック管理コマンドなどが追加されました。",
+        "Vitest 5の安定版対応や、高速なOxcのReact Compilerサポートが含まれます。"
+      ],
+      "impact": "Vite+へ移行するチームは、大規模案件の移行前にガイドを確認して追工作業の有無を把握する必要があります。",
+      "glossary": [
+        {
+          "term": "ツールチェーン",
+          "explanation": "ソフトウェア開発に必要なコンパイラやリンカなどの一連のツール群のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records",
+      "title": "AWS Agent Registry now supports custom metadata for registry records",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-13T21:00:00.000Z",
+      "summary": "レジストリレコードに所有チームやデータ分類など、組織独自の構造化フィールドを追加できるようになりました。スキーマはレジストリ単位で定義し、自由記述テキストやURL、ブール値、選択リストを検証可能です。マネジメントコンソールやCLI、SDK、MCPエンドポイントからカスタム属性による検索結果の絞り込みができます。",
+      "headline": "AWS Agent Registryがレコードのカスタムメタデータに対応した",
+      "points": [
+        "レジストリレコードに所有チームやデータ分類など、組織独自の構造化フィールドを追加できるようになりました。",
+        "スキーマはレジストリ単位で定義し、自由記述テキストやURL、ブール値、選択リストを検証可能です。",
+        "マネジメントコンソールやCLI、SDK、MCPエンドポイントからカスタム属性による検索結果の絞り込みができます。"
+      ],
+      "impact": "エージェントの管理者は、カスタムメタデータのスキーマを定義して各レコードに属性を設定できます。",
+      "glossary": [
+        {
+          "term": "メタデータ",
+          "explanation": "データそのものではなく、作成日時や所有者などデータに関する付帯情報のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-resource-fallback-for-Nextflow/",
+      "title": "AWS HealthOmics introduces resource fallback order for Nextflow workflows",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-14T16:00:00.000Z",
+      "summary": "Nextflowのタスクで希望するアクセラレータの優先順位を定義し、利用できない場合はCPUに切り替えられます。各プロファイルにタイムアウトを設定でき、手動で再送信することなく自動で次の候補へフォールバックします。東京を含むAWS HealthOmicsの全リージョンで利用可能です。",
+      "headline": "AWS HealthOmicsがNextflow向けリソースフォールバックを導入",
+      "points": [
+        "Nextflowのタスクで希望するアクセラレータの優先順位を定義し、利用できない場合はCPUに切り替えられます。",
+        "各プロファイルにタイムアウトを設定でき、手動で再送信することなく自動で次の候補へフォールバックします。",
+        "東京を含むAWS HealthOmicsの全リージョンで利用可能です。"
+      ],
+      "impact": "Nextflowを使用する研究者は、指示子を設定することでリソース不足によるジョブ停止を防げます。",
+      "glossary": [
+        {
+          "term": "フォールバック",
+          "explanation": "指定した手段が利用できない場合に、あらかじめ用意した代替手段へ切り替える仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand/",
+      "title": "AWS Backup now supports Amazon FSx file systems in the Asia Pacific (New Zealand) Region",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-14T08:00:00.000Z",
+      "summary": "アジアパシフィック（ニュージーランド）リージョンで、Amazon FSxファイルシステムの保護に対応しました。LustreやNetApp ONTAPなどのバックアップ計画作成、暗号化保存、復元が一元管理できます。",
+      "headline": "AWS BackupがNZリージョンでAmazon FSxに対応",
+      "points": [
+        "アジアパシフィック（ニュージーランド）リージョンで、Amazon FSxファイルシステムの保護に対応しました。",
+        "LustreやNetApp ONTAPなどのバックアップ計画作成、暗号化保存、復元が一元管理できます。"
+      ],
+      "impact": "当該リージョンでAmazon FSxを使う管理者は、AWS Backupでの自動バックアップ運用を開始できます。",
+      "glossary": [
+        {
+          "term": "Amazon FSx",
+          "explanation": "AWSが提供する、高機能で完全マネージド型の共有ファイルストレージサービス。"
+        },
+        {
+          "term": "AWS Backup",
+          "explanation": "AWSサービスやオンプレミス環境のデータ保護を一元的に自動化・管理するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 29,
+      "url": "https://www.idcf.jp/news/topics/20261014001",
+      "title": "【第5報】不正アクセスによる障害に関する調査の進捗について | IDCフロンティア",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-14T08:41:42.000Z",
+      "summary": "不正アクセスの調査の結果、顧客の仮想サーバー内データの照会や外部流出の痕跡はないと判断されました。障害を受けた495の企業・自治体のうち、スナップショット機能を利用していた194件でデータ取り出しが可能です。ポータルで48社の登録情報への不正照会が確認されたものの、外部への持ち出し痕跡はありませんでした。",
+      "headline": "IDCFクラウドへの不正アクセスでデータ流出なしと発表",
+      "points": [
+        "不正アクセスの調査の結果、顧客の仮想サーバー内データの照会や外部流出の痕跡はないと判断されました。",
+        "障害を受けた495の企業・自治体のうち、スナップショット機能を利用していた194件でデータ取り出しが可能です。",
+        "ポータルで48社の登録情報への不正照会が確認されたものの、外部への持ち出し痕跡はありませんでした。"
+      ],
+      "impact": "対象ゾーンを利用していた顧客は、個別連絡に基づきバックアップデータの復元可否や提供方法を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "スナップショット",
+          "explanation": "ある特定の時点におけるストレージやシステムのデータ状態をそのまま記録・保存したデータ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 30,
+      "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002249/",
+      "title": "SBI証券のFXで“誤ロスカット” 再委託先IIJが作業ミス、システムでも検知できず 779口座が対象",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-14T03:40:55.000Z",
+      "summary": "再委託先の作業ミスと検知不備により、FXの株券担保サービスで779口座が誤って強制決済されました。担保株情報のファイル取り込み漏れにより保証金不足と誤判定され、12日から13日にかけて執行されました。未取引の407口座はポジションを復元済みで、取引等を行った372口座などは利用者の意向を確認して対応します。",
+      "headline": "SBI証券のFXで作業ミスによる誤ロスカットが発生",
+      "points": [
+        "再委託先の作業ミスと検知不備により、FXの株券担保サービスで779口座が誤って強制決済されました。",
+        "担保株情報のファイル取り込み漏れにより保証金不足と誤判定され、12日から13日にかけて執行されました。",
+        "未取引の407口座はポジションを復元済みで、取引等を行った372口座などは利用者の意向を確認して対応します。"
+      ],
+      "impact": "誤ロスカットの影響を受けた利用者は、ログイン後の案内に従いポジションの復元希望など意向を伝える必要があります。",
+      "glossary": [
+        {
+          "term": "ロスカット",
+          "explanation": "損失の拡大を防ぐために、証券会社が保有ポジションを強制的に反対売買して決済する仕組み。"
+        },
+        {
+          "term": "ポジション",
+          "explanation": "金融商品取引において、決済を行わずに保有し続けている建玉（取引残高）のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 31,
+      "url": "https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss/",
+      "title": "フランス全土のスーパーマーケットの冷蔵庫を無理矢理50度まで上げたサイバー攻撃の詳細、パスワードは毎日自動更新で「本日の日付」になるという脆弱性",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-14T06:06:27.000Z",
+      "summary": "ダンフォス製の冷却制御装置の脆弱性を悪用され、スーパーなどの冷蔵庫が50度まで上げられる被害が発生しました。当日の日付がパスワードになる欠陥やコマンドインジェクションなど、3件の深刻な脆弱性が指摘されました。ダンフォスは修正アップデートを配信済みですが、被害を受けたのは更新提供が終了した旧世代製品でした。",
+      "headline": "仏スーパー等の冷却制御装置に脆弱性、加温攻撃受ける",
+      "points": [
+        "ダンフォス製の冷却制御装置の脆弱性を悪用され、スーパーなどの冷蔵庫が50度まで上げられる被害が発生しました。",
+        "当日の日付がパスワードになる欠陥やコマンドインジェクションなど、3件の深刻な脆弱性が指摘されました。",
+        "ダンフォスは修正アップデートを配信済みですが、被害を受けたのは更新提供が終了した旧世代製品でした。"
+      ],
+      "impact": "当該制御装置を運用している事業者は、使用中製品の世代やアップデート状況、外部接続の設定を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "コマンドインジェクション",
+          "explanation": "外部からの不正な入力値により、サーバーやOSの意図しないコマンドを実行させる攻撃手法。"
+        },
+        {
+          "term": "ファームウェア",
+          "explanation": "電子機器のハードウェアを制御するために、内部のメモリにあらかじめ書き込まれた基本ソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 122,
+    "shortlisted": 60,
+    "bodyFailures": 0,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26981,
+    "outputTokens": 12420
+  },
+  "offline": false
+}

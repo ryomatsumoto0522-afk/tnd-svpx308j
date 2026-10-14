@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-13T21:52:20.795Z",
+  "lastRun": "2026-10-14T20:43:56.396Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -223,6 +223,26 @@
     "https://www.infoq.com/news/2026/10/aws-eventbridge-scaling": "2026-10-14",
     "https://machinelearning.apple.com/research/distributed-gpu-cloud": "2026-10-14",
     "https://www.infoq.com/news/2026/10/backstage-1-55-task-recovery": "2026-10-14",
-    "https://www.nict.go.jp/press/2026/10/13-1.html": "2026-10-14"
+    "https://www.nict.go.jp/press/2026/10/13-1.html": "2026-10-14",
+    "https://gigazine.net/news/20261014-anthropic-scion-version-control-system": "2026-10-15",
+    "https://note.com/shi3zblog/n/ncb38d2978074": "2026-10-15",
+    "https://gigazine.net/news/20261014-lfm2-5-24b-a2b": "2026-10-15",
+    "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html": "2026-10-15",
+    "https://www.itmedia.co.jp/aiplus/article/2610/14/2000002262": "2026-10-15",
+    "https://aws.amazon.com/jp/blogs/news/building-a-production-ai-agent-on-aws-a-six-pillar-walkthrough": "2026-10-15",
+    "https://aws.amazon.com/jp/blogs/news/ai-agent-integration-for-invoice-payments-via-card-amazon-bedrock-agentcore-remote-mcp-server": "2026-10-15",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-gen-limit-increase": "2026-10-15",
+    "https://aws.amazon.com/jp/blogs/news/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring": "2026-10-15",
+    "https://inside.java/2026/10/14/devoxxbelgium-everyday-json": "2026-10-15",
+    "https://spring.io/blog/2026/10/13/this-week-in-spring-october-13th-2026": "2026-10-15",
+    "https://zenn.dev/kipcop/articles/f35-vue-09-components": "2026-10-15",
+    "https://zenn.dev/metasyntax/articles/vue-nexttick-flush-promise": "2026-10-15",
+    "https://www.infoq.com/news/2026/10/cloudflare-viteplus-stable": "2026-10-15",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records": "2026-10-15",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-resource-fallback-for-Nextflow": "2026-10-15",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand": "2026-10-15",
+    "https://www.idcf.jp/news/topics/20261014001": "2026-10-15",
+    "https://www.itmedia.co.jp/news/article/2610/14/2000002249": "2026-10-15",
+    "https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss": "2026-10-15"
   }
 }
