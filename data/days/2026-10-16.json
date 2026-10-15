@@ -1,0 +1,493 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-15T20:21:53.327Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://note.com/shiba_program/n/nd2d72747f8c5",
+      "title": "有名企業や一流開発者のノウハウをそのまま持ち込める、Claude Codeスキル11選｜苦しんでプログラミングを学んだ柴犬（くるしば）",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T04:24:08.000Z",
+      "summary": "Sentryや著名エンジニアの開発ノウハウを取り込めるClaude Code向けのおすすめスキル11選が紹介されました。Sentry公式のレビュー基準やWeb品質監査、トークン消費抑制など代えがきかないスキルが厳選されています。スキルは手順をファイルにまとめ自動読み込みさせる仕組みで、GitHub等で多数公開されています。",
+      "headline": "Claude Code向けのおすすめスキル11選が紹介される",
+      "points": [
+        "Sentryや著名エンジニアの開発ノウハウを取り込めるClaude Code向けのおすすめスキル11選が紹介されました。",
+        "Sentry公式のレビュー基準やWeb品質監査、トークン消費抑制など代えがきかないスキルが厳選されています。",
+        "スキルは手順をファイルにまとめ自動読み込みさせる仕組みで、GitHub等で多数公開されています。"
+      ],
+      "impact": "Claude Code利用者は、開発効率化やコード品質向上に役立つ外部スキルを用途に応じて選択して導入できます。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供する、開発作業を支援するAIコーディングツール。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストを処理する際の最小単位で、文字数や単語数に応じて消費される。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "title": "Muse Spark Open",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T17:47:39Z",
+      "summary": "Metaは総パラメータ816B、コンテキスト長1MのオープンウェイトモデルMuse Spark Openを公開しました。コーディングや自律エージェント向けで、M5 Ultra搭載Mac Studio 2台でのローカル実行に対応します。重みはHugging Face等で入手でき、主要推論エンジンへの最適化やPyTorchでの調整が可能です。",
+      "headline": "Metaが816BのオープンモデルMuse Spark Openを公開",
+      "points": [
+        "Metaは総パラメータ816B、コンテキスト長1MのオープンウェイトモデルMuse Spark Openを公開しました。",
+        "コーディングや自律エージェント向けで、M5 Ultra搭載Mac Studio 2台でのローカル実行に対応します。",
+        "重みはHugging Face等で入手でき、主要推論エンジンへの最適化やPyTorchでの調整が可能です。"
+      ],
+      "impact": "開発者はモデルの重みをダウンロードし、自前環境や各種クラウドで高度なAIエージェントを構築・実行できます。",
+      "glossary": [
+        {
+          "term": "オープンウェイト",
+          "explanation": "モデルの学習済みパラメータ（重み）が公開され、自由にダウンロードできる形式。"
+        },
+        {
+          "term": "マルチモーダル",
+          "explanation": "テキストや画像、音声など複数の異なる形式のデータを同時に処理できること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption/",
+      "title": "Presentation: What 25 Trillion Tokens Reveal About How Developers Actually Adopt AI Agents",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T11:00:00.000Z",
+      "summary": "Kilo Codeの利用データから、開発者のAI導入実態は業界のベンチマーク重視の言説と異なると指摘されました。モデルの性能指標よりも、ツールの基礎的な挙動に対する「信頼」がAIエージェントの本格採用を左右します。コード補完やファイル探索で失敗すると信頼が失われ、複数エージェント協調など上位の活用に進めなくなります。",
+      "headline": "開発者のAI導入はベンチマークより信頼が鍵だとデータが示す",
+      "points": [
+        "Kilo Codeの利用データから、開発者のAI導入実態は業界のベンチマーク重視の言説と異なると指摘されました。",
+        "モデルの性能指標よりも、ツールの基礎的な挙動に対する「信頼」がAIエージェントの本格採用を左右します。",
+        "コード補完やファイル探索で失敗すると信頼が失われ、複数エージェント協調など上位の活用に進めなくなります。"
+      ],
+      "impact": "AIエージェントを開発または導入する技術者は、数値性能だけでなく基礎動作の確実性や信頼性の担保を意識する必要があります。",
+      "glossary": [
+        {
+          "term": "エージェント",
+          "explanation": "目標達成に向けて自ら計画を立て、ツールを使いながら自律的に作業を実行するAIシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/muse-spark-open-on-sagemaker-jumpstart/",
+      "title": "Muse Spark Open model now available on Amazon SageMaker JumpStart",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T18:00:00.000Z",
+      "summary": "Metaのコーディング向けAIモデルMuse Spark OpenがAmazon SageMaker JumpStartに追加されました。総パラメータ816BのMoE構成と100万トークンの文脈窓を備え、プロジェクト全体のコード解析に対応します。通常のBF16版に加え、約4分の1のメモリで稼働するNVFP4量子化版も提供され、数クリックで展開可能です。",
+      "headline": "MetaのMuse Spark OpenがAWS SageMakerで利用可能に",
+      "points": [
+        "Metaのコーディング向けAIモデルMuse Spark OpenがAmazon SageMaker JumpStartに追加されました。",
+        "総パラメータ816BのMoE構成と100万トークンの文脈窓を備え、プロジェクト全体のコード解析に対応します。",
+        "通常のBF16版に加え、約4分の1のメモリで稼働するNVFP4量子化版も提供され、数クリックで展開可能です。"
+      ],
+      "impact": "AWSユーザーは自社アカウント内にエンドポイントを展開し、ソースコードを自社管理しながらAIエージェントを利用できます。",
+      "glossary": [
+        {
+          "term": "MoE",
+          "explanation": "専門家と呼ばれる複数のサブネットワークを処理ごとに切り替えて動かすモデル構造。"
+        },
+        {
+          "term": "量子化",
+          "explanation": "モデルの数値データの精度を下げてサイズを圧縮し、メモリ消費や処理負荷を軽減する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/instagram-compose-migration/",
+      "title": "Instagram Modernized Its UI with an AI-Native Architecture, Cutting Token Costs by 33%",
+      "source": "InfoQ",
+      "genre": "frontend",
+      "publishedAt": "2026-10-15T16:00:00.000Z",
+      "summary": "Instagram DirectのUIをJetpack Composeに移行しAI親和性の高い設計に刷新しました。UIコード量を50%、AIエージェントの実行時間を35%、トークン費用を33%削減しました。性能低下を防ぐため、画面全体を移行するまで操作性や読み込み時間、スクロール性能を監視しました。",
+      "headline": "InstagramがAndroid UIを刷新しAIのトークン費用を33%削減",
+      "points": [
+        "Instagram DirectのUIをJetpack Composeに移行しAI親和性の高い設計に刷新しました。",
+        "UIコード量を50%、AIエージェントの実行時間を35%、トークン費用を33%削減しました。",
+        "性能低下を防ぐため、画面全体を移行するまで操作性や読み込み時間、スクロール性能を監視しました。"
+      ],
+      "glossary": [
+        {
+          "term": "Jetpack Compose",
+          "explanation": "AndroidアプリのUIを宣言的に構築するためにGoogleが提供する最新ツールキット。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/articles/spring-security-7-server-side-dpop-token-exchange/",
+      "title": "Article: Server-Side DPoP and Token Exchange in Spring Security 7",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T09:00:00.000Z",
+      "summary": "Spring Authorization ServerがSpring Security 7へ完全に統合されました。7.1系ではリソースサーバーのDPoP検証が自動適用されなくなり、明示的な設定が必要になります。RFC 8693に準拠したトークン交換が正式サポートされ、委譲チェーンの記録に対応します。",
+      "headline": "Spring Security 7でDPoP検証やトークン交換が正式提供された",
+      "points": [
+        "Spring Authorization ServerがSpring Security 7へ完全に統合されました。",
+        "7.1系ではリソースサーバーのDPoP検証が自動適用されなくなり、明示的な設定が必要になります。",
+        "RFC 8693に準拠したトークン交換が正式サポートされ、委譲チェーンの記録に対応します。"
+      ],
+      "impact": "Spring Security 7.1へ移行する開発者は、DPoP検証を継続するために明示的な設定を追加する必要があります。",
+      "glossary": [
+        {
+          "term": "DPoP",
+          "explanation": "公開鍵暗号を用いてトークンの送信者を拘束し、トークン窃取による不正利用を防ぐ仕様。"
+        },
+        {
+          "term": "Token Exchange",
+          "explanation": "あるセキュリティトークンを、権限を狭めた別のトークンなどに交換するための標準仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/",
+      "title": "AWS Lambda Durable Execution SDK for Go is now generally available",
+      "source": "AWS What's New",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T18:23:00.000Z",
+      "summary": "Goで耐久性のある長時間ワークフローをLambda上で実装できるSDKが一般提供されました。進捗の自動チェックポイントや、外部イベントを最長1年間待機できる一時停止機能を備えます。ローカル環境でワークフローをテストするパッケージや、コード解析ツールも提供されます。",
+      "headline": "AWSがGo言語向けLambda Durable Execution SDKを提供開始",
+      "points": [
+        "Goで耐久性のある長時間ワークフローをLambda上で実装できるSDKが一般提供されました。",
+        "進捗の自動チェックポイントや、外部イベントを最長1年間待機できる一時停止機能を備えます。",
+        "ローカル環境でワークフローをテストするパッケージや、コード解析ツールも提供されます。"
+      ],
+      "impact": "長時間ワークフローを組むGo開発者は、go getでSDKを追加しLambdaにデプロイして利用できます。",
+      "glossary": [
+        {
+          "term": "Durable Functions",
+          "explanation": "サーバーレス環境で実行状態を保持しながら、長時間や多段階の処理を確実に進める仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/jp/blogs/news/ai-powered-anomaly-detection-for-aws-systems-manager-session-manager-logs-using-amazon-bedrock/",
+      "title": "Amazon Bedrock を使った AWS Systems Manager Session Manager ログの AI による異常検知",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T13:48:23.000Z",
+      "summary": "Session Managerの操作ログをAmazon Bedrockで分析し脅威を検知する仕組みを解説しました。セッションを3段階に分類して不審な操作をSNSで通知し、履歴への自然言語検索も可能です。認証情報へのアクセスや権限昇格、データの持ち出しなどの兆候をモデルが自動検知します。",
+      "headline": "AWSがBedrockでSSMセッションログの異常を自動検知する構成を解説",
+      "points": [
+        "Session Managerの操作ログをAmazon Bedrockで分析し脅威を検知する仕組みを解説しました。",
+        "セッションを3段階に分類して不審な操作をSNSで通知し、履歴への自然言語検索も可能です。",
+        "認証情報へのアクセスや権限昇格、データの持ち出しなどの兆候をモデルが自動検知します。"
+      ],
+      "impact": "導入したい管理者は、前提条件を満たしたうえで提供されるCloudFormationを使ってデプロイします。",
+      "glossary": [
+        {
+          "term": "AWS Systems Manager",
+          "explanation": "クラウドやオンプレミスのサーバーを安全に一元管理・運用するためのAWSサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills/",
+      "title": "Amazon Managed Workflows for Apache Airflow now offers AI agent skills",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T08:00:00.000Z",
+      "summary": "AIコーディングアシスタントから自然言語でMWAAの作成やデバッグ、テスト、環境更新が可能です。提供されるスキルはワークフローの作成・デバッグ・テストと環境更新の4種類です。MWAAの全リージョンで、プロビジョンドとサーバーレスの両方の環境に対応します。",
+      "headline": "MWAAがAIエージェントスキルとの連携に対応",
+      "points": [
+        "AIコーディングアシスタントから自然言語でMWAAの作成やデバッグ、テスト、環境更新が可能です。",
+        "提供されるスキルはワークフローの作成・デバッグ・テストと環境更新の4種類です。",
+        "MWAAの全リージョンで、プロビジョンドとサーバーレスの両方の環境に対応します。"
+      ],
+      "impact": "利用者はaws-data-analyticsプラグインを導入し、AIコーディングアシスタントを設定して利用を開始できます。",
+      "glossary": [
+        {
+          "term": "DAG",
+          "explanation": "ワークフロー内のタスクの順序や依存関係を有向非巡回グラフとして表現したものです。"
+        },
+        {
+          "term": "Apache Airflow",
+          "explanation": "データパイプラインやワークフローの作成・スケジューリング・監視を行うオープンソースのツールです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-devops-agent-test-results-aws-resilience-hub/",
+      "title": "Launch AWS DevOps Agent to review findings and test results from AWS Resilience Hub",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T07:00:00.000Z",
+      "summary": "レジリエンステストの結果レビューや障害モード評価結果への対策をAIエージェントで行えます。テストの監視結果から症状や根本原因、復旧手順などを構造化された分析として提示します。コンソール上からオンデマンドでエージェントを起動し、対話しながら緩和策を作成できます。",
+      "headline": "AWS Resilience HubがDevOps Agentと連携",
+      "points": [
+        "レジリエンステストの結果レビューや障害モード評価結果への対策をAIエージェントで行えます。",
+        "テストの監視結果から症状や根本原因、復旧手順などを構造化された分析として提示します。",
+        "コンソール上からオンデマンドでエージェントを起動し、対話しながら緩和策を作成できます。"
+      ],
+      "impact": "利用者はコンソールのサービス設定でDevOps agentを設定し、検出結果やテスト画面から起動して使います。",
+      "glossary": [
+        {
+          "term": "レジリエンス",
+          "explanation": "システムが障害や負荷などの予期せぬトラブルから迅速に回復し、稼働を維持する能力のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/time-sync-additional-instances-all-regions",
+      "title": "Amazon Time Sync Service adds support for microsecond-accurate time on 135 additional EC2 instance types in all commercial regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-15T17:34:00.000Z",
+      "summary": "Amazon Time Sync Serviceが135種類のEC2インスタンスでマイクロ秒精度の時刻同期に対応しました。第8世代8種および第9世代4種の計12インスタンスファミリーが対象で、全商用リージョンで提供されます。PTPGを作成して起動することで、高精度なハードウェアクロックを利用可能です。",
+      "headline": "Time Syncが135のEC2タイプで高精度時刻に対応",
+      "points": [
+        "Amazon Time Sync Serviceが135種類のEC2インスタンスでマイクロ秒精度の時刻同期に対応しました。",
+        "第8世代8種および第9世代4種の計12インスタンスファミリーが対象で、全商用リージョンで提供されます。",
+        "PTPGを作成して起動することで、高精度なハードウェアクロックを利用可能です。"
+      ],
+      "impact": "高精度な時刻同期や低遅延を求める利用者は、PTPGを作成して対象インスタンスを起動する必要があります。",
+      "glossary": [
+        {
+          "term": "PTP",
+          "explanation": "ネットワーク上で複数の機器の時刻をマイクロ秒単位以下の極めて高い精度で同期させるプロトコルです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/omics-workflows-shared-vpcs/",
+      "title": "AWS HealthOmics now supports shared VPCs",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-15T17:42:00.000Z",
+      "summary": "AWS HealthOmicsのワークフローで、他アカウントが管理する共有VPC内のリソースへアクセス可能になりました。各アカウントでVPCエンドポイントの作成やVPCピアリングの設定をすることなく、プライベートに接続できます。ネットワーク管理を単一のVPCに集約しつつ、研究者や開発者は各アカウントでワークフローを実行可能です。",
+      "headline": "AWS HealthOmicsが共有VPCの利用に対応",
+      "points": [
+        "AWS HealthOmicsのワークフローで、他アカウントが管理する共有VPC内のリソースへアクセス可能になりました。",
+        "各アカウントでVPCエンドポイントの作成やVPCピアリングの設定をすることなく、プライベートに接続できます。",
+        "ネットワーク管理を単一のVPCに集約しつつ、研究者や開発者は各アカウントでワークフローを実行可能です。"
+      ],
+      "impact": "ネットワーク管理を一元化したい利用者は、AWS RAMを用いてVPCのサブネットを共有してワークフローを実行します。",
+      "glossary": [
+        {
+          "term": "共有VPC",
+          "explanation": "1つのVPCのサブネットを同一組織内の別のアカウントと共有し、ネットワーク管理を集約する仕組みです。"
+        },
+        {
+          "term": "AWS RAM",
+          "explanation": "AWSリソースを複数のAWSアカウントや組織間で安全かつ簡単に共有できるようにするサービスです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://aws.amazon.com/jp/blogs/news/monitor-amazon-aurora-dsql-costs-with-the-aurora-dsql-console-and-cloudwatch-alarms/",
+      "title": "Aurora DSQL コンソールと CloudWatch アラームで Amazon Aurora DSQL のコストをモニタリングする",
+      "source": "AWS 日本語ブログ",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T09:28:09.000Z",
+      "summary": "Aurora DSQLの利用状況をコンソールやCloudWatchアラームで監視する手順が示されました。課金対象はDPUとストレージの2つで、DPUは100万単位あたり8ドルなどの従量制です。1時間あたりのDPU使用量が予算に近づいた際にSNS経由で通知するアラームを作成できます。",
+      "headline": "Amazon Aurora DSQLのコストを監視する手法が紹介された",
+      "points": [
+        "Aurora DSQLの利用状況をコンソールやCloudWatchアラームで監視する手順が示されました。",
+        "課金対象はDPUとストレージの2つで、DPUは100万単位あたり8ドルなどの従量制です。",
+        "1時間あたりのDPU使用量が予算に近づいた際にSNS経由で通知するアラームを作成できます。"
+      ],
+      "impact": "Aurora DSQLを利用中または評価中の管理者は、CloudWatchアラームを設定して支出を管理できます。",
+      "glossary": [
+        {
+          "term": "DPU",
+          "explanation": "分散処理単位の略で、データベースのアクティビティを統合して課金するための指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/jp/blogs/news/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
+      "title": "AWS Lambda ウェブ関数の発表",
+      "source": "AWS 日本語ブログ",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T07:41:27.000Z",
+      "summary": "AWSがHTTPサーバーをコード修正なしで実行できるLambda Web Functionsを発表しました。1環境で最大128のリクエストを同時処理でき、待機時間を除くアクティブCPU時間で課金されます。CLIの単一コマンドで複数リージョンへの展開やカナリアデプロイのトラフィック制御が可能です。",
+      "headline": "標準Webアプリをそのまま動かせるLambda Web関数が登場",
+      "points": [
+        "AWSがHTTPサーバーをコード修正なしで実行できるLambda Web Functionsを発表しました。",
+        "1環境で最大128のリクエストを同時処理でき、待機時間を除くアクティブCPU時間で課金されます。",
+        "CLIの単一コマンドで複数リージョンへの展開やカナリアデプロイのトラフィック制御が可能です。"
+      ],
+      "impact": "Webアプリをサーバーレスで動かしたい開発者は、既存コードを変更せずCLIから直接デプロイして活用できます。",
+      "glossary": [
+        {
+          "term": "カナリアデプロイメント",
+          "explanation": "新しいバージョンを一部のトラフィックにのみ先行配信し、安全性を確認しながら段階的に移行する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-10-forms",
+      "title": "35日でフロントエンドの基礎を完全に理解する #10 - フォームとv-model",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-15T13:30:50.000Z",
+      "summary": "Vueのフォーム入力欄と状態を双方向に同期させるv-modelの仕組みと利点が紹介されました。v-modelの内部処理は値の受け渡しとinputイベント更新の組み合わせで実現されています。フォーム送信時にはsubmit.preventを指定してブラウザのページ再読み込みを防ぎます。",
+      "headline": "Vueのv-modelを用いた双方向データバインディングの基礎が解説された",
+      "points": [
+        "Vueのフォーム入力欄と状態を双方向に同期させるv-modelの仕組みと利点が紹介されました。",
+        "v-modelの内部処理は値の受け渡しとinputイベント更新の組み合わせで実現されています。",
+        "フォーム送信時にはsubmit.preventを指定してブラウザのページ再読み込みを防ぎます。"
+      ],
+      "impact": "Vueでフォームを作成する開発者は、v-modelを活用して入力値の同期や送信処理を実装できます。",
+      "glossary": [
+        {
+          "term": "双方向バインディング",
+          "explanation": "画面上の表示・入力内容とプログラム内のデータが、どちらを変更しても自動で互いに同期する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say",
+      "title": "Online ads weaponised to deliver ‘zero-click’ spyware, researchers say",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-15T12:58:32Z",
+      "summary": "閲覧するだけで感染するゼロクリックスパイウェアがオンライン広告経由で配信されたと報告されました。広告配信システムを通じて利用者を特定し、端末内のメッセージ取得や盗聴などを行うマルウェアを送り込みます。イスラエルの企業が関与し、報道機関や政府機関を含む多数の端末が標的になったとされています。",
+      "headline": "オンライン広告を悪用したゼロクリックスパイウェアの感染手法が判明",
+      "points": [
+        "閲覧するだけで感染するゼロクリックスパイウェアがオンライン広告経由で配信されたと報告されました。",
+        "広告配信システムを通じて利用者を特定し、端末内のメッセージ取得や盗聴などを行うマルウェアを送り込みます。",
+        "イスラエルの企業が関与し、報道機関や政府機関を含む多数の端末が標的になったとされています。"
+      ],
+      "glossary": [
+        {
+          "term": "ゼロクリック",
+          "explanation": "利用者がリンクのクリックやファイルの開封などの操作をしなくても攻撃が成立するセキュリティ上の脅威。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+      "title": "Zero-Click Spyware Delivered via Targeted Ads: AdFection",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-15T10:43:36Z",
+      "summary": "標的型ネット広告の描画時に端末を感染させるゼロクリック攻撃AdFectionが確認されました。イスラエルのDiscover-Tech社が広告枠を購入し、スパイウェア配信の仲介役を担っていました。GoogleやIAB Europeなどの事業者は同社のアクセスを遮断する措置をとりました。",
+      "headline": "広告配信を悪用したゼロクリックの端末感染手法が初確認される",
+      "points": [
+        "標的型ネット広告の描画時に端末を感染させるゼロクリック攻撃AdFectionが確認されました。",
+        "イスラエルのDiscover-Tech社が広告枠を購入し、スパイウェア配信の仲介役を担っていました。",
+        "GoogleやIAB Europeなどの事業者は同社のアクセスを遮断する措置をとりました。"
+      ],
+      "impact": "広告事業者や規制当局は、広告配信網を悪用したスパイウェア攻撃への対策や調査が求められます。",
+      "glossary": [
+        {
+          "term": "ゼロクリック攻撃",
+          "explanation": "ユーザーがリンクをクリックするなどの操作をせずとも、端末が侵害されるサイバー攻撃手法。"
+        },
+        {
+          "term": "スパイウェア",
+          "explanation": "利用者に気付かれないように端末へ侵入し、個人情報や行動履歴などを外部に送信する悪意あるソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html",
+      "title": "連続不正アクセス事案の攻撃手法に関する調査 - JPCERT/CC Eyes",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-15T08:02:36.000Z",
+      "summary": "攻撃者がAndroidアプリを解析し、特定したAPIの脆弱性を悪用して攻撃していたことが判明しました。攻撃元サーバーからはFlutter解析ツールBlutterやSSRF検証スクリプトなどが確認されました。攻撃者はAIを利用して脆弱性スキャンやAPI経由の攻撃を行っていたことも確認されています。",
+      "headline": "JPCERT/CCがアプリ解析を起点とする連続不正アクセスの手口を公開",
+      "points": [
+        "攻撃者がAndroidアプリを解析し、特定したAPIの脆弱性を悪用して攻撃していたことが判明しました。",
+        "攻撃元サーバーからはFlutter解析ツールBlutterやSSRF検証スクリプトなどが確認されました。",
+        "攻撃者はAIを利用して脆弱性スキャンやAPI経由の攻撃を行っていたことも確認されています。"
+      ],
+      "impact": "アプリ開発者や事業者は、認証情報をアプリに埋め込まず、サーバー側での適切な認証認可や監視が必要です。",
+      "glossary": [
+        {
+          "term": "SSRF",
+          "explanation": "サーバーを騙して攻撃者が指定した内部や外部のURLへリクエストを送信させる脆弱性および攻撃手法。"
+        },
+        {
+          "term": "リバースエンジニアリング",
+          "explanation": "プログラムのバイナリなどを解析して、ソースコードの構造や仕様、動作原理を読み解く技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://github.com/fyzugx/DEsk",
+      "title": "Wayland desktop for Linux with skeuomorphic design",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-15T13:23:44Z",
+      "summary": "画面上の要素を本物の机や紙のようにリアルに描写するWayland向けデスクトップ環境が公開されました。ウィンドウは紙、ドックは引き出し、通知は郵便受けとして表現され、部屋全体が光線追跡で描画されます。DebianやUbuntu、Arch Linux、Fedora向けのインストールスクリプトが用意されています。",
+      "headline": "スキューモーフィズムを採用したLinuxデスクトップ環境DEskが公開",
+      "points": [
+        "画面上の要素を本物の机や紙のようにリアルに描写するWayland向けデスクトップ環境が公開されました。",
+        "ウィンドウは紙、ドックは引き出し、通知は郵便受けとして表現され、部屋全体が光線追跡で描画されます。",
+        "DebianやUbuntu、Arch Linux、Fedora向けのインストールスクリプトが用意されています。"
+      ],
+      "impact": "Linux利用者は、対応ディストリビューションでスクリプトを実行することでDEskを導入できます。",
+      "glossary": [
+        {
+          "term": "スキューモーフィズム",
+          "explanation": "実世界の物質の質感や形状、操作感を模倣してデジタル機器の画面上に再現するUI設計手法。"
+        },
+        {
+          "term": "Wayland",
+          "explanation": "LinuxなどのUnix系OSにおいて、ディスプレイサーバーとクライアント間の通信を担うプロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 122,
+    "shortlisted": 60,
+    "bodyFailures": 0,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26276,
+    "outputTokens": 15212
+  },
+  "offline": false
+}

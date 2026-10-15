@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-14T20:43:56.396Z",
+  "lastRun": "2026-10-15T20:21:53.327Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -243,6 +243,25 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand": "2026-10-15",
     "https://www.idcf.jp/news/topics/20261014001": "2026-10-15",
     "https://www.itmedia.co.jp/news/article/2610/14/2000002249": "2026-10-15",
-    "https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss": "2026-10-15"
+    "https://gigazine.net/news/20261014-freeze-controller-defrost-food-vulnerabilities-danfoss": "2026-10-15",
+    "https://note.com/shiba_program/n/nd2d72747f8c5": "2026-10-16",
+    "https://research.meta.ai/blog/muse-spark-open": "2026-10-16",
+    "https://www.infoq.com/presentations/agentic-ai-developer-trust-adoption": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/01/muse-spark-open-on-sagemaker-jumpstart": "2026-10-16",
+    "https://www.infoq.com/news/2026/10/instagram-compose-migration": "2026-10-16",
+    "https://www.infoq.com/articles/spring-security-7-server-side-dpop-token-exchange": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support": "2026-10-16",
+    "https://aws.amazon.com/jp/blogs/news/ai-powered-anomaly-detection-for-aws-systems-manager-session-manager-logs-using-amazon-bedrock": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-devops-agent-test-results-aws-resilience-hub": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/time-sync-additional-instances-all-regions": "2026-10-16",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/omics-workflows-shared-vpcs": "2026-10-16",
+    "https://aws.amazon.com/jp/blogs/news/monitor-amazon-aurora-dsql-costs-with-the-aurora-dsql-console-and-cloudwatch-alarms": "2026-10-16",
+    "https://aws.amazon.com/jp/blogs/news/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere": "2026-10-16",
+    "https://zenn.dev/kipcop/articles/f35-vue-10-forms": "2026-10-16",
+    "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say": "2026-10-16",
+    "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware": "2026-10-16",
+    "https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html": "2026-10-16",
+    "https://github.com/fyzugx/DEsk": "2026-10-16"
   }
 }
