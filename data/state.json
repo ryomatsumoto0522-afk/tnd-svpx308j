@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-15T20:21:53.327Z",
+  "lastRun": "2026-10-16T19:58:08.169Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -262,6 +262,23 @@
     "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say": "2026-10-16",
     "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware": "2026-10-16",
     "https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html": "2026-10-16",
-    "https://github.com/fyzugx/DEsk": "2026-10-16"
+    "https://github.com/fyzugx/DEsk": "2026-10-16",
+    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely": "2026-10-17",
+    "https://deepmind.google/blog/introducing-gemini-4-argon": "2026-10-17",
+    "https://deepmind.google/blog/gemini-4-argon-for-robotics": "2026-10-17",
+    "https://starskirmish.com/bench/v0-2": "2026-10-17",
+    "https://www.infoq.com/news/2026/10/aws-strands-agents": "2026-10-17",
+    "https://aws.amazon.com/jp/blogs/news/four-security-principles-for-agentic-ai-systems": "2026-10-17",
+    "https://aws.amazon.com/jp/blogs/news/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves": "2026-10-17",
+    "https://inside.java/2026/10/15/java-fit-ai-world": "2026-10-17",
+    "https://www.infoq.com/news/2026/10/zod-schema-compliation": "2026-10-17",
+    "https://www.infoq.com/news/2026/10/helidon-27-released": "2026-10-17",
+    "https://zenn.dev/kipcop/articles/f35-vue-11-composables": "2026-10-17",
+    "https://jakearchibald.com/2026/jpeg-xl-vs-avif": "2026-10-17",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud": "2026-10-17",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion": "2026-10-17",
+    "https://aws.amazon.com/jp/blogs/news/detecting-multi-stage-attacks-on-aws-a-guide-to-cross-service-signal-correlation": "2026-10-17",
+    "https://www.infoq.com/presentations/ai-security-kubernetes-gpu-threats": "2026-10-17",
+    "https://www.anthropic.com/research/ecdsa-curve-origins": "2026-10-17"
   }
 }

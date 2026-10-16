@@ -1,0 +1,457 @@
+{
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-16T19:58:08.169Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "summary": "サイバー防衛や生物学などの高度なタスクに対応し、悪用を防ぐ保護層を導入しました敵対的テストで違反を半減させ、入力スクリーニングや内部監視など3層で保護します模擬攻撃テストでは前世代の5件から全12件のシナリオを解決する性能を示しました",
+      "headline": "GoogleがGemini 4 Argonの安全性対策を公表",
+      "points": [
+        "サイバー防衛や生物学などの高度なタスクに対応し、悪用を防ぐ保護層を導入しました",
+        "敵対的テストで違反を半減させ、入力スクリーニングや内部監視など3層で保護します",
+        "模擬攻撃テストでは前世代の5件から全12件のシナリオを解決する性能を示しました"
+      ],
+      "glossary": [
+        {
+          "term": "レッドチーム",
+          "explanation": "セキュリティ上の弱点を見つけるため、あえて攻撃者視点で疑似攻撃を仕掛けてテストする専門部隊のことです。"
+        },
+        {
+          "term": "プロンプトインジェクション",
+          "explanation": "悪意ある指示を与えてAIの制限や指示を上書きし、本来禁じられている応答を引き出させる攻撃手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "summary": "APIや各購読プラン向けに公開され、複雑な実務タスクで高い性能を発揮します料金は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルですGoogle社内ではコード提出を35％増やし、ロールバックを約3分の1削減しました",
+      "headline": "GoogleがGemini 4 Argonの一般提供を開始",
+      "points": [
+        "APIや各購読プラン向けに公開され、複雑な実務タスクで高い性能を発揮します",
+        "料金は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルです",
+        "Google社内ではコード提出を35％増やし、ロールバックを約3分の1削減しました"
+      ],
+      "impact": "開発者や企業はAI StudioなどのAPIや該当プランを通じて最新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "リファクタリング",
+          "explanation": "ソフトウェアの外部の動作を変えずに、内部のプログラム構造を整理して改善する作業のことです。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIが文章を処理・生成する際に扱う最小限の文字のかたまりや単語の単位です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "title": "Gemini 4 Argon for Robotics",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "summary": "物理的な理解力や空間推論を備え、3D環境の課題を解くベンチマークで87％を記録しましたロボット制御やシミュレーション構築などロボティクスの全工程に応用できます4脚歩行ロボットの制御や、カメラ座標を使ったアームのゼロショット操作を実証しました",
+      "headline": "Googleがロボット工学向けGemini 4 Argonを発表",
+      "points": [
+        "物理的な理解力や空間推論を備え、3D環境の課題を解くベンチマークで87％を記録しました",
+        "ロボット制御やシミュレーション構築などロボティクスの全工程に応用できます",
+        "4脚歩行ロボットの制御や、カメラ座標を使ったアームのゼロショット操作を実証しました"
+      ],
+      "glossary": [
+        {
+          "term": "ゼロショット",
+          "explanation": "事前の追加学習や実機での微調整を行わずに、指示だけでタスクを即座に実行させる手法のことです。"
+        },
+        {
+          "term": "MuJoCo",
+          "explanation": "ロボットや生体力学の物理シミュレーションを高速かつ高精度に行うための計算エンジンです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://starskirmish.com/bench/v0-2/",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T14:18:44Z",
+      "summary": "LLMに1時間でC++のゲーム対戦ボットを書かせ、勝率を競うベンチマークですGemini 4 ArgonはGPT-6 Astraなどに次いで37〜39点の3位グループに入りました最上位モデルでも強力な人間製ボットに対する勝率は7％にとどまりました",
+      "headline": "LLMが対戦ボットを作るStarCraftベンチマークが公開",
+      "points": [
+        "LLMに1時間でC++のゲーム対戦ボットを書かせ、勝率を競うベンチマークです",
+        "Gemini 4 ArgonはGPT-6 Astraなどに次いで37〜39点の3位グループに入りました",
+        "最上位モデルでも強力な人間製ボットに対する勝率は7％にとどまりました"
+      ],
+      "glossary": [
+        {
+          "term": "エージェント",
+          "explanation": "与えられた目標に向けて自律的に状況を判断し、ツールの実行や改善を繰り返すAIシステムです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/aws-strands-agents/",
+      "title": "AWS Introduces Strands Decider 2B and Strands Box for AI Agent Development",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T10:47:00.000Z",
+      "summary": "意思決定モデルStrands Decider 2Bと隔離環境Strands BoxがOSSとして公開されました。決定モデルはQwen3.5-2B基盤の20億パラメータで、RTX 3090で約115ミリ秒の遅延を達成します。Strands BoxはDogwood言語を用いてエージェントの操作を外部から制御できます。",
+      "headline": "AWSがAIエージェント向け軽量決定モデルと隔離環境を公開",
+      "points": [
+        "意思決定モデルStrands Decider 2Bと隔離環境Strands BoxがOSSとして公開されました。",
+        "決定モデルはQwen3.5-2B基盤の20億パラメータで、RTX 3090で約115ミリ秒の遅延を達成します。",
+        "Strands BoxはDogwood言語を用いてエージェントの操作を外部から制御できます。"
+      ],
+      "impact": "エージェント開発者はツールの導入を検討できる一方、並行リクエストやコールドスタート遅延の検証が必要です。",
+      "glossary": [
+        {
+          "term": "LoRA",
+          "explanation": "機械学習モデルの一部パラメータのみを効率的に追加学習させる手法。"
+        },
+        {
+          "term": "サンドボックス",
+          "explanation": "プログラムを安全に実行するために外部から隔離された保護環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/jp/blogs/news/four-security-principles-for-agentic-ai-systems/",
+      "title": "エージェンティック AI システムのための 4 つのセキュリティ原則",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T00:02:22.000Z",
+      "summary": "米NISTのRFIに対し、エージェンティックAIの自律性に伴うリスクを管理する原則を提示しました。従来の安全な開発工程や最小権限の原則を全コンポーネントに適用することを求めています。プロンプトに依存せず、外部の決定論的な制御（セキュリティボックス）を重視する方針です。",
+      "headline": "AWSがエージェント型AIを保護する4つのセキュリティ原則を提唱",
+      "points": [
+        "米NISTのRFIに対し、エージェンティックAIの自律性に伴うリスクを管理する原則を提示しました。",
+        "従来の安全な開発工程や最小権限の原則を全コンポーネントに適用することを求めています。",
+        "プロンプトに依存せず、外部の決定論的な制御（セキュリティボックス）を重視する方針です。"
+      ],
+      "impact": "エージェント型AIを設計・運用する組織は、プロンプト任せにせず外部制御を含む多層的な防御の導入が求められます。",
+      "glossary": [
+        {
+          "term": "エージェンティックAI",
+          "explanation": "人間の指示を待たず、目標達成に向けて自律的に推論やツール実行を行うAIシステム。"
+        },
+        {
+          "term": "最小権限の原則",
+          "explanation": "ユーザーやシステムに対し、業務に必要な最小限の権限のみを付与するセキュリティ方針。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/",
+      "title": "AWS Security Agent (now part of AWS Continuum) が新たに公開された実在の CVE 37 件中 33 件のエクスプロイトに成功",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T08:09:03.000Z",
+      "summary": "AWS Security Agentが2025〜2026年の実在CVE 37件中33件のエクスプロイトに成功しました。Claude Opus 5上で実行され、フラグ取得までの所要時間の中央値は約4時間でした。データの混入を防ぐため、最新のCVE選定や実行時の検索遮断を行った独自ベンチマークを使用しました。",
+      "headline": "AWSの自律型侵入テストAIが実在CVEの約9割を攻略",
+      "points": [
+        "AWS Security Agentが2025〜2026年の実在CVE 37件中33件のエクスプロイトに成功しました。",
+        "Claude Opus 5上で実行され、フラグ取得までの所要時間の中央値は約4時間でした。",
+        "データの混入を防ぐため、最新のCVE選定や実行時の検索遮断を行った独自ベンチマークを使用しました。"
+      ],
+      "impact": "顧客のシステムでは破壊的動作を防ぐガードレールが設けられており、安全なペネトレーションテストに活用できます。",
+      "glossary": [
+        {
+          "term": "CVE",
+          "explanation": "公開された既知のソフトウェア脆弱性に付与される固有の識別番号。"
+        },
+        {
+          "term": "ペネトレーションテスト",
+          "explanation": "システムに疑似的なサイバー攻撃を仕掛けて弱点を洗い出すセキュリティ試験。"
+        },
+        {
+          "term": "エクスプロイト",
+          "explanation": "ソフトウェアの脆弱性を悪用して不正な操作を実行するプログラムや手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://inside.java/2026/10/15/java-fit-ai-world/",
+      "title": "How Does Java Fit Into the World of AI—and How Can It Become an Even Better Fit?",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "summary": "AI開発におけるJavaの利点や、将来のプラットフォーム機能による強化について解説されました。OpenJDKのProjects Amber、Babylon、Valhalla、Panamaなどの開発動向が紹介されています。",
+      "headline": "JavaがAI開発にいかに適合するかを解説する動画が公開",
+      "points": [
+        "AI開発におけるJavaの利点や、将来のプラットフォーム機能による強化について解説されました。",
+        "OpenJDKのProjects Amber、Babylon、Valhalla、Panamaなどの開発動向が紹介されています。"
+      ],
+      "impact": "Javaを利用してAI開発を行うエンジニアは、JavaOne 2026の関連動画とあわせて最新機能を確認できます。",
+      "glossary": [
+        {
+          "term": "OpenJDK",
+          "explanation": "Javaプラットフォームのオープンソース実装を開発・保守するプロジェクト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://www.infoq.com/news/2026/10/zod-schema-compliation/",
+      "title": "Zod Brings In-Process Schema Compilation and a 9x Cut in Memory Footprint",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-16T15:22:00.000Z",
+      "summary": "Zod 4.5および4.6が公開され、スキーマコンパイル機能や最適化が導入されました。z.compile()によりビルド設定不要でパース速度が最大9倍高速化します。メモリ割り当ての改善により、z.string()のヒープ消費量が約9分の1に削減されました。",
+      "headline": "Zodがインプロセスコンパイルと大幅なメモリ削減を導入",
+      "points": [
+        "Zod 4.5および4.6が公開され、スキーマコンパイル機能や最適化が導入されました。",
+        "z.compile()によりビルド設定不要でパース速度が最大9倍高速化します。",
+        "メモリ割り当ての改善により、z.string()のヒープ消費量が約9分の1に削減されました。"
+      ],
+      "impact": "Zodを利用する開発者は、4.5への更新時に再帰スキーマの不具合を修正した4.6も含めて確認する必要があります。",
+      "glossary": [
+        {
+          "term": "スキーマ",
+          "explanation": "データの構造や形式、満たすべき検証ルールを定義した仕様のこと。"
+        },
+        {
+          "term": "インプロセス",
+          "explanation": "外部のツールやビルド工程を挟まず、同一の実行環境内で処理を行う方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.infoq.com/news/2026/10/helidon-27-released/",
+      "title": "Helidon 27 Introduces Restructured Programming Models and New Messaging and Data Modules",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-16T11:20:00.000Z",
+      "summary": "JDK 27に追従するTipと長期安定性を重視するTailに分ける新開発モデルを採用しました。Helidon Coreが導入され、手続き型と宣言型の2つのモデルに再編されました。新機能としてHelidon MessagingおよびData JDBCモジュールが追加されました。",
+      "headline": "Helidon 27が公開されプログラミングモデルの再編などを実施",
+      "points": [
+        "JDK 27に追従するTipと長期安定性を重視するTailに分ける新開発モデルを採用しました。",
+        "Helidon Coreが導入され、手続き型と宣言型の2つのモデルに再編されました。",
+        "新機能としてHelidon MessagingおよびData JDBCモジュールが追加されました。"
+      ],
+      "impact": "Helidonを採用する開発チームは、最新機能のTipか長期安定運用のTailかを用途に合わせて選択できます。",
+      "glossary": [
+        {
+          "term": "依存性の注入",
+          "explanation": "プログラムの部品が必要とする依存オブジェクトを外部から渡す設計手法。"
+        },
+        {
+          "term": "ORM",
+          "explanation": "データベースのテーブル構造とプログラムのオブジェクトを対応付けて扱う仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-11-composables",
+      "title": "35日でフロントエンドの基礎を完全に理解する #11 - composablesで整理する",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-16T14:30:17.000Z",
+      "summary": "状態や処理ロジックを関数として切り出し、部品間で再利用する仕組みを解説しています。composableを呼び出すたびに独立した新しい状態が生成されます。ライフサイクルフックを組み込むことで、イベント登録と後片付けをひとまとめにできます。",
+      "headline": "Vueのcomposableによる状態とロジックの共通化を解説",
+      "points": [
+        "状態や処理ロジックを関数として切り出し、部品間で再利用する仕組みを解説しています。",
+        "composableを呼び出すたびに独立した新しい状態が生成されます。",
+        "ライフサイクルフックを組み込むことで、イベント登録と後片付けをひとまとめにできます。"
+      ],
+      "impact": "Vueでコンポーネントコードの肥大化を防ぎたい開発者は、ロジックの切り出しと解除処理の実装手順を確認できます。",
+      "glossary": [
+        {
+          "term": "composable",
+          "explanation": "Vueで状態とロジックをカプセル化して再利用可能にした関数のこと。"
+        },
+        {
+          "term": "ライフサイクル",
+          "explanation": "画面部品が生成され、表示されてから破棄されるまでの一連の経過。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
+      "title": "JPEG XL vs. AVIF for web use-cases",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-16T16:12:02Z",
+      "summary": "Webの写真やイラスト、透過画像において、AVIFのほうがより小さいファイルサイズになります。一般的な画質設定における画像のデコード速度は、AVIFのほうが2〜3倍高速です。ブラウザ環境のHDR表示において、JPEG XLはゲインマップの非対応などの課題を抱えています。",
+      "headline": "Web利用におけるJPEG XLとAVIFの性能比較が公開",
+      "points": [
+        "Webの写真やイラスト、透過画像において、AVIFのほうがより小さいファイルサイズになります。",
+        "一般的な画質設定における画像のデコード速度は、AVIFのほうが2〜3倍高速です。",
+        "ブラウザ環境のHDR表示において、JPEG XLはゲインマップの非対応などの課題を抱えています。"
+      ],
+      "impact": "Webサイトで画像フォーマットの選定や最適化を行う担当者は、用途に応じた両形式の圧縮率や処理速度の差異を比較検討できます。",
+      "glossary": [
+        {
+          "term": "非可逆圧縮",
+          "explanation": "復元時に元の完全なデータを再現できない代わりに、容量を大幅に削減する圧縮方式。"
+        },
+        {
+          "term": "ゲインマップ",
+          "explanation": "標準画像にHDR用の輝度補正情報を重ねることで、対応環境で高輝度表示を行う技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/",
+      "title": "AWS Lambda durable functions are now available in AWS GovCloud (US) Regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T18:26:00.000Z",
+      "summary": "Lambda上でstepやwaitを使い、複数ステップの処理やAIワークフローを構築可能です。障害からの自動復旧や一時停止ができ、一時停止中のオンデマンド関数のコンピュート料金は発生しません。Python 3.13/3.14やNode.js 22/24、Go 1.24以降などの関数で有効化できます。",
+      "headline": "AWS Lambda durable functionsが米GovCloudで利用可能に",
+      "points": [
+        "Lambda上でstepやwaitを使い、複数ステップの処理やAIワークフローを構築可能です。",
+        "障害からの自動復旧や一時停止ができ、一時停止中のオンデマンド関数のコンピュート料金は発生しません。",
+        "Python 3.13/3.14やNode.js 22/24、Go 1.24以降などの関数で有効化できます。"
+      ],
+      "impact": "米国の政府機関や規制業界の利用者は、厳格な要件を満たしながら複雑な業務フローを自動化できます。",
+      "glossary": [
+        {
+          "term": "AWS GovCloud",
+          "explanation": "米国政府機関や規制産業向けに設計された、厳格なコンプライアンス基準を満たすAWSリージョン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 29,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/",
+      "title": "AWS Transform announces Azure-to-AWS cloud-native code conversion",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T13:50:00.000Z",
+      "summary": ".NETモダナイゼーションエージェントが、Azure SDKコードを同等のAWS SDKコードへ変換します。Azure FunctionsからLambda、Azure Blob StorageからS3などへの変換に対応します。東京やバージニア北部を含む8つのAWSリージョンで一般提供が開始されました。",
+      "headline": "AWS TransformがAzureからAWSへのコード変換に対応",
+      "points": [
+        ".NETモダナイゼーションエージェントが、Azure SDKコードを同等のAWS SDKコードへ変換します。",
+        "Azure FunctionsからLambda、Azure Blob StorageからS3などへの変換に対応します。",
+        "東京やバージニア北部を含む8つのAWSリージョンで一般提供が開始されました。"
+      ],
+      "impact": "Azureの.NETアプリを移行したい開発者は、自動コード変換によって移行にかかる手間を削減できます。",
+      "glossary": [
+        {
+          "term": "AWS Transform",
+          "explanation": "クラウド移行に伴うアプリケーションやコードの近代化を支援するAWSの移行支援機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 30,
+      "url": "https://aws.amazon.com/jp/blogs/news/detecting-multi-stage-attacks-on-aws-a-guide-to-cross-service-signal-correlation/",
+      "title": "AWS での多段階攻撃の検出: サービス横断のシグナル相関分析ガイド",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T08:09:37.000Z",
+      "summary": "単体のアラートだけでなく、複数ログと自社の固有情報を照合して攻撃の全体像を捉える手法を説明しています。GuardDutyの標準機能に加え、CloudWatch Logs Insightsのクエリで環境固有の分析を行います。初期アクセスからデータ持ち出しまで、複数サービスを横断する5つの攻撃フェーズを追跡します。",
+      "headline": "AWSが多段階攻撃を検出する横断シグナル相関分析手法を解説",
+      "points": [
+        "単体のアラートだけでなく、複数ログと自社の固有情報を照合して攻撃の全体像を捉える手法を説明しています。",
+        "GuardDutyの標準機能に加え、CloudWatch Logs Insightsのクエリで環境固有の分析を行います。",
+        "初期アクセスからデータ持ち出しまで、複数サービスを横断する5つの攻撃フェーズを追跡します。"
+      ],
+      "impact": "AWSのセキュリティ担当者は、提供されたクエリを自社環境向けに調整して多段階攻撃の監視を強化できます。",
+      "glossary": [
+        {
+          "term": "相関分析",
+          "explanation": "複数のシステムやログから得られた関連情報を照合し、一連の事象や攻撃の流れを分析する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 31,
+      "url": "https://www.infoq.com/presentations/ai-security-kubernetes-gpu-threats/",
+      "title": "Presentation: Exploding GPUs",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T11:00:00.000Z",
+      "summary": "主要なAI基盤はKubernetes上で稼働しており、その脆弱性を引き継ぎながら標的としての価値が高まっています。自律型エージェントの普及や出力の非決定性により、従来の分散システム向けテスト手法が通用しにくくなっています。メールやGitHubのPR経由など、人間によるレビューを迂回してモデルを標的にする新たな攻撃形態を指摘しています。",
+      "headline": "AI基盤におけるKubernetesのセキュリティ課題を解説",
+      "points": [
+        "主要なAI基盤はKubernetes上で稼働しており、その脆弱性を引き継ぎながら標的としての価値が高まっています。",
+        "自律型エージェントの普及や出力の非決定性により、従来の分散システム向けテスト手法が通用しにくくなっています。",
+        "メールやGitHubのPR経由など、人間によるレビューを迂回してモデルを標的にする新たな攻撃形態を指摘しています。"
+      ],
+      "impact": "AIインフラを運用するエンジニアは、従来のKubernetesセキュリティに加えてAI特有の脅威に対処する必要があります。",
+      "glossary": [
+        {
+          "term": "サプライチェーン攻撃",
+          "explanation": "ソフトウェアの開発・配布経路などの脆弱な箇所を狙い、最終的な利用者や環境に損害を与える攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 32,
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title": "Claude reveals ECDSA curve origins",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-16T18:55:59Z",
+      "summary": "Claudeが長年不明だったECDSA標準曲線のシード値の生成方法を解明しました。シード値はUnixタイムスタンプで初期化されたC言語の乱数生成器lrand48の出力でした。意図的なバックドアの疑念が薄れ、標準パラメータの安全性への信頼が高まりました。",
+      "headline": "ClaudeがECDSA標準曲線の謎だったシード生成元を解明",
+      "points": [
+        "Claudeが長年不明だったECDSA標準曲線のシード値の生成方法を解明しました。",
+        "シード値はUnixタイムスタンプで初期化されたC言語の乱数生成器lrand48の出力でした。",
+        "意図的なバックドアの疑念が薄れ、標準パラメータの安全性への信頼が高まりました。"
+      ],
+      "impact": "利用者が変更すべき運用や対処はなく、これまで通り暗号標準を利用できます。",
+      "glossary": [
+        {
+          "term": "ECDSA",
+          "explanation": "楕円曲線暗号を利用して電子署名を作成・検証する標準的な暗号技術。"
+        },
+        {
+          "term": "Unixタイムスタンプ",
+          "explanation": "1970年1月1日0時0分0秒（UTC）からの経過秒数を表す数値。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 120,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 24500,
+    "outputTokens": 10981
+  },
+  "offline": false
+}
