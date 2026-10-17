@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-18</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月18日(日)</p>
+<p class="meta">更新 2026-10-18 04:26 · 取得ソース 18/18 · 選定 20件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">DeepSeekが改善版モデルDeepSeek-V4.1-Flash-1017を公開</a></h3>
+<p class="orig">原題: DeepSeek-v4.1-Flash-1017</p>
+<p class="src">出典: <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-17</p>
+<ul class="points"><li>推論やコーディング、視覚ベンチマークなどの性能が向上し、実行時間と出力長が削減されました。</li><li>プロンプト処理用にPythonリファレンス実装やRust製ツール群のdeepseek-recipeを提供します。</li><li>MITライセンスで提供され、100万トークンのコンテキストウィンドウを推奨しています。</li></ul><p class="impact"><b>影響</b>ローカル推論を行う利用者は、重みの変換手順に従い適切なサンプリングパラメータを設定する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度の処理で同時に読み込んで考慮できる文章の最大量のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener noreferrer">Claude Code開発陣がAI主体の多層コードレビュー手法を公開</a></h3>
+<p class="orig">原題: How the Claude Code team does code review / claude.dev Blog</p>
+<p class="src">出典: <a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-16</p>
+<ul class="points"><li>コードの約9割をAIが書く環境において、レビューを事後チェックから継続的な事前検証に移行しました。</li><li>6月から9月にかけてマージ数が2倍以上に増える一方、リバート率は40パーセント以上減少しました。</li><li>PR作成前のテストや自動修正など多層の検証を機械で行い、人間は高度な判断に集中します。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>プルリクエスト</dt><dd>自分が作成したコードの変更内容を、開発元のメインコードに取り込むよう提案する仕組みです。</dd><dt>リバート</dt><dd>変更したコードに問題があった際に、修正前の状態へ変更を取り消して戻すことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://gigazine.net/news/20261016-nemotron-3-5-super-vl/" target="_blank" rel="noopener noreferrer">NVIDIAがマルチモーダルモデルNemotron 3.5 Super VLを公開</a></h3>
+<p class="orig">原題: NVIDIAが画像・動画・文章をまとめて理解するオープンウェイトAI「Nemotron 3.5 Super VL」を公開、処理コストを40分の1に削減する事例も</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261016-nemotron-3-5-super-vl/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-16</p>
+<ul class="points"><li>1200億パラメータのMoE構造を採用し、文章や画像、動画を毎秒600トークン以上で処理します。</li><li>NVIDIA B200 GPU 4基で1万件のソフトウェア開発タスクを約10時間で完了できます。</li><li>NeMoによる追加学習に対応し、業務に合わせて調整することで処理コストの大幅な削減が可能です。</li></ul><p class="impact"><b>影響</b>独自業務へ導入する企業は、NVIDIA NeMoを用いて文書や社内規則に合わせた追加学習を行えます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Mixture of Experts</dt><dd>処理内容に応じてモデル内の一部の専門領域だけを選択して動かし、計算負荷を抑える仕組みです。</dd><dt>マルチモーダル</dt><dd>テキストだけでなく、画像や音声、動画など複数の異なる種類のデータを同時に扱うことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">DeepSeekが改善版モデルDeepSeek-V4.1-Flash-1017を公開</a></h3>
+<p class="orig">原題: DeepSeek-v4.1-Flash-1017</p>
+<p class="src">出典: <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-17</p>
+<ul class="points"><li>推論やコーディング、視覚ベンチマークなどの性能が向上し、実行時間と出力長が削減されました。</li><li>プロンプト処理用にPythonリファレンス実装やRust製ツール群のdeepseek-recipeを提供します。</li><li>MITライセンスで提供され、100万トークンのコンテキストウィンドウを推奨しています。</li></ul><p class="impact"><b>影響</b>ローカル推論を行う利用者は、重みの変換手順に従い適切なサンプリングパラメータを設定する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度の処理で同時に読み込んで考慮できる文章の最大量のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener noreferrer">Claude Code開発陣がAI主体の多層コードレビュー手法を公開</a></h3>
+<p class="orig">原題: How the Claude Code team does code review / claude.dev Blog</p>
+<p class="src">出典: <a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-16</p>
+<ul class="points"><li>コードの約9割をAIが書く環境において、レビューを事後チェックから継続的な事前検証に移行しました。</li><li>6月から9月にかけてマージ数が2倍以上に増える一方、リバート率は40パーセント以上減少しました。</li><li>PR作成前のテストや自動修正など多層の検証を機械で行い、人間は高度な判断に集中します。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>プルリクエスト</dt><dd>自分が作成したコードの変更内容を、開発元のメインコードに取り込むよう提案する仕組みです。</dd><dt>リバート</dt><dd>変更したコードに問題があった際に、修正前の状態へ変更を取り消して戻すことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261016-nemotron-3-5-super-vl/" target="_blank" rel="noopener noreferrer">NVIDIAがマルチモーダルモデルNemotron 3.5 Super VLを公開</a></h3>
+<p class="orig">原題: NVIDIAが画像・動画・文章をまとめて理解するオープンウェイトAI「Nemotron 3.5 Super VL」を公開、処理コストを40分の1に削減する事例も</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261016-nemotron-3-5-super-vl/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-16</p>
+<ul class="points"><li>1200億パラメータのMoE構造を採用し、文章や画像、動画を毎秒600トークン以上で処理します。</li><li>NVIDIA B200 GPU 4基で1万件のソフトウェア開発タスクを約10時間で完了できます。</li><li>NeMoによる追加学習に対応し、業務に合わせて調整することで処理コストの大幅な削減が可能です。</li></ul><p class="impact"><b>影響</b>独自業務へ導入する企業は、NVIDIA NeMoを用いて文書や社内規則に合わせた追加学習を行えます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Mixture of Experts</dt><dd>処理内容に応じてモデル内の一部の専門領域だけを選択して動かし、計算負荷を抑える仕組みです。</dd><dt>マルチモーダル</dt><dd>テキストだけでなく、画像や音声、動画など複数の異なる種類のデータを同時に扱うことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/reverse-engineer-anything/" target="_blank" rel="noopener noreferrer">バイナリ解析ツールとAIエージェントを繋ぐOSSプロジェクトが登場</a></h3>
+<p class="orig">原題: Reverse Engineer Anything Project Brings AI Agents to Binary Analysis</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/reverse-engineer-anything/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-17</p>
+<ul class="points"><li>コーディングエージェントをGhidraやIDAなどのリバースエンジニアリングツールに接続します。</li><li>MCPサーバーを介してプログラムの関数呼び出しや挙動の追跡、仮説検証を自動で反復できます。</li><li>MITライセンスで公開され、JavaScriptや.NETの静的解析にも対応しています。</li></ul><p class="impact"><b>影響</b>利用者は合法的な研究や解析を行うため、必要な承認の取得や関連法令の遵守を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>リバースエンジニアリング</dt><dd>完成したソフトウェアの構造や動作を分析し、元の仕組みや仕様を解明する技術のことです。</dd><dt>バイナリ</dt><dd>人間が読むテキストではなく、コンピュータが直接実行できるように変換された二進数のデータです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/envharness-self-evolving-agents/" target="_blank" rel="noopener noreferrer">GoogleがAIの弱点に応じ環境を適応させる基盤を公開</a></h3>
+<p class="orig">原題: Google EnvHarness Enables Self-Evolving Agents to Learn in Dynamics Environments</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/envharness-self-evolving-agents/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-17</p>
+<ul class="points"><li>Googleがエージェント学習環境を動的に適応させるEnvHarnessをオープンソース公開しました。</li><li>元の環境構造や評価系を変更せず、標準インターフェースをラップして動作を変化させます。</li><li>GeminiやClaudeなどによる検証で性能が2.9〜3.7ポイント向上しました。</li></ul><p class="impact"><b>影響</b>AIエージェントを訓練する開発者は、既存の評価系を保ったまま適応型環境での学習に活用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AIエージェント</dt><dd>目標達成に向けて環境の観察や意思決定、行動を自律的に行うシステムです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261017-agentsview/" target="_blank" rel="noopener noreferrer">AIコーディングの費用や履歴を追跡するAgentsView公開</a></h3>
+<p class="orig">原題: すべてのAIコーディングエージェントのコストを閲覧・検索・追跡しローカルで動作する「AgentsView」、Claude Code・Codex・Cursor・Copilot・Geminiなど60種類以上のエージェントを自動検出し全文検索も可能</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261017-agentsview/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>複数AIコーディングエージェントの利用量やコストをまとめて確認できるツールが登場しました。</li><li>Claude CodeやCodexなどに対応し、会話履歴の全文検索や推定費用のグラフ表示が可能です。</li><li>ローカルで動作し、日本語環境や複数PC間でのデータ統合にも対応しています。</li></ul><p class="impact"><b>影響</b>複数のAIツールを併用する開発者は、モデル別のトークン消費量や利用コストの把握に利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIモデルが入出力を処理する際にテキストを分割する最小単位のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/ara_jlu/articles/diff-review-blind-spot" target="_blank" rel="noopener noreferrer">差分確認に頼るAIレビューの見落とし原因と対策が共有</a></h3>
+<p class="orig">原題: Claude Codeのレビューが全部通ったのに残った書き漏れ、原因は差分だった</p>
+<p class="src">出典: <a href="https://zenn.dev/ara_jlu/articles/diff-review-blind-spot" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-17</p>
+<ul class="points"><li>変更のないファイルは差分に出ないため、別ファイルへの書き漏れがレビューを通過していました。</li><li>差分内に「他へ反映した」旨の記述がある場合、その対象ファイルもレビュー対象に含めて対策しました。</li><li>文章全体を頭から通して確認するレビューを別途設ける工夫も紹介されています。</li></ul><p class="impact"><b>影響</b>AIによるコードレビューを運用する開発者は、差分外のファイル検証手順を見直す必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>差分（diff）</dt><dd>プログラムや文章の変更前と変更後を比較したときの変更箇所のことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/" target="_blank" rel="noopener noreferrer">AmazonがDuckLabs買収とAuroraへのDuckDB統合を発表</a></h3>
+<p class="orig">原題: Amazon Acquires DuckLabs and Integrates DuckDB in Amazon Aurora PostgreSQL</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-17</p>
+<ul class="points"><li>AmazonがDuckDB開発元のDuckLabsを買収し、チームはAWSに合流しました。</li><li>DuckDBや関連コンポーネントはMITライセンスのオープンソースとして維持されます。</li><li>Amazon Aurora PostgreSQLに統合され、S3などの履歴データと直接統合クエリを実行可能です。</li></ul><p class="impact"><b>影響</b>Aurora PostgreSQLを使う開発者は、複雑なETLを組まずに履歴データを含めた高速な分析を行えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ETL</dt><dd>データを抽出（Extract）、変換（Transform）、保存（Load）する処理のことです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/10/17/podcast-072/" target="_blank" rel="noopener noreferrer">OpenJDKの重大バグ対応やJDK 28を公式配信が解説</a></h3>
+<p class="orig">原題: Episode 72 “OpenJDK Bug Fixing, JavaOne, and JDK 28” [IJN]</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/17/podcast-072/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-17</p>
+<ul class="points"><li>2026年8月18日にhotspot-compiler-devで文字列が破損する重大なバグが報告されました。</li><li>JDKのリリース候補段階で発生した問題への対処やJDK 27への修正対応などが紹介されています。</li><li>番組内ではJavaOneや次期バージョンとなるJDK 28の話題も取り上げられています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リリース候補</dt><dd>正式公開の直前に、重大な不具合が残っていないか最終確認を行う段階の版のことです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/15/a-bootiful-podcast-andrew-lombardi" target="_blank" rel="noopener noreferrer">KotlinとRustの性能比較実験を開発者が配信で語る</a></h3>
+<p class="orig">原題: A Bootiful Podcast: Can Java be more performant than Rust? Andrew Lombardi has the numbers</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/15/a-bootiful-podcast-andrew-lombardi" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-15</p>
+<ul class="points"><li>アプリケーションをKotlinへ移植し、話題のRustでの書き換えと比較する実験が行われました。</li><li>AIを活用して移植作業を進めた背景や、ベンチマークにおける落とし穴について議論されています。</li><li>トークンコストやJVMの性能、Kotlinの型システムや読みやすさの利点にも触れています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>JVM</dt><dd>Java仮想マシンの略称で、JavaやKotlinのプログラムを実行するための環境です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy" target="_blank" rel="noopener noreferrer">VueのOptions APIと古いコードの読み解き方を解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #12 - 既存コードを読む</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-18</p>
+<ul class="points"><li>実務で遭遇しやすいOptions APIのコードを、Composition APIの知識に置き換えて読む方法を説明しています。</li><li>dataやmethodsなどの役割を整理し、Vue 3でも正式にサポートされ続けている点に言及しています。</li><li>package.jsonや起動方法などから、Vue 2世代のコードを見分けるポイントを紹介しています。</li></ul><p class="impact"><b>影響</b>既存のVueコードを扱う開発者は、急いで書き直さず各要素の対応関係を把握して読み進めることが推奨されます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Options API</dt><dd>Vueでdataやmethodsなどの決まった枠組みにコードを振り分けて記述する従来の書き方です。</dd><dt>Composition API</dt><dd>Vue 3から導入された、機能ごとに関連するコードをまとめて記述できる新しい書き方です。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://github.com/vercel-labs/tsc-ts" target="_blank" rel="noopener noreferrer">TypeScriptで書かれた実験的コンパイラtsc-tsが公開</a></h3>
+<p class="orig">原題: tsc-ts: TypeScript written in TypeScript</p>
+<p class="src">出典: <a href="https://github.com/vercel-labs/tsc-ts" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>TypeScript-Go 7.0.2をTypeScriptで移植しネイティブ実行する試みです。</li><li>scriptcでコンパイルされ、約12,500件のテストファイルでtsgoと出力の一致が検証されています。</li><li>npmからインストール可能で、tsc-tsコマンドやAPIサーバーとして動作します。</li></ul><p class="impact"><b>影響</b>実験的コンパイラを試したい開発者は、Node.js 24以上などの環境を用意してnpmから導入できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ネイティブコード</dt><dd>仮想マシンなどを介さず、コンピュータのCPUが直接解釈して実行できる機械語のことです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://pele.run/" target="_blank" rel="noopener noreferrer">Mermaid図を高速にSVG出力するPeleが公開</a></h3>
+<p class="orig">原題: Pele – Mermaid diagrams as themeable SVG</p>
+<p class="src">出典: <a href="https://pele.run/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>PeleはMermaid構文をSVGに変換するオープンソースのツールです。</li><li>依存関係ゼロで、Mermaid.jsより最大500倍高速かつ軽量です。</li><li>CSS変数によるテーマ変更に対応し、再描画なしで色を適用できます。</li></ul><p class="impact"><b>影響</b>Mermaid図をWebアプリやObsidian等で高速・軽量に表示したい開発者が利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SVG</dt><dd>拡大縮小しても輪郭がぼやけず、きれいに表示できる画像形式。</dd><dt>CSS変数</dt><dd>ウェブページの色や数値を定義し、複数箇所で再利用できる仕組み。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://gihyo.jp/article/2026/10/furifont" target="_blank" rel="noopener noreferrer">漢字にふりがなを表示するフォントFurifontが無償公開</a></h3>
+<p class="orig">原題: 漢字の上にふりがなを表示する日本語フォント「Furifont」オープンライセンスで公開 | gihyo.jp</p>
+<p class="src">出典: <a href="https://gihyo.jp/article/2026/10/furifont" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-16</p>
+<ul class="points"><li>Anthony Fu氏が漢字の上にふりがなを表示するフォントを公開しました。</li><li>源ノ角ゴシック等を元に、合字の仕組みを用いてふりがなを表示します。</li><li>ブックマークレットやWebフォントとしても利用可能です。</li></ul><p class="impact"><b>影響</b>日本語学習者やWebサイトでふりがなを表示したい利用者が、フォントを導入して使えます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>合字</dt><dd>複数の文字を組み合わせて1つの字形として表示するフォントの機能。</dd><dt>異体字セレクタ</dt><dd>同じ文字の別の形や読み分けなどを指定するための特殊な文字コード。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://qiita.com/k2_naka/items/fa87685231377f15e7e3" target="_blank" rel="noopener noreferrer">Linuxカーネルの通信処理に重大な脆弱性が判明</a></h3>
+<p class="orig">原題: CVE-2026-99999（PwnEscape）を読み解く──「KVMの脆弱性」ではなく、Linuxネットワークスタックの脆弱性 - Qiita</p>
+<p class="src">出典: <a href="https://qiita.com/k2_naka/items/fa87685231377f15e7e3" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>CVE-2026-99999はLinuxカーネルのネットワーク処理にある脆弱性です。</li><li>CVSS基本値は9.3と深刻で、ホストメモリ漏えいなどの恐れがあります。</li><li>修正コミットがmainlineや主要stable系列に収録されました。</li></ul><p class="impact"><b>影響</b>影響を受けるLinuxを運用する管理者は、配布先の修正状況を確認しカーネルを更新する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>カーネル</dt><dd>OSの中核として、ハードウェアやメモリ、通信を制御する基本プログラム。</dd><dt>CVSS</dt><dd>セキュリティ上の欠陥（脆弱性）の深刻度を0から10の数値で評価する国際基準。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://dev.classmethod.jp/articles/aws-security-bulletin-2026-137-kvm-kernel/" target="_blank" rel="noopener noreferrer">AWSがCVE-2026-99999の影響範囲と対応を公開</a></h3>
+<p class="orig">原題: AWS セキュリティ速報 2026-137-AWS（CVE-2026-99999）は通常の EC2 は対象外。影響範囲を確認してみた | DevelopersIO</p>
+<p class="src">出典: <a href="https://dev.classmethod.jp/articles/aws-security-bulletin-2026-137-kvm-kernel/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>通常のEC2等は対象外で、KVMを自前管理するホストが影響対象です。</li><li>ネスト仮想化やベアメタルでVMを動かすホストが該当します。</li><li>回避策はなく、修正済みカーネルを適用する必要があると案内されています。</li></ul><p class="impact"><b>影響</b>ネスト仮想化やベアメタルでKVMを自前運用する利用者は、修正済みカーネルを適用する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ネスト仮想化</dt><dd>仮想マシンの中でさらに別の仮想マシンを起動して動かす技術。</dd><dt>ベアメタル</dt><dd>仮想化レイヤーを挟まず、クラウドの物理サーバーを直接専有して利用する形態。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion" target="_blank" rel="noopener noreferrer">CloudWatchのログ集約機能がGovCloudなど15地域に拡大</a></h3>
+<p class="orig">原題: Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-17</p>
+<ul class="points"><li>複数アカウントや地域のログを1つのアカウントに集約できる機能が対象を拡大しました。</li><li>AWS GovCloud（米国）と商業用の計15リージョンで新たに対応しました。</li><li>ログのコピーは1件目が無料で、追加のコピーには1GBあたり0.05ドルかかります。</li></ul><p class="impact"><b>影響</b>対象リージョンを利用する管理者は、コンソールやCLIからログの集約ルールを作成できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS GovCloud</dt><dd>米国政府機関や厳格な規制要件を持つ組織向けに提供されている隔離されたリージョン。</dd><dt>AWS Organizations</dt><dd>複数のAWSアカウントを一括して管理・統合できるガバナンスサービス。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://lwn.net/Articles/1088776/" target="_blank" rel="noopener noreferrer">Linux 7.2が歴代2位のコミット数と過去最多の開発者数を記録</a></h3>
+<p class="orig">原題: Development statistics for the 7.2 kernel</p>
+<p class="src">出典: <a href="https://lwn.net/Articles/1088776/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>2026年8月17日に公開されたLinux 7.2は約60万行のコードが追加されました。</li><li>マージを除いたコミット数は1万6418件で、歴代2位の規模となりました。</li><li>貢献した開発者数は2652人に達し、前バージョンの記録を更新しました。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コミット</dt><dd>プログラムの変更内容をバージョン管理システムに記録・確定すること。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://japan.cnet.com/article/35253656/" target="_blank" rel="noopener noreferrer">日俳連が声のAI利用に関する指針を発表し故人再現は原則禁止に</a></h3>
+<p class="orig">原題: 亡くなった声優の声、AIでの再現は原則禁止 日俳連が新指針</p>
+<p class="src">出典: <a href="https://japan.cnet.com/article/35253656/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>俳優や声優の声をAIで学習・再現・利用する際は個別の書面同意を義務付けました。</li><li>同意期間は原則最長1年とし、通常の出演料とは別に対価を支払うよう求めています。</li><li>故人の声をAIで再現することは、生前の承諾など一部の例外を除き原則禁止としました。</li></ul><p class="impact"><b>影響</b>制作会社やAI開発企業は、声優の音声を利用する際に事前同意の取得と対価の支払いが求められます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>生成AI</dt><dd>テキストや画像、音声などの新しいコンテンツを自動で作り出す人工知能技術。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2610/17/2000002349/" target="_blank" rel="noopener noreferrer">BASE子会社のEC支援サービスで約2335万人分の情報が漏えい</a></h3>
+<p class="orig">原題: BASE子会社の漏えい、約2335万人分に 209万人分はクレカ番号「先頭6桁と下4桁」「有効期限」も</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2610/17/2000002349/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>Eストアーの「ショップサーブ」が不正アクセスを受け、大量の個人情報が流出しました。</li><li>流出は約2335万人分で、約209万人分はカード番号の一部なども含まれます。</li><li>脆弱性を悪用され、5月21日から8月1日まで情報が外部へ不正送信されていました。</li></ul><p class="impact"><b>影響</b>個別連絡が届かない利用者は、公表内容や設置された問い合わせ窓口を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>脆弱性</dt><dd>プログラムやシステムの設計・実装上の欠陥によるセキュリティ上の弱点。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-17/">← 2026-10-17</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（18）</summary><ul><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

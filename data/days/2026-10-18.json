@@ -1,0 +1,514 @@
+{
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-17T19:26:56.248Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T08:21:25Z",
+      "summary": "推論やコーディング、視覚ベンチマークなどの性能が向上し、実行時間と出力長が削減されました。プロンプト処理用にPythonリファレンス実装やRust製ツール群のdeepseek-recipeを提供します。MITライセンスで提供され、100万トークンのコンテキストウィンドウを推奨しています。",
+      "headline": "DeepSeekが改善版モデルDeepSeek-V4.1-Flash-1017を公開",
+      "points": [
+        "推論やコーディング、視覚ベンチマークなどの性能が向上し、実行時間と出力長が削減されました。",
+        "プロンプト処理用にPythonリファレンス実装やRust製ツール群のdeepseek-recipeを提供します。",
+        "MITライセンスで提供され、100万トークンのコンテキストウィンドウを推奨しています。"
+      ],
+      "impact": "ローカル推論を行う利用者は、重みの変換手順に従い適切なサンプリングパラメータを設定する必要があります。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度の処理で同時に読み込んで考慮できる文章の最大量のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "title": "How the Claude Code team does code review / claude.dev Blog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T12:24:30.000Z",
+      "summary": "コードの約9割をAIが書く環境において、レビューを事後チェックから継続的な事前検証に移行しました。6月から9月にかけてマージ数が2倍以上に増える一方、リバート率は40パーセント以上減少しました。PR作成前のテストや自動修正など多層の検証を機械で行い、人間は高度な判断に集中します。",
+      "headline": "Claude Code開発陣がAI主体の多層コードレビュー手法を公開",
+      "points": [
+        "コードの約9割をAIが書く環境において、レビューを事後チェックから継続的な事前検証に移行しました。",
+        "6月から9月にかけてマージ数が2倍以上に増える一方、リバート率は40パーセント以上減少しました。",
+        "PR作成前のテストや自動修正など多層の検証を機械で行い、人間は高度な判断に集中します。"
+      ],
+      "glossary": [
+        {
+          "term": "プルリクエスト",
+          "explanation": "自分が作成したコードの変更内容を、開発元のメインコードに取り込むよう提案する仕組みです。"
+        },
+        {
+          "term": "リバート",
+          "explanation": "変更したコードに問題があった際に、修正前の状態へ変更を取り消して戻すことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://gigazine.net/news/20261016-nemotron-3-5-super-vl/",
+      "title": "NVIDIAが画像・動画・文章をまとめて理解するオープンウェイトAI「Nemotron 3.5 Super VL」を公開、処理コストを40分の1に削減する事例も",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T04:12:17.000Z",
+      "summary": "1200億パラメータのMoE構造を採用し、文章や画像、動画を毎秒600トークン以上で処理します。NVIDIA B200 GPU 4基で1万件のソフトウェア開発タスクを約10時間で完了できます。NeMoによる追加学習に対応し、業務に合わせて調整することで処理コストの大幅な削減が可能です。",
+      "headline": "NVIDIAがマルチモーダルモデルNemotron 3.5 Super VLを公開",
+      "points": [
+        "1200億パラメータのMoE構造を採用し、文章や画像、動画を毎秒600トークン以上で処理します。",
+        "NVIDIA B200 GPU 4基で1万件のソフトウェア開発タスクを約10時間で完了できます。",
+        "NeMoによる追加学習に対応し、業務に合わせて調整することで処理コストの大幅な削減が可能です。"
+      ],
+      "impact": "独自業務へ導入する企業は、NVIDIA NeMoを用いて文書や社内規則に合わせた追加学習を行えます。",
+      "glossary": [
+        {
+          "term": "Mixture of Experts",
+          "explanation": "処理内容に応じてモデル内の一部の専門領域だけを選択して動かし、計算負荷を抑える仕組みです。"
+        },
+        {
+          "term": "マルチモーダル",
+          "explanation": "テキストだけでなく、画像や音声、動画など複数の異なる種類のデータを同時に扱うことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.infoq.com/news/2026/10/reverse-engineer-anything/",
+      "title": "Reverse Engineer Anything Project Brings AI Agents to Binary Analysis",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T06:28:00.000Z",
+      "summary": "コーディングエージェントをGhidraやIDAなどのリバースエンジニアリングツールに接続します。MCPサーバーを介してプログラムの関数呼び出しや挙動の追跡、仮説検証を自動で反復できます。MITライセンスで公開され、JavaScriptや.NETの静的解析にも対応しています。",
+      "headline": "バイナリ解析ツールとAIエージェントを繋ぐOSSプロジェクトが登場",
+      "points": [
+        "コーディングエージェントをGhidraやIDAなどのリバースエンジニアリングツールに接続します。",
+        "MCPサーバーを介してプログラムの関数呼び出しや挙動の追跡、仮説検証を自動で反復できます。",
+        "MITライセンスで公開され、JavaScriptや.NETの静的解析にも対応しています。"
+      ],
+      "impact": "利用者は合法的な研究や解析を行うため、必要な承認の取得や関連法令の遵守を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "リバースエンジニアリング",
+          "explanation": "完成したソフトウェアの構造や動作を分析し、元の仕組みや仕様を解明する技術のことです。"
+        },
+        {
+          "term": "バイナリ",
+          "explanation": "人間が読むテキストではなく、コンピュータが直接実行できるように変換された二進数のデータです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents/",
+      "title": "Google EnvHarness Enables Self-Evolving Agents to Learn in Dynamics Environments",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-16T19:00:00.000Z",
+      "summary": "Googleがエージェント学習環境を動的に適応させるEnvHarnessをオープンソース公開しました。元の環境構造や評価系を変更せず、標準インターフェースをラップして動作を変化させます。GeminiやClaudeなどによる検証で性能が2.9〜3.7ポイント向上しました。",
+      "headline": "GoogleがAIの弱点に応じ環境を適応させる基盤を公開",
+      "points": [
+        "Googleがエージェント学習環境を動的に適応させるEnvHarnessをオープンソース公開しました。",
+        "元の環境構造や評価系を変更せず、標準インターフェースをラップして動作を変化させます。",
+        "GeminiやClaudeなどによる検証で性能が2.9〜3.7ポイント向上しました。"
+      ],
+      "impact": "AIエージェントを訓練する開発者は、既存の評価系を保ったまま適応型環境での学習に活用できます。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "目標達成に向けて環境の観察や意思決定、行動を自律的に行うシステムです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://gigazine.net/news/20261017-agentsview/",
+      "title": "すべてのAIコーディングエージェントのコストを閲覧・検索・追跡しローカルで動作する「AgentsView」、Claude Code・Codex・Cursor・Copilot・Geminiなど60種類以上のエージェントを自動検出し全文検索も可能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T09:27:07.000Z",
+      "summary": "複数AIコーディングエージェントの利用量やコストをまとめて確認できるツールが登場しました。Claude CodeやCodexなどに対応し、会話履歴の全文検索や推定費用のグラフ表示が可能です。ローカルで動作し、日本語環境や複数PC間でのデータ統合にも対応しています。",
+      "headline": "AIコーディングの費用や履歴を追跡するAgentsView公開",
+      "points": [
+        "複数AIコーディングエージェントの利用量やコストをまとめて確認できるツールが登場しました。",
+        "Claude CodeやCodexなどに対応し、会話履歴の全文検索や推定費用のグラフ表示が可能です。",
+        "ローカルで動作し、日本語環境や複数PC間でのデータ統合にも対応しています。"
+      ],
+      "impact": "複数のAIツールを併用する開発者は、モデル別のトークン消費量や利用コストの把握に利用できます。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIモデルが入出力を処理する際にテキストを分割する最小単位のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://zenn.dev/ara_jlu/articles/diff-review-blind-spot",
+      "title": "Claude Codeのレビューが全部通ったのに残った書き漏れ、原因は差分だった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T11:54:37.000Z",
+      "summary": "変更のないファイルは差分に出ないため、別ファイルへの書き漏れがレビューを通過していました。差分内に「他へ反映した」旨の記述がある場合、その対象ファイルもレビュー対象に含めて対策しました。文章全体を頭から通して確認するレビューを別途設ける工夫も紹介されています。",
+      "headline": "差分確認に頼るAIレビューの見落とし原因と対策が共有",
+      "points": [
+        "変更のないファイルは差分に出ないため、別ファイルへの書き漏れがレビューを通過していました。",
+        "差分内に「他へ反映した」旨の記述がある場合、その対象ファイルもレビュー対象に含めて対策しました。",
+        "文章全体を頭から通して確認するレビューを別途設ける工夫も紹介されています。"
+      ],
+      "impact": "AIによるコードレビューを運用する開発者は、差分外のファイル検証手順を見直す必要があります。",
+      "glossary": [
+        {
+          "term": "差分（diff）",
+          "explanation": "プログラムや文章の変更前と変更後を比較したときの変更箇所のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/",
+      "title": "Amazon Acquires DuckLabs and Integrates DuckDB in Amazon Aurora PostgreSQL",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-17T06:00:00.000Z",
+      "summary": "AmazonがDuckDB開発元のDuckLabsを買収し、チームはAWSに合流しました。DuckDBや関連コンポーネントはMITライセンスのオープンソースとして維持されます。Amazon Aurora PostgreSQLに統合され、S3などの履歴データと直接統合クエリを実行可能です。",
+      "headline": "AmazonがDuckLabs買収とAuroraへのDuckDB統合を発表",
+      "points": [
+        "AmazonがDuckDB開発元のDuckLabsを買収し、チームはAWSに合流しました。",
+        "DuckDBや関連コンポーネントはMITライセンスのオープンソースとして維持されます。",
+        "Amazon Aurora PostgreSQLに統合され、S3などの履歴データと直接統合クエリを実行可能です。"
+      ],
+      "impact": "Aurora PostgreSQLを使う開発者は、複雑なETLを組まずに履歴データを含めた高速な分析を行えます。",
+      "glossary": [
+        {
+          "term": "ETL",
+          "explanation": "データを抽出（Extract）、変換（Transform）、保存（Load）する処理のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://inside.java/2026/10/17/podcast-072/",
+      "title": "Episode 72 “OpenJDK Bug Fixing, JavaOne, and JDK 28” [IJN]",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-17T00:00:00.000Z",
+      "summary": "2026年8月18日にhotspot-compiler-devで文字列が破損する重大なバグが報告されました。JDKのリリース候補段階で発生した問題への対処やJDK 27への修正対応などが紹介されています。番組内ではJavaOneや次期バージョンとなるJDK 28の話題も取り上げられています。",
+      "headline": "OpenJDKの重大バグ対応やJDK 28を公式配信が解説",
+      "points": [
+        "2026年8月18日にhotspot-compiler-devで文字列が破損する重大なバグが報告されました。",
+        "JDKのリリース候補段階で発生した問題への対処やJDK 27への修正対応などが紹介されています。",
+        "番組内ではJavaOneや次期バージョンとなるJDK 28の話題も取り上げられています。"
+      ],
+      "glossary": [
+        {
+          "term": "リリース候補",
+          "explanation": "正式公開の直前に、重大な不具合が残っていないか最終確認を行う段階の版のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://spring.io/blog/2026/10/15/a-bootiful-podcast-andrew-lombardi",
+      "title": "A Bootiful Podcast: Can Java be more performant than Rust? Andrew Lombardi has the numbers",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "summary": "アプリケーションをKotlinへ移植し、話題のRustでの書き換えと比較する実験が行われました。AIを活用して移植作業を進めた背景や、ベンチマークにおける落とし穴について議論されています。トークンコストやJVMの性能、Kotlinの型システムや読みやすさの利点にも触れています。",
+      "headline": "KotlinとRustの性能比較実験を開発者が配信で語る",
+      "points": [
+        "アプリケーションをKotlinへ移植し、話題のRustでの書き換えと比較する実験が行われました。",
+        "AIを活用して移植作業を進めた背景や、ベンチマークにおける落とし穴について議論されています。",
+        "トークンコストやJVMの性能、Kotlinの型システムや読みやすさの利点にも触れています。"
+      ],
+      "glossary": [
+        {
+          "term": "JVM",
+          "explanation": "Java仮想マシンの略称で、JavaやKotlinのプログラムを実行するための環境です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy",
+      "title": "35日でフロントエンドの基礎を完全に理解する #12 - 既存コードを読む",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-17T15:24:41.000Z",
+      "summary": "実務で遭遇しやすいOptions APIのコードを、Composition APIの知識に置き換えて読む方法を説明しています。dataやmethodsなどの役割を整理し、Vue 3でも正式にサポートされ続けている点に言及しています。package.jsonや起動方法などから、Vue 2世代のコードを見分けるポイントを紹介しています。",
+      "headline": "VueのOptions APIと古いコードの読み解き方を解説",
+      "points": [
+        "実務で遭遇しやすいOptions APIのコードを、Composition APIの知識に置き換えて読む方法を説明しています。",
+        "dataやmethodsなどの役割を整理し、Vue 3でも正式にサポートされ続けている点に言及しています。",
+        "package.jsonや起動方法などから、Vue 2世代のコードを見分けるポイントを紹介しています。"
+      ],
+      "impact": "既存のVueコードを扱う開発者は、急いで書き直さず各要素の対応関係を把握して読み進めることが推奨されます。",
+      "glossary": [
+        {
+          "term": "Options API",
+          "explanation": "Vueでdataやmethodsなどの決まった枠組みにコードを振り分けて記述する従来の書き方です。"
+        },
+        {
+          "term": "Composition API",
+          "explanation": "Vue 3から導入された、機能ごとに関連するコードをまとめて記述できる新しい書き方です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://github.com/vercel-labs/tsc-ts",
+      "title": "tsc-ts: TypeScript written in TypeScript",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-17T17:10:27Z",
+      "summary": "TypeScript-Go 7.0.2をTypeScriptで移植しネイティブ実行する試みです。scriptcでコンパイルされ、約12,500件のテストファイルでtsgoと出力の一致が検証されています。npmからインストール可能で、tsc-tsコマンドやAPIサーバーとして動作します。",
+      "headline": "TypeScriptで書かれた実験的コンパイラtsc-tsが公開",
+      "points": [
+        "TypeScript-Go 7.0.2をTypeScriptで移植しネイティブ実行する試みです。",
+        "scriptcでコンパイルされ、約12,500件のテストファイルでtsgoと出力の一致が検証されています。",
+        "npmからインストール可能で、tsc-tsコマンドやAPIサーバーとして動作します。"
+      ],
+      "impact": "実験的コンパイラを試したい開発者は、Node.js 24以上などの環境を用意してnpmから導入できます。",
+      "glossary": [
+        {
+          "term": "ネイティブコード",
+          "explanation": "仮想マシンなどを介さず、コンピュータのCPUが直接解釈して実行できる機械語のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://pele.run/",
+      "title": "Pele – Mermaid diagrams as themeable SVG",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-17T15:55:09Z",
+      "summary": "PeleはMermaid構文をSVGに変換するオープンソースのツールです。依存関係ゼロで、Mermaid.jsより最大500倍高速かつ軽量です。CSS変数によるテーマ変更に対応し、再描画なしで色を適用できます。",
+      "headline": "Mermaid図を高速にSVG出力するPeleが公開",
+      "points": [
+        "PeleはMermaid構文をSVGに変換するオープンソースのツールです。",
+        "依存関係ゼロで、Mermaid.jsより最大500倍高速かつ軽量です。",
+        "CSS変数によるテーマ変更に対応し、再描画なしで色を適用できます。"
+      ],
+      "impact": "Mermaid図をWebアプリやObsidian等で高速・軽量に表示したい開発者が利用できます。",
+      "glossary": [
+        {
+          "term": "SVG",
+          "explanation": "拡大縮小しても輪郭がぼやけず、きれいに表示できる画像形式。"
+        },
+        {
+          "term": "CSS変数",
+          "explanation": "ウェブページの色や数値を定義し、複数箇所で再利用できる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://gihyo.jp/article/2026/10/furifont",
+      "title": "漢字の上にふりがなを表示する日本語フォント「Furifont」オープンライセンスで公開 | gihyo.jp",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-16T11:10:40.000Z",
+      "summary": "Anthony Fu氏が漢字の上にふりがなを表示するフォントを公開しました。源ノ角ゴシック等を元に、合字の仕組みを用いてふりがなを表示します。ブックマークレットやWebフォントとしても利用可能です。",
+      "headline": "漢字にふりがなを表示するフォントFurifontが無償公開",
+      "points": [
+        "Anthony Fu氏が漢字の上にふりがなを表示するフォントを公開しました。",
+        "源ノ角ゴシック等を元に、合字の仕組みを用いてふりがなを表示します。",
+        "ブックマークレットやWebフォントとしても利用可能です。"
+      ],
+      "impact": "日本語学習者やWebサイトでふりがなを表示したい利用者が、フォントを導入して使えます。",
+      "glossary": [
+        {
+          "term": "合字",
+          "explanation": "複数の文字を組み合わせて1つの字形として表示するフォントの機能。"
+        },
+        {
+          "term": "異体字セレクタ",
+          "explanation": "同じ文字の別の形や読み分けなどを指定するための特殊な文字コード。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://qiita.com/k2_naka/items/fa87685231377f15e7e3",
+      "title": "CVE-2026-99999（PwnEscape）を読み解く──「KVMの脆弱性」ではなく、Linuxネットワークスタックの脆弱性 - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T17:16:58.000Z",
+      "summary": "CVE-2026-99999はLinuxカーネルのネットワーク処理にある脆弱性です。CVSS基本値は9.3と深刻で、ホストメモリ漏えいなどの恐れがあります。修正コミットがmainlineや主要stable系列に収録されました。",
+      "headline": "Linuxカーネルの通信処理に重大な脆弱性が判明",
+      "points": [
+        "CVE-2026-99999はLinuxカーネルのネットワーク処理にある脆弱性です。",
+        "CVSS基本値は9.3と深刻で、ホストメモリ漏えいなどの恐れがあります。",
+        "修正コミットがmainlineや主要stable系列に収録されました。"
+      ],
+      "impact": "影響を受けるLinuxを運用する管理者は、配布先の修正状況を確認しカーネルを更新する必要があります。",
+      "glossary": [
+        {
+          "term": "カーネル",
+          "explanation": "OSの中核として、ハードウェアやメモリ、通信を制御する基本プログラム。"
+        },
+        {
+          "term": "CVSS",
+          "explanation": "セキュリティ上の欠陥（脆弱性）の深刻度を0から10の数値で評価する国際基準。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://dev.classmethod.jp/articles/aws-security-bulletin-2026-137-kvm-kernel/",
+      "title": "AWS セキュリティ速報 2026-137-AWS（CVE-2026-99999）は通常の EC2 は対象外。影響範囲を確認してみた | DevelopersIO",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T17:50:16.000Z",
+      "summary": "通常のEC2等は対象外で、KVMを自前管理するホストが影響対象です。ネスト仮想化やベアメタルでVMを動かすホストが該当します。回避策はなく、修正済みカーネルを適用する必要があると案内されています。",
+      "headline": "AWSがCVE-2026-99999の影響範囲と対応を公開",
+      "points": [
+        "通常のEC2等は対象外で、KVMを自前管理するホストが影響対象です。",
+        "ネスト仮想化やベアメタルでVMを動かすホストが該当します。",
+        "回避策はなく、修正済みカーネルを適用する必要があると案内されています。"
+      ],
+      "impact": "ネスト仮想化やベアメタルでKVMを自前運用する利用者は、修正済みカーネルを適用する必要があります。",
+      "glossary": [
+        {
+          "term": "ネスト仮想化",
+          "explanation": "仮想マシンの中でさらに別の仮想マシンを起動して動かす技術。"
+        },
+        {
+          "term": "ベアメタル",
+          "explanation": "仮想化レイヤーを挟まず、クラウドの物理サーバーを直接専有して利用する形態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
+      "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-16T20:04:00.000Z",
+      "summary": "複数アカウントや地域のログを1つのアカウントに集約できる機能が対象を拡大しました。AWS GovCloud（米国）と商業用の計15リージョンで新たに対応しました。ログのコピーは1件目が無料で、追加のコピーには1GBあたり0.05ドルかかります。",
+      "headline": "CloudWatchのログ集約機能がGovCloudなど15地域に拡大",
+      "points": [
+        "複数アカウントや地域のログを1つのアカウントに集約できる機能が対象を拡大しました。",
+        "AWS GovCloud（米国）と商業用の計15リージョンで新たに対応しました。",
+        "ログのコピーは1件目が無料で、追加のコピーには1GBあたり0.05ドルかかります。"
+      ],
+      "impact": "対象リージョンを利用する管理者は、コンソールやCLIからログの集約ルールを作成できます。",
+      "glossary": [
+        {
+          "term": "AWS GovCloud",
+          "explanation": "米国政府機関や厳格な規制要件を持つ組織向けに提供されている隔離されたリージョン。"
+        },
+        {
+          "term": "AWS Organizations",
+          "explanation": "複数のAWSアカウントを一括して管理・統合できるガバナンスサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://lwn.net/Articles/1088776/",
+      "title": "Development statistics for the 7.2 kernel",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-17T17:14:12Z",
+      "summary": "2026年8月17日に公開されたLinux 7.2は約60万行のコードが追加されました。マージを除いたコミット数は1万6418件で、歴代2位の規模となりました。貢献した開発者数は2652人に達し、前バージョンの記録を更新しました。",
+      "headline": "Linux 7.2が歴代2位のコミット数と過去最多の開発者数を記録",
+      "points": [
+        "2026年8月17日に公開されたLinux 7.2は約60万行のコードが追加されました。",
+        "マージを除いたコミット数は1万6418件で、歴代2位の規模となりました。",
+        "貢献した開発者数は2652人に達し、前バージョンの記録を更新しました。"
+      ],
+      "glossary": [
+        {
+          "term": "コミット",
+          "explanation": "プログラムの変更内容をバージョン管理システムに記録・確定すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://japan.cnet.com/article/35253656/",
+      "title": "亡くなった声優の声、AIでの再現は原則禁止 日俳連が新指針",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-17T00:21:27.000Z",
+      "summary": "俳優や声優の声をAIで学習・再現・利用する際は個別の書面同意を義務付けました。同意期間は原則最長1年とし、通常の出演料とは別に対価を支払うよう求めています。故人の声をAIで再現することは、生前の承諾など一部の例外を除き原則禁止としました。",
+      "headline": "日俳連が声のAI利用に関する指針を発表し故人再現は原則禁止に",
+      "points": [
+        "俳優や声優の声をAIで学習・再現・利用する際は個別の書面同意を義務付けました。",
+        "同意期間は原則最長1年とし、通常の出演料とは別に対価を支払うよう求めています。",
+        "故人の声をAIで再現することは、生前の承諾など一部の例外を除き原則禁止としました。"
+      ],
+      "impact": "制作会社やAI開発企業は、声優の音声を利用する際に事前同意の取得と対価の支払いが求められます。",
+      "glossary": [
+        {
+          "term": "生成AI",
+          "explanation": "テキストや画像、音声などの新しいコンテンツを自動で作り出す人工知能技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://www.itmedia.co.jp/news/article/2610/17/2000002349/",
+      "title": "BASE子会社の漏えい、約2335万人分に 209万人分はクレカ番号「先頭6桁と下4桁」「有効期限」も",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-17T00:57:57.000Z",
+      "summary": "Eストアーの「ショップサーブ」が不正アクセスを受け、大量の個人情報が流出しました。流出は約2335万人分で、約209万人分はカード番号の一部なども含まれます。脆弱性を悪用され、5月21日から8月1日まで情報が外部へ不正送信されていました。",
+      "headline": "BASE子会社のEC支援サービスで約2335万人分の情報が漏えい",
+      "points": [
+        "Eストアーの「ショップサーブ」が不正アクセスを受け、大量の個人情報が流出しました。",
+        "流出は約2335万人分で、約209万人分はカード番号の一部なども含まれます。",
+        "脆弱性を悪用され、5月21日から8月1日まで情報が外部へ不正送信されていました。"
+      ],
+      "impact": "個別連絡が届かない利用者は、公表内容や設置された問い合わせ窓口を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "脆弱性",
+          "explanation": "プログラムやシステムの設計・実装上の欠陥によるセキュリティ上の弱点。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 90,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26111,
+    "outputTokens": 14299
+  },
+  "offline": false
+}

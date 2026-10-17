@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-16T19:58:08.169Z",
+  "lastRun": "2026-10-17T19:26:56.248Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -279,6 +279,26 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion": "2026-10-17",
     "https://aws.amazon.com/jp/blogs/news/detecting-multi-stage-attacks-on-aws-a-guide-to-cross-service-signal-correlation": "2026-10-17",
     "https://www.infoq.com/presentations/ai-security-kubernetes-gpu-threats": "2026-10-17",
-    "https://www.anthropic.com/research/ecdsa-curve-origins": "2026-10-17"
+    "https://www.anthropic.com/research/ecdsa-curve-origins": "2026-10-17",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017": "2026-10-18",
+    "https://claude.dev/blog/solving-code-review-at-anthropic": "2026-10-18",
+    "https://gigazine.net/news/20261016-nemotron-3-5-super-vl": "2026-10-18",
+    "https://www.infoq.com/news/2026/10/reverse-engineer-anything": "2026-10-18",
+    "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents": "2026-10-18",
+    "https://gigazine.net/news/20261017-agentsview": "2026-10-18",
+    "https://zenn.dev/ara_jlu/articles/diff-review-blind-spot": "2026-10-18",
+    "https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs": "2026-10-18",
+    "https://inside.java/2026/10/17/podcast-072": "2026-10-18",
+    "https://spring.io/blog/2026/10/15/a-bootiful-podcast-andrew-lombardi": "2026-10-18",
+    "https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy": "2026-10-18",
+    "https://github.com/vercel-labs/tsc-ts": "2026-10-18",
+    "https://pele.run/": "2026-10-18",
+    "https://gihyo.jp/article/2026/10/furifont": "2026-10-18",
+    "https://qiita.com/k2_naka/items/fa87685231377f15e7e3": "2026-10-18",
+    "https://dev.classmethod.jp/articles/aws-security-bulletin-2026-137-kvm-kernel": "2026-10-18",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion": "2026-10-18",
+    "https://lwn.net/Articles/1088776": "2026-10-18",
+    "https://japan.cnet.com/article/35253656": "2026-10-18",
+    "https://www.itmedia.co.jp/news/article/2610/17/2000002349": "2026-10-18"
   }
 }
