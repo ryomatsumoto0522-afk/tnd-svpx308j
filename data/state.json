@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-17T19:26:56.248Z",
+  "lastRun": "2026-10-18T19:27:08.545Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -299,6 +299,24 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion": "2026-10-18",
     "https://lwn.net/Articles/1088776": "2026-10-18",
     "https://japan.cnet.com/article/35253656": "2026-10-18",
-    "https://www.itmedia.co.jp/news/article/2610/17/2000002349": "2026-10-18"
+    "https://www.itmedia.co.jp/news/article/2610/17/2000002349": "2026-10-18",
+    "https://note.com/npaka/n/ndb4b0f424ced": "2026-10-19",
+    "https://api-docs.deepseek.com/guides/search": "2026-10-19",
+    "https://engineering.dena.com/blog/2026/10/ai-agent-onboarding": "2026-10-19",
+    "https://japan.cnet.com/article/35253671": "2026-10-19",
+    "https://www.infoq.com/news/2026/10/aws-well-architected-agent": "2026-10-19",
+    "https://fd-x.co.jp/insights/41-what-is-ontology": "2026-10-19",
+    "https://www.infoq.com/news/2026/10/google-pyrefly-python": "2026-10-19",
+    "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching": "2026-10-19",
+    "https://teal-language.org/": "2026-10-19",
+    "https://azukiazusa.dev/blog/void-vite-cloudflare-deploy": "2026-10-19",
+    "https://simonwillison.net/2026/Oct/17/document-currentscript": "2026-10-19",
+    "https://speakerdeck.com/a_matsuda/web-framework-benchmark-battle-2026-any-percent": "2026-10-19",
+    "https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise": "2026-10-19",
+    "https://wirelesswire.jp/2026/10/94793": "2026-10-19",
+    "https://t3.at/blog/2026-10-17-parser-combinators": "2026-10-19",
+    "https://deepmind.google/blog/accelerating-antimicrobial-discovery": "2026-10-19",
+    "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm": "2026-10-19",
+    "https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830": "2026-10-19"
   }
 }

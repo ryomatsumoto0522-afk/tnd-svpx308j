@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-18T19:27:08.545Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://note.com/npaka/n/ndb4b0f424ced",
+      "title": "AnthropicのAI時代のコードレビュー術 - Claude Codeによる自動レビューと人間の役割｜npaka",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T02:09:01.000Z",
+      "summary": "AI生成コードの急増に対応し、多層レビューとリスクに応じた人間の承認を組み合わせた開発プロセスを導入しました。PR数は2倍以上に増えリバート率は40%以上低下し、レビューコメントが付くPR割合も16%から54%に改善しました。誤検知削減のための複数AIによる検証や、無限レビューを防ぐため3回レビュー後の再検討ルールなどを設けています。",
+      "headline": "AnthropicがAIを活用した多層コードレビューの仕組みを公開",
+      "points": [
+        "AI生成コードの急増に対応し、多層レビューとリスクに応じた人間の承認を組み合わせた開発プロセスを導入しました。",
+        "PR数は2倍以上に増えリバート率は40%以上低下し、レビューコメントが付くPR割合も16%から54%に改善しました。",
+        "誤検知削減のための複数AIによる検証や、無限レビューを防ぐため3回レビュー後の再検討ルールなどを設けています。"
+      ],
+      "impact": "Claude Codeの利用者は、専用コマンドや設定を通じてAIによるコードやセキュリティのレビュー機能を利用できます。",
+      "glossary": [
+        {
+          "term": "プルリクエスト",
+          "explanation": "自身が変更したコードを開発リポジトリに取り込むよう提案し、レビューを依頼する仕組みのことです。"
+        },
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトやサービスのソースコードを、単一のリポジトリで統合して管理する手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-18T06:50:36Z",
+      "summary": "エージェントやRAG向けに、検索結果を返すSearch APIとWebページをMarkdownで取得するFetch APIを提供します。利用料金は成功したリクエスト1,000件あたり0.75ドルで、既存のDeepSeek APIと同じ認証方式を採用しています。検索APIではサイト指定や除外、言語、公開日の期間指定など各種検索演算子を利用できます。",
+      "headline": "DeepSeekがウェブ検索と取得を行える2つのAPIを公開",
+      "points": [
+        "エージェントやRAG向けに、検索結果を返すSearch APIとWebページをMarkdownで取得するFetch APIを提供します。",
+        "利用料金は成功したリクエスト1,000件あたり0.75ドルで、既存のDeepSeek APIと同じ認証方式を採用しています。",
+        "検索APIではサイト指定や除外、言語、公開日の期間指定など各種検索演算子を利用できます。"
+      ],
+      "impact": "DeepSeekのAPIを利用する開発者は、同じ認証情報を用いて検索やWebページの取得機能を実装できます。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部情報の検索と生成AIを組み合わせ、正確で最新の知識に基づいた回答を生成させる技術です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/",
+      "title": "オンボーディングをAIエージェントに任せたら、もはや別ゲーだった | BLOG - DeNA Engineering",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-17T11:42:36.000Z",
+      "summary": "新規メンバーの受け入れ資料をGitHubに集約し、Claude Codeが伴走して自習や環境構築を進める仕組みを構築しました。資料の二重管理を防ぐため、リポジトリ側には本文を持たせず正本の所在情報と解決ルールのみを記述しています。メンバーのスキル差による進捗のばらつきや、受け入れ担当者の説明工数が増加する課題の解消を目指しています。",
+      "headline": "DeNAがAIエージェントを活用した受入れ体制の構築事例を公開",
+      "points": [
+        "新規メンバーの受け入れ資料をGitHubに集約し、Claude Codeが伴走して自習や環境構築を進める仕組みを構築しました。",
+        "資料の二重管理を防ぐため、リポジトリ側には本文を持たせず正本の所在情報と解決ルールのみを記述しています。",
+        "メンバーのスキル差による進捗のばらつきや、受け入れ担当者の説明工数が増加する課題の解消を目指しています。"
+      ],
+      "glossary": [
+        {
+          "term": "オンボーディング",
+          "explanation": "組織やチームに新しく加わったメンバーが、業務に早期に適応できるように支援・定着させる取り組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://japan.cnet.com/article/35253671/",
+      "title": "Claude、暗号技術の「25年来の謎」を30分足らずで解明",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-18T01:39:48.000Z",
+      "summary": "電子署名規格ECDSAでNSAが提供したシード値の生成手順を突き止め、日時の初期値とC言語の乱数生成機能で再現しました。単純な手法で作られていたことが判明し、意図的な弱点が仕込まれていた可能性が低くなったと説明されています。暗号自体が解読されたわけではなく、獲得した報奨金36,864ドルはセキュリティ非営利団体へ全額寄付されました。",
+      "headline": "Claudeが暗号規格に残された25年来の謎を30分足らずで解明",
+      "points": [
+        "電子署名規格ECDSAでNSAが提供したシード値の生成手順を突き止め、日時の初期値とC言語の乱数生成機能で再現しました。",
+        "単純な手法で作られていたことが判明し、意図的な弱点が仕込まれていた可能性が低くなったと説明されています。",
+        "暗号自体が解読されたわけではなく、獲得した報奨金36,864ドルはセキュリティ非営利団体へ全額寄付されました。"
+      ],
+      "impact": "利用者側の設定変更などの対応は不要であると説明されています。",
+      "glossary": [
+        {
+          "term": "電子署名",
+          "explanation": "作成者の身元を証明し、データが送信途中で改ざんされていないことを検証するための暗号化された署名技術です。"
+        },
+        {
+          "term": "シード",
+          "explanation": "乱数を生成する計算処理において、初期値として入力される数値のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.infoq.com/news/2026/10/aws-well-architected-agent/",
+      "title": "AWS Introduces Preview of Well-Architected Agent",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-18T14:29:00.000Z",
+      "summary": "環境を分析して改善提案やIaC修正を行うAIエージェントです。65以上のAWSサービスに対応し、構成や利用指標を関連付けます。米国3リージョンかつBusiness Support+以上の顧客が利用できます。",
+      "headline": "AWSがWell-Architected Agentのプレビューを発表",
+      "points": [
+        "環境を分析して改善提案やIaC修正を行うAIエージェントです。",
+        "65以上のAWSサービスに対応し、構成や利用指標を関連付けます。",
+        "米国3リージョンかつBusiness Support+以上の顧客が利用できます。"
+      ],
+      "impact": "利用者はAIの提案に誤りが含まれる可能性を考慮し、適切に検証する必要があります。",
+      "glossary": [
+        {
+          "term": "Well-Architected",
+          "explanation": "クラウド設計のベストプラクティスに基づきシステムを評価・改善する枠組み。"
+        },
+        {
+          "term": "IaC",
+          "explanation": "サーバーやネットワークなどのインフラ構成をコードで定義・管理する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://fd-x.co.jp/insights/41-what-is-ontology",
+      "title": "オントロジーとは？意味・ナレッジグラフとの違い・LLMでの効果",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-18T02:55:30.000Z",
+      "summary": "オントロジーはデータを業務概念や関係性で定義する意味の地図です。AIの業務実行やLLMによる作成負担の低下を機に再注目されています。主要データ基盤も文脈を与えるセマンティック層の採用を進めています。",
+      "headline": "AIエージェント時代におけるオントロジーの役割を解説",
+      "points": [
+        "オントロジーはデータを業務概念や関係性で定義する意味の地図です。",
+        "AIの業務実行やLLMによる作成負担の低下を機に再注目されています。",
+        "主要データ基盤も文脈を与えるセマンティック層の採用を進めています。"
+      ],
+      "impact": "データ基盤やAI活用を設計する責任者は、概念定義の導入を検討できます。",
+      "glossary": [
+        {
+          "term": "オントロジー",
+          "explanation": "対象領域の概念や関係性を機械が解釈可能な形式で体系化した定義のこと。"
+        },
+        {
+          "term": "ナレッジグラフ",
+          "explanation": "オントロジーで定義された設計図に、実データを流し込んで結びつけた構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://www.infoq.com/news/2026/10/google-pyrefly-python/",
+      "title": "Google Adopts Pyrefly for Faster, More Accurate Python Type Checking",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-18T15:00:00.000Z",
+      "summary": "従来のPytypeからMeta開発のRust製ツールへ移行しました。Pytype比で約10倍高速化し、ピーク計算コストを8割超削減します。型仕様適合テストの約97%に合格し、修正候補も提示します。",
+      "headline": "GoogleがPython型チェッカーをPyreflyへ刷新",
+      "points": [
+        "従来のPytypeからMeta開発のRust製ツールへ移行しました。",
+        "Pytype比で約10倍高速化し、ピーク計算コストを8割超削減します。",
+        "型仕様適合テストの約97%に合格し、修正候補も提示します。"
+      ],
+      "glossary": [
+        {
+          "term": "型チェッカー",
+          "explanation": "プログラムを実行せずに、変数の型定義の整合性を静的に検証するツール。"
+        },
+        {
+          "term": "AST",
+          "explanation": "プログラムのソースコードの構文関係を木構造として表現した抽象構文木。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+      "title": "Java sealed classes and exhaustive pattern matching",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-18T14:47:37Z",
+      "summary": "サブタイプを制限し、switch文での網羅性チェックを可能にします。新たな型の追加は利用側のコードを壊す破壊的変更につながります。利用側が未再コンパイルの場合、実行時に例外が発生する恐れがあります。",
+      "headline": "Javaのsealedクラスによる網羅的検証と互換性の注意点を解説",
+      "points": [
+        "サブタイプを制限し、switch文での網羅性チェックを可能にします。",
+        "新たな型の追加は利用側のコードを壊す破壊的変更につながります。",
+        "利用側が未再コンパイルの場合、実行時に例外が発生する恐れがあります。"
+      ],
+      "impact": "ライブラリ開発者は、sealed型を公開APIで安易に露出させないよう注意が必要です。",
+      "glossary": [
+        {
+          "term": "sealedクラス",
+          "explanation": "継承や実装を許可するサブクラスを明示的に制限するJavaの機能。"
+        },
+        {
+          "term": "パターンマッチング",
+          "explanation": "データの型や構造に応じて柔軟に条件分岐を行うためのプログラミング構文。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://teal-language.org/",
+      "title": "Teal – A statically-typed dialect of Lua",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-16T21:07:24Z",
+      "summary": "Luaに型注釈やジェネリクス、ユニオン型などを拡張した言語です。コンパイラtlを用いてTealコードを通常のLuaコードへ変換します。ビルドツールCyanや主要エディタ用プラグインも提供されています。",
+      "headline": "Luaに静的型付けを追加する方言「Teal」が提供中",
+      "points": [
+        "Luaに型注釈やジェネリクス、ユニオン型などを拡張した言語です。",
+        "コンパイラtlを用いてTealコードを通常のLuaコードへ変換します。",
+        "ビルドツールCyanや主要エディタ用プラグインも提供されています。"
+      ],
+      "impact": "Luaで型安全な開発を行いたい開発者が導入して利用できます。",
+      "glossary": [
+        {
+          "term": "静的型付け",
+          "explanation": "プログラムの実行前に変数のデータ型を検証・決定する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://azukiazusa.dev/blog/void-vite-cloudflare-deploy/",
+      "title": "Void でフルスタックアプリを構築して Cloudflare にデプロイする",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-18T08:20:03.000Z",
+      "summary": "Vite製フルスタックアプリをCloudflareへ手軽にデプロイできます。コードのimport文から必要なクラウド資源を自動で推論・作成します。Drizzle ORMを同梱し、D1やKV等の接続設定を不要にします。",
+      "headline": "VoidZeroがCloudflare向け開発基盤「Void」を公開",
+      "points": [
+        "Vite製フルスタックアプリをCloudflareへ手軽にデプロイできます。",
+        "コードのimport文から必要なクラウド資源を自動で推論・作成します。",
+        "Drizzle ORMを同梱し、D1やKV等の接続設定を不要にします。"
+      ],
+      "impact": "Cloudflare向けのWebアプリをViteで効率的に構築したい開発者が使えます。",
+      "glossary": [
+        {
+          "term": "フルスタック",
+          "explanation": "画面表示からサーバー側の処理やデータベースまで一括で扱うこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+      "title": "Inline rendering with document​.currentScript",
+      "source": "Simon Willison",
+      "genre": "frontend",
+      "publishedAt": "2026-10-17T21:11:12.000Z",
+      "summary": "実行中のscript要素自身を実行結果に置き換えて描画する手法です。replaceWithメソッドを用い、読み込み時に内容を直接書き換えます。短縮関数を定義することで超軽量なテンプレートとして機能します。",
+      "headline": "document.currentScriptによるインライン置換手法が紹介",
+      "points": [
+        "実行中のscript要素自身を実行結果に置き換えて描画する手法です。",
+        "replaceWithメソッドを用い、読み込み時に内容を直接書き換えます。",
+        "短縮関数を定義することで超軽量なテンプレートとして機能します。"
+      ],
+      "impact": "外部ライブラリを使わずに軽量な動的表示を行いたい開発者が試せます。",
+      "glossary": [
+        {
+          "term": "DOM",
+          "explanation": "HTML文書の要素をプログラムから参照・操作するための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://speakerdeck.com/a_matsuda/web-framework-benchmark-battle-2026-any-percent",
+      "title": "Web Framework Benchmark Battle 2026, Any%",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-18T08:37:44.000Z",
+      "summary": "オブジェクト生成数を指標に地道なマイクロチューニングを実施しました。測定対象のエンドポイントで最大15%の実行時間短縮を達成しています。最適化作業やコンフリクト解消の工程にAIツールを活用しています。",
+      "headline": "Rails 8.2でアロケーション削減により最大15%高速化を達成",
+      "points": [
+        "オブジェクト生成数を指標に地道なマイクロチューニングを実施しました。",
+        "測定対象のエンドポイントで最大15%の実行時間短縮を達成しています。",
+        "最適化作業やコンフリクト解消の工程にAIツールを活用しています。"
+      ],
+      "impact": "Railsの最新版を利用する開発者がパフォーマンス改善の恩恵を受けられます。",
+      "glossary": [
+        {
+          "term": "マイクロオプティマイゼーション",
+          "explanation": "プログラムの微小な処理を局所的に最適化して高速化する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/",
+      "title": "AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-18T05:30:00.000Z",
+      "summary": "AWSが欧州ソブリンクラウドをグローバルバックボーンから数時間切り離して稼働を検証します。ブランデンブルクのデータセンターを使い、EU居住者のみで構成されたチームが運用します。ルート収束時に顧客側で短時間の接続中断が発生する可能性があります。",
+      "headline": "AWSが欧州ソブリンクラウドで数時間の通信遮断試験を実施",
+      "points": [
+        "AWSが欧州ソブリンクラウドをグローバルバックボーンから数時間切り離して稼働を検証します。",
+        "ブランデンブルクのデータセンターを使い、EU居住者のみで構成されたチームが運用します。",
+        "ルート収束時に顧客側で短時間の接続中断が発生する可能性があります。"
+      ],
+      "impact": "利用顧客はルート収束による一時的な中断に注意し、試験結果を法令順守の証明に活用できます。",
+      "glossary": [
+        {
+          "term": "ソブリンクラウド",
+          "explanation": "データの管理や運用を特定地域の法規制や主権に従って行うクラウドサービス。"
+        },
+        {
+          "term": "バックボーン",
+          "explanation": "ネットワークの中心として大量のデータを高速で送受信する基幹通信網。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://wirelesswire.jp/2026/10/94793/",
+      "title": "日本企業がサーバーに侵入されまくっている現状を鑑み、「絶対無敵を目指すOS」を作ってみた。耐量子暗号HTTPSサーバー専用OS",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-18T01:39:42.000Z",
+      "summary": "マイクロカーネルseL4をベースに、シェルやSSHを排除したHTTPS専用OSが開発されました。機能を5つの領域に分離し、権限を最小化する設計でシステム全体の乗っ取りを防ぎます。重要な部分をRustで記述し、検証ツールKaniで13件の形式検証を実施しています。",
+      "headline": "HTTPSサーバー専用のセキュアOS「QEDOS」を開発",
+      "points": [
+        "マイクロカーネルseL4をベースに、シェルやSSHを排除したHTTPS専用OSが開発されました。",
+        "機能を5つの領域に分離し、権限を最小化する設計でシステム全体の乗っ取りを防ぎます。",
+        "重要な部分をRustで記述し、検証ツールKaniで13件の形式検証を実施しています。"
+      ],
+      "glossary": [
+        {
+          "term": "マイクロカーネル",
+          "explanation": "OSの中核機能を最小限に抑え、多くの機能を独立した部品として動かす設計。"
+        },
+        {
+          "term": "形式検証",
+          "explanation": "プログラムが仕様通りに正しく動作することを数学的な論理を用いて証明する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+      "title": "Parser Combinators",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-18T08:19:53Z",
+      "summary": "パーサーコンビネータを用いて文字列を解析し構造化データへ変換する仕組みが解説されました。入力文字列から結果と残りの文字列の組を返す小さな関数を基本要素として定義します。pSeqなどの関数を組み合わせ、pingの実行結果ログなどを段階的に解析できます。",
+      "headline": "パーサーコンビネータの仕組みと具体的な解析手法を解説",
+      "points": [
+        "パーサーコンビネータを用いて文字列を解析し構造化データへ変換する仕組みが解説されました。",
+        "入力文字列から結果と残りの文字列の組を返す小さな関数を基本要素として定義します。",
+        "pSeqなどの関数を組み合わせ、pingの実行結果ログなどを段階的に解析できます。"
+      ],
+      "glossary": [
+        {
+          "term": "パーサーコンビネータ",
+          "explanation": "小さな構文解析関数を組み合わせて、複雑なデータ解析器を構築する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "summary": "Google Antigravityを用いて呼吸器感染症向けの新規抗菌ペプチド候補を発見しました。タンパク質モデルProtNLMにより、UniProt内の未分類配列から機能を予測します。研究者とAIが協働して候補を特定し、現在は実験室での検証が進められています。",
+      "headline": "GoogleがAI基盤を用いた抗菌ペプチド探索の高速化を発表",
+      "points": [
+        "Google Antigravityを用いて呼吸器感染症向けの新規抗菌ペプチド候補を発見しました。",
+        "タンパク質モデルProtNLMにより、UniProt内の未分類配列から機能を予測します。",
+        "研究者とAIが協働して候補を特定し、現在は実験室での検証が進められています。"
+      ],
+      "glossary": [
+        {
+          "term": "抗菌ペプチド",
+          "explanation": "細菌の細胞膜などを破壊して増殖を抑える、生体が持つ防御性タンパク質。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm",
+      "title": "技術書を年に数冊しか買わない自分に、O'Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-18T01:26:27.000Z",
+      "summary": "ACM会員向けオプションを経由することでO'Reillyを初年度150ドルから利用できます。直契約の年499ドルに比べ安価で、一部対象外機能があるもののAWSサンドボックス等も利用できました。年に数冊しか本を買わない場合でも、必要な部分をつまみ読みできる点に価値があるとされています。",
+      "headline": "ACM経由のO'Reillyサブスク契約の費用対効果が検証される",
+      "points": [
+        "ACM会員向けオプションを経由することでO'Reillyを初年度150ドルから利用できます。",
+        "直契約の年499ドルに比べ安価で、一部対象外機能があるもののAWSサンドボックス等も利用できました。",
+        "年に数冊しか本を買わない場合でも、必要な部分をつまみ読みできる点に価値があるとされています。"
+      ],
+      "impact": "O'Reillyをお得に使いたい人は、ACM経由の契約や利用可能な機能の差を確認するとよいです。",
+      "glossary": [
+        {
+          "term": "ACM",
+          "explanation": "計算機科学分野における国際的な学会および教育機関です。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のデータやツールを安全に接続するための仕様です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830",
+      "title": "知らない分野を学ぶ技術 powered by AI - ぷりんの雑記帳",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-17T17:43:11.000Z",
+      "summary": "AIに質問を重ねることで、目標達成に必要な前提知識や学習分野を洗い出して整理します。ガロア理論の例では、基本定理の理解に必要な線形代数や群論などの構成要素がAIから提示されました。自分がどこまで理解しているかを厳しめに判定し、専用の最短カリキュラム作成につなげます。",
+      "headline": "AIと対話して未知の分野の学習ロードマップを作る方法が紹介される",
+      "points": [
+        "AIに質問を重ねることで、目標達成に必要な前提知識や学習分野を洗い出して整理します。",
+        "ガロア理論の例では、基本定理の理解に必要な線形代数や群論などの構成要素がAIから提示されました。",
+        "自分がどこまで理解しているかを厳しめに判定し、専用の最短カリキュラム作成につなげます。"
+      ],
+      "impact": "AIを活用して独学を進めたい人は、まずAIとの対話で全体像を把握し必要な知識を整理するとよいです。",
+      "glossary": [
+        {
+          "term": "ガロア理論",
+          "explanation": "方程式の解の対称性を群の概念を用いて調べ、解法などを判定する数学の理論です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 80,
+    "shortlisted": 57,
+    "bodyFailures": 5,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 32303,
+    "outputTokens": 13454
+  },
+  "offline": false
+}

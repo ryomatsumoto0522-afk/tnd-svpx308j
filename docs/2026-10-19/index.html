@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-19</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月19日(月)</p>
+<p class="meta">更新 2026-10-19 04:27 · 取得ソース 18/18 · 選定 18件（候補 57件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://note.com/npaka/n/ndb4b0f424ced" target="_blank" rel="noopener noreferrer">AnthropicがAIを活用した多層コードレビューの仕組みを公開</a></h3>
+<p class="orig">原題: AnthropicのAI時代のコードレビュー術 - Claude Codeによる自動レビューと人間の役割｜npaka</p>
+<p class="src">出典: <a href="https://note.com/npaka/n/ndb4b0f424ced" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>AI生成コードの急増に対応し、多層レビューとリスクに応じた人間の承認を組み合わせた開発プロセスを導入しました。</li><li>PR数は2倍以上に増えリバート率は40%以上低下し、レビューコメントが付くPR割合も16%から54%に改善しました。</li><li>誤検知削減のための複数AIによる検証や、無限レビューを防ぐため3回レビュー後の再検討ルールなどを設けています。</li></ul><p class="impact"><b>影響</b>Claude Codeの利用者は、専用コマンドや設定を通じてAIによるコードやセキュリティのレビュー機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>プルリクエスト</dt><dd>自身が変更したコードを開発リポジトリに取り込むよう提案し、レビューを依頼する仕組みのことです。</dd><dt>モノレポ</dt><dd>複数のプロジェクトやサービスのソースコードを、単一のリポジトリで統合して管理する手法です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://api-docs.deepseek.com/guides/search/" target="_blank" rel="noopener noreferrer">DeepSeekがウェブ検索と取得を行える2つのAPIを公開</a></h3>
+<p class="orig">原題: DeepSeek search and fetch – $0.75 per 1000 successful requests</p>
+<p class="src">出典: <a href="https://api-docs.deepseek.com/guides/search/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>エージェントやRAG向けに、検索結果を返すSearch APIとWebページをMarkdownで取得するFetch APIを提供します。</li><li>利用料金は成功したリクエスト1,000件あたり0.75ドルで、既存のDeepSeek APIと同じ認証方式を採用しています。</li><li>検索APIではサイト指定や除外、言語、公開日の期間指定など各種検索演算子を利用できます。</li></ul><p class="impact"><b>影響</b>DeepSeekのAPIを利用する開発者は、同じ認証情報を用いて検索やWebページの取得機能を実装できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RAG</dt><dd>外部情報の検索と生成AIを組み合わせ、正確で最新の知識に基づいた回答を生成させる技術です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/" target="_blank" rel="noopener noreferrer">DeNAがAIエージェントを活用した受入れ体制の構築事例を公開</a></h3>
+<p class="orig">原題: オンボーディングをAIエージェントに任せたら、もはや別ゲーだった | BLOG - DeNA Engineering</p>
+<p class="src">出典: <a href="https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>新規メンバーの受け入れ資料をGitHubに集約し、Claude Codeが伴走して自習や環境構築を進める仕組みを構築しました。</li><li>資料の二重管理を防ぐため、リポジトリ側には本文を持たせず正本の所在情報と解決ルールのみを記述しています。</li><li>メンバーのスキル差による進捗のばらつきや、受け入れ担当者の説明工数が増加する課題の解消を目指しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>オンボーディング</dt><dd>組織やチームに新しく加わったメンバーが、業務に早期に適応できるように支援・定着させる取り組みです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://note.com/npaka/n/ndb4b0f424ced" target="_blank" rel="noopener noreferrer">AnthropicがAIを活用した多層コードレビューの仕組みを公開</a></h3>
+<p class="orig">原題: AnthropicのAI時代のコードレビュー術 - Claude Codeによる自動レビューと人間の役割｜npaka</p>
+<p class="src">出典: <a href="https://note.com/npaka/n/ndb4b0f424ced" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>AI生成コードの急増に対応し、多層レビューとリスクに応じた人間の承認を組み合わせた開発プロセスを導入しました。</li><li>PR数は2倍以上に増えリバート率は40%以上低下し、レビューコメントが付くPR割合も16%から54%に改善しました。</li><li>誤検知削減のための複数AIによる検証や、無限レビューを防ぐため3回レビュー後の再検討ルールなどを設けています。</li></ul><p class="impact"><b>影響</b>Claude Codeの利用者は、専用コマンドや設定を通じてAIによるコードやセキュリティのレビュー機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>プルリクエスト</dt><dd>自身が変更したコードを開発リポジトリに取り込むよう提案し、レビューを依頼する仕組みのことです。</dd><dt>モノレポ</dt><dd>複数のプロジェクトやサービスのソースコードを、単一のリポジトリで統合して管理する手法です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://api-docs.deepseek.com/guides/search/" target="_blank" rel="noopener noreferrer">DeepSeekがウェブ検索と取得を行える2つのAPIを公開</a></h3>
+<p class="orig">原題: DeepSeek search and fetch – $0.75 per 1000 successful requests</p>
+<p class="src">出典: <a href="https://api-docs.deepseek.com/guides/search/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>エージェントやRAG向けに、検索結果を返すSearch APIとWebページをMarkdownで取得するFetch APIを提供します。</li><li>利用料金は成功したリクエスト1,000件あたり0.75ドルで、既存のDeepSeek APIと同じ認証方式を採用しています。</li><li>検索APIではサイト指定や除外、言語、公開日の期間指定など各種検索演算子を利用できます。</li></ul><p class="impact"><b>影響</b>DeepSeekのAPIを利用する開発者は、同じ認証情報を用いて検索やWebページの取得機能を実装できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RAG</dt><dd>外部情報の検索と生成AIを組み合わせ、正確で最新の知識に基づいた回答を生成させる技術です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/" target="_blank" rel="noopener noreferrer">DeNAがAIエージェントを活用した受入れ体制の構築事例を公開</a></h3>
+<p class="orig">原題: オンボーディングをAIエージェントに任せたら、もはや別ゲーだった | BLOG - DeNA Engineering</p>
+<p class="src">出典: <a href="https://engineering.dena.com/blog/2026/10/ai-agent-onboarding/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-17</p>
+<ul class="points"><li>新規メンバーの受け入れ資料をGitHubに集約し、Claude Codeが伴走して自習や環境構築を進める仕組みを構築しました。</li><li>資料の二重管理を防ぐため、リポジトリ側には本文を持たせず正本の所在情報と解決ルールのみを記述しています。</li><li>メンバーのスキル差による進捗のばらつきや、受け入れ担当者の説明工数が増加する課題の解消を目指しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>オンボーディング</dt><dd>組織やチームに新しく加わったメンバーが、業務に早期に適応できるように支援・定着させる取り組みです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://japan.cnet.com/article/35253671/" target="_blank" rel="noopener noreferrer">Claudeが暗号規格に残された25年来の謎を30分足らずで解明</a></h3>
+<p class="orig">原題: Claude、暗号技術の「25年来の謎」を30分足らずで解明</p>
+<p class="src">出典: <a href="https://japan.cnet.com/article/35253671/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>電子署名規格ECDSAでNSAが提供したシード値の生成手順を突き止め、日時の初期値とC言語の乱数生成機能で再現しました。</li><li>単純な手法で作られていたことが判明し、意図的な弱点が仕込まれていた可能性が低くなったと説明されています。</li><li>暗号自体が解読されたわけではなく、獲得した報奨金36,864ドルはセキュリティ非営利団体へ全額寄付されました。</li></ul><p class="impact"><b>影響</b>利用者側の設定変更などの対応は不要であると説明されています。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>電子署名</dt><dd>作成者の身元を証明し、データが送信途中で改ざんされていないことを検証するための暗号化された署名技術です。</dd><dt>シード</dt><dd>乱数を生成する計算処理において、初期値として入力される数値のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/aws-well-architected-agent/" target="_blank" rel="noopener noreferrer">AWSがWell-Architected Agentのプレビューを発表</a></h3>
+<p class="orig">原題: AWS Introduces Preview of Well-Architected Agent</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/aws-well-architected-agent/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-18</p>
+<ul class="points"><li>環境を分析して改善提案やIaC修正を行うAIエージェントです。</li><li>65以上のAWSサービスに対応し、構成や利用指標を関連付けます。</li><li>米国3リージョンかつBusiness Support+以上の顧客が利用できます。</li></ul><p class="impact"><b>影響</b>利用者はAIの提案に誤りが含まれる可能性を考慮し、適切に検証する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Well-Architected</dt><dd>クラウド設計のベストプラクティスに基づきシステムを評価・改善する枠組み。</dd><dt>IaC</dt><dd>サーバーやネットワークなどのインフラ構成をコードで定義・管理する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://fd-x.co.jp/insights/41-what-is-ontology" target="_blank" rel="noopener noreferrer">AIエージェント時代におけるオントロジーの役割を解説</a></h3>
+<p class="orig">原題: オントロジーとは？意味・ナレッジグラフとの違い・LLMでの効果</p>
+<p class="src">出典: <a href="https://fd-x.co.jp/insights/41-what-is-ontology" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>オントロジーはデータを業務概念や関係性で定義する意味の地図です。</li><li>AIの業務実行やLLMによる作成負担の低下を機に再注目されています。</li><li>主要データ基盤も文脈を与えるセマンティック層の採用を進めています。</li></ul><p class="impact"><b>影響</b>データ基盤やAI活用を設計する責任者は、概念定義の導入を検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オントロジー</dt><dd>対象領域の概念や関係性を機械が解釈可能な形式で体系化した定義のこと。</dd><dt>ナレッジグラフ</dt><dd>オントロジーで定義された設計図に、実データを流し込んで結びつけた構造。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" target="_blank" rel="noopener noreferrer">GoogleがAI基盤を用いた抗菌ペプチド探索の高速化を発表</a></h3>
+<p class="orig">原題: Accelerating the search for antimicrobial peptides with Google Antigravity</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-10-16</p>
+<ul class="points"><li>Google Antigravityを用いて呼吸器感染症向けの新規抗菌ペプチド候補を発見しました。</li><li>タンパク質モデルProtNLMにより、UniProt内の未分類配列から機能を予測します。</li><li>研究者とAIが協働して候補を特定し、現在は実験室での検証が進められています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>抗菌ペプチド</dt><dd>細菌の細胞膜などを破壊して増殖を抑える、生体が持つ防御性タンパク質。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/google-pyrefly-python/" target="_blank" rel="noopener noreferrer">GoogleがPython型チェッカーをPyreflyへ刷新</a></h3>
+<p class="orig">原題: Google Adopts Pyrefly for Faster, More Accurate Python Type Checking</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/google-pyrefly-python/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-19</p>
+<ul class="points"><li>従来のPytypeからMeta開発のRust製ツールへ移行しました。</li><li>Pytype比で約10倍高速化し、ピーク計算コストを8割超削減します。</li><li>型仕様適合テストの約97%に合格し、修正候補も提示します。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>型チェッカー</dt><dd>プログラムを実行せずに、変数の型定義の整合性を静的に検証するツール。</dd><dt>AST</dt><dd>プログラムのソースコードの構文関係を木構造として表現した抽象構文木。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/" target="_blank" rel="noopener noreferrer">Javaのsealedクラスによる網羅的検証と互換性の注意点を解説</a></h3>
+<p class="orig">原題: Java sealed classes and exhaustive pattern matching</p>
+<p class="src">出典: <a href="https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>サブタイプを制限し、switch文での網羅性チェックを可能にします。</li><li>新たな型の追加は利用側のコードを壊す破壊的変更につながります。</li><li>利用側が未再コンパイルの場合、実行時に例外が発生する恐れがあります。</li></ul><p class="impact"><b>影響</b>ライブラリ開発者は、sealed型を公開APIで安易に露出させないよう注意が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>sealedクラス</dt><dd>継承や実装を許可するサブクラスを明示的に制限するJavaの機能。</dd><dt>パターンマッチング</dt><dd>データの型や構造に応じて柔軟に条件分岐を行うためのプログラミング構文。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://teal-language.org/" target="_blank" rel="noopener noreferrer">Luaに静的型付けを追加する方言「Teal」が提供中</a></h3>
+<p class="orig">原題: Teal – A statically-typed dialect of Lua</p>
+<p class="src">出典: <a href="https://teal-language.org/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-17</p>
+<ul class="points"><li>Luaに型注釈やジェネリクス、ユニオン型などを拡張した言語です。</li><li>コンパイラtlを用いてTealコードを通常のLuaコードへ変換します。</li><li>ビルドツールCyanや主要エディタ用プラグインも提供されています。</li></ul><p class="impact"><b>影響</b>Luaで型安全な開発を行いたい開発者が導入して利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>静的型付け</dt><dd>プログラムの実行前に変数のデータ型を検証・決定する仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://azukiazusa.dev/blog/void-vite-cloudflare-deploy/" target="_blank" rel="noopener noreferrer">VoidZeroがCloudflare向け開発基盤「Void」を公開</a></h3>
+<p class="orig">原題: Void でフルスタックアプリを構築して Cloudflare にデプロイする</p>
+<p class="src">出典: <a href="https://azukiazusa.dev/blog/void-vite-cloudflare-deploy/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>Vite製フルスタックアプリをCloudflareへ手軽にデプロイできます。</li><li>コードのimport文から必要なクラウド資源を自動で推論・作成します。</li><li>Drizzle ORMを同梱し、D1やKV等の接続設定を不要にします。</li></ul><p class="impact"><b>影響</b>Cloudflare向けのWebアプリをViteで効率的に構築したい開発者が使えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>フルスタック</dt><dd>画面表示からサーバー側の処理やデータベースまで一括で扱うこと。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener noreferrer">document.currentScriptによるインライン置換手法が紹介</a></h3>
+<p class="orig">原題: Inline rendering with document​.currentScript</p>
+<p class="src">出典: <a href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener noreferrer">Simon Willison</a> · 2026-10-18</p>
+<ul class="points"><li>実行中のscript要素自身を実行結果に置き換えて描画する手法です。</li><li>replaceWithメソッドを用い、読み込み時に内容を直接書き換えます。</li><li>短縮関数を定義することで超軽量なテンプレートとして機能します。</li></ul><p class="impact"><b>影響</b>外部ライブラリを使わずに軽量な動的表示を行いたい開発者が試せます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>DOM</dt><dd>HTML文書の要素をプログラムから参照・操作するための仕組み。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://speakerdeck.com/a_matsuda/web-framework-benchmark-battle-2026-any-percent" target="_blank" rel="noopener noreferrer">Rails 8.2でアロケーション削減により最大15%高速化を達成</a></h3>
+<p class="orig">原題: Web Framework Benchmark Battle 2026, Any%</p>
+<p class="src">出典: <a href="https://speakerdeck.com/a_matsuda/web-framework-benchmark-battle-2026-any-percent" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>オブジェクト生成数を指標に地道なマイクロチューニングを実施しました。</li><li>測定対象のエンドポイントで最大15%の実行時間短縮を達成しています。</li><li>最適化作業やコンフリクト解消の工程にAIツールを活用しています。</li></ul><p class="impact"><b>影響</b>Railsの最新版を利用する開発者がパフォーマンス改善の恩恵を受けられます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マイクロオプティマイゼーション</dt><dd>プログラムの微小な処理を局所的に最適化して高速化する手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/" target="_blank" rel="noopener noreferrer">AWSが欧州ソブリンクラウドで数時間の通信遮断試験を実施</a></h3>
+<p class="orig">原題: AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-18</p>
+<ul class="points"><li>AWSが欧州ソブリンクラウドをグローバルバックボーンから数時間切り離して稼働を検証します。</li><li>ブランデンブルクのデータセンターを使い、EU居住者のみで構成されたチームが運用します。</li><li>ルート収束時に顧客側で短時間の接続中断が発生する可能性があります。</li></ul><p class="impact"><b>影響</b>利用顧客はルート収束による一時的な中断に注意し、試験結果を法令順守の証明に活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ソブリンクラウド</dt><dd>データの管理や運用を特定地域の法規制や主権に従って行うクラウドサービス。</dd><dt>バックボーン</dt><dd>ネットワークの中心として大量のデータを高速で送受信する基幹通信網。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://wirelesswire.jp/2026/10/94793/" target="_blank" rel="noopener noreferrer">HTTPSサーバー専用のセキュアOS「QEDOS」を開発</a></h3>
+<p class="orig">原題: 日本企業がサーバーに侵入されまくっている現状を鑑み、「絶対無敵を目指すOS」を作ってみた。耐量子暗号HTTPSサーバー専用OS</p>
+<p class="src">出典: <a href="https://wirelesswire.jp/2026/10/94793/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>マイクロカーネルseL4をベースに、シェルやSSHを排除したHTTPS専用OSが開発されました。</li><li>機能を5つの領域に分離し、権限を最小化する設計でシステム全体の乗っ取りを防ぎます。</li><li>重要な部分をRustで記述し、検証ツールKaniで13件の形式検証を実施しています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>マイクロカーネル</dt><dd>OSの中核機能を最小限に抑え、多くの機能を独立した部品として動かす設計。</dd><dt>形式検証</dt><dd>プログラムが仕様通りに正しく動作することを数学的な論理を用いて証明する手法。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://t3.at/blog/2026-10-17-parser-combinators/" target="_blank" rel="noopener noreferrer">パーサーコンビネータの仕組みと具体的な解析手法を解説</a></h3>
+<p class="orig">原題: Parser Combinators</p>
+<p class="src">出典: <a href="https://t3.at/blog/2026-10-17-parser-combinators/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-18</p>
+<ul class="points"><li>パーサーコンビネータを用いて文字列を解析し構造化データへ変換する仕組みが解説されました。</li><li>入力文字列から結果と残りの文字列の組を返す小さな関数を基本要素として定義します。</li><li>pSeqなどの関数を組み合わせ、pingの実行結果ログなどを段階的に解析できます。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>パーサーコンビネータ</dt><dd>小さな構文解析関数を組み合わせて、複雑なデータ解析器を構築する手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm" target="_blank" rel="noopener noreferrer">ACM経由のO&#39;Reillyサブスク契約の費用対効果が検証される</a></h3>
+<p class="orig">原題: 技術書を年に数冊しか買わない自分に、O&#39;Reillyのサブスク年$150は割に合うか（ACM経由で契約してMCPまで）</p>
+<p class="src">出典: <a href="https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>ACM会員向けオプションを経由することでO&#39;Reillyを初年度150ドルから利用できます。</li><li>直契約の年499ドルに比べ安価で、一部対象外機能があるもののAWSサンドボックス等も利用できました。</li><li>年に数冊しか本を買わない場合でも、必要な部分をつまみ読みできる点に価値があるとされています。</li></ul><p class="impact"><b>影響</b>O&#39;Reillyをお得に使いたい人は、ACM経由の契約や利用可能な機能の差を確認するとよいです。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ACM</dt><dd>計算機科学分野における国際的な学会および教育機関です。</dd><dt>MCP</dt><dd>AIモデルと外部のデータやツールを安全に接続するための仕様です。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830" target="_blank" rel="noopener noreferrer">AIと対話して未知の分野の学習ロードマップを作る方法が紹介される</a></h3>
+<p class="orig">原題: 知らない分野を学ぶ技術 powered by AI - ぷりんの雑記帳</p>
+<p class="src">出典: <a href="https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-18</p>
+<ul class="points"><li>AIに質問を重ねることで、目標達成に必要な前提知識や学習分野を洗い出して整理します。</li><li>ガロア理論の例では、基本定理の理解に必要な線形代数や群論などの構成要素がAIから提示されました。</li><li>自分がどこまで理解しているかを厳しめに判定し、専用の最短カリキュラム作成につなげます。</li></ul><p class="impact"><b>影響</b>AIを活用して独学を進めたい人は、まずAIとの対話で全体像を把握し必要な知識を整理するとよいです。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ガロア理論</dt><dd>方程式の解の対称性を群の概念を用いて調べ、解法などを判定する数学の理論です。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-18/">← 2026-10-18</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（19）</summary><ul><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
