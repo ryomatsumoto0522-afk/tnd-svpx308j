@@ -1,0 +1,514 @@
+{
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-19T21:33:46.265Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://gigazine.net/news/20261019-ecdsa-seed-origin/",
+      "title": "Claudeが25年以上謎だった暗号規格の数値の起源を解明、NSAが説明なく提供した数値は「1990年代の乱数」だった",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T10:11:05.000Z",
+      "summary": "AnthropicのAIが、25年以上不明だったNIST標準楕円曲線のシード値の生成方法を30分足らずで突き止めました。1990年代の乱数生成器「lrand48」と当時のUnixタイムスタンプが初期値に使われていたと判明しました。この解明により、意図的な弱点（バックドア）が存在する懸念が後退し、ECDSAの脆弱性を示すものではないとされます。",
+      "headline": "Claudeが暗号規格ECDSAのシード値の起源を解明",
+      "points": [
+        "AnthropicのAIが、25年以上不明だったNIST標準楕円曲線のシード値の生成方法を30分足らずで突き止めました。",
+        "1990年代の乱数生成器「lrand48」と当時のUnixタイムスタンプが初期値に使われていたと判明しました。",
+        "この解明により、意図的な弱点（バックドア）が存在する懸念が後退し、ECDSAの脆弱性を示すものではないとされます。"
+      ],
+      "glossary": [
+        {
+          "term": "ECDSA",
+          "explanation": "楕円曲線暗号を利用して、通信データの送信者確認や改ざん検知を行う電子署名の仕組み。"
+        },
+        {
+          "term": "シード値",
+          "explanation": "疑似乱数を生成する計算処理を始める際に、初期入力として与える数値。"
+        },
+        {
+          "term": "Unixタイムスタンプ",
+          "explanation": "1970年1月1日午前0時（UTC）からの経過秒数で日時を表現する方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.infoq.com/news/2026/10/jep-543-jdk-28/",
+      "title": "JEP 543 Finalizes Structured Concurrency in JDK 28, Ending Seven Preview Rounds",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-19T14:30:00.000Z",
+      "summary": "JEP 543により、StructuredTaskScope APIがAPI変更なしでJDK 28にて正式機能となりました。複数スレッドのサブタスク群を単一の作業単位として扱い、親スコープ終了前に子スレッドが終了することを保証します。JDK 27からはpreviewフラグを外すだけで移行できますが、JDK 26以前からは例外型などの変更対応が必要です。",
+      "headline": "構造化並行性が7回のプレビューを経てJDK 28で確定",
+      "points": [
+        "JEP 543により、StructuredTaskScope APIがAPI変更なしでJDK 28にて正式機能となりました。",
+        "複数スレッドのサブタスク群を単一の作業単位として扱い、親スコープ終了前に子スレッドが終了することを保証します。",
+        "JDK 27からはpreviewフラグを外すだけで移行できますが、JDK 26以前からは例外型などの変更対応が必要です。"
+      ],
+      "impact": "JDK 27以前で該当プレビュー機能を利用していた開発者は、移行時にコンパイル設定や例外処理コードの更新が必要です。",
+      "glossary": [
+        {
+          "term": "構造化並行性",
+          "explanation": "複数の並行処理を1つの単位としてまとめ、エラー時のキャンセルや終了待機を安全に制御する手法。"
+        },
+        {
+          "term": "仮想スレッド",
+          "explanation": "OSのスレッドに直接依存せず、Javaランタイム上で軽量かつ大量に作成・管理できるスレッド。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection",
+      "title": "仕事を進めるだけでは、仕事しか進まない。木こりのジレンマを Claude Code で解いた5ヶ月の記録 - RAKUS Developers Blog | ラクス エンジニアブログ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T06:12:20.000Z",
+      "summary": "Windowsのタスクスケジューラで毎週金曜12時にClaude Codeを起動し、振り返りの着手コストを解消しました。会社の等級定義を読み込ませることで、雑に入力したメモから客観的な評価診断を出力させています。過去の記録を1つのファイルに追記してAIに参照させ、前週の課題の達成度確認や行動パターンの検出に役立てています。",
+      "headline": "Claude Codeを定期起動して個人の振り返りを継続",
+      "points": [
+        "Windowsのタスクスケジューラで毎週金曜12時にClaude Codeを起動し、振り返りの着手コストを解消しました。",
+        "会社の等級定義を読み込ませることで、雑に入力したメモから客観的な評価診断を出力させています。",
+        "過去の記録を1つのファイルに追記してAIに参照させ、前週の課題の達成度確認や行動パターンの検出に役立てています。"
+      ],
+      "glossary": [
+        {
+          "term": "KPT",
+          "explanation": "Keep（継続）、Problem（課題）、Try（挑戦）の頭文字をとった、業務や行動を振り返るための枠組み。"
+        },
+        {
+          "term": "タスクスケジューラ",
+          "explanation": "指定した日時や条件に合わせて、プログラムやスクリプトを自動実行するWindowsの標準機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://note.com/yukiedu/n/n4d25f5e1d590",
+      "title": "Claude Codeに全部任せて開発してたエンジニアの末路、1〜2ヶ月後ガチで地獄ですよ｜ゆうき｜月収100万円超エンジニアを多数輩出",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T08:46:35.000Z",
+      "summary": "全体の設計や方針の判断をAIに丸投げすると、不整合なコードが増加し数か月後に保守困難になると指摘されています。ディレクトリ構成やAPI設計などの判断は人間が行い、テスト作成や既存パターンの実装などの作業をAIに任せるべきとしています。AIに指示を出す前に5分間設計方針を整理し、AIが生成したコードの構造を人間が確認する運用の重要性が語られています。",
+      "headline": "開発の判断をAIに丸投げすることの危険性と対策が示される",
+      "points": [
+        "全体の設計や方針の判断をAIに丸投げすると、不整合なコードが増加し数か月後に保守困難になると指摘されています。",
+        "ディレクトリ構成やAPI設計などの判断は人間が行い、テスト作成や既存パターンの実装などの作業をAIに任せるべきとしています。",
+        "AIに指示を出す前に5分間設計方針を整理し、AIが生成したコードの構造を人間が確認する運用の重要性が語られています。"
+      ],
+      "impact": "AI支援ツールを使って開発を行うエンジニアは、全体設計の判断を自ら行い、生成されたコードの構造を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "リファクタリング",
+          "explanation": "プログラムの外部の動作を変えずに、内部の構造を整理して保守性や可読性を高める作業。"
+        },
+        {
+          "term": "ADR",
+          "explanation": "ソフトウェア開発において、重要な設計上の決定事項とその理由を記録した文書。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://mistral.ai/news/timestral/",
+      "title": "Timestral: Mistral's time-series foundation models",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T09:59:32Z",
+      "summary": "最大209Mパラメータで主要な公開ベンチマーク3種で首位を獲得した。モデルは5Mから209Mまでの4種類のサイズが用意されている。推論にGPUは不要で、標準的なサーバーCPUでも高速に動作する。",
+      "headline": "Mistralが時系列基盤モデルTimestralを公開した",
+      "points": [
+        "最大209Mパラメータで主要な公開ベンチマーク3種で首位を獲得した。",
+        "モデルは5Mから209Mまでの4種類のサイズが用意されている。",
+        "推論にGPUは不要で、標準的なサーバーCPUでも高速に動作する。"
+      ],
+      "glossary": [
+        {
+          "term": "時系列データ",
+          "explanation": "時間の経過に伴って順次記録されたデータの集まり。"
+        },
+        {
+          "term": "ゼロショット",
+          "explanation": "モデルが追加の学習なしで未知のデータをそのまま処理する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/java-news-roundup-oct12-2026/",
+      "title": "Java News Roundup: JEPs for JDK 28, Azul Payara, Gatherers4j, Google ADK, Yupiik, Apache Camel CVEs",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-19T20:00:00.000Z",
+      "summary": "ZGCの改善や構造化並行性の3件のJEPがJDK 28の対象に指定された。Azul Payara 7.5.0が公開され、RCE脆弱性2件が修正された。JDK 28 Build 20の早期アクセスビルドの提供が開始された。",
+      "headline": "JDK 28に向けた3件のJEP追加などがJava週報で発表された",
+      "points": [
+        "ZGCの改善や構造化並行性の3件のJEPがJDK 28の対象に指定された。",
+        "Azul Payara 7.5.0が公開され、RCE脆弱性2件が修正された。",
+        "JDK 28 Build 20の早期アクセスビルドの提供が開始された。"
+      ],
+      "impact": "開発者はJDK 28の早期アクセス版を試し、バグを報告することが推奨されています。",
+      "glossary": [
+        {
+          "term": "JEP",
+          "explanation": "JDKへの機能追加や仕様変更などの提案をまとめた文書。"
+        },
+        {
+          "term": "RCE",
+          "explanation": "攻撃者が遠隔から任意のプログラムを実行できるセキュリティ上の弱点。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://ascii.jp/elem/000/004/443/4443584/",
+      "title": "GPT-4o級モデルが自宅のPCで動いた！ ローカルAIの常識を変える「Strata」 (1/5)",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-18T23:36:35.000Z",
+      "summary": "RAMとSSDにデータを分割配置し大容量モデルの動作を可能にした。総パラメータ数125BのQwen3.8-Flash-Nextに対応している。RTX 4090搭載PCで毎秒約80トークンの高速出力を記録した。",
+      "headline": "巨大AIモデルを家庭用PCで動かす技術Strataが公開された",
+      "points": [
+        "RAMとSSDにデータを分割配置し大容量モデルの動作を可能にした。",
+        "総パラメータ数125BのQwen3.8-Flash-Nextに対応している。",
+        "RTX 4090搭載PCで毎秒約80トークンの高速出力を記録した。"
+      ],
+      "glossary": [
+        {
+          "term": "VRAM",
+          "explanation": "ビデオカードに搭載された画像処理やAI推論専用のメモリ。"
+        },
+        {
+          "term": "MoE",
+          "explanation": "複数の専門ネットワークを処理内容に応じて切り替える方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://gmo-cybersecurity.com/blog/20261019/",
+      "title": "相次ぐ不正アクセスの攻撃元の多くがAIであることを確認 | セキュリティブログ | 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T07:45:02.000Z",
+      "summary": "自律型ペネトレーションテストシステムのARTEXが攻撃に使われていた。日本企業を標的としたAI攻撃インフラが6台特定された。標的とされた企業のうち8社が情報漏えいを公表している。",
+      "headline": "日本企業への不正アクセスでAI悪用の攻撃インフラが確認された",
+      "points": [
+        "自律型ペネトレーションテストシステムのARTEXが攻撃に使われていた。",
+        "日本企業を標的としたAI攻撃インフラが6台特定された。",
+        "標的とされた企業のうち8社が情報漏えいを公表している。"
+      ],
+      "glossary": [
+        {
+          "term": "ペネトレーションテスト",
+          "explanation": "システムに擬似的な攻撃を行いセキュリティの脆弱性を調べる手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "title": "MiniMax M3.1 Flash",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-19T16:39:09Z",
+      "summary": "MiniMaxがエージェントや開発作業向けモデルを公開しました。推論速度が約3倍に向上し、利用コストは従来から70%削減されました。APIやMiniMax Codeから利用可能で重みも後日公開予定です。",
+      "headline": "MiniMaxが高速かつ安価なM3.1 Flashを発表",
+      "points": [
+        "MiniMaxがエージェントや開発作業向けモデルを公開しました。",
+        "推論速度が約3倍に向上し、利用コストは従来から70%削減されました。",
+        "APIやMiniMax Codeから利用可能で重みも後日公開予定です。"
+      ],
+      "impact": "開発者はAPIなどを通じて高速かつ低コストな新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "TPS",
+          "explanation": "1秒間に生成または処理できるトークンの数を表す単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-14-state-management",
+      "title": "35日でフロントエンドの基礎を完全に理解する #14 - 状態管理（Pinia）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-19T16:28:48.000Z",
+      "summary": "複数コンポーネント間で状態を共有するPiniaの基本が紹介された。storeはstate・getters・actionsの3要素で構成されます。propsの多段受け渡しを省き、直接状態を読み書きできます。",
+      "headline": "Vueの状態管理ライブラリPiniaの基礎が解説される",
+      "points": [
+        "複数コンポーネント間で状態を共有するPiniaの基本が紹介された。",
+        "storeはstate・getters・actionsの3要素で構成されます。",
+        "propsの多段受け渡しを省き、直接状態を読み書きできます。"
+      ],
+      "impact": "Vue利用者はPiniaのstoreを使って状態管理コードを整理できます。",
+      "glossary": [
+        {
+          "term": "Pinia",
+          "explanation": "Vue.js向けに作られた公式の状態管理ライブラリ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/",
+      "title": "Article: From Microservices to Agents: the Next Evolution of Distributed Systems",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-19T11:00:00.000Z",
+      "summary": "分散システムが機能の分解から実行時の決定の分解へ進化していると論じた。状況に応じた動的処理に伴い推論品質の劣化が新たな障害となります。自律性の制限や評価ループ、決定論的フォールバックの重要性を説いた。",
+      "headline": "エージェントAIによる分散システムの設計動向が解説される",
+      "points": [
+        "分散システムが機能の分解から実行時の決定の分解へ進化していると論じた。",
+        "状況に応じた動的処理に伴い推論品質の劣化が新たな障害となります。",
+        "自律性の制限や評価ループ、決定論的フォールバックの重要性を説いた。"
+      ],
+      "impact": "アーキテクトは推論品質の低下を想定した信頼性設計を考慮する必要があります。",
+      "glossary": [
+        {
+          "term": "マイクロサービス",
+          "explanation": "システムを機能単位の独立した小さなサービス群に分割する設計手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.infoq.com/news/2026/10/buildkite-ci-secrets-agentic/",
+      "title": "Buildkite Adds Scoped Secrets and New Agentic CI Tools",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-19T09:00:00.000Z",
+      "summary": "Buildkiteがパイプライン固有の秘密情報管理とMCPツールを追加した。パイプライン設定からブランチや作成者などの条件でアクセスを制限できる。MCPサーバーにはパイプライン検証やビルド比較の機能が導入された。",
+      "headline": "Buildkiteがパイプライン個別シークレット管理などを追加",
+      "points": [
+        "Buildkiteがパイプライン固有の秘密情報管理とMCPツールを追加した。",
+        "パイプライン設定からブランチや作成者などの条件でアクセスを制限できる。",
+        "MCPサーバーにはパイプライン検証やビルド比較の機能が導入された。"
+      ],
+      "impact": "開発者はパイプライン画面から対象を絞ったシークレット設定を利用できます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIと外部ツールやリソースの接続を標準化するプロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-19T10:53:39Z",
+      "summary": "ドメイン検証の安全性を高めBGP攻撃を防ぐため拠点を増やします。検証は主データセンターと遠隔6拠点の計7回のリクエストで行われます。2026年10月27日に検証環境、11月10日に本番環境へ展開予定です。",
+      "headline": "Let's Encryptがドメイン検証用の遠隔拠点を2件追加",
+      "points": [
+        "ドメイン検証の安全性を高めBGP攻撃を防ぐため拠点を増やします。",
+        "検証は主データセンターと遠隔6拠点の計7回のリクエストで行われます。",
+        "2026年10月27日に検証環境、11月10日に本番環境へ展開予定です。"
+      ],
+      "impact": "ユーザーへの影響はほとんどない見込みとされています。",
+      "glossary": [
+        {
+          "term": "BGP",
+          "explanation": "インターネット上で経路情報をルーター同士でやり取りする通信規約。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+      "title": "Wine ported to OpenBSD",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-19T13:35:34Z",
+      "summary": "OpenBSD向けにWineが移植され64ビットソフトの動作が確認されました。32ビットソフト向けのWoW64は現状動作しない制限があります。ウィッチャー3の最新リマスター版などが動作検証されています。",
+      "headline": "OpenBSD向けにWindowsソフトを動かすWineが移植",
+      "points": [
+        "OpenBSD向けにWineが移植され64ビットソフトの動作が確認されました。",
+        "32ビットソフト向けのWoW64は現状動作しない制限があります。",
+        "ウィッチャー3の最新リマスター版などが動作検証されています。"
+      ],
+      "impact": "テストを行う利用者は安全のため非特権ユーザーの利用が推奨されます。",
+      "glossary": [
+        {
+          "term": "Wine",
+          "explanation": "Windows向けプログラムを他のOSで直接動かす互換環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://github.com/kksimp/Mac.apk",
+      "title": "Android apps running native on macOS",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-19T16:45:30Z",
+      "summary": "エミュレータを使わずAndroidアプリをmacOS上でネイティブ実行します。macOS 26.4以降のApple Silicon Macに対応しています。AGPL v3.0でオープンソース公開され公式アプリは無料です。",
+      "headline": "Apple Silicon MacでAndroidアプリを動かすツールが登場",
+      "points": [
+        "エミュレータを使わずAndroidアプリをmacOS上でネイティブ実行します。",
+        "macOS 26.4以降のApple Silicon Macに対応しています。",
+        "AGPL v3.0でオープンソース公開され公式アプリは無料です。"
+      ],
+      "impact": "利用する場合はmacOS 26.4以降とApple Silicon端末が必要です。",
+      "glossary": [
+        {
+          "term": "エミュレーター",
+          "explanation": "異なるOSやハードウェアの動作をソフトウェア上で模倣する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://gigazine.net/news/20261019-furifont/",
+      "title": "漢字に自動でふりがなが付くフォント「Furifont」が登場、フォントを切り替えるだけで読み方を表示可能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-19T08:15:07.000Z",
+      "summary": "フォントを適用するだけで漢字の上にふりがなを自動で表示できます。複数の文字を1字形に置き換える合字の仕組みを利用しています。フォントファイルやWebページに適用するブックマークレットが無料公開中です。",
+      "headline": "漢字へ自動でふりがなを表示するフォントFurifontが登場",
+      "points": [
+        "フォントを適用するだけで漢字の上にふりがなを自動で表示できます。",
+        "複数の文字を1字形に置き換える合字の仕組みを利用しています。",
+        "フォントファイルやWebページに適用するブックマークレットが無料公開中です。"
+      ],
+      "impact": "既存のWebサイトで使いたい利用者はブックマークレットを導入します。",
+      "glossary": [
+        {
+          "term": "合字",
+          "explanation": "複数の文字を組み合わせて1つの文字の形として表示する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://forest.watch.impress.co.jp/docs/review/2149141.html",
+      "title": "老舗クリップボード履歴ソフト「CLCL」を手本に「Rust」で作り直した「CLCLR」／レジストリを汚さないポータブルアプリ。画像をWebP形式で圧縮保持するなどの工夫も【レビュー】",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-19T06:05:43.000Z",
+      "summary": "老舗ソフトCLCLを手本に、Rust言語で新規設計・実装されたオープンソースアプリです。64bit版のEXE単体で動作し、履歴画像をWebP形式で保存して容量を大幅に削減します。デジタル署名がないため起動時の警告やセキュリティソフトによる誤検出の可能性があります。",
+      "headline": "Rust製クリップボード履歴ソフトCLCLRが公開",
+      "points": [
+        "老舗ソフトCLCLを手本に、Rust言語で新規設計・実装されたオープンソースアプリです。",
+        "64bit版のEXE単体で動作し、履歴画像をWebP形式で保存して容量を大幅に削減します。",
+        "デジタル署名がないため起動時の警告やセキュリティソフトによる誤検出の可能性があります。"
+      ],
+      "impact": "導入時は、SmartScreenの警告やセキュリティソフトの誤検出に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "Rust",
+          "explanation": "高い処理性能とメモリ安全性を両立するプログラミング言語。"
+        },
+        {
+          "term": "WebP",
+          "explanation": "Googleが開発した、高い圧縮率を誇る画像ファイル形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock/",
+      "title": "Amazon Bedrock における最小権限アクセスの実装",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-19T00:08:27.000Z",
+      "summary": "Amazon Bedrock導入時の権限管理について、モデル選択から運用までの各段階の指針が示されました。AWS OrganizationsのSCPを活用し、許可する基盤モデルをリスト形式で制限する設定例が紹介されています。",
+      "headline": "Amazon Bedrockの最小権限アクセスの実装手順が公開",
+      "points": [
+        "Amazon Bedrock導入時の権限管理について、モデル選択から運用までの各段階の指針が示されました。",
+        "AWS OrganizationsのSCPを活用し、許可する基盤モデルをリスト形式で制限する設定例が紹介されています。"
+      ],
+      "impact": "Bedrockを利用する開発者は、SCPやIAMポリシーを用いたモデルのアクセス権限設定を確認できます。",
+      "glossary": [
+        {
+          "term": "最小権限の原則",
+          "explanation": "タスク実行に必要な最低限の権限のみを付与するセキュリティ概念。"
+        },
+        {
+          "term": "SCP",
+          "explanation": "AWS組織内のアカウントで利用可能な権限を統制する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management/",
+      "title": "Amazon Bedrock API キーの保護: 実装と管理のベストプラクティス",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-19T00:04:08.000Z",
+      "summary": "Bedrock呼び出し用のAPIキーについて、効果的な実装や監視、保護の包括的な方針が示されました。原則は一時認証情報の使用を推奨しつつ、短期と長期の2種類のAPIキーの特性や使い分けが解説されています。",
+      "headline": "Amazon Bedrock APIキーの保護と管理指針が公開",
+      "points": [
+        "Bedrock呼び出し用のAPIキーについて、効果的な実装や監視、保護の包括的な方針が示されました。",
+        "原則は一時認証情報の使用を推奨しつつ、短期と長期の2種類のAPIキーの特性や使い分けが解説されています。"
+      ],
+      "impact": "APIキーを扱う管理者は、有効期限の設定やSCPによる作成制限などのセキュリティ対策を確認できます。",
+      "glossary": [
+        {
+          "term": "AWS STS",
+          "explanation": "一時的で期限付きの認証情報を安全に発行するAWSのサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/",
+      "title": "EC2 Image Builder now integrates with ASG for faster image builds",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-19T17:30:00.000Z",
+      "summary": "ASG内の稼働中インスタンスを再利用してイメージを作成し、起動待ち時間を削減できるようになりました。既存パイプラインには影響しない選択制の機能で、全AWSリージョンにて追加料金なしで利用可能です。",
+      "headline": "EC2 Image BuilderがASGと統合しビルドが高速化",
+      "points": [
+        "ASG内の稼働中インスタンスを再利用してイメージを作成し、起動待ち時間を削減できるようになりました。",
+        "既存パイプラインには影響しない選択制の機能で、全AWSリージョンにて追加料金なしで利用可能です。"
+      ],
+      "impact": "ビルド時間を短縮したい利用者は、Image Builderのインフラ設定でASG連携を有効化できます。",
+      "glossary": [
+        {
+          "term": "Auto Scaling Group",
+          "explanation": "需要に応じてEC2インスタンスの台数を自動で調整・維持する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 107,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29398,
+    "outputTokens": 13715
+  },
+  "offline": false
+}

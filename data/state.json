@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-18T19:27:08.545Z",
+  "lastRun": "2026-10-19T21:33:46.265Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -317,6 +317,26 @@
     "https://t3.at/blog/2026-10-17-parser-combinators": "2026-10-19",
     "https://deepmind.google/blog/accelerating-antimicrobial-discovery": "2026-10-19",
     "https://zenn.dev/sonicmoov/articles/oreilly-subscription-acm": "2026-10-19",
-    "https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830": "2026-10-19"
+    "https://smooth-pudding.hatenablog.com/entry/2026/10/17/145830": "2026-10-19",
+    "https://gigazine.net/news/20261019-ecdsa-seed-origin": "2026-10-20",
+    "https://www.infoq.com/news/2026/10/jep-543-jdk-28": "2026-10-20",
+    "https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection": "2026-10-20",
+    "https://note.com/yukiedu/n/n4d25f5e1d590": "2026-10-20",
+    "https://mistral.ai/news/timestral": "2026-10-20",
+    "https://www.infoq.com/news/2026/10/java-news-roundup-oct12-2026": "2026-10-20",
+    "https://ascii.jp/elem/000/004/443/4443584": "2026-10-20",
+    "https://gmo-cybersecurity.com/blog/20261019": "2026-10-20",
+    "https://www.minimax.io/blog/minimax-m31f": "2026-10-20",
+    "https://zenn.dev/kipcop/articles/f35-vue-14-state-management": "2026-10-20",
+    "https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai": "2026-10-20",
+    "https://www.infoq.com/news/2026/10/buildkite-ci-secrets-agentic": "2026-10-20",
+    "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166": "2026-10-20",
+    "https://marc.info/?l=openbsd-ports&m=179236125692175": "2026-10-20",
+    "https://github.com/kksimp/Mac.apk": "2026-10-20",
+    "https://gigazine.net/news/20261019-furifont": "2026-10-20",
+    "https://forest.watch.impress.co.jp/docs/review/2149141.html": "2026-10-20",
+    "https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock": "2026-10-20",
+    "https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management": "2026-10-20",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds": "2026-10-20"
   }
 }

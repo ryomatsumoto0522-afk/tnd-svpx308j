@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-20</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月20日(火)</p>
+<p class="meta">更新 2026-10-20 06:33 · 取得ソース 17/18 · 選定 20件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">5</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://gigazine.net/news/20261019-ecdsa-seed-origin/" target="_blank" rel="noopener noreferrer">Claudeが暗号規格ECDSAのシード値の起源を解明</a></h3>
+<p class="orig">原題: Claudeが25年以上謎だった暗号規格の数値の起源を解明、NSAが説明なく提供した数値は「1990年代の乱数」だった</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261019-ecdsa-seed-origin/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>AnthropicのAIが、25年以上不明だったNIST標準楕円曲線のシード値の生成方法を30分足らずで突き止めました。</li><li>1990年代の乱数生成器「lrand48」と当時のUnixタイムスタンプが初期値に使われていたと判明しました。</li><li>この解明により、意図的な弱点（バックドア）が存在する懸念が後退し、ECDSAの脆弱性を示すものではないとされます。</li></ul>
+<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>ECDSA</dt><dd>楕円曲線暗号を利用して、通信データの送信者確認や改ざん検知を行う電子署名の仕組み。</dd><dt>シード値</dt><dd>疑似乱数を生成する計算処理を始める際に、初期入力として与える数値。</dd><dt>Unixタイムスタンプ</dt><dd>1970年1月1日午前0時（UTC）からの経過秒数で日時を表現する方式。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><span class="num">2</span><a href="https://www.infoq.com/news/2026/10/jep-543-jdk-28/" target="_blank" rel="noopener noreferrer">構造化並行性が7回のプレビューを経てJDK 28で確定</a></h3>
+<p class="orig">原題: JEP 543 Finalizes Structured Concurrency in JDK 28, Ending Seven Preview Rounds</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/jep-543-jdk-28/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-19</p>
+<ul class="points"><li>JEP 543により、StructuredTaskScope APIがAPI変更なしでJDK 28にて正式機能となりました。</li><li>複数スレッドのサブタスク群を単一の作業単位として扱い、親スコープ終了前に子スレッドが終了することを保証します。</li><li>JDK 27からはpreviewフラグを外すだけで移行できますが、JDK 26以前からは例外型などの変更対応が必要です。</li></ul><p class="impact"><b>影響</b>JDK 27以前で該当プレビュー機能を利用していた開発者は、移行時にコンパイル設定や例外処理コードの更新が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>構造化並行性</dt><dd>複数の並行処理を1つの単位としてまとめ、エラー時のキャンセルや終了待機を安全に制御する手法。</dd><dt>仮想スレッド</dt><dd>OSのスレッドに直接依存せず、Javaランタイム上で軽量かつ大量に作成・管理できるスレッド。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection" target="_blank" rel="noopener noreferrer">Claude Codeを定期起動して個人の振り返りを継続</a></h3>
+<p class="orig">原題: 仕事を進めるだけでは、仕事しか進まない。木こりのジレンマを Claude Code で解いた5ヶ月の記録 - RAKUS Developers Blog | ラクス エンジニアブログ</p>
+<p class="src">出典: <a href="https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>Windowsのタスクスケジューラで毎週金曜12時にClaude Codeを起動し、振り返りの着手コストを解消しました。</li><li>会社の等級定義を読み込ませることで、雑に入力したメモから客観的な評価診断を出力させています。</li><li>過去の記録を1つのファイルに追記してAIに参照させ、前週の課題の達成度確認や行動パターンの検出に役立てています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>KPT</dt><dd>Keep（継続）、Problem（課題）、Try（挑戦）の頭文字をとった、業務や行動を振り返るための枠組み。</dd><dt>タスクスケジューラ</dt><dd>指定した日時や条件に合わせて、プログラムやスクリプトを自動実行するWindowsの標準機能。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261019-ecdsa-seed-origin/" target="_blank" rel="noopener noreferrer">Claudeが暗号規格ECDSAのシード値の起源を解明</a></h3>
+<p class="orig">原題: Claudeが25年以上謎だった暗号規格の数値の起源を解明、NSAが説明なく提供した数値は「1990年代の乱数」だった</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261019-ecdsa-seed-origin/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>AnthropicのAIが、25年以上不明だったNIST標準楕円曲線のシード値の生成方法を30分足らずで突き止めました。</li><li>1990年代の乱数生成器「lrand48」と当時のUnixタイムスタンプが初期値に使われていたと判明しました。</li><li>この解明により、意図的な弱点（バックドア）が存在する懸念が後退し、ECDSAの脆弱性を示すものではないとされます。</li></ul>
+<details class="gloss"><summary>用語メモ（3）</summary><dl><dt>ECDSA</dt><dd>楕円曲線暗号を利用して、通信データの送信者確認や改ざん検知を行う電子署名の仕組み。</dd><dt>シード値</dt><dd>疑似乱数を生成する計算処理を始める際に、初期入力として与える数値。</dd><dt>Unixタイムスタンプ</dt><dd>1970年1月1日午前0時（UTC）からの経過秒数で日時を表現する方式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection" target="_blank" rel="noopener noreferrer">Claude Codeを定期起動して個人の振り返りを継続</a></h3>
+<p class="orig">原題: 仕事を進めるだけでは、仕事しか進まない。木こりのジレンマを Claude Code で解いた5ヶ月の記録 - RAKUS Developers Blog | ラクス エンジニアブログ</p>
+<p class="src">出典: <a href="https://tech-blog.rakus.co.jp/entry/20261019/weekly-reflection" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>Windowsのタスクスケジューラで毎週金曜12時にClaude Codeを起動し、振り返りの着手コストを解消しました。</li><li>会社の等級定義を読み込ませることで、雑に入力したメモから客観的な評価診断を出力させています。</li><li>過去の記録を1つのファイルに追記してAIに参照させ、前週の課題の達成度確認や行動パターンの検出に役立てています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>KPT</dt><dd>Keep（継続）、Problem（課題）、Try（挑戦）の頭文字をとった、業務や行動を振り返るための枠組み。</dd><dt>タスクスケジューラ</dt><dd>指定した日時や条件に合わせて、プログラムやスクリプトを自動実行するWindowsの標準機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://note.com/yukiedu/n/n4d25f5e1d590" target="_blank" rel="noopener noreferrer">開発の判断をAIに丸投げすることの危険性と対策が示される</a></h3>
+<p class="orig">原題: Claude Codeに全部任せて開発してたエンジニアの末路、1〜2ヶ月後ガチで地獄ですよ｜ゆうき｜月収100万円超エンジニアを多数輩出</p>
+<p class="src">出典: <a href="https://note.com/yukiedu/n/n4d25f5e1d590" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>全体の設計や方針の判断をAIに丸投げすると、不整合なコードが増加し数か月後に保守困難になると指摘されています。</li><li>ディレクトリ構成やAPI設計などの判断は人間が行い、テスト作成や既存パターンの実装などの作業をAIに任せるべきとしています。</li><li>AIに指示を出す前に5分間設計方針を整理し、AIが生成したコードの構造を人間が確認する運用の重要性が語られています。</li></ul><p class="impact"><b>影響</b>AI支援ツールを使って開発を行うエンジニアは、全体設計の判断を自ら行い、生成されたコードの構造を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>リファクタリング</dt><dd>プログラムの外部の動作を変えずに、内部の構造を整理して保守性や可読性を高める作業。</dd><dt>ADR</dt><dd>ソフトウェア開発において、重要な設計上の決定事項とその理由を記録した文書。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://mistral.ai/news/timestral/" target="_blank" rel="noopener noreferrer">Mistralが時系列基盤モデルTimestralを公開した</a></h3>
+<p class="orig">原題: Timestral: Mistral&#39;s time-series foundation models</p>
+<p class="src">出典: <a href="https://mistral.ai/news/timestral/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-19</p>
+<ul class="points"><li>最大209Mパラメータで主要な公開ベンチマーク3種で首位を獲得した。</li><li>モデルは5Mから209Mまでの4種類のサイズが用意されている。</li><li>推論にGPUは不要で、標準的なサーバーCPUでも高速に動作する。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>時系列データ</dt><dd>時間の経過に伴って順次記録されたデータの集まり。</dd><dt>ゼロショット</dt><dd>モデルが追加の学習なしで未知のデータをそのまま処理する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://ascii.jp/elem/000/004/443/4443584/" target="_blank" rel="noopener noreferrer">巨大AIモデルを家庭用PCで動かす技術Strataが公開された</a></h3>
+<p class="orig">原題: GPT-4o級モデルが自宅のPCで動いた！ ローカルAIの常識を変える「Strata」 (1/5)</p>
+<p class="src">出典: <a href="https://ascii.jp/elem/000/004/443/4443584/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>RAMとSSDにデータを分割配置し大容量モデルの動作を可能にした。</li><li>総パラメータ数125BのQwen3.8-Flash-Nextに対応している。</li><li>RTX 4090搭載PCで毎秒約80トークンの高速出力を記録した。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>VRAM</dt><dd>ビデオカードに搭載された画像処理やAI推論専用のメモリ。</dd><dt>MoE</dt><dd>複数の専門ネットワークを処理内容に応じて切り替える方式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gmo-cybersecurity.com/blog/20261019/" target="_blank" rel="noopener noreferrer">日本企業への不正アクセスでAI悪用の攻撃インフラが確認された</a></h3>
+<p class="orig">原題: 相次ぐ不正アクセスの攻撃元の多くがAIであることを確認 | セキュリティブログ | 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ</p>
+<p class="src">出典: <a href="https://gmo-cybersecurity.com/blog/20261019/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>自律型ペネトレーションテストシステムのARTEXが攻撃に使われていた。</li><li>日本企業を標的としたAI攻撃インフラが6台特定された。</li><li>標的とされた企業のうち8社が情報漏えいを公表している。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ペネトレーションテスト</dt><dd>システムに擬似的な攻撃を行いセキュリティの脆弱性を調べる手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.minimax.io/blog/minimax-m31f" target="_blank" rel="noopener noreferrer">MiniMaxが高速かつ安価なM3.1 Flashを発表</a></h3>
+<p class="orig">原題: MiniMax M3.1 Flash</p>
+<p class="src">出典: <a href="https://www.minimax.io/blog/minimax-m31f" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-20</p>
+<ul class="points"><li>MiniMaxがエージェントや開発作業向けモデルを公開しました。</li><li>推論速度が約3倍に向上し、利用コストは従来から70%削減されました。</li><li>APIやMiniMax Codeから利用可能で重みも後日公開予定です。</li></ul><p class="impact"><b>影響</b>開発者はAPIなどを通じて高速かつ低コストな新モデルを利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>TPS</dt><dd>1秒間に生成または処理できるトークンの数を表す単位。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/jep-543-jdk-28/" target="_blank" rel="noopener noreferrer">構造化並行性が7回のプレビューを経てJDK 28で確定</a></h3>
+<p class="orig">原題: JEP 543 Finalizes Structured Concurrency in JDK 28, Ending Seven Preview Rounds</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/jep-543-jdk-28/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-19</p>
+<ul class="points"><li>JEP 543により、StructuredTaskScope APIがAPI変更なしでJDK 28にて正式機能となりました。</li><li>複数スレッドのサブタスク群を単一の作業単位として扱い、親スコープ終了前に子スレッドが終了することを保証します。</li><li>JDK 27からはpreviewフラグを外すだけで移行できますが、JDK 26以前からは例外型などの変更対応が必要です。</li></ul><p class="impact"><b>影響</b>JDK 27以前で該当プレビュー機能を利用していた開発者は、移行時にコンパイル設定や例外処理コードの更新が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>構造化並行性</dt><dd>複数の並行処理を1つの単位としてまとめ、エラー時のキャンセルや終了待機を安全に制御する手法。</dd><dt>仮想スレッド</dt><dd>OSのスレッドに直接依存せず、Javaランタイム上で軽量かつ大量に作成・管理できるスレッド。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct12-2026/" target="_blank" rel="noopener noreferrer">JDK 28に向けた3件のJEP追加などがJava週報で発表された</a></h3>
+<p class="orig">原題: Java News Roundup: JEPs for JDK 28, Azul Payara, Gatherers4j, Google ADK, Yupiik, Apache Camel CVEs</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct12-2026/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-20</p>
+<ul class="points"><li>ZGCの改善や構造化並行性の3件のJEPがJDK 28の対象に指定された。</li><li>Azul Payara 7.5.0が公開され、RCE脆弱性2件が修正された。</li><li>JDK 28 Build 20の早期アクセスビルドの提供が開始された。</li></ul><p class="impact"><b>影響</b>開発者はJDK 28の早期アクセス版を試し、バグを報告することが推奨されています。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JEP</dt><dd>JDKへの機能追加や仕様変更などの提案をまとめた文書。</dd><dt>RCE</dt><dd>攻撃者が遠隔から任意のプログラムを実行できるセキュリティ上の弱点。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/" target="_blank" rel="noopener noreferrer">エージェントAIによる分散システムの設計動向が解説される</a></h3>
+<p class="orig">原題: Article: From Microservices to Agents: the Next Evolution of Distributed Systems</p>
+<p class="src">出典: <a href="https://www.infoq.com/articles/distributed-systems-microservices-agentic-ai/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-19</p>
+<ul class="points"><li>分散システムが機能の分解から実行時の決定の分解へ進化していると論じた。</li><li>状況に応じた動的処理に伴い推論品質の劣化が新たな障害となります。</li><li>自律性の制限や評価ループ、決定論的フォールバックの重要性を説いた。</li></ul><p class="impact"><b>影響</b>アーキテクトは推論品質の低下を想定した信頼性設計を考慮する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マイクロサービス</dt><dd>システムを機能単位の独立した小さなサービス群に分割する設計手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-14-state-management" target="_blank" rel="noopener noreferrer">Vueの状態管理ライブラリPiniaの基礎が解説される</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #14 - 状態管理（Pinia）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-14-state-management" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-20</p>
+<ul class="points"><li>複数コンポーネント間で状態を共有するPiniaの基本が紹介された。</li><li>storeはstate・getters・actionsの3要素で構成されます。</li><li>propsの多段受け渡しを省き、直接状態を読み書きできます。</li></ul><p class="impact"><b>影響</b>Vue利用者はPiniaのstoreを使って状態管理コードを整理できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Pinia</dt><dd>Vue.js向けに作られた公式の状態管理ライブラリ。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://gigazine.net/news/20261019-furifont/" target="_blank" rel="noopener noreferrer">漢字へ自動でふりがなを表示するフォントFurifontが登場</a></h3>
+<p class="orig">原題: 漢字に自動でふりがなが付くフォント「Furifont」が登場、フォントを切り替えるだけで読み方を表示可能</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261019-furifont/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>フォントを適用するだけで漢字の上にふりがなを自動で表示できます。</li><li>複数の文字を1字形に置き換える合字の仕組みを利用しています。</li><li>フォントファイルやWebページに適用するブックマークレットが無料公開中です。</li></ul><p class="impact"><b>影響</b>既存のWebサイトで使いたい利用者はブックマークレットを導入します。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>合字</dt><dd>複数の文字を組み合わせて1つの文字の形として表示する仕組み。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://forest.watch.impress.co.jp/docs/review/2149141.html" target="_blank" rel="noopener noreferrer">Rust製クリップボード履歴ソフトCLCLRが公開</a></h3>
+<p class="orig">原題: 老舗クリップボード履歴ソフト「CLCL」を手本に「Rust」で作り直した「CLCLR」／レジストリを汚さないポータブルアプリ。画像をWebP形式で圧縮保持するなどの工夫も【レビュー】</p>
+<p class="src">出典: <a href="https://forest.watch.impress.co.jp/docs/review/2149141.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-19</p>
+<ul class="points"><li>老舗ソフトCLCLを手本に、Rust言語で新規設計・実装されたオープンソースアプリです。</li><li>64bit版のEXE単体で動作し、履歴画像をWebP形式で保存して容量を大幅に削減します。</li><li>デジタル署名がないため起動時の警告やセキュリティソフトによる誤検出の可能性があります。</li></ul><p class="impact"><b>影響</b>導入時は、SmartScreenの警告やセキュリティソフトの誤検出に注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Rust</dt><dd>高い処理性能とメモリ安全性を両立するプログラミング言語。</dd><dt>WebP</dt><dd>Googleが開発した、高い圧縮率を誇る画像ファイル形式。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.infoq.com/news/2026/10/buildkite-ci-secrets-agentic/" target="_blank" rel="noopener noreferrer">Buildkiteがパイプライン個別シークレット管理などを追加</a></h3>
+<p class="orig">原題: Buildkite Adds Scoped Secrets and New Agentic CI Tools</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/buildkite-ci-secrets-agentic/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-19</p>
+<ul class="points"><li>Buildkiteがパイプライン固有の秘密情報管理とMCPツールを追加した。</li><li>パイプライン設定からブランチや作成者などの条件でアクセスを制限できる。</li><li>MCPサーバーにはパイプライン検証やビルド比較の機能が導入された。</li></ul><p class="impact"><b>影響</b>開発者はパイプライン画面から対象を絞ったシークレット設定を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIと外部ツールやリソースの接続を標準化するプロトコル。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166" target="_blank" rel="noopener noreferrer">Let&#39;s Encryptがドメイン検証用の遠隔拠点を2件追加</a></h3>
+<p class="orig">原題: Let&#39;s Encrypt is adding two additional remote perspectives for domain validation</p>
+<p class="src">出典: <a href="https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-19</p>
+<ul class="points"><li>ドメイン検証の安全性を高めBGP攻撃を防ぐため拠点を増やします。</li><li>検証は主データセンターと遠隔6拠点の計7回のリクエストで行われます。</li><li>2026年10月27日に検証環境、11月10日に本番環境へ展開予定です。</li></ul><p class="impact"><b>影響</b>ユーザーへの影響はほとんどない見込みとされています。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>BGP</dt><dd>インターネット上で経路情報をルーター同士でやり取りする通信規約。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock/" target="_blank" rel="noopener noreferrer">Amazon Bedrockの最小権限アクセスの実装手順が公開</a></h3>
+<p class="orig">原題: Amazon Bedrock における最小権限アクセスの実装</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-19</p>
+<ul class="points"><li>Amazon Bedrock導入時の権限管理について、モデル選択から運用までの各段階の指針が示されました。</li><li>AWS OrganizationsのSCPを活用し、許可する基盤モデルをリスト形式で制限する設定例が紹介されています。</li></ul><p class="impact"><b>影響</b>Bedrockを利用する開発者は、SCPやIAMポリシーを用いたモデルのアクセス権限設定を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>最小権限の原則</dt><dd>タスク実行に必要な最低限の権限のみを付与するセキュリティ概念。</dd><dt>SCP</dt><dd>AWS組織内のアカウントで利用可能な権限を統制する機能。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management/" target="_blank" rel="noopener noreferrer">Amazon Bedrock APIキーの保護と管理指針が公開</a></h3>
+<p class="orig">原題: Amazon Bedrock API キーの保護: 実装と管理のベストプラクティス</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-19</p>
+<ul class="points"><li>Bedrock呼び出し用のAPIキーについて、効果的な実装や監視、保護の包括的な方針が示されました。</li><li>原則は一時認証情報の使用を推奨しつつ、短期と長期の2種類のAPIキーの特性や使い分けが解説されています。</li></ul><p class="impact"><b>影響</b>APIキーを扱う管理者は、有効期限の設定やSCPによる作成制限などのセキュリティ対策を確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AWS STS</dt><dd>一時的で期限付きの認証情報を安全に発行するAWSのサービス。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/" target="_blank" rel="noopener noreferrer">EC2 Image BuilderがASGと統合しビルドが高速化</a></h3>
+<p class="orig">原題: EC2 Image Builder now integrates with ASG for faster image builds</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-20</p>
+<ul class="points"><li>ASG内の稼働中インスタンスを再利用してイメージを作成し、起動待ち時間を削減できるようになりました。</li><li>既存パイプラインには影響しない選択制の機能で、全AWSリージョンにて追加料金なしで利用可能です。</li></ul><p class="impact"><b>影響</b>ビルド時間を短縮したい利用者は、Image Builderのインフラ設定でASG連携を有効化できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Auto Scaling Group</dt><dd>需要に応じてEC2インスタンスの台数を自動で調整・維持する機能。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://marc.info/?l=openbsd-ports&amp;m=179236125692175" target="_blank" rel="noopener noreferrer">OpenBSD向けにWindowsソフトを動かすWineが移植</a></h3>
+<p class="orig">原題: Wine ported to OpenBSD</p>
+<p class="src">出典: <a href="https://marc.info/?l=openbsd-ports&amp;m=179236125692175" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-19</p>
+<ul class="points"><li>OpenBSD向けにWineが移植され64ビットソフトの動作が確認されました。</li><li>32ビットソフト向けのWoW64は現状動作しない制限があります。</li><li>ウィッチャー3の最新リマスター版などが動作検証されています。</li></ul><p class="impact"><b>影響</b>テストを行う利用者は安全のため非特権ユーザーの利用が推奨されます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Wine</dt><dd>Windows向けプログラムを他のOSで直接動かす互換環境。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://github.com/kksimp/Mac.apk" target="_blank" rel="noopener noreferrer">Apple Silicon MacでAndroidアプリを動かすツールが登場</a></h3>
+<p class="orig">原題: Android apps running native on macOS</p>
+<p class="src">出典: <a href="https://github.com/kksimp/Mac.apk" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-20</p>
+<ul class="points"><li>エミュレータを使わずAndroidアプリをmacOS上でネイティブ実行します。</li><li>macOS 26.4以降のApple Silicon Macに対応しています。</li><li>AGPL v3.0でオープンソース公開され公式アプリは無料です。</li></ul><p class="impact"><b>影響</b>利用する場合はmacOS 26.4以降とApple Silicon端末が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>エミュレーター</dt><dd>異なるOSやハードウェアの動作をソフトウェア上で模倣する仕組み。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-19/">← 2026-10-19</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（20）</summary><ul><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
