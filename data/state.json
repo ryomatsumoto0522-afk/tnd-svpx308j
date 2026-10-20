@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-19T21:33:46.265Z",
+  "lastRun": "2026-10-20T20:38:44.305Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -337,6 +337,25 @@
     "https://forest.watch.impress.co.jp/docs/review/2149141.html": "2026-10-20",
     "https://aws.amazon.com/jp/blogs/news/implementing-least-privilege-access-for-amazon-bedrock": "2026-10-20",
     "https://aws.amazon.com/jp/blogs/news/securing-amazon-bedrock-api-keys-best-practices-for-implementation-and-management": "2026-10-20",
-    "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds": "2026-10-20"
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds": "2026-10-20",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock": "2026-10-21",
+    "https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic": "2026-10-21",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium": "2026-10-21",
+    "https://zenn.dev/ai_news_bot/articles/ainews-20261016-t3": "2026-10-21",
+    "https://gigazine.net/news/20261020-cloudflare-clairic": "2026-10-21",
+    "https://github.com/deepseek-ai/DeepInfer": "2026-10-21",
+    "https://blog.nishimu.land/entry/2026/10/20/123916": "2026-10-21",
+    "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services": "2026-10-21",
+    "https://aws.amazon.com/jp/blogs/news/build-secure-network-architectures-for-generative-ai-applications-using-aws-services": "2026-10-21",
+    "https://aws.amazon.com/jp/blogs/news/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads": "2026-10-21",
+    "https://www.infoq.com/news/2026/10/github-runner-controller-0-15": "2026-10-21",
+    "https://github.com/google-pytorch/torch_tpu": "2026-10-21",
+    "https://inside.java/2026/10/20/devoxxbelgium-bringing-gpu-computing-to-java": "2026-10-21",
+    "https://blog.cloudflare.com/typescript-rust-port": "2026-10-21",
+    "https://zenn.dev/finatext/articles/b83c6488af3864": "2026-10-21",
+    "https://zenn.dev/kipcop/articles/f35-vue-15-api-client": "2026-10-21",
+    "https://forest.watch.impress.co.jp/docs/news/2149622.html": "2026-10-21",
+    "https://www.itmedia.co.jp/news/article/2610/20/2000002426": "2026-10-21",
+    "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": "2026-10-21"
   }
 }

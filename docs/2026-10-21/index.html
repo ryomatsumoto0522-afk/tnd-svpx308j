@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-21</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月21日(水)</p>
+<p class="meta">更新 2026-10-21 05:38 · 取得ソース 18/18 · 選定 19件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/" target="_blank" rel="noopener noreferrer">Amazon Bedrockが全Claudeモデルで構造化出力を提供開始</a></h3>
+<p class="orig">原題: Structured outputs for Claude models available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-20</p>
+<ul class="points"><li>Amazon Bedrockで全Claudeモデルの構造化出力機能が利用可能になりました。</li><li>スキーマに準拠したJSONを返し、独自の解析や再試行処理が不要になります。</li><li>bedrock-runtimeとbedrock-mantleの両エンドポイントに対応します。</li></ul><p class="impact"><b>影響</b>Claudeを利用する開発者は、独自の後処理を実装せずにデータモデルに沿った出力を取得できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>構造化出力</dt><dd>モデルの出力形式をJSONなどの所定のデータ構造に制限する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/" target="_blank" rel="noopener noreferrer">NECがClaude Codeの全社展開と3万人育成を推進</a></h3>
+<p class="orig">原題: 約 3 万人のAIネイティブエンジニア体制へ ― NEC は Claude Code をどう全社展開しているのか？ CoE・チャンピオン制度による取り組み</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-20</p>
+<ul class="points"><li>NECが約3万人規模のAIネイティブエンジニア体制構築に向けClaude Codeを展開しています。</li><li>部門CoEやチャンピオン制度を整備し、全社的なワークショップに延べ158名が参加しました。</li><li>AIエージェントを拡張するモジュール「Skills」で業務ノウハウの標準化を進めています。</li></ul><p class="impact"><b>影響</b>NECのエンジニアは、提供されるSkillsや育成施策を活用して業務プロセスの標準化を進める必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CoE</dt><dd>組織横断で専門的な知見やベストプラクティスを集約し、普及を推進する拠点。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium" target="_blank" rel="noopener noreferrer">AWSがTrainium向けPyTorch基盤の公開ベータを開始</a></h3>
+<p class="orig">原題: AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-21</p>
+<ul class="points"><li>AWSがAWS Trainium向けオープンソース基盤「TorchNeuron」のパブリックベータを開始しました。</li><li>「.to(&#39;neuron&#39;)」の指定だけで、既存のPyTorchコードをTrainium上でネイティブ動作させられます。</li><li>EC2 Trainium2およびTrainium3インスタンス向けにGitHubで公開されています。</li></ul><p class="impact"><b>影響</b>Trainiumを利用するAI研究者や開発者は、GitHubから入手してモデルの構築や実験を行えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>PyTorch</dt><dd>機械学習モデルの開発や学習で広く使われているオープンソースの基盤。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/" target="_blank" rel="noopener noreferrer">Amazon Bedrockが全Claudeモデルで構造化出力を提供開始</a></h3>
+<p class="orig">原題: Structured outputs for Claude models available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-20</p>
+<ul class="points"><li>Amazon Bedrockで全Claudeモデルの構造化出力機能が利用可能になりました。</li><li>スキーマに準拠したJSONを返し、独自の解析や再試行処理が不要になります。</li><li>bedrock-runtimeとbedrock-mantleの両エンドポイントに対応します。</li></ul><p class="impact"><b>影響</b>Claudeを利用する開発者は、独自の後処理を実装せずにデータモデルに沿った出力を取得できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>構造化出力</dt><dd>モデルの出力形式をJSONなどの所定のデータ構造に制限する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/" target="_blank" rel="noopener noreferrer">NECがClaude Codeの全社展開と3万人育成を推進</a></h3>
+<p class="orig">原題: 約 3 万人のAIネイティブエンジニア体制へ ― NEC は Claude Code をどう全社展開しているのか？ CoE・チャンピオン制度による取り組み</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-20</p>
+<ul class="points"><li>NECが約3万人規模のAIネイティブエンジニア体制構築に向けClaude Codeを展開しています。</li><li>部門CoEやチャンピオン制度を整備し、全社的なワークショップに延べ158名が参加しました。</li><li>AIエージェントを拡張するモジュール「Skills」で業務ノウハウの標準化を進めています。</li></ul><p class="impact"><b>影響</b>NECのエンジニアは、提供されるSkillsや育成施策を活用して業務プロセスの標準化を進める必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CoE</dt><dd>組織横断で専門的な知見やベストプラクティスを集約し、普及を推進する拠点。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium" target="_blank" rel="noopener noreferrer">AWSがTrainium向けPyTorch基盤の公開ベータを開始</a></h3>
+<p class="orig">原題: AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-21</p>
+<ul class="points"><li>AWSがAWS Trainium向けオープンソース基盤「TorchNeuron」のパブリックベータを開始しました。</li><li>「.to(&#39;neuron&#39;)」の指定だけで、既存のPyTorchコードをTrainium上でネイティブ動作させられます。</li><li>EC2 Trainium2およびTrainium3インスタンス向けにGitHubで公開されています。</li></ul><p class="impact"><b>影響</b>Trainiumを利用するAI研究者や開発者は、GitHubから入手してモデルの構築や実験を行えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>PyTorch</dt><dd>機械学習モデルの開発や学習で広く使われているオープンソースの基盤。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/ai_news_bot/articles/ainews-20261016-t3" target="_blank" rel="noopener noreferrer">Anthropicが評価団体METRに社員並みの社内権限を付与</a></h3>
+<p class="orig">原題: Anthropic、評価団体METRに社員並みの社内アクセスを付与 — 拒否権なしで結果を公表</p>
+<p class="src">出典: <a href="https://zenn.dev/ai_news_bot/articles/ainews-20261016-t3" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-20</p>
+<ul class="points"><li>AnthropicはAIリスク評価を行う非営利団体METRに社員と同等の社内アクセスを与えました。</li><li>METRの6名を受け入れ、Anthropic側の公表拒否権なしでリスク分析を公開させます。</li><li>顧客データなどは除外されますが、安全性検証のために社内ツールなどを利用できます。</li></ul><p class="impact"><b>影響</b>先端AI企業は、Anthropicが提唱するのと同様の外部評価受け入れ枠組みの導入を検討する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>レッドチーミング</dt><dd>攻撃者の視点からシステムを検証し、潜在的な弱点やリスクを探し出す手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261020-cloudflare-clairic/" target="_blank" rel="noopener noreferrer">Cloudflareが情報抽出・予測AI「Clairic」を発表</a></h3>
+<p class="orig">原題: Cloudflareが文章や画像から必要な情報を高速・低コストで抽出するAI「Clairic」を発表、計算や予測にも対応</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261020-cloudflare-clairic/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>文章や画像から必要な値を直接抽出し、計算や将来予測を行うモデルです。</li><li>テキスト生成を省くことで、一般的なLLMより高速かつ低コストで処理します。</li><li>Workers AIでプレビュー版が提供されており、重みの公開も予定されています。</li></ul><p class="impact"><b>影響</b>非構造化データから素早く情報を抽出・分析したい開発者が利用を検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>非構造化データ</dt><dd>決まった形式がなく、そのままではプログラムで扱いにくいデータのこと。</dd><dt>Workers AI</dt><dd>Cloudflareのクラウド上でAIモデルを手軽に動かせる開発者向けサービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener noreferrer">DeepSeekが高性能推論基盤「DeepInfer」をOSS公開</a></h3>
+<p class="orig">原題: DeepInfer: High-performance inference framework for DeepSeek models</p>
+<p class="src">出典: <a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-20</p>
+<ul class="points"><li>自社の大規模本番運用を支える推論基盤がオープンソースとして公開されました。</li><li>DeepSeek-V4.1-Flashに対応し、各種の最適化カーネルを搭載します。</li><li>NVIDIA SM100やHuawei Ascend 950をサポートしています。</li></ul><p class="impact"><b>影響</b>DeepSeekのモデルを自前のハードウェアで大規模かつ高速に推論したい技術者が利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>推論</dt><dd>学習を終えたAIモデルにデータを与えて、予測や回答を出力させる処理のこと。</dd><dt>カーネル</dt><dd>ハードウェア上で計算を高速に実行するために最適化された最小単位のプログラム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.nishimu.land/entry/2026/10/20/123916" target="_blank" rel="noopener noreferrer">AIによる大量コード生成と「ソフトウェア工場」への開発変化</a></h3>
+<p class="orig">原題: ソフトウェアの産業革命 - ちなみに</p>
+<p class="src">出典: <a href="https://blog.nishimu.land/entry/2026/10/20/123916" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>AIの生成速度向上により、人間によるコードレビューの待ち時間が急増しています。</li><li>開発者の役割は手作業の製造から、検査や差し戻し経路を設計する工場長へ変化します。</li><li>AIが抜け道を学習しないよう、外部からの検証シナリオや環境再現が重視されています。</li></ul><p class="impact"><b>影響</b>AIエージェントを活用する開発チームが、人手レビューに頼らない検証工程を設計する際に参考になります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コーディングエージェント</dt><dd>人間の指示を受けて自律的にプログラムの作成や改修を行うAIツール。</dd><dt>コードレビュー</dt><dd>作成されたプログラムを別の開発者が確認し、品質や不具合を検査する作業。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://github.com/google-pytorch/torch_tpu" target="_blank" rel="noopener noreferrer">GoogleがTPU向けPyTorchバックエンドをオープンソース化</a></h3>
+<p class="orig">原題: Google open-sources TorchTPU, a native PyTorch back end for TPUs</p>
+<p class="src">出典: <a href="https://github.com/google-pytorch/torch_tpu" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-21</p>
+<ul class="points"><li>GoogleのTPU上でPyTorchモデルを実行できるTorchTPUがオープンソースで公開されました。</li><li>TPU向けカスタムATenカーネルやXLA計算のキャッシュ、分散学習をサポートしています。</li><li>最新バージョンは0.2.0で、Python 3.11以降の環境に対応し、pip経由などで導入可能です。</li></ul><p class="impact"><b>影響</b>TPU環境でPyTorchを利用する機械学習エンジニアは、TorchTPUを導入してモデルの実行や学習を行えます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>TPU</dt><dd>Googleが機械学習の高速処理向けに独自開発した、Tensor Processing Unitと呼ばれる専用プロセッサ。</dd><dt>バックエンド</dt><dd>ソフトウェアの骨組みにおいて、ユーザー操作の裏側で実際の計算処理やデータ連携などを担う基盤部分。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/10/20/devoxxbelgium-bringing-gpu-computing-to-java/" target="_blank" rel="noopener noreferrer">JavaからGPU計算を行う新フレームワークHATが発表された</a></h3>
+<p class="orig">原題: Reflect, Transform, Accelerate: Bringing GPU Computing to Java</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/20/devoxxbelgium-bringing-gpu-computing-to-java/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-20</p>
+<ul class="points"><li>OpenJDKのコードリフレクションAPIを活用し、JavaからGPUを直接活用するHATが紹介されました。</li><li>Javaコードを解析・変換し、OpenCLやCUDAへオフロードして実行を高速化します。</li><li>AI向けのテンソルコアプログラミングや行列乗算の具体例、ツールの性能分析も示されました。</li></ul><p class="impact"><b>影響</b>GPUを活用した並列計算やAI処理をJavaで行いたい開発者が、HATの活用を検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>OpenCL</dt><dd>様々なハードウェア上で並列プログラミングを行うための標準規格です。</dd><dt>CUDA</dt><dd>NVIDIA製GPUを使って並列処理を行うための開発環境です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://blog.cloudflare.com/typescript-rust-port/" target="_blank" rel="noopener noreferrer">CloudflareらがTypeScriptのRust移植版tsrsを発表</a></h3>
+<p class="orig">原題: Introducing tsrs: a Port of TypeScript to Rust</p>
+<p class="src">出典: <a href="https://blog.cloudflare.com/typescript-rust-port/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>CloudflareとVoidZeroなどが、TypeScriptコンパイラのRust移植版「tsrs」を発表しました。</li><li>TypeScript 7.0と比較して最大8倍高速化し、メモリ使用量を約70%削減したと報告されています。</li><li>公式チームと連携して言語の仕様を守り、npmで実験的リリースが提供されています。</li></ul><p class="impact"><b>影響</b>高速な型チェックを試したい開発者は、npmからtsrsをインストールして実験版を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンパイラ</dt><dd>人間が書いたプログラムコードを機械が実行できる形式に変換するソフトです。</dd><dt>WebAssembly</dt><dd>ウェブブラウザ上で高速に動作するバイナリ形式のプログラム規格です。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/finatext/articles/b83c6488af3864" target="_blank" rel="noopener noreferrer">Vue Routerの実験的機能でURL検証と型変換の一元化が可能に</a></h3>
+<p class="orig">原題: Vue Routerの書き方はどう変わる？Experimental Routerを調査してみた</p>
+<p class="src">出典: <a href="https://zenn.dev/finatext/articles/b83c6488af3864" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-20</p>
+<ul class="points"><li>Vue Router 5.4.0で、値の変換や検証をルーティング側に集約できる実験的機能が検証されました。</li><li>Param Parsersにより、ファイル名やdefinePageでパラメータの型変換や規定値の設定が可能です。</li><li>従来のルート定義routes配列に代わり、resolverを指定してルーティングを行います。</li></ul><p class="impact"><b>影響</b>VueでURLパラメータの検証や型変換を共通化したい開発者は、実験的機能の導入を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ルーティング</dt><dd>アクセスされたURLに応じて、表示する画面や処理を振り分ける仕組みです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-15-api-client" target="_blank" rel="noopener noreferrer">API通信処理をAPI層に集約して型とエラー処理を共通化する設計法</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #15 - API連携設計（型付きクライアント・エラーハンドリング）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-15-api-client" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-21</p>
+<ul class="points"><li>各画面に直接通信を書くのではなく、通信処理をAPI層にまとめて共通化する設計が解説されました。</li><li>認証ヘッダ付与やエラー処理を一元化し、仕様変更時の修正箇所を1か所に絞れます。</li><li>TypeScriptの型をAPIの出口に指定することで、プロパティのタイプミスなどを実行前に防げます。</li></ul><p class="impact"><b>影響</b>複数画面でAPI通信を実装する開発者は、API層を設けて型定義と共通処理の適用を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>エンドポイント</dt><dd>APIが外部からのアクセスを受け付けるために用意されたURLのことです。</dd><dt>ジェネリクス</dt><dd>型をあらかじめ固定せず、使うときに型を指定できるようにする仕組みです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://forest.watch.impress.co.jp/docs/news/2149622.html" target="_blank" rel="noopener noreferrer">VS CodeでUIのモダナイズが進みクラシックUIは将来廃止へ</a></h3>
+<p class="orig">原題: 「Visual Studio Code」でUIのモダナイズが進行中、従来の「クラシックUI」はいずれ廃止へ／詰まった表示の［Compact］やタブがエディターにくっついたデザインも選択可能</p>
+<p class="src">出典: <a href="https://forest.watch.impress.co.jp/docs/news/2149622.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>UIの視認性や一貫性の向上を目的としたモダナイズが安定版で既定で有効化されました。</li><li>余白を減らす［Compact］レイアウトやエディターと連結したタブ形状を選択可能です。</li><li>移行期間中は設定からクラシックUIへ戻せますが、いずれ廃止される予定です。</li></ul><p class="impact"><b>影響</b>従来の表示や広い作業領域を保ちたい利用者は、レイアウト設定の変更やクラシックUIへの切り替えを行えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>UI</dt><dd>ユーザーインターフェイスの略で、利用者が機器やソフトと情報をやり取りする画面表示や操作部分のことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/" target="_blank" rel="noopener noreferrer">AWSがECSの入口通信を一元管理するECS Gatewayを発表</a></h3>
+<p class="orig">原題: Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-10-21</p>
+<ul class="points"><li>ECSサービスごとのALBや証明書、WAFなどの手動構築と同期を自動化します。</li><li>1台のALBを最大25サービスで共有でき、インフラ費用の最適化が可能です。</li><li>基盤チームが共通ルールを定め、開発チームはパラメータ指定だけで接続できます。</li></ul><p class="impact"><b>影響</b>ECS上で多数のコンテナを運用する基盤担当者や開発者が、ネットワーク設定の省力化に活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon ECS</dt><dd>AWS上でコンテナ型アプリケーションの実行や管理を行うサービス。</dd><dt>ALB</dt><dd>届いたWebアクセスを複数のコンテナやサーバーへ柔軟に振り分ける負荷分散装置。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/build-secure-network-architectures-for-generative-ai-applications-using-aws-services/" target="_blank" rel="noopener noreferrer">AWSが生成AI向けネットワークの多層防御設計を解説</a></h3>
+<p class="orig">原題: AWS のサービスで構築する生成 AI アプリケーションのセキュアなネットワークアーキテクチャ</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/build-secure-network-architectures-for-generative-ai-applications-using-aws-services/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-20</p>
+<ul class="points"><li>VPC分離やファイアウォールによる包括的な多層防御戦略を紹介しています。</li><li>レイヤー4のDDoSやレイヤー7の攻撃、OWASPのセキュリティリスクなどの脅威を整理しています。</li><li>Amazon BedrockのAPI利用時にAWS Direct ConnectやPrivateLinkを用いた構成を示しています。</li></ul><p class="impact"><b>影響</b>AWSで生成AIを運用する開発者は、多層防御やプライベート接続の適用を検討する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>PrivateLink</dt><dd>パブリックなインターネットを経由せずに、VPCと各種サービスをプライベートに接続する仕組み。</dd><dt>DDoS攻撃</dt><dd>標的のサーバーに大量のリクエストを送りつけ、リソースを枯渇させて利用不能にするサイバー攻撃。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads/" target="_blank" rel="noopener noreferrer">AWSがデータ流出を防ぐエグレス制御アーキテクチャを提案</a></h3>
+<p class="orig">原題: データ流出の防止: AWS で実現するクラウドワークロードのエグレス制御</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-20</p>
+<ul class="points"><li>アウトバウンド通信を制御し、不正アクセスやAIエージェントによるデータ持ち出しを防ぐ構成を解説しています。</li><li>Transit GatewayとAWS Network Firewallを中核としたハブアンドスポーク型設計を採用しています。</li><li>DNS Firewallやデータ境界制御、GuardDutyなどを連携させて検出と自動修復を行います。</li></ul><p class="impact"><b>影響</b>AWS環境を管理するエンジニアは、インバウンドだけでなくアウトバウンド通信の制限や監視体制を見直す必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>エグレス</dt><dd>組織やシステムの内部ネットワークから、外部のインターネットなどへ向けて出ていく通信のこと。</dd><dt>ハブアンドスポーク</dt><dd>中央のハブ拠点を介して複数のスポーク拠点を接続し、通信や管理を一元化するネットワーク構成。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.infoq.com/news/2026/10/github-runner-controller-0-15/" target="_blank" rel="noopener noreferrer">GitHubがARC 0.15.0を公開し大規模運用の負荷を軽減</a></h3>
+<p class="orig">原題: GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/github-runner-controller-0-15/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-20</p>
+<ul class="points"><li>Kubernetes上で稼働するActions Runner Controllerのバージョン0.15.0がリリースされました。</li><li>更新時にパッチ要求を使い、状態集約をメトリクスへ移行してKubernetes APIの負荷を削減しています。</li><li>パッチ適用のインプレース更新や、終了待機時間の設定追加によりライフサイクル管理を改善しました。</li></ul><p class="impact"><b>影響</b>ARCで自前ランナーを大規模運用する基盤担当者は、負荷設定を検証した上で新バージョンへの更新を検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ARC</dt><dd>Actions Runner Controllerの略で、Kubernetes上でGitHub Actionsランナーを自動拡大縮小する仕組み。</dd><dt>リコンサイル</dt><dd>実際のシステムの状態を、定義された理想的な状態と一致させるよう自律的に調整する処理。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002426/" target="_blank" rel="noopener noreferrer">アルカディアが不正アクセスの経過と対処を分単位で公表した</a></h3>
+<p class="orig">原題: 「侵入経路塞いだが、バックドアから……」不正アクセス105時間の攻防、分単位で報告 防災メールのアルカディア</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2610/20/2000002426/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>防災情報配信サービスなどが攻撃を受け、消防職員らの連絡先を含む個人情報が漏えいした可能性があります。</li><li>侵入経路を遮断後もバックドアから約142万通のフィッシング疑いのメールが外部へ配信されました。</li><li>不正アクセス開始から約105時間後に、社内LLMによる診断などを経て全サービスが復旧しました。</li></ul><p class="impact"><b>影響</b>同社はセキュリティ専門機関への調査依頼や警察への被害届提出、2段階認証の導入などを進める方針です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>バックドア</dt><dd>不正侵入によってシステム内に密かに設置される、後から不正に再侵入するための裏口のことです。</dd><dt>ディレクトリトラバーサル</dt><dd>ファイルパスを不正に指定し、本来公開されていないサーバー内のファイルへ不正アクセスする攻撃手法です。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.trustbank.co.jp/newsroom/newsrelease/news261020/" target="_blank" rel="noopener noreferrer">ふるさとチョイスで不正アクセスが発生し約445万件の情報が流出した</a></h3>
+<p class="orig">原題: ふるさとチョイス、不正アクセスによる寄附者様情報の外部流出に関するお詫びとお知らせ | NEWSROOM | 株式会社トラストバンク</p>
+<p class="src">出典: <a href="https://www.trustbank.co.jp/newsroom/newsrelease/news261020/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-20</p>
+<ul class="points"><li>トラストバンクの「ふるさとチョイス」が攻撃を受け、445万4097件の会員情報が外部へ流出しました。</li><li>流出項目には氏名、住所、電話番号、ハッシュ化されたパスワード、寄附控除試算額などが含まれます。</li><li>被害拡大防止のためサービスを停止しており、安全性が確認されるまで再開時期は未定としています。</li></ul><p class="impact"><b>影響</b>寄附者は同一パスワードを使っている他サービスのパスワードを変更し、不審なメールや連絡に注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ハッシュ化</dt><dd>不可逆な計算処理によってデータを不規則な文字列に変換し、元のパスワードなどを隠蔽・保護する技術です。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-20/">← 2026-10-20</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（21）</summary><ul><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

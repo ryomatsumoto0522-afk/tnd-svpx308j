@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-20T20:38:44.305Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/",
+      "title": "Structured outputs for Claude models available on Amazon Bedrock",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T14:00:00.000Z",
+      "summary": "Amazon Bedrockで全Claudeモデルの構造化出力機能が利用可能になりました。スキーマに準拠したJSONを返し、独自の解析や再試行処理が不要になります。bedrock-runtimeとbedrock-mantleの両エンドポイントに対応します。",
+      "headline": "Amazon Bedrockが全Claudeモデルで構造化出力を提供開始",
+      "points": [
+        "Amazon Bedrockで全Claudeモデルの構造化出力機能が利用可能になりました。",
+        "スキーマに準拠したJSONを返し、独自の解析や再試行処理が不要になります。",
+        "bedrock-runtimeとbedrock-mantleの両エンドポイントに対応します。"
+      ],
+      "impact": "Claudeを利用する開発者は、独自の後処理を実装せずにデータモデルに沿った出力を取得できます。",
+      "glossary": [
+        {
+          "term": "構造化出力",
+          "explanation": "モデルの出力形式をJSONなどの所定のデータ構造に制限する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/",
+      "title": "約 3 万人のAIネイティブエンジニア体制へ ― NEC は Claude Code をどう全社展開しているのか？ CoE・チャンピオン制度による取り組み",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T00:21:57.000Z",
+      "summary": "NECが約3万人規模のAIネイティブエンジニア体制構築に向けClaude Codeを展開しています。部門CoEやチャンピオン制度を整備し、全社的なワークショップに延べ158名が参加しました。AIエージェントを拡張するモジュール「Skills」で業務ノウハウの標準化を進めています。",
+      "headline": "NECがClaude Codeの全社展開と3万人育成を推進",
+      "points": [
+        "NECが約3万人規模のAIネイティブエンジニア体制構築に向けClaude Codeを展開しています。",
+        "部門CoEやチャンピオン制度を整備し、全社的なワークショップに延べ158名が参加しました。",
+        "AIエージェントを拡張するモジュール「Skills」で業務ノウハウの標準化を進めています。"
+      ],
+      "impact": "NECのエンジニアは、提供されるSkillsや育成施策を活用して業務プロセスの標準化を進める必要があります。",
+      "glossary": [
+        {
+          "term": "CoE",
+          "explanation": "組織横断で専門的な知見やベストプラクティスを集約し、普及を推進する拠点。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium",
+      "title": "AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T15:00:00.000Z",
+      "summary": "AWSがAWS Trainium向けオープンソース基盤「TorchNeuron」のパブリックベータを開始しました。「.to('neuron')」の指定だけで、既存のPyTorchコードをTrainium上でネイティブ動作させられます。EC2 Trainium2およびTrainium3インスタンス向けにGitHubで公開されています。",
+      "headline": "AWSがTrainium向けPyTorch基盤の公開ベータを開始",
+      "points": [
+        "AWSがAWS Trainium向けオープンソース基盤「TorchNeuron」のパブリックベータを開始しました。",
+        "「.to('neuron')」の指定だけで、既存のPyTorchコードをTrainium上でネイティブ動作させられます。",
+        "EC2 Trainium2およびTrainium3インスタンス向けにGitHubで公開されています。"
+      ],
+      "impact": "Trainiumを利用するAI研究者や開発者は、GitHubから入手してモデルの構築や実験を行えます。",
+      "glossary": [
+        {
+          "term": "PyTorch",
+          "explanation": "機械学習モデルの開発や学習で広く使われているオープンソースの基盤。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://zenn.dev/ai_news_bot/articles/ainews-20261016-t3",
+      "title": "Anthropic、評価団体METRに社員並みの社内アクセスを付与 — 拒否権なしで結果を公表",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T09:59:33.000Z",
+      "summary": "AnthropicはAIリスク評価を行う非営利団体METRに社員と同等の社内アクセスを与えました。METRの6名を受け入れ、Anthropic側の公表拒否権なしでリスク分析を公開させます。顧客データなどは除外されますが、安全性検証のために社内ツールなどを利用できます。",
+      "headline": "Anthropicが評価団体METRに社員並みの社内権限を付与",
+      "points": [
+        "AnthropicはAIリスク評価を行う非営利団体METRに社員と同等の社内アクセスを与えました。",
+        "METRの6名を受け入れ、Anthropic側の公表拒否権なしでリスク分析を公開させます。",
+        "顧客データなどは除外されますが、安全性検証のために社内ツールなどを利用できます。"
+      ],
+      "impact": "先端AI企業は、Anthropicが提唱するのと同様の外部評価受け入れ枠組みの導入を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "レッドチーミング",
+          "explanation": "攻撃者の視点からシステムを検証し、潜在的な弱点やリスクを探し出す手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://gigazine.net/news/20261020-cloudflare-clairic/",
+      "title": "Cloudflareが文章や画像から必要な情報を高速・低コストで抽出するAI「Clairic」を発表、計算や予測にも対応",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T06:57:56.000Z",
+      "summary": "文章や画像から必要な値を直接抽出し、計算や将来予測を行うモデルです。テキスト生成を省くことで、一般的なLLMより高速かつ低コストで処理します。Workers AIでプレビュー版が提供されており、重みの公開も予定されています。",
+      "headline": "Cloudflareが情報抽出・予測AI「Clairic」を発表",
+      "points": [
+        "文章や画像から必要な値を直接抽出し、計算や将来予測を行うモデルです。",
+        "テキスト生成を省くことで、一般的なLLMより高速かつ低コストで処理します。",
+        "Workers AIでプレビュー版が提供されており、重みの公開も予定されています。"
+      ],
+      "impact": "非構造化データから素早く情報を抽出・分析したい開発者が利用を検討できます。",
+      "glossary": [
+        {
+          "term": "非構造化データ",
+          "explanation": "決まった形式がなく、そのままではプログラムで扱いにくいデータのこと。"
+        },
+        {
+          "term": "Workers AI",
+          "explanation": "Cloudflareのクラウド上でAIモデルを手軽に動かせる開発者向けサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T09:08:54Z",
+      "summary": "自社の大規模本番運用を支える推論基盤がオープンソースとして公開されました。DeepSeek-V4.1-Flashに対応し、各種の最適化カーネルを搭載します。NVIDIA SM100やHuawei Ascend 950をサポートしています。",
+      "headline": "DeepSeekが高性能推論基盤「DeepInfer」をOSS公開",
+      "points": [
+        "自社の大規模本番運用を支える推論基盤がオープンソースとして公開されました。",
+        "DeepSeek-V4.1-Flashに対応し、各種の最適化カーネルを搭載します。",
+        "NVIDIA SM100やHuawei Ascend 950をサポートしています。"
+      ],
+      "impact": "DeepSeekのモデルを自前のハードウェアで大規模かつ高速に推論したい技術者が利用できます。",
+      "glossary": [
+        {
+          "term": "推論",
+          "explanation": "学習を終えたAIモデルにデータを与えて、予測や回答を出力させる処理のこと。"
+        },
+        {
+          "term": "カーネル",
+          "explanation": "ハードウェア上で計算を高速に実行するために最適化された最小単位のプログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://blog.nishimu.land/entry/2026/10/20/123916",
+      "title": "ソフトウェアの産業革命 - ちなみに",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-20T04:10:49.000Z",
+      "summary": "AIの生成速度向上により、人間によるコードレビューの待ち時間が急増しています。開発者の役割は手作業の製造から、検査や差し戻し経路を設計する工場長へ変化します。AIが抜け道を学習しないよう、外部からの検証シナリオや環境再現が重視されています。",
+      "headline": "AIによる大量コード生成と「ソフトウェア工場」への開発変化",
+      "points": [
+        "AIの生成速度向上により、人間によるコードレビューの待ち時間が急増しています。",
+        "開発者の役割は手作業の製造から、検査や差し戻し経路を設計する工場長へ変化します。",
+        "AIが抜け道を学習しないよう、外部からの検証シナリオや環境再現が重視されています。"
+      ],
+      "impact": "AIエージェントを活用する開発チームが、人手レビューに頼らない検証工程を設計する際に参考になります。",
+      "glossary": [
+        {
+          "term": "コーディングエージェント",
+          "explanation": "人間の指示を受けて自律的にプログラムの作成や改修を行うAIツール。"
+        },
+        {
+          "term": "コードレビュー",
+          "explanation": "作成されたプログラムを別の開発者が確認し、品質や不具合を検査する作業。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
+      "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
+      "source": "AWS News Blog",
+      "genre": "infra",
+      "publishedAt": "2026-10-20T17:03:38.000Z",
+      "summary": "ECSサービスごとのALBや証明書、WAFなどの手動構築と同期を自動化します。1台のALBを最大25サービスで共有でき、インフラ費用の最適化が可能です。基盤チームが共通ルールを定め、開発チームはパラメータ指定だけで接続できます。",
+      "headline": "AWSがECSの入口通信を一元管理するECS Gatewayを発表",
+      "points": [
+        "ECSサービスごとのALBや証明書、WAFなどの手動構築と同期を自動化します。",
+        "1台のALBを最大25サービスで共有でき、インフラ費用の最適化が可能です。",
+        "基盤チームが共通ルールを定め、開発チームはパラメータ指定だけで接続できます。"
+      ],
+      "impact": "ECS上で多数のコンテナを運用する基盤担当者や開発者が、ネットワーク設定の省力化に活用できます。",
+      "glossary": [
+        {
+          "term": "Amazon ECS",
+          "explanation": "AWS上でコンテナ型アプリケーションの実行や管理を行うサービス。"
+        },
+        {
+          "term": "ALB",
+          "explanation": "届いたWebアクセスを複数のコンテナやサーバーへ柔軟に振り分ける負荷分散装置。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/jp/blogs/news/build-secure-network-architectures-for-generative-ai-applications-using-aws-services/",
+      "title": "AWS のサービスで構築する生成 AI アプリケーションのセキュアなネットワークアーキテクチャ",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-20T00:06:49.000Z",
+      "summary": "VPC分離やファイアウォールによる包括的な多層防御戦略を紹介しています。レイヤー4のDDoSやレイヤー7の攻撃、OWASPのセキュリティリスクなどの脅威を整理しています。Amazon BedrockのAPI利用時にAWS Direct ConnectやPrivateLinkを用いた構成を示しています。",
+      "headline": "AWSが生成AI向けネットワークの多層防御設計を解説",
+      "points": [
+        "VPC分離やファイアウォールによる包括的な多層防御戦略を紹介しています。",
+        "レイヤー4のDDoSやレイヤー7の攻撃、OWASPのセキュリティリスクなどの脅威を整理しています。",
+        "Amazon BedrockのAPI利用時にAWS Direct ConnectやPrivateLinkを用いた構成を示しています。"
+      ],
+      "impact": "AWSで生成AIを運用する開発者は、多層防御やプライベート接続の適用を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "PrivateLink",
+          "explanation": "パブリックなインターネットを経由せずに、VPCと各種サービスをプライベートに接続する仕組み。"
+        },
+        {
+          "term": "DDoS攻撃",
+          "explanation": "標的のサーバーに大量のリクエストを送りつけ、リソースを枯渇させて利用不能にするサイバー攻撃。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/jp/blogs/news/prevent-data-exfiltration-aws-egress-controls-for-cloud-workloads/",
+      "title": "データ流出の防止: AWS で実現するクラウドワークロードのエグレス制御",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-20T00:11:30.000Z",
+      "summary": "アウトバウンド通信を制御し、不正アクセスやAIエージェントによるデータ持ち出しを防ぐ構成を解説しています。Transit GatewayとAWS Network Firewallを中核としたハブアンドスポーク型設計を採用しています。DNS Firewallやデータ境界制御、GuardDutyなどを連携させて検出と自動修復を行います。",
+      "headline": "AWSがデータ流出を防ぐエグレス制御アーキテクチャを提案",
+      "points": [
+        "アウトバウンド通信を制御し、不正アクセスやAIエージェントによるデータ持ち出しを防ぐ構成を解説しています。",
+        "Transit GatewayとAWS Network Firewallを中核としたハブアンドスポーク型設計を採用しています。",
+        "DNS Firewallやデータ境界制御、GuardDutyなどを連携させて検出と自動修復を行います。"
+      ],
+      "impact": "AWS環境を管理するエンジニアは、インバウンドだけでなくアウトバウンド通信の制限や監視体制を見直す必要があります。",
+      "glossary": [
+        {
+          "term": "エグレス",
+          "explanation": "組織やシステムの内部ネットワークから、外部のインターネットなどへ向けて出ていく通信のこと。"
+        },
+        {
+          "term": "ハブアンドスポーク",
+          "explanation": "中央のハブ拠点を介して複数のスポーク拠点を接続し、通信や管理を一元化するネットワーク構成。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.infoq.com/news/2026/10/github-runner-controller-0-15/",
+      "title": "GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-20T12:00:00.000Z",
+      "summary": "Kubernetes上で稼働するActions Runner Controllerのバージョン0.15.0がリリースされました。更新時にパッチ要求を使い、状態集約をメトリクスへ移行してKubernetes APIの負荷を削減しています。パッチ適用のインプレース更新や、終了待機時間の設定追加によりライフサイクル管理を改善しました。",
+      "headline": "GitHubがARC 0.15.0を公開し大規模運用の負荷を軽減",
+      "points": [
+        "Kubernetes上で稼働するActions Runner Controllerのバージョン0.15.0がリリースされました。",
+        "更新時にパッチ要求を使い、状態集約をメトリクスへ移行してKubernetes APIの負荷を削減しています。",
+        "パッチ適用のインプレース更新や、終了待機時間の設定追加によりライフサイクル管理を改善しました。"
+      ],
+      "impact": "ARCで自前ランナーを大規模運用する基盤担当者は、負荷設定を検証した上で新バージョンへの更新を検討できます。",
+      "glossary": [
+        {
+          "term": "ARC",
+          "explanation": "Actions Runner Controllerの略で、Kubernetes上でGitHub Actionsランナーを自動拡大縮小する仕組み。"
+        },
+        {
+          "term": "リコンサイル",
+          "explanation": "実際のシステムの状態を、定義された理想的な状態と一致させるよう自律的に調整する処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-20T16:40:24Z",
+      "summary": "GoogleのTPU上でPyTorchモデルを実行できるTorchTPUがオープンソースで公開されました。TPU向けカスタムATenカーネルやXLA計算のキャッシュ、分散学習をサポートしています。最新バージョンは0.2.0で、Python 3.11以降の環境に対応し、pip経由などで導入可能です。",
+      "headline": "GoogleがTPU向けPyTorchバックエンドをオープンソース化",
+      "points": [
+        "GoogleのTPU上でPyTorchモデルを実行できるTorchTPUがオープンソースで公開されました。",
+        "TPU向けカスタムATenカーネルやXLA計算のキャッシュ、分散学習をサポートしています。",
+        "最新バージョンは0.2.0で、Python 3.11以降の環境に対応し、pip経由などで導入可能です。"
+      ],
+      "impact": "TPU環境でPyTorchを利用する機械学習エンジニアは、TorchTPUを導入してモデルの実行や学習を行えます。",
+      "glossary": [
+        {
+          "term": "TPU",
+          "explanation": "Googleが機械学習の高速処理向けに独自開発した、Tensor Processing Unitと呼ばれる専用プロセッサ。"
+        },
+        {
+          "term": "バックエンド",
+          "explanation": "ソフトウェアの骨組みにおいて、ユーザー操作の裏側で実際の計算処理やデータ連携などを担う基盤部分。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://inside.java/2026/10/20/devoxxbelgium-bringing-gpu-computing-to-java/",
+      "title": "Reflect, Transform, Accelerate: Bringing GPU Computing to Java",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "summary": "OpenJDKのコードリフレクションAPIを活用し、JavaからGPUを直接活用するHATが紹介されました。Javaコードを解析・変換し、OpenCLやCUDAへオフロードして実行を高速化します。AI向けのテンソルコアプログラミングや行列乗算の具体例、ツールの性能分析も示されました。",
+      "headline": "JavaからGPU計算を行う新フレームワークHATが発表された",
+      "points": [
+        "OpenJDKのコードリフレクションAPIを活用し、JavaからGPUを直接活用するHATが紹介されました。",
+        "Javaコードを解析・変換し、OpenCLやCUDAへオフロードして実行を高速化します。",
+        "AI向けのテンソルコアプログラミングや行列乗算の具体例、ツールの性能分析も示されました。"
+      ],
+      "impact": "GPUを活用した並列計算やAI処理をJavaで行いたい開発者が、HATの活用を検討できます。",
+      "glossary": [
+        {
+          "term": "OpenCL",
+          "explanation": "様々なハードウェア上で並列プログラミングを行うための標準規格です。"
+        },
+        {
+          "term": "CUDA",
+          "explanation": "NVIDIA製GPUを使って並列処理を行うための開発環境です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://blog.cloudflare.com/typescript-rust-port/",
+      "title": "Introducing tsrs: a Port of TypeScript to Rust",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-20T13:09:28.000Z",
+      "summary": "CloudflareとVoidZeroなどが、TypeScriptコンパイラのRust移植版「tsrs」を発表しました。TypeScript 7.0と比較して最大8倍高速化し、メモリ使用量を約70%削減したと報告されています。公式チームと連携して言語の仕様を守り、npmで実験的リリースが提供されています。",
+      "headline": "CloudflareらがTypeScriptのRust移植版tsrsを発表",
+      "points": [
+        "CloudflareとVoidZeroなどが、TypeScriptコンパイラのRust移植版「tsrs」を発表しました。",
+        "TypeScript 7.0と比較して最大8倍高速化し、メモリ使用量を約70%削減したと報告されています。",
+        "公式チームと連携して言語の仕様を守り、npmで実験的リリースが提供されています。"
+      ],
+      "impact": "高速な型チェックを試したい開発者は、npmからtsrsをインストールして実験版を利用できます。",
+      "glossary": [
+        {
+          "term": "コンパイラ",
+          "explanation": "人間が書いたプログラムコードを機械が実行できる形式に変換するソフトです。"
+        },
+        {
+          "term": "WebAssembly",
+          "explanation": "ウェブブラウザ上で高速に動作するバイナリ形式のプログラム規格です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://zenn.dev/finatext/articles/b83c6488af3864",
+      "title": "Vue Routerの書き方はどう変わる？Experimental Routerを調査してみた",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-20T03:50:46.000Z",
+      "summary": "Vue Router 5.4.0で、値の変換や検証をルーティング側に集約できる実験的機能が検証されました。Param Parsersにより、ファイル名やdefinePageでパラメータの型変換や規定値の設定が可能です。従来のルート定義routes配列に代わり、resolverを指定してルーティングを行います。",
+      "headline": "Vue Routerの実験的機能でURL検証と型変換の一元化が可能に",
+      "points": [
+        "Vue Router 5.4.0で、値の変換や検証をルーティング側に集約できる実験的機能が検証されました。",
+        "Param Parsersにより、ファイル名やdefinePageでパラメータの型変換や規定値の設定が可能です。",
+        "従来のルート定義routes配列に代わり、resolverを指定してルーティングを行います。"
+      ],
+      "impact": "VueでURLパラメータの検証や型変換を共通化したい開発者は、実験的機能の導入を検討できます。",
+      "glossary": [
+        {
+          "term": "ルーティング",
+          "explanation": "アクセスされたURLに応じて、表示する画面や処理を振り分ける仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-15-api-client",
+      "title": "35日でフロントエンドの基礎を完全に理解する #15 - API連携設計（型付きクライアント・エラーハンドリング）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-20T16:31:08.000Z",
+      "summary": "各画面に直接通信を書くのではなく、通信処理をAPI層にまとめて共通化する設計が解説されました。認証ヘッダ付与やエラー処理を一元化し、仕様変更時の修正箇所を1か所に絞れます。TypeScriptの型をAPIの出口に指定することで、プロパティのタイプミスなどを実行前に防げます。",
+      "headline": "API通信処理をAPI層に集約して型とエラー処理を共通化する設計法",
+      "points": [
+        "各画面に直接通信を書くのではなく、通信処理をAPI層にまとめて共通化する設計が解説されました。",
+        "認証ヘッダ付与やエラー処理を一元化し、仕様変更時の修正箇所を1か所に絞れます。",
+        "TypeScriptの型をAPIの出口に指定することで、プロパティのタイプミスなどを実行前に防げます。"
+      ],
+      "impact": "複数画面でAPI通信を実装する開発者は、API層を設けて型定義と共通処理の適用を確認できます。",
+      "glossary": [
+        {
+          "term": "エンドポイント",
+          "explanation": "APIが外部からのアクセスを受け付けるために用意されたURLのことです。"
+        },
+        {
+          "term": "ジェネリクス",
+          "explanation": "型をあらかじめ固定せず、使うときに型を指定できるようにする仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2149622.html",
+      "title": "「Visual Studio Code」でUIのモダナイズが進行中、従来の「クラシックUI」はいずれ廃止へ／詰まった表示の［Compact］やタブがエディターにくっついたデザインも選択可能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-20T07:34:41.000Z",
+      "summary": "UIの視認性や一貫性の向上を目的としたモダナイズが安定版で既定で有効化されました。余白を減らす［Compact］レイアウトやエディターと連結したタブ形状を選択可能です。移行期間中は設定からクラシックUIへ戻せますが、いずれ廃止される予定です。",
+      "headline": "VS CodeでUIのモダナイズが進みクラシックUIは将来廃止へ",
+      "points": [
+        "UIの視認性や一貫性の向上を目的としたモダナイズが安定版で既定で有効化されました。",
+        "余白を減らす［Compact］レイアウトやエディターと連結したタブ形状を選択可能です。",
+        "移行期間中は設定からクラシックUIへ戻せますが、いずれ廃止される予定です。"
+      ],
+      "impact": "従来の表示や広い作業領域を保ちたい利用者は、レイアウト設定の変更やクラシックUIへの切り替えを行えます。",
+      "glossary": [
+        {
+          "term": "UI",
+          "explanation": "ユーザーインターフェイスの略で、利用者が機器やソフトと情報をやり取りする画面表示や操作部分のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.itmedia.co.jp/news/article/2610/20/2000002426/",
+      "title": "「侵入経路塞いだが、バックドアから……」不正アクセス105時間の攻防、分単位で報告 防災メールのアルカディア",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-20T06:16:53.000Z",
+      "summary": "防災情報配信サービスなどが攻撃を受け、消防職員らの連絡先を含む個人情報が漏えいした可能性があります。侵入経路を遮断後もバックドアから約142万通のフィッシング疑いのメールが外部へ配信されました。不正アクセス開始から約105時間後に、社内LLMによる診断などを経て全サービスが復旧しました。",
+      "headline": "アルカディアが不正アクセスの経過と対処を分単位で公表した",
+      "points": [
+        "防災情報配信サービスなどが攻撃を受け、消防職員らの連絡先を含む個人情報が漏えいした可能性があります。",
+        "侵入経路を遮断後もバックドアから約142万通のフィッシング疑いのメールが外部へ配信されました。",
+        "不正アクセス開始から約105時間後に、社内LLMによる診断などを経て全サービスが復旧しました。"
+      ],
+      "impact": "同社はセキュリティ専門機関への調査依頼や警察への被害届提出、2段階認証の導入などを進める方針です。",
+      "glossary": [
+        {
+          "term": "バックドア",
+          "explanation": "不正侵入によってシステム内に密かに設置される、後から不正に再侵入するための裏口のことです。"
+        },
+        {
+          "term": "ディレクトリトラバーサル",
+          "explanation": "ファイルパスを不正に指定し、本来公開されていないサーバー内のファイルへ不正アクセスする攻撃手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news261020/",
+      "title": "ふるさとチョイス、不正アクセスによる寄附者様情報の外部流出に関するお詫びとお知らせ | NEWSROOM | 株式会社トラストバンク",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-20T10:59:09.000Z",
+      "summary": "トラストバンクの「ふるさとチョイス」が攻撃を受け、445万4097件の会員情報が外部へ流出しました。流出項目には氏名、住所、電話番号、ハッシュ化されたパスワード、寄附控除試算額などが含まれます。被害拡大防止のためサービスを停止しており、安全性が確認されるまで再開時期は未定としています。",
+      "headline": "ふるさとチョイスで不正アクセスが発生し約445万件の情報が流出した",
+      "points": [
+        "トラストバンクの「ふるさとチョイス」が攻撃を受け、445万4097件の会員情報が外部へ流出しました。",
+        "流出項目には氏名、住所、電話番号、ハッシュ化されたパスワード、寄附控除試算額などが含まれます。",
+        "被害拡大防止のためサービスを停止しており、安全性が確認されるまで再開時期は未定としています。"
+      ],
+      "impact": "寄附者は同一パスワードを使っている他サービスのパスワードを変更し、不審なメールや連絡に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "ハッシュ化",
+          "explanation": "不可逆な計算処理によってデータを不規則な文字列に変換し、元のパスワードなどを隠蔽・保護する技術です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 105,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 28598,
+    "outputTokens": 14639
+  },
+  "offline": false
+}
