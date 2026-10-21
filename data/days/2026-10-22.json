@@ -1,0 +1,409 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-21T20:39:19.973Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://blog.flatt.tech/entry/php2shell",
+      "title": "PHPの重大な脆弱性「php2shell」（CVE-2026-109618、CVE-2026-109619）の概要と対応指針 - GMO Flatt Security Blog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-21T02:15:43.000Z",
+      "summary": "任意コード実行につながる重大な脆弱性2件の修正パッチが公開されました。深刻度CVSSスコアは9.2で、不適切なメモリ管理に起因します。WordPressやLaravelなど多様な環境で攻撃再現が報告されています。",
+      "headline": "PHPの重大な脆弱性2件に対する修正パッチが公開",
+      "points": [
+        "任意コード実行につながる重大な脆弱性2件の修正パッチが公開されました。",
+        "深刻度CVSSスコアは9.2で、不適切なメモリ管理に起因します。",
+        "WordPressやLaravelなど多様な環境で攻撃再現が報告されています。"
+      ],
+      "impact": "PHPを利用している組織の管理者は、提供されたパッチを直ちに適用する必要があります。",
+      "glossary": [
+        {
+          "term": "RCE",
+          "explanation": "遠隔の第三者が標的システム上で不正なプログラムを実行できる脆弱性。"
+        },
+        {
+          "term": "Use After Free",
+          "explanation": "解放済みのメモリ領域に誤って再アクセスすることで生じる不具合。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/21/174516",
+      "title": "修正予告されたPHPの2件の深刻な脆弱性についてまとめてみた - piyolog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-21T08:57:42.000Z",
+      "summary": "認証なしでリモートコード実行に至る脆弱性2件が修正されました。深刻度はCVSSで9.2であり、mod_phpなどで高いリスクがあります。バージョン8.2〜8.5の修正版や過去バージョン向けバックポートが用意されました。",
+      "headline": "PHPの深刻な脆弱性2件を修正するセキュリティ版が公開",
+      "points": [
+        "認証なしでリモートコード実行に至る脆弱性2件が修正されました。",
+        "深刻度はCVSSで9.2であり、mod_phpなどで高いリスクがあります。",
+        "バージョン8.2〜8.5の修正版や過去バージョン向けバックポートが用意されました。"
+      ],
+      "impact": "すべてのPHP利用者は、直ちに修正版への更新や利用中のディストリビューションの対応を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "CVSS",
+          "explanation": "情報システムのセキュリティ脆弱性の深刻度を評価する共通の基準。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://gigazine.net/news/20261022-php2shell-wiz-openai-calif/",
+      "title": "PHPの重大脆弱性「PHP2Shell」はセキュリティ企業のCalifとWizがAIを用いて発見しOpenAIの枠組みを使って対策したことが判明",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T15:19:11.000Z",
+      "summary": "Calif社とWiz社がAIを活用してそれぞれPHPの脆弱性を発見しました。OpenAIの枠組みやGoogleなどの複数企業が連携して検証や対策を実施しました。すぐに更新できない組織向けにガイダンスや一時的な緩和策の準備も支援されました。",
+      "headline": "PHPの重大な脆弱性がAIを用いた調査により発見され各社が対策",
+      "points": [
+        "Calif社とWiz社がAIを活用してそれぞれPHPの脆弱性を発見しました。",
+        "OpenAIの枠組みやGoogleなどの複数企業が連携して検証や対策を実施しました。",
+        "すぐに更新できない組織向けにガイダンスや一時的な緩和策の準備も支援されました。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-21T14:53:13.000Z",
+      "summary": "認証不要でコード実行につながる2件の脆弱性を修正した最新版が公開されました。2024年の外部監査から発覚していた問題への対応遅れを構造的な課題として認めました。意思決定プロセスの変更や専門チームの新設によりセキュリティ強化を図っています。",
+      "headline": "PHP財団が重大な脆弱性の修正版公開と体制改善の経緯を説明",
+      "points": [
+        "認証不要でコード実行につながる2件の脆弱性を修正した最新版が公開されました。",
+        "2024年の外部監査から発覚していた問題への対応遅れを構造的な課題として認めました。",
+        "意思決定プロセスの変更や専門チームの新設によりセキュリティ強化を図っています。"
+      ],
+      "impact": "PHPを実行しているシステムの管理者は、直ちに最新版へアップデートする必要があります。",
+      "glossary": [
+        {
+          "term": "OOM",
+          "explanation": "メモリの空き容量が不足し、新たな領域を確保できなくなる状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-21T14:00:26Z",
+      "summary": "PyPIに公開されたLiteLLM 1.107.0に認証情報窃取とバックドアが混入しました。インストールするとPython起動時に悪意あるコードが実行され、鍵や秘密情報が送信されます。アップストリームのGitHubソースには含まれず、正規版1.106.2などは安全です。",
+      "headline": "LiteLLMの悪意あるバージョンがPyPIから削除",
+      "points": [
+        "PyPIに公開されたLiteLLM 1.107.0に認証情報窃取とバックドアが混入しました。",
+        "インストールするとPython起動時に悪意あるコードが実行され、鍵や秘密情報が送信されます。",
+        "アップストリームのGitHubソースには含まれず、正規版1.106.2などは安全です。"
+      ],
+      "impact": "該当バージョンを導入した環境では、窃取された可能性のある各種秘密情報の確認と破棄が必要です。",
+      "glossary": [
+        {
+          "term": "PyPI",
+          "explanation": "Pythonで開発されたパッケージを管理・配布するための公式リポジトリです。"
+        },
+        {
+          "term": "バックドア",
+          "explanation": "正規の手続きを経ずにシステムへ不正侵入するために設置される侵入経路です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://blog.flatt.tech/entry/litellm_2nd_compromise",
+      "title": "LiteLLMパッケージ 再侵害の概要と対策指針 - GMO Flatt Security Blog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-21T12:37:30.000Z",
+      "summary": "PyPI版litellm 1.107.0に認証情報を盗み出すマルウェアが注入されました。Python起動時に自動実行される仕組みを悪用し、クラウド認証情報やSSH鍵を窃取します。安全なバージョンは1.106.2とされ、問題のバージョンは既にテイクダウンされています。",
+      "headline": "LiteLLMの悪性版混入を受け専門企業が対策を公開",
+      "points": [
+        "PyPI版litellm 1.107.0に認証情報を盗み出すマルウェアが注入されました。",
+        "Python起動時に自動実行される仕組みを悪用し、クラウド認証情報やSSH鍵を窃取します。",
+        "安全なバージョンは1.106.2とされ、問題のバージョンは既にテイクダウンされています。"
+      ],
+      "impact": "該当版を導入した可能性があるユーザーは、SSH秘密鍵やクラウド認証情報の即座な更新が求められます。",
+      "glossary": [
+        {
+          "term": "Infostealer",
+          "explanation": "感染した端末からパスワードや認証情報などの秘密情報を盗み出すマルウェアです。"
+        },
+        {
+          "term": "ローテーション",
+          "explanation": "セキュリティ維持のため、既存の暗号鍵やパスワードを定期的に新しいものへ更新することです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "title": "Mistral Large 4",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T19:20:55Z",
+      "summary": "大規模なマルチモーダルモデルMistral Large 4のパブリックプレビューが公開されました。総パラメータ数1.05兆、アクティブ数520億のMoE構成で、100万トークンのコンテキストに対応します。API価格は入力100万トークンあたり1.36ドル、出力4.18ドルで提供されます。",
+      "headline": "Mistral AIが最新マルチモーダルモデルを公開",
+      "points": [
+        "大規模なマルチモーダルモデルMistral Large 4のパブリックプレビューが公開されました。",
+        "総パラメータ数1.05兆、アクティブ数520億のMoE構成で、100万トークンのコンテキストに対応します。",
+        "API価格は入力100万トークンあたり1.36ドル、出力4.18ドルで提供されます。"
+      ],
+      "impact": "最新の高性能マルチモーダルモデルを活用した開発や検証を行いたい開発者が利用できます。",
+      "glossary": [
+        {
+          "term": "Mixture-of-Experts",
+          "explanation": "複数の専門モデルを組み合わせ、入力に応じて必要な部分だけを動作させる効率的な仕組みです。"
+        },
+        {
+          "term": "マルチモーダル",
+          "explanation": "テキストだけでなく画像や音声など複数の種類のデータを同時に処理できる性質のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/jp/blogs/news/memory-in-ide-cli/",
+      "title": "Kiro IDE と CLI にメモリ機能が登場",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T09:38:21.000Z",
+      "summary": "ユーザーの作業手順の好みや規約、過去の訂正内容を記憶するメモリ機能が導入されました。記録されたデータはローカルに保存され、IDEとCLIの間で相互に共有されます。本機能は初期状態で無効化されており、ユーザー自身で有効化と権限設定を行えます。",
+      "headline": "KiroのIDEとCLIに文脈を保持するメモリ機能が追加",
+      "points": [
+        "ユーザーの作業手順の好みや規約、過去の訂正内容を記憶するメモリ機能が導入されました。",
+        "記録されたデータはローカルに保存され、IDEとCLIの間で相互に共有されます。",
+        "本機能は初期状態で無効化されており、ユーザー自身で有効化と権限設定を行えます。"
+      ],
+      "impact": "Kiro IDE 1.4.0以降またはCLI 2.29.0以降の利用者は、設定画面から本機能を有効化できます。",
+      "glossary": [
+        {
+          "term": "IDE",
+          "explanation": "コード編集、コンパイル、デバッグなどの開発作業を1つの画面で行える統合開発環境です。"
+        },
+        {
+          "term": "CLI",
+          "explanation": "画面上に文字を入力してコンピュータに指示を出し、操作を行うインターフェースです。"
+        }
+      ],
+      "bodyMode": "feed"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/syoshida07/articles/56555330b47aa2",
+      "title": "LLMは「何年の情報か」を一貫して認識できているのか？ 米国スタンフォード大学 AI Lab の研究から考える",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T12:42:08.000Z",
+      "summary": "SAILはLLMが現在の年を一貫して認識しているかを検証する研究を発表しました。LLMは時間認識を持たず、古い知識と最新の前提条件を混在させる恐れがあります。企業向けAIでは回答の品質だけでなく情報鮮度や時間整合性の評価が重要になります。",
+      "headline": "スタンフォード大がLLMの現在年の認識一貫性を検証",
+      "points": [
+        "SAILはLLMが現在の年を一貫して認識しているかを検証する研究を発表しました。",
+        "LLMは時間認識を持たず、古い知識と最新の前提条件を混在させる恐れがあります。",
+        "企業向けAIでは回答の品質だけでなく情報鮮度や時間整合性の評価が重要になります。"
+      ],
+      "impact": "生成AI利用者は回答を鵜呑みにせず情報源の時点や最新データへの接続を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部の情報源から最新データを検索・取得して回答を生成するAI技術手法。"
+        },
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実とは異なる誤った情報を生成してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://www.infoq.com/news/2026/10/synthid-watermarking-detector/",
+      "title": "Google SynthID Detector Simplifies Watermark Detection and Expands Support to Other AI Providers",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T10:00:00.000Z",
+      "summary": "Google DeepMindがAI生成物を識別するSynthID Detectorの一般提供を開始しました。OpenAIやNVIDIAなどパートナー各社で生成されたメディアの透かしを判定できます。MetaやMicrosoftのAI生成物は対象外で、大幅な改変による誤判定の可能性もあります。",
+      "headline": "Googleが複数社対応のAI透かし検出ツールを公開",
+      "points": [
+        "Google DeepMindがAI生成物を識別するSynthID Detectorの一般提供を開始しました。",
+        "OpenAIやNVIDIAなどパートナー各社で生成されたメディアの透かしを判定できます。",
+        "MetaやMicrosoftのAI生成物は対象外で、大幅な改変による誤判定の可能性もあります。"
+      ],
+      "impact": "AI生成コンテンツの真偽を確認したい利用者はウェブサイトから対象メディアを検査できます。",
+      "glossary": [
+        {
+          "term": "電子透かし",
+          "explanation": "デジタルデータに著作権や出所などの識別情報を埋め込む技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-21T03:00:00.000Z",
+      "summary": "TornadoVM 7.3が公開されJavaプログラムのGPUやマルチコアCPUでの並列実行が強化されました。JNIからFFM APIへ移行し、JDK 21、25、26、27で統一的なコンパイラ基盤を採用しました。最適化されたCUDAバックエンドやマルチGPU実行、Apple MXLへの対応が追加されました。",
+      "headline": "Java向けGPU並列基盤TornadoVM 7.3が公開",
+      "points": [
+        "TornadoVM 7.3が公開されJavaプログラムのGPUやマルチコアCPUでの並列実行が強化されました。",
+        "JNIからFFM APIへ移行し、JDK 21、25、26、27で統一的なコンパイラ基盤を採用しました。",
+        "最適化されたCUDAバックエンドやマルチGPU実行、Apple MXLへの対応が追加されました。"
+      ],
+      "impact": "JavaでGPU並列処理や機械学習を扱う開発者は新APIやマルチGPU機能を利用できます。",
+      "glossary": [
+        {
+          "term": "FFM API",
+          "explanation": "Javaからネイティブコードや外部メモリに安全にアクセスする標準機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+      "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-21T14:01:22Z",
+      "summary": "DuckDB 2.0.0 LTSが公開され、約2万コミットに基づく多数の新機能が導入されました。サーバ接続を担うQuackプロトコルの改良や非同期I/O、CONNECT文が追加されました。本バージョンは2027年10月までサポートされ、1.5のサポートも2027年3月まで延長されます。",
+      "headline": "DuckDBが新機能とLTS対応のバージョン2.0.0を公開",
+      "points": [
+        "DuckDB 2.0.0 LTSが公開され、約2万コミットに基づく多数の新機能が導入されました。",
+        "サーバ接続を担うQuackプロトコルの改良や非同期I/O、CONNECT文が追加されました。",
+        "本バージョンは2027年10月までサポートされ、1.5のサポートも2027年3月まで延長されます。"
+      ],
+      "impact": "DuckDBを利用する開発者は新機能を検証しつつLTS版への移行を検討できます。",
+      "glossary": [
+        {
+          "term": "LTS",
+          "explanation": "長期にわたりセキュリティ修正や保守が提供される長期サポート版。"
+        },
+        {
+          "term": "非同期I/O",
+          "explanation": "データの読み書き完了を待たずに他の処理を並行して進める入出力方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.infoq.com/news/2026/10/netflix-workload-attestation-aws/",
+      "title": "Netflix Bridges AWS IAM and Internal Identity with Workload Attestation",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-21T13:45:00.000Z",
+      "summary": "Apache Sparkのジョブが持つAWSの実行IDを、社内の短期的なワークロードIDへ安全に交換できるようにしました。Data ProjectごとにIAMロールを割り当て、コントローラープレーンを経由して署名付きメタデータを発行する仕組みです。ドライバー側で一度だけ認証を行って認証情報を配布し、数千に及ぶエグゼキューターごとの個別認証を回避しています。",
+      "headline": "NetflixがAWS IAMと社内IDを連携する仕組みを開発",
+      "points": [
+        "Apache Sparkのジョブが持つAWSの実行IDを、社内の短期的なワークロードIDへ安全に交換できるようにしました。",
+        "Data ProjectごとにIAMロールを割り当て、コントローラープレーンを経由して署名付きメタデータを発行する仕組みです。",
+        "ドライバー側で一度だけ認証を行って認証情報を配布し、数千に及ぶエグゼキューターごとの個別認証を回避しています。"
+      ],
+      "impact": "マネージドなクラウド環境と独自の組織内IDシステムの間で認証を連携させたい開発者が活用できます。",
+      "glossary": [
+        {
+          "term": "AWS IAM",
+          "explanation": "AWSリソースへのアクセス権限を安全に管理するためのサービスです。"
+        },
+        {
+          "term": "PKI",
+          "explanation": "公開鍵暗号方式を用いて電子証明書を発行・管理する基盤のことです。"
+        },
+        {
+          "term": "TLS",
+          "explanation": "インターネット上で通信を暗号化して安全にやり取りするためのプロトコルです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://qiita.com/picnic/items/a76a0164a1e2db4f994d",
+      "title": "Claude User Profiles と組織Webhook(Admin API)入門:エンドカスタマー単位の安全性措置",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T17:13:07.000Z",
+      "summary": "APIリクエストごとにエンドカスタマーを伝えるUser Profiles機能により、安全性措置の対象を違反者1人に限定できるようになりました。Admin APIに組織Webhookが追加され、プロファイルの制限やBANの発生・終了を自動検知できるようになります。Managed Agentsのweb_searchツールが組織のドメイン制限に従うよう仕様が変更されました。",
+      "headline": "AnthropicがUser Profilesや組織Webhookなどをリリース",
+      "points": [
+        "APIリクエストごとにエンドカスタマーを伝えるUser Profiles機能により、安全性措置の対象を違反者1人に限定できるようになりました。",
+        "Admin APIに組織Webhookが追加され、プロファイルの制限やBANの発生・終了を自動検知できるようになります。",
+        "Managed Agentsのweb_searchツールが組織のドメイン制限に従うよう仕様が変更されました。"
+      ],
+      "impact": "マルチテナント構成でClaude APIを提供する事業者や、再販事業者が対応を行う必要があります。",
+      "glossary": [
+        {
+          "term": "Webhook",
+          "explanation": "特定のイベントが発生した際に、外部のアプリへ自動で通知を送る仕組みです。"
+        },
+        {
+          "term": "マルチテナント",
+          "explanation": "1つのシステムやソフトウェアを複数の顧客（テナント）で共有して利用する方式です。"
+        },
+        {
+          "term": "OpenTelemetry",
+          "explanation": "システムの稼働状況を観測するためのデータを収集・統一するオープン標準規格です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1",
+      "title": "AIエージェントに「実装しながら考える」をさせない。技術負債を減らす計画書作成プロンプト",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T13:56:29.000Z",
+      "summary": "AIにいきなり実装させず、コードの確認や世間一般の調査、影響範囲の特定を行わせる手順をルール化しました。計画書には対象ファイルの特定や未決定事項の解消、セルフレビューの実施を必須としています。作成した計画書についてユーザーの承認を得てから実装に進むことで、独自の勝手な判断による技術負債を防ぎます。",
+      "headline": "AIエージェントの独創的な実装を防ぐ計画書作成プロンプト",
+      "points": [
+        "AIにいきなり実装させず、コードの確認や世間一般の調査、影響範囲の特定を行わせる手順をルール化しました。",
+        "計画書には対象ファイルの特定や未決定事項の解消、セルフレビューの実施を必須としています。",
+        "作成した計画書についてユーザーの承認を得てから実装に進むことで、独自の勝手な判断による技術負債を防ぎます。"
+      ],
+      "impact": "Claude Codeなどのコーディングエージェントに実装を任せる開発者が、品質の低下や技術負債の増加を防ぐために活用できます。",
+      "glossary": [
+        {
+          "term": "技術負債",
+          "explanation": "目先の開発速度を優先した結果として、後からの修正や保守が難しくなる非効率なコードや設計のことです。"
+        },
+        {
+          "term": "サブエージェント",
+          "explanation": "メインのタスクを補助するために独立して動作する、AIなどの補助的な実行プロセスのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 118,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 25385,
+    "outputTokens": 7269
+  },
+  "offline": false
+}

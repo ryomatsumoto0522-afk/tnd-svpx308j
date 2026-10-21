@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-20T20:38:44.305Z",
+  "lastRun": "2026-10-21T20:39:19.973Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -356,6 +356,21 @@
     "https://zenn.dev/kipcop/articles/f35-vue-15-api-client": "2026-10-21",
     "https://forest.watch.impress.co.jp/docs/news/2149622.html": "2026-10-21",
     "https://www.itmedia.co.jp/news/article/2610/20/2000002426": "2026-10-21",
-    "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": "2026-10-21"
+    "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": "2026-10-21",
+    "https://blog.flatt.tech/entry/php2shell": "2026-10-22",
+    "https://piyolog.hatenadiary.jp/entry/2026/10/21/174516": "2026-10-22",
+    "https://gigazine.net/news/20261022-php2shell-wiz-openai-calif": "2026-10-22",
+    "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security": "2026-10-22",
+    "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor": "2026-10-22",
+    "https://blog.flatt.tech/entry/litellm_2nd_compromise": "2026-10-22",
+    "https://docs.mistral.ai/models/mistral-large-4-0": "2026-10-22",
+    "https://aws.amazon.com/jp/blogs/news/memory-in-ide-cli": "2026-10-22",
+    "https://zenn.dev/syoshida07/articles/56555330b47aa2": "2026-10-22",
+    "https://www.infoq.com/news/2026/10/synthid-watermarking-detector": "2026-10-22",
+    "https://www.infoq.com/news/2026/10/tornadovm-7-gpu": "2026-10-22",
+    "https://duckdb.org/2026/10/21/announcing-duckdb-200": "2026-10-22",
+    "https://www.infoq.com/news/2026/10/netflix-workload-attestation-aws": "2026-10-22",
+    "https://qiita.com/picnic/items/a76a0164a1e2db4f994d": "2026-10-22",
+    "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1": "2026-10-22"
   }
 }
