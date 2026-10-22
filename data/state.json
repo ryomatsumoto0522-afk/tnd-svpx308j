@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-21T20:39:19.973Z",
+  "lastRun": "2026-10-22T20:34:38.974Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -371,6 +371,18 @@
     "https://duckdb.org/2026/10/21/announcing-duckdb-200": "2026-10-22",
     "https://www.infoq.com/news/2026/10/netflix-workload-attestation-aws": "2026-10-22",
     "https://qiita.com/picnic/items/a76a0164a1e2db4f994d": "2026-10-22",
-    "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1": "2026-10-22"
+    "https://zenn.dev/kazuki_izutani/articles/1709552ca099f1": "2026-10-22",
+    "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation": "2026-10-23",
+    "https://www.infoq.com/news/2026/10/photocraft-adobe-parity": "2026-10-23",
+    "https://zenn.dev/explaza/articles/c749042ecbe232": "2026-10-23",
+    "https://inside.pixiv.blog/2026/10/22/193321": "2026-10-23",
+    "https://www.itmedia.co.jp/news/article/2610/22/2000002525": "2026-10-23",
+    "https://qiita.com/kenimo49/items/30f290bf0f4fff021fb3": "2026-10-23",
+    "https://zenn.dev/kipcop/articles/f35-vue-17-tailwind": "2026-10-23",
+    "https://globus.software/blog/2026/10/16/cutting-map-polygons": "2026-10-23",
+    "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available": "2026-10-23",
+    "https://aws.amazon.com/jp/blogs/news/under-the-hood-how-amazon-eks-auto-mode-detects-repairs-and-diagnoses-node-failures": "2026-10-23",
+    "https://aws.amazon.com/jp/blogs/news/using-aws-waf-to-apply-mitigations-for-php2shell-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619": "2026-10-23",
+    "https://www.itmedia.co.jp/news/article/2610/22/2000002523": "2026-10-23"
   }
 }

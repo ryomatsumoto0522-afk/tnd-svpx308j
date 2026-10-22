@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-22T20:34:38.974Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "summary": "AIエージェントに専門知識を教えるAgent SkillsをAAIFに寄贈しました。2025年12月の公開以来、70以上の基盤で統合され100万件のスキルが公開されています。商標やドメインを寄贈し、今後は中立的な組織で開発方針が議論されます。",
+      "headline": "AnthropicがAgent Skills規格をAAIFへ寄贈",
+      "points": [
+        "AIエージェントに専門知識を教えるAgent SkillsをAAIFに寄贈しました。",
+        "2025年12月の公開以来、70以上の基盤で統合され100万件のスキルが公開されています。",
+        "商標やドメインを寄贈し、今後は中立的な組織で開発方針が議論されます。"
+      ],
+      "impact": "開発者はAAIFに参加しなくても規格の利用や貢献を継続できます。",
+      "glossary": [
+        {
+          "term": "Agentic AI Foundation",
+          "explanation": "AIエージェント技術のオープンな発展を目指す非営利の業界団体。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.infoq.com/news/2026/10/photocraft-adobe-parity/",
+      "title": "Developer Behind the AI-Built Adobe Clones Says They Are “Not Anywhere Close to Ready",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-22T07:41:00.000Z",
+      "summary": "開発者がClaudeで構築した7つのAdobe代替ソフトの進捗を報告しました。機能網羅率は約76%ですが、実務での実用準備度は約45%にとどまります。Photoshopで正しく開けないPSD出力や、RAW現像のノイズなど課題が残ります。",
+      "headline": "AIによるAdobe模倣計画は実用に程遠い状態と判明",
+      "points": [
+        "開発者がClaudeで構築した7つのAdobe代替ソフトの進捗を報告しました。",
+        "機能網羅率は約76%ですが、実務での実用準備度は約45%にとどまります。",
+        "Photoshopで正しく開けないPSD出力や、RAW現像のノイズなど課題が残ります。"
+      ],
+      "glossary": [
+        {
+          "term": "クリーンルーム設計",
+          "explanation": "既存のコードを見ず、公開仕様や外部挙動のみを基に再実装する手法。"
+        },
+        {
+          "term": "WebAssembly",
+          "explanation": "Webブラウザ上でネイティブに近い速度でコードを動かす技術規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/explaza/articles/c749042ecbe232",
+      "title": "仕組みを理解する動画を、Claude Codeに作らせると便利すぎる",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-21T19:34:57.000Z",
+      "summary": "アプリの操作と裏側の処理を交互に見せる解説動画の生成手順が紹介されました。専用スキルを導入し、指示テンプレートと記録データを渡すだけで作れます。Playwrightで描画したコマをffmpegで結合し再現性を確保しています。",
+      "headline": "Claude Codeでアプリの解説動画を作る手法が公開",
+      "points": [
+        "アプリの操作と裏側の処理を交互に見せる解説動画の生成手順が紹介されました。",
+        "専用スキルを導入し、指示テンプレートと記録データを渡すだけで作れます。",
+        "Playwrightで描画したコマをffmpegで結合し再現性を確保しています。"
+      ],
+      "impact": "Claude Codeの利用者は専用スキルと指示文で解説動画を生成できます。",
+      "glossary": [
+        {
+          "term": "Playwright",
+          "explanation": "Webブラウザの画面操作や表示を自動化するための開発ツール。"
+        },
+        {
+          "term": "ffmpeg",
+          "explanation": "動画や音声の変換、記録、編集などを幅広く行えるオープンソースツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://inside.pixiv.blog/2026/10/22/193321",
+      "title": "PHP 8.5.12の緊急リリースにpixivはどう対応したか - pixiv inside",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-22T10:38:41.000Z",
+      "summary": "PHPの深刻な脆弱性に対し、リリースから約30分でメンテナンスを解除しました。公式イメージを待たず、ソースから自前で即座にビルドできる準備を整えました。高性能ノードとBuildKitの最適化により、数GBのイメージを6分で構築しました。",
+      "headline": "pixivがPHPの緊急脆弱性パッチを約30分で適用完了",
+      "points": [
+        "PHPの深刻な脆弱性に対し、リリースから約30分でメンテナンスを解除しました。",
+        "公式イメージを待たず、ソースから自前で即座にビルドできる準備を整えました。",
+        "高性能ノードとBuildKitの最適化により、数GBのイメージを6分で構築しました。"
+      ],
+      "glossary": [
+        {
+          "term": "BuildKit",
+          "explanation": "コンテナイメージを並列かつ高速にビルドするための基盤ツール。"
+        },
+        {
+          "term": "ロールアウト",
+          "explanation": "新しいバージョンのソフトウェアを本番環境へ順次展開していく処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://www.itmedia.co.jp/news/article/2610/22/2000002525/",
+      "title": "PHP脆弱性“PoCフライング公開”の経緯、支援財団が公表 混乱広げた企業を名指しで批判",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-22T09:30:52.000Z",
+      "summary": "PHP財団は一部企業が公開禁止措置を破りPoC動画や修正環境を先行公開した経緯を説明しました。誤ったCVSSスコア拡散や情報漏洩を受け、開発プロジェクトは更新配信を21日夜へ前倒ししました。財団は対策プロセスの改善を進めつつ、経験豊富な技術者確保のための資金提供を企業に呼びかけています。",
+      "headline": "PHP財団が脆弱性情報のフライング公開の経緯を公表した",
+      "points": [
+        "PHP財団は一部企業が公開禁止措置を破りPoC動画や修正環境を先行公開した経緯を説明しました。",
+        "誤ったCVSSスコア拡散や情報漏洩を受け、開発プロジェクトは更新配信を21日夜へ前倒ししました。",
+        "財団は対策プロセスの改善を進めつつ、経験豊富な技術者確保のための資金提供を企業に呼びかけています。"
+      ],
+      "impact": "PHPを利用する企業やプラットフォーマーは、開発支援のための資金提供が求められています。",
+      "glossary": [
+        {
+          "term": "PoC",
+          "explanation": "概念実証の略で、脆弱性や技術が実際に機能することを実証するための簡易なプログラム。"
+        },
+        {
+          "term": "CVSS",
+          "explanation": "ソフトウェアなどの脆弱性の深刻度を共通の基準で数値化して評価する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://qiita.com/kenimo49/items/30f290bf0f4fff021fb3",
+      "title": "PHP脆弱性php2shell対応、7.4本番を止めずに守った夜と実際の攻撃 - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-22T01:12:57.000Z",
+      "summary": "サポート終了済みのPHP 7.4で稼働する複数サイトを停止せず、WAFと設定変更で防御した記録です。攻撃に悪用されるmultipartリクエストの遮断と設定追加を行い、直後に届いた攻撃を防ぎました。当日は多くの大手Webサービスやゲームが一時停止する中、サイトへの影響を調査した上で対策しました。",
+      "headline": "PHPの重大な脆弱性に対し7.4環境を止めずに防御した事例が公開",
+      "points": [
+        "サポート終了済みのPHP 7.4で稼働する複数サイトを停止せず、WAFと設定変更で防御した記録です。",
+        "攻撃に悪用されるmultipartリクエストの遮断と設定追加を行い、直後に届いた攻撃を防ぎました。",
+        "当日は多くの大手Webサービスやゲームが一時停止する中、サイトへの影響を調査した上で対策しました。"
+      ],
+      "impact": "修正パッチの適用が困難な事業者は、リスク低減のためサイトの一時停止などの対応が有効策とされています。",
+      "glossary": [
+        {
+          "term": "WAF",
+          "explanation": "Webアプリケーションへの不正な通信を検知・遮断して攻撃から守るセキュリティ製品。"
+        },
+        {
+          "term": "任意コード実行",
+          "explanation": "攻撃者が管理者などの許可なく、サーバー上で不正なプログラムを実行できてしまう脆弱性。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-17-tailwind",
+      "title": "35日でフロントエンドの基礎を完全に理解する #17 - Tailwind CSS（ユーティリティファーストの思想）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-22T17:26:42.000Z",
+      "summary": "Tailwind CSSはクラス名の命名を不要にし、単機能の既製クラスを組み合わせて装飾します。インラインスタイルと異なり、擬似クラスやレスポンシブ指定が可能で値の統一も保てます。未定義のクラス名は無視されるため、公式拡張機能による補完や検証の活用が推奨されています。",
+      "headline": "Tailwind CSSのユーティリティファースト思想と利点が解説された",
+      "points": [
+        "Tailwind CSSはクラス名の命名を不要にし、単機能の既製クラスを組み合わせて装飾します。",
+        "インラインスタイルと異なり、擬似クラスやレスポンシブ指定が可能で値の統一も保てます。",
+        "未定義のクラス名は無視されるため、公式拡張機能による補完や検証の活用が推奨されています。"
+      ],
+      "impact": "Tailwind CSSを導入する開発者は、入力ミスを防ぐために公式拡張機能を導入することが推奨されます。",
+      "glossary": [
+        {
+          "term": "ユーティリティファースト",
+          "explanation": "単一のスタイルを指定する小さな既製クラスを組み合わせてデザインを構築する設計思想。"
+        },
+        {
+          "term": "インラインスタイル",
+          "explanation": "HTMLタグのstyle属性に直接CSSのプロパティを記述するスタイルの指定方法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+      "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-22T09:31:18Z",
+      "summary": "地図エンジン向けに開発されたポリゴン三角形分割ライブラリ「earstrip」が公開されました。従来のearcutと比べ、C++環境で14%、ブラウザ環境で最大2.1倍の高速化を達成しています。計算コストの高い制約付きドロネー分割から、耳刈り取り法（ear clipping）へ切り替えて高速化しました。",
+      "headline": "earcutより高速なポリゴン三角形分割ライブラリが公開された",
+      "points": [
+        "地図エンジン向けに開発されたポリゴン三角形分割ライブラリ「earstrip」が公開されました。",
+        "従来のearcutと比べ、C++環境で14%、ブラウザ環境で最大2.1倍の高速化を達成しています。",
+        "計算コストの高い制約付きドロネー分割から、耳刈り取り法（ear clipping）へ切り替えて高速化しました。"
+      ],
+      "impact": "Webなどで地図ポリゴンの三角形分割を行う開発者は、npmなどで本ライブラリを利用できます。",
+      "glossary": [
+        {
+          "term": "ポリゴン",
+          "explanation": "3次元コンピュータグラフィックスや地図描画で面を表現する、頂点で結ばれた多角形。"
+        },
+        {
+          "term": "三角形分割",
+          "explanation": "複雑な多角形をGPUが描画しやすい複数の三角形へと細かく分割する幾何計算処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+      "title": "AWS Continuum for code vulnerabilities is now generally available",
+      "source": "AWS News Blog",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T20:33:10.000Z",
+      "summary": "コードと環境を分析し、悪用可能な脆弱性を特定してビジネス影響度順に順位付けします。修正コードのプルリクエストを自動生成し、現行では人間が承認して適用します。検証可能な脆弱性はサンドボックスで攻撃を再現し、PoCコードを添付して提示します。",
+      "headline": "AWSがコード脆弱性を検証し修正案を出すAWS Continuumを一般提供",
+      "points": [
+        "コードと環境を分析し、悪用可能な脆弱性を特定してビジネス影響度順に順位付けします。",
+        "修正コードのプルリクエストを自動生成し、現行では人間が承認して適用します。",
+        "検証可能な脆弱性はサンドボックスで攻撃を再現し、PoCコードを添付して提示します。"
+      ],
+      "impact": "脆弱性管理を効率化したい運用者が、リポジトリとAWS環境を接続して修正内容を確認・承認する必要があります。",
+      "glossary": [
+        {
+          "term": "PoC",
+          "explanation": "概念実証のことで、脆弱性が実際に悪用可能かを検証・実証するためのコードや手順。"
+        },
+        {
+          "term": "プルリクエスト",
+          "explanation": "変更したプログラムコードを元のリポジトリに取り込んでもらうよう、他者にレビューを依頼する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/jp/blogs/news/under-the-hood-how-amazon-eks-auto-mode-detects-repairs-and-diagnoses-node-failures/",
+      "title": "詳解: Amazon EKS Auto Mode によるノード障害の検出、修復、診断の仕組み",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T08:03:52.000Z",
+      "summary": "ノード監視エージェントが障害を検知し、Karpenterが問題のあるノードを自動置換します。エージェントはAMI組み込みで動作し、GPUやネットワークなどの致命的障害を即座に判定します。致命的な障害時はノードを交換し、軽微な問題はイベント通知にとどめて連鎖停止を防ぎます。",
+      "headline": "Amazon EKS Auto Modeがノード障害の自動検出と置換に対応",
+      "points": [
+        "ノード監視エージェントが障害を検知し、Karpenterが問題のあるノードを自動置換します。",
+        "エージェントはAMI組み込みで動作し、GPUやネットワークなどの致命的障害を即座に判定します。",
+        "致命的な障害時はノードを交換し、軽微な問題はイベント通知にとどめて連鎖停止を防ぎます。"
+      ],
+      "impact": "EKS Auto Modeの利用者は設定なしで自動復旧を利用でき、手作業による障害対応の負担を軽減できます。",
+      "glossary": [
+        {
+          "term": "EKS",
+          "explanation": "AWS上でコンテナ管理システムであるKubernetesを簡単に運用できるフルマネージドサービス。"
+        },
+        {
+          "term": "Karpenter",
+          "explanation": "Kubernetesクラスター内の負荷に応じて、必要なノードを自動的かつ迅速に起動・削除する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/jp/blogs/news/using-aws-waf-to-apply-mitigations-for-php2shell-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619/",
+      "title": "AWS WAF を使用した PHP2Shell RCE 脆弱性 (CVE-2026-109618 および CVE-2026-109619) の緩和策",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T03:51:00.000Z",
+      "summary": "PHPの重大な脆弱性PHP2Shellに対し、パッチ適用までの露出を減らす緩和策が案内されました。multipartリクエストや本文サイズ制限、レート制限ルールをAWS WAFに設定して攻撃を防ぎます。WAFは多層防御の暫定策であり、修正済みPHPバージョンへのアップグレードが最優先とされています。",
+      "headline": "AWSがPHPの重大なRCE脆弱性に対するWAFでの緩和策を公開",
+      "points": [
+        "PHPの重大な脆弱性PHP2Shellに対し、パッチ適用までの露出を減らす緩和策が案内されました。",
+        "multipartリクエストや本文サイズ制限、レート制限ルールをAWS WAFに設定して攻撃を防ぎます。",
+        "WAFは多層防御の暫定策であり、修正済みPHPバージョンへのアップグレードが最優先とされています。"
+      ],
+      "impact": "PHPを利用する管理者は、パッチ適用までの間WAFルール適用を検討しつつ、PHPのアップグレードを進める必要があります。",
+      "glossary": [
+        {
+          "term": "RCE",
+          "explanation": "外部から遠隔操作で不正なプログラムやコマンドをサーバー上で実行させられてしまうセキュリティの欠陥。"
+        },
+        {
+          "term": "WAF",
+          "explanation": "Webアプリケーションの前面で通信を監視し、不正なアクセスや攻撃を遮断するセキュリティシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.itmedia.co.jp/news/article/2610/22/2000002523/",
+      "title": "カプコン、1177万件漏えい 不正アクセスで",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T08:41:57.000Z",
+      "summary": "不正アクセスにより会員サービスのアドレスやログイン時刻など1177万4247件が漏えいしました。パスワードやクレジットカード情報の漏えいはなく、パスワード不正変更のあった対象はリセット済みです。アクセス元は遮断済みで、提供中のゲームや各種サービスへの影響はないと発表されています。",
+      "headline": "カプコンのCAPCOM IDで不正アクセスにより1177万件が漏えい",
+      "points": [
+        "不正アクセスにより会員サービスのアドレスやログイン時刻など1177万4247件が漏えいしました。",
+        "パスワードやクレジットカード情報の漏えいはなく、パスワード不正変更のあった対象はリセット済みです。",
+        "アクセス元は遮断済みで、提供中のゲームや各種サービスへの影響はないと発表されています。"
+      ],
+      "impact": "カプコンは対象ユーザーへ順次連絡を行い、専用窓口での問い合わせ対応や再発防止策を進めるとしています。",
+      "glossary": [],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 118,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 22155,
+    "outputTokens": 8106
+  },
+  "offline": false
+}
