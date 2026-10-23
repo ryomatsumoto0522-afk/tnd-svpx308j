@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-24</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月24日(土)</p>
+<p class="meta">更新 2026-10-24 05:29 · 取得ソース 17/18 · 選定 18件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">6</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank" rel="noopener noreferrer">Kimiが新モデルK3.1 Proと高速版を発表</a></h3>
+<p class="orig">原題: Kimi K3.1 Pro and K3.1 Pro Highspeed</p>
+<p class="src">出典: <a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-24</p>
+<ul class="points"><li>100万トークンの文脈を扱える3T級のオープンウェイトモデルです。</li><li>K3.1 Pro Highspeedは通常版の2〜3倍の速度で動作します。</li><li>Kimi API等で即日利用可能で、モデルの重みは11月4日までに公開されます。</li></ul><p class="impact"><b>影響</b>開発者や利用者はKimi.aiやAPIから利用でき、11月4日の重み公開に備えられます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>オープンウェイトモデル</dt><dd>学習済みのパラメータ（重み）が一般に公開されている機械学習モデルのこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><span class="num">2</span><a href="https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring AI 2.1.0-RC1と2.0.2が公開</a></h3>
+<p class="orig">原題: Spring AI 2.1.0-RC1 and 2.0.2 Available Now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-23</p>
+<ul class="points"><li>主要なチャットモデルでMessagePartの生成と消費にネイティブ対応しました。</li><li>会話履歴を構造化ログとして扱うセッションメモリ機能が統合されました。</li><li>ツール呼び出しの確認機能や、ベクトル検索の拡張などが追加されました。</li></ul><p class="impact"><b>影響</b>Spring AI利用者はMaven Centralから入手し、移行手順に沿って設定を更新できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RC</dt><dd>Release Candidateの略で、正式版の直前に品質を最終検証するリリース候補版のこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><span class="num">3</span><a href="https://inside.java/2026/10/23/confined-pools/" target="_blank" rel="noopener noreferrer">JDK 28でオフヒープメモリ割り当てが大幅に高速化</a></h3>
+<p class="orig">原題: Allocating Off-Heap Memory: Typically 6-18x Faster in JDK 28</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/23/confined-pools/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-23</p>
+<ul class="points"><li>FFM APIのconfined arenaにおける小規模な割り当てをメモリプール化します。</li><li>割り当て遅延が最大90%削減され、通常6〜18倍の高速化を達成しました。</li><li>既存のコード変更は不要で、アリーナの安全性保証もそのまま維持されます。</li></ul><p class="impact"><b>影響</b>FFM APIを利用する開発者は、コードを変更することなく割り当て性能の恩恵を受けられます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オフヒープメモリ</dt><dd>Java仮想マシンのガベージコレクション管理対象外となる、ネイティブのメモリ領域のこと。</dd><dt>FFM API</dt><dd>Javaからネイティブメモリやネイティブコードを安全かつ効率的に扱うためのAPIのこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank" rel="noopener noreferrer">Kimiが新モデルK3.1 Proと高速版を発表</a></h3>
+<p class="orig">原題: Kimi K3.1 Pro and K3.1 Pro Highspeed</p>
+<p class="src">出典: <a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-24</p>
+<ul class="points"><li>100万トークンの文脈を扱える3T級のオープンウェイトモデルです。</li><li>K3.1 Pro Highspeedは通常版の2〜3倍の速度で動作します。</li><li>Kimi API等で即日利用可能で、モデルの重みは11月4日までに公開されます。</li></ul><p class="impact"><b>影響</b>開発者や利用者はKimi.aiやAPIから利用でき、11月4日の重み公開に備えられます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>オープンウェイトモデル</dt><dd>学習済みのパラメータ（重み）が一般に公開されている機械学習モデルのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026" target="_blank" rel="noopener noreferrer">AIが1回の出力上限を超えて大規模なコードを生成できる仕組みが解説された</a></h3>
+<p class="orig">原題: なぜAIは1回の出力上限を超えて巨大コードを書けるのか？コーディングエージェント徹底解剖</p>
+<p class="src">出典: <a href="https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-23</p>
+<ul class="points"><li>エージェントはモデルと実行基盤に役割を分けた上で、比較・実行・検証の小規模なループを反復処理しています。</li><li>全体の再生成を避けて最小限の差分編集を行うほか、ファイルシステムを外部記憶として活用しています。</li><li>コード記述後にリンタやテストを実行し、エラーを自動で修復することで大規模開発の破綻を防いでいます。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ハーネス</dt><dd>AIモデルの外側でループ処理やツール実行、記憶などを管理する実行基盤。</dd><dt>コンテキストウィンドウ</dt><dd>AIが1回の処理で入力・参照できる情報の総量のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/" target="_blank" rel="noopener noreferrer">Anthropicがオープンソース向けの無料自動脆弱性スキャンサービスを開始</a></h3>
+<p class="orig">原題: Anthropic Adds Opt-In Security Scanning for Critical Open-Source Projects</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-23</p>
+<ul class="points"><li>最強モデルを活用し、オープンソースプロジェクトの脆弱性検出レポートや修正パッチを自動生成して届けるサービスです。</li><li>6か月間で2万9千件超の脆弱性候補を検出したものの、人間の手動検証が追いつかない課題を解消するため導入されました。</li><li>無償かつ事前同意制で提供され、検出結果は人間の事前査読を経ずに各メンテナへ直接送付されます。</li></ul><p class="impact"><b>影響</b>オープンソース開発者は本サービスへ登録し、届いた脆弱性報告と修正パッチの有効性を検証・適用するか判断する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>脆弱性</dt><dd>ソフトウェアにおけるセキュリティ上の欠陥やセキュリティホールのこと。</dd><dt>メンテナ</dt><dd>オープンソースプロジェクトのコード管理や更新を担当する開発者のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/berrylove/items/e5ae1c4b9ca20e1f34ce" target="_blank" rel="noopener noreferrer">AIエージェント組織が人間の承認待ちによる業務停止を2系統の定期実行で解消</a></h3>
+<p class="orig">原題: Claude Code の routine とローカル定期実行で、承認待ちで止まった AI 会社を動かし直した話</p>
+<p class="src">出典: <a href="https://qiita.com/berrylove/items/e5ae1c4b9ca20e1f34ce" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-24</p>
+<ul class="points"><li>人間の承認待ちで約7週間業務が停止していたため、過剰な承認ゲートを減らし権限委任の範囲を見直しました。</li><li>クラウドでの日常処理とブラウザ操作を伴うローカル処理の2系統に定期実行を分離して自動化しました。</li><li>暴走防止の上限設定に加え、売上ゼロが続いた際に対策を打つ下限設定を設けて自律性を確保しています。</li></ul><p class="impact"><b>影響</b>AIエージェントで自動化を行う運用者は、過剰な承認待ちを防ぐ権限設計と実行環境に応じた定期タスクの分離を検討すべきです。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Claude Code</dt><dd>AIを活用してコードの作成やターミナル操作などの開発作業を自動化するツール。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/skillselion/articles/e38011295b8820" target="_blank" rel="noopener noreferrer">AIスキルのうち日本語で書かれたものがわずか43件にとどまると判明</a></h3>
+<p class="orig">原題: 日本語のエージェントスキルは何件ある？15,739件のSKILL.mdを文字種で数えた</p>
+<p class="src">出典: <a href="https://zenn.dev/skillselion/articles/e38011295b8820" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-23</p>
+<ul class="points"><li>1万5千件超のスキルを調査したところ、日本語と判定されたものは43件で全体の極わずかでした。</li><li>日本語スキルのインストールの約79%は特定の1アカウントが公開する7件のスキルに集中しています。</li><li>カタログの一覧説明文がラテン文字表記中心であるため、日本語スキルの検索がしづらい課題も判明しました。</li></ul><p class="impact"><b>影響</b>エージェントスキルを利用・検索する開発者は、日本語指定よりも英語キーワードやリポジトリ名で探す必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リポジトリ</dt><dd>ソースコードや関連ファイルを保存・管理するデータベースや保存場所のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/twinharness/articles/windows-traps-ai-scripts" target="_blank" rel="noopener noreferrer">WindowsでAIスクリプトを動かす際の10の罠と対策が公開</a></h3>
+<p class="orig">原題: 複数行の指示が2行目以降消えた。Claude Code・CodexとWindowsで踏んだ10の罠</p>
+<p class="src">出典: <a href="https://zenn.dev/twinharness/articles/windows-traps-ai-scripts" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-23</p>
+<ul class="points"><li>改行の欠落や文字化け、タスクスケジューラの仕様など実測に基づく10の落とし穴を紹介している。</li><li>引数の区切り文字の変更やPowerShellのBOM付きUTF-8保存など具体的な対策を示している。</li></ul><p class="impact"><b>影響</b>WindowsでClaude CodeやCodex向けスクリプトを開発する人は確認が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>BOM</dt><dd>ファイル先頭に付与して文字コードを識別させるためのデータ。</dd><dt>ヒアドキュメント</dt><dd>複数行の文字列をプログラム内にそのまま埋め込んで記述する形式。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring AI 2.1.0-RC1と2.0.2が公開</a></h3>
+<p class="orig">原題: Spring AI 2.1.0-RC1 and 2.0.2 Available Now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-23</p>
+<ul class="points"><li>主要なチャットモデルでMessagePartの生成と消費にネイティブ対応しました。</li><li>会話履歴を構造化ログとして扱うセッションメモリ機能が統合されました。</li><li>ツール呼び出しの確認機能や、ベクトル検索の拡張などが追加されました。</li></ul><p class="impact"><b>影響</b>Spring AI利用者はMaven Centralから入手し、移行手順に沿って設定を更新できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RC</dt><dd>Release Candidateの略で、正式版の直前に品質を最終検証するリリース候補版のこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/10/23/confined-pools/" target="_blank" rel="noopener noreferrer">JDK 28でオフヒープメモリ割り当てが大幅に高速化</a></h3>
+<p class="orig">原題: Allocating Off-Heap Memory: Typically 6-18x Faster in JDK 28</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/23/confined-pools/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-23</p>
+<ul class="points"><li>FFM APIのconfined arenaにおける小規模な割り当てをメモリプール化します。</li><li>割り当て遅延が最大90%削減され、通常6〜18倍の高速化を達成しました。</li><li>既存のコード変更は不要で、アリーナの安全性保証もそのまま維持されます。</li></ul><p class="impact"><b>影響</b>FFM APIを利用する開発者は、コードを変更することなく割り当て性能の恩恵を受けられます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オフヒープメモリ</dt><dd>Java仮想マシンのガベージコレクション管理対象外となる、ネイティブのメモリ領域のこと。</dd><dt>FFM API</dt><dd>Javaからネイティブメモリやネイティブコードを安全かつ効率的に扱うためのAPIのこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/23/spring-boot-4-2-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring Boot 4.2.0-RC1が公開</a></h3>
+<p class="orig">原題: Spring Boot 4.2.0-RC1 available now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/23/spring-boot-4-2-0-RC1-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-23</p>
+<ul class="points"><li>113件の機能強化やドキュメント改善、依存関係の更新、バグ修正が行われました。</li><li>Buildpacksの標準ビルダーがUbuntu 26.04ベースのものに変更されました。</li><li>実行可能jar内のクラス探索が高速化され、起動時の性能が向上しました。</li></ul><p class="impact"><b>影響</b>利用者はMaven Centralから取得し、リリースノートに沿ってアップグレードを確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Buildpacks</dt><dd>ソースコードからコンテナイメージを自動的にビルドするためのツールのこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates" target="_blank" rel="noopener noreferrer">Amazon Correttoの2026年10月四半期更新が公開</a></h3>
+<p class="orig">原題: Amazon Corretto October 2026 Quarterly Updates</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-23</p>
+<ul class="points"><li>OpenJDKのLTS各バージョン向けにセキュリティと重要な更新が公開された。</li><li>Corretto 27、25、21、17、11、8がアップデートの対象となっている。</li><li>公式サイトやLinuxの各種リポジトリを通じて入手可能である。</li></ul><p class="impact"><b>影響</b>Amazon Correttoを利用中のシステム管理者は、最新版への更新を確認・適用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>LTS</dt><dd>長期間にわたってセキュリティ修正などの更新が提供される製品の版。</dd><dt>OpenJDK</dt><dd>Java言語の実行環境と開発ツールをオープンソースで提供する基盤。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/jixiaopan/articles/konva-drag-multiselect" target="_blank" rel="noopener noreferrer">VueとKonvaによる倉庫UIでポインター下をなぞる複数選択を実装</a></h3>
+<p class="orig">原題: 倉庫UIの複数選択を、Konvaで「なぞる」操作にした</p>
+<p class="src">出典: <a href="https://zenn.dev/jixiaopan/articles/konva-drag-multiselect" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-23</p>
+<ul class="points"><li>数百個の置場を効率よく選択するため、囲み枠ではなくポインター直下をなぞる選択方式を採用しました。</li><li>stage.getIntersectionで直下の図形を取得し、5pxの移動閾値と重複防止用Setで制御しています。</li><li>ドラッグ始点の状態で選択か解除のモードを固定し、一連の操作中の挙動の乱れを防いでいます。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Konva.js</dt><dd>HTML5 Canvasを用いた2Dグラフィック描画や操作を容易にするJavaScriptライブラリ。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/jixiaopan/articles/manufacturing-auto-mode-state" target="_blank" rel="noopener noreferrer">製造搬送UIで運転モードの真値をWCS側に置く状態管理設計を解説</a></h3>
+<p class="orig">原題: 運転モードの真値をWCSに置き、Vue側はスナップショットを持つ</p>
+<p class="src">出典: <a href="https://zenn.dev/jixiaopan/articles/manufacturing-auto-mode-state" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-23</p>
+<ul class="points"><li>設備の運転モードの真値をWCS側に置き、Vue側は8秒ごとのポーリングによるスナップショットのみを保持します。</li><li>タスク選択などの一時的なUI状態のみをフロントのPiniaとlocalStorageで保持・永続化しています。</li><li>モード更新APIの共通化に伴う型定義の工夫や、クリック時のガード条件による画面制御を解説しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ポーリング</dt><dd>一定の間隔でサーバーなどにリクエストを送信し、最新のデータを取得する通信方式。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-18-design-system" target="_blank" rel="noopener noreferrer">Vueでの共通部品の切り出し方とデザインシステムの原則を解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #18 - コンポーネント設計とデザインシステム（共通部品の切り方）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-18-design-system" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-24</p>
+<ul class="points"><li>同じ見た目や振る舞いの記述が3回出現した時点を共通部品化の目安とする。</li><li>ボタンの色やサイズなどの変化は別部品にせずpropsで受け取り1つにまとめる。</li><li>色や余白の最小単位をデザイントークンとして管理し全般の統一感を保つ。</li></ul><p class="impact"><b>影響</b>Vueで画面開発を行うフロントエンドエンジニアが、保守性の高いコンポーネント設計を行うために確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>props</dt><dd>親コンポーネントから子コンポーネントへデータを引き渡すための仕組み。</dd><dt>デザイントークン</dt><dd>色や余白などのデザイン構成要素に名前を付けて一元管理する最小単位の値。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/helloyuki/articles/e1e312796f35ed" target="_blank" rel="noopener noreferrer">IntelliJの解析機能を他エディタで使えるLSP機能が正式公開</a></h3>
+<p class="orig">原題: IntelliJ IDEAがLSPをしゃべるようになりVS CodeやCursorで使えるようになった</p>
+<p class="src">出典: <a href="https://zenn.dev/helloyuki/articles/e1e312796f35ed" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-23</p>
+<ul class="points"><li>IntelliJの補完やリファクタリング機能をVS CodeやNeovim等から利用できる。</li><li>対応言語はJavaとKotlinで、利用にはIntelliJ IDEA Ultimateライセンスを要する。</li><li>ヘッドレス化した解析エンジンがLSPを介して各エディタと連携して動作する。</li></ul><p class="impact"><b>影響</b>VS CodeやNeovimでJavaやKotlinを開発するユーザーが、Ultimateライセンスを準備した上で導入を検討する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LSP</dt><dd>エディタと言語解析ツール間のやり取りを共通化する標準プロトコル。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/" target="_blank" rel="noopener noreferrer">AWS Transit Gatewayなどが1対1 NAT機能に対応</a></h3>
+<p class="orig">原題: AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-24</p>
+<ul class="points"><li>アタッチメント上で1対1のマネージドなネットワークアドレス変換が直接利用可能になった。</li><li>IPアドレス範囲が重複するプライベートネットワーク同士を再設定なしで接続できる。</li><li>双方向で変換が自動適用され、別個のNAT機器や戻り通信用ルールの設定は不要である。</li></ul><p class="impact"><b>影響</b>重複CIDRを持つVPCや拠点間を接続するユーザーは、アタッチメント設定から利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>NAT</dt><dd>通信パケットに含まれるIPアドレスを別のIPアドレスへ変換する技術。</dd><dt>CIDR</dt><dd>IPアドレスを範囲指定して効率的にネットワークを割り当てる表記法。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/" target="_blank" rel="noopener noreferrer">Amazon EMR on EKSのEMR追加料金が30%値下げ</a></h3>
+<p class="orig">原題: Amazon EMR on EKS reduces EMR charge by 30 percent</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-23</p>
+<ul class="points"><li>EKS環境でEMRを実行する際にかかるEMR追加料金が30%削減された。</li><li>vCPU時間料金とGB時間料金の双方が対象で、基盤のEKS料金に変更はない。</li><li>全提供リージョンのワークロードへ自動適用され、追加の手続きは不要である。</li></ul><p class="impact"><b>影響</b>EKS上でApache Sparkを実行する利用者は、設定変更なしでコスト削減の恩恵を受けられます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Apache Spark</dt><dd>大量のデータをメモリ上で高速に分散処理するための計算エンジン。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available" target="_blank" rel="noopener noreferrer">AWSがコードの脆弱性を自動検出・修復する新サービスを提供開始</a></h3>
+<p class="orig">原題: AWS Continuum for code vulnerabilities is now generally available</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-23</p>
+<ul class="points"><li>AWS環境の文脈を基に脆弱性を検証し、修復パッチをプルリクエストで提案します。</li><li>承認制のLearnモードで開始し、設定後に自動対応するEnforceモードに移行可能です。</li><li>Amazon GuardDutyなどの既存セキュリティサービスと連携して利用できます。</li></ul><p class="impact"><b>影響</b>コードの脆弱性を修復したい開発者は、本サービスを導入して適切な動作モードや修正案を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>プルリクエスト</dt><dd>コードの変更内容をリポジトリへ統合するよう管理者に承認を求める仕組み。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3" target="_blank" rel="noopener noreferrer">AWSがS3内のログや文書を自動解析・検索可能にする機能を公開</a></h3>
+<p class="orig">原題: Amazon OpenSearch Service introduces intelligent ingestion for logs and documents in Amazon S3</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-23</p>
+<ul class="points"><li>Amazon OpenSearch ServerlessでS3のデータを自動解析してインデックス化する機能が提供されました。</li><li>PDFやWord等の非構造化データやJSONに対応し、画像は視覚言語モデルでテキスト化されます。</li><li>インフラ管理は不要で、アクティブな処理のみ課金される形式で7つのAWSリージョンで提供されます。</li></ul><p class="impact"><b>影響</b>S3内のデータを検索したい利用者は、OpenSearchコンソールのインジェクションタブから設定を行う必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ベクトル埋め込み</dt><dd>データを多次元の数値配列に変換し、意味的な類似性を計算できるようにする技術。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-23/">← 2026-10-23</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（24）</summary><ul><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

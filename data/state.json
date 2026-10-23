@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-22T20:34:38.974Z",
+  "lastRun": "2026-10-23T20:29:23.579Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -383,6 +383,24 @@
     "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available": "2026-10-23",
     "https://aws.amazon.com/jp/blogs/news/under-the-hood-how-amazon-eks-auto-mode-detects-repairs-and-diagnoses-node-failures": "2026-10-23",
     "https://aws.amazon.com/jp/blogs/news/using-aws-waf-to-apply-mitigations-for-php2shell-rce-vulnerabilities-cve-2026-109618-and-cve-2026-109619": "2026-10-23",
-    "https://www.itmedia.co.jp/news/article/2610/22/2000002523": "2026-10-23"
+    "https://www.itmedia.co.jp/news/article/2610/22/2000002523": "2026-10-23",
+    "https://www.kimi.ai/blog/kimi-k3-1-pro": "2026-10-24",
+    "https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now": "2026-10-24",
+    "https://inside.java/2026/10/23/confined-pools": "2026-10-24",
+    "https://spring.io/blog/2026/10/23/spring-boot-4-2-0-RC1-available-now": "2026-10-24",
+    "https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026": "2026-10-24",
+    "https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner": "2026-10-24",
+    "https://qiita.com/berrylove/items/e5ae1c4b9ca20e1f34ce": "2026-10-24",
+    "https://zenn.dev/skillselion/articles/e38011295b8820": "2026-10-24",
+    "https://zenn.dev/twinharness/articles/windows-traps-ai-scripts": "2026-10-24",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat": "2026-10-24",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates": "2026-10-24",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent": "2026-10-24",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available": "2026-10-24",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3": "2026-10-24",
+    "https://zenn.dev/jixiaopan/articles/konva-drag-multiselect": "2026-10-24",
+    "https://zenn.dev/jixiaopan/articles/manufacturing-auto-mode-state": "2026-10-24",
+    "https://zenn.dev/kipcop/articles/f35-vue-18-design-system": "2026-10-24",
+    "https://zenn.dev/helloyuki/articles/e1e312796f35ed": "2026-10-24"
   }
 }

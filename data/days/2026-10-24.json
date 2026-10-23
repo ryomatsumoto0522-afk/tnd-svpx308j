@@ -1,0 +1,460 @@
+{
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-23T20:29:23.579Z",
+  "items": [
+    {
+      "rank": 2,
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T16:59:08Z",
+      "summary": "100万トークンの文脈を扱える3T級のオープンウェイトモデルです。K3.1 Pro Highspeedは通常版の2〜3倍の速度で動作します。Kimi API等で即日利用可能で、モデルの重みは11月4日までに公開されます。",
+      "headline": "Kimiが新モデルK3.1 Proと高速版を発表",
+      "points": [
+        "100万トークンの文脈を扱える3T級のオープンウェイトモデルです。",
+        "K3.1 Pro Highspeedは通常版の2〜3倍の速度で動作します。",
+        "Kimi API等で即日利用可能で、モデルの重みは11月4日までに公開されます。"
+      ],
+      "impact": "開発者や利用者はKimi.aiやAPIから利用でき、11月4日の重み公開に備えられます。",
+      "glossary": [
+        {
+          "term": "オープンウェイトモデル",
+          "explanation": "学習済みのパラメータ（重み）が一般に公開されている機械学習モデルのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now",
+      "title": "Spring AI 2.1.0-RC1 and 2.0.2 Available Now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "主要なチャットモデルでMessagePartの生成と消費にネイティブ対応しました。会話履歴を構造化ログとして扱うセッションメモリ機能が統合されました。ツール呼び出しの確認機能や、ベクトル検索の拡張などが追加されました。",
+      "headline": "Spring AI 2.1.0-RC1と2.0.2が公開",
+      "points": [
+        "主要なチャットモデルでMessagePartの生成と消費にネイティブ対応しました。",
+        "会話履歴を構造化ログとして扱うセッションメモリ機能が統合されました。",
+        "ツール呼び出しの確認機能や、ベクトル検索の拡張などが追加されました。"
+      ],
+      "impact": "Spring AI利用者はMaven Centralから入手し、移行手順に沿って設定を更新できます。",
+      "glossary": [
+        {
+          "term": "RC",
+          "explanation": "Release Candidateの略で、正式版の直前に品質を最終検証するリリース候補版のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://inside.java/2026/10/23/confined-pools/",
+      "title": "Allocating Off-Heap Memory: Typically 6-18x Faster in JDK 28",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "FFM APIのconfined arenaにおける小規模な割り当てをメモリプール化します。割り当て遅延が最大90%削減され、通常6〜18倍の高速化を達成しました。既存のコード変更は不要で、アリーナの安全性保証もそのまま維持されます。",
+      "headline": "JDK 28でオフヒープメモリ割り当てが大幅に高速化",
+      "points": [
+        "FFM APIのconfined arenaにおける小規模な割り当てをメモリプール化します。",
+        "割り当て遅延が最大90%削減され、通常6〜18倍の高速化を達成しました。",
+        "既存のコード変更は不要で、アリーナの安全性保証もそのまま維持されます。"
+      ],
+      "impact": "FFM APIを利用する開発者は、コードを変更することなく割り当て性能の恩恵を受けられます。",
+      "glossary": [
+        {
+          "term": "オフヒープメモリ",
+          "explanation": "Java仮想マシンのガベージコレクション管理対象外となる、ネイティブのメモリ領域のこと。"
+        },
+        {
+          "term": "FFM API",
+          "explanation": "Javaからネイティブメモリやネイティブコードを安全かつ効率的に扱うためのAPIのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://spring.io/blog/2026/10/23/spring-boot-4-2-0-RC1-available-now",
+      "title": "Spring Boot 4.2.0-RC1 available now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "113件の機能強化やドキュメント改善、依存関係の更新、バグ修正が行われました。Buildpacksの標準ビルダーがUbuntu 26.04ベースのものに変更されました。実行可能jar内のクラス探索が高速化され、起動時の性能が向上しました。",
+      "headline": "Spring Boot 4.2.0-RC1が公開",
+      "points": [
+        "113件の機能強化やドキュメント改善、依存関係の更新、バグ修正が行われました。",
+        "Buildpacksの標準ビルダーがUbuntu 26.04ベースのものに変更されました。",
+        "実行可能jar内のクラス探索が高速化され、起動時の性能が向上しました。"
+      ],
+      "impact": "利用者はMaven Centralから取得し、リリースノートに沿ってアップグレードを確認できます。",
+      "glossary": [
+        {
+          "term": "Buildpacks",
+          "explanation": "ソースコードからコンテナイメージを自動的にビルドするためのツールのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://zenn.dev/lumichy/articles/coding-agent-large-scale-development-2026",
+      "title": "なぜAIは1回の出力上限を超えて巨大コードを書けるのか？コーディングエージェント徹底解剖",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T12:30:30.000Z",
+      "summary": "エージェントはモデルと実行基盤に役割を分けた上で、比較・実行・検証の小規模なループを反復処理しています。全体の再生成を避けて最小限の差分編集を行うほか、ファイルシステムを外部記憶として活用しています。コード記述後にリンタやテストを実行し、エラーを自動で修復することで大規模開発の破綻を防いでいます。",
+      "headline": "AIが1回の出力上限を超えて大規模なコードを生成できる仕組みが解説された",
+      "points": [
+        "エージェントはモデルと実行基盤に役割を分けた上で、比較・実行・検証の小規模なループを反復処理しています。",
+        "全体の再生成を避けて最小限の差分編集を行うほか、ファイルシステムを外部記憶として活用しています。",
+        "コード記述後にリンタやテストを実行し、エラーを自動で修復することで大規模開発の破綻を防いでいます。"
+      ],
+      "glossary": [
+        {
+          "term": "ハーネス",
+          "explanation": "AIモデルの外側でループ処理やツール実行、記憶などを管理する実行基盤。"
+        },
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIが1回の処理で入力・参照できる情報の総量のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/",
+      "title": "Anthropic Adds Opt-In Security Scanning for Critical Open-Source Projects",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T09:00:00.000Z",
+      "summary": "最強モデルを活用し、オープンソースプロジェクトの脆弱性検出レポートや修正パッチを自動生成して届けるサービスです。6か月間で2万9千件超の脆弱性候補を検出したものの、人間の手動検証が追いつかない課題を解消するため導入されました。無償かつ事前同意制で提供され、検出結果は人間の事前査読を経ずに各メンテナへ直接送付されます。",
+      "headline": "Anthropicがオープンソース向けの無料自動脆弱性スキャンサービスを開始",
+      "points": [
+        "最強モデルを活用し、オープンソースプロジェクトの脆弱性検出レポートや修正パッチを自動生成して届けるサービスです。",
+        "6か月間で2万9千件超の脆弱性候補を検出したものの、人間の手動検証が追いつかない課題を解消するため導入されました。",
+        "無償かつ事前同意制で提供され、検出結果は人間の事前査読を経ずに各メンテナへ直接送付されます。"
+      ],
+      "impact": "オープンソース開発者は本サービスへ登録し、届いた脆弱性報告と修正パッチの有効性を検証・適用するか判断する必要があります。",
+      "glossary": [
+        {
+          "term": "脆弱性",
+          "explanation": "ソフトウェアにおけるセキュリティ上の欠陥やセキュリティホールのこと。"
+        },
+        {
+          "term": "メンテナ",
+          "explanation": "オープンソースプロジェクトのコード管理や更新を担当する開発者のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/berrylove/items/e5ae1c4b9ca20e1f34ce",
+      "title": "Claude Code の routine とローカル定期実行で、承認待ちで止まった AI 会社を動かし直した話",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T16:35:39.000Z",
+      "summary": "人間の承認待ちで約7週間業務が停止していたため、過剰な承認ゲートを減らし権限委任の範囲を見直しました。クラウドでの日常処理とブラウザ操作を伴うローカル処理の2系統に定期実行を分離して自動化しました。暴走防止の上限設定に加え、売上ゼロが続いた際に対策を打つ下限設定を設けて自律性を確保しています。",
+      "headline": "AIエージェント組織が人間の承認待ちによる業務停止を2系統の定期実行で解消",
+      "points": [
+        "人間の承認待ちで約7週間業務が停止していたため、過剰な承認ゲートを減らし権限委任の範囲を見直しました。",
+        "クラウドでの日常処理とブラウザ操作を伴うローカル処理の2系統に定期実行を分離して自動化しました。",
+        "暴走防止の上限設定に加え、売上ゼロが続いた際に対策を打つ下限設定を設けて自律性を確保しています。"
+      ],
+      "impact": "AIエージェントで自動化を行う運用者は、過剰な承認待ちを防ぐ権限設計と実行環境に応じた定期タスクの分離を検討すべきです。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "AIを活用してコードの作成やターミナル操作などの開発作業を自動化するツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/skillselion/articles/e38011295b8820",
+      "title": "日本語のエージェントスキルは何件ある？15,739件のSKILL.mdを文字種で数えた",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T12:28:35.000Z",
+      "summary": "1万5千件超のスキルを調査したところ、日本語と判定されたものは43件で全体の極わずかでした。日本語スキルのインストールの約79%は特定の1アカウントが公開する7件のスキルに集中しています。カタログの一覧説明文がラテン文字表記中心であるため、日本語スキルの検索がしづらい課題も判明しました。",
+      "headline": "AIスキルのうち日本語で書かれたものがわずか43件にとどまると判明",
+      "points": [
+        "1万5千件超のスキルを調査したところ、日本語と判定されたものは43件で全体の極わずかでした。",
+        "日本語スキルのインストールの約79%は特定の1アカウントが公開する7件のスキルに集中しています。",
+        "カタログの一覧説明文がラテン文字表記中心であるため、日本語スキルの検索がしづらい課題も判明しました。"
+      ],
+      "impact": "エージェントスキルを利用・検索する開発者は、日本語指定よりも英語キーワードやリポジトリ名で探す必要があります。",
+      "glossary": [
+        {
+          "term": "リポジトリ",
+          "explanation": "ソースコードや関連ファイルを保存・管理するデータベースや保存場所のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/twinharness/articles/windows-traps-ai-scripts",
+      "title": "複数行の指示が2行目以降消えた。Claude Code・CodexとWindowsで踏んだ10の罠",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T14:36:23.000Z",
+      "summary": "改行の欠落や文字化け、タスクスケジューラの仕様など実測に基づく10の落とし穴を紹介している。引数の区切り文字の変更やPowerShellのBOM付きUTF-8保存など具体的な対策を示している。",
+      "headline": "WindowsでAIスクリプトを動かす際の10の罠と対策が公開",
+      "points": [
+        "改行の欠落や文字化け、タスクスケジューラの仕様など実測に基づく10の落とし穴を紹介している。",
+        "引数の区切り文字の変更やPowerShellのBOM付きUTF-8保存など具体的な対策を示している。"
+      ],
+      "impact": "WindowsでClaude CodeやCodex向けスクリプトを開発する人は確認が必要です。",
+      "glossary": [
+        {
+          "term": "BOM",
+          "explanation": "ファイル先頭に付与して文字コードを識別させるためのデータ。"
+        },
+        {
+          "term": "ヒアドキュメント",
+          "explanation": "複数行の文字列をプログラム内にそのまま埋め込んで記述する形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
+      "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-23T15:43:00.000Z",
+      "summary": "アタッチメント上で1対1のマネージドなネットワークアドレス変換が直接利用可能になった。IPアドレス範囲が重複するプライベートネットワーク同士を再設定なしで接続できる。双方向で変換が自動適用され、別個のNAT機器や戻り通信用ルールの設定は不要である。",
+      "headline": "AWS Transit Gatewayなどが1対1 NAT機能に対応",
+      "points": [
+        "アタッチメント上で1対1のマネージドなネットワークアドレス変換が直接利用可能になった。",
+        "IPアドレス範囲が重複するプライベートネットワーク同士を再設定なしで接続できる。",
+        "双方向で変換が自動適用され、別個のNAT機器や戻り通信用ルールの設定は不要である。"
+      ],
+      "impact": "重複CIDRを持つVPCや拠点間を接続するユーザーは、アタッチメント設定から利用できます。",
+      "glossary": [
+        {
+          "term": "NAT",
+          "explanation": "通信パケットに含まれるIPアドレスを別のIPアドレスへ変換する技術。"
+        },
+        {
+          "term": "CIDR",
+          "explanation": "IPアドレスを範囲指定して効率的にネットワークを割り当てる表記法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates",
+      "title": "Amazon Corretto October 2026 Quarterly Updates",
+      "source": "AWS What's New",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T14:00:00.000Z",
+      "summary": "OpenJDKのLTS各バージョン向けにセキュリティと重要な更新が公開された。Corretto 27、25、21、17、11、8がアップデートの対象となっている。公式サイトやLinuxの各種リポジトリを通じて入手可能である。",
+      "headline": "Amazon Correttoの2026年10月四半期更新が公開",
+      "points": [
+        "OpenJDKのLTS各バージョン向けにセキュリティと重要な更新が公開された。",
+        "Corretto 27、25、21、17、11、8がアップデートの対象となっている。",
+        "公式サイトやLinuxの各種リポジトリを通じて入手可能である。"
+      ],
+      "impact": "Amazon Correttoを利用中のシステム管理者は、最新版への更新を確認・適用できます。",
+      "glossary": [
+        {
+          "term": "LTS",
+          "explanation": "長期間にわたってセキュリティ修正などの更新が提供される製品の版。"
+        },
+        {
+          "term": "OpenJDK",
+          "explanation": "Java言語の実行環境と開発ツールをオープンソースで提供する基盤。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+      "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "summary": "EKS環境でEMRを実行する際にかかるEMR追加料金が30%削減された。vCPU時間料金とGB時間料金の双方が対象で、基盤のEKS料金に変更はない。全提供リージョンのワークロードへ自動適用され、追加の手続きは不要である。",
+      "headline": "Amazon EMR on EKSのEMR追加料金が30%値下げ",
+      "points": [
+        "EKS環境でEMRを実行する際にかかるEMR追加料金が30%削減された。",
+        "vCPU時間料金とGB時間料金の双方が対象で、基盤のEKS料金に変更はない。",
+        "全提供リージョンのワークロードへ自動適用され、追加の手続きは不要である。"
+      ],
+      "impact": "EKS上でApache Sparkを実行する利用者は、設定変更なしでコスト削減の恩恵を受けられます。",
+      "glossary": [
+        {
+          "term": "Apache Spark",
+          "explanation": "大量のデータをメモリ上で高速に分散処理するための計算エンジン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-for-code-vulnerabilities-is-now-generally-available",
+      "title": "AWS Continuum for code vulnerabilities is now generally available",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T21:00:00.000Z",
+      "summary": "AWS環境の文脈を基に脆弱性を検証し、修復パッチをプルリクエストで提案します。承認制のLearnモードで開始し、設定後に自動対応するEnforceモードに移行可能です。Amazon GuardDutyなどの既存セキュリティサービスと連携して利用できます。",
+      "headline": "AWSがコードの脆弱性を自動検出・修復する新サービスを提供開始",
+      "points": [
+        "AWS環境の文脈を基に脆弱性を検証し、修復パッチをプルリクエストで提案します。",
+        "承認制のLearnモードで開始し、設定後に自動対応するEnforceモードに移行可能です。",
+        "Amazon GuardDutyなどの既存セキュリティサービスと連携して利用できます。"
+      ],
+      "impact": "コードの脆弱性を修復したい開発者は、本サービスを導入して適切な動作モードや修正案を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "プルリクエスト",
+          "explanation": "コードの変更内容をリポジトリへ統合するよう管理者に承認を求める仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3",
+      "title": "Amazon OpenSearch Service introduces intelligent ingestion for logs and documents in Amazon S3",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-22T20:54:00.000Z",
+      "summary": "Amazon OpenSearch ServerlessでS3のデータを自動解析してインデックス化する機能が提供されました。PDFやWord等の非構造化データやJSONに対応し、画像は視覚言語モデルでテキスト化されます。インフラ管理は不要で、アクティブな処理のみ課金される形式で7つのAWSリージョンで提供されます。",
+      "headline": "AWSがS3内のログや文書を自動解析・検索可能にする機能を公開",
+      "points": [
+        "Amazon OpenSearch ServerlessでS3のデータを自動解析してインデックス化する機能が提供されました。",
+        "PDFやWord等の非構造化データやJSONに対応し、画像は視覚言語モデルでテキスト化されます。",
+        "インフラ管理は不要で、アクティブな処理のみ課金される形式で7つのAWSリージョンで提供されます。"
+      ],
+      "impact": "S3内のデータを検索したい利用者は、OpenSearchコンソールのインジェクションタブから設定を行う必要があります。",
+      "glossary": [
+        {
+          "term": "ベクトル埋め込み",
+          "explanation": "データを多次元の数値配列に変換し、意味的な類似性を計算できるようにする技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://zenn.dev/jixiaopan/articles/konva-drag-multiselect",
+      "title": "倉庫UIの複数選択を、Konvaで「なぞる」操作にした",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-23T05:31:52.000Z",
+      "summary": "数百個の置場を効率よく選択するため、囲み枠ではなくポインター直下をなぞる選択方式を採用しました。stage.getIntersectionで直下の図形を取得し、5pxの移動閾値と重複防止用Setで制御しています。ドラッグ始点の状態で選択か解除のモードを固定し、一連の操作中の挙動の乱れを防いでいます。",
+      "headline": "VueとKonvaによる倉庫UIでポインター下をなぞる複数選択を実装",
+      "points": [
+        "数百個の置場を効率よく選択するため、囲み枠ではなくポインター直下をなぞる選択方式を採用しました。",
+        "stage.getIntersectionで直下の図形を取得し、5pxの移動閾値と重複防止用Setで制御しています。",
+        "ドラッグ始点の状態で選択か解除のモードを固定し、一連の操作中の挙動の乱れを防いでいます。"
+      ],
+      "glossary": [
+        {
+          "term": "Konva.js",
+          "explanation": "HTML5 Canvasを用いた2Dグラフィック描画や操作を容易にするJavaScriptライブラリ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://zenn.dev/jixiaopan/articles/manufacturing-auto-mode-state",
+      "title": "運転モードの真値をWCSに置き、Vue側はスナップショットを持つ",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-23T05:31:53.000Z",
+      "summary": "設備の運転モードの真値をWCS側に置き、Vue側は8秒ごとのポーリングによるスナップショットのみを保持します。タスク選択などの一時的なUI状態のみをフロントのPiniaとlocalStorageで保持・永続化しています。モード更新APIの共通化に伴う型定義の工夫や、クリック時のガード条件による画面制御を解説しています。",
+      "headline": "製造搬送UIで運転モードの真値をWCS側に置く状態管理設計を解説",
+      "points": [
+        "設備の運転モードの真値をWCS側に置き、Vue側は8秒ごとのポーリングによるスナップショットのみを保持します。",
+        "タスク選択などの一時的なUI状態のみをフロントのPiniaとlocalStorageで保持・永続化しています。",
+        "モード更新APIの共通化に伴う型定義の工夫や、クリック時のガード条件による画面制御を解説しています。"
+      ],
+      "glossary": [
+        {
+          "term": "ポーリング",
+          "explanation": "一定の間隔でサーバーなどにリクエストを送信し、最新のデータを取得する通信方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-18-design-system",
+      "title": "35日でフロントエンドの基礎を完全に理解する #18 - コンポーネント設計とデザインシステム（共通部品の切り方）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-23T18:35:02.000Z",
+      "summary": "同じ見た目や振る舞いの記述が3回出現した時点を共通部品化の目安とする。ボタンの色やサイズなどの変化は別部品にせずpropsで受け取り1つにまとめる。色や余白の最小単位をデザイントークンとして管理し全般の統一感を保つ。",
+      "headline": "Vueでの共通部品の切り出し方とデザインシステムの原則を解説",
+      "points": [
+        "同じ見た目や振る舞いの記述が3回出現した時点を共通部品化の目安とする。",
+        "ボタンの色やサイズなどの変化は別部品にせずpropsで受け取り1つにまとめる。",
+        "色や余白の最小単位をデザイントークンとして管理し全般の統一感を保つ。"
+      ],
+      "impact": "Vueで画面開発を行うフロントエンドエンジニアが、保守性の高いコンポーネント設計を行うために確認する必要がある。",
+      "glossary": [
+        {
+          "term": "props",
+          "explanation": "親コンポーネントから子コンポーネントへデータを引き渡すための仕組み。"
+        },
+        {
+          "term": "デザイントークン",
+          "explanation": "色や余白などのデザイン構成要素に名前を付けて一元管理する最小単位の値。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://zenn.dev/helloyuki/articles/e1e312796f35ed",
+      "title": "IntelliJ IDEAがLSPをしゃべるようになりVS CodeやCursorで使えるようになった",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-23T12:07:15.000Z",
+      "summary": "IntelliJの補完やリファクタリング機能をVS CodeやNeovim等から利用できる。対応言語はJavaとKotlinで、利用にはIntelliJ IDEA Ultimateライセンスを要する。ヘッドレス化した解析エンジンがLSPを介して各エディタと連携して動作する。",
+      "headline": "IntelliJの解析機能を他エディタで使えるLSP機能が正式公開",
+      "points": [
+        "IntelliJの補完やリファクタリング機能をVS CodeやNeovim等から利用できる。",
+        "対応言語はJavaとKotlinで、利用にはIntelliJ IDEA Ultimateライセンスを要する。",
+        "ヘッドレス化した解析エンジンがLSPを介して各エディタと連携して動作する。"
+      ],
+      "impact": "VS CodeやNeovimでJavaやKotlinを開発するユーザーが、Ultimateライセンスを準備した上で導入を検討する必要がある。",
+      "glossary": [
+        {
+          "term": "LSP",
+          "explanation": "エディタと言語解析ツール間のやり取りを共通化する標準プロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 114,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 27830,
+    "outputTokens": 15429
+  },
+  "offline": false
+}
