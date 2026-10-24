@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-23T20:29:23.579Z",
+  "lastRun": "2026-10-24T19:31:08.850Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -401,6 +401,24 @@
     "https://zenn.dev/jixiaopan/articles/konva-drag-multiselect": "2026-10-24",
     "https://zenn.dev/jixiaopan/articles/manufacturing-auto-mode-state": "2026-10-24",
     "https://zenn.dev/kipcop/articles/f35-vue-18-design-system": "2026-10-24",
-    "https://zenn.dev/helloyuki/articles/e1e312796f35ed": "2026-10-24"
+    "https://zenn.dev/helloyuki/articles/e1e312796f35ed": "2026-10-24",
+    "https://www.infoq.com/news/2026/10/google-argon-optimizes-adk": "2026-10-25",
+    "https://www.infoq.com/news/2026/10/data-agent-kit-ga": "2026-10-25",
+    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro": "2026-10-25",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location": "2026-10-25",
+    "https://zenn.dev/swdrk/articles/a18eca9e53d582": "2026-10-25",
+    "https://zenn.dev/kondonator/articles/4cec228d391022": "2026-10-25",
+    "https://spring.io/blog/2026/10/23/spring-boot-4-0-9-available-now": "2026-10-25",
+    "https://spring.io/blog/2026/10/23/spring-boot-4-1-2-available-now": "2026-10-25",
+    "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization": "2026-10-25",
+    "https://speakerdeck.com/bengo4com/20261024-vuefes-2026-deterministic-frontend": "2026-10-25",
+    "https://zenn.dev/kipcop/articles/f35-vue-19-storybook": "2026-10-25",
+    "https://songmu.jp/riji/entry/2026-10-24-scaling-github-actions-runners-with-ghalet.html": "2026-10-25",
+    "https://group.gmo/info/alert/20261024": "2026-10-25",
+    "https://www.yomiuri.co.jp/economy/20261024-GYT1T00180": "2026-10-25",
+    "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497": "2026-10-25",
+    "https://qiita.com/sogenasano/items/53f85a23a6c83af61484": "2026-10-25",
+    "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust": "2026-10-25",
+    "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types": "2026-10-25"
   }
 }

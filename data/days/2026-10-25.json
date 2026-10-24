@@ -1,0 +1,449 @@
+{
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-24T19:31:08.850Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/",
+      "title": "Google Optimizes Agent Development Kit's 200K-line Python Codebase Overnight with Gemini 4 Argon",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T16:00:00.000Z",
+      "summary": "Gemini 4 Argonが自律的にADKコードを分析し最適化案を作成しました。セッション準備の負荷を約40%、パッケージ読み込み時間を21%削減しました。提案のうち2件が採用された一方、信頼性などの懸念から4件が却下されました。",
+      "headline": "GoogleがAIを用いて自社開発キットのコードを高速化",
+      "points": [
+        "Gemini 4 Argonが自律的にADKコードを分析し最適化案を作成しました。",
+        "セッション準備の負荷を約40%、パッケージ読み込み時間を21%削減しました。",
+        "提案のうち2件が採用された一方、信頼性などの懸念から4件が却下されました。"
+      ],
+      "glossary": [
+        {
+          "term": "遅延読み込み",
+          "explanation": "必要なタイミングになるまでプログラムなどの読み込みを遅らせる手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/",
+      "title": "Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T08:34:00.000Z",
+      "summary": "15以上のデータサービスと接続するツールとスキルをオープンソースで提供します。破壊的変更の防止にはスキルの助言に加えIAMによる強制制限を併用します。",
+      "headline": "GoogleのData Agent Kitが一般提供を開始",
+      "points": [
+        "15以上のデータサービスと接続するツールとスキルをオープンソースで提供します。",
+        "破壊的変更の防止にはスキルの助言に加えIAMによる強制制限を併用します。"
+      ],
+      "impact": "Googleのデータ基盤と連携するAIエージェントの開発者は導入を検討できます。",
+      "glossary": [
+        {
+          "term": "IAM",
+          "explanation": "クラウドなどのリソースに対するアクセス権限を集中管理する仕組み。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIと外部のツールやデータソースを安全に接続するための標準規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "title": "Introducing Kimi K3.1 Pro",
+      "source": "Simon Willison",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T19:40:54.000Z",
+      "summary": "APIで先行提供が開始され、2026年11月4日までに重みが公開される予定です。入力100万トークンあたり2ドル、出力10ドルで高速版も提供されます。ベンチマーク評価で既存の最先端モデルに迫る高いスコアを記録しました。",
+      "headline": "Moonshotが新モデルKimi K3.1 Proを公開",
+      "points": [
+        "APIで先行提供が開始され、2026年11月4日までに重みが公開される予定です。",
+        "入力100万トークンあたり2ドル、出力10ドルで高速版も提供されます。",
+        "ベンチマーク評価で既存の最先端モデルに迫る高いスコアを記録しました。"
+      ],
+      "impact": "Moonshot APIの利用者は新しいK3.1 Proモデルを利用できます。",
+      "glossary": [
+        {
+          "term": "オープンウェイト",
+          "explanation": "AIモデルの学習済みパラメータ（重み）が一般に公開されている状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+      "title": "Web Search on Amazon Bedrock now supports domain filtering and user location controls",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-23T21:04:00.000Z",
+      "summary": "Amazon BedrockのWeb検索で参照ドメインの制限と地域指定が可能になりました。許可または除外するドメインを最大100件まで指定して結果を絞り込めます。ユーザーの位置情報を指定して地域に関連する精度の高い回答を取得できます。",
+      "headline": "BedrockのWeb検索にドメイン制限と位置情報機能が追加",
+      "points": [
+        "Amazon BedrockのWeb検索で参照ドメインの制限と地域指定が可能になりました。",
+        "許可または除外するドメインを最大100件まで指定して結果を絞り込めます。",
+        "ユーザーの位置情報を指定して地域に関連する精度の高い回答を取得できます。"
+      ],
+      "impact": "BedrockでWeb検索機能を使う開発者はAPIパラメータの設定で利用できます。",
+      "glossary": [
+        {
+          "term": "ドメイン",
+          "explanation": "インターネット上のネットワークやWebサイトの所在を特定する識別名。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/swdrk/articles/a18eca9e53d582",
+      "title": "Spring Boot の業務 API を Claude Code に書かせて分かった、「書いたことは守り、書かなかったことは落とす」",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T07:01:23.000Z",
+      "summary": "Claude CodeにSpring BootのAPI作成を指示し挙動を検証しました。ルールで縛ると余計な実装は減る一方、排他制御などの守りが抜け落ちました。非機能要件を1行明示すると、行ロックや失敗テストまで実装されました。",
+      "headline": "Claude Codeによる開発実験で指示外の非機能要件が落ちると判明",
+      "points": [
+        "Claude CodeにSpring BootのAPI作成を指示し挙動を検証しました。",
+        "ルールで縛ると余計な実装は減る一方、排他制御などの守りが抜け落ちました。",
+        "非機能要件を1行明示すると、行ロックや失敗テストまで実装されました。"
+      ],
+      "impact": "Claude Codeを使う開発者は、機能の範囲だけでなく常に守るべき非機能要件も明記する必要があります。",
+      "glossary": [
+        {
+          "term": "排他制御",
+          "explanation": "複数の処理が同じデータへ同時にアクセスして矛盾が生じるのを防ぐ仕組み。"
+        },
+        {
+          "term": "非機能要件",
+          "explanation": "性能やセキュリティなど、業務機能そのもの以外のシステムが満たすべき要件。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/kondonator/articles/4cec228d391022",
+      "title": "RAGはAIの回答を安全にできるのか？ ― GroundednessとKnown Fact Matchingを検証する",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T10:06:59.000Z",
+      "summary": "Open WebUIとOllamaを用いてRAGの安全性に関する検証を行いました。知識ベースを正しく取得しても、LLMが推測で情報を補完する事例を確認しました。文書に情報がない場合でも、回答を停止せず架空の期間を回答する結果となりました。",
+      "headline": "RAG導入のみではLLMのハルシネーションを防げないと判明",
+      "points": [
+        "Open WebUIとOllamaを用いてRAGの安全性に関する検証を行いました。",
+        "知識ベースを正しく取得しても、LLMが推測で情報を補完する事例を確認しました。",
+        "文書に情報がない場合でも、回答を停止せず架空の期間を回答する結果となりました。"
+      ],
+      "impact": "RAGを導入する開発者は、知識ベースの検索だけでなく生成内容が事実に基づくかの検証が必要です。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部知識を検索して取得し、その内容を踏まえてLLMに回答を生成させる技術。"
+        },
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実とは異なる誤った情報を、もっともらしく生成してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://spring.io/blog/2026/10/23/spring-boot-4-0-9-available-now",
+      "title": "Spring Boot 4.0.9 available now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "Spring Boot 4.0.9の提供開始が案内されました。本文には関連する商標ガイドラインや著作権表示のみが掲載されています。",
+      "headline": "Spring Boot 4.0.9の提供が開始された",
+      "points": [
+        "Spring Boot 4.0.9の提供開始が案内されました。",
+        "本文には関連する商標ガイドラインや著作権表示のみが掲載されています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://spring.io/blog/2026/10/23/spring-boot-4-1-2-available-now",
+      "title": "Spring Boot 4.1.2 available now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "Spring Boot 4.1.2の提供開始が案内されました。本文には関連する商標ガイドラインや著作権表示のみが掲載されています。",
+      "headline": "Spring Boot 4.1.2の提供が開始された",
+      "points": [
+        "Spring Boot 4.1.2の提供開始が案内されました。",
+        "本文には関連する商標ガイドラインや著作権表示のみが掲載されています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/",
+      "title": "Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-24T08:10:00.000Z",
+      "summary": "pingora-ketamaのRust実装を最適化し、内部負荷分散サービスのメモリを100TB以上削減しました。統計分析により分散精度を保ちつつ、バックエンドあたりのハッシュ数を約90%削減しました。ハッシュのデータ構造を6バイトに小型化し、急激なオリジントラフィック増加を防ぐため段階的に導入しました。",
+      "headline": "Cloudflareがハッシュ最適化でメモリを100TB削減",
+      "points": [
+        "pingora-ketamaのRust実装を最適化し、内部負荷分散サービスのメモリを100TB以上削減しました。",
+        "統計分析により分散精度を保ちつつ、バックエンドあたりのハッシュ数を約90%削減しました。",
+        "ハッシュのデータ構造を6バイトに小型化し、急激なオリジントラフィック増加を防ぐため段階的に導入しました。"
+      ],
+      "glossary": [
+        {
+          "term": "コンシステントハッシュ法",
+          "explanation": "サーバーの増減時に再配置されるデータの割合を最小限に抑えるハッシュアルゴリズム。"
+        },
+        {
+          "term": "Pingora",
+          "explanation": "Cloudflareが開発したRust製の高速なプロキシフレームワーク。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://speakerdeck.com/bengo4com/20261024-vuefes-2026-deterministic-frontend",
+      "title": "決定的なフロントエンドアーキテクチャがいい",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-24T06:24:33.000Z",
+      "summary": "レビューの負担を減らすため、リンタールールで強制できる「決定的なアーキテクチャ」の導入を提案しました。依存方向の一方向化や、状態ロジックをcomposableに切り出す基準を4つのルールとして定義しています。業務ルールを扱うドメインモデリングなど、決定的にできない領域も存在すると指摘しています。",
+      "headline": "弁護士ドットコムがリンターで強制するフロント設計を提案",
+      "points": [
+        "レビューの負担を減らすため、リンタールールで強制できる「決定的なアーキテクチャ」の導入を提案しました。",
+        "依存方向の一方向化や、状態ロジックをcomposableに切り出す基準を4つのルールとして定義しています。",
+        "業務ルールを扱うドメインモデリングなど、決定的にできない領域も存在すると指摘しています。"
+      ],
+      "impact": "フロントエンド開発者が、保守性を高めるためにアーキテクチャをリンターで規約化する際の指針として活用できます。",
+      "glossary": [
+        {
+          "term": "composable",
+          "explanation": "Vue 3で状態を持つロジックを切り出して再利用可能にした関数。"
+        },
+        {
+          "term": "リンター",
+          "explanation": "ソースコードを静的解析し、ルール違反や記述ミスを自動検出するツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-19-storybook",
+      "title": "35日でフロントエンドの基礎を完全に理解する #19 - Storybook（カタログ駆動の部品開発）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-24T19:22:53.000Z",
+      "summary": "アプリ本体を動かさずに、コンポーネントを独立して確認できる「部品のカタログ」を作る道具として紹介しています。Component Story Formatに従い、argsでpropsを渡して複数状態を定義する方法を解説しています。通信エラーや読み込み中など、アプリ上では再現しにくい状態を一覧化して即座に確認できます。",
+      "headline": "UI部品を単体で一覧表示できるStorybookの基本を解説",
+      "points": [
+        "アプリ本体を動かさずに、コンポーネントを独立して確認できる「部品のカタログ」を作る道具として紹介しています。",
+        "Component Story Formatに従い、argsでpropsを渡して複数状態を定義する方法を解説しています。",
+        "通信エラーや読み込み中など、アプリ上では再現しにくい状態を一覧化して即座に確認できます。"
+      ],
+      "impact": "UIコンポーネントを開発するエンジニアが、部品の見た目や状態変化を手軽に確認・共有するために活用できます。",
+      "glossary": [
+        {
+          "term": "Storybook",
+          "explanation": "UIコンポーネントをアプリから切り離して独立して開発・確認できるカタログツール。"
+        },
+        {
+          "term": "props",
+          "explanation": "親コンポーネントから子コンポーネントへデータや設定値を渡すための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://songmu.jp/riji/entry/2026-10-24-scaling-github-actions-runners-with-ghalet.html",
+      "title": "GitHub Actions Self-hosted runnerをお手軽にスケールさせる ghalet | おそらくはそれさえも平凡な日々",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T07:15:09.000Z",
+      "summary": "GitHub ActionsのSelf-hosted runnerを手軽にスケールさせるGo製OSS「ghalet」が公開されました。actions/scalesetを利用し、Kubernetesを使わずに単一ホスト上で複数ジョブを並列実行できます。ランナーをコンテナではなく単なるOSプロセスとして動かすため、専用マシンやVM上での稼働を想定しています。",
+      "headline": "単一ホストでランナーをスケールさせるOSSが登場",
+      "points": [
+        "GitHub ActionsのSelf-hosted runnerを手軽にスケールさせるGo製OSS「ghalet」が公開されました。",
+        "actions/scalesetを利用し、Kubernetesを使わずに単一ホスト上で複数ジョブを並列実行できます。",
+        "ランナーをコンテナではなく単なるOSプロセスとして動かすため、専用マシンやVM上での稼働を想定しています。"
+      ],
+      "impact": "GitHub ActionsのSelf-hosted runnerを単一マシン上で手軽に並列実行したい開発者が導入できます。",
+      "glossary": [
+        {
+          "term": "Self-hosted runner",
+          "explanation": "GitHub Actionsのジョブをユーザー自身が用意したサーバーやVMで実行する仕組み。"
+        },
+        {
+          "term": "Actions Runner Controller",
+          "explanation": "Kubernetes上でSelf-hosted runnerを管理・自動スケーリングする公式ツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://group.gmo/info/alert/20261024/",
+      "title": "【重要】お名前.com デスクトップクラウドサービスに対するサイバー攻撃について（第4報） | GMOインターネットグループ株式会社",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T03:11:09.000Z",
+      "summary": "不正アクセスによる情報流出や口座の不正操作を受け、特別措置を実施します。全利用者に一律5,000円を支払い、不正取引による実現損失を全額補償します。希望者には代替クラウド基盤を提供し、移行後は6か月間無償で利用可能とします。",
+      "headline": "GMOがお名前.comの不正アクセス被害で補償やお見舞金支払いを発表",
+      "points": [
+        "不正アクセスによる情報流出や口座の不正操作を受け、特別措置を実施します。",
+        "全利用者に一律5,000円を支払い、不正取引による実現損失を全額補償します。",
+        "希望者には代替クラウド基盤を提供し、移行後は6か月間無償で利用可能とします。"
+      ],
+      "impact": "契約者は10月30日までの案内を確認し、被害がある場合は必要情報を揃えて申請する必要があります。",
+      "glossary": [
+        {
+          "term": "能動的サイバー防御",
+          "explanation": "被害が深刻化する前に国などが攻撃者のサーバーを特定し無力化する枠組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.yomiuri.co.jp/economy/20261024-GYT1T00180/",
+      "title": "不正アクセス受けたＧＭＯ、政府に「能動的サイバー防御」の適用を緊急要請",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T04:45:05.000Z",
+      "summary": "クラウドサービスの不正利用による損失補償とともに政府への適用要請を行いました。攻撃元サーバーへの侵入や無害化を行う法制度が今月1日に本格施行されています。2万人以上の利用者がおり、不正取引による損失補償や見舞金5000円が支給されます。",
+      "headline": "GMOが不正アクセス被害を受け政府へ能動的サイバー防御の適用を要請",
+      "points": [
+        "クラウドサービスの不正利用による損失補償とともに政府への適用要請を行いました。",
+        "攻撃元サーバーへの侵入や無害化を行う法制度が今月1日に本格施行されています。",
+        "2万人以上の利用者がおり、不正取引による損失補償や見舞金5000円が支給されます。"
+      ],
+      "impact": "被害を受けた利用者は、11月6日までに届くメール案内を確認して補償手続きを行う必要があります。",
+      "glossary": [
+        {
+          "term": "能動的サイバー防御",
+          "explanation": "重大な脅威に対し、国などが攻撃元サーバーに侵入して無害化を図る措置のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T08:06:39Z",
+      "summary": "GoogleのBrotliデコーダーに任意のコード実行が可能なメモリ破壊の欠陥が判明しました。Node.jsだけでなくPythonやC++などHTTPを用いる広範な環境に影響します。CVSS値9.2の深刻な欠陥で、各言語向けに修正版への更新やデコード停止が推奨されます。",
+      "headline": "圧縮ライブラリBrotliの深刻な脆弱性が広範囲の言語やアプリに拡大",
+      "points": [
+        "GoogleのBrotliデコーダーに任意のコード実行が可能なメモリ破壊の欠陥が判明しました。",
+        "Node.jsだけでなくPythonやC++などHTTPを用いる広範な環境に影響します。",
+        "CVSS値9.2の深刻な欠陥で、各言語向けに修正版への更新やデコード停止が推奨されます。"
+      ],
+      "impact": "Brotliを利用する開発者は、Node.jsやPython等の修正版へ更新するかデコードを停止する必要があります。",
+      "glossary": [
+        {
+          "term": "Brotli",
+          "explanation": "Googleが開発した、Web通信などで幅広く使われる可逆圧縮アルゴリズムです。"
+        },
+        {
+          "term": "CVE",
+          "explanation": "個別のソフトウェア脆弱性に割り振られる、世界共通の識別子です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://qiita.com/sogenasano/items/53f85a23a6c83af61484",
+      "title": "人間がコードを書く時代は終わる",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T14:49:53.000Z",
+      "summary": "コードの自動修正を行うAIエージェントの実装能力が一般的な水準を超えたと報告されました。人間の作業は設計指示やAIの出力理解へと移行し、職種の境界が融解すると指摘しています。",
+      "headline": "AIコーディングツールの進化により人間がコードを書く役割の終焉が議論に",
+      "points": [
+        "コードの自動修正を行うAIエージェントの実装能力が一般的な水準を超えたと報告されました。",
+        "人間の作業は設計指示やAIの出力理解へと移行し、職種の境界が融解すると指摘しています。"
+      ],
+      "impact": "現場のエンジニアは、AIに実装を任せる姿勢を持ち、何を達成するかの判断や設計に注力する必要があります。",
+      "glossary": [
+        {
+          "term": "コーディングエージェント",
+          "explanation": "ソースコードを自律的に読み解き、修正や実装までを自動で行うAIツールのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "source": "Anthropic News",
+      "genre": "other",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "summary": "実験物理学者のクリストファー・スタッブス氏が同信託に加入しました。同信託は取締役会の過半数を任命する権限を持ち、AIリスクを助言します。同社は初のパブリックベネフィットレポートを公開し進捗を評価しました。",
+      "headline": "物理学者のスタッブス氏がAnthropicの信託機関に参加",
+      "points": [
+        "実験物理学者のクリストファー・スタッブス氏が同信託に加入しました。",
+        "同信託は取締役会の過半数を任命する権限を持ち、AIリスクを助言します。",
+        "同社は初のパブリックベネフィットレポートを公開し進捗を評価しました。"
+      ],
+      "glossary": [
+        {
+          "term": "公益法人",
+          "explanation": "株主利益だけでなく社会的な利益の追求も義務付けられた会社組織。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "source": "Google DeepMind",
+      "genre": "other",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "summary": "地球上の土地を6つの森林・利用区分に分類した地図を公開しました。2017〜2025年の森林変化を10m単位で毎年追跡可能です。伐採後に木材農園や農地など何へ転換されたかも把握できます。",
+      "headline": "Googleらが世界の森林種別を示す10m解像度マップを公開",
+      "points": [
+        "地球上の土地を6つの森林・利用区分に分類した地図を公開しました。",
+        "2017〜2025年の森林変化を10m単位で毎年追跡可能です。",
+        "伐採後に木材農園や農地など何へ転換されたかも把握できます。"
+      ],
+      "impact": "木材や農産物を扱う企業や規制当局が、森林破壊防止規制への準拠確認に活用できます。",
+      "glossary": [
+        {
+          "term": "EUDR",
+          "explanation": "森林破壊や劣化を招いた原材料や製品のEU市場流通を禁止する規制。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 91,
+    "shortlisted": 60,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26782,
+    "outputTokens": 12851
+  },
+  "offline": false
+}
