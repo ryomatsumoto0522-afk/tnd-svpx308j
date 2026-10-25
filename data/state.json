@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-24T19:31:08.850Z",
+  "lastRun": "2026-10-25T19:40:51.158Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -419,6 +419,25 @@
     "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497": "2026-10-25",
     "https://qiita.com/sogenasano/items/53f85a23a6c83af61484": "2026-10-25",
     "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust": "2026-10-25",
-    "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types": "2026-10-25"
+    "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types": "2026-10-25",
+    "https://www.itmedia.co.jp/business/articles/2610/24/news009.html": "2026-10-26",
+    "https://qiita.com/songchong/items/7144594b0ad9529a168b": "2026-10-26",
+    "https://www.infoq.com/news/2026/10/google-meta-torchtpu": "2026-10-26",
+    "https://claude.com/ja/resources/articles/the-ai-native-sdlc-playbook": "2026-10-26",
+    "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras": "2026-10-26",
+    "https://www.infoq.com/news/2026/10/google-ml-drift": "2026-10-26",
+    "https://www.infoq.com/news/2026/10/php-critical-rce-patches": "2026-10-26",
+    "https://inside.java/2026/10/22/jvm-diagnosis": "2026-10-26",
+    "https://www.afpbb.com/articles/-/3659236": "2026-10-26",
+    "https://zenn.dev/ikm_king/articles/vuefes2026-experience-log": "2026-10-26",
+    "https://zenn.dev/shiz0321/articles/c67fcb9db8cdd7": "2026-10-26",
+    "https://yurinchi2525.com/20261025emdash": "2026-10-26",
+    "https://qiita.com/kitao/items/7fac93e8a7ad6015b0b0": "2026-10-26",
+    "https://blog.jxck.io/entries/2026-10-25/emudhra.html": "2026-10-26",
+    "https://www.yomiuri.co.jp/national/20261024-GYT1T00360": "2026-10-26",
+    "https://news.web.nhk/newsweb/na/nd-20261025de65227": "2026-10-26",
+    "https://www.infoq.com/news/2026/10/pingcap-cloud-data-breach": "2026-10-26",
+    "https://uiuret.hatenablog.com/entry/2026/10/25/080436": "2026-10-26",
+    "https://news.yahoo.co.jp/articles/2997423a08fc213f62fb5f6e7d3b3091570bfcdc": "2026-10-26"
   }
 }

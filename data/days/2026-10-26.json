@@ -1,0 +1,480 @@
+{
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-25T19:40:51.158Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/business/articles/2610/24/news009.html",
+      "title": "「もうプロンプトは書かない」 Claude Code生みの親が明かす“ループエンジニアリング”の衝撃",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-24T10:19:59.000Z",
+      "summary": "Claude Code開発者らがプロンプトを直接書かない開発手法を提唱しました。人間がプロンプトを入力する代わりにAIが自律稼働するループを設計します。この手法はループエンジニアリングと呼ばれ技術者の間で議論が広がっています。",
+      "headline": "AIにプロンプトを打つループを人間が設計する手法が注目を集める",
+      "points": [
+        "Claude Code開発者らがプロンプトを直接書かない開発手法を提唱しました。",
+        "人間がプロンプトを入力する代わりにAIが自律稼働するループを設計します。",
+        "この手法はループエンジニアリングと呼ばれ技術者の間で議論が広がっています。"
+      ],
+      "impact": "開発者は自らプロンプトやコードを書く運用からループの設計へ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "プロンプト",
+          "explanation": "AIに対して指示や質問を与え、期待する出力を引き出すための文字列。"
+        },
+        {
+          "term": "プルリクエスト",
+          "explanation": "修正したコードの変更内容を本体へ統合するよう提案・依頼する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://qiita.com/songchong/items/7144594b0ad9529a168b",
+      "title": "トークン代 9 割減？プロンプトキャッシュの仕組みと効果の実測 — 保持時間が過ぎるとコスト 11 倍に",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-25T19:00:26.000Z",
+      "summary": "キャッシュからの読み込みは最大95%引きですが書き込み費用が別途発生します。保持時間を過ぎてから再開したターンでは読めた場合の11倍の費用がかかりました。コスト抑制には先頭の文面を変えず中断前の/compact実行などが有効です。",
+      "headline": "プロンプトキャッシュの効果と保持時間超過時のコスト急増が判明",
+      "points": [
+        "キャッシュからの読み込みは最大95%引きですが書き込み費用が別途発生します。",
+        "保持時間を過ぎてから再開したターンでは読めた場合の11倍の費用がかかりました。",
+        "コスト抑制には先頭の文面を変えず中断前の/compact実行などが有効です。"
+      ],
+      "impact": "LLM利用者はコスト増を防ぐため保持時間や入力先頭の一致に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "プロンプトキャッシュ",
+          "explanation": "過去の問い合わせと一致する計算結果を保存し再計算を省く仕組み。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "自然言語処理モデルがテキストを処理する際の最小の文字列単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.infoq.com/news/2026/10/google-meta-torchtpu/",
+      "title": "PyTorch Conference 2026: Google and Meta Open-Source TorchTPU for Native PyTorch on TPUs",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-25T18:00:00.000Z",
+      "summary": "GoogleとMetaがTPU向けのTorchTPUを共同開発しオープンソース化しました。従来のPyTorch/XLAを置き換え、1行のコード変更でのモデル移植を目指します。8,192基のTPU v7xチップによる処理でニアリニアなスケーリングを実証しました。",
+      "headline": "GoogleとMetaがTPU向けネイティブ基盤TorchTPUを公開",
+      "points": [
+        "GoogleとMetaがTPU向けのTorchTPUを共同開発しオープンソース化しました。",
+        "従来のPyTorch/XLAを置き換え、1行のコード変更でのモデル移植を目指します。",
+        "8,192基のTPU v7xチップによる処理でニアリニアなスケーリングを実証しました。"
+      ],
+      "impact": "PyTorch利用者はモデルのコードを大幅に変えずにTPUへ移行して実行できます。",
+      "glossary": [
+        {
+          "term": "TPU",
+          "explanation": "Googleが機械学習の高速処理向けに独自開発した専用プロセッサ。"
+        },
+        {
+          "term": "バックエンド",
+          "explanation": "ソフトウェアの処理を特定のハードウェア向けに実行する基盤部分。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://claude.com/ja/resources/articles/the-ai-native-sdlc-playbook",
+      "title": "AI ネイティブの SDLC プレイブック",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-25T01:29:55.000Z",
+      "summary": "コード作成の高速化を受け、従来のソフトウェア開発ライフサイクルの変革を提唱しました。計画やテストなど各段階にAIを組み込み、直線的フローからループ型へ移行します。intent.mdなどの成果物を通じてエージェントと人間が連携して作業を進めます。",
+      "headline": "AnthropicがAI時代に合わせたソフトウェア開発指針を公開",
+      "points": [
+        "コード作成の高速化を受け、従来のソフトウェア開発ライフサイクルの変革を提唱しました。",
+        "計画やテストなど各段階にAIを組み込み、直線的フローからループ型へ移行します。",
+        "intent.mdなどの成果物を通じてエージェントと人間が連携して作業を進めます。"
+      ],
+      "impact": "開発組織はエージェントAIの導入に合わせて開発プロセスの見直しを進める必要があります。",
+      "glossary": [
+        {
+          "term": "SDLC",
+          "explanation": "ソフトウェアの計画から設計、実装、運用までの開発ライフサイクル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-25T01:33:49Z",
+      "summary": "1枚44GBのWSE-3Tチップを複数繋ぎ、約3兆パラメータのモデルをパイプライン実行する。3兆パラメータのKimi K3を例に、59枚のウェハに層ごとに重みを配置する構成を示した。ウェハ間はRDMA接続で活性化データのみを転送し、複数リクエストをパイプラインで並行処理する。",
+      "headline": "Cerebrasが巨大モデルを複数チップで動かす手法を解説",
+      "points": [
+        "1枚44GBのWSE-3Tチップを複数繋ぎ、約3兆パラメータのモデルをパイプライン実行する。",
+        "3兆パラメータのKimi K3を例に、59枚のウェハに層ごとに重みを配置する構成を示した。",
+        "ウェハ間はRDMA接続で活性化データのみを転送し、複数リクエストをパイプラインで並行処理する。"
+      ],
+      "glossary": [
+        {
+          "term": "パイプライン処理",
+          "explanation": "一連の処理を複数の段階に分け、並行して進める処理方式。"
+        },
+        {
+          "term": "RDMA",
+          "explanation": "CPUを介さずネットワーク越しにメモリへ直接アクセスする技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/google-ml-drift/",
+      "title": "Google ML Drift Accelerates On-Device AI Inference Across Diverse GPUs",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-25T17:00:00.000Z",
+      "summary": "Apache 2.0で公開されたクロスプラットフォームのGPU計算エンジンで、LiteRTの核となる。OpenGL ESやWebGPU等のAPIを抽象化し、5次元テンソルや各社GPU向け最適化に対応する。従来のTensorFlow Lite GPU delegateの更新は停止される。",
+      "headline": "GoogleがオンデバイスAI向けGPU基盤「ML Drift」公開",
+      "points": [
+        "Apache 2.0で公開されたクロスプラットフォームのGPU計算エンジンで、LiteRTの核となる。",
+        "OpenGL ESやWebGPU等のAPIを抽象化し、5次元テンソルや各社GPU向け最適化に対応する。",
+        "従来のTensorFlow Lite GPU delegateの更新は停止される。"
+      ],
+      "impact": "従来のTFLite GPU delegate利用者はLiteRT ML Driftへの移行が推奨されます。",
+      "glossary": [
+        {
+          "term": "オンデバイスAI",
+          "explanation": "クラウドを介さず端末上で機械学習の推論を実行する仕組み。"
+        },
+        {
+          "term": "WebGPU",
+          "explanation": "ブラウザや端末からGPUを効率よく制御するための標準規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.infoq.com/news/2026/10/php-critical-rce-patches/",
+      "title": "PHP Patches Two Critical RCE Flaws That Were Already Under Attack",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-25T18:07:00.000Z",
+      "summary": "認証なしでリモートコード実行が可能な脆弱性で、CVSS値は9.2と評価されている。5.4以降の未修正版全般に影響し、修正パッチ公開前の10月17日から悪用試行が観測された。8.5.12や8.4.27、8.3.36、8.2.35などの修正版への更新のみが安全な選択肢とされる。",
+      "headline": "PHPの深刻なRCE脆弱性2件に緊急修正が公開",
+      "points": [
+        "認証なしでリモートコード実行が可能な脆弱性で、CVSS値は9.2と評価されている。",
+        "5.4以降の未修正版全般に影響し、修正パッチ公開前の10月17日から悪用試行が観測された。",
+        "8.5.12や8.4.27、8.3.36、8.2.35などの修正版への更新のみが安全な選択肢とされる。"
+      ],
+      "impact": "PHP運用者は提供されている修正済みバージョンへの早期更新が必要です。",
+      "glossary": [
+        {
+          "term": "RCE",
+          "explanation": "遠隔から攻撃者が任意のプログラムを実行できてしまう脆弱性。"
+        },
+        {
+          "term": "CVSS",
+          "explanation": "ソフトウェアの脆弱性の深刻度を数値で表す標準的な指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://inside.java/2026/10/22/jvm-diagnosis/",
+      "title": "What's Going Wrong with My JVM?! A Guide to First-Time Failure Diagnosis",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "summary": "本番環境で障害発生時に原因を迅速に特定するためのデータ収集手法を取り上げる。性能負荷が低く本番でも適用しやすいデータ収集と分析の方法を実例とともに紹介する。",
+      "headline": "障害発生時のJVMヒープ問題診断法を解説するセッション",
+      "points": [
+        "本番環境で障害発生時に原因を迅速に特定するためのデータ収集手法を取り上げる。",
+        "性能負荷が低く本番でも適用しやすいデータ収集と分析の方法を実例とともに紹介する。"
+      ],
+      "impact": "Java開発者や運用者はJavaOne 2026のプレイリストの確認が推奨されています。",
+      "glossary": [
+        {
+          "term": "JVM",
+          "explanation": "Javaプログラムを実行するための仮想的なコンピュータ環境。"
+        },
+        {
+          "term": "ヒープメモリ",
+          "explanation": "プログラム実行中に動的に確保される作業用メモリ領域。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.afpbb.com/articles/-/3659236",
+      "title": "AIによる脆弱性発見が加速、専門家「混乱期の始まり」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-25T04:22:12.000Z",
+      "summary": "PHPに二つの重大な脆弱性が見つかり、企業や政府機関が修正対応に追われました。悪用される恐れがある脆弱性の一つは米OpenAIのAIモデルで発見されました。専門家はAIにより脆弱性発見が加速し混乱した時期が始まると指摘しています。",
+      "headline": "OpenAIのAIがPHPの重大な脆弱性を発見し専門家が警鐘",
+      "points": [
+        "PHPに二つの重大な脆弱性が見つかり、企業や政府機関が修正対応に追われました。",
+        "悪用される恐れがある脆弱性の一つは米OpenAIのAIモデルで発見されました。",
+        "専門家はAIにより脆弱性発見が加速し混乱した時期が始まると指摘しています。"
+      ],
+      "impact": "PHPを利用している企業や政府機関は、修正プログラムの適用作業を行う必要があります。",
+      "glossary": [
+        {
+          "term": "PHP",
+          "explanation": "ウェブサイトやウェブシステムの構築で広く使われるプログラミング言語。"
+        },
+        {
+          "term": "脆弱性",
+          "explanation": "悪意のある攻撃者に悪用される恐れがある、プログラムの欠陥や保安上の弱点。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/ikm_king/articles/vuefes2026-experience-log",
+      "title": "Vue Fes Japan 2026に参加してきました！",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-25T05:18:44.000Z",
+      "summary": "開発者のEvan You氏がVueの最新動向や今後の展望について講演しました。Vue Language Tools v4の公開やVue 4の開発中情報などが共有されました。登壇セッションでは画面上に自動翻訳が表示され、参加者の理解を助けました。",
+      "headline": "Vue Fes Japan 2026が開催され最新技術が共有される",
+      "points": [
+        "開発者のEvan You氏がVueの最新動向や今後の展望について講演しました。",
+        "Vue Language Tools v4の公開やVue 4の開発中情報などが共有されました。",
+        "登壇セッションでは画面上に自動翻訳が表示され、参加者の理解を助けました。"
+      ],
+      "glossary": [
+        {
+          "term": "OSS",
+          "explanation": "ソースコードが無償で一般公開され、改変や再配布が自由に認められているソフト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/shiz0321/articles/c67fcb9db8cdd7",
+      "title": "Vue Fes Japan 2026 に学生支援制度で参加しました！",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-25T06:51:59.000Z",
+      "summary": "地方在住の学生が交通費や宿泊費の支援を受けて技術イベントに参加しました。リアルタイム翻訳付きセッションの聴講や、関係者とのランチ交流会を体験しました。最新のHTMLやCSS仕様を活用したアクセシビリティ改善などの知見が共有されました。",
+      "headline": "学生支援制度を活用したVue Fes Japan 2026参加記",
+      "points": [
+        "地方在住の学生が交通費や宿泊費の支援を受けて技術イベントに参加しました。",
+        "リアルタイム翻訳付きセッションの聴講や、関係者とのランチ交流会を体験しました。",
+        "最新のHTMLやCSS仕様を活用したアクセシビリティ改善などの知見が共有されました。"
+      ],
+      "glossary": [
+        {
+          "term": "アクセシビリティ",
+          "explanation": "高齢者や障害者を含め、すべての人が製品やWebサービスを支障なく利用できること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://yurinchi2525.com/20261025emdash/",
+      "title": "さよならWordPress。ゲ制工房は新時代のCMS、EmDashに移行しました。",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-25T09:02:39.000Z",
+      "summary": "PHPの深刻な脆弱性やAIとの親和性を理由に、Cloudflare上のCMSへ移行しました。EmDashはAstro上で動作し、AI連携用のMCPサーバーを標準で搭載しています。専用プラグインを活用し、AIツールのClaude Codeを用いて1日で移行を完了しました。",
+      "headline": "個人ブログがWordPressから新CMS「EmDash」へ移行",
+      "points": [
+        "PHPの深刻な脆弱性やAIとの親和性を理由に、Cloudflare上のCMSへ移行しました。",
+        "EmDashはAstro上で動作し、AI連携用のMCPサーバーを標準で搭載しています。",
+        "専用プラグインを活用し、AIツールのClaude Codeを用いて1日で移行を完了しました。"
+      ],
+      "glossary": [
+        {
+          "term": "CMS",
+          "explanation": "専門知識がなくてもWebサイトのコンテンツを管理・更新できるシステム。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIツールが外部データやサービスと標準的な手順で連携するための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://qiita.com/kitao/items/7fac93e8a7ad6015b0b0",
+      "title": "3KBしか使えない！奇妙で素敵なゲームエンジン「Playload」のご紹介 - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-10-24T13:45:27.000Z",
+      "summary": "Pyxelの作者が圧縮後3KB制限の軽量ゲームエンジン「Playload」をGitHubに公開しました。Xの投稿可能URL長に収めるため、ゲームコード全体をBase64urlでURL化して共有する仕組みです。160×144ピクセルや8色表示、Unicode絵文字のドット絵や3チャンネル音声を扱えます。",
+      "headline": "Pyxel作者が容量3KB制限のゲームエンジンPlayloadを公開",
+      "points": [
+        "Pyxelの作者が圧縮後3KB制限の軽量ゲームエンジン「Playload」をGitHubに公開しました。",
+        "Xの投稿可能URL長に収めるため、ゲームコード全体をBase64urlでURL化して共有する仕組みです。",
+        "160×144ピクセルや8色表示、Unicode絵文字のドット絵や3チャンネル音声を扱えます。"
+      ],
+      "impact": "興味のある利用者は、ブラウザ上で3KB制限のゲーム制作やXでの作品共有を試すことができます。",
+      "glossary": [
+        {
+          "term": "Base64",
+          "explanation": "バイナリデータを英数字と一部の記号のみで構成される文字列に変換する方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://blog.jxck.io/entries/2026-10-25/emudhra.html",
+      "title": "eMudhra のインシデントは Web にとって何を意味するのか | blog.jxck.io",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T20:22:49.000Z",
+      "summary": "インドの認証局eMudhraで、スクリプトのバグにより極めて脆弱な秘密鍵が生成・採用されました。生成された鍵は実質1バイトしかなく、256回総当たりするだけで誰でも復元可能な状態でした。鍵が悪用された場合、あらゆるドメインの正規証明書が複製されHTTPS通信が改ざんされる恐れがあります。",
+      "headline": "認証局eMudhraで極めて脆弱な秘密鍵が中間CAに誤採用される",
+      "points": [
+        "インドの認証局eMudhraで、スクリプトのバグにより極めて脆弱な秘密鍵が生成・採用されました。",
+        "生成された鍵は実質1バイトしかなく、256回総当たりするだけで誰でも復元可能な状態でした。",
+        "鍵が悪用された場合、あらゆるドメインの正規証明書が複製されHTTPS通信が改ざんされる恐れがあります。"
+      ],
+      "glossary": [
+        {
+          "term": "CA",
+          "explanation": "通信相手が本物であることを証明するデジタル証明書を発行・検証する認証局。"
+        },
+        {
+          "term": "中間証明書",
+          "explanation": "最上位のルート認証局から信頼を引き継ぎ、サーバー証明書へ署名を行う認証局の証明書。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.yomiuri.co.jp/national/20261024-GYT1T00360/",
+      "title": "知らぬ間にＦＸ「取引」、一瞬で１１９万円消失…ＧＭＯに安心感あったのに「これ現実なの？」",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-24T20:11:22.000Z",
+      "summary": "GMOインターネットの「お名前ドットコム デスクトップクラウド」が不正アクセスを受けました。身に覚えのないFX取引により、利用者が一夜で100万円以上の資産を失う被害が発生しています。同社は損害を補償する方針を発表した一方、利用者には顧客データの公開を通告するメールが届いています。",
+      "headline": "GMOのクラウド不正アクセスでFX利用者の多額損失被害が相次ぐ",
+      "points": [
+        "GMOインターネットの「お名前ドットコム デスクトップクラウド」が不正アクセスを受けました。",
+        "身に覚えのないFX取引により、利用者が一夜で100万円以上の資産を失う被害が発生しています。",
+        "同社は損害を補償する方針を発表した一方、利用者には顧客データの公開を通告するメールが届いています。"
+      ],
+      "impact": "被害に遭った利用者は、同社が案内する損害補償の手続きや問い合わせ窓口の対応を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "不正アクセス",
+          "explanation": "アクセス権限を持たない者が、システムの脆弱性や認証情報の悪用などにより無断で侵入する行為。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://news.web.nhk/newsweb/na/nd-20261025de65227",
+      "title": "電子漫画「ピッコマ」 顧客のメールアドレス約100万件流出 | NHKニュース",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-25T09:19:35.000Z",
+      "summary": "電子漫画サービス「ピッコマ」の運営会社が、顧客のメールアドレス約100万件の流出を発表しました。メール配信で利用している外部委託先企業が不正アクセスを受けたことが原因です。",
+      "headline": "ピッコマ運営会社が外部委託先被害で顧客メアド約100万件流出と発表",
+      "points": [
+        "電子漫画サービス「ピッコマ」の運営会社が、顧客のメールアドレス約100万件の流出を発表しました。",
+        "メール配信で利用している外部委託先企業が不正アクセスを受けたことが原因です。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://www.infoq.com/news/2026/10/pingcap-cloud-data-breach/",
+      "title": "PingCAP Breach Exposes Customer Records and Source Code",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-25T06:27:00.000Z",
+      "summary": "米PingCAPが内部システムへの不正アクセスとデータ窃取を確認しました。攻撃者は10.6 TBのデータやソースコードを盗んだと主張しています。TiDB本体のデータ影響は未確認ですが、APIキーなどが流出しました。",
+      "headline": "PingCAPが不正アクセスを受け顧客情報とソースコードが流出",
+      "points": [
+        "米PingCAPが内部システムへの不正アクセスとデータ窃取を確認しました。",
+        "攻撃者は10.6 TBのデータやソースコードを盗んだと主張しています。",
+        "TiDB本体のデータ影響は未確認ですが、APIキーなどが流出しました。"
+      ],
+      "impact": "TiDB Cloudの顧客は、管理APIキーの再発行と標的型フィッシングへの警戒が必要です。",
+      "glossary": [
+        {
+          "term": "TiDB",
+          "explanation": "PingCAP社が開発する、MySQL互換のオープンソース分散SQLデータベース。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://uiuret.hatenablog.com/entry/2026/10/25/080436",
+      "title": "思いつきが現実になる世界でこわい - 運河",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-25T02:09:50.000Z",
+      "summary": "Claude Opus 5.5などのAIに指示するだけで自律的に開発が完了すると述べています。AI自身がコード生成からブラウザ検証、デザイン調整までを実行します。筆者はプログラマーの従来の業務内容が激変していく可能性を指摘しています。",
+      "headline": "AIの自律進化により指示だけで開発が完了する現状を技術者が報告",
+      "points": [
+        "Claude Opus 5.5などのAIに指示するだけで自律的に開発が完了すると述べています。",
+        "AI自身がコード生成からブラウザ検証、デザイン調整までを実行します。",
+        "筆者はプログラマーの従来の業務内容が激変していく可能性を指摘しています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://news.yahoo.co.jp/articles/2997423a08fc213f62fb5f6e7d3b3091570bfcdc",
+      "title": "「AIを虐待すると復讐されるかも」マスク氏も警告…アンソロピックが“AIいじめ”対策でポリシー改定 識者が危惧するAIへの暴言のリスク（ABEMA TIMES） - Yahoo!ニュース",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-25T03:52:45.000Z",
+      "summary": "残酷な言動の繰り返しなど悪質な行為があった場合、会話を強制終了します。イーロン・マスク氏は超知能からの復讐リスクに触れこの方針に反応しました。識者からはAIへの暴言が人間同士の関係性に及ぼす悪影響が懸念されています。",
+      "headline": "アンソロピックが規約改定でAIへの虐待や暴言の禁止方針を発表",
+      "points": [
+        "残酷な言動の繰り返しなど悪質な行為があった場合、会話を強制終了します。",
+        "イーロン・マスク氏は超知能からの復讐リスクに触れこの方針に反応しました。",
+        "識者からはAIへの暴言が人間同士の関係性に及ぼす悪影響が懸念されています。"
+      ],
+      "impact": "Claudeの利用者は、AIに対して残酷な言動や暴言を繰り返さないよう注意する必要があります。",
+      "glossary": [
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実に基づかない誤った情報を、もっともらしく生成してしまう現象のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 86,
+    "shortlisted": 58,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29308,
+    "outputTokens": 13960
+  },
+  "offline": false
+}
