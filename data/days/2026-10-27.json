@@ -1,0 +1,472 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-26T21:39:14.441Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "summary": "米SECにClass A普通株式の新規株式公開に向けた登録届出書（Form S-1）を提出しました。ナスダック市場にシンボル「ANT」で上場する予定で、売出株数や価格帯は未定です。",
+      "headline": "AnthropicがSECにForm S-1を提出しナスダック上場を計画",
+      "points": [
+        "米SECにClass A普通株式の新規株式公開に向けた登録届出書（Form S-1）を提出しました。",
+        "ナスダック市場にシンボル「ANT」で上場する予定で、売出株数や価格帯は未定です。"
+      ],
+      "glossary": [
+        {
+          "term": "Form S-1",
+          "explanation": "米国で企業が株式を新規公開する際に、証券取引委員会へ提出する登録届出書。"
+        },
+        {
+          "term": "IPO",
+          "explanation": "未上場企業が自社の株式を証券市場に公開し、一般に売り出すこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/",
+      "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T18:27:00.000Z",
+      "summary": "高い推論性能と速度、コスト効率を両立した日常業務向けモデルがBedrockで利用可能になりました。入出力トークン価格はGPT-6.1 Solなどより50%以上安く、最大100万入力トークンに対応します。評価試験ではGPT-6 AstraやGPT-6.1 Solより3倍以上速くタスクを完了しました。",
+      "headline": "OpenAIのGPT-6.1 TerraがAmazon Bedrockで一般提供開始",
+      "points": [
+        "高い推論性能と速度、コスト効率を両立した日常業務向けモデルがBedrockで利用可能になりました。",
+        "入出力トークン価格はGPT-6.1 Solなどより50%以上安く、最大100万入力トークンに対応します。",
+        "評価試験ではGPT-6 AstraやGPT-6.1 Solより3倍以上速くタスクを完了しました。"
+      ],
+      "impact": "Bedrockの利用者は、コンソールやAPI、ChatGPT Workから本モデルを利用・設定できます。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度に処理・理解できる入力情報の最大トークン数。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/",
+      "title": "週刊生成AI with AWS – 2026/10/19 週",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T07:22:53.000Z",
+      "summary": "フィジカルAI開発支援プログラム第2期の応募受付を開始し、11月16日まで受け付けます。NECによるClaude Codeの全社展開事例や、コーテッグのAI分析基盤の構築事例が紹介されました。Bedrockのセキュリティ対策やLiteLLMを活用した推論管理に関する解説も掲載されています。",
+      "headline": "AWSが週刊生成AIブログを公開し支援プログラムや各社事例を紹介",
+      "points": [
+        "フィジカルAI開発支援プログラム第2期の応募受付を開始し、11月16日まで受け付けます。",
+        "NECによるClaude Codeの全社展開事例や、コーテッグのAI分析基盤の構築事例が紹介されました。",
+        "Bedrockのセキュリティ対策やLiteLLMを活用した推論管理に関する解説も掲載されています。"
+      ],
+      "impact": "ロボティクスや生成AIに取り組む企業や研究機関は、11月16日までに支援プログラムへの応募を検討できます。",
+      "glossary": [
+        {
+          "term": "フィジカルAI",
+          "explanation": "ロボットなど物理世界で動作し、環境を認識して自律的に行動するAI技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261019/",
+      "title": "週刊AWS – 2026/10/19週",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T05:16:46.000Z",
+      "summary": "Amazon BedrockのClaude全モデルでJSONスキーマに準拠するStructured Outputsが一般提供されました。CloudWatch Omniが東京リージョンに拡大し、GuardDutyにはオプトイン脅威検出ルールが追加されました。IAM Identity CenterやClean Roomsの機能拡張、Bedrock Guardrailsの新ティアも提供されます。",
+      "headline": "AWSが週刊アップデートを公開しBedrock機能強化などを発表",
+      "points": [
+        "Amazon BedrockのClaude全モデルでJSONスキーマに準拠するStructured Outputsが一般提供されました。",
+        "CloudWatch Omniが東京リージョンに拡大し、GuardDutyにはオプトイン脅威検出ルールが追加されました。",
+        "IAM Identity CenterやClean Roomsの機能拡張、Bedrock Guardrailsの新ティアも提供されます。"
+      ],
+      "impact": "BedrockやCloudWatchを利用中の開発者は、新機能の有効化やリージョン展開の活用を検討できます。",
+      "glossary": [
+        {
+          "term": "Structured Outputs",
+          "explanation": "LLMが指定された形式（JSON Schema等）に厳密に従って出力する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://ascii.jp/elem/000/004/445/4445534/",
+      "title": "無料の画像生成AI「Moss-Image」がすごい 日本語も漫画も生成、商用利用OKの実力を試した (1/4)",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T01:54:11.000Z",
+      "summary": "Open MOSS Teamが50億パラメータの画像AIモデル「Moss-Image」を公開しました。写真からアニメ風まで多様な画風に対応し、日本語テキストの描画も可能です。Apache 2.0ライセンスを採用し、商用利用や改変、製品組み込みを認めています。",
+      "headline": "画像AIモデル「Moss-Image」がApache 2.0で公開",
+      "points": [
+        "Open MOSS Teamが50億パラメータの画像AIモデル「Moss-Image」を公開しました。",
+        "写真からアニメ風まで多様な画風に対応し、日本語テキストの描画も可能です。",
+        "Apache 2.0ライセンスを採用し、商用利用や改変、製品組み込みを認めています。"
+      ],
+      "impact": "商用利用や改変が可能なため、開発者はアプリや製品への組み込みを検討できます。",
+      "glossary": [
+        {
+          "term": "Apache 2.0",
+          "explanation": "商用利用や改変、再配布などが自由に認められているオープンソースライセンス。"
+        },
+        {
+          "term": "パラメータ",
+          "explanation": "AIモデルが学習によって獲得する、データの処理基準となる数値の総数。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-auto-router/",
+      "title": "Cloudflare’s Auto Router Rates Each Request for Stakes, from the Most Recent Turns",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T10:20:00.000Z",
+      "summary": "リクエストごとに最適なAIモデルを自動選択するAuto Routerのパブリックベータが公開されました。直近ターンの最大8KiBからタスクや重要度などを評価し、費用と品質のバランスで決定します。選択理由はヘッダーで確認可能で、対象モデルはリクエストごとにヘッダーで制限できます。",
+      "headline": "CloudflareがAI Gateway向け自動ルーティングのベータ版を提供",
+      "points": [
+        "リクエストごとに最適なAIモデルを自動選択するAuto Routerのパブリックベータが公開されました。",
+        "直近ターンの最大8KiBからタスクや重要度などを評価し、費用と品質のバランスで決定します。",
+        "選択理由はヘッダーで確認可能で、対象モデルはリクエストごとにヘッダーで制限できます。"
+      ],
+      "impact": "利用者は必要に応じてヘッダーで候補モデルを絞り込み、適切なモデルが選択されているか確認できます。",
+      "glossary": [
+        {
+          "term": "ルーティング",
+          "explanation": "リクエストの条件や内容に応じて、適切な処理先やモデルへと振り分ける仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://qiita.com/quotidia/items/b24c54ac89eadd684b3c",
+      "title": "MetaのAIエージェント「Muse」が日本で提供開始。メールの送信や旅行の予約を代わりに進める",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T21:00:59.000Z",
+      "summary": "メールの送信や旅行予約などを利用者に代わって実行するAI「Muse」が日本で提供されました。iOSやAndroid、ウェブで利用でき、多くの基本機能は無料で提供されています。メールの送信や商品購入など承認が必要な操作の前に、本人へ確認通知を行います。",
+      "headline": "Metaが自律型AIエージェント「Muse」の日本提供を開始",
+      "points": [
+        "メールの送信や旅行予約などを利用者に代わって実行するAI「Muse」が日本で提供されました。",
+        "iOSやAndroid、ウェブで利用でき、多くの基本機能は無料で提供されています。",
+        "メールの送信や商品購入など承認が必要な操作の前に、本人へ確認通知を行います。"
+      ],
+      "impact": "ユーザーはiOSやAndroid、ウェブから登録して旅行予約やメール送信の代行機能を利用できます。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "人間の指示や目標に応じて、状況を判断しながら自律的に作業を実行するAI。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://www.infoq.com/news/2026/10/java-news-roundup-oct19-2026/",
+      "title": "Java News Roundup: JDK 28 Schedule, Oracle CPUs, eMudhra Certs, Apache POI, WildFly, Azul, BellSoft",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-26T14:35:00.000Z",
+      "summary": "OracleがJDK 28の公開を2027年3月9日とする提案スケジュールを発表しました。eMudhraの中間CA秘密鍵の漏洩を受け、AzulやOracleなどが対応パッチを公開しました。Javaはデフォルトで失効確認を行わないため、各ベンダーがJDKレベルでブロックしています。",
+      "headline": "JDK 28の予定発表やeMudhra秘密鍵漏洩への対応パッチ公開",
+      "points": [
+        "OracleがJDK 28の公開を2027年3月9日とする提案スケジュールを発表しました。",
+        "eMudhraの中間CA秘密鍵の漏洩を受け、AzulやOracleなどが対応パッチを公開しました。",
+        "Javaはデフォルトで失効確認を行わないため、各ベンダーがJDKレベルでブロックしています。"
+      ],
+      "impact": "Java利用者は証明書の不正利用を防ぐため、各ベンダーが配布する最新パッチの適用を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "中間CA",
+          "explanation": "ルート認証局から委託され、ウェブサイトなどの電子証明書を発行する認証機関。"
+        },
+        {
+          "term": "CPU",
+          "explanation": "Oracleなどが四半期ごとに公開する、重要なセキュリティ修正を含む更新プログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://spring.io/blog/2026/10/26/spring-office-hours-podcast-S5E27",
+      "title": "Spring Office Hours Podcast: S5E27 - Hugging Face for Java Developers with Pratik Patel",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "summary": "Spring Office HoursのポッドキャストにPratik Patel氏が出演しました。100万以上のオープンモデルがあるHugging Faceの活用法を議論しました。Javaからオープンモデルを実行する方法や有料APIとの比較が紹介されました。",
+      "headline": "Springの番組でJava開発者向けHugging Face活用が語られた",
+      "points": [
+        "Spring Office HoursのポッドキャストにPratik Patel氏が出演しました。",
+        "100万以上のオープンモデルがあるHugging Faceの活用法を議論しました。",
+        "Javaからオープンモデルを実行する方法や有料APIとの比較が紹介されました。"
+      ],
+      "impact": "Java開発者は配信の録画視聴やライブ配信での質問ができます。",
+      "glossary": [
+        {
+          "term": "Hugging Face",
+          "explanation": "機械学習モデルやデータセットを共有・活用できるプラットフォーム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://spring.io/blog/2026/10/23/spring-ldap-4",
+      "title": "Spring LDAP 4.2.0-RC1 Available Now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "Spring LDAPのバージョン4.2.0-RC1が公開されました。本文にはBroadcomの著作権表示と各社の商標情報のみが記載されています。",
+      "headline": "Spring LDAP 4.2.0-RC1が公開された",
+      "points": [
+        "Spring LDAPのバージョン4.2.0-RC1が公開されました。",
+        "本文にはBroadcomの著作権表示と各社の商標情報のみが記載されています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-20-vitest",
+      "title": "35日でフロントエンドの基礎を完全に理解する #20 - Vitestで単体テスト",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-25T20:26:56.000Z",
+      "summary": "目視確認の限界を挙げ、テストコードによる自動化の重要性を解説しています。Vitestの導入方法や期待値の書き方、テスト実行の手順が紹介されています。バグを見つけやすい境界値や異常入力に対するテストの有用性を説明しています。",
+      "headline": "Vitestを用いたフロントエンド単体テストの基礎が解説された",
+      "points": [
+        "目視確認の限界を挙げ、テストコードによる自動化の重要性を解説しています。",
+        "Vitestの導入方法や期待値の書き方、テスト実行の手順が紹介されています。",
+        "バグを見つけやすい境界値や異常入力に対するテストの有用性を説明しています。"
+      ],
+      "impact": "フロントエンド開発者がテスト自動化を学びVitestを導入する際に役立ちます。",
+      "glossary": [
+        {
+          "term": "Vitest",
+          "explanation": "Viteベースで高速に動作するTypeScript対応の単体テストツール。"
+        },
+        {
+          "term": "デグレ",
+          "explanation": "プログラムの変更によって、過去に修正したバグが再発すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://zenn.dev/0st_ts/articles/4da9bb7357fec4",
+      "title": "Vue Fes Japan 2026参加記",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-26T09:35:54.000Z",
+      "summary": "キーノートではVueの成長やAI時代におけるコード局所性が議論されました。Vue 3.6のVapor ModeやTypeScript 7.1の機能が紹介されました。VoidZeroの開発ツール群やCloudflareによる買収方針が報告されました。",
+      "headline": "Vue Fes Japan 2026の参加レポートが公開された",
+      "points": [
+        "キーノートではVueの成長やAI時代におけるコード局所性が議論されました。",
+        "Vue 3.6のVapor ModeやTypeScript 7.1の機能が紹介されました。",
+        "VoidZeroの開発ツール群やCloudflareによる買収方針が報告されました。"
+      ],
+      "glossary": [
+        {
+          "term": "Vapor Mode",
+          "explanation": "仮想DOMを介さずにコンパイル結果でDOMを直接更新する仕組み。"
+        },
+        {
+          "term": "SFC",
+          "explanation": "VueでHTML、CSS、JavaScriptを1ファイルにまとめる構成形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+      "title": "CSS-Tricks has a new owner",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-10-26T15:51:23Z",
+      "summary": "2022年に買収されていたCSS-Tricksが再び独立し、長年携わってきた人物が新オーナーになりました。初心者向けコース開発やニュースレターの再開、週1〜2本の記事公開などが行われる予定です。広告の再導入やメンバーシップ制度が用意され、ゲスト執筆者の募集受付も再開されます。",
+      "headline": "CSS-Tricksが再び独立サイトとなり新体制に移行",
+      "points": [
+        "2022年に買収されていたCSS-Tricksが再び独立し、長年携わってきた人物が新オーナーになりました。",
+        "初心者向けコース開発やニュースレターの再開、週1〜2本の記事公開などが行われる予定です。",
+        "広告の再導入やメンバーシップ制度が用意され、ゲスト執筆者の募集受付も再開されます。"
+      ],
+      "impact": "広告出稿やゲスト寄稿を検討している利用者は、サイトを通じて問い合わせや応募が可能です。",
+      "glossary": [
+        {
+          "term": "フロントエンド",
+          "explanation": "Webサイトなどで利用者が直接画面上で操作・閲覧する領域のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
+      "title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "summary": "IAM Identity Centerで、異なるAWSリージョン間における信頼されたアイデンティティ伝播が可能になりました。ユーザー情報がリージョンを跨いで自動伝播され、きめ細かなアクセス制御と監査ログ記録を維持できます。IAM Identity Centerが利用可能なすべてのAWSリージョンにおいて、追加料金なしで利用できます。",
+      "headline": "IAM Identity Centerがリージョン間のID伝播に対応",
+      "points": [
+        "IAM Identity Centerで、異なるAWSリージョン間における信頼されたアイデンティティ伝播が可能になりました。",
+        "ユーザー情報がリージョンを跨いで自動伝播され、きめ細かなアクセス制御と監査ログ記録を維持できます。",
+        "IAM Identity Centerが利用可能なすべてのAWSリージョンにおいて、追加料金なしで利用できます。"
+      ],
+      "impact": "リージョンを跨いでワークロードを分散している管理者は、広範なIAMロールを使わずに制御できます。",
+      "glossary": [
+        {
+          "term": "アイデンティティ",
+          "explanation": "システム上でユーザーや端末を一意に識別・認証するための情報のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/",
+      "title": "AWS Key Management Service now supports ML-KEM for post-quantum key encapsulation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "summary": "AWS KMSがNIST FIPS 203規格のML-KEMに対応し、共有秘密の確立が可能になりました。ML-KEM-512、ML-KEM-768、ML-KEM-1024の3種類のキースペックに対応します。秘密鍵はFIPS 140-3適合のHSMで保護され、中国や中東の一部を除くリージョンで提供されます。",
+      "headline": "AWS KMSが耐量子暗号規格ML-KEMに対応",
+      "points": [
+        "AWS KMSがNIST FIPS 203規格のML-KEMに対応し、共有秘密の確立が可能になりました。",
+        "ML-KEM-512、ML-KEM-768、ML-KEM-1024の3種類のキースペックに対応します。",
+        "秘密鍵はFIPS 140-3適合のHSMで保護され、中国や中東の一部を除くリージョンで提供されます。"
+      ],
+      "impact": "耐量子暗号を導入したい開発者は、KMSのAPIや公開鍵のエクスポートを用いて鍵交換を実装できます。",
+      "glossary": [
+        {
+          "term": "耐量子暗号",
+          "explanation": "量子コンピュータでも解読が困難なように設計された新しい暗号技術のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/",
+      "title": "AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "summary": "インスタンス置換時に新規起動と正常確認を先行させる設定を、アカウント全体で一括有効化できるようになりました。ヘルスチェックやリフレッシュなどの置換処理中も、フルの処理能力と可用性を維持できます。管理コンソールや専用のAPIから設定可能で、すべてのAWSリージョンにおいて追加費用なしで使えます。",
+      "headline": "EC2 Auto Scalingがアカウント単位の事前起動に対応",
+      "points": [
+        "インスタンス置換時に新規起動と正常確認を先行させる設定を、アカウント全体で一括有効化できるようになりました。",
+        "ヘルスチェックやリフレッシュなどの置換処理中も、フルの処理能力と可用性を維持できます。",
+        "管理コンソールや専用のAPIから設定可能で、すべてのAWSリージョンにおいて追加費用なしで使えます。"
+      ],
+      "impact": "置換時の可用性を維持したい管理者は、アカウント設定からLaunch Before Terminateを有効化できます。",
+      "glossary": [
+        {
+          "term": "Auto Scaling",
+          "explanation": "システムの負荷や設定に応じて、サーバーインスタンスの台数を自動で増減させる仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://tech.classi.jp/entry/2026/10/26/163000",
+      "title": "pixiv社の爆速PHPアップデートを参考に、社内で Docker Official Image のビルドシステムを作った話 - Classi開発者ブログ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-26T08:08:37.000Z",
+      "summary": "緊急パッチを迅速に適用するため、公式イメージの構成を模倣した自前のビルド環境を構築しました。AIツールのClaude Codeを活用し、テスト作成からイメージ配信まで約1時間で完了しました。完成した仕組みはPHP対応など拡張され、GitHub上でリポジトリが公開されています。",
+      "headline": "Classiが公式コンテナイメージの社内ビルド基盤を短時間で構築",
+      "points": [
+        "緊急パッチを迅速に適用するため、公式イメージの構成を模倣した自前のビルド環境を構築しました。",
+        "AIツールのClaude Codeを活用し、テスト作成からイメージ配信まで約1時間で完了しました。",
+        "完成した仕組みはPHP対応など拡張され、GitHub上でリポジトリが公開されています。"
+      ],
+      "impact": "社内で同様のイメージ構築を検討する開発者は、公開されたリポジトリを活用できます。",
+      "glossary": [
+        {
+          "term": "Docker",
+          "explanation": "コンテナ技術を用いてアプリケーションを迅速に配備・実行する基盤。"
+        },
+        {
+          "term": "スモークテスト",
+          "explanation": "ソフトウェアの基本機能が最低限正しく動作するかを確かめる簡易テスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/",
+      "title": "楽天トラベルに不正アクセス、顧客情報260万件流出か クレカ3万件も - 日本経済新聞",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-26T11:57:24.000Z",
+      "summary": "シンガポール子会社の予約サイト等が不正アクセスを受け、氏名や電話番号などが流出した恐れがあります。最大約3万6000件のクレジットカード情報が含まれますが、全桁やセキュリティコードは含まれていません。9月と10月に異常が検知され、経路の遮断およびシステム改修はすでに完了しています。",
+      "headline": "楽天トラベルに不正アクセスがあり顧客情報最大260万件が流出",
+      "points": [
+        "シンガポール子会社の予約サイト等が不正アクセスを受け、氏名や電話番号などが流出した恐れがあります。",
+        "最大約3万6000件のクレジットカード情報が含まれますが、全桁やセキュリティコードは含まれていません。",
+        "9月と10月に異常が検知され、経路の遮断およびシステム改修はすでに完了しています。"
+      ],
+      "glossary": [
+        {
+          "term": "セキュリティコード",
+          "explanation": "クレジットカード裏面などに記載された不正利用防止用の確認番号。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://internet.watch.impress.co.jp/docs/news/2151273.html",
+      "title": "Ｊｏｓｈｉｎ、不正アクセスで最大約600万件の会員情報などが漏えいの可能性",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-26T09:20:26.000Z",
+      "summary": "10月16日に検知した不正アクセスにより、会員の氏名や住所など最大約600万件が漏洩した恐れがあります。サブスク利用者約23万件や、免許証・マイナンバー画像を含むリフォームデータ約800件も対象です。クレジットカード情報は保持しておらず、免許証等の該当者には個別に連絡を取っています。",
+      "headline": "Joshinへの不正アクセスで会員情報最大約600万件が流出の恐れ",
+      "points": [
+        "10月16日に検知した不正アクセスにより、会員の氏名や住所など最大約600万件が漏洩した恐れがあります。",
+        "サブスク利用者約23万件や、免許証・マイナンバー画像を含むリフォームデータ約800件も対象です。",
+        "クレジットカード情報は保持しておらず、免許証等の該当者には個別に連絡を取っています。"
+      ],
+      "impact": "利用者は、同社を装った不審なメールやSMS、電話などに注意する必要があります。",
+      "glossary": [
+        {
+          "term": "マイナンバー",
+          "explanation": "日本の住民全員に1つずつ割り振られる12桁の個人識別番号。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 113,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 23412,
+    "outputTokens": 14828
+  },
+  "offline": false
+}

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-27</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月27日(火)</p>
+<p class="meta">更新 2026-10-27 06:39 · 取得ソース 17/18 · 選定 19件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener noreferrer">AnthropicがSECにForm S-1を提出しナスダック上場を計画</a></h3>
+<p class="orig">原題: Anthropic files S-1 with the SEC for proposed initial public offering</p>
+<p class="src">出典: <a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-10-26</p>
+<ul class="points"><li>米SECにClass A普通株式の新規株式公開に向けた登録届出書（Form S-1）を提出しました。</li><li>ナスダック市場にシンボル「ANT」で上場する予定で、売出株数や価格帯は未定です。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Form S-1</dt><dd>米国で企業が株式を新規公開する際に、証券取引委員会へ提出する登録届出書。</dd><dt>IPO</dt><dd>未上場企業が自社の株式を証券市場に公開し、一般に売り出すこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">OpenAIのGPT-6.1 TerraがAmazon Bedrockで一般提供開始</a></h3>
+<p class="orig">原題: OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-27</p>
+<ul class="points"><li>高い推論性能と速度、コスト効率を両立した日常業務向けモデルがBedrockで利用可能になりました。</li><li>入出力トークン価格はGPT-6.1 Solなどより50%以上安く、最大100万入力トークンに対応します。</li><li>評価試験ではGPT-6 AstraやGPT-6.1 Solより3倍以上速くタスクを完了しました。</li></ul><p class="impact"><b>影響</b>Bedrockの利用者は、コンソールやAPI、ChatGPT Workから本モデルを利用・設定できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度に処理・理解できる入力情報の最大トークン数。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/" target="_blank" rel="noopener noreferrer">AWSが週刊生成AIブログを公開し支援プログラムや各社事例を紹介</a></h3>
+<p class="orig">原題: 週刊生成AI with AWS – 2026/10/19 週</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-26</p>
+<ul class="points"><li>フィジカルAI開発支援プログラム第2期の応募受付を開始し、11月16日まで受け付けます。</li><li>NECによるClaude Codeの全社展開事例や、コーテッグのAI分析基盤の構築事例が紹介されました。</li><li>Bedrockのセキュリティ対策やLiteLLMを活用した推論管理に関する解説も掲載されています。</li></ul><p class="impact"><b>影響</b>ロボティクスや生成AIに取り組む企業や研究機関は、11月16日までに支援プログラムへの応募を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>フィジカルAI</dt><dd>ロボットなど物理世界で動作し、環境を認識して自律的に行動するAI技術。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener noreferrer">AnthropicがSECにForm S-1を提出しナスダック上場を計画</a></h3>
+<p class="orig">原題: Anthropic files S-1 with the SEC for proposed initial public offering</p>
+<p class="src">出典: <a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-10-26</p>
+<ul class="points"><li>米SECにClass A普通株式の新規株式公開に向けた登録届出書（Form S-1）を提出しました。</li><li>ナスダック市場にシンボル「ANT」で上場する予定で、売出株数や価格帯は未定です。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Form S-1</dt><dd>米国で企業が株式を新規公開する際に、証券取引委員会へ提出する登録届出書。</dd><dt>IPO</dt><dd>未上場企業が自社の株式を証券市場に公開し、一般に売り出すこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">OpenAIのGPT-6.1 TerraがAmazon Bedrockで一般提供開始</a></h3>
+<p class="orig">原題: OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-27</p>
+<ul class="points"><li>高い推論性能と速度、コスト効率を両立した日常業務向けモデルがBedrockで利用可能になりました。</li><li>入出力トークン価格はGPT-6.1 Solなどより50%以上安く、最大100万入力トークンに対応します。</li><li>評価試験ではGPT-6 AstraやGPT-6.1 Solより3倍以上速くタスクを完了しました。</li></ul><p class="impact"><b>影響</b>Bedrockの利用者は、コンソールやAPI、ChatGPT Workから本モデルを利用・設定できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度に処理・理解できる入力情報の最大トークン数。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/" target="_blank" rel="noopener noreferrer">AWSが週刊生成AIブログを公開し支援プログラムや各社事例を紹介</a></h3>
+<p class="orig">原題: 週刊生成AI with AWS – 2026/10/19 週</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/weekly-genai-20261019/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-26</p>
+<ul class="points"><li>フィジカルAI開発支援プログラム第2期の応募受付を開始し、11月16日まで受け付けます。</li><li>NECによるClaude Codeの全社展開事例や、コーテッグのAI分析基盤の構築事例が紹介されました。</li><li>Bedrockのセキュリティ対策やLiteLLMを活用した推論管理に関する解説も掲載されています。</li></ul><p class="impact"><b>影響</b>ロボティクスや生成AIに取り組む企業や研究機関は、11月16日までに支援プログラムへの応募を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>フィジカルAI</dt><dd>ロボットなど物理世界で動作し、環境を認識して自律的に行動するAI技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261019/" target="_blank" rel="noopener noreferrer">AWSが週刊アップデートを公開しBedrock機能強化などを発表</a></h3>
+<p class="orig">原題: 週刊AWS – 2026/10/19週</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261019/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-26</p>
+<ul class="points"><li>Amazon BedrockのClaude全モデルでJSONスキーマに準拠するStructured Outputsが一般提供されました。</li><li>CloudWatch Omniが東京リージョンに拡大し、GuardDutyにはオプトイン脅威検出ルールが追加されました。</li><li>IAM Identity CenterやClean Roomsの機能拡張、Bedrock Guardrailsの新ティアも提供されます。</li></ul><p class="impact"><b>影響</b>BedrockやCloudWatchを利用中の開発者は、新機能の有効化やリージョン展開の活用を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Structured Outputs</dt><dd>LLMが指定された形式（JSON Schema等）に厳密に従って出力する機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://ascii.jp/elem/000/004/445/4445534/" target="_blank" rel="noopener noreferrer">画像AIモデル「Moss-Image」がApache 2.0で公開</a></h3>
+<p class="orig">原題: 無料の画像生成AI「Moss-Image」がすごい 日本語も漫画も生成、商用利用OKの実力を試した (1/4)</p>
+<p class="src">出典: <a href="https://ascii.jp/elem/000/004/445/4445534/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-26</p>
+<ul class="points"><li>Open MOSS Teamが50億パラメータの画像AIモデル「Moss-Image」を公開しました。</li><li>写真からアニメ風まで多様な画風に対応し、日本語テキストの描画も可能です。</li><li>Apache 2.0ライセンスを採用し、商用利用や改変、製品組み込みを認めています。</li></ul><p class="impact"><b>影響</b>商用利用や改変が可能なため、開発者はアプリや製品への組み込みを検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Apache 2.0</dt><dd>商用利用や改変、再配布などが自由に認められているオープンソースライセンス。</dd><dt>パラメータ</dt><dd>AIモデルが学習によって獲得する、データの処理基準となる数値の総数。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/cloudflare-auto-router/" target="_blank" rel="noopener noreferrer">CloudflareがAI Gateway向け自動ルーティングのベータ版を提供</a></h3>
+<p class="orig">原題: Cloudflare’s Auto Router Rates Each Request for Stakes, from the Most Recent Turns</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/cloudflare-auto-router/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-26</p>
+<ul class="points"><li>リクエストごとに最適なAIモデルを自動選択するAuto Routerのパブリックベータが公開されました。</li><li>直近ターンの最大8KiBからタスクや重要度などを評価し、費用と品質のバランスで決定します。</li><li>選択理由はヘッダーで確認可能で、対象モデルはリクエストごとにヘッダーで制限できます。</li></ul><p class="impact"><b>影響</b>利用者は必要に応じてヘッダーで候補モデルを絞り込み、適切なモデルが選択されているか確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ルーティング</dt><dd>リクエストの条件や内容に応じて、適切な処理先やモデルへと振り分ける仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/quotidia/items/b24c54ac89eadd684b3c" target="_blank" rel="noopener noreferrer">Metaが自律型AIエージェント「Muse」の日本提供を開始</a></h3>
+<p class="orig">原題: MetaのAIエージェント「Muse」が日本で提供開始。メールの送信や旅行の予約を代わりに進める</p>
+<p class="src">出典: <a href="https://qiita.com/quotidia/items/b24c54ac89eadd684b3c" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-27</p>
+<ul class="points"><li>メールの送信や旅行予約などを利用者に代わって実行するAI「Muse」が日本で提供されました。</li><li>iOSやAndroid、ウェブで利用でき、多くの基本機能は無料で提供されています。</li><li>メールの送信や商品購入など承認が必要な操作の前に、本人へ確認通知を行います。</li></ul><p class="impact"><b>影響</b>ユーザーはiOSやAndroid、ウェブから登録して旅行予約やメール送信の代行機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AIエージェント</dt><dd>人間の指示や目標に応じて、状況を判断しながら自律的に作業を実行するAI。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct19-2026/" target="_blank" rel="noopener noreferrer">JDK 28の予定発表やeMudhra秘密鍵漏洩への対応パッチ公開</a></h3>
+<p class="orig">原題: Java News Roundup: JDK 28 Schedule, Oracle CPUs, eMudhra Certs, Apache POI, WildFly, Azul, BellSoft</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct19-2026/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-26</p>
+<ul class="points"><li>OracleがJDK 28の公開を2027年3月9日とする提案スケジュールを発表しました。</li><li>eMudhraの中間CA秘密鍵の漏洩を受け、AzulやOracleなどが対応パッチを公開しました。</li><li>Javaはデフォルトで失効確認を行わないため、各ベンダーがJDKレベルでブロックしています。</li></ul><p class="impact"><b>影響</b>Java利用者は証明書の不正利用を防ぐため、各ベンダーが配布する最新パッチの適用を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>中間CA</dt><dd>ルート認証局から委託され、ウェブサイトなどの電子証明書を発行する認証機関。</dd><dt>CPU</dt><dd>Oracleなどが四半期ごとに公開する、重要なセキュリティ修正を含む更新プログラム。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/26/spring-office-hours-podcast-S5E27" target="_blank" rel="noopener noreferrer">Springの番組でJava開発者向けHugging Face活用が語られた</a></h3>
+<p class="orig">原題: Spring Office Hours Podcast: S5E27 - Hugging Face for Java Developers with Pratik Patel</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/26/spring-office-hours-podcast-S5E27" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-26</p>
+<ul class="points"><li>Spring Office HoursのポッドキャストにPratik Patel氏が出演しました。</li><li>100万以上のオープンモデルがあるHugging Faceの活用法を議論しました。</li><li>Javaからオープンモデルを実行する方法や有料APIとの比較が紹介されました。</li></ul><p class="impact"><b>影響</b>Java開発者は配信の録画視聴やライブ配信での質問ができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Hugging Face</dt><dd>機械学習モデルやデータセットを共有・活用できるプラットフォーム。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/10/23/spring-ldap-4" target="_blank" rel="noopener noreferrer">Spring LDAP 4.2.0-RC1が公開された</a></h3>
+<p class="orig">原題: Spring LDAP 4.2.0-RC1 Available Now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/10/23/spring-ldap-4" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-10-23</p>
+<ul class="points"><li>Spring LDAPのバージョン4.2.0-RC1が公開されました。</li><li>本文にはBroadcomの著作権表示と各社の商標情報のみが記載されています。</li></ul>
+
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-20-vitest" target="_blank" rel="noopener noreferrer">Vitestを用いたフロントエンド単体テストの基礎が解説された</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #20 - Vitestで単体テスト</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-20-vitest" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-26</p>
+<ul class="points"><li>目視確認の限界を挙げ、テストコードによる自動化の重要性を解説しています。</li><li>Vitestの導入方法や期待値の書き方、テスト実行の手順が紹介されています。</li><li>バグを見つけやすい境界値や異常入力に対するテストの有用性を説明しています。</li></ul><p class="impact"><b>影響</b>フロントエンド開発者がテスト自動化を学びVitestを導入する際に役立ちます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Vitest</dt><dd>Viteベースで高速に動作するTypeScript対応の単体テストツール。</dd><dt>デグレ</dt><dd>プログラムの変更によって、過去に修正したバグが再発すること。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/0st_ts/articles/4da9bb7357fec4" target="_blank" rel="noopener noreferrer">Vue Fes Japan 2026の参加レポートが公開された</a></h3>
+<p class="orig">原題: Vue Fes Japan 2026参加記</p>
+<p class="src">出典: <a href="https://zenn.dev/0st_ts/articles/4da9bb7357fec4" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-26</p>
+<ul class="points"><li>キーノートではVueの成長やAI時代におけるコード局所性が議論されました。</li><li>Vue 3.6のVapor ModeやTypeScript 7.1の機能が紹介されました。</li><li>VoidZeroの開発ツール群やCloudflareによる買収方針が報告されました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Vapor Mode</dt><dd>仮想DOMを介さずにコンパイル結果でDOMを直接更新する仕組み。</dd><dt>SFC</dt><dd>VueでHTML、CSS、JavaScriptを1ファイルにまとめる構成形式。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://css-tricks.com/css-tricks-has-a-new-owner/" target="_blank" rel="noopener noreferrer">CSS-Tricksが再び独立サイトとなり新体制に移行</a></h3>
+<p class="orig">原題: CSS-Tricks has a new owner</p>
+<p class="src">出典: <a href="https://css-tricks.com/css-tricks-has-a-new-owner/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-27</p>
+<ul class="points"><li>2022年に買収されていたCSS-Tricksが再び独立し、長年携わってきた人物が新オーナーになりました。</li><li>初心者向けコース開発やニュースレターの再開、週1〜2本の記事公開などが行われる予定です。</li><li>広告の再導入やメンバーシップ制度が用意され、ゲスト執筆者の募集受付も再開されます。</li></ul><p class="impact"><b>影響</b>広告出稿やゲスト寄稿を検討している利用者は、サイトを通じて問い合わせや応募が可能です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>フロントエンド</dt><dd>Webサイトなどで利用者が直接画面上で操作・閲覧する領域のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/" target="_blank" rel="noopener noreferrer">IAM Identity Centerがリージョン間のID伝播に対応</a></h3>
+<p class="orig">原題: AWS IAM Identity Center now supports cross-Region trusted identity propagation</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-26</p>
+<ul class="points"><li>IAM Identity Centerで、異なるAWSリージョン間における信頼されたアイデンティティ伝播が可能になりました。</li><li>ユーザー情報がリージョンを跨いで自動伝播され、きめ細かなアクセス制御と監査ログ記録を維持できます。</li><li>IAM Identity Centerが利用可能なすべてのAWSリージョンにおいて、追加料金なしで利用できます。</li></ul><p class="impact"><b>影響</b>リージョンを跨いでワークロードを分散している管理者は、広範なIAMロールを使わずに制御できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>アイデンティティ</dt><dd>システム上でユーザーや端末を一意に識別・認証するための情報のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/" target="_blank" rel="noopener noreferrer">AWS KMSが耐量子暗号規格ML-KEMに対応</a></h3>
+<p class="orig">原題: AWS Key Management Service now supports ML-KEM for post-quantum key encapsulation</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-26</p>
+<ul class="points"><li>AWS KMSがNIST FIPS 203規格のML-KEMに対応し、共有秘密の確立が可能になりました。</li><li>ML-KEM-512、ML-KEM-768、ML-KEM-1024の3種類のキースペックに対応します。</li><li>秘密鍵はFIPS 140-3適合のHSMで保護され、中国や中東の一部を除くリージョンで提供されます。</li></ul><p class="impact"><b>影響</b>耐量子暗号を導入したい開発者は、KMSのAPIや公開鍵のエクスポートを用いて鍵交換を実装できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>耐量子暗号</dt><dd>量子コンピュータでも解読が困難なように設計された新しい暗号技術のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/" target="_blank" rel="noopener noreferrer">EC2 Auto Scalingがアカウント単位の事前起動に対応</a></h3>
+<p class="orig">原題: AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-26</p>
+<ul class="points"><li>インスタンス置換時に新規起動と正常確認を先行させる設定を、アカウント全体で一括有効化できるようになりました。</li><li>ヘルスチェックやリフレッシュなどの置換処理中も、フルの処理能力と可用性を維持できます。</li><li>管理コンソールや専用のAPIから設定可能で、すべてのAWSリージョンにおいて追加費用なしで使えます。</li></ul><p class="impact"><b>影響</b>置換時の可用性を維持したい管理者は、アカウント設定からLaunch Before Terminateを有効化できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Auto Scaling</dt><dd>システムの負荷や設定に応じて、サーバーインスタンスの台数を自動で増減させる仕組みのこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://tech.classi.jp/entry/2026/10/26/163000" target="_blank" rel="noopener noreferrer">Classiが公式コンテナイメージの社内ビルド基盤を短時間で構築</a></h3>
+<p class="orig">原題: pixiv社の爆速PHPアップデートを参考に、社内で Docker Official Image のビルドシステムを作った話 - Classi開発者ブログ</p>
+<p class="src">出典: <a href="https://tech.classi.jp/entry/2026/10/26/163000" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-26</p>
+<ul class="points"><li>緊急パッチを迅速に適用するため、公式イメージの構成を模倣した自前のビルド環境を構築しました。</li><li>AIツールのClaude Codeを活用し、テスト作成からイメージ配信まで約1時間で完了しました。</li><li>完成した仕組みはPHP対応など拡張され、GitHub上でリポジトリが公開されています。</li></ul><p class="impact"><b>影響</b>社内で同様のイメージ構築を検討する開発者は、公開されたリポジトリを活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Docker</dt><dd>コンテナ技術を用いてアプリケーションを迅速に配備・実行する基盤。</dd><dt>スモークテスト</dt><dd>ソフトウェアの基本機能が最低限正しく動作するかを確かめる簡易テスト。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/" target="_blank" rel="noopener noreferrer">楽天トラベルに不正アクセスがあり顧客情報最大260万件が流出</a></h3>
+<p class="orig">原題: 楽天トラベルに不正アクセス、顧客情報260万件流出か クレカ3万件も - 日本経済新聞</p>
+<p class="src">出典: <a href="https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-26</p>
+<ul class="points"><li>シンガポール子会社の予約サイト等が不正アクセスを受け、氏名や電話番号などが流出した恐れがあります。</li><li>最大約3万6000件のクレジットカード情報が含まれますが、全桁やセキュリティコードは含まれていません。</li><li>9月と10月に異常が検知され、経路の遮断およびシステム改修はすでに完了しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>セキュリティコード</dt><dd>クレジットカード裏面などに記載された不正利用防止用の確認番号。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://internet.watch.impress.co.jp/docs/news/2151273.html" target="_blank" rel="noopener noreferrer">Joshinへの不正アクセスで会員情報最大約600万件が流出の恐れ</a></h3>
+<p class="orig">原題: Ｊｏｓｈｉｎ、不正アクセスで最大約600万件の会員情報などが漏えいの可能性</p>
+<p class="src">出典: <a href="https://internet.watch.impress.co.jp/docs/news/2151273.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-26</p>
+<ul class="points"><li>10月16日に検知した不正アクセスにより、会員の氏名や住所など最大約600万件が漏洩した恐れがあります。</li><li>サブスク利用者約23万件や、免許証・マイナンバー画像を含むリフォームデータ約800件も対象です。</li><li>クレジットカード情報は保持しておらず、免許証等の該当者には個別に連絡を取っています。</li></ul><p class="impact"><b>影響</b>利用者は、同社を装った不審なメールやSMS、電話などに注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マイナンバー</dt><dd>日本の住民全員に1つずつ割り振られる12桁の個人識別番号。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-26/">← 2026-10-26</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（27）</summary><ul><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
