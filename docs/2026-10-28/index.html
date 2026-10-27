@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-28</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月28日(水)</p>
+<p class="meta">更新 2026-10-28 06:22 · 取得ソース 17/18 · 選定 20件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">4</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/" target="_blank" rel="noopener noreferrer">AWSがKiro搭載のSAP ABAP向けEclipse用プラグインを公開</a></h3>
+<p class="orig">原題: AWS Coding Plugin for SAP ABAP, powered by Kiro のご紹介</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-27</p>
+<ul class="points"><li>EclipseとSAP ADT環境でAIと協働し、スペック駆動開発を行えるツールが提供されました。</li><li>要件定義から設計、実装計画の提案やテストまでをエージェントがチャットを通じて支援します。</li><li>利用にはEclipse 2026-06以降やSAP ADT 3.60以降、Kiroのサブスクリプションが必要です。</li></ul><p class="impact"><b>影響</b>ABAP開発者は、動作要件を確認した上でプラグインを導入して開発ワークフローに活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ABAP</dt><dd>SAPの基幹業務システムなどの開発に広く用いられるプログラミング言語。</dd><dt>スペック駆動開発</dt><dd>実装コードを書く前に仕様を定義し、それを満たすように開発を進める手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/jp/blogs/news/haiku-5-5/" target="_blank" rel="noopener noreferrer">高速なClaude Haiku 5.5がKiroの各環境で利用可能に</a></h3>
+<p class="orig">原題: Claude Haiku 5.5 が Kiro で利用可能になりました</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/haiku-5-5/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-27</p>
+<ul class="points"><li>Claude 5.5で最速のモデルで、Kiro IDEやCLIなどの全環境において実験的サポートとして提供が開始されました。</li><li>前世代のHaiku 4.5から大きく進化し、1MトークンのコンテキストウィンドウやAdaptive Thinkingに対応します。</li><li>対象リージョンでKiro Proなどの対象プランを利用するユーザー向けに提供され、クレジット乗数は0.06倍です。</li></ul><p class="impact"><b>影響</b>対象リージョンでKiroの対象プランを使う利用者は、実験的サポートとして本モデルを高速処理や大量処理に利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度の処理で把握・考慮できる入力情報の最大量のことです。</dd><dt>トークン</dt><dd>テキスト処理においてAIが文章を分割・計算する際の最小単位のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.infoq.com/news/2026/10/anthropic-source-control/" target="_blank" rel="noopener noreferrer">Anthropicが独自システムScionへ移行しGitの限界を解消</a></h3>
+<p class="orig">原題: How Anthropic Redesigned Source Control for AI-Driven Development</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/anthropic-source-control/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-27</p>
+<ul class="points"><li>Anthropicはリポジトリ操作をサーバー側へ移す新システム「Scion」へ社内モノレポを移行しました。</li><li>1日のマージ数が3万件超へ急増する中、チェックアウト速度が2桁向上しインフラ規模を200分の1に削減しました。</li><li>汎用のGit代替ではなく、サーバー側APIや取得プロトコル改善などの考え方を既存基盤に活かすことを推奨しています。</li></ul><p class="impact"><b>影響</b>アーキテクトは負荷変化に応じて処理場所を再考し、サーバー側APIなど一部の知見を既存のGit基盤へ導入検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のプロジェクトやコードを単一のリポジトリで一括管理するソフトウェア開発の手法。</dd><dt>コンテンツアドレスストレージ</dt><dd>データの内容から算出したハッシュ値を保存場所や識別子として用いるデータ管理方式。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/" target="_blank" rel="noopener noreferrer">AWSがKiro搭載のSAP ABAP向けEclipse用プラグインを公開</a></h3>
+<p class="orig">原題: AWS Coding Plugin for SAP ABAP, powered by Kiro のご紹介</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-27</p>
+<ul class="points"><li>EclipseとSAP ADT環境でAIと協働し、スペック駆動開発を行えるツールが提供されました。</li><li>要件定義から設計、実装計画の提案やテストまでをエージェントがチャットを通じて支援します。</li><li>利用にはEclipse 2026-06以降やSAP ADT 3.60以降、Kiroのサブスクリプションが必要です。</li></ul><p class="impact"><b>影響</b>ABAP開発者は、動作要件を確認した上でプラグインを導入して開発ワークフローに活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ABAP</dt><dd>SAPの基幹業務システムなどの開発に広く用いられるプログラミング言語。</dd><dt>スペック駆動開発</dt><dd>実装コードを書く前に仕様を定義し、それを満たすように開発を進める手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/haiku-5-5/" target="_blank" rel="noopener noreferrer">高速なClaude Haiku 5.5がKiroの各環境で利用可能に</a></h3>
+<p class="orig">原題: Claude Haiku 5.5 が Kiro で利用可能になりました</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/haiku-5-5/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-27</p>
+<ul class="points"><li>Claude 5.5で最速のモデルで、Kiro IDEやCLIなどの全環境において実験的サポートとして提供が開始されました。</li><li>前世代のHaiku 4.5から大きく進化し、1MトークンのコンテキストウィンドウやAdaptive Thinkingに対応します。</li><li>対象リージョンでKiro Proなどの対象プランを利用するユーザー向けに提供され、クレジット乗数は0.06倍です。</li></ul><p class="impact"><b>影響</b>対象リージョンでKiroの対象プランを使う利用者は、実験的サポートとして本モデルを高速処理や大量処理に利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度の処理で把握・考慮できる入力情報の最大量のことです。</dd><dt>トークン</dt><dd>テキスト処理においてAIが文章を分割・計算する際の最小単位のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/anthropic-source-control/" target="_blank" rel="noopener noreferrer">Anthropicが独自システムScionへ移行しGitの限界を解消</a></h3>
+<p class="orig">原題: How Anthropic Redesigned Source Control for AI-Driven Development</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/anthropic-source-control/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-27</p>
+<ul class="points"><li>Anthropicはリポジトリ操作をサーバー側へ移す新システム「Scion」へ社内モノレポを移行しました。</li><li>1日のマージ数が3万件超へ急増する中、チェックアウト速度が2桁向上しインフラ規模を200分の1に削減しました。</li><li>汎用のGit代替ではなく、サーバー側APIや取得プロトコル改善などの考え方を既存基盤に活かすことを推奨しています。</li></ul><p class="impact"><b>影響</b>アーキテクトは負荷変化に応じて処理場所を再考し、サーバー側APIなど一部の知見を既存のGit基盤へ導入検討できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のプロジェクトやコードを単一のリポジトリで一括管理するソフトウェア開発の手法。</dd><dt>コンテンツアドレスストレージ</dt><dd>データの内容から算出したハッシュ値を保存場所や識別子として用いるデータ管理方式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/" target="_blank" rel="noopener noreferrer">Agentic AI Foundationが新たに4プロジェクトを追加</a></h3>
+<p class="orig">原題: AGNTCon + MCPCon 2026: Agentic AI Foundation Adds Four Projects as MCP Turns to Security</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-27</p>
+<ul class="points"><li>設立1年で管理プロジェクトが10件に達し、議論の焦点は新機能からセキュリティや本人確認へと移行しました。</li><li>AlibabaやOpenAI、Anthropic、Hugging Faceがエージェント関連技術を寄贈しました。</li><li>Webサイトのツール公開を効率化するWebMCPや、Claude Codeの長時間タスク対応が発表されました。</li></ul><p class="impact"><b>影響</b>MCPサーバーを公開する開発者は、OpenAIでの承認を受けるために各ツールへの注釈付けなどを行う必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを接続するためのオープンな標準規格。</dd><dt>サンドボックス</dt><dd>外部に悪影響を与えないよう隔離された環境でプログラムを実行する仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/leeguoo/articles/df97777f58f5cb" target="_blank" rel="noopener noreferrer">ログイン済みのChromeをAIに操作させるツールが登場</a></h3>
+<p class="orig">原題: Claude Code や Codex に、ログイン済みの Chrome をそのまま使わせる（デバッグポートなし）</p>
+<p class="src">出典: <a href="https://zenn.dev/leeguoo/articles/df97777f58f5cb" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-27</p>
+<ul class="points"><li>拡張機能とネイティブメッセージングを使い、手元のログイン状態のままAIが操作できます。</li><li>リモートデバッグポートが不要で、Claude CodeやCodexなどに対応します。</li><li>セッションごとに独立したタブグループを割り当て、ユーザーの既存タブには触れません。</li></ul><p class="impact"><b>影響</b>ログインが必要なサイトをAIエージェントに自動巡回させたい開発者は、ツールを導入できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ネイティブメッセージング</dt><dd>ブラウザの拡張機能が、ローカルマシン上の独立した外部アプリケーションと直接通信する仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/supportapp3/items/7286702cd178b16bd8e3" target="_blank" rel="noopener noreferrer">Claude Codeが上位階層の設定ファイルまで読み込む挙動を整理</a></h3>
+<p class="orig">原題: Claude Code は起動フォルダの上の CLAUDE.md も全部読む：Codex との違いと、起動前に指示ファイルを一覧するスクリプト</p>
+<p class="src">出典: <a href="https://qiita.com/supportapp3/items/7286702cd178b16bd8e3" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-28</p>
+<ul class="points"><li>Claude Codeは起動フォルダとその上位階層のCLAUDE.mdを全て連結して読み込みます。</li><li>CodexはGitルートから下のみを読み込むため、ツール間で読み込み範囲が異なります。</li><li>起動前に読み込まれる指示ファイルを一覧表示する点検用シェルスクリプトが公開されました。</li></ul><p class="impact"><b>影響</b>両ツールを利用する開発者は、上位階層に不要な指示ファイルがないか起動前に確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CLAUDE.md</dt><dd>Claude Codeなどの動作方針や指示を記述しておく設定ファイル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/talks_tldr_jp/articles/tldr39-rauch-summary" target="_blank" rel="noopener noreferrer">Vercel CEOがAI活用時代におけるコード理解の重要性を語る</a></h3>
+<p class="orig">原題: 全行を読めとは言わない、でも理解する。Vercel CEO が語るエージェント開発の流儀（#39 解説）</p>
+<p class="src">出典: <a href="https://zenn.dev/talks_tldr_jp/articles/tldr39-rauch-summary" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-10-27</p>
+<ul class="points"><li>全行を読む必要はないものの何が起きたかを理解する姿勢が重要だと主張しました。</li><li>単体テストの過信を戒め、設計やシステムの境界にトークンを費やすべきだと述べています。</li><li>開発者自身の評価指標（eval）の保持や、安全性を高めるRustの採用を提唱しました。</li></ul><p class="impact"><b>影響</b>AIを活用する開発者は、生成コードを盲信せず動作を把握する仕組みを整える必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>eval</dt><dd>AIモデルやシステムの出力品質を測定・検証するための評価手順やテスト。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/10/27/quality-heads-up/" target="_blank" rel="noopener noreferrer">JDK 28が値クラスをプレビュー導入しテストを呼びかけ</a></h3>
+<p class="orig">原題: Quality Outreach Heads-up - JDK 28: Value Classes</p>
+<p class="src">出典: <a href="https://inside.java/2026/10/27/quality-heads-up/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-10-27</p>
+<ul class="points"><li>JEP 401により値クラスがJDK 28のプレビュー機能として導入されます。</li><li>有効化時はIntegerなど30の標準クラスが値クラスに変更されます。</li><li>値クラスは同一性を持たず、==比較や同期処理などの動作が変化します。</li></ul><p class="impact"><b>影響</b>開発者はCI環境でJDK 28のプレビュー有効および無効の両パターンでテストすることが推奨されます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>値クラス</dt><dd>オブジェクトの同一性を持たず、保持する値によって同一性が判断されるクラスのこと。</dd><dt>プレビュー機能</dt><dd>将来の正式導入に向けて、事前に検証やフィードバックを募るために提供される機能。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates" target="_blank" rel="noopener noreferrer">AWSがAmazon Correttoの最新パッチを公開</a></h3>
+<p class="orig">原題: Amazon Corretto October 2026 Patch Updates</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-27</p>
+<ul class="points"><li>Corretto 27、25、21、17、11、8向けのパッチが公開されました。</li><li>アップデートは公式サイトやLinux向けリポジトリから入手可能です。</li></ul><p class="impact"><b>影響</b>Correttoを利用する開発者や管理者は、公式サイトやパッケージマネージャーから最新版に更新できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Amazon Corretto</dt><dd>AWSが提供する、無料で本番運用向けのマルチプラットフォームなOpenJDKディストリビューション。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/" target="_blank" rel="noopener noreferrer">Aurora Serverlessの最大容量が384 ACUに拡張</a></h3>
+<p class="orig">原題: Amazon Aurora serverless now supports up to 384 ACUs</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-28</p>
+<ul class="points"><li>PostgreSQL互換版の最大容量が従来の256 ACUから50%拡大しました。</li><li>1つのDBで最大768 GiBのメモリまでスケール可能になります。</li><li>バージョン4環境のPostgreSQL 14.23〜18.4などで利用可能です。</li></ul><p class="impact"><b>影響</b>大規模ワークロードを抱える管理者は、設定を変更して最大384 ACUまでスケールさせることが可能です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ACU</dt><dd>Aurora Capacity Unitの略で、約2GiBのメモリと対応するCPU・ネットワークからなる容量単位。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://www.infoq.com/news/2026/10/cloudflare-tsrs-ai-typescript/" target="_blank" rel="noopener noreferrer">CloudflareらがRust製TSコンパイラtsrsを発表</a></h3>
+<p class="orig">原題: Cloudflare and VoidZero Introduce tsrs: An AI-Generated Rust Port of TypeScript</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/cloudflare-tsrs-ai-typescript/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-27</p>
+<ul class="points"><li>AIを活用してTypeScriptをRustに移植した新コンパイラtsrsが公開されました。</li><li>TypeScript 7.0比較で最大8倍の検査速度と約70%のメモリ削減を謳っています。</li><li>現在は実験的リリースで、ウォッチモード等の機能は未実装です。</li></ul><p class="impact"><b>影響</b>既存のTypeScript 7利用者は、npm経由でインストールして型検査の高速化を試すことができます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンパイラ</dt><dd>人間が記述したプログラムのコードを、コンピュータが解釈・実行できる形式に変換するツール。</dd><dt>WebAssembly</dt><dd>ウェブブラウザ上で高速に実行できるように設計されたバイナリ形式のコードフォーマット。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/finatext/articles/6149c09df93e7e" target="_blank" rel="noopener noreferrer">FinatextがVue Fes Japan 2026に出展</a></h3>
+<p class="orig">原題: Vue Fes Japan 2026 出展レポート</p>
+<p class="src">出典: <a href="https://zenn.dev/finatext/articles/6149c09df93e7e" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-27</p>
+<ul class="points"><li>2026年10月24日に大手町プレイスで開催されたカンファレンスにスポンサー出展しました。</li><li>ブースでは投票で街を発展させる参加型企画や開発組織紹介パネルなどの展示を行いました。</li><li>キーノートからLTまで40を超えるプログラムが実施され、多くの来場者で賑わいました。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LT</dt><dd>Lightning Talkの略で、数分程度の短い時間で行うプレゼンです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/koutyuke/articles/vuefes-japan-2026" target="_blank" rel="noopener noreferrer">参加者がVue Fes Japan 2026の体験記を公開</a></h3>
+<p class="orig">原題: Vue Fes Japan 2026 に参加してきました！</p>
+<p class="src">出典: <a href="https://zenn.dev/koutyuke/articles/vuefes-japan-2026" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-27</p>
+<ul class="points"><li>2026年10月24日に大手町プレイスで開催された日本最大級のVue.jsイベントに参加しました。</li><li>学生支援制度により、約1万円のチケットが無料になり交通費補助も受けられました。</li><li>Evan You氏のキーノートや各種セッションのほか、参加者同士の交流が行われました。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>キーノート</dt><dd>カンファレンスの冒頭などに行われる基調講演のことです。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-22-msw" target="_blank" rel="noopener noreferrer">MSWを用いたVueコンポーネントのAPIモック手法が解説される</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #22 - MSWでAPIをモックする</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-22-msw" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-10-28</p>
+<ul class="points"><li>API通信を行うVueコンポーネントをテストする際に発生する接続エラーの対処法を解説しています。</li><li>MSWを導入し、アプリのコードを変更せずネットワーク境界で通信を横取りしてテストします。</li><li>ハンドラを定義することでサーバーエラーや0件応答などの状況を任意に再現できます。</li></ul><p class="impact"><b>影響</b>API通信を行うVueコンポーネントのテストを安定させたい開発者が活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MSW</dt><dd>ネットワーク要求を横取りして偽の応答を返すモック用ライブラリです。</dd><dt>モック</dt><dd>テスト対象が依存する外部の部品を偽物で代用する手法のことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank" rel="noopener noreferrer">端末エミュレータGhostty 1.4.0がリリース</a></h3>
+<p class="orig">原題: Ghostty 1.4.0</p>
+<p class="src">出典: <a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-28</p>
+<ul class="points"><li>性能とメモリの大幅な改善に加え、Kittyグラフィックス仕様の完全な実装を行いました。</li><li>不正な出力によるクラッシュやペースト保護の不備など複数の脆弱性が修正されました。</li><li>macOS 27への対応やタイトルバー等の互換性修正が含まれています。</li></ul><p class="impact"><b>影響</b>Ghostty利用者はクラッシュや任意コマンド実行のリスクを避けるため更新が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>エスケープシーケンス</dt><dd>画面制御や装飾を行うために端末へ送る特殊な文字の並びのことです。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/" target="_blank" rel="noopener noreferrer">CPythonの実験的JITコンパイラが本体から削除へ</a></h3>
+<p class="orig">原題: Python&#39;s experimental JIT to be removed</p>
+<p class="src">出典: <a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-27</p>
+<ul class="points"><li>Python運営評議会が求めた正式な仕様提案（PEP 836）が取り下げられたためです。</li><li>Python 3.13で導入されたJITは、保守性や互換性の基準を満たせず開発が終了します。</li><li>評議会は6か月以内の正式PEP採択を求めており、未達の場合は削除される方針でした。</li></ul><p class="impact"><b>影響</b>CPythonのJIT機能の利用や開発を追っていたエンジニアは、今後の動向に注意が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>JIT</dt><dd>実行時にコードを機械語へ動的にコンパイルし、プログラムの処理速度を向上させる技術。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.apple.com/imac/" target="_blank" rel="noopener noreferrer">AppleがM6チップ搭載の新型iMacを発表</a></h3>
+<p class="orig">原題: New iMac with M6</p>
+<p class="src">出典: <a href="https://www.apple.com/imac/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-27</p>
+<ul class="points"><li>M6チップを採用し、M1搭載比で最大12倍、M4比でAI処理が最大5倍高速化しました。</li><li>最大4基のThunderbolt 4端子やWi-Fi 7、Bluetooth 6に対応します。</li><li>映り込みを抑えるナノテクスチャーガラスや7色のカラーバリエーションを選べます。</li></ul><p class="impact"><b>影響</b>一体型デスクトップで高いAI性能や作業効率を求めるユーザーは、新機種を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ナノテクスチャーガラス</dt><dd>表面に微細な加工を施し、画質を保ちながら外光の映り込みや反射を抑える特殊ガラス。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/" target="_blank" rel="noopener noreferrer">AppleがM6搭載の14型MacBook Proを発表</a></h3>
+<p class="orig">原題: New 14‑inch MacBook Pro with M6</p>
+<p class="src">出典: <a href="https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-28</p>
+<ul class="points"><li>12コアCPUとGPUを備え、前世代M5比でグラフィックスが最大30%高速化しました。</li><li>デュアル16コアNeural Engineにより、M5比で最大1.9倍のAI性能を発揮します。</li><li>Mac史上最長となる最大24時間のバッテリー駆動に対応し、10月28日より予約可能です。</li></ul><p class="impact"><b>影響</b>高負荷な作業やローカルAIを活用したいユーザーは、予約開始日や構成を確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Neural Engine</dt><dd>機械学習やAIに関する演算を電力効率よく高速に行うために特化した専用のプロセッサ。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://j11g.com/the-mythical-man-month-in-the-age-of-ai" target="_blank" rel="noopener noreferrer">AIエージェント時代におけるブルックスの法則の変容を考察</a></h3>
+<p class="orig">原題: The Mythical Man-Month in the Age of AI</p>
+<p class="src">出典: <a href="https://j11g.com/the-mythical-man-month-in-the-age-of-ai" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-27</p>
+<ul class="points"><li>人員追加でプロジェクトが遅れる法則はAI時代でも形を変えて存続していると論じました。</li><li>エージェントの管理やハルシネーション対策など人間側の調整負担は依然として残ります。</li><li>要件が曖昧なままエージェントを追加すると誤った結果が高速に出力されると指摘しました。</li></ul><p class="impact"><b>影響</b>AIエージェントを開発に投入する管理者は、明確な要件定義と統制体制を整える必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ブルックスの法則</dt><dd>遅れているソフトウェア計画に人員を追加するとさらに遅れるという経験則。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup" target="_blank" rel="noopener noreferrer">WikipediaでAI生成記事を検知・除去する有志の取り組み</a></h3>
+<p class="orig">原題: Wikipedia&#39;s Cleanup of AI-Generated Content</p>
+<p class="src">出典: <a href="https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-27</p>
+<ul class="points"><li>有志グループがガイドラインに違反するAI生成テキストの検知と削除を推進しています。</li><li>生成文の特徴が巧妙化する中、内容と一致しない不正確な出典の引用が深刻な課題です。</li><li>記事生成の禁止規則に加え、AIを用いた出典照合ツールなどの導入が進められています。</li></ul><p class="impact"><b>影響</b>Wikipediaの編集者は、AI生成の疑いがある記事や誤った出典がないか注意深く点検する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ハルシネーション</dt><dd>AIが事実に基づかない情報をもっともらしく出力してしまう現象。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-27/">← 2026-10-27</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（28）</summary><ul><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

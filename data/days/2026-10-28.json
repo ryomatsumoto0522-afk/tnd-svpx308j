@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-27T21:22:01.338Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/jp/blogs/news/introducing-aws-coding-plugin-for-sap-abap/",
+      "title": "AWS Coding Plugin for SAP ABAP, powered by Kiro のご紹介",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T11:12:15.000Z",
+      "summary": "EclipseとSAP ADT環境でAIと協働し、スペック駆動開発を行えるツールが提供されました。要件定義から設計、実装計画の提案やテストまでをエージェントがチャットを通じて支援します。利用にはEclipse 2026-06以降やSAP ADT 3.60以降、Kiroのサブスクリプションが必要です。",
+      "headline": "AWSがKiro搭載のSAP ABAP向けEclipse用プラグインを公開",
+      "points": [
+        "EclipseとSAP ADT環境でAIと協働し、スペック駆動開発を行えるツールが提供されました。",
+        "要件定義から設計、実装計画の提案やテストまでをエージェントがチャットを通じて支援します。",
+        "利用にはEclipse 2026-06以降やSAP ADT 3.60以降、Kiroのサブスクリプションが必要です。"
+      ],
+      "impact": "ABAP開発者は、動作要件を確認した上でプラグインを導入して開発ワークフローに活用できます。",
+      "glossary": [
+        {
+          "term": "ABAP",
+          "explanation": "SAPの基幹業務システムなどの開発に広く用いられるプログラミング言語。"
+        },
+        {
+          "term": "スペック駆動開発",
+          "explanation": "実装コードを書く前に仕様を定義し、それを満たすように開発を進める手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/jp/blogs/news/haiku-5-5/",
+      "title": "Claude Haiku 5.5 が Kiro で利用可能になりました",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T11:13:41.000Z",
+      "summary": "Claude 5.5で最速のモデルで、Kiro IDEやCLIなどの全環境において実験的サポートとして提供が開始されました。前世代のHaiku 4.5から大きく進化し、1MトークンのコンテキストウィンドウやAdaptive Thinkingに対応します。対象リージョンでKiro Proなどの対象プランを利用するユーザー向けに提供され、クレジット乗数は0.06倍です。",
+      "headline": "高速なClaude Haiku 5.5がKiroの各環境で利用可能に",
+      "points": [
+        "Claude 5.5で最速のモデルで、Kiro IDEやCLIなどの全環境において実験的サポートとして提供が開始されました。",
+        "前世代のHaiku 4.5から大きく進化し、1MトークンのコンテキストウィンドウやAdaptive Thinkingに対応します。",
+        "対象リージョンでKiro Proなどの対象プランを利用するユーザー向けに提供され、クレジット乗数は0.06倍です。"
+      ],
+      "impact": "対象リージョンでKiroの対象プランを使う利用者は、実験的サポートとして本モデルを高速処理や大量処理に利用できます。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度の処理で把握・考慮できる入力情報の最大量のことです。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "テキスト処理においてAIが文章を分割・計算する際の最小単位のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.infoq.com/news/2026/10/anthropic-source-control/",
+      "title": "How Anthropic Redesigned Source Control for AI-Driven Development",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T11:25:00.000Z",
+      "summary": "Anthropicはリポジトリ操作をサーバー側へ移す新システム「Scion」へ社内モノレポを移行しました。1日のマージ数が3万件超へ急増する中、チェックアウト速度が2桁向上しインフラ規模を200分の1に削減しました。汎用のGit代替ではなく、サーバー側APIや取得プロトコル改善などの考え方を既存基盤に活かすことを推奨しています。",
+      "headline": "Anthropicが独自システムScionへ移行しGitの限界を解消",
+      "points": [
+        "Anthropicはリポジトリ操作をサーバー側へ移す新システム「Scion」へ社内モノレポを移行しました。",
+        "1日のマージ数が3万件超へ急増する中、チェックアウト速度が2桁向上しインフラ規模を200分の1に削減しました。",
+        "汎用のGit代替ではなく、サーバー側APIや取得プロトコル改善などの考え方を既存基盤に活かすことを推奨しています。"
+      ],
+      "impact": "アーキテクトは負荷変化に応じて処理場所を再考し、サーバー側APIなど一部の知見を既存のGit基盤へ導入検討できます。",
+      "glossary": [
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトやコードを単一のリポジトリで一括管理するソフトウェア開発の手法。"
+        },
+        {
+          "term": "コンテンツアドレスストレージ",
+          "explanation": "データの内容から算出したハッシュ値を保存場所や識別子として用いるデータ管理方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/",
+      "title": "AGNTCon + MCPCon 2026: Agentic AI Foundation Adds Four Projects as MCP Turns to Security",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-26T22:00:00.000Z",
+      "summary": "設立1年で管理プロジェクトが10件に達し、議論の焦点は新機能からセキュリティや本人確認へと移行しました。AlibabaやOpenAI、Anthropic、Hugging Faceがエージェント関連技術を寄贈しました。Webサイトのツール公開を効率化するWebMCPや、Claude Codeの長時間タスク対応が発表されました。",
+      "headline": "Agentic AI Foundationが新たに4プロジェクトを追加",
+      "points": [
+        "設立1年で管理プロジェクトが10件に達し、議論の焦点は新機能からセキュリティや本人確認へと移行しました。",
+        "AlibabaやOpenAI、Anthropic、Hugging Faceがエージェント関連技術を寄贈しました。",
+        "Webサイトのツール公開を効率化するWebMCPや、Claude Codeの長時間タスク対応が発表されました。"
+      ],
+      "impact": "MCPサーバーを公開する開発者は、OpenAIでの承認を受けるために各ツールへの注釈付けなどを行う必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを接続するためのオープンな標準規格。"
+        },
+        {
+          "term": "サンドボックス",
+          "explanation": "外部に悪影響を与えないよう隔離された環境でプログラムを実行する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://inside.java/2026/10/27/quality-heads-up/",
+      "title": "Quality Outreach Heads-up - JDK 28: Value Classes",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "summary": "JEP 401により値クラスがJDK 28のプレビュー機能として導入されます。有効化時はIntegerなど30の標準クラスが値クラスに変更されます。値クラスは同一性を持たず、==比較や同期処理などの動作が変化します。",
+      "headline": "JDK 28が値クラスをプレビュー導入しテストを呼びかけ",
+      "points": [
+        "JEP 401により値クラスがJDK 28のプレビュー機能として導入されます。",
+        "有効化時はIntegerなど30の標準クラスが値クラスに変更されます。",
+        "値クラスは同一性を持たず、==比較や同期処理などの動作が変化します。"
+      ],
+      "impact": "開発者はCI環境でJDK 28のプレビュー有効および無効の両パターンでテストすることが推奨されます。",
+      "glossary": [
+        {
+          "term": "値クラス",
+          "explanation": "オブジェクトの同一性を持たず、保持する値によって同一性が判断されるクラスのこと。"
+        },
+        {
+          "term": "プレビュー機能",
+          "explanation": "将来の正式導入に向けて、事前に検証やフィードバックを募るために提供される機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
+      "title": "Amazon Corretto October 2026 Patch Updates",
+      "source": "AWS What's New",
+      "genre": "backend",
+      "publishedAt": "2026-10-27T14:00:00.000Z",
+      "summary": "Corretto 27、25、21、17、11、8向けのパッチが公開されました。アップデートは公式サイトやLinux向けリポジトリから入手可能です。",
+      "headline": "AWSがAmazon Correttoの最新パッチを公開",
+      "points": [
+        "Corretto 27、25、21、17、11、8向けのパッチが公開されました。",
+        "アップデートは公式サイトやLinux向けリポジトリから入手可能です。"
+      ],
+      "impact": "Correttoを利用する開発者や管理者は、公式サイトやパッケージマネージャーから最新版に更新できます。",
+      "glossary": [
+        {
+          "term": "Amazon Corretto",
+          "explanation": "AWSが提供する、無料で本番運用向けのマルチプラットフォームなOpenJDKディストリビューション。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
+      "title": "Amazon Aurora serverless now supports up to 384 ACUs",
+      "source": "AWS What's New",
+      "genre": "backend",
+      "publishedAt": "2026-10-27T16:00:00.000Z",
+      "summary": "PostgreSQL互換版の最大容量が従来の256 ACUから50%拡大しました。1つのDBで最大768 GiBのメモリまでスケール可能になります。バージョン4環境のPostgreSQL 14.23〜18.4などで利用可能です。",
+      "headline": "Aurora Serverlessの最大容量が384 ACUに拡張",
+      "points": [
+        "PostgreSQL互換版の最大容量が従来の256 ACUから50%拡大しました。",
+        "1つのDBで最大768 GiBのメモリまでスケール可能になります。",
+        "バージョン4環境のPostgreSQL 14.23〜18.4などで利用可能です。"
+      ],
+      "impact": "大規模ワークロードを抱える管理者は、設定を変更して最大384 ACUまでスケールさせることが可能です。",
+      "glossary": [
+        {
+          "term": "ACU",
+          "explanation": "Aurora Capacity Unitの略で、約2GiBのメモリと対応するCPU・ネットワークからなる容量単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-tsrs-ai-typescript/",
+      "title": "Cloudflare and VoidZero Introduce tsrs: An AI-Generated Rust Port of TypeScript",
+      "source": "InfoQ",
+      "genre": "frontend",
+      "publishedAt": "2026-10-27T07:34:00.000Z",
+      "summary": "AIを活用してTypeScriptをRustに移植した新コンパイラtsrsが公開されました。TypeScript 7.0比較で最大8倍の検査速度と約70%のメモリ削減を謳っています。現在は実験的リリースで、ウォッチモード等の機能は未実装です。",
+      "headline": "CloudflareらがRust製TSコンパイラtsrsを発表",
+      "points": [
+        "AIを活用してTypeScriptをRustに移植した新コンパイラtsrsが公開されました。",
+        "TypeScript 7.0比較で最大8倍の検査速度と約70%のメモリ削減を謳っています。",
+        "現在は実験的リリースで、ウォッチモード等の機能は未実装です。"
+      ],
+      "impact": "既存のTypeScript 7利用者は、npm経由でインストールして型検査の高速化を試すことができます。",
+      "glossary": [
+        {
+          "term": "コンパイラ",
+          "explanation": "人間が記述したプログラムのコードを、コンピュータが解釈・実行できる形式に変換するツール。"
+        },
+        {
+          "term": "WebAssembly",
+          "explanation": "ウェブブラウザ上で高速に実行できるように設計されたバイナリ形式のコードフォーマット。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/finatext/articles/6149c09df93e7e",
+      "title": "Vue Fes Japan 2026 出展レポート",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-27T08:09:22.000Z",
+      "summary": "2026年10月24日に大手町プレイスで開催されたカンファレンスにスポンサー出展しました。ブースでは投票で街を発展させる参加型企画や開発組織紹介パネルなどの展示を行いました。キーノートからLTまで40を超えるプログラムが実施され、多くの来場者で賑わいました。",
+      "headline": "FinatextがVue Fes Japan 2026に出展",
+      "points": [
+        "2026年10月24日に大手町プレイスで開催されたカンファレンスにスポンサー出展しました。",
+        "ブースでは投票で街を発展させる参加型企画や開発組織紹介パネルなどの展示を行いました。",
+        "キーノートからLTまで40を超えるプログラムが実施され、多くの来場者で賑わいました。"
+      ],
+      "glossary": [
+        {
+          "term": "LT",
+          "explanation": "Lightning Talkの略で、数分程度の短い時間で行うプレゼンです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/koutyuke/articles/vuefes-japan-2026",
+      "title": "Vue Fes Japan 2026 に参加してきました！",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-27T04:28:58.000Z",
+      "summary": "2026年10月24日に大手町プレイスで開催された日本最大級のVue.jsイベントに参加しました。学生支援制度により、約1万円のチケットが無料になり交通費補助も受けられました。Evan You氏のキーノートや各種セッションのほか、参加者同士の交流が行われました。",
+      "headline": "参加者がVue Fes Japan 2026の体験記を公開",
+      "points": [
+        "2026年10月24日に大手町プレイスで開催された日本最大級のVue.jsイベントに参加しました。",
+        "学生支援制度により、約1万円のチケットが無料になり交通費補助も受けられました。",
+        "Evan You氏のキーノートや各種セッションのほか、参加者同士の交流が行われました。"
+      ],
+      "glossary": [
+        {
+          "term": "キーノート",
+          "explanation": "カンファレンスの冒頭などに行われる基調講演のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-22-msw",
+      "title": "35日でフロントエンドの基礎を完全に理解する #22 - MSWでAPIをモックする",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-27T21:20:59.000Z",
+      "summary": "API通信を行うVueコンポーネントをテストする際に発生する接続エラーの対処法を解説しています。MSWを導入し、アプリのコードを変更せずネットワーク境界で通信を横取りしてテストします。ハンドラを定義することでサーバーエラーや0件応答などの状況を任意に再現できます。",
+      "headline": "MSWを用いたVueコンポーネントのAPIモック手法が解説される",
+      "points": [
+        "API通信を行うVueコンポーネントをテストする際に発生する接続エラーの対処法を解説しています。",
+        "MSWを導入し、アプリのコードを変更せずネットワーク境界で通信を横取りしてテストします。",
+        "ハンドラを定義することでサーバーエラーや0件応答などの状況を任意に再現できます。"
+      ],
+      "impact": "API通信を行うVueコンポーネントのテストを安定させたい開発者が活用できます。",
+      "glossary": [
+        {
+          "term": "MSW",
+          "explanation": "ネットワーク要求を横取りして偽の応答を返すモック用ライブラリです。"
+        },
+        {
+          "term": "モック",
+          "explanation": "テスト対象が依存する外部の部品を偽物で代用する手法のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+      "title": "Ghostty 1.4.0",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-27T16:51:22Z",
+      "summary": "性能とメモリの大幅な改善に加え、Kittyグラフィックス仕様の完全な実装を行いました。不正な出力によるクラッシュやペースト保護の不備など複数の脆弱性が修正されました。macOS 27への対応やタイトルバー等の互換性修正が含まれています。",
+      "headline": "端末エミュレータGhostty 1.4.0がリリース",
+      "points": [
+        "性能とメモリの大幅な改善に加え、Kittyグラフィックス仕様の完全な実装を行いました。",
+        "不正な出力によるクラッシュやペースト保護の不備など複数の脆弱性が修正されました。",
+        "macOS 27への対応やタイトルバー等の互換性修正が含まれています。"
+      ],
+      "impact": "Ghostty利用者はクラッシュや任意コマンド実行のリスクを避けるため更新が必要です。",
+      "glossary": [
+        {
+          "term": "エスケープシーケンス",
+          "explanation": "画面制御や装飾を行うために端末へ送る特殊な文字の並びのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+      "title": "Python's experimental JIT to be removed",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-27T11:17:57Z",
+      "summary": "Python運営評議会が求めた正式な仕様提案（PEP 836）が取り下げられたためです。Python 3.13で導入されたJITは、保守性や互換性の基準を満たせず開発が終了します。評議会は6か月以内の正式PEP採択を求めており、未達の場合は削除される方針でした。",
+      "headline": "CPythonの実験的JITコンパイラが本体から削除へ",
+      "points": [
+        "Python運営評議会が求めた正式な仕様提案（PEP 836）が取り下げられたためです。",
+        "Python 3.13で導入されたJITは、保守性や互換性の基準を満たせず開発が終了します。",
+        "評議会は6か月以内の正式PEP採択を求めており、未達の場合は削除される方針でした。"
+      ],
+      "impact": "CPythonのJIT機能の利用や開発を追っていたエンジニアは、今後の動向に注意が必要です。",
+      "glossary": [
+        {
+          "term": "JIT",
+          "explanation": "実行時にコードを機械語へ動的にコンパイルし、プログラムの処理速度を向上させる技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.apple.com/imac/",
+      "title": "New iMac with M6",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-27T13:02:02Z",
+      "summary": "M6チップを採用し、M1搭載比で最大12倍、M4比でAI処理が最大5倍高速化しました。最大4基のThunderbolt 4端子やWi-Fi 7、Bluetooth 6に対応します。映り込みを抑えるナノテクスチャーガラスや7色のカラーバリエーションを選べます。",
+      "headline": "AppleがM6チップ搭載の新型iMacを発表",
+      "points": [
+        "M6チップを採用し、M1搭載比で最大12倍、M4比でAI処理が最大5倍高速化しました。",
+        "最大4基のThunderbolt 4端子やWi-Fi 7、Bluetooth 6に対応します。",
+        "映り込みを抑えるナノテクスチャーガラスや7色のカラーバリエーションを選べます。"
+      ],
+      "impact": "一体型デスクトップで高いAI性能や作業効率を求めるユーザーは、新機種を検討できます。",
+      "glossary": [
+        {
+          "term": "ナノテクスチャーガラス",
+          "explanation": "表面に微細な加工を施し、画質を保ちながら外光の映り込みや反射を抑える特殊ガラス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "title": "New 14‑inch MacBook Pro with M6",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-27T16:08:32Z",
+      "summary": "12コアCPUとGPUを備え、前世代M5比でグラフィックスが最大30%高速化しました。デュアル16コアNeural Engineにより、M5比で最大1.9倍のAI性能を発揮します。Mac史上最長となる最大24時間のバッテリー駆動に対応し、10月28日より予約可能です。",
+      "headline": "AppleがM6搭載の14型MacBook Proを発表",
+      "points": [
+        "12コアCPUとGPUを備え、前世代M5比でグラフィックスが最大30%高速化しました。",
+        "デュアル16コアNeural Engineにより、M5比で最大1.9倍のAI性能を発揮します。",
+        "Mac史上最長となる最大24時間のバッテリー駆動に対応し、10月28日より予約可能です。"
+      ],
+      "impact": "高負荷な作業やローカルAIを活用したいユーザーは、予約開始日や構成を確認できます。",
+      "glossary": [
+        {
+          "term": "Neural Engine",
+          "explanation": "機械学習やAIに関する演算を電力効率よく高速に行うために特化した専用のプロセッサ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://zenn.dev/leeguoo/articles/df97777f58f5cb",
+      "title": "Claude Code や Codex に、ログイン済みの Chrome をそのまま使わせる（デバッグポートなし）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T06:55:54.000Z",
+      "summary": "拡張機能とネイティブメッセージングを使い、手元のログイン状態のままAIが操作できます。リモートデバッグポートが不要で、Claude CodeやCodexなどに対応します。セッションごとに独立したタブグループを割り当て、ユーザーの既存タブには触れません。",
+      "headline": "ログイン済みのChromeをAIに操作させるツールが登場",
+      "points": [
+        "拡張機能とネイティブメッセージングを使い、手元のログイン状態のままAIが操作できます。",
+        "リモートデバッグポートが不要で、Claude CodeやCodexなどに対応します。",
+        "セッションごとに独立したタブグループを割り当て、ユーザーの既存タブには触れません。"
+      ],
+      "impact": "ログインが必要なサイトをAIエージェントに自動巡回させたい開発者は、ツールを導入できます。",
+      "glossary": [
+        {
+          "term": "ネイティブメッセージング",
+          "explanation": "ブラウザの拡張機能が、ローカルマシン上の独立した外部アプリケーションと直接通信する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://qiita.com/supportapp3/items/7286702cd178b16bd8e3",
+      "title": "Claude Code は起動フォルダの上の CLAUDE.md も全部読む：Codex との違いと、起動前に指示ファイルを一覧するスクリプト",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T20:20:11.000Z",
+      "summary": "Claude Codeは起動フォルダとその上位階層のCLAUDE.mdを全て連結して読み込みます。CodexはGitルートから下のみを読み込むため、ツール間で読み込み範囲が異なります。起動前に読み込まれる指示ファイルを一覧表示する点検用シェルスクリプトが公開されました。",
+      "headline": "Claude Codeが上位階層の設定ファイルまで読み込む挙動を整理",
+      "points": [
+        "Claude Codeは起動フォルダとその上位階層のCLAUDE.mdを全て連結して読み込みます。",
+        "CodexはGitルートから下のみを読み込むため、ツール間で読み込み範囲が異なります。",
+        "起動前に読み込まれる指示ファイルを一覧表示する点検用シェルスクリプトが公開されました。"
+      ],
+      "impact": "両ツールを利用する開発者は、上位階層に不要な指示ファイルがないか起動前に確認する必要があります。",
+      "glossary": [
+        {
+          "term": "CLAUDE.md",
+          "explanation": "Claude Codeなどの動作方針や指示を記述しておく設定ファイル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr39-rauch-summary",
+      "title": "全行を読めとは言わない、でも理解する。Vercel CEO が語るエージェント開発の流儀（#39 解説）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T10:54:29.000Z",
+      "summary": "全行を読む必要はないものの何が起きたかを理解する姿勢が重要だと主張しました。単体テストの過信を戒め、設計やシステムの境界にトークンを費やすべきだと述べています。開発者自身の評価指標（eval）の保持や、安全性を高めるRustの採用を提唱しました。",
+      "headline": "Vercel CEOがAI活用時代におけるコード理解の重要性を語る",
+      "points": [
+        "全行を読む必要はないものの何が起きたかを理解する姿勢が重要だと主張しました。",
+        "単体テストの過信を戒め、設計やシステムの境界にトークンを費やすべきだと述べています。",
+        "開発者自身の評価指標（eval）の保持や、安全性を高めるRustの採用を提唱しました。"
+      ],
+      "impact": "AIを活用する開発者は、生成コードを盲信せず動作を把握する仕組みを整える必要があります。",
+      "glossary": [
+        {
+          "term": "eval",
+          "explanation": "AIモデルやシステムの出力品質を測定・検証するための評価手順やテスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 31,
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "title": "The Mythical Man-Month in the Age of AI",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-27T06:25:37Z",
+      "summary": "人員追加でプロジェクトが遅れる法則はAI時代でも形を変えて存続していると論じました。エージェントの管理やハルシネーション対策など人間側の調整負担は依然として残ります。要件が曖昧なままエージェントを追加すると誤った結果が高速に出力されると指摘しました。",
+      "headline": "AIエージェント時代におけるブルックスの法則の変容を考察",
+      "points": [
+        "人員追加でプロジェクトが遅れる法則はAI時代でも形を変えて存続していると論じました。",
+        "エージェントの管理やハルシネーション対策など人間側の調整負担は依然として残ります。",
+        "要件が曖昧なままエージェントを追加すると誤った結果が高速に出力されると指摘しました。"
+      ],
+      "impact": "AIエージェントを開発に投入する管理者は、明確な要件定義と統制体制を整える必要があります。",
+      "glossary": [
+        {
+          "term": "ブルックスの法則",
+          "explanation": "遅れているソフトウェア計画に人員を追加するとさらに遅れるという経験則。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 32,
+      "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+      "title": "Wikipedia's Cleanup of AI-Generated Content",
+      "source": "Hacker News",
+      "genre": "other",
+      "publishedAt": "2026-10-27T11:08:15Z",
+      "summary": "有志グループがガイドラインに違反するAI生成テキストの検知と削除を推進しています。生成文の特徴が巧妙化する中、内容と一致しない不正確な出典の引用が深刻な課題です。記事生成の禁止規則に加え、AIを用いた出典照合ツールなどの導入が進められています。",
+      "headline": "WikipediaでAI生成記事を検知・除去する有志の取り組み",
+      "points": [
+        "有志グループがガイドラインに違反するAI生成テキストの検知と削除を推進しています。",
+        "生成文の特徴が巧妙化する中、内容と一致しない不正確な出典の引用が深刻な課題です。",
+        "記事生成の禁止規則に加え、AIを用いた出典照合ツールなどの導入が進められています。"
+      ],
+      "impact": "Wikipediaの編集者は、AI生成の疑いがある記事や誤った出典がないか注意深く点検する必要があります。",
+      "glossary": [
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実に基づかない情報をもっともらしく出力してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 103,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29552,
+    "outputTokens": 13043
+  },
+  "offline": false
+}
