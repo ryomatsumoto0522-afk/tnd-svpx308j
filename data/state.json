@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-27T21:22:01.338Z",
+  "lastRun": "2026-10-28T21:40:54.169Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -477,6 +477,24 @@
     "https://qiita.com/supportapp3/items/7286702cd178b16bd8e3": "2026-10-28",
     "https://zenn.dev/talks_tldr_jp/articles/tldr39-rauch-summary": "2026-10-28",
     "https://j11g.com/the-mythical-man-month-in-the-age-of-ai": "2026-10-28",
-    "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup": "2026-10-28"
+    "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup": "2026-10-28",
+    "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": "2026-10-29",
+    "https://www.anthropic.com/research/early-progress-drug-development": "2026-10-29",
+    "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation": "2026-10-29",
+    "https://spring.io/blog/2026/10/28/spring-ai-message-parts-reasoning-replay": "2026-10-29",
+    "https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation": "2026-10-29",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci": "2026-10-29",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation": "2026-10-29",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api": "2026-10-29",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-managed-instances-consolidation": "2026-10-29",
+    "https://zenn.dev/koudaiishigame/articles/075a869255b75c": "2026-10-29",
+    "https://zenn.dev/sarukani/articles/claude-code-butler-memory": "2026-10-29",
+    "https://qiita.com/supportapp3/items/56cf6468be08e14c76dd": "2026-10-29",
+    "https://qiita.com/tomokusaba/items/0ec6659757fab47f5473": "2026-10-29",
+    "https://speakerdeck.com/stillpedant/thinking-systems": "2026-10-29",
+    "https://www.preferred.jp/ja/blog/tech/1798": "2026-10-29",
+    "https://anond.hatelabo.jp/20261028103922": "2026-10-29",
+    "https://japan.cnet.com/article/35254103": "2026-10-29",
+    "https://www.infoq.com/news/2026/10/microsoft-october-2026-patch": "2026-10-29"
   }
 }

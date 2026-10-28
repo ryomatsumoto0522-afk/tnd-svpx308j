@@ -1,0 +1,464 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-28T21:40:54.169Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "summary": "Google DeepMindがサイバー防御や長期推論に優れたGemini 4 Carbonを発表しました。SEC-bench Proで88.2%、ExploitGymで54.8%を記録し高い防御性能を示します。入力100万トークンあたり2ドル、出力10ドルで一部の防衛担当者向けに段階提供されます。",
+      "headline": "Googleがセキュリティに強いGemini 4 Carbonを発表",
+      "points": [
+        "Google DeepMindがサイバー防御や長期推論に優れたGemini 4 Carbonを発表しました。",
+        "SEC-bench Proで88.2%、ExploitGymで54.8%を記録し高い防御性能を示します。",
+        "入力100万トークンあたり2ドル、出力10ドルで一部の防衛担当者向けに段階提供されます。"
+      ],
+      "impact": "サイバー防衛担当者は、Fairwind Programを通じた限定アクセスや今後の一般公開の動向を確認できます。",
+      "glossary": [
+        {
+          "term": "ペネトレーションテスト",
+          "explanation": "システムのセキュリティ脆弱性を発見するため、実際に侵入や攻撃を試みるテスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "title": "Early progress on accelerating drug development with Claude",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "summary": "Anthropicが製薬企業など6組織と提携し、Claudeを用いた創薬支援の初期成果を公表しました。Generate Biomedicinesでは遺伝子設計を約70%短縮し、受容体の生成量が約10倍に向上しました。小児の希少筋ジストロフィーなどの自社創薬や、食物アレルギーの共同研究にも取り組んでいます。",
+      "headline": "Anthropicが創薬分野でClaudeを活用する成果を発表",
+      "points": [
+        "Anthropicが製薬企業など6組織と提携し、Claudeを用いた創薬支援の初期成果を公表しました。",
+        "Generate Biomedicinesでは遺伝子設計を約70%短縮し、受容体の生成量が約10倍に向上しました。",
+        "小児の希少筋ジストロフィーなどの自社創薬や、食物アレルギーの共同研究にも取り組んでいます。"
+      ],
+      "impact": "バイオ分野の研究者は、Claudeを自社の創薬プロセスや臨床準備へ統合する事例として活用を検討できます。",
+      "glossary": [
+        {
+          "term": "CAR-T細胞療法",
+          "explanation": "患者の免疫細胞を取り出し、がん細胞を攻撃するよう遺伝子改変して体内に戻す治療法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "Genie 4: A new generation of world simulation",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T16:01:38.000Z",
+      "summary": "Google DeepMindが音声と物理現象をリアルタイム生成する世界モデルGenie 4を発表しました。環境音や対話音声をネイティブ生成し、自然言語によるリアルタイムの環境操作に対応します。Google AI Ultra加入者やAPIパートナー向けに研究プレビューとして順次公開されます。",
+      "headline": "Googleがリアルタイム世界モデルGenie 4を発表",
+      "points": [
+        "Google DeepMindが音声と物理現象をリアルタイム生成する世界モデルGenie 4を発表しました。",
+        "環境音や対話音声をネイティブ生成し、自然言語によるリアルタイムの環境操作に対応します。",
+        "Google AI Ultra加入者やAPIパートナー向けに研究プレビューとして順次公開されます。"
+      ],
+      "impact": "ロボット開発者や体験設計者は、Project Genieの順番待ちリストへの登録や早期アクセスを検討できます。",
+      "glossary": [
+        {
+          "term": "世界モデル",
+          "explanation": "現実世界の物理法則や物体の振る舞いを理解し、次の状態を予測・シミュレーションするAI。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://spring.io/blog/2026/10/28/spring-ai-message-parts-reasoning-replay",
+      "title": "Spring AI 2.1 Message Parts: Reasoning That Survives the Round Trip",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Spring AI 2.1.0-RC1でメッセージ構造が刷新され、AIの思考情報を安全に再送できるようになりました。内容をMessagePartの順序付きリストで保持し、暗号化推論や署名データの欠落を防ぎます。OpenAI、Anthropic、Googleなど主要モデルに対応し、Sessionによる永続化も追加されました。",
+      "headline": "Spring AI 2.1が推論情報を保持する新設計を導入",
+      "points": [
+        "Spring AI 2.1.0-RC1でメッセージ構造が刷新され、AIの思考情報を安全に再送できるようになりました。",
+        "内容をMessagePartの順序付きリストで保持し、暗号化推論や署名データの欠落を防ぎます。",
+        "OpenAI、Anthropic、Googleなど主要モデルに対応し、Sessionによる永続化も追加されました。"
+      ],
+      "impact": "Spring AI利用者は、推論モデルとの対話で署名や思考データの再送エラーを防ぐため新仕様の確認が必要です。",
+      "glossary": [
+        {
+          "term": "思考署名",
+          "explanation": "AIモデルが出力した推論内容が改ざんされていないかを検証するために付与される暗号データ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation/",
+      "title": "Airbnb Cuts Recommendation Staleness from 2 Days to Seconds with Chronon",
+      "source": "InfoQ",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T13:53:00.000Z",
+      "summary": "特徴量基盤Chrononに新機能を追加し更新遅延を大幅に削減しました。更新遅延は約2日から1分未満（通常10〜30秒）へ短縮されました。オンラインA/Bテストで予約数が約0.33%増加しました。",
+      "headline": "Airbnbが推薦モデル更新を数秒に短縮する新機能を開発",
+      "points": [
+        "特徴量基盤Chrononに新機能を追加し更新遅延を大幅に削減しました。",
+        "更新遅延は約2日から1分未満（通常10〜30秒）へ短縮されました。",
+        "オンラインA/Bテストで予約数が約0.33%増加しました。"
+      ],
+      "glossary": [
+        {
+          "term": "埋め込み (embedding)",
+          "explanation": "データを機械学習モデルで処理しやすい数値ベクトルに変換した表現。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/",
+      "title": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-28T18:44:00.000Z",
+      "summary": "Managed InstancesでSOCIによる遅延読み込みに対応しました。必要なファイルのみを取得し、起動時間を最大70%削減できます。ECRにSOCIインデックスをプッシュして関数を設定します。",
+      "headline": "AWS LambdaでSOCIによるコンテナ起動高速化をサポート",
+      "points": [
+        "Managed InstancesでSOCIによる遅延読み込みに対応しました。",
+        "必要なファイルのみを取得し、起動時間を最大70%削減できます。",
+        "ECRにSOCIインデックスをプッシュして関数を設定します。"
+      ],
+      "impact": "大規模コンテナを利用する開発者はSOCIインデックスを作成して設定します。",
+      "glossary": [
+        {
+          "term": "遅延読み込み",
+          "explanation": "起動時に全体を読み込まず、必要な時に必要なデータを取得する方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation/",
+      "title": "Amazon EKS Dashboard now provides fleet-wide visibility into certificate authority (CA) rotation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-28T18:07:00.000Z",
+      "summary": "EKSダッシュボードでクラスタのCA更新状況を一元表示できます。2018年以降作成された10年有効なCAの期限接近などを確認可能です。管理アカウントでtrusted accessを有効化して利用します。",
+      "headline": "EKSダッシュボードで認証局更新の全体状況が確認可能に",
+      "points": [
+        "EKSダッシュボードでクラスタのCA更新状況を一元表示できます。",
+        "2018年以降作成された10年有効なCAの期限接近などを確認可能です。",
+        "管理アカウントでtrusted accessを有効化して利用します。"
+      ],
+      "impact": "多数のクラスタを運用するチームは一元画面でCA更新の優先順位を判断できます。",
+      "glossary": [
+        {
+          "term": "認証局 (CA)",
+          "explanation": "通信の暗号化や真正性の証明に用いる電子証明書を発行・管理する組織。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api/",
+      "title": "Amazon EKS Auto Mode now supports Kubernetes Gateway API",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-28T17:33:00.000Z",
+      "summary": "別途コントローラーを導入せずに標準のトラフィック管理が可能です。HTTPやgRPCルーティング、重み付けトラフィック分散に対応します。既存のIngressリソースとGateway APIを併用できます。",
+      "headline": "EKS Auto ModeがKubernetes Gateway APIに対応",
+      "points": [
+        "別途コントローラーを導入せずに標準のトラフィック管理が可能です。",
+        "HTTPやgRPCルーティング、重み付けトラフィック分散に対応します。",
+        "既存のIngressリソースとGateway APIを併用できます。"
+      ],
+      "impact": "EKS Auto Mode利用者はGateway等のリソースを定義してトラフィックを管理します。",
+      "glossary": [
+        {
+          "term": "Gateway API",
+          "explanation": "Kubernetesにおける高度なトラフィック管理を標準化するAPI群。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-managed-instances-consolidation/",
+      "title": "Amazon ECS Managed Instances adds cross-instance and Spot consolidation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-10-28T18:00:00.000Z",
+      "summary": "複数インスタンスの低稼働タスクを集約し利用率向上とコスト削減を図る。スポット容量では代替容量の存在を確認した上で同様に統合を実施する。全AWSリージョンで追加料金なしで利用でき、自動的に適用される。",
+      "headline": "Amazon ECSがインスタンス統合とスポット統合機能を追加",
+      "points": [
+        "複数インスタンスの低稼働タスクを集約し利用率向上とコスト削減を図る。",
+        "スポット容量では代替容量の存在を確認した上で同様に統合を実施する。",
+        "全AWSリージョンで追加料金なしで利用でき、自動的に適用される。"
+      ],
+      "impact": "ECS Managed Instancesの利用者は設定不要で最適化の恩恵を受けられます。",
+      "glossary": [
+        {
+          "term": "Amazon ECS",
+          "explanation": "AWS上でDockerコンテナを実行・管理できるマネージドサービス。"
+        },
+        {
+          "term": "スポットインスタンス",
+          "explanation": "クラウド事業者の余剰計算資源を安価に利用できる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/koudaiishigame/articles/075a869255b75c",
+      "title": "Nuxt製の静的サイトをAstro(Vue)へフルリプレイスし、93%軽量化した話",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-28T14:12:11.000Z",
+      "summary": "見た目を維持したままNuxt 2からAstroのSSGへ全面刷新した。クライアントJSを約98％削減し初期転送量を約95％削減した。依存パッケージを53個から5個に減らしツールをRust製に刷新した。",
+      "headline": "Nuxt製静的サイトをAstroに移行し93％の軽量化を達成",
+      "points": [
+        "見た目を維持したままNuxt 2からAstroのSSGへ全面刷新した。",
+        "クライアントJSを約98％削減し初期転送量を約95％削減した。",
+        "依存パッケージを53個から5個に減らしツールをRust製に刷新した。"
+      ],
+      "glossary": [
+        {
+          "term": "SSG",
+          "explanation": "WebサイトのHTMLをビルド時に事前に生成しておく仕組み。"
+        },
+        {
+          "term": "ハイドレーション",
+          "explanation": "静的HTMLにJavaScriptを結びつけ操作可能にする処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/sarukani/articles/claude-code-butler-memory",
+      "title": "Claude Code に、経緯を覚えている「専属バトラー」を作る",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T13:32:59.000Z",
+      "summary": "CLAUDE.mdに記録ルールを定義し会話経緯をファイルとして管理する。Gitでフォルダを同期しPCや環境が変わっても記憶を引き継げる。重い作業はサブエージェントに任せバトラー本体には結論のみを残す。",
+      "headline": "Claude CodeとGitを連携し会話経緯を覚える執事を作る",
+      "points": [
+        "CLAUDE.mdに記録ルールを定義し会話経緯をファイルとして管理する。",
+        "Gitでフォルダを同期しPCや環境が変わっても記憶を引き継げる。",
+        "重い作業はサブエージェントに任せバトラー本体には結論のみを残す。"
+      ],
+      "impact": "会話をまたいで文脈を維持したい利用者は雛形を元に環境を構築できます。",
+      "glossary": [
+        {
+          "term": "サブエージェント",
+          "explanation": "親エージェントから特定の作業を委託されて動作するAI機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://qiita.com/supportapp3/items/56cf6468be08e14c76dd",
+      "title": "Codex は既定で OPENAI_API_KEY などの環境変数を実行コマンドにそのまま渡す：shell_environment_policy で外す設定（codex 0.165.0で確認）",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T20:37:50.000Z",
+      "summary": "既定ではAPIキーなどの環境変数が実行コマンドにそのまま渡る。ignore_default_excludesをfalseにするとKEY等を含む変数が自動で除外される。パスワード等の変数はfilters設定で個別に追加除外する必要がある。",
+      "headline": "Codexの実行コマンドへ渡る環境変数を設定で除外可能と判明",
+      "points": [
+        "既定ではAPIキーなどの環境変数が実行コマンドにそのまま渡る。",
+        "ignore_default_excludesをfalseにするとKEY等を含む変数が自動で除外される。",
+        "パスワード等の変数はfilters設定で個別に追加除外する必要がある。"
+      ],
+      "impact": "Codexの利用者は漏洩を防ぐためconfig.tomlの設定を確認・変更する必要があります。",
+      "glossary": [
+        {
+          "term": "環境変数",
+          "explanation": "OSやシェル上で実行中のプログラムが参照できる設定値。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://qiita.com/tomokusaba/items/0ec6659757fab47f5473",
+      "title": "GitHub Copilot Fusion でモデル選びはどう変わるのか",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T17:22:45.000Z",
+      "summary": "Autoの選択とHydraFusionの連携を統合し、タスクに応じたモデル実行を自動化します。利用者はモデル名ではなくeffort level（StandardやHighなど）を指定します。Single、Cascade、Critiqueの3つの実行パターンで処理を行います。",
+      "headline": "GitHubが複数モデルを連携させるCopilot Fusionを提供開始",
+      "points": [
+        "Autoの選択とHydraFusionの連携を統合し、タスクに応じたモデル実行を自動化します。",
+        "利用者はモデル名ではなくeffort level（StandardやHighなど）を指定します。",
+        "Single、Cascade、Critiqueの3つの実行パターンで処理を行います。"
+      ],
+      "impact": "VS Codeなどの対象クライアントを更新し、モデルピッカーでCopilot Fusionを指定して利用します。",
+      "glossary": [
+        {
+          "term": "effort level",
+          "explanation": "AIにかけさせる計算量や推論の深さの度合いを指定する設定値。"
+        },
+        {
+          "term": "オーケストレーション",
+          "explanation": "複数のシステムやモデルを連携させ、統合的に管理・実行する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://speakerdeck.com/stillpedant/thinking-systems",
+      "title": "現代AI入門: 大規模言語モデルから思考するシステムへ — Test-Time Scaling, Loop, Harness, RSI",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T02:50:19.000Z",
+      "summary": "大規模言語モデルの構造や学習時・推論時のスケーリング動向を体系的に解説しています。モデル規模とデータ量の拡大に伴う計算コストの増加や、効率的な学習手法を整理しています。英語と日本語を組み合わせた多言語学習における最適な戦略などを紹介しています。",
+      "headline": "NEC研究者が思考するAIシステムに関する解説スライドを公開",
+      "points": [
+        "大規模言語モデルの構造や学習時・推論時のスケーリング動向を体系的に解説しています。",
+        "モデル規模とデータ量の拡大に伴う計算コストの増加や、効率的な学習手法を整理しています。",
+        "英語と日本語を組み合わせた多言語学習における最適な戦略などを紹介しています。"
+      ],
+      "glossary": [
+        {
+          "term": "スケーリング則",
+          "explanation": "モデルの規模やデータ量、計算量を増やすと性能が予測可能に向上する法則。"
+        },
+        {
+          "term": "パラメータ数",
+          "explanation": "機械学習モデルが学習によって調整する内部変数の総数。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.preferred.jp/ja/blog/tech/1798",
+      "title": "MarkdownからきれいなPDFを作るCLIツールpfpdfを公開しました｜株式会社Preferred Networks",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-28T04:31:34.000Z",
+      "summary": "Markdownファイルをきれいな日本語PDF文書へ変換できるオープンソースのCLIツールです。数式やコードハイライト、表、BibTeX形式の参考文献生成や7種のテンプレートに対応します。初回実行時にレンダリング用のブラウザを自動取得し、フォントも同梱しています。",
+      "headline": "PFNがMarkdownからPDFを生成するpfpdfを公開",
+      "points": [
+        "Markdownファイルをきれいな日本語PDF文書へ変換できるオープンソースのCLIツールです。",
+        "数式やコードハイライト、表、BibTeX形式の参考文献生成や7種のテンプレートに対応します。",
+        "初回実行時にレンダリング用のブラウザを自動取得し、フォントも同梱しています。"
+      ],
+      "impact": "Markdown文書をPDF化したい利用者は、npxコマンドを実行してツールを利用します。",
+      "glossary": [
+        {
+          "term": "CLI",
+          "explanation": "コマンドラインインターフェースの略で、文字入力で操作するツール。"
+        },
+        {
+          "term": "npx",
+          "explanation": "npmパッケージをインストールせずに直接実行できるNode.jsのコマンド。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://anond.hatelabo.jp/20261028103922",
+      "title": "支給PCのスペックがショボすぎて、新人が辞めた。",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-28T01:39:36.000Z",
+      "summary": "メモリ高騰でPC価格が倍増する中、10万円未満の調達規定を変えずに購入が行われました。予算内に収めるためキーボードのない文教向けタブレット30台が配備されました。処理性能が低く業務アプリがフリーズし、トラブルの末に新人が退職しました。",
+      "headline": "規定の上限価格を守った低スペックPC支給で新人が離職",
+      "points": [
+        "メモリ高騰でPC価格が倍増する中、10万円未満の調達規定を変えずに購入が行われました。",
+        "予算内に収めるためキーボードのない文教向けタブレット30台が配備されました。",
+        "処理性能が低く業務アプリがフリーズし、トラブルの末に新人が退職しました。"
+      ],
+      "glossary": [
+        {
+          "term": "eMMC",
+          "explanation": "フラッシュメモリを用いた小型記憶装置で、SSDより低速な規格。"
+        },
+        {
+          "term": "Celeron",
+          "explanation": "インテル社が提供する、エントリー向けで処理性能を抑えた低価格CPU。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://japan.cnet.com/article/35254103/",
+      "title": "PHP財団の常勤職員「たった1人」の衝撃--ウェブの安全を支える人手と資金が足りない",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T09:39:58.000Z",
+      "summary": "PHP 5.4以降に重大な脆弱性が2件発見され、ウェブサイトの更新対応が求められています。保守を支援するPHP Foundationの常勤職員は1人のみで、資金や人手が著しく不足しています。米国の調査では自社サイトを持つ小規模事業者の71％がPHP利用や今回の脆弱性を未把握でした。",
+      "headline": "PHP財団の常勤職員が1人のみと判明し脆弱性対応の資金不足が浮き彫りに",
+      "points": [
+        "PHP 5.4以降に重大な脆弱性が2件発見され、ウェブサイトの更新対応が求められています。",
+        "保守を支援するPHP Foundationの常勤職員は1人のみで、資金や人手が著しく不足しています。",
+        "米国の調査では自社サイトを持つ小規模事業者の71％がPHP利用や今回の脆弱性を未把握でした。"
+      ],
+      "impact": "自らサーバーを管理する利用者はPHPの更新を確認し、一般利用者は不審なリンクの閲覧に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "PHP",
+          "explanation": "主にウェブサーバー側で動作し、動的なウェブページを作成するために使われるプログラミング言語。"
+        },
+        {
+          "term": "VPS",
+          "explanation": "仮想化技術を使い、1台のサーバー上で専用サーバーのような独立した環境を提供するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://www.infoq.com/news/2026/10/microsoft-october-2026-patch/",
+      "title": "Microsoft's October Security Update Fixes 1,400+ Vulnerabilities, One Exploited in the Wild",
+      "source": "InfoQ",
+      "genre": "infra",
+      "publishedAt": "2026-10-28T10:30:00.000Z",
+      "summary": "月例更新で1415件の脆弱性が修正され、うち85件が緊急、1件は既に悪用が確認されています。悪用が確認されたCVE-2026-96951はWindows Shellのセキュリティ機能を回避します。一部環境でWi-FiやVPNが使えなくなる不具合が報告され、段階的な展開の重要性が指摘されています。",
+      "headline": "マイクロソフトが1400件超の脆弱性を修正する月例更新を公開",
+      "points": [
+        "月例更新で1415件の脆弱性が修正され、うち85件が緊急、1件は既に悪用が確認されています。",
+        "悪用が確認されたCVE-2026-96951はWindows Shellのセキュリティ機能を回避します。",
+        "一部環境でWi-FiやVPNが使えなくなる不具合が報告され、段階的な展開の重要性が指摘されています。"
+      ],
+      "impact": "システム管理者は、深刻度9.0以上の脆弱性の優先対処や更新に伴う不具合の検証を進める必要があります。",
+      "glossary": [
+        {
+          "term": "Windows Shell",
+          "explanation": "デスクトップやタスクバーなど、利用者がWindowsを操作するための基本インターフェース。"
+        },
+        {
+          "term": "RCE",
+          "explanation": "攻撃者がネットワーク経由で対象機器を不正に遠隔操作できるようにする脆弱性のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 18,
+    "sourcesTotal": 18,
+    "candidates": 114,
+    "shortlisted": 60,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 26002,
+    "outputTokens": 13094
+  },
+  "offline": false
+}
