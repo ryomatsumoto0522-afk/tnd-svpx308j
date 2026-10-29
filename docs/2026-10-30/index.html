@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-10-30</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年10月30日(金)</p>
+<p class="meta">更新 2026-10-30 06:50 · 取得ソース 17/18 · 選定 15件（候補 60件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">7</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="other" aria-selected="false" aria-controls="panel-other">その他<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener noreferrer">Mistral AIが「Mistral Large 4」のモデル重みを一般公開</a></h3>
+<p class="orig">原題: We&#39;re releasing the weights of Mistral Large 4</p>
+<p class="src">出典: <a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-29</p>
+<ul class="points"><li>1兆パラメータのマルチモーダルモデルで、コーディングや防御的サイバーセキュリティ性能を向上させました。</li><li>Coding Agent Indexで最高峰の性能を示しつつ平均トークン消費量を47%削減しました。</li><li>パフォーマンスと費用のバランスを調整できる3つの推論モード（Low/Medium/High）を導入しました。</li></ul><p class="impact"><b>影響</b>自前環境で高度なコーディングやセキュリティAIを活用したい組織や開発者が、モデルを自由に導入・カスタマイズできます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オープンウェイト</dt><dd>学習済みモデルのパラメータ値が公開され、ローカル環境等で自由に実行や追加学習ができる状態。</dd><dt>強化学習</dt><dd>AIが試行錯誤を通じて最適な行動方針を学び、性能を向上させていく機械学習の手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/" target="_blank" rel="noopener noreferrer">AWSがStep FunctionsをAIエージェントのツールとして提供開始</a></h3>
+<p class="orig">原題: AWS Step Functions workflows now available as AI agent tools</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-29</p>
+<ul class="points"><li>Amazon Bedrock AgentCore Gateway経由でワークフローをツールとして呼び出せるようになりました。</li><li>エージェントが実行と入力を決定し、既存のStandardおよびExpressワークフローを確実に実行します。</li><li>AgentCore Gatewayが利用可能なすべてのAWSリージョンにおいて、標準料金で利用できます。</li></ul><p class="impact"><b>影響</b>AIエージェントに一連の業務処理を確実に実行させたい開発者は、Step Functions開発者ガイドを参考に設定できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Step Functions</dt><dd>複数のAWSサービスを連携させ、一連の処理手順を視覚的に定義して自動実行できるサービス。</dd><dt>Model Context Protocol (MCP)</dt><dd>AIエージェントが外部ツールやデータソースと標準的な手順でやり取りするための接続規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/" target="_blank" rel="noopener noreferrer">AWSが金融機関向けにAIエージェントのガバナンス構築手法を解説</a></h3>
+<p class="orig">原題: 金融機関が AI-DLC を素早く効果的に運用に乗せる方法</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-29</p>
+<ul class="points"><li>コーディングエージェント利用時のリスクを抑え、組織のルールを守らせるガバナンス層の作り方を提示しました。</li><li>永続的コンテキストや自動ゲートなど6つの要素を組み合わせ、KiroやClaude Code等に適用できます。</li><li>欧州の大手保険会社との協業では、Kiroを用いてガバナンス層を3日間で構築した実績を紹介しています。</li></ul><p class="impact"><b>影響</b>AIによる開発の安全な統制を目指す金融機関のエンジニアやリスク管理担当者は、自社での環境構築の参考にできます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ガバナンス</dt><dd>組織の目的達成や健全な運用のために、ルールや内部統制を整備して遵守状況を管理・監督する仕組み。</dd><dt>ハルシネーション</dt><dd>AIがもっともらしい嘘や、事実に反する情報を出力してしまう現象。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener noreferrer">Mistral AIが「Mistral Large 4」のモデル重みを一般公開</a></h3>
+<p class="orig">原題: We&#39;re releasing the weights of Mistral Large 4</p>
+<p class="src">出典: <a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-29</p>
+<ul class="points"><li>1兆パラメータのマルチモーダルモデルで、コーディングや防御的サイバーセキュリティ性能を向上させました。</li><li>Coding Agent Indexで最高峰の性能を示しつつ平均トークン消費量を47%削減しました。</li><li>パフォーマンスと費用のバランスを調整できる3つの推論モード（Low/Medium/High）を導入しました。</li></ul><p class="impact"><b>影響</b>自前環境で高度なコーディングやセキュリティAIを活用したい組織や開発者が、モデルを自由に導入・カスタマイズできます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オープンウェイト</dt><dd>学習済みモデルのパラメータ値が公開され、ローカル環境等で自由に実行や追加学習ができる状態。</dd><dt>強化学習</dt><dd>AIが試行錯誤を通じて最適な行動方針を学び、性能を向上させていく機械学習の手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/" target="_blank" rel="noopener noreferrer">AWSがStep FunctionsをAIエージェントのツールとして提供開始</a></h3>
+<p class="orig">原題: AWS Step Functions workflows now available as AI agent tools</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-10-29</p>
+<ul class="points"><li>Amazon Bedrock AgentCore Gateway経由でワークフローをツールとして呼び出せるようになりました。</li><li>エージェントが実行と入力を決定し、既存のStandardおよびExpressワークフローを確実に実行します。</li><li>AgentCore Gatewayが利用可能なすべてのAWSリージョンにおいて、標準料金で利用できます。</li></ul><p class="impact"><b>影響</b>AIエージェントに一連の業務処理を確実に実行させたい開発者は、Step Functions開発者ガイドを参考に設定できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Step Functions</dt><dd>複数のAWSサービスを連携させ、一連の処理手順を視覚的に定義して自動実行できるサービス。</dd><dt>Model Context Protocol (MCP)</dt><dd>AIエージェントが外部ツールやデータソースと標準的な手順でやり取りするための接続規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/" target="_blank" rel="noopener noreferrer">AWSが金融機関向けにAIエージェントのガバナンス構築手法を解説</a></h3>
+<p class="orig">原題: 金融機関が AI-DLC を素早く効果的に運用に乗せる方法</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-29</p>
+<ul class="points"><li>コーディングエージェント利用時のリスクを抑え、組織のルールを守らせるガバナンス層の作り方を提示しました。</li><li>永続的コンテキストや自動ゲートなど6つの要素を組み合わせ、KiroやClaude Code等に適用できます。</li><li>欧州の大手保険会社との協業では、Kiroを用いてガバナンス層を3日間で構築した実績を紹介しています。</li></ul><p class="impact"><b>影響</b>AIによる開発の安全な統制を目指す金融機関のエンジニアやリスク管理担当者は、自社での環境構築の参考にできます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ガバナンス</dt><dd>組織の目的達成や健全な運用のために、ルールや内部統制を整備して遵守状況を管理・監督する仕組み。</dd><dt>ハルシネーション</dt><dd>AIがもっともらしい嘘や、事実に反する情報を出力してしまう現象。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/protect-mcp-endpoints-at-the-edge-with-amazon-cloudfront-and-aws-waf/" target="_blank" rel="noopener noreferrer">AWSがWAFとCloudFrontによるMCPエンドポイント保護手法を公開</a></h3>
+<p class="orig">原題: Amazon CloudFront と AWS WAF によりエッジで MCP エンドポイントを保護する</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/protect-mcp-endpoints-at-the-edge-with-amazon-cloudfront-and-aws-waf/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-10-29</p>
+<ul class="points"><li>MCPがステートレスなHTTP仕様に改定されたことで、エッジ側でのリクエスト検査が可能になりました。</li><li>Mcp-Methodヘッダーや本文の引数から、不正なSQLやSSRF攻撃のブロック、レート制限を適用できます。</li><li>サーバー側のコード変更を伴わず、CloudFrontやALBの前段にAWS WAFを配置して防御できます。</li></ul><p class="impact"><b>影響</b>MCPサーバーを外部公開する管理者は、CloudFrontとAWS WAFを用いてエッジでのセキュリティ制御を実装できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS WAF</dt><dd>Webアプリケーションへの悪意あるアクセスを検知・遮断し、攻撃から保護するファイアウォールサービス。</dd><dt>SSRF</dt><dd>サーバー側の機能を悪用し、本来アクセスできない内部ネットワーク等へ不正に通信を行わせる攻撃手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.infoq.com/news/2026/10/anthropic-code-review/" target="_blank" rel="noopener noreferrer">AnthropicがAI主導開発でコード全体の把握は不要と主張</a></h3>
+<p class="orig">原題: Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That</p>
+<p class="src">出典: <a href="https://www.infoq.com/news/2026/10/anthropic-code-review/" target="_blank" rel="noopener noreferrer">InfoQ</a> · 2026-10-29</p>
+<ul class="points"><li>AnthropicはClaude Codeの約90%をAIが書き、人間による全体の把握は不要だとする開発体制を公開しました。</li><li>理解はAIの解説で行い、PRは変更内容のリスク階層に応じて人間の承認を最大1人にする仕組みを運用しています。</li><li>AI同士のレビューで修正が50回以上続く課題に対し、レビュー回数の上限を設けるなどの対策も導入しています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>メンタルモデル</dt><dd>人間が頭の中に持っている、システムの仕組みや動作原理に対する理解やイメージのこと。</dd><dt>モノレポ</dt><dd>複数のプロジェクトやソフトウェアのコードを、単一のリポジトリで一括管理する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261029-anti-ai-words-in-script/" target="_blank" rel="noopener noreferrer">危険な単語を混入させAIのコード解析を妨害する手法が発見される</a></h3>
+<p class="orig">原題: AIのコード解析を妨害するために「天安門事件」「台湾独立」「水道水に毒物混入」などのフレーズを大量に混入させる手法が発見される</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261029-anti-ai-words-in-script/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>危険な関数名等をコードに紛れ込ませAIの安全制限を発動させて解析を拒否させる手法が見つかりました。</li><li>OpenAIのモデルは解析を拒否した一方、中国企業のAIは解析に応じるなどモデルごとに効果が異なりました。</li><li>該当コードはボット対策用とみられ、ロシア企業との関連が示唆されていますが意図は未確定です。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ブラウザフィンガープリント</dt><dd>ブラウザやOSなどの情報を組み合わせて端末や訪問者を識別する技術。</dd><dt>難読化</dt><dd>プログラムの動作を保ったまま、コードを人間や機械に読み取りにくく加工する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://forest.watch.impress.co.jp/docs/news/2152248.html" target="_blank" rel="noopener noreferrer">Microsoftが全社共通のAI基盤「Copilot harness」を発表</a></h3>
+<p class="orig">原題: Microsoft、「Copilot harness」を発表 ～「GitHub Copilot」基盤を全社共通化、プレビュー提供／「GitHub Copilot SDK」は「Microsoft Copilot SDK」に</p>
+<p class="src">出典: <a href="https://forest.watch.impress.co.jp/docs/news/2152248.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>GitHub Copilot由来の実行基盤を共通化し、Microsoft Foundryでパブリックプレビュー提供します。</li><li>ランタイムはRustへ移植され、GitHub Copilot SDKはMicrosoft Copilot SDKへと改称されます。</li><li>12月1日から従量課金が始まり、それまではハーネスのランタイムを無料で利用可能です。</li></ul><p class="impact"><b>影響</b>既存のSDK利用者は直ちに変更する必要はありませんが、試用時はエージェント作成時にハーネスを選択する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ハーネス</dt><dd>AIモデルにツールや環境などを与え、自律的な作業を進められるようにする実行基盤のこと。</dd><dt>サンドボックス</dt><dd>プログラムを隔離された安全な領域で実行し、外部への悪影響を防ぐ仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://qiita.com/supportapp3/items/f2314b9fe26becdc29f8" target="_blank" rel="noopener noreferrer">Linuxの起動中プロセスの環境変数はprocから読めると判明</a></h3>
+<p class="orig">原題: 起動中の開発サーバーの環境変数は /proc/PID/environ から読める：.env を消しても残る、Codex のサンドボックスからは見えなかった（Linux 実機）</p>
+<p class="src">出典: <a href="https://qiita.com/supportapp3/items/f2314b9fe26becdc29f8" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-10-30</p>
+<ul class="points"><li>Linuxでは同じユーザーで動くプロセスの環境変数を/proc/PID/environ等で読めます。</li><li>起動後に.envファイルを削除しても、稼働中プロセスの環境変数には値が残ります。</li><li>codex-cliのサンドボックスでは既定でプロセスが遮断され閲覧不可でした。</li></ul><p class="impact"><b>影響</b>AIエージェントに機密を読ませたくない場合はプロセスの再起動や別ユーザー実行の検討が必要です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>PID</dt><dd>実行中の各プロセスを一意に識別するためにOSが割り当てる識別番号。</dd><dt>サンドボックス</dt><dd>外部に影響を与えないよう制限された安全な隔離環境でプログラムを動かす仕組み。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://gihyo.jp/article/2026/10/life-with-ai-agents-01" target="_blank" rel="noopener noreferrer">開発者がAIエージェントによるOSS保守の実践記録を公開</a></h3>
+<p class="orig">原題: コーディングエージェントで変わったOSS開発 ——pecoの改修から3Dモデリング、開発ループの整備とメンテナンスの課題まで | gihyo.jp</p>
+<p class="src">出典: <a href="https://gihyo.jp/article/2026/10/life-with-ai-agents-01" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-28</p>
+<ul class="points"><li>Claude Codeを使い6年以上放置されたpecoのリファクタや長期の未解決バグを解消しました。</li><li>知識が乏しかった3Dモデリング関連のGo製ツール開発にもエージェントを活用しました。</li><li>エージェントに任せきりにせず人間側で開発ループを構築することが重要と指摘しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リファクタ</dt><dd>外部から見た動作を変えずに、プログラムの内部構造を整理して改善する作業。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">米政府等のPAN-OS機器25台が複合エクスプロイトで侵害受ける</a></h3>
+<p class="orig">原題: Chained PHP2Shell exploit roots 25 servers, including US Government servers</p>
+<p class="src">出典: <a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-29</p>
+<ul class="points"><li>PHP2Shellとカーネル特権昇格脆弱性の連鎖によりPAN-OS管理サーバーが侵害されました。</li><li>米国や日本などの25台が侵害され米政府関連環境のActive Directoryへの侵入が確認されました。</li><li>Palo Alto Networksは対象ブランチに向けて修正版PAN-OSをリリースしています。</li></ul><p class="impact"><b>影響</b>影響を受けるPAN-OSの管理者は修正版へのアップデートを行う必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>特権昇格</dt><dd>制限された一般権限からシステム管理者などの強い権限を不正に奪取すること。</dd><dt>Active Directory</dt><dd>ネットワーク上の端末やユーザー情報、アクセス権を一括管理するWindowsの仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://ashunar0.dev/posts/cloudflare-free-plan/" target="_blank" rel="noopener noreferrer">Cloudflareが手厚い無料プランを提供し続けられる理由が解説される</a></h3>
+<p class="orig">原題: Cloudflare はなんでこんなに無料で使わせてくれるの？ | ashunar0</p>
+<p class="src">出典: <a href="https://ashunar0.dev/posts/cloudflare-free-plan/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>無料利用者が増えることで回線費用を抑えられ、攻撃データの収集や機能テストに役立つと説明されています。</li><li>通信には有料顧客向けの余剰回線が活用されるため、追加の設備費用があまりかからない仕組みです。</li></ul><p class="impact"><b>影響</b>無料プラン利用者は、動画など大容量ファイルの配信が規約で禁止されている点に注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ピアリング</dt><dd>ネットワーク事業者同士が相互に回線を直接接続し、トラフィックを交換すること。</dd><dt>ISP</dt><dd>インターネットへの接続サービスを提供する事業者のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://iptrust.co/blog/if-ipv4-were-land" target="_blank" rel="noopener noreferrer">各国のIPv4保有数を世界の陸地面積に見立てたデータが公開</a></h3>
+<p class="orig">原題: If IPv4 were land</p>
+<p class="src">出典: <a href="https://iptrust.co/blog/if-ipv4-were-land" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-10-29</p>
+<ul class="points"><li>各国のIPv4保有割合に応じて世界の陸地面積を再配分する試みの算出方法が示されました。</li><li>10万個以上のIPv4と2万平方キロメートル以上の面積を持つ国が分析対象です。</li><li>IP Trustの2026年10月の位置情報データと地図データが計算に使用されています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPv4アドレス</dt><dd>インターネットに接続された機器を識別するために割り当てられる固有の番号。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://ubuntu.com/security/CVE-2026-98432" target="_blank" rel="noopener noreferrer">UbuntuのLinuxカーネルに脆弱性、修正作業が進行中</a></h3>
+<p class="orig">原題: CVE-2026-98432 | Ubuntu</p>
+<p class="src">出典: <a href="https://ubuntu.com/security/CVE-2026-98432" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>Ubuntuの複数バージョンに影響する脆弱性CVE-2026-98432が確認されました。</li><li>26.10や24.04 LTSなどで脆弱性が確認され、修正作業が進められています。</li><li>14.04 LTS trustyは影響を受けないと報告されています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CVE</dt><dd>ソフトウェアのセキュリティ脆弱性に付与される、世界共通の識別番号です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-other" role="tabpanel"><h2>その他</h2><article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2610/29/2000002716/" target="_blank" rel="noopener noreferrer">グッスマ直販サイトに不正アクセス、カード情報など流出か</a></h3>
+<p class="orig">原題: グッスマ、顧客の2800人のカード番号全16桁＋セキュリティコードなど流出か 下4桁は40万枚分</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2610/29/2000002716/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>直販サイトへの不正アクセスで、顧客2800人のカード番号全桁やセキュリティコードが漏えいした恐れがあります。</li><li>決済ページに不正プログラムが置かれ、脆弱性を突いて管理者権限が取得されたとみられます。</li><li>登録済みカード40万2466枚の下4桁や、注文者7673人の氏名や住所なども流出の可能性があります。</li></ul><p class="impact"><b>影響</b>対象の顧客には個別連絡が行われており、直販サイトは安全性が確認されるまで再開されません。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>セキュリティコード</dt><dd>クレジットカード裏面などに印字されている、所持者本人を確認するための暗証番号です。</dd></dl></details>
+</article>
+<article class="card g-other">
+<span class="badge">その他</span>
+<h3><a href="https://news.web.nhk/newsweb/na/nd-20261029de67976" target="_blank" rel="noopener noreferrer">アララが不正アクセス被害、登録メアド約301万件が流出</a></h3>
+<p class="orig">原題: メール配信会社「アララ」 不正アクセスで300万件のメアド流出 | NHKニュース</p>
+<p class="src">出典: <a href="https://news.web.nhk/newsweb/na/nd-20261029de67976" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-10-29</p>
+<ul class="points"><li>企業向けメール配信のアララが不正アクセスを受け、登録メールアドレス約301万件が外部に流出しました。</li><li>同社は現在、メールの配信を停止した上で詳細な調査を進めています。</li></ul>
+
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-10-29/">← 2026-10-29</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（30）</summary><ul><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-28T21:40:54.169Z",
+  "lastRun": "2026-10-29T21:50:17.223Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -495,6 +495,21 @@
     "https://www.preferred.jp/ja/blog/tech/1798": "2026-10-29",
     "https://anond.hatelabo.jp/20261028103922": "2026-10-29",
     "https://japan.cnet.com/article/35254103": "2026-10-29",
-    "https://www.infoq.com/news/2026/10/microsoft-october-2026-patch": "2026-10-29"
+    "https://www.infoq.com/news/2026/10/microsoft-october-2026-patch": "2026-10-29",
+    "https://mistral.ai/news/mistral-large-4-oss": "2026-10-30",
+    "https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools": "2026-10-30",
+    "https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel": "2026-10-30",
+    "https://aws.amazon.com/jp/blogs/news/protect-mcp-endpoints-at-the-edge-with-amazon-cloudfront-and-aws-waf": "2026-10-30",
+    "https://www.infoq.com/news/2026/10/anthropic-code-review": "2026-10-30",
+    "https://gigazine.net/news/20261029-anti-ai-words-in-script": "2026-10-30",
+    "https://forest.watch.impress.co.jp/docs/news/2152248.html": "2026-10-30",
+    "https://ashunar0.dev/posts/cloudflare-free-plan": "2026-10-30",
+    "https://qiita.com/supportapp3/items/f2314b9fe26becdc29f8": "2026-10-30",
+    "https://gihyo.jp/article/2026/10/life-with-ai-agents-01": "2026-10-30",
+    "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers": "2026-10-30",
+    "https://iptrust.co/blog/if-ipv4-were-land": "2026-10-30",
+    "https://ubuntu.com/security/CVE-2026-98432": "2026-10-30",
+    "https://www.itmedia.co.jp/news/article/2610/29/2000002716": "2026-10-30",
+    "https://news.web.nhk/newsweb/na/nd-20261029de67976": "2026-10-30"
   }
 }

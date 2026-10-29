@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-29T21:50:17.223Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "title": "We're releasing the weights of Mistral Large 4",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T14:13:21Z",
+      "summary": "1兆パラメータのマルチモーダルモデルで、コーディングや防御的サイバーセキュリティ性能を向上させました。Coding Agent Indexで最高峰の性能を示しつつ平均トークン消費量を47%削減しました。パフォーマンスと費用のバランスを調整できる3つの推論モード（Low/Medium/High）を導入しました。",
+      "headline": "Mistral AIが「Mistral Large 4」のモデル重みを一般公開",
+      "points": [
+        "1兆パラメータのマルチモーダルモデルで、コーディングや防御的サイバーセキュリティ性能を向上させました。",
+        "Coding Agent Indexで最高峰の性能を示しつつ平均トークン消費量を47%削減しました。",
+        "パフォーマンスと費用のバランスを調整できる3つの推論モード（Low/Medium/High）を導入しました。"
+      ],
+      "impact": "自前環境で高度なコーディングやセキュリティAIを活用したい組織や開発者が、モデルを自由に導入・カスタマイズできます。",
+      "glossary": [
+        {
+          "term": "オープンウェイト",
+          "explanation": "学習済みモデルのパラメータ値が公開され、ローカル環境等で自由に実行や追加学習ができる状態。"
+        },
+        {
+          "term": "強化学習",
+          "explanation": "AIが試行錯誤を通じて最適な行動方針を学び、性能を向上させていく機械学習の手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/",
+      "title": "AWS Step Functions workflows now available as AI agent tools",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T08:00:00.000Z",
+      "summary": "Amazon Bedrock AgentCore Gateway経由でワークフローをツールとして呼び出せるようになりました。エージェントが実行と入力を決定し、既存のStandardおよびExpressワークフローを確実に実行します。AgentCore Gatewayが利用可能なすべてのAWSリージョンにおいて、標準料金で利用できます。",
+      "headline": "AWSがStep FunctionsをAIエージェントのツールとして提供開始",
+      "points": [
+        "Amazon Bedrock AgentCore Gateway経由でワークフローをツールとして呼び出せるようになりました。",
+        "エージェントが実行と入力を決定し、既存のStandardおよびExpressワークフローを確実に実行します。",
+        "AgentCore Gatewayが利用可能なすべてのAWSリージョンにおいて、標準料金で利用できます。"
+      ],
+      "impact": "AIエージェントに一連の業務処理を確実に実行させたい開発者は、Step Functions開発者ガイドを参考に設定できます。",
+      "glossary": [
+        {
+          "term": "AWS Step Functions",
+          "explanation": "複数のAWSサービスを連携させ、一連の処理手順を視覚的に定義して自動実行できるサービス。"
+        },
+        {
+          "term": "Model Context Protocol (MCP)",
+          "explanation": "AIエージェントが外部ツールやデータソースと標準的な手順でやり取りするための接続規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/jp/blogs/news/how-financial-institutions-can-operationalize-ai-dlc-quickly-and-effectivel/",
+      "title": "金融機関が AI-DLC を素早く効果的に運用に乗せる方法",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T03:23:34.000Z",
+      "summary": "コーディングエージェント利用時のリスクを抑え、組織のルールを守らせるガバナンス層の作り方を提示しました。永続的コンテキストや自動ゲートなど6つの要素を組み合わせ、KiroやClaude Code等に適用できます。欧州の大手保険会社との協業では、Kiroを用いてガバナンス層を3日間で構築した実績を紹介しています。",
+      "headline": "AWSが金融機関向けにAIエージェントのガバナンス構築手法を解説",
+      "points": [
+        "コーディングエージェント利用時のリスクを抑え、組織のルールを守らせるガバナンス層の作り方を提示しました。",
+        "永続的コンテキストや自動ゲートなど6つの要素を組み合わせ、KiroやClaude Code等に適用できます。",
+        "欧州の大手保険会社との協業では、Kiroを用いてガバナンス層を3日間で構築した実績を紹介しています。"
+      ],
+      "impact": "AIによる開発の安全な統制を目指す金融機関のエンジニアやリスク管理担当者は、自社での環境構築の参考にできます。",
+      "glossary": [
+        {
+          "term": "ガバナンス",
+          "explanation": "組織の目的達成や健全な運用のために、ルールや内部統制を整備して遵守状況を管理・監督する仕組み。"
+        },
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIがもっともらしい嘘や、事実に反する情報を出力してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/jp/blogs/news/protect-mcp-endpoints-at-the-edge-with-amazon-cloudfront-and-aws-waf/",
+      "title": "Amazon CloudFront と AWS WAF によりエッジで MCP エンドポイントを保護する",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T00:49:07.000Z",
+      "summary": "MCPがステートレスなHTTP仕様に改定されたことで、エッジ側でのリクエスト検査が可能になりました。Mcp-Methodヘッダーや本文の引数から、不正なSQLやSSRF攻撃のブロック、レート制限を適用できます。サーバー側のコード変更を伴わず、CloudFrontやALBの前段にAWS WAFを配置して防御できます。",
+      "headline": "AWSがWAFとCloudFrontによるMCPエンドポイント保護手法を公開",
+      "points": [
+        "MCPがステートレスなHTTP仕様に改定されたことで、エッジ側でのリクエスト検査が可能になりました。",
+        "Mcp-Methodヘッダーや本文の引数から、不正なSQLやSSRF攻撃のブロック、レート制限を適用できます。",
+        "サーバー側のコード変更を伴わず、CloudFrontやALBの前段にAWS WAFを配置して防御できます。"
+      ],
+      "impact": "MCPサーバーを外部公開する管理者は、CloudFrontとAWS WAFを用いてエッジでのセキュリティ制御を実装できます。",
+      "glossary": [
+        {
+          "term": "AWS WAF",
+          "explanation": "Webアプリケーションへの悪意あるアクセスを検知・遮断し、攻撃から保護するファイアウォールサービス。"
+        },
+        {
+          "term": "SSRF",
+          "explanation": "サーバー側の機能を悪用し、本来アクセスできない内部ネットワーク等へ不正に通信を行わせる攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.infoq.com/news/2026/10/anthropic-code-review/",
+      "title": "Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That",
+      "source": "InfoQ",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T09:58:00.000Z",
+      "summary": "AnthropicはClaude Codeの約90%をAIが書き、人間による全体の把握は不要だとする開発体制を公開しました。理解はAIの解説で行い、PRは変更内容のリスク階層に応じて人間の承認を最大1人にする仕組みを運用しています。AI同士のレビューで修正が50回以上続く課題に対し、レビュー回数の上限を設けるなどの対策も導入しています。",
+      "headline": "AnthropicがAI主導開発でコード全体の把握は不要と主張",
+      "points": [
+        "AnthropicはClaude Codeの約90%をAIが書き、人間による全体の把握は不要だとする開発体制を公開しました。",
+        "理解はAIの解説で行い、PRは変更内容のリスク階層に応じて人間の承認を最大1人にする仕組みを運用しています。",
+        "AI同士のレビューで修正が50回以上続く課題に対し、レビュー回数の上限を設けるなどの対策も導入しています。"
+      ],
+      "glossary": [
+        {
+          "term": "メンタルモデル",
+          "explanation": "人間が頭の中に持っている、システムの仕組みや動作原理に対する理解やイメージのこと。"
+        },
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトやソフトウェアのコードを、単一のリポジトリで一括管理する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://gigazine.net/news/20261029-anti-ai-words-in-script/",
+      "title": "AIのコード解析を妨害するために「天安門事件」「台湾独立」「水道水に毒物混入」などのフレーズを大量に混入させる手法が発見される",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T11:05:08.000Z",
+      "summary": "危険な関数名等をコードに紛れ込ませAIの安全制限を発動させて解析を拒否させる手法が見つかりました。OpenAIのモデルは解析を拒否した一方、中国企業のAIは解析に応じるなどモデルごとに効果が異なりました。該当コードはボット対策用とみられ、ロシア企業との関連が示唆されていますが意図は未確定です。",
+      "headline": "危険な単語を混入させAIのコード解析を妨害する手法が発見される",
+      "points": [
+        "危険な関数名等をコードに紛れ込ませAIの安全制限を発動させて解析を拒否させる手法が見つかりました。",
+        "OpenAIのモデルは解析を拒否した一方、中国企業のAIは解析に応じるなどモデルごとに効果が異なりました。",
+        "該当コードはボット対策用とみられ、ロシア企業との関連が示唆されていますが意図は未確定です。"
+      ],
+      "glossary": [
+        {
+          "term": "ブラウザフィンガープリント",
+          "explanation": "ブラウザやOSなどの情報を組み合わせて端末や訪問者を識別する技術。"
+        },
+        {
+          "term": "難読化",
+          "explanation": "プログラムの動作を保ったまま、コードを人間や機械に読み取りにくく加工する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2152248.html",
+      "title": "Microsoft、「Copilot harness」を発表 ～「GitHub Copilot」基盤を全社共通化、プレビュー提供／「GitHub Copilot SDK」は「Microsoft Copilot SDK」に",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T09:18:31.000Z",
+      "summary": "GitHub Copilot由来の実行基盤を共通化し、Microsoft Foundryでパブリックプレビュー提供します。ランタイムはRustへ移植され、GitHub Copilot SDKはMicrosoft Copilot SDKへと改称されます。12月1日から従量課金が始まり、それまではハーネスのランタイムを無料で利用可能です。",
+      "headline": "Microsoftが全社共通のAI基盤「Copilot harness」を発表",
+      "points": [
+        "GitHub Copilot由来の実行基盤を共通化し、Microsoft Foundryでパブリックプレビュー提供します。",
+        "ランタイムはRustへ移植され、GitHub Copilot SDKはMicrosoft Copilot SDKへと改称されます。",
+        "12月1日から従量課金が始まり、それまではハーネスのランタイムを無料で利用可能です。"
+      ],
+      "impact": "既存のSDK利用者は直ちに変更する必要はありませんが、試用時はエージェント作成時にハーネスを選択する必要があります。",
+      "glossary": [
+        {
+          "term": "ハーネス",
+          "explanation": "AIモデルにツールや環境などを与え、自律的な作業を進められるようにする実行基盤のこと。"
+        },
+        {
+          "term": "サンドボックス",
+          "explanation": "プログラムを隔離された安全な領域で実行し、外部への悪影響を防ぐ仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://ashunar0.dev/posts/cloudflare-free-plan/",
+      "title": "Cloudflare はなんでこんなに無料で使わせてくれるの？ | ashunar0",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-29T03:25:44.000Z",
+      "summary": "無料利用者が増えることで回線費用を抑えられ、攻撃データの収集や機能テストに役立つと説明されています。通信には有料顧客向けの余剰回線が活用されるため、追加の設備費用があまりかからない仕組みです。",
+      "headline": "Cloudflareが手厚い無料プランを提供し続けられる理由が解説される",
+      "points": [
+        "無料利用者が増えることで回線費用を抑えられ、攻撃データの収集や機能テストに役立つと説明されています。",
+        "通信には有料顧客向けの余剰回線が活用されるため、追加の設備費用があまりかからない仕組みです。"
+      ],
+      "impact": "無料プラン利用者は、動画など大容量ファイルの配信が規約で禁止されている点に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "ピアリング",
+          "explanation": "ネットワーク事業者同士が相互に回線を直接接続し、トラフィックを交換すること。"
+        },
+        {
+          "term": "ISP",
+          "explanation": "インターネットへの接続サービスを提供する事業者のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://qiita.com/supportapp3/items/f2314b9fe26becdc29f8",
+      "title": "起動中の開発サーバーの環境変数は /proc/PID/environ から読める：.env を消しても残る、Codex のサンドボックスからは見えなかった（Linux 実機）",
+      "source": "Qiita（AI）",
+      "genre": "backend",
+      "publishedAt": "2026-10-29T20:17:30.000Z",
+      "summary": "Linuxでは同じユーザーで動くプロセスの環境変数を/proc/PID/environ等で読めます。起動後に.envファイルを削除しても、稼働中プロセスの環境変数には値が残ります。codex-cliのサンドボックスでは既定でプロセスが遮断され閲覧不可でした。",
+      "headline": "Linuxの起動中プロセスの環境変数はprocから読めると判明",
+      "points": [
+        "Linuxでは同じユーザーで動くプロセスの環境変数を/proc/PID/environ等で読めます。",
+        "起動後に.envファイルを削除しても、稼働中プロセスの環境変数には値が残ります。",
+        "codex-cliのサンドボックスでは既定でプロセスが遮断され閲覧不可でした。"
+      ],
+      "impact": "AIエージェントに機密を読ませたくない場合はプロセスの再起動や別ユーザー実行の検討が必要です。",
+      "glossary": [
+        {
+          "term": "PID",
+          "explanation": "実行中の各プロセスを一意に識別するためにOSが割り当てる識別番号。"
+        },
+        {
+          "term": "サンドボックス",
+          "explanation": "外部に影響を与えないよう制限された安全な隔離環境でプログラムを動かす仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://gihyo.jp/article/2026/10/life-with-ai-agents-01",
+      "title": "コーディングエージェントで変わったOSS開発 ——pecoの改修から3Dモデリング、開発ループの整備とメンテナンスの課題まで | gihyo.jp",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T03:33:39.000Z",
+      "summary": "Claude Codeを使い6年以上放置されたpecoのリファクタや長期の未解決バグを解消しました。知識が乏しかった3Dモデリング関連のGo製ツール開発にもエージェントを活用しました。エージェントに任せきりにせず人間側で開発ループを構築することが重要と指摘しています。",
+      "headline": "開発者がAIエージェントによるOSS保守の実践記録を公開",
+      "points": [
+        "Claude Codeを使い6年以上放置されたpecoのリファクタや長期の未解決バグを解消しました。",
+        "知識が乏しかった3Dモデリング関連のGo製ツール開発にもエージェントを活用しました。",
+        "エージェントに任せきりにせず人間側で開発ループを構築することが重要と指摘しています。"
+      ],
+      "glossary": [
+        {
+          "term": "リファクタ",
+          "explanation": "外部から見た動作を変えずに、プログラムの内部構造を整理して改善する作業。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-10-29T10:42:41Z",
+      "summary": "PHP2Shellとカーネル特権昇格脆弱性の連鎖によりPAN-OS管理サーバーが侵害されました。米国や日本などの25台が侵害され米政府関連環境のActive Directoryへの侵入が確認されました。Palo Alto Networksは対象ブランチに向けて修正版PAN-OSをリリースしています。",
+      "headline": "米政府等のPAN-OS機器25台が複合エクスプロイトで侵害受ける",
+      "points": [
+        "PHP2Shellとカーネル特権昇格脆弱性の連鎖によりPAN-OS管理サーバーが侵害されました。",
+        "米国や日本などの25台が侵害され米政府関連環境のActive Directoryへの侵入が確認されました。",
+        "Palo Alto Networksは対象ブランチに向けて修正版PAN-OSをリリースしています。"
+      ],
+      "impact": "影響を受けるPAN-OSの管理者は修正版へのアップデートを行う必要があります。",
+      "glossary": [
+        {
+          "term": "特権昇格",
+          "explanation": "制限された一般権限からシステム管理者などの強い権限を不正に奪取すること。"
+        },
+        {
+          "term": "Active Directory",
+          "explanation": "ネットワーク上の端末やユーザー情報、アクセス権を一括管理するWindowsの仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://iptrust.co/blog/if-ipv4-were-land",
+      "title": "If IPv4 were land",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-29T12:19:00Z",
+      "summary": "各国のIPv4保有割合に応じて世界の陸地面積を再配分する試みの算出方法が示されました。10万個以上のIPv4と2万平方キロメートル以上の面積を持つ国が分析対象です。IP Trustの2026年10月の位置情報データと地図データが計算に使用されています。",
+      "headline": "各国のIPv4保有数を世界の陸地面積に見立てたデータが公開",
+      "points": [
+        "各国のIPv4保有割合に応じて世界の陸地面積を再配分する試みの算出方法が示されました。",
+        "10万個以上のIPv4と2万平方キロメートル以上の面積を持つ国が分析対象です。",
+        "IP Trustの2026年10月の位置情報データと地図データが計算に使用されています。"
+      ],
+      "glossary": [
+        {
+          "term": "IPv4アドレス",
+          "explanation": "インターネットに接続された機器を識別するために割り当てられる固有の番号。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://ubuntu.com/security/CVE-2026-98432",
+      "title": "CVE-2026-98432 | Ubuntu",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-29T04:39:46.000Z",
+      "summary": "Ubuntuの複数バージョンに影響する脆弱性CVE-2026-98432が確認されました。26.10や24.04 LTSなどで脆弱性が確認され、修正作業が進められています。14.04 LTS trustyは影響を受けないと報告されています。",
+      "headline": "UbuntuのLinuxカーネルに脆弱性、修正作業が進行中",
+      "points": [
+        "Ubuntuの複数バージョンに影響する脆弱性CVE-2026-98432が確認されました。",
+        "26.10や24.04 LTSなどで脆弱性が確認され、修正作業が進められています。",
+        "14.04 LTS trustyは影響を受けないと報告されています。"
+      ],
+      "glossary": [
+        {
+          "term": "CVE",
+          "explanation": "ソフトウェアのセキュリティ脆弱性に付与される、世界共通の識別番号です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002716/",
+      "title": "グッスマ、顧客の2800人のカード番号全16桁＋セキュリティコードなど流出か 下4桁は40万枚分",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-29T06:15:08.000Z",
+      "summary": "直販サイトへの不正アクセスで、顧客2800人のカード番号全桁やセキュリティコードが漏えいした恐れがあります。決済ページに不正プログラムが置かれ、脆弱性を突いて管理者権限が取得されたとみられます。登録済みカード40万2466枚の下4桁や、注文者7673人の氏名や住所なども流出の可能性があります。",
+      "headline": "グッスマ直販サイトに不正アクセス、カード情報など流出か",
+      "points": [
+        "直販サイトへの不正アクセスで、顧客2800人のカード番号全桁やセキュリティコードが漏えいした恐れがあります。",
+        "決済ページに不正プログラムが置かれ、脆弱性を突いて管理者権限が取得されたとみられます。",
+        "登録済みカード40万2466枚の下4桁や、注文者7673人の氏名や住所なども流出の可能性があります。"
+      ],
+      "impact": "対象の顧客には個別連絡が行われており、直販サイトは安全性が確認されるまで再開されません。",
+      "glossary": [
+        {
+          "term": "セキュリティコード",
+          "explanation": "クレジットカード裏面などに印字されている、所持者本人を確認するための暗証番号です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://news.web.nhk/newsweb/na/nd-20261029de67976",
+      "title": "メール配信会社「アララ」 不正アクセスで300万件のメアド流出 | NHKニュース",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-29T09:27:57.000Z",
+      "summary": "企業向けメール配信のアララが不正アクセスを受け、登録メールアドレス約301万件が外部に流出しました。同社は現在、メールの配信を停止した上で詳細な調査を進めています。",
+      "headline": "アララが不正アクセス被害、登録メアド約301万件が流出",
+      "points": [
+        "企業向けメール配信のアララが不正アクセスを受け、登録メールアドレス約301万件が外部に流出しました。",
+        "同社は現在、メールの配信を停止した上で詳細な調査を進めています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 110,
+    "shortlisted": 60,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 25984,
+    "outputTokens": 12525
+  },
+  "offline": false
+}
