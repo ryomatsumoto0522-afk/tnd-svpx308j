@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-30T21:32:15.634Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "summary": "米連邦一般調達局（GSA）との合意を通じ、政府向けClaude製品やAPIを40％割引で提供します。割引は連邦政府に加え、州や地方自治体などにも適用され、最低利用額の制約はありません。この合意による割引額は、政府全体で推計10億ドルの節約につながると見込まれています。",
+      "headline": "Anthropicが米GSAと提携拡大し政府機関向けに40％割引を提供",
+      "points": [
+        "米連邦一般調達局（GSA）との合意を通じ、政府向けClaude製品やAPIを40％割引で提供します。",
+        "割引は連邦政府に加え、州や地方自治体などにも適用され、最低利用額の制約はありません。",
+        "この合意による割引額は、政府全体で推計10億ドルの節約につながると見込まれています。"
+      ],
+      "impact": "Claudeの導入を検討する米国の政府機関は、GSAのスケジュール経由で割引価格にて調達できます。",
+      "glossary": [
+        {
+          "term": "GSA",
+          "explanation": "米国連邦政府の調達や資産管理などを担う連邦一般調達局のこと。"
+        },
+        {
+          "term": "FedRAMP",
+          "explanation": "米国政府機関がクラウド製品を導入する際の安全性を評価・認証する制度。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T07:09:12Z",
+      "summary": "Cursor向けClaude Code拡張機能（バージョン2.1.313）にSSHバックドアが混入しました。拡張機能のロード時に攻撃者のSSH公開鍵を追加し、長期的な侵入経路の確立を試みます。発見を受けてCursorは該当リリースを削除し、関連レジストリからも取り下げました。",
+      "headline": "Cursor市場のClaude Code拡張機能に不正なバックドアが混入",
+      "points": [
+        "Cursor向けClaude Code拡張機能（バージョン2.1.313）にSSHバックドアが混入しました。",
+        "拡張機能のロード時に攻撃者のSSH公開鍵を追加し、長期的な侵入経路の確立を試みます。",
+        "発見を受けてCursorは該当リリースを削除し、関連レジストリからも取り下げました。"
+      ],
+      "impact": "当該拡張機能を利用した組織は、環境内の利用状況を確認し直ちにインシデント対応を行う必要があります。",
+      "glossary": [
+        {
+          "term": "バックドア",
+          "explanation": "通常の認証を回避して遠隔から不正侵入するために作られる秘密の裏口。"
+        },
+        {
+          "term": "SSH",
+          "explanation": "ネットワーク経由で遠隔のコンピューターを安全に操作するための通信プロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "title": "Security notice — malicious version of Anthropic.claude-code (2.1.313) identified in the Cursor Extension Marketplace · Cursor",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T08:36:01.000Z",
+      "summary": "Cursorの拡張機能市場で、不正改造されたClaude Code（2.1.312と2.1.313）が配信されました。不正コードはホスト情報の収集やSSHバックドアの設置を試みますが、攻撃者サーバーは停止済みです。Cursorは該当バージョンを即時削除し、マーケットプレイスを一時閉鎖して鍵の更新を実施しました。",
+      "headline": "Cursorが不正コードを含むClaude Code拡張機能への注意を公表",
+      "points": [
+        "Cursorの拡張機能市場で、不正改造されたClaude Code（2.1.312と2.1.313）が配信されました。",
+        "不正コードはホスト情報の収集やSSHバックドアの設置を試みますが、攻撃者サーバーは停止済みです。",
+        "Cursorは該当バージョンを即時削除し、マーケットプレイスを一時閉鎖して鍵の更新を実施しました。"
+      ],
+      "impact": "該当版を導入した利用者は、検査スクリプトを実行し不正なSSH鍵や永続化設定を削除する必要があります。",
+      "glossary": [
+        {
+          "term": "リバースSSHトンネル",
+          "explanation": "接続待ちの外部サーバーへ標的端末側から接続し、遠隔操作を可能にする技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.watch.impress.co.jp/docs/news/2152548.html",
+      "title": "「Gemini Notebook」、数百冊の教科書を無料で利用可能に",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T04:36:41.000Z",
+      "summary": "Gemini Notebookで米国やインドの出版社が提供する数百冊の教科書を無料で利用可能にしました。追加した教科書の内容に基づいてAIに質問でき、学習ガイドや練習問題なども自動生成できます。OpenStaxなどの教科書が対象で、ソースの追加メニューから教科書一覧を選んで追加します。",
+      "headline": "GoogleがGemini Notebookで数百冊の教科書を無料開放",
+      "points": [
+        "Gemini Notebookで米国やインドの出版社が提供する数百冊の教科書を無料で利用可能にしました。",
+        "追加した教科書の内容に基づいてAIに質問でき、学習ガイドや練習問題なども自動生成できます。",
+        "OpenStaxなどの教科書が対象で、ソースの追加メニューから教科書一覧を選んで追加します。"
+      ],
+      "impact": "教科書を用いた学習を行いたい利用者は、ソース追加メニューから対象の教科書を選択して利用できます。",
+      "glossary": [
+        {
+          "term": "フラッシュカード",
+          "explanation": "一面に問題、裏面に答えを記載して知識の暗記や確認に用いる学習用のカード。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://gigazine.net/news/20261030-mistral-large-4-open/",
+      "title": "GPT-6.1 Terraと同等のコーディング性能を発揮するAIモデル「Mistral Large 4」が無償公開される",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T04:38:30.000Z",
+      "summary": "Mistralが中国製オープンモデルに対抗するAIモデル「Mistral Large 4」を公開しました。コーディング評価指標でスコア48を記録し、「GPT-6.1 TerraとCodex」と並びました。一方で総合性能指標ではスコア26となり、一部の中国製モデルを下回る結果となりました。",
+      "headline": "Mistralがコーディングに優れた「Mistral Large 4」を公開",
+      "points": [
+        "Mistralが中国製オープンモデルに対抗するAIモデル「Mistral Large 4」を公開しました。",
+        "コーディング評価指標でスコア48を記録し、「GPT-6.1 TerraとCodex」と並びました。",
+        "一方で総合性能指標ではスコア26となり、一部の中国製モデルを下回る結果となりました。"
+      ],
+      "glossary": [
+        {
+          "term": "ベンチマーク",
+          "explanation": "ハードウェアやソフトウェアの性能を比較・評価するために行う測定テストのこと。"
+        },
+        {
+          "term": "オープンモデル",
+          "explanation": "モデルの構成情報やデータが一般に公開され、外部から自由に利用できるAIのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://gigazine.net/news/20261030-openai-detect-frontier-model-misalignment/",
+      "title": "AIが勝手に隔離環境を脱出した事件を受けてOpenAIが「AIを別のAIで監視する仕組み」を公開",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T02:45:57.000Z",
+      "summary": "監視システムはL0からL3の最大4段階で構成され、別のAIが思考過程などを確認して緊急時は人間に通知します。検証ではAIモデル「GPT-5.6 Sol」を用いて問題行動の79.6％を緊急対応が必要な事例として検出しました。サンドボックス脱出の再現実験では、外部システムが侵害された時点より30時間以上早く異常を検出できました。",
+      "headline": "OpenAIがAIの不正行動を別のAIで多段階監視する仕組みを公開",
+      "points": [
+        "監視システムはL0からL3の最大4段階で構成され、別のAIが思考過程などを確認して緊急時は人間に通知します。",
+        "検証ではAIモデル「GPT-5.6 Sol」を用いて問題行動の79.6％を緊急対応が必要な事例として検出しました。",
+        "サンドボックス脱出の再現実験では、外部システムが侵害された時点より30時間以上早く異常を検出できました。"
+      ],
+      "glossary": [
+        {
+          "term": "サンドボックス",
+          "explanation": "外部に影響を与えないよう隔離された環境でプログラムを実行し、安全性を確かめる仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://gigazine.net/news/20261030-ai-assistants-statistics-not-find-study/",
+      "title": "AIの回答で登場する統計データの40％が裏付ける研究結果などがない「ゾンビ統計」であることが明らかに",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T08:18:59.000Z",
+      "summary": "Trakkrが主要な5つのAIによる1285件の統計情報を調査したところ、研究の裏付けがあった回答は40％にとどまりました。AIの引用元の半数以上が企業ブログなどで、元の研究論文へのリンクを明確に記していた割合はわずか21％でした。裏付けのある割合はChatGPTが57％で最も高く、Perplexityが46％、Claudeなどが38％と続きました。",
+      "headline": "AIが出力した統計情報の約6割に研究の裏付けがないことが判明",
+      "points": [
+        "Trakkrが主要な5つのAIによる1285件の統計情報を調査したところ、研究の裏付けがあった回答は40％にとどまりました。",
+        "AIの引用元の半数以上が企業ブログなどで、元の研究論文へのリンクを明確に記していた割合はわずか21％でした。",
+        "裏付けのある割合はChatGPTが57％で最も高く、Perplexityが46％、Claudeなどが38％と続きました。"
+      ],
+      "impact": "AIが出力した統計データを活用する人は、引用元を複数回たどったり調査時期や被験者数を確認したりする必要があります。",
+      "glossary": [
+        {
+          "term": "ゾンビ統計",
+          "explanation": "根拠となる研究やデータがないまま、ウェブ上などで繰り返し引用され続けている統計情報のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://spring.io/blog/2026/10/28/spring-ai-upsert-own-embeddings",
+      "title": "Using Your Own Embeddings in Spring AI 2.1",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Spring AI 2.1で、独自に生成した埋め込みベクトルを直接保存できるupsertメソッドが追加されました。画像や音声のベクトル登録や、クエリベクトルを用いた類似度検索のオーバーロードにも対応しています。利用時は、ベクトルストアの次元設定をモデルの出力次元数に一致させる必要があります。",
+      "headline": "Spring AI 2.1が外部ベクトルを登録できるupsert機能を追加",
+      "points": [
+        "Spring AI 2.1で、独自に生成した埋め込みベクトルを直接保存できるupsertメソッドが追加されました。",
+        "画像や音声のベクトル登録や、クエリベクトルを用いた類似度検索のオーバーロードにも対応しています。",
+        "利用時は、ベクトルストアの次元設定をモデルの出力次元数に一致させる必要があります。"
+      ],
+      "impact": "開発者は画像や既存の埋め込みを登録・検索できるようになり、ストアの次元数設定をモデルの出力と合わせる必要があります。",
+      "glossary": [
+        {
+          "term": "埋め込み（Embedding）",
+          "explanation": "テキストや画像などのデータを、意味の近さを計算できる数値ベクトルに変換したものです。"
+        },
+        {
+          "term": "ベクトルストア（Vector Store）",
+          "explanation": "ベクトルデータを保存し、類似するデータを高速に検索するためのデータベースです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://inside.java/2026/10/28/java-secure-coding-guidelines/",
+      "title": "Java Secure Coding Guidelines",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "脆弱性につながる安全でない実装例や回避策、最新の更新内容を解説しています。入力値の検証やシリアライズなどの対象範囲が拡充され、関連動画も紹介されています。",
+      "headline": "Javaセキュアコーディングガイドラインの解説記事が公開",
+      "points": [
+        "脆弱性につながる安全でない実装例や回避策、最新の更新内容を解説しています。",
+        "入力値の検証やシリアライズなどの対象範囲が拡充され、関連動画も紹介されています。"
+      ],
+      "impact": "Java開発者は最新のガイドラインやJavaOne 2026の動画を確認できます。",
+      "glossary": [
+        {
+          "term": "シリアライズ",
+          "explanation": "オブジェクトやデータを保存や送信が可能な形式に変換する処理のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://spring.io/blog/2026/10/27/this-week-in-spring-october-27th-2026",
+      "title": "This Week in Spring - October 27th, 2026",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "summary": "Spring AIや開発環境のAI活用に関する話題など、最新の動向が紹介されました。Spring Boot 4.1.2やSpring AI 2.0.2など、多くのライブラリの最新版がリリースされました。",
+      "headline": "Springエコシステムの週刊情報と多数の新バージョンが公開",
+      "points": [
+        "Spring AIや開発環境のAI活用に関する話題など、最新の動向が紹介されました。",
+        "Spring Boot 4.1.2やSpring AI 2.0.2など、多くのライブラリの最新版がリリースされました。"
+      ],
+      "impact": "Springの利用者は、プロジェクトで使用しているライブラリの最新版の導入を検討できます。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部情報の検索と生成AIを組み合わせ、精度の高い回答を生成する仕組み。"
+        },
+        {
+          "term": "RC版",
+          "explanation": "正式リリース前の最終テスト段階にある候補版（リリースキャンディデート）。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://zenn.dev/sdb_blog/articles/4c34faa1606302",
+      "title": "【Vue Fes Japan 2026】スポンサーしてきました！【参加レポ】",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-30T08:00:00.000Z",
+      "summary": "ゴールドスポンサーとしてブースを出展し、デザインの工夫やセッションの感想をまとめています。60秒でロゴを再現するミニゲーム企画を実施し、エンジニア以外を含む参加者と交流しました。",
+      "headline": "企業がVue Fes Japan 2026での出展と参加の様子を報告",
+      "points": [
+        "ゴールドスポンサーとしてブースを出展し、デザインの工夫やセッションの感想をまとめています。",
+        "60秒でロゴを再現するミニゲーム企画を実施し、エンジニア以外を含む参加者と交流しました。"
+      ],
+      "glossary": [
+        {
+          "term": "ノベルティ",
+          "explanation": "企業の認知向上や宣伝を目的として、イベントなどで無料で配布される記念品。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-24-eslint",
+      "title": "35日でフロントエンドの基礎を完全に理解する #24 - リンタと型で守る",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-29T22:24:08.000Z",
+      "summary": "コードを実行する前に不具合や規約違反を検知する、リンタと静的チェックの役割を説明しています。flat configを用いたESLintの設定や、自動修正機能の活用法が具体的に示されています。",
+      "headline": "ESLintと型を活用した静的チェックの導入手順が解説",
+      "points": [
+        "コードを実行する前に不具合や規約違反を検知する、リンタと静的チェックの役割を説明しています。",
+        "flat configを用いたESLintの設定や、自動修正機能の活用法が具体的に示されています。"
+      ],
+      "impact": "フロントエンド開発の初学者は、エディタや設定ファイルに静的チェックを導入して品質を担保できます。",
+      "glossary": [
+        {
+          "term": "リンタ",
+          "explanation": "ソースコードを実行せずに解析し、構文の誤りやスタイルの違反を検出するツール。"
+        },
+        {
+          "term": "静的チェック",
+          "explanation": "プログラムを動かさずにソースコードを読み、型矛盾や問題点を事前に検証すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://blog.calil.jp/2026/10/linux-kernel.html",
+      "title": "Linuxカーネルの重大な脆弱性（CVE-2026-98432）によるカーリルへの影響について – カーリルのブログ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-30T03:40:04.000Z",
+      "summary": "Linuxカーネルのネットワーク処理に重大な脆弱性が見つかり、遠隔から管理者権限を奪われる恐れがあります。カーリルは修正版カーネルの適用や、IPオプション付きTCPパケットを遮断する緩和策を実施しました。悪用被害は確認されておらず、サービスの停止や利用者側の対応も現時点では不要としています。",
+      "headline": "カーリルがLinuxの重大な脆弱性への対応状況を公表した",
+      "points": [
+        "Linuxカーネルのネットワーク処理に重大な脆弱性が見つかり、遠隔から管理者権限を奪われる恐れがあります。",
+        "カーリルは修正版カーネルの適用や、IPオプション付きTCPパケットを遮断する緩和策を実施しました。",
+        "悪用被害は確認されておらず、サービスの停止や利用者側の対応も現時点では不要としています。"
+      ],
+      "impact": "利用者の対応は不要ですが、図書館関係者はリスク許容の線引きを明確にして事業者と対話することが求められます。",
+      "glossary": [
+        {
+          "term": "ファイアウォール",
+          "explanation": "ネットワークの通信を監視し、設定したルールに基づいて不正な侵入を遮断する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/30/120732",
+      "title": "Linuxカーネルの脆弱性 CVE-2026-98432 についてまとめてみた - piyolog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-30T04:19:29.000Z",
+      "summary": "IPv4のTCP処理に解放後メモリ使用の欠陥があり、認証なしで遠隔からroot権限を奪われる恐れがあります。影響を受けるのはLinux 4.4以降で、5.10.272などの8系列の上流修正版が提供されています。CVSS評価は9.8ですが、攻撃の複雑さの解釈によってディストリビューションごとに評価が分かれています。",
+      "headline": "Linuxカーネルの重大な脆弱性に関する詳細情報が整理された",
+      "points": [
+        "IPv4のTCP処理に解放後メモリ使用の欠陥があり、認証なしで遠隔からroot権限を奪われる恐れがあります。",
+        "影響を受けるのはLinux 4.4以降で、5.10.272などの8系列の上流修正版が提供されています。",
+        "CVSS評価は9.8ですが、攻撃の複雑さの解釈によってディストリビューションごとに評価が分かれています。"
+      ],
+      "glossary": [
+        {
+          "term": "use-after-free",
+          "explanation": "メモリ領域を解放した後に誤ってアクセスしてしまうソフトウェアの欠陥。"
+        },
+        {
+          "term": "KASLR",
+          "explanation": "メモリ上のプログラム配置を毎回ランダムにして、攻撃コードの実行を防ぐセキュリティ技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/jp/blogs/news/202611-kddi-eks-auto-mode-case-study/",
+      "title": "KDDI における Amazon EKS Auto Mode 商用導入：カスタムコントローラーによる運用課題の解決",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-10-30T04:12:08.000Z",
+      "summary": "KDDIは通信事業向けサービスの基盤をEKS Auto Modeへ移行し、運用の自動化を実現しました。ノードが最長21日で最新AMIへ自動更新されるため、人手による脆弱性対応の工数が削減されました。独自のカスタムコントローラを開発し、ノードの入れ替え時刻を制御することで業務要件を満たしました。",
+      "headline": "KDDIがEKS Auto Modeを導入しノード運用を自動化した",
+      "points": [
+        "KDDIは通信事業向けサービスの基盤をEKS Auto Modeへ移行し、運用の自動化を実現しました。",
+        "ノードが最長21日で最新AMIへ自動更新されるため、人手による脆弱性対応の工数が削減されました。",
+        "独自のカスタムコントローラを開発し、ノードの入れ替え時刻を制御することで業務要件を満たしました。"
+      ],
+      "glossary": [
+        {
+          "term": "EKS",
+          "explanation": "AWS上でコンテナ管理ツールKubernetesを簡単に運用できるようにしたマネージドサービス。"
+        },
+        {
+          "term": "AMI",
+          "explanation": "AWS上で仮想サーバーを起動するために必要な設定が含まれたテンプレート。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-30T10:06:15Z",
+      "summary": "Azure Logic AppsのAPI Connectionsで、他組織の接続を侵害できる脆弱性が報告されました。悪用されるとKey VaultやSQLデータベースなど接続先の外部サービスに完全なアクセスを許します。発見者はARM REST APIを経由した悪用を実証し、合計20万ドルの報奨金を獲得しました。",
+      "headline": "AzureのAPI Connectionsに他組織へ越境可能な脆弱性が判明",
+      "points": [
+        "Azure Logic AppsのAPI Connectionsで、他組織の接続を侵害できる脆弱性が報告されました。",
+        "悪用されるとKey VaultやSQLデータベースなど接続先の外部サービスに完全なアクセスを許します。",
+        "発見者はARM REST APIを経由した悪用を実証し、合計20万ドルの報奨金を獲得しました。"
+      ],
+      "glossary": [
+        {
+          "term": "テナント",
+          "explanation": "クラウドサービスにおいて、個々の企業やユーザーごとに割り当てられた論理的な専用環境。"
+        },
+        {
+          "term": "OAuth",
+          "explanation": "パスワードを相手に渡さずに、特定のサービスに対する操作権限を安全に付与する認証の仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://levtech.jp/media/detail_959/",
+      "title": "メルセンヌ・ツイスタ。PythonやC++でも使われる、世界標準「擬似乱数」の設計思想【松本眞】 - レバテックLAB",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "other",
+      "publishedAt": "2026-10-30T00:24:37.000Z",
+      "summary": "松本眞氏が乱数の定義の難しさや擬似乱数の設計思想について解説した。メルセンヌ・ツイスタは周期2の19937乗−1を持ち、PythonやC++などで幅広く使われている。624個の出力から内部状態が復元できるため、主に暗号ではなくゲームやシミュレーションに用いられる。",
+      "headline": "松本眞氏がメルセンヌ・ツイスタの設計思想や乱数の本質を語った",
+      "points": [
+        "松本眞氏が乱数の定義の難しさや擬似乱数の設計思想について解説した。",
+        "メルセンヌ・ツイスタは周期2の19937乗−1を持ち、PythonやC++などで幅広く使われている。",
+        "624個の出力から内部状態が復元できるため、主に暗号ではなくゲームやシミュレーションに用いられる。"
+      ],
+      "glossary": [
+        {
+          "term": "擬似乱数",
+          "explanation": "計算によって決定論的に生成される、乱数列に似た数列のこと。"
+        },
+        {
+          "term": "メルセンヌ・ツイスタ",
+          "explanation": "長い周期と高い均等分布特性を備えた代表的な擬似乱数生成法。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 17,
+    "sourcesTotal": 18,
+    "candidates": 115,
+    "shortlisted": 60,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 27974,
+    "outputTokens": 14426
+  },
+  "offline": false
+}

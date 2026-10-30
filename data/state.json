@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-29T21:50:17.223Z",
+  "lastRun": "2026-10-30T21:32:15.634Z",
   "seen": {
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon": "2026-10-01",
     "https://zenn.dev/ai_news_bot/articles/ainews-20261001-t3": "2026-10-01",
@@ -510,6 +510,23 @@
     "https://iptrust.co/blog/if-ipv4-were-land": "2026-10-30",
     "https://ubuntu.com/security/CVE-2026-98432": "2026-10-30",
     "https://www.itmedia.co.jp/news/article/2610/29/2000002716": "2026-10-30",
-    "https://news.web.nhk/newsweb/na/nd-20261029de67976": "2026-10-30"
+    "https://news.web.nhk/newsweb/na/nd-20261029de67976": "2026-10-30",
+    "https://www.anthropic.com/news/expanding-partnership-gsa": "2026-10-31",
+    "https://phorion.io/blog/offical-claude-code-vsx-compromise": "2026-10-31",
+    "https://cursor.com/blog/claude-code-extension-security-notice": "2026-10-31",
+    "https://www.watch.impress.co.jp/docs/news/2152548.html": "2026-10-31",
+    "https://gigazine.net/news/20261030-mistral-large-4-open": "2026-10-31",
+    "https://gigazine.net/news/20261030-openai-detect-frontier-model-misalignment": "2026-10-31",
+    "https://gigazine.net/news/20261030-ai-assistants-statistics-not-find-study": "2026-10-31",
+    "https://spring.io/blog/2026/10/28/spring-ai-upsert-own-embeddings": "2026-10-31",
+    "https://inside.java/2026/10/28/java-secure-coding-guidelines": "2026-10-31",
+    "https://spring.io/blog/2026/10/27/this-week-in-spring-october-27th-2026": "2026-10-31",
+    "https://zenn.dev/sdb_blog/articles/4c34faa1606302": "2026-10-31",
+    "https://zenn.dev/kipcop/articles/f35-vue-24-eslint": "2026-10-31",
+    "https://blog.calil.jp/2026/10/linux-kernel.html": "2026-10-31",
+    "https://piyolog.hatenadiary.jp/entry/2026/10/30/120732": "2026-10-31",
+    "https://aws.amazon.com/jp/blogs/news/202611-kddi-eks-auto-mode-case-study": "2026-10-31",
+    "https://www.binarysecurity.no/posts/2026/10/one-root-case": "2026-10-31",
+    "https://levtech.jp/media/detail_959": "2026-10-31"
   }
 }
