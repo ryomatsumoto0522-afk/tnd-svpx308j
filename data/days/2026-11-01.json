@@ -1,0 +1,471 @@
+{
+  "date": "2026-11-01",
+  "generatedAt": "2026-10-31T20:27:56.946Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/",
+      "title": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T16:54:52.000Z",
+      "summary": "MoEngageが社内APIをAIエージェント用ツールに安全に変換しました。基盤エンジニアリング工数を約6か月削減し、API導入を数時間に短縮しました。パブリックエンドポイントを公開せず、各チームのMCP実装も不要にしました。",
+      "headline": "MoEngageがAgentCore Gatewayで400超のAPIをツール化",
+      "points": [
+        "MoEngageが社内APIをAIエージェント用ツールに安全に変換しました。",
+        "基盤エンジニアリング工数を約6か月削減し、API導入を数時間に短縮しました。",
+        "パブリックエンドポイントを公開せず、各チームのMCP実装も不要にしました。"
+      ],
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIエージェントと外部のツールやデータを接続するための標準規格。"
+        },
+        {
+          "term": "OpenAPI",
+          "explanation": "RESTful APIの仕様を機械可読な形式で定義するための標準規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+      "title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T20:43:00.000Z",
+      "summary": "AWS GovCloud (US)でOpenAI GPT-5.6モデルの推論が可能になりました。ResponsesやConverseなどのAPIとクロスリージョン推論に対応しました。2つのGovCloudリージョン間で自動ルーティングし高スループットを実現します。",
+      "headline": "AWS GovCloudのBedrockでOpenAIモデルの複数機能を提供開始",
+      "points": [
+        "AWS GovCloud (US)でOpenAI GPT-5.6モデルの推論が可能になりました。",
+        "ResponsesやConverseなどのAPIとクロスリージョン推論に対応しました。",
+        "2つのGovCloudリージョン間で自動ルーティングし高スループットを実現します。"
+      ],
+      "impact": "利用者はAmazon Bedrockのユーザーガイドにあるモデルカードを確認して利用を開始できます。",
+      "glossary": [
+        {
+          "term": "クロスリージョン推論",
+          "explanation": "複数リージョンに推論リクエストを自動分散して高いスループットを得る仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/jp/blogs/news/spec-it-safe/",
+      "title": "Spec it safe：セキュリティ要件で仕様をハードニングし、シフトレフトを実現する",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T02:33:02.000Z",
+      "summary": "仕様駆動開発の要件から脆弱性を検知しセキュリティ制約を提案するツールです。CWEに対応付けられたライブラリに基づき決定的なパイプラインで制約を挿入します。8領域60種類のCWEに対応し、コード作成前の早期段階で仕様を強化します。",
+      "headline": "Kiroが仕様駆動開発でセキュリティ要件を補強する新機能を発表",
+      "points": [
+        "仕様駆動開発の要件から脆弱性を検知しセキュリティ制約を提案するツールです。",
+        "CWEに対応付けられたライブラリに基づき決定的なパイプラインで制約を挿入します。",
+        "8領域60種類のCWEに対応し、コード作成前の早期段階で仕様を強化します。"
+      ],
+      "impact": "開発者はコード作成前に仕様をハードニングし、後段でもセキュリティレビューを行う必要があります。",
+      "glossary": [
+        {
+          "term": "EARS",
+          "explanation": "自然言語で要求仕様を明確かつ簡潔に記述するための定形構文ルール。"
+        },
+        {
+          "term": "シフトレフト",
+          "explanation": "開発プロセスの早期段階にテストやセキュリティ対策を前倒しすること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
+      "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T21:40:03.000Z",
+      "summary": "エージェントが実行中のWebアプリをブラウザから直接プレビューできます。セッションごとに認証付きURLを発行し、指定ポートへの通信を中継します。ファイル保存と同時に画面が更新され、素早い動作確認が可能です。",
+      "headline": "Bedrock AgentCoreでエージェント開発中アプリのライブ確認が可能に",
+      "points": [
+        "エージェントが実行中のWebアプリをブラウザから直接プレビューできます。",
+        "セッションごとに認証付きURLを発行し、指定ポートへの通信を中継します。",
+        "ファイル保存と同時に画面が更新され、素早い動作確認が可能です。"
+      ],
+      "impact": "エージェント開発者はSDKを用いてローカルエンドポイント経由でアプリの動作を確認できます。",
+      "glossary": [
+        {
+          "term": "microVM",
+          "explanation": "高速に起動し、独立した実行環境を安全に提供する軽量な仮想マシン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+      "title": "v2.1.316",
+      "source": "Claude Code",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T01:01:35.000Z",
+      "summary": "サブエージェントの処理強度設定やグループ予算管理機能が追加されました。Opus 4.8の高速モードが非推奨となりOpus 5.5への移行が促されています。終了時にシェルコマンドが残り続ける不具合など多数の問題が修正されました。",
+      "headline": "Claude Code v2.1.316が公開され新機能追加や修正が行われました",
+      "points": [
+        "サブエージェントの処理強度設定やグループ予算管理機能が追加されました。",
+        "Opus 4.8の高速モードが非推奨となりOpus 5.5への移行が促されています。",
+        "終了時にシェルコマンドが残り続ける不具合など多数の問題が修正されました。"
+      ],
+      "impact": "Opus 4.8の高速モード利用者は2026年11月30日までにOpus 5.5への移行が必要です。",
+      "glossary": [
+        {
+          "term": "サブエージェント",
+          "explanation": "親となるAIエージェントから指示を受け、特定のタスクを分担して実行する子エージェントのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+      "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T17:27:45.000Z",
+      "summary": "米国政府向けクラウドのBedrock経由でOpenAIモデルを安全に利用できます。コーディング支援を行うCodex等のリクエストをIAMや自組織のネットワークで統制します。データが永続ストレージに保存されないゼロデータ保持（ZDR）にも対応しています。",
+      "headline": "ChatGPTデスクトップ版がAWS GovCloud上のBedrockに対応しました",
+      "points": [
+        "米国政府向けクラウドのBedrock経由でOpenAIモデルを安全に利用できます。",
+        "コーディング支援を行うCodex等のリクエストをIAMや自組織のネットワークで統制します。",
+        "データが永続ストレージに保存されないゼロデータ保持（ZDR）にも対応しています。"
+      ],
+      "impact": "厳格な統制が必要な組織は、指定プロファイルや設定ファイルを用いて安全に連携環境を構築できます。",
+      "glossary": [
+        {
+          "term": "AWS GovCloud",
+          "explanation": "米国政府機関や規制産業向けに高いセキュリティ基準を満たすよう設計されたAWSの専用環境。"
+        },
+        {
+          "term": "ゼロデータ保持",
+          "explanation": "入出力データがプロバイダーなどのストレージに恒久的に保存されないよう保護する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "title": "AI for Science expands to foundations and research institutions",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "科学研究の加速を目的に、研究者へ無料のClaudeクレジットを提供する枠組みを拡大しました。全米科学財団（NSF）やシュミット・サイエンシズなど20の財団や研究機関と提携します。実験機器を操作する共通規格の策定や大規模な生体データ解析など共同研究も推進されます。",
+      "headline": "Anthropicが科学支援プログラムを20の外部研究機関等に拡大しました",
+      "points": [
+        "科学研究の加速を目的に、研究者へ無料のClaudeクレジットを提供する枠組みを拡大しました。",
+        "全米科学財団（NSF）やシュミット・サイエンシズなど20の財団や研究機関と提携します。",
+        "実験機器を操作する共通規格の策定や大規模な生体データ解析など共同研究も推進されます。"
+      ],
+      "impact": "提携する財団などの支援を受ける研究者は、Claudeのクレジットを活用して研究を推進できます。",
+      "glossary": [
+        {
+          "term": "オープンスタンダード",
+          "explanation": "特定のベンダーに依存せず、誰もが自由に利用や実装ができるように一般公開された技術仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
+      "title": "Building intent-driven UI testing with Amazon Nova Act",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T18:20:27.000Z",
+      "summary": "UIの見た目の変更に強い自然言語による意図駆動型のテスト環境を社内共通基盤として構築しました。既存のPlaywrightテストを補完し、製品チームへAPI経由でテスト機能を提供します。Bedrock AgentCoreのブラウザツールにより、使い捨てのブラウザ環境でテストが実行されます。",
+      "headline": "EpsilonがAmazon Nova Actを活用したUIテスト基盤を構築",
+      "points": [
+        "UIの見た目の変更に強い自然言語による意図駆動型のテスト環境を社内共通基盤として構築しました。",
+        "既存のPlaywrightテストを補完し、製品チームへAPI経由でテスト機能を提供します。",
+        "Bedrock AgentCoreのブラウザツールにより、使い捨てのブラウザ環境でテストが実行されます。"
+      ],
+      "impact": "社内の製品チームは個別にブラウザ環境を用意することなく、共通APIからUIテストを利用できます。",
+      "glossary": [
+        {
+          "term": "Playwright",
+          "explanation": "Webブラウザの操作を自動化し、Webアプリケーションの動作検証を行うためのテストフレームワーク。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+      "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-10-30T17:32:20.000Z",
+      "summary": "Amazon Bedrockを活用したマルチエージェントAIでTMSと連携させました。6か月で未解決例外を75%削減し、年間100万ドルのコスト削減を達成しました。従来は月1,500万ドル相当の資金が未解決の請求例外により滞留していました。",
+      "headline": "Worldwide Expressが運賃請求の例外処理をAIで自動化",
+      "points": [
+        "Amazon Bedrockを活用したマルチエージェントAIでTMSと連携させました。",
+        "6か月で未解決例外を75%削減し、年間100万ドルのコスト削減を達成しました。",
+        "従来は月1,500万ドル相当の資金が未解決の請求例外により滞留していました。"
+      ],
+      "glossary": [
+        {
+          "term": "LTL",
+          "explanation": "トラック1台分に満たない貨物を複数まとめて相乗りで運ぶ輸送形態。"
+        },
+        {
+          "term": "TMS",
+          "explanation": "配車や運賃計算など、輸送業務全般を管理・最適化するためのシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/sato_ken/articles/46f7f1f7a1e856",
+      "title": "AIを10窓並行で回してたら頭がパンクしたので「進行板」を作った",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T15:18:23.000Z",
+      "summary": "AIチャット単位ではなく、案件単位でタスクと次の一手を可視化しました。人間は直接入力せず、各作業を担当するAI自身に進行板を更新させます。AIの更新忘れを検知してカードを赤く表示するなど監視機能も備えます。",
+      "headline": "複数AIの並行作業を案件単位で管理する進行板が自作される",
+      "points": [
+        "AIチャット単位ではなく、案件単位でタスクと次の一手を可視化しました。",
+        "人間は直接入力せず、各作業を担当するAI自身に進行板を更新させます。",
+        "AIの更新忘れを検知してカードを赤く表示するなど監視機能も備えます。"
+      ],
+      "glossary": [
+        {
+          "term": "カンバン",
+          "explanation": "タスクをカードにして進捗ごとの列に並べ、状況を可視化する管理手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/sponge841841/articles/2026-10-31-codex-day26-account-switching",
+      "title": "Codex Day 26徹底解説：モバイルのアカウント切り替えと保存型リセット予告",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T14:00:28.000Z",
+      "summary": "iOSとAndroidアプリでログアウトせずに2アカウントを保持できます。チャット履歴や契約は統合されず、通知を開くと対象アカウントに切り替わります。使用タイミングを任意で選べる「保存型リセット」の提供も予告されました。",
+      "headline": "モバイル版ChatGPTが複数アカウントの切り替え機能に対応",
+      "points": [
+        "iOSとAndroidアプリでログアウトせずに2アカウントを保持できます。",
+        "チャット履歴や契約は統合されず、通知を開くと対象アカウントに切り替わります。",
+        "使用タイミングを任意で選べる「保存型リセット」の提供も予告されました。"
+      ],
+      "impact": "モバイルアプリ利用者は設定から機能の有無を確認し、送信時の選択アカウントに注意する必要があります。",
+      "glossary": [
+        {
+          "term": "保存型リセット",
+          "explanation": "受け取り時に即時適用されず、任意のタイミングで使用可能な利用枠回復機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/gear_aiteam/articles/roadrelay-voice-order-to-claude-code",
+      "title": "通勤中に音声で話したことが、自宅PCのClaude Codeへの発注になる仕組み",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T13:16:49.000Z",
+      "summary": "スマホでの音声会話内容を掲示板経由で自宅のClaude Codeに渡します。定期巡回はPythonプログラムに担わせ、AIの利用枠消費を防ぎます。重複防止やCLIの状態監視、利用上限時の待機など安定動作の工夫を導入しました。",
+      "headline": "通勤時の音声指示を自宅PCのAIへ自動発注する仕組みを構築",
+      "points": [
+        "スマホでの音声会話内容を掲示板経由で自宅のClaude Codeに渡します。",
+        "定期巡回はPythonプログラムに担わせ、AIの利用枠消費を防ぎます。",
+        "重複防止やCLIの状態監視、利用上限時の待機など安定動作の工夫を導入しました。"
+      ],
+      "glossary": [
+        {
+          "term": "tmux",
+          "explanation": "単一の画面上で複数の仮想端末を起動・操作できるようにするツール。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のデータやツールと接続・対話するための共通仕様規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/yunisuta/articles/oss-hindsight-claude-api-ai-llm-python-meq5so",
+      "title": "エージェントの記憶喪失を治す：OSS「Hindsight」をClaude APIに繋いで長期記憶を持たせる",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T16:12:57.000Z",
+      "summary": "Hindsightを導入してセッション終了後も会話の文脈や経験を保持する手法が紹介された。retain、recall、reflectの3つのAPIを用いて、記憶の保存・検索・要約を行う。2026年9月リリースのv0.10.1では、コーディングエージェント向けreflectの予算制限修正が入った。",
+      "headline": "OSS「Hindsight」をClaude APIに接続し長期記憶を実現",
+      "points": [
+        "Hindsightを導入してセッション終了後も会話の文脈や経験を保持する手法が紹介された。",
+        "retain、recall、reflectの3つのAPIを用いて、記憶の保存・検索・要約を行う。",
+        "2026年9月リリースのv0.10.1では、コーディングエージェント向けreflectの予算制限修正が入った。"
+      ],
+      "impact": "Claude APIで長期記憶を持つエージェントを構築する開発者は、Hindsightの導入や権限設計を検討できる。",
+      "glossary": [
+        {
+          "term": "LongMemEval",
+          "explanation": "LLMエージェントの長期記憶性能を測定するためのベンチマーク。"
+        },
+        {
+          "term": "SOTA",
+          "explanation": "特定分野のベンチマークにおいて現時点で最高性能を達成している状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://inside.java/2026/10/29/podcast-073/",
+      "title": "Episode 73 “Immutable Data Beyond Value Classes” [AtA]",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "summary": "Inside Java Podcastで、Javaにおける不変データをより表現豊かに扱うための言語機能が紹介された。JEP 513やJEP 401、JEP 468、JEP 547など新機能の連携が取り上げられた。レコードや値クラス、柔軟なコンストラクタなどを組み合わせ、不変データの定義や複製を改善する。",
+      "headline": "Javaにおける不変データの表現力強化を解説するポッドキャスト公開",
+      "points": [
+        "Inside Java Podcastで、Javaにおける不変データをより表現豊かに扱うための言語機能が紹介された。",
+        "JEP 513やJEP 401、JEP 468、JEP 547など新機能の連携が取り上げられた。",
+        "レコードや値クラス、柔軟なコンストラクタなどを組み合わせ、不変データの定義や複製を改善する。"
+      ],
+      "impact": "Javaの最新言語機能を用いて不変データを効率よく設計したい開発者は、各JEPの内容を確認できる。",
+      "glossary": [
+        {
+          "term": "不変データ",
+          "explanation": "作成後に状態や値を変更できないように設計されたデータ構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-25-accessibility",
+      "title": "35日でフロントエンドの基礎を完全に理解する #25 - アクセシビリティ",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-10-30T23:20:52.000Z",
+      "summary": "見た目ではなくセマンティックなHTML要素を使ってブラウザに要素の意味を伝える重要性が示された。ブラウザが生成するアクセシビリティツリーを通じて、支援技術やテストツールが要素を認識する。キーボードのみでの操作確認やコントラスト比測定など、具体的な点検手順が紹介された。",
+      "headline": "フロントエンドにおけるアクセシビリティの重要性と点検手法が解説された",
+      "points": [
+        "見た目ではなくセマンティックなHTML要素を使ってブラウザに要素の意味を伝える重要性が示された。",
+        "ブラウザが生成するアクセシビリティツリーを通じて、支援技術やテストツールが要素を認識する。",
+        "キーボードのみでの操作確認やコントラスト比測定など、具体的な点検手順が紹介された。"
+      ],
+      "impact": "Webフロントエンドを開発するエンジニアは、適切なHTMLタグの選定やキーボード操作の点検を実践できる。",
+      "glossary": [
+        {
+          "term": "アクセシビリティツリー",
+          "explanation": "ブラウザが支援技術向けにDOMから生成する、要素の意味や状態の木構造。"
+        },
+        {
+          "term": "セマンティクス",
+          "explanation": "HTMLタグが見た目ではなく文書構造や役割の意味を表す性質。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://blog.inorinrinrin.com/entry/dd84836d-72cc-2616-9c64-45a9ac6c425b",
+      "title": "npm ci 時に常に npm audit signatures をする - プププなテクブ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-31T06:46:15.000Z",
+      "summary": "npm ci実行時にスクリプト実行を抑止し、署名検証後に再ビルドを行う手法が紹介された。npm audit signaturesにより、レジストリ署名とprovenance attestationを検証する。サプライチェーン攻撃を防ぐため、ダウンロードとスクリプト実行の間に検証を挟む。",
+      "headline": "npmのCIでパッケージの署名と来歴を検証する手法が提案された",
+      "points": [
+        "npm ci実行時にスクリプト実行を抑止し、署名検証後に再ビルドを行う手法が紹介された。",
+        "npm audit signaturesにより、レジストリ署名とprovenance attestationを検証する。",
+        "サプライチェーン攻撃を防ぐため、ダウンロードとスクリプト実行の間に検証を挟む。"
+      ],
+      "impact": "CIで安全にnpmパッケージをインストールしたい開発者は、検証用スクリプトの導入を検討できる。",
+      "glossary": [
+        {
+          "term": "provenance",
+          "explanation": "パッケージがどのリポジトリやビルド環境から生成されたかを証明する来歴情報。"
+        },
+        {
+          "term": "サプライチェーン攻撃",
+          "explanation": "ソフトウェアの開発や配布の経路に悪意あるコードを混入させる攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://note.com/shi3zblog/n/nadf4c6873d6d",
+      "title": "GPUで動いてるLLMの中でCPUが動く?・・・何を言ってるかわからねえと思うが、とにかくQwenputerを追試して分かったこと、分からなかったこと｜shi3z",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-10-30T23:43:11.000Z",
+      "summary": "Qwen3.5-4Bの前段にコンパイルしたCPU回路を配置し機械語を実行できます。学習ではなくDeltaNetの状態更新を行列演算によるRAMとして活用しています。命令セットはRV32IMが基本で公式のriscv-testsを通過します。",
+      "headline": "LLMの重みにRISC-V CPUを埋め込んだモデルが公開された",
+      "points": [
+        "Qwen3.5-4Bの前段にコンパイルしたCPU回路を配置し機械語を実行できます。",
+        "学習ではなくDeltaNetの状態更新を行列演算によるRAMとして活用しています。",
+        "命令セットはRV32IMが基本で公式のriscv-testsを通過します。"
+      ],
+      "glossary": [
+        {
+          "term": "RISC-V",
+          "explanation": "オープンソースで開発されている標準的なCPUの命令セットアーキテクチャ。"
+        },
+        {
+          "term": "DeltaNet",
+          "explanation": "過去の情報を保持する内部状態を差分更新によって逐次書き換えるネットワーク構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-10-31T19:16:30Z",
+      "summary": "IPv4のTCPハンドシェイク中にUse-After-Freeが発生する脆弱性です。Linux 4.4以降が対象でCVSS 3.1深刻度スコアは最大9.8です。5.10.272などで修正されましたがUbuntu等では未対応の状態です。",
+      "headline": "LinuxのIPv4 TCP処理に深刻な脆弱性が発見され修正が公開された",
+      "points": [
+        "IPv4のTCPハンドシェイク中にUse-After-Freeが発生する脆弱性です。",
+        "Linux 4.4以降が対象でCVSS 3.1深刻度スコアは最大9.8です。",
+        "5.10.272などで修正されましたがUbuntu等では未対応の状態です。"
+      ],
+      "impact": "Linuxサーバーの運用者は、利用中のディストリビューションの修正状況を確認し更新を適用する必要があります。",
+      "glossary": [
+        {
+          "term": "Use-After-Free",
+          "explanation": "メモリ領域を解放した後に誤って再参照してしまうことで起きるセキュリティ脆弱性。"
+        },
+        {
+          "term": "CVSS",
+          "explanation": "情報セキュリティ脆弱性の深刻度を同一基準で評価し0から10で数値化する指標。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 122,
+    "shortlisted": 77,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 31505,
+    "outputTokens": 14161
+  },
+  "offline": false
+}
