@@ -20,6 +20,7 @@ const GENRE_COLOR: Record<string, string> = {
   backend: "#0f9d8a",
   frontend: "#e8710a",
   infra: "#1a73e8",
+  tech: "#d6336c",
   other: "#6b7686",
 };
 

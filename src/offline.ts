@@ -5,6 +5,7 @@ const RULES: [Genre, string[]][] = [
   ["frontend", ["vue", "react", "css", "browser", "chrome", "frontend", "フロントエンド", "javascript", "typescript", "web"]],
   ["infra", ["aws", "kubernetes", "docker", "terraform", "cloud", "インフラ", "lambda", "ec2", "s3", "network"]],
   ["backend", ["java", "spring", "kotlin", "database", "sql", "api", "backend", "バックエンド", "jvm", "rust", "go "]],
+  ["tech", ["半導体", "nvidia", "ロボット", "robot", "量子", "quantum", "宇宙", "space", "自動運転", "スマホ", "iphone", "apple", "ガジェット"]],
 ];
 
 /** ソースのジャンルがなければキーワードで推定する（オフライン時の代替。通常は LLM が分類する） */

@@ -55,7 +55,7 @@ test("選定: 範囲外・重複の番号は捨て、不正なジャンルは記
   );
   // スキーマにジャンルの enum が制約として入っていること（description に流れていないこと）
   const schema = requests[0]?.schema as any;
-  assert.deepEqual(schema.properties.picks.items.properties.genre.enum, ["ai", "backend", "frontend", "infra", "other"]);
+  assert.deepEqual(schema.properties.picks.items.properties.genre.enum, ["ai", "backend", "frontend", "infra", "tech", "other"]);
   // Haiku 単価: 入力 $1/M + 出力 $5/M × 0.1M = $1.5
   assert.equal(cost.snapshot().usd, 1.5);
   assert.equal(cost.snapshot().provider, "fake");

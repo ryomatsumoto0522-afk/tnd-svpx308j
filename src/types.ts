@@ -1,12 +1,13 @@
-export const GENRES = ["ai", "backend", "frontend", "infra", "other"] as const;
+export const GENRES = ["ai", "backend", "frontend", "infra", "tech", "other"] as const;
 export type Genre = (typeof GENRES)[number];
 
-/** タブの表示順もこの並びに従う（AI → バックエンド → フロントエンド → インフラ → その他） */
+/** タブの表示順もこの並びに従う（AI → バックエンド → フロントエンド → インフラ → テック → その他） */
 export const GENRE_LABEL: Record<Genre, string> = {
   ai: "AI",
   backend: "バックエンド",
   frontend: "フロントエンド",
   infra: "インフラ",
+  tech: "テック",
   other: "その他",
 };
 
