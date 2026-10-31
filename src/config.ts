@@ -93,7 +93,7 @@ export const PIPELINE = {
   /** LLM に順位付きで返させる件数（本文取得に失敗した分の控えを含む） */
   selectionSize: 36,
   /** ジャンルごとの上限（合計が totalItems 以上になるようにしてある。AI 中心） */
-  genreCaps: { ai: 13, backend: 3, frontend: 3, infra: 3, tech: 3, other: 1 } as Record<Genre, number>,
+  genreCaps: { ai: 13, backend: 3, frontend: 3, infra: 3, tech: 5, other: 1 } as Record<Genre, number>,
   /** 要約に渡す本文の最大文字数（費用に直結する） */
   bodyChars: 4000,
   /** 本文がこれより短いと取得失敗（ペイウォールやボット対策の可能性）として扱う */
