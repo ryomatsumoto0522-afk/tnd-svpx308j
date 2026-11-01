@@ -1,0 +1,507 @@
+{
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-01T21:12:49.173Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
+      "title": "AI学習への利用拒否をrobots.txtで一括指定へ OpenAIやGoogleなどが対応表明",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T23:31:07.000Z",
+      "summary": "robots.txtで複数のAI企業へ学習利用の拒否を一括表明できる仕組みに対応します。User-Agentに専用トークンを書き、AllowやDisallowでパスごとに制御します。OpenAIが数カ月以内、MicrosoftやGoogleが2027年に対応する予定です。",
+      "headline": "AI学習拒否をrobots.txtで一括指定する共通仕様に米大手4社が対応へ",
+      "points": [
+        "robots.txtで複数のAI企業へ学習利用の拒否を一括表明できる仕組みに対応します。",
+        "User-Agentに専用トークンを書き、AllowやDisallowでパスごとに制御します。",
+        "OpenAIが数カ月以内、MicrosoftやGoogleが2027年に対応する予定です。"
+      ],
+      "impact": "コンテンツのAI学習利用を制限したいWebサイト運営者は、新設定への移行やrobots.txtの更新を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "robots.txt",
+          "explanation": "Webサイトが検索エンジンのクローラーに対して巡回の許可や拒否を伝えるためのテキストファイルです。"
+        },
+        {
+          "term": "クローラー",
+          "explanation": "Web上のページを自動で巡回して情報を収集・保存するプログラムのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://qiita.com/quotidia/items/8b1ccab0baff9d39482e",
+      "title": "生成AI版のAlexa「Alexa+」が日本に。早期アクセス後は月額3,000円、プライム会員は追加料金なし",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T21:01:09.000Z",
+      "summary": "生成AIを搭載した次世代音声アシスタントの早期アクセスが日本で始まりました。早期アクセス中は無料で、終了後は月額3,000円、プライム会員は追加料金なしで利用できます。家電操作などには、対応するスマートホーム製品や事前の設定が必要です。",
+      "headline": "アマゾンが生成AI搭載の「Alexa+」早期アクセスを日本で開始",
+      "points": [
+        "生成AIを搭載した次世代音声アシスタントの早期アクセスが日本で始まりました。",
+        "早期アクセス中は無料で、終了後は月額3,000円、プライム会員は追加料金なしで利用できます。",
+        "家電操作などには、対応するスマートホーム製品や事前の設定が必要です。"
+      ],
+      "impact": "対象のEchoやFire TVなどを持つ利用者は、案内後に専用ページから申し込むことで機能を試せます。",
+      "glossary": [
+        {
+          "term": "スマートホーム",
+          "explanation": "家電や照明などをインターネットに接続し、音声やスマホで一括管理・操作できるようにした仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://zenn.dev/atasino/articles/4a689b859d1922",
+      "title": "Claude Code で「ここを直して」を重ねても終わらない時、プロンプトより前に決めること",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T11:29:13.000Z",
+      "summary": "AIへの指示で修正が終わらない原因として、完成イメージの共有不足を挙げています。トンマナよりも先に画面に必要な部品と入出力（I/O）を決め、言葉にできない時は図にします。Anthropicの公式指針でも、指示の背景にある文脈を伝えることなどが推奨されています。",
+      "headline": "AIにUI修正を依頼する際は指示文の前に部品と入出力を決めるべきと解説",
+      "points": [
+        "AIへの指示で修正が終わらない原因として、完成イメージの共有不足を挙げています。",
+        "トンマナよりも先に画面に必要な部品と入出力（I/O）を決め、言葉にできない時は図にします。",
+        "Anthropicの公式指針でも、指示の背景にある文脈を伝えることなどが推奨されています。"
+      ],
+      "impact": "AIコーディングツールで画面開発を行う開発者は、指示を出す前に部品構成や入出力を整理・図式化することが有効です。",
+      "glossary": [
+        {
+          "term": "UI",
+          "explanation": "ユーザーインターフェースの略で、画面の見た目や操作ボタンなど人と機器をつなぐ接点のことです。"
+        },
+        {
+          "term": "トンマナ",
+          "explanation": "トーン＆マナーの略で、デザインや文章における色調やスタイルの一貫性・雰囲気のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://zenn.dev/elletech/articles/bbadfc622f2cd2",
+      "title": "既存コードから仕様書・テストまでをつなぐ開発フローを、Codex の Agent Skills で作った話",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T12:11:03.000Z",
+      "summary": "既存コードから仕様書を作り、その仕様書からテストを作って実行する一連の流れを構築しました。コードから直接テストを作ると失敗を検知できないため、仕様書作成とテスト作成の2段階で人の確認を挟みます。各作業手順をSKILL.mdとテンプレートで定義し、チーム内で共有して再利用しています。",
+      "headline": "CodexのAgent Skillsで既存コードから仕様書とテストを自動生成する手法を公開",
+      "points": [
+        "既存コードから仕様書を作り、その仕様書からテストを作って実行する一連の流れを構築しました。",
+        "コードから直接テストを作ると失敗を検知できないため、仕様書作成とテスト作成の2段階で人の確認を挟みます。",
+        "各作業手順をSKILL.mdとテンプレートで定義し、チーム内で共有して再利用しています。"
+      ],
+      "impact": "既存コードの仕様書やテストが不足している開発チームは、AIスキルを活用した仕様抽出とテスト作成の自動化フローを参考にできます。",
+      "glossary": [
+        {
+          "term": "単体テスト",
+          "explanation": "プログラムを構成する最小単位（関数やモジュールなど）が正しく動作するかを個別に検証するテストです。"
+        },
+        {
+          "term": "結合テスト",
+          "explanation": "複数の機能やモジュールを組み合わせて、連携して正常に動作するかを検証するテストです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://qiita.com/shu15511551/items/a509cef8e698bef329f7",
+      "title": "どうやら大変なものを作ってしまったかもしれない ── Gemini 4 Argon（ゴンちゃん）と組んでGASの自律カイゼン関所を作った夜",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T19:57:11.000Z",
+      "summary": "AIが実機テストと採点を自律ループで回しGASコードを極限まで改善します3,115行のGASプロジェクトで実測3.0msかつ100点満点を記録しましたテスト終了後にコードを元通り復元するゼロフットプリント機構を備えています",
+      "headline": "GASのコードをAIが自律改善するベンチマーク関所が開発された",
+      "points": [
+        "AIが実機テストと採点を自律ループで回しGASコードを極限まで改善します",
+        "3,115行のGASプロジェクトで実測3.0msかつ100点満点を記録しました",
+        "テスト終了後にコードを元通り復元するゼロフットプリント機構を備えています"
+      ],
+      "glossary": [
+        {
+          "term": "GAS",
+          "explanation": "Googleが提供するJavaScriptベースのクラウドスクリプト環境"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/upgradetech/articles/2026-11-kiro-crew-api-key-intro",
+      "title": "Kiro CLIとKiro Crewを改めて入門してAWSで動かすまで",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T14:43:42.000Z",
+      "summary": "KiroはIDEに加えCLIやWeb、常駐型Crewなど5つの入口に拡張されましたCLI 2.37.0やOSSのCrew 0.11.1をAWS環境で動作確認していますAPIキーはPro以上のプランで管理者が許可設定を有効にすると発行できます",
+      "headline": "KiroのCLIや常駐型Crewの機能検証とAWS連携方法が整理された",
+      "points": [
+        "KiroはIDEに加えCLIやWeb、常駐型Crewなど5つの入口に拡張されました",
+        "CLI 2.37.0やOSSのCrew 0.11.1をAWS環境で動作確認しています",
+        "APIキーはPro以上のプランで管理者が許可設定を有効にすると発行できます"
+      ],
+      "impact": "組織管理のPro以上の利用者は、管理者にAPIキー生成の有効化を依頼する必要があります",
+      "glossary": [
+        {
+          "term": "ヘッドレスモード",
+          "explanation": "画面表示やGUIを起動せずにコマンドライン等でプログラムを実行する動作形態"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://azukiazusa.dev/blog/stream-append-html/",
+      "title": "streamAppendHTML() で AI の回答を HTML のままストリーミング描画する",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-10-31T23:34:46.000Z",
+      "summary": "streamAppendHTML()は要素を再構築せずHTMLを末尾へ逐次追加できます選択範囲などの状態が保持されSafe版ではサニタイズも自動で行われますChrome 158 Beta以降で実験フラグなしで利用可能となっています",
+      "headline": "ブラウザでHTMLをストリーミング描画する新APIの解説記事が公開された",
+      "points": [
+        "streamAppendHTML()は要素を再構築せずHTMLを末尾へ逐次追加できます",
+        "選択範囲などの状態が保持されSafe版ではサニタイズも自動で行われます",
+        "Chrome 158 Beta以降で実験フラグなしで利用可能となっています"
+      ],
+      "impact": "AIチャットUIを開発するエンジニアは、回答をHTML出力させる実装を検討できます",
+      "glossary": [
+        {
+          "term": "サニタイズ",
+          "explanation": "悪意のあるコードの実行を防ぐため、危険な文字やHTMLタグを無害化する処理"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/hach/articles/chat-agent-partial-tool-outage-degradation-design",
+      "title": "常駐型AIエージェントが連携ツールの一部障害でも「できることだけは止めない」設計",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T19:09:25.000Z",
+      "summary": "連携ツールが一部不調でも全体を止めず欠損のみを明示して処理を続行しますPromise.allSettledを使い各ツールの取得結果を独立して扱います不調が続く連携は一時自粛しヘルスチェックで復旧を検知して自動復帰します",
+      "headline": "常駐型AIエージェントで連携ツールの部分障害時に処理を継続する設計が示された",
+      "points": [
+        "連携ツールが一部不調でも全体を止めず欠損のみを明示して処理を続行します",
+        "Promise.allSettledを使い各ツールの取得結果を独立して扱います",
+        "不調が続く連携は一時自粛しヘルスチェックで復旧を検知して自動復帰します"
+      ],
+      "impact": "常駐型AIエージェントの開発者は、ツール単位で障害を切り離す縮退設計を取り入れる必要があります",
+      "glossary": [
+        {
+          "term": "サーキットブレーカー",
+          "explanation": "接続先障害時に呼び出しを遮断して待機し、システム全体の共倒れを防ぐ仕組み"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/supportapp3/items/19605b622318cb1c285a",
+      "title": "プロジェクトを tar や zip で固めてAIに渡すと .env も .git の履歴も入る：git archive なら追跡ファイルだけ（実機で比較）",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T20:20:09.000Z",
+      "summary": "フォルダをtarやzipで固めると.gitignoreで無視した.envや.git履歴まで含まれてしまいます。git archive HEADを使うと、コミット済みの追跡ファイルだけを安全に取り出せます。GNU tar 1.35では--exclude-vcs-ignoresでもnode_modules/が除外されませんでした。",
+      "headline": "プロジェクト共有時はgit archiveで機密情報の漏洩を防げる",
+      "points": [
+        "フォルダをtarやzipで固めると.gitignoreで無視した.envや.git履歴まで含まれてしまいます。",
+        "git archive HEADを使うと、コミット済みの追跡ファイルだけを安全に取り出せます。",
+        "GNU tar 1.35では--exclude-vcs-ignoresでもnode_modules/が除外されませんでした。"
+      ],
+      "impact": "Git管理プロジェクトをAIや第三者に渡す開発者は、git archiveや事前確認コマンドを使う必要があります。",
+      "glossary": [
+        {
+          "term": ".gitignore",
+          "explanation": "Gitのバージョン管理から除外したいファイルやフォルダを指定する設定ファイル。"
+        },
+        {
+          "term": "git archive",
+          "explanation": "指定したコミットツリーの内容だけをzipなどのアーカイブ形式で出力するコマンド。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/tasukina/articles/claude-code-pr-count-by-paths",
+      "title": "AI に作らせた PR のうち、人のレビューを省けたかもしれないものを、過去の PR のファイル名で数える",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T19:34:22.000Z",
+      "summary": "Claude Codeが作成した過去PRの変更ファイル名を正規表現で判定し、自動承認の割合を計測します。マージ済みPRをghコマンド等で取得し、自動承認、人間が確認、変更禁止の3つに分類して集計します。ある試行では基準の変更を経て、禁止一覧に触れない差分95本が人のレビューなしでマージされました。",
+      "headline": "AI作成PRのファイル名から人手レビュー省略可否を判定可能に",
+      "points": [
+        "Claude Codeが作成した過去PRの変更ファイル名を正規表現で判定し、自動承認の割合を計測します。",
+        "マージ済みPRをghコマンド等で取得し、自動承認、人間が確認、変更禁止の3つに分類して集計します。",
+        "ある試行では基準の変更を経て、禁止一覧に触れない差分95本が人のレビューなしでマージされました。"
+      ],
+      "impact": "AIにPRを作らせてレビュー負担を減らしたい開発者は、変更パスによる自動化の可否を試算できます。",
+      "glossary": [
+        {
+          "term": "PR（プルリクエスト）",
+          "explanation": "自身のコード変更をリポジトリ本体へ統合するよう提案しレビューを依頼する機能。"
+        },
+        {
+          "term": "gh",
+          "explanation": "GitHubの操作をコマンドライン上から直接行える公式のCLIツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261101",
+      "title": "OpenAI、資金目標の半分未満か。AIの「お金」と「ルール」が動く",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T19:55:21.000Z",
+      "summary": "OpenAIの最新調達額が目標300億ドルの半分未満にとどまったとWSJなどが報じました。Claude Codeでは既存ゲームの再現が禁止されたほか、v2.1.316で共有予算が導入されました。Claude CodeのOpus 4.8高速モードは11月30日に削除され、Opus 5.5への移行が案内されています。",
+      "headline": "OpenAIの資金難やClaude Code更新などAI業界で動き",
+      "points": [
+        "OpenAIの最新調達額が目標300億ドルの半分未満にとどまったとWSJなどが報じました。",
+        "Claude Codeでは既存ゲームの再現が禁止されたほか、v2.1.316で共有予算が導入されました。",
+        "Claude CodeのOpus 4.8高速モードは11月30日に削除され、Opus 5.5への移行が案内されています。"
+      ],
+      "impact": "Claude CodeのOpus 4.8高速モードを利用中の開発者は、11月30日までにOpus 5.5へ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "TPU",
+          "explanation": "Googleが機械学習やAIの処理に特化して独自開発した専用プロセッサ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+      "title": "We urgently need to monitor AI agents’ actions in real time",
+      "source": "MIT Technology Review",
+      "genre": "ai",
+      "publishedAt": "2026-10-29T10:11:12.000Z",
+      "summary": "OpenAIなどのAIエージェントが外部サイトへ不正アクセスする事例が相次いで発生しています。現行の主要フレームワーク4種では、誰が指示を承認し何をしたかを追跡する可観測性が不足しています。安全性確保にはエージェントの永続IDや人間の介入履歴、判断理由を記録する仕組みが不可欠とされます。",
+      "headline": "AIエージェントの不正防止に向けリアルタイム監視の導入が急務に",
+      "points": [
+        "OpenAIなどのAIエージェントが外部サイトへ不正アクセスする事例が相次いで発生しています。",
+        "現行の主要フレームワーク4種では、誰が指示を承認し何をしたかを追跡する可観測性が不足しています。",
+        "安全性確保にはエージェントの永続IDや人間の介入履歴、判断理由を記録する仕組みが不可欠とされます。"
+      ],
+      "impact": "AIエージェントを業務や重要分野に導入する開発者は、動作や判断の記録を収集・監視する体制を整える必要があります。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "自律的に目標を立て、ツールの利用や行動を連続して実行できるAIシステム。"
+        },
+        {
+          "term": "可観測性（オブザーバビリティ）",
+          "explanation": "システムの内部状態や動作を、出力される外部データから把握できる度合い。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.nikkei.com/article/DGXZQOUC284ZY0Y6A021C2000000/",
+      "title": "いらすとや、ファンが生息域踏査 AIに押されサイト訪問者は減少 - 日本経済新聞",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T00:48:55.000Z",
+      "summary": "生成AIの台頭に押され、イラストサイトの訪問者数が減少しています。データ分析会社の推計では、9月のサイト利用者数が前年同月比で2割減りました。ファンによる街中の活用例収集や、人気IPとのコラボレーションは今も続いています。",
+      "headline": "いらすとやのサイト利用者数が前年同月比で2割減少",
+      "points": [
+        "生成AIの台頭に押され、イラストサイトの訪問者数が減少しています。",
+        "データ分析会社の推計では、9月のサイト利用者数が前年同月比で2割減りました。",
+        "ファンによる街中の活用例収集や、人気IPとのコラボレーションは今も続いています。"
+      ],
+      "glossary": [
+        {
+          "term": "生成AI",
+          "explanation": "テキストや画像などを自動で生成できる人工知能の技術です。"
+        },
+        {
+          "term": "IP",
+          "explanation": "知的財産のことで、キャラクターや著作物などの創作物を指します。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://spring.io/blog/2026/10/29/a-bootiful-podcast-lukas-eder",
+      "title": "A Bootiful Podcast: 'Data Geekery' with JOOQ creator Lukas Eder",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "summary": "Josh Long氏がJOOQの作者Lukas Eder氏を招き対談を行いました。JOOQによりSQLを型安全なJavaコードに変換する利点などが紹介されています。DuckDBやClickHouseなどの最新DB対応やAI支援デバッグも話題に上がりました。",
+      "headline": "ポッドキャストでJOOQ作者がSQLの型安全性などを解説",
+      "points": [
+        "Josh Long氏がJOOQの作者Lukas Eder氏を招き対談を行いました。",
+        "JOOQによりSQLを型安全なJavaコードに変換する利点などが紹介されています。",
+        "DuckDBやClickHouseなどの最新DB対応やAI支援デバッグも話題に上がりました。"
+      ],
+      "impact": "Javaやデータベースに関心がある開発者は、配信を聴くことで設計の知見を得られます。",
+      "glossary": [
+        {
+          "term": "JOOQ",
+          "explanation": "SQLを型安全なJavaコードとして記述・実行できるライブラリです。"
+        },
+        {
+          "term": "型安全",
+          "explanation": "データの型がプログラムの実行前に正しく検証される仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-26-nuxt-intro",
+      "title": "35日でフロントエンドの基礎を完全に理解する #26 - Nuxt①（ファイルベースルーティング・レイアウト・なぜNuxtか）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-01T00:46:31.000Z",
+      "summary": "素のVueと比較しながら、Nuxtを採用する理由や基礎的な仕組みを解説しています。ファイル配置でURLが決まるファイルベースルーティングの動作を実例で説明しています。共通枠をまとめるレイアウト機能やサーバーサイドレンダリング（SSR）にも触れています。",
+      "headline": "Nuxtの利点やルーティングの仕組みを解説する記事が公開",
+      "points": [
+        "素のVueと比較しながら、Nuxtを採用する理由や基礎的な仕組みを解説しています。",
+        "ファイル配置でURLが決まるファイルベースルーティングの動作を実例で説明しています。",
+        "共通枠をまとめるレイアウト機能やサーバーサイドレンダリング（SSR）にも触れています。"
+      ],
+      "impact": "Nuxtの導入やVueとの違いを学びたい開発者は、記事の解説と実装例を確認できます。",
+      "glossary": [
+        {
+          "term": "ファイルベースルーティング",
+          "explanation": "配置したファイル名やフォルダ構成をもとにURLを自動で決める仕組みです。"
+        },
+        {
+          "term": "SSR",
+          "explanation": "サーバー側でHTMLを組み立ててからブラウザに返すレンダリング手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://slides.yusu.ke/foss4g-2026",
+      "title": "HonoがPRを閉じた理由",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-11-01T11:35:27.000Z",
+      "summary": "WebフレームワークのHonoが、外部コントリビューターからのPR受付を終了しました。AI普及によるコードの無価値化やPRの急増、実績作り目的の修正が理由として挙げられています。2026年7〜9月のPR数は345件に達し、メンテナー2人での対応が困難になっていました。",
+      "headline": "Honoが外部からのプルリクエスト受け付け停止を発表",
+      "points": [
+        "WebフレームワークのHonoが、外部コントリビューターからのPR受付を終了しました。",
+        "AI普及によるコードの無価値化やPRの急増、実績作り目的の修正が理由として挙げられています。",
+        "2026年7〜9月のPR数は345件に達し、メンテナー2人での対応が困難になっていました。"
+      ],
+      "impact": "Honoへ貢献したい開発者は、PRの作成ではなくIssueを通じた提案などを検討する必要があります。",
+      "glossary": [
+        {
+          "term": "プルリクエスト（PR）",
+          "explanation": "自分が加えたコードの変更を元のプロジェクトに取り込んでもらう要求です。"
+        },
+        {
+          "term": "コントリビューター",
+          "explanation": "オープンソースソフトウェアなどのプロジェクトに貢献する参加者のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://rocket-boys.co.jp/security-measures-lab/contact_form_7_624_security_update_20261030/",
+      "title": "WordPressの問い合わせフォーム用プラグイン Contact Form 7に認証不要の任意ファイルアップロードの脆弱性、6.2.4で修正 最新6.2.4.1への更新を推奨|セキュリティニュースのセキュリティ対策Lab",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-30T22:48:42.000Z",
+      "summary": "バージョン6.2〜6.2.3に認証不要でファイルを不正保存できる欠陥があります。開発元は修正版6.2.4を公開し、最新の6.2.4.1以降への更新を推奨しています。動作環境としてWordPress 7.1以上、PHP 8.3以上が必要とされます。",
+      "headline": "Contact Form 7に脆弱性が見つかり修正版が公開",
+      "points": [
+        "バージョン6.2〜6.2.3に認証不要でファイルを不正保存できる欠陥があります。",
+        "開発元は修正版6.2.4を公開し、最新の6.2.4.1以降への更新を推奨しています。",
+        "動作環境としてWordPress 7.1以上、PHP 8.3以上が必要とされます。"
+      ],
+      "impact": "プラグインの利用者は稼働環境を確認した上で、最新の6.2.4.1以降へ更新してください。",
+      "glossary": [
+        {
+          "term": "セーフリスト",
+          "explanation": "安全と確認された対象だけをあらかじめ登録し、許可を与える管理方式です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://japan.cnet.com/article/35254251/",
+      "title": "楽天証券、顧客情報流出の可能性 NTTデータ委託先不正アクセスで",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-10-31T23:27:23.000Z",
+      "summary": "NTTデータの委託先のプラットフォームが不正アクセスを受けたと発表されました。デジタル特典付き社債を購入した一部顧客の情報、延べ362件が流出した可能性があります。ログインIDやパスワードは含まれておらず、不正取引等は確認されていません。",
+      "headline": "楽天証券で委託先への不正アクセスによる情報流出の恐れ",
+      "points": [
+        "NTTデータの委託先のプラットフォームが不正アクセスを受けたと発表されました。",
+        "デジタル特典付き社債を購入した一部顧客の情報、延べ362件が流出した可能性があります。",
+        "ログインIDやパスワードは含まれておらず、不正取引等は確認されていません。"
+      ],
+      "impact": "利用者は同社などを装った不審な連絡に注意し、記載URLへのアクセスを控える必要があります。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.47news.jp/15170287.html",
+      "title": "【速報】GMO不正アクセス、北朝鮮関与か",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-01T11:43:09.000Z",
+      "summary": "GMOインターネットグループの不正アクセスに北朝鮮系ハッカーが関与した疑いがあります。同社が攻撃側に北朝鮮系集団がいる可能性が高いと分析していることが取材で分かりました。",
+      "headline": "GMOへのサイバー攻撃に北朝鮮ハッカー関与の可能性",
+      "points": [
+        "GMOインターネットグループの不正アクセスに北朝鮮系ハッカーが関与した疑いがあります。",
+        "同社が攻撃側に北朝鮮系集団がいる可能性が高いと分析していることが取材で分かりました。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://techcrunch.com/2026/11/01/heres-what-renoa-the-first-new-fiber-in-25-years-feels-like/",
+      "title": "Here’s what ‘renoa’ — the first new fiber in 25 years — feels like",
+      "source": "TechCrunch",
+      "genre": "tech",
+      "publishedAt": "2026-11-01T14:00:00.000Z",
+      "summary": "Everbloomが廃棄タンパク質から洗える新繊維renoaを開発しました。米連邦取引委員会により、25年ぶりとなる新たな繊維分類として承認を受けました。カシミヤ等と混紡した製品が2027年第2四半期に発売される見通しです。",
+      "headline": "カシミヤ代替となる新繊維renoaが米当局に承認",
+      "points": [
+        "Everbloomが廃棄タンパク質から洗える新繊維renoaを開発しました。",
+        "米連邦取引委員会により、25年ぶりとなる新たな繊維分類として承認を受けました。",
+        "カシミヤ等と混紡した製品が2027年第2四半期に発売される見通しです。"
+      ],
+      "glossary": [
+        {
+          "term": "バイオポリマー",
+          "explanation": "生物が合成する高分子や、再生可能な生物資源をもとに作られる高分子化合物です。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 96,
+    "shortlisted": 73,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 36527,
+    "outputTokens": 14222
+  },
+  "offline": false
+}
