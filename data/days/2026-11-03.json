@@ -1,0 +1,512 @@
+{
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-02T23:53:25.929Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
+      "title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T16:00:00.000Z",
+      "summary": "新しい「External Tool」ブロックを使用して、カスタマーエクスペリエンスフロー内でMCPツールを呼び出せるようになった。Amazon Bedrock AgentCore Gateway経由でサードパーティー製アプリケーションと接続し、カスタムLambda関数なしでデータを取得できる。米国東部（バージニア北部）、米国西部（オレゴン）、カナダ（中部）、欧州（フランクフルト、ロンドン）、アジア太平洋（ソウル、シンガポール、シドニー、東京）の各リージョンで利用可能である。",
+      "headline": "Amazon Connectがフロー内でMCPツールを利用可能に",
+      "points": [
+        "新しい「External Tool」ブロックを使用して、カスタマーエクスペリエンスフロー内でMCPツールを呼び出せるようになった。",
+        "Amazon Bedrock AgentCore Gateway経由でサードパーティー製アプリケーションと接続し、カスタムLambda関数なしでデータを取得できる。",
+        "米国東部（バージニア北部）、米国西部（オレゴン）、カナダ（中部）、欧州（フランクフルト、ロンドン）、アジア太平洋（ソウル、シンガポール、シドニー、東京）の各リージョンで利用可能である。"
+      ],
+      "impact": "管理者は、Amazon Connectのフロー内でサードパーティーのデータやアクションを容易に連携させることができる。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のデータソースやツールと安全に連携するための標準化されたプロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002777/",
+      "title": "Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更 月200ドルで5時間ごとの利用制限を撤廃",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T22:00:23.000Z",
+      "summary": "個人向け有料プラン「Max 20x」の名称が「Ultra」に変更され、月額料金の200ドルはそのまま維持される。Ultraプランでは、認証済みアカウントを対象に5時間ごとの利用上限が撤廃された。旧「Max 5x」は「Max」に名称が変更され、既存契約者は手続き不要で新プランへ移行する。",
+      "headline": "AnthropicがClaudeの「Max 20x」を「Ultra」に名称変更し制限を撤廃",
+      "points": [
+        "個人向け有料プラン「Max 20x」の名称が「Ultra」に変更され、月額料金の200ドルはそのまま維持される。",
+        "Ultraプランでは、認証済みアカウントを対象に5時間ごとの利用上限が撤廃された。",
+        "旧「Max 5x」は「Max」に名称が変更され、既存契約者は手続き不要で新プランへ移行する。"
+      ],
+      "impact": "既存のUltraプラン契約者は、アカウント認証が完了していれば5時間ごとの利用制限なしでClaudeを利用できる。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.itmedia.co.jp/news/article/2611/03/2000002831/",
+      "title": "Anthropic、IPO申請書を修正 7?9月売上高は約170億ドル、インフラ契約額は約8954億ドル",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T23:20:20.000Z",
+      "summary": "米証券取引委員会に新規株式公開に向けた登録届出書の修正版を提出し、2026年第3四半期の業績などを追加した。7〜9月期の売上高は約169億5600万ドルで営業損益は5億6700万ドルの赤字となり、1〜9月の純損失は1040億3900万ドルに膨らんだ。AIの計算資源やインフラに関する将来の支出約束額の総額は約8954億ドルに上る。",
+      "headline": "AnthropicがIPO申請書の修正版を提出し7〜9月期の売上高などを公開",
+      "points": [
+        "米証券取引委員会に新規株式公開に向けた登録届出書の修正版を提出し、2026年第3四半期の業績などを追加した。",
+        "7〜9月期の売上高は約169億5600万ドルで営業損益は5億6700万ドルの赤字となり、1〜9月の純損失は1040億3900万ドルに膨らんだ。",
+        "AIの計算資源やインフラに関する将来の支出約束額の総額は約8954億ドルに上る。"
+      ],
+      "impact": "投資家や関係者は、公開された同社の詳細な財務数値やインフラ投資計画を確認できる。",
+      "glossary": [
+        {
+          "term": "IPO",
+          "explanation": "企業が株式を証券取引所に新規に公開し、一般の投資家が売買できるようにすること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T22:14:50.000Z",
+      "summary": "S-1Aの修正版において、AIが自らを訓練して能力を急速に高める再帰的自己改善（RSI）の基準に近づいていると言及した。AIを活用した研究開発の加速により、安全性や整合性の検証が追いつかなくなるリスクがあるとしている。現行のモデルはいずれもRSIの閾値を超えておらず、当面は人間による開発の監督を継続する方針である。",
+      "headline": "Anthropicが再帰的自己改善能力に近づいているとIPO申請書で警告",
+      "points": [
+        "S-1Aの修正版において、AIが自らを訓練して能力を急速に高める再帰的自己改善（RSI）の基準に近づいていると言及した。",
+        "AIを活用した研究開発の加速により、安全性や整合性の検証が追いつかなくなるリスクがあるとしている。",
+        "現行のモデルはいずれもRSIの閾値を超えておらず、当面は人間による開発の監督を継続する方針である。"
+      ],
+      "impact": "開発者や規制当局は、AIの急速な自律進化に伴う安全性リスクとAnthropicの対応方針を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "再帰的自己改善",
+          "explanation": "AI自身がさらなる高性能なAIを設計・改良するプロセスを繰り返し、能力が爆発的に向上すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.itmedia.co.jp/news/article/2611/02/2000002779/",
+      "title": "Google、宇宙のTPUから初のAI応答を受信 「Project Suncatcher」試作衛星で「Gemma 4」が俳句を詠む",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-01T23:59:31.000Z",
+      "summary": "Googleは宇宙AIデータセンター構想の試作衛星から軌道上TPUによるAI応答の初受信を発表しました。衛星に搭載されたモデルGemma 4が地上局のプロンプトに応じ宇宙をテーマにした俳句などを生成しました。今後は熱や放射線の環境下での動作試験を進め2027年に2基の衛星による次の実証を行う計画です。",
+      "headline": "Googleが宇宙の試作衛星に搭載したTPUからのAI応答受信に成功",
+      "points": [
+        "Googleは宇宙AIデータセンター構想の試作衛星から軌道上TPUによるAI応答の初受信を発表しました。",
+        "衛星に搭載されたモデルGemma 4が地上局のプロンプトに応じ宇宙をテーマにした俳句などを生成しました。",
+        "今後は熱や放射線の環境下での動作試験を進め2027年に2基の衛星による次の実証を行う計画です。"
+      ],
+      "glossary": [
+        {
+          "term": "TPU",
+          "explanation": "AIの学習や予測処理を高速化するためにGoogleが開発した専用プロセッサ。"
+        },
+        {
+          "term": "Gemma 4",
+          "explanation": "Googleが開発・公開しているオープンなAIモデルの名称。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/",
+      "title": "Haiku 5.5 now available on Kiro in AWS GovCloud (US)",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T20:45:00.000Z",
+      "summary": "AWS GovCloud（US）のKiro IDEとCLIでAnthropicのClaude Haiku 5.5が利用可能になりました。Haiku 5.5は大量の処理や素早い応答向けで1Mのコンテキストウィンドウや5段階の思考レベルに対応します。100Kトークン超のリクエストは0.3倍の乗数で課金されモデル選択画面から指定できます。",
+      "headline": "AWS GovCloudのKiroでClaude Haiku 5.5が利用可能に",
+      "points": [
+        "AWS GovCloud（US）のKiro IDEとCLIでAnthropicのClaude Haiku 5.5が利用可能になりました。",
+        "Haiku 5.5は大量の処理や素早い応答向けで1Mのコンテキストウィンドウや5段階の思考レベルに対応します。",
+        "100Kトークン超のリクエストは0.3倍の乗数で課金されモデル選択画面から指定できます。"
+      ],
+      "impact": "AWS GovCloudでKiroを使う開発者は、IDEやCLIを最新版へ更新して再起動する必要があります。",
+      "glossary": [
+        {
+          "term": "IDE",
+          "explanation": "プログラミングに必要なエディタや各種ツールを統合した開発環境。"
+        },
+        {
+          "term": "CLI",
+          "explanation": "文字コマンドを入力してコンピュータやプログラムを操作する画面。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://qiita.com/hathibei7/items/1061a3dfbf4adda84cf5",
+      "title": "AI・クラウド アップデートまとめ（2026/11/03）：Claude のメッセージスレッド、OpenAI LifeVal、Inspector の AMI スキャン",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T23:14:02.000Z",
+      "summary": "Anthropicは会話履歴を保持するMessages APIのメッセージスレッドのベータ版を発表しました。OpenAIは日常生活タスクでモデルの性能を測定する新たな評価セットLifeValを公開しました。AWSはAmazon Inspectorで起動前のEC2のAMIを脆弱性スキャンできる機能を追加しました。",
+      "headline": "AIやクラウド各社の最新アップデート情報が公開",
+      "points": [
+        "Anthropicは会話履歴を保持するMessages APIのメッセージスレッドのベータ版を発表しました。",
+        "OpenAIは日常生活タスクでモデルの性能を測定する新たな評価セットLifeValを公開しました。",
+        "AWSはAmazon Inspectorで起動前のEC2のAMIを脆弱性スキャンできる機能を追加しました。"
+      ],
+      "glossary": [
+        {
+          "term": "API",
+          "explanation": "ソフトウェア同士が互いに機能やデータを連携・呼び出すための仕組み。"
+        },
+        {
+          "term": "AMI",
+          "explanation": "AWSの仮想サーバー（EC2）を起動する際の元となる起動用イメージ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/ccq/articles/6ca97030e6c8fd",
+      "title": "AIエージェントの購入委任をRubyで扱う — AP2対応SDK v1.0.0を公開しました",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T14:15:25.000Z",
+      "summary": "AIエージェントによる購入委任プロトコルAP2を扱うRuby用Gemのv1.0.0が公開されました。直前承認と事前条件承認の2種類の委任に対応し署名検証や結果の生成などを一連で扱えます。Railsに依存せずRuby 3.4.12や4.0.9などで動作しサンプルで処理の流れを確認できます。",
+      "headline": "Ruby向けAI購入委任検証SDKの1.0.0が公開",
+      "points": [
+        "AIエージェントによる購入委任プロトコルAP2を扱うRuby用Gemのv1.0.0が公開されました。",
+        "直前承認と事前条件承認の2種類の委任に対応し署名検証や結果の生成などを一連で扱えます。",
+        "Railsに依存せずRuby 3.4.12や4.0.9などで動作しサンプルで処理の流れを確認できます。"
+      ],
+      "impact": "RubyでAIエージェントの購入委任を実装する開発者は、Gemをインストールしてサンプルで確認できます。",
+      "glossary": [
+        {
+          "term": "SDK",
+          "explanation": "開発者が特定の機能やサービスを利用したソフトを作るための開発キット。"
+        },
+        {
+          "term": "Gem",
+          "explanation": "プログラミング言語Ruby向けに提供されているライブラリのパッケージ形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/shu15511551/items/aa66286ba2daf4e50259",
+      "title": "本番WebアプリをAIにブラウザゼロで直させたら、0.5秒の連打にも完全追従する怪物になった話 ―― 秀GASマネージャー実戦証明と『からくりポケット』の同梱公開",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T23:40:10.000Z",
+      "summary": "Google Apps ScriptのWebアプリで発生していた引数不一致やIndexedDBの古いデータ保持による不具合を修正した。ブラウザを開かずにサーバー側とHTML側のコードをアトミックに更新し、本番環境への再デプロイを完了させた。フロントエンドの実機シミュレーション機能を活用し、削除や復元処理が高速に同期する仕組みを構築した。",
+      "headline": "ブラウザを使わずにGASの不具合を検知して修正するマネージャー",
+      "points": [
+        "Google Apps ScriptのWebアプリで発生していた引数不一致やIndexedDBの古いデータ保持による不具合を修正した。",
+        "ブラウザを開かずにサーバー側とHTML側のコードをアトミックに更新し、本番環境への再デプロイを完了させた。",
+        "フロントエンドの実機シミュレーション機能を活用し、削除や復元処理が高速に同期する仕組みを構築した。"
+      ],
+      "impact": "GASの開発者はブラウザを開く手間を省き、AIを活用した迅速な不具合調査と修正を行える。",
+      "glossary": [
+        {
+          "term": "IndexedDB",
+          "explanation": "ブラウザ内に大量の構造化データを保存できるクライアント側のデータベース。"
+        },
+        {
+          "term": "アトミック",
+          "explanation": "複数の処理がすべて成功するか、まったく実行されないかのどちらかになる性質。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/rinku/articles/evm-simulation-policy-decisions",
+      "title": "EVM simulationが成功しても止める：AIエージェントのALLOW・WARN・BLOCK設計",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T13:41:42.000Z",
+      "summary": "EVMトランザクションのシミュレーション成功時における、ポリシーに基づいたALLOW・WARN・BLOCKの判定層を解説している。無制限のERC-20承認などを検出した場合に、設定に応じて異なる判定結果を出力する仕組みをローカルモデルで再現した。判定層ではRPCの失敗や結果不明を警告として通さず、安全性のためにブロックする設計を採用している。",
+      "headline": "AIエージェントのEVMシミュレーション判定設計について",
+      "points": [
+        "EVMトランザクションのシミュレーション成功時における、ポリシーに基づいたALLOW・WARN・BLOCKの判定層を解説している。",
+        "無制限のERC-20承認などを検出した場合に、設定に応じて異なる判定結果を出力する仕組みをローカルモデルで再現した。",
+        "判定層ではRPCの失敗や結果不明を警告として通さず、安全性のためにブロックする設計を採用している。"
+      ],
+      "impact": "TypeScriptを用いたEVM関連の開発者は、AIエージェントによるトランザクションの安全性評価やポリシー分岐を実装できる。",
+      "glossary": [
+        {
+          "term": "EVM",
+          "explanation": "スマートコントラクトを実行するための仮想マシン環境。"
+        },
+        {
+          "term": "シミュレーション",
+          "explanation": "実際にトランザクションを送信する前に、チェーン上でどのような結果になるかを事前に検証すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/atsushi_apps/articles/claude-code-pretooluse-hook",
+      "title": "Claude CodeのPreToolUseフックで、AIに「やらせない」を仕組みにする",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T12:36:45.000Z",
+      "summary": "AIがツールを使う前に独自のスクリプトを実行し、条件に応じて操作を拒否するPreToolUseフックの仕組みを解説している。設定ファイルにコマンドやターゲットを指定することで、長時間のセッションでも守るべき決まりを自動で強制できる。複数のセッションが同じiOSシミュレーターを同時に操作してデータを壊さないよう、UDIDとロックファイルで排他制御を行っている。",
+      "headline": "Claude CodeのPreToolUseフックでツールの実行を制限する",
+      "points": [
+        "AIがツールを使う前に独自のスクリプトを実行し、条件に応じて操作を拒否するPreToolUseフックの仕組みを解説している。",
+        "設定ファイルにコマンドやターゲットを指定することで、長時間のセッションでも守るべき決まりを自動で強制できる。",
+        "複数のセッションが同じiOSシミュレーターを同時に操作してデータを壊さないよう、UDIDとロックファイルで排他制御を行っている。"
+      ],
+      "impact": "複数のAIセッションを同時に動かす開発者は、誤ったコマンドの実行やリソースの競合を自動で防ぐことができる。",
+      "glossary": [
+        {
+          "term": "フック",
+          "explanation": "プログラムの特定の処理の前後で、独自の処理を割り込ませる仕組み。"
+        },
+        {
+          "term": "JSON",
+          "explanation": "データをテキスト形式で表現するための軽量なデータ構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/renderjanction/articles/ec63143140a969",
+      "title": "Cursor から 50 MB の .blend を 1080p で仕上げるまで、MCP の道具が返した数字を全部書く",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T11:13:38.000Z",
+      "summary": "CursorなどのAIからMCP経由でBlenderのシーン情報を読み取り、プレビューや本番のレンダリングを実行した実測値を公開している。シーンの読み取りや数コマの無料プレビューで確認してから、見積もりと上限費用を設定して連続アニメーションを出力した。テスト用の短いレンダリングを挟むことで、予測が難しい全体の仕上げ費用を正確に見積もることができる。",
+      "headline": "AIとMCPを使ってBlenderのシーンをレンダリングする手順",
+      "points": [
+        "CursorなどのAIからMCP経由でBlenderのシーン情報を読み取り、プレビューや本番のレンダリングを実行した実測値を公開している。",
+        "シーンの読み取りや数コマの無料プレビューで確認してから、見積もりと上限費用を設定して連続アニメーションを出力した。",
+        "テスト用の短いレンダリングを挟むことで、予測が難しい全体の仕上げ費用を正確に見積もることができる。"
+      ],
+      "impact": "3D制作を行う開発者は、AIとMCPツール連携を活用してBlenderのレンダリング作業を効率化できる。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のデータやツールと安全に連携するための標準プロトコル。"
+        },
+        {
+          "term": "レンダリング",
+          "explanation": "3Dデータなどの情報から計算を行い、最終的な画像や映像を生成すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast",
+      "title": "AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T14:17:11.000Z",
+      "summary": "impeccableはAI生成UI特有のデザインパターンをLLMなしで検出するCLIツールである。自前のシェアカードHTMLを検査したところ、low-contrastなどの指摘が140件検出された。共通のCSS変数を1箇所修正したところ、検出数が0件になり終了コードも0に改善した。",
+      "headline": "AIコーディングエージェント向け検出器impeccableでHTMLを検査した",
+      "points": [
+        "impeccableはAI生成UI特有のデザインパターンをLLMなしで検出するCLIツールである。",
+        "自前のシェアカードHTMLを検査したところ、low-contrastなどの指摘が140件検出された。",
+        "共通のCSS変数を1箇所修正したところ、検出数が0件になり終了コードも0に改善した。"
+      ],
+      "impact": "フロントエンド開発者はAIが生成したUIのコントラスト不足などを自動で検出・修正できる。",
+      "glossary": [
+        {
+          "term": "CLIツール",
+          "explanation": "画面を持たず、文字入力によって操作や命令を実行するプログラムのこと。"
+        },
+        {
+          "term": "WCAG",
+          "explanation": "ウェブコンテンツを障害のある人にとってもアクセスしやすくするための国際的なガイドライン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-27-nuxt-data-middleware",
+      "title": "35日でフロントエンドの基礎を完全に理解する #27 - Nuxt②（useFetch・サーバーAPI・ミドルウェア）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-02T01:25:39.000Z",
+      "summary": "useFetchを使うとサーバー側でデータを取り、その結果をHTMLに埋め込んで返すことができる。server/api/にファイルを置くだけでNuxtの中に独自のAPIサーバーを作ることができる。ページ表示時はuseFetch、ボタン押下などの単発処理は$fetchを使い分ける。",
+      "headline": "NuxtのuseFetchやサーバーAPI、ミドルウェアの仕組みを学べる",
+      "points": [
+        "useFetchを使うとサーバー側でデータを取り、その結果をHTMLに埋め込んで返すことができる。",
+        "server/api/にファイルを置くだけでNuxtの中に独自のAPIサーバーを作ることができる。",
+        "ページ表示時はuseFetch、ボタン押下などの単発処理は$fetchを使い分ける。"
+      ],
+      "impact": "Nuxt開発者はデータの効率的な取得やAPIの実装方法を理解し、適切に使い分ける必要がある。",
+      "glossary": [
+        {
+          "term": "SSR",
+          "explanation": "サーバー側でHTMLを組み立ててからブラウザへ送信して表示する仕組みのこと。"
+        },
+        {
+          "term": "REST API",
+          "explanation": "Webシステム間でデータをやり取りするための設計原則やルールのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/",
+      "title": "AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-02T17:00:00.000Z",
+      "summary": "セルフマネージドなKafkaイベントソースでパーティション数を超えた処理のスケールが可能になった。Apache Kafka 4.2のシェアグループを利用し、1つのパーティションを複数のポーラーが同時に処理できる。ConsumptionModeをQueueに設定することで、トラフィック急増時のスループットと耐障害性が向上する。",
+      "headline": "AWS LambdaがセルフマネージドKafkaのキューイングをサポートした",
+      "points": [
+        "セルフマネージドなKafkaイベントソースでパーティション数を超えた処理のスケールが可能になった。",
+        "Apache Kafka 4.2のシェアグループを利用し、1つのパーティションを複数のポーラーが同時に処理できる。",
+        "ConsumptionModeをQueueに設定することで、トラフィック急増時のスループットと耐障害性が向上する。"
+      ],
+      "impact": "Kafkaを用いたイベント駆動型システムを構築している開発者は、処理のスループットを向上させられる。",
+      "glossary": [
+        {
+          "term": "パーティション",
+          "explanation": "Kafkaのトピックを分割し、並列処理を可能にするためのデータ単位のこと。"
+        },
+        {
+          "term": "スループット",
+          "explanation": "単位時間あたりに処理できるデータの量や能力のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://www.itmedia.co.jp/news/article/2611/03/2000002830/",
+      "title": "Marvell、光通信技術のLumentumを約18兆円で買収 AIデータセンターの高速化に対応",
+      "source": "ITmedia NEWS",
+      "genre": "tech",
+      "publishedAt": "2026-11-02T22:07:56.000Z",
+      "summary": "MarvellがLumentumを買収し、半導体と光通信技術を統合してAIデータセンターの通信需要に対応する。買収は全額株式交換で行われ、企業価値は約1150億ドルに上る。両社の統合により年間10億ドル以上のコスト削減効果を見込み、2028年上半期の完了を予定している。",
+      "headline": "米Marvellが光通信のLumentumを約18兆円で買収すると発表した",
+      "points": [
+        "MarvellがLumentumを買収し、半導体と光通信技術を統合してAIデータセンターの通信需要に対応する。",
+        "買収は全額株式交換で行われ、企業価値は約1150億ドルに上る。",
+        "両社の統合により年間10億ドル以上のコスト削減効果を見込み、2028年上半期の完了を予定している。"
+      ],
+      "impact": "AIインフラ関連企業やデータセンターに関わる事業者は、光通信技術を軸としたアーキテクチャの転換に対応が求められる。",
+      "glossary": [
+        {
+          "term": "光トランシーバー",
+          "explanation": "電気信号と光信号を相互に変換し、高速なデータ通信を行うための装置のこと。"
+        },
+        {
+          "term": "株式交換",
+          "explanation": "買収企業が自社の株式を相手企業の株主に交付することで、完全子会社化する手法のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
+      "title": "BYD sold more EVs last month than the US did all quarter",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-02T21:38:49Z",
+      "summary": "BYDの10月の新エネルギー車全体の販売台数は前年同月比11%増の490,168台となった。主力のバッテリー電気自動車の販売台数は前年同月比37%増の305,743台で、初の30万台超えを記録した。10月の海外への車両輸出台数は170,194台に達した。",
+      "headline": "BYDの10月のEV販売台数が月間30万台を突破した",
+      "points": [
+        "BYDの10月の新エネルギー車全体の販売台数は前年同月比11%増の490,168台となった。",
+        "主力のバッテリー電気自動車の販売台数は前年同月比37%増の305,743台で、初の30万台超えを記録した。",
+        "10月の海外への車両輸出台数は170,194台に達した。"
+      ],
+      "impact": "海外市場でのシェア拡大を進める同社の最新の販売実績や輸出動向を確認できる。",
+      "glossary": [
+        {
+          "term": "EV",
+          "explanation": "電気を動力源としてモーターのみで走行する自動車（バッテリー電気自動車）のこと。"
+        },
+        {
+          "term": "PHEV",
+          "explanation": "外部からの充電とガソリン給油の両方が可能なプラグインハイブリッド自動車のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git",
+      "title": "日本の全法令を git の履歴にしてみた",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-02T05:17:38.000Z",
+      "summary": "e-Govの法令データを基に、全法令の履歴を管理する「houritsu」が作成された。法令ファイルは8,982個、コミット数は23,338個で、毎朝自動で差分が追加される。1970年より前のコミットは日付を調整し、実際の施行日はトレーラー等に記載している。",
+      "headline": "日本の全法令の改正履歴をGitで管理するリポジトリが公開された",
+      "points": [
+        "e-Govの法令データを基に、全法令の履歴を管理する「houritsu」が作成された。",
+        "法令ファイルは8,982個、コミット数は23,338個で、毎朝自動で差分が追加される。",
+        "1970年より前のコミットは日付を調整し、実際の施行日はトレーラー等に記載している。"
+      ],
+      "impact": "開発者や研究者がgitコマンドを使って法令の変遷や差分を確認できる。",
+      "glossary": [
+        {
+          "term": "Git",
+          "explanation": "プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システム。"
+        },
+        {
+          "term": "diff",
+          "explanation": "ファイル同士の内容の差分を表示したり、変更点を比較したりすること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://pc.watch.impress.co.jp/docs/news/2153055.html",
+      "title": "写真1枚から“裏側まで”3D化するAI「Idol」無償公開、VRAM10GBでも動く",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-02T06:29:57.000Z",
+      "summary": "Speridlabsが画像1枚から3Dオブジェクトを生成するAIモデル「Idol」を発表した。消費VRAMは最大7.2GBで、コンシューマ向けGPUでも動作する。出力は標準的な.plyファイル形式で行われる。",
+      "headline": "写真1枚から裏側まで3Dモデルを生成するAI「Idol」が無償公開された",
+      "points": [
+        "Speridlabsが画像1枚から3Dオブジェクトを生成するAIモデル「Idol」を発表した。",
+        "消費VRAMは最大7.2GBで、コンシューマ向けGPUでも動作する。",
+        "出力は標準的な.plyファイル形式で行われる。"
+      ],
+      "impact": "商用利用可能なモデルを使って、手元の写真から3Dガウシアンスプラッティング形式のデータを作成できる。",
+      "glossary": [
+        {
+          "term": "3Dガウシアンスプラッティング",
+          "explanation": "大量の3Dの点（ガウシアン）を使って立体的なシーンや物体を効率よく表現・レンダリングする技術。"
+        },
+        {
+          "term": "VRAM",
+          "explanation": "画像描画やAIの処理などで主に使用される、GPU専用のメモリのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 149,
+    "shortlisted": 80,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 31595,
+    "outputTokens": 7568
+  },
+  "offline": false
+}

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-03</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月3日(火)</p>
+<p class="meta">更新 2026-11-03 08:53 · 取得ソース 23/23 · 選定 19件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">4</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/" target="_blank" rel="noopener noreferrer">Amazon Connectがフロー内でMCPツールを利用可能に</a></h3>
+<p class="orig">原題: Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-03</p>
+<ul class="points"><li>新しい「External Tool」ブロックを使用して、カスタマーエクスペリエンスフロー内でMCPツールを呼び出せるようになった。</li><li>Amazon Bedrock AgentCore Gateway経由でサードパーティー製アプリケーションと接続し、カスタムLambda関数なしでデータを取得できる。</li><li>米国東部（バージニア北部）、米国西部（オレゴン）、カナダ（中部）、欧州（フランクフルト、ロンドン）、アジア太平洋（ソウル、シンガポール、シドニー、東京）の各リージョンで利用可能である。</li></ul><p class="impact"><b>影響</b>管理者は、Amazon Connectのフロー内でサードパーティーのデータやアクションを容易に連携させることができる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルが外部のデータソースやツールと安全に連携するための標準化されたプロトコル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.itmedia.co.jp/news/article/2611/02/2000002777/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeの「Max 20x」を「Ultra」に名称変更し制限を撤廃</a></h3>
+<p class="orig">原題: Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更 月200ドルで5時間ごとの利用制限を撤廃</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/02/2000002777/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-02</p>
+<ul class="points"><li>個人向け有料プラン「Max 20x」の名称が「Ultra」に変更され、月額料金の200ドルはそのまま維持される。</li><li>Ultraプランでは、認証済みアカウントを対象に5時間ごとの利用上限が撤廃された。</li><li>旧「Max 5x」は「Max」に名称が変更され、既存契約者は手続き不要で新プランへ移行する。</li></ul><p class="impact"><b>影響</b>既存のUltraプラン契約者は、アカウント認証が完了していれば5時間ごとの利用制限なしでClaudeを利用できる。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.itmedia.co.jp/news/article/2611/03/2000002831/" target="_blank" rel="noopener noreferrer">AnthropicがIPO申請書の修正版を提出し7〜9月期の売上高などを公開</a></h3>
+<p class="orig">原題: Anthropic、IPO申請書を修正 7?9月売上高は約170億ドル、インフラ契約額は約8954億ドル</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/03/2000002831/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-03</p>
+<ul class="points"><li>米証券取引委員会に新規株式公開に向けた登録届出書の修正版を提出し、2026年第3四半期の業績などを追加した。</li><li>7〜9月期の売上高は約169億5600万ドルで営業損益は5億6700万ドルの赤字となり、1〜9月の純損失は1040億3900万ドルに膨らんだ。</li><li>AIの計算資源やインフラに関する将来の支出約束額の総額は約8954億ドルに上る。</li></ul><p class="impact"><b>影響</b>投資家や関係者は、公開された同社の詳細な財務数値やインフラ投資計画を確認できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>企業が株式を証券取引所に新規に公開し、一般の投資家が売買できるようにすること。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/" target="_blank" rel="noopener noreferrer">Amazon Connectがフロー内でMCPツールを利用可能に</a></h3>
+<p class="orig">原題: Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-03</p>
+<ul class="points"><li>新しい「External Tool」ブロックを使用して、カスタマーエクスペリエンスフロー内でMCPツールを呼び出せるようになった。</li><li>Amazon Bedrock AgentCore Gateway経由でサードパーティー製アプリケーションと接続し、カスタムLambda関数なしでデータを取得できる。</li><li>米国東部（バージニア北部）、米国西部（オレゴン）、カナダ（中部）、欧州（フランクフルト、ロンドン）、アジア太平洋（ソウル、シンガポール、シドニー、東京）の各リージョンで利用可能である。</li></ul><p class="impact"><b>影響</b>管理者は、Amazon Connectのフロー内でサードパーティーのデータやアクションを容易に連携させることができる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルが外部のデータソースやツールと安全に連携するための標準化されたプロトコル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/02/2000002777/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeの「Max 20x」を「Ultra」に名称変更し制限を撤廃</a></h3>
+<p class="orig">原題: Anthropic、「Claude」の「Max 20x」を「Ultra」に名称変更 月200ドルで5時間ごとの利用制限を撤廃</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/02/2000002777/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-02</p>
+<ul class="points"><li>個人向け有料プラン「Max 20x」の名称が「Ultra」に変更され、月額料金の200ドルはそのまま維持される。</li><li>Ultraプランでは、認証済みアカウントを対象に5時間ごとの利用上限が撤廃された。</li><li>旧「Max 5x」は「Max」に名称が変更され、既存契約者は手続き不要で新プランへ移行する。</li></ul><p class="impact"><b>影響</b>既存のUltraプラン契約者は、アカウント認証が完了していれば5時間ごとの利用制限なしでClaudeを利用できる。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/03/2000002831/" target="_blank" rel="noopener noreferrer">AnthropicがIPO申請書の修正版を提出し7〜9月期の売上高などを公開</a></h3>
+<p class="orig">原題: Anthropic、IPO申請書を修正 7?9月売上高は約170億ドル、インフラ契約額は約8954億ドル</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/03/2000002831/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-03</p>
+<ul class="points"><li>米証券取引委員会に新規株式公開に向けた登録届出書の修正版を提出し、2026年第3四半期の業績などを追加した。</li><li>7〜9月期の売上高は約169億5600万ドルで営業損益は5億6700万ドルの赤字となり、1〜9月の純損失は1040億3900万ドルに膨らんだ。</li><li>AIの計算資源やインフラに関する将来の支出約束額の総額は約8954億ドルに上る。</li></ul><p class="impact"><b>影響</b>投資家や関係者は、公開された同社の詳細な財務数値やインフラ投資計画を確認できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>企業が株式を証券取引所に新規に公開し、一般の投資家が売買できるようにすること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener noreferrer">Anthropicが再帰的自己改善能力に近づいているとIPO申請書で警告</a></h3>
+<p class="orig">原題: Anthropic warns that it’s very close to RSI capability, aka self-building AI</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-03</p>
+<ul class="points"><li>S-1Aの修正版において、AIが自らを訓練して能力を急速に高める再帰的自己改善（RSI）の基準に近づいていると言及した。</li><li>AIを活用した研究開発の加速により、安全性や整合性の検証が追いつかなくなるリスクがあるとしている。</li><li>現行のモデルはいずれもRSIの閾値を超えておらず、当面は人間による開発の監督を継続する方針である。</li></ul><p class="impact"><b>影響</b>開発者や規制当局は、AIの急速な自律進化に伴う安全性リスクとAnthropicの対応方針を確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>再帰的自己改善</dt><dd>AI自身がさらなる高性能なAIを設計・改良するプロセスを繰り返し、能力が爆発的に向上すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/02/2000002779/" target="_blank" rel="noopener noreferrer">Googleが宇宙の試作衛星に搭載したTPUからのAI応答受信に成功</a></h3>
+<p class="orig">原題: Google、宇宙のTPUから初のAI応答を受信 「Project Suncatcher」試作衛星で「Gemma 4」が俳句を詠む</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/02/2000002779/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-02</p>
+<ul class="points"><li>Googleは宇宙AIデータセンター構想の試作衛星から軌道上TPUによるAI応答の初受信を発表しました。</li><li>衛星に搭載されたモデルGemma 4が地上局のプロンプトに応じ宇宙をテーマにした俳句などを生成しました。</li><li>今後は熱や放射線の環境下での動作試験を進め2027年に2基の衛星による次の実証を行う計画です。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>TPU</dt><dd>AIの学習や予測処理を高速化するためにGoogleが開発した専用プロセッサ。</dd><dt>Gemma 4</dt><dd>Googleが開発・公開しているオープンなAIモデルの名称。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/" target="_blank" rel="noopener noreferrer">AWS GovCloudのKiroでClaude Haiku 5.5が利用可能に</a></h3>
+<p class="orig">原題: Haiku 5.5 now available on Kiro in AWS GovCloud (US)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-03</p>
+<ul class="points"><li>AWS GovCloud（US）のKiro IDEとCLIでAnthropicのClaude Haiku 5.5が利用可能になりました。</li><li>Haiku 5.5は大量の処理や素早い応答向けで1Mのコンテキストウィンドウや5段階の思考レベルに対応します。</li><li>100Kトークン超のリクエストは0.3倍の乗数で課金されモデル選択画面から指定できます。</li></ul><p class="impact"><b>影響</b>AWS GovCloudでKiroを使う開発者は、IDEやCLIを最新版へ更新して再起動する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>IDE</dt><dd>プログラミングに必要なエディタや各種ツールを統合した開発環境。</dd><dt>CLI</dt><dd>文字コマンドを入力してコンピュータやプログラムを操作する画面。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/hathibei7/items/1061a3dfbf4adda84cf5" target="_blank" rel="noopener noreferrer">AIやクラウド各社の最新アップデート情報が公開</a></h3>
+<p class="orig">原題: AI・クラウド アップデートまとめ（2026/11/03）：Claude のメッセージスレッド、OpenAI LifeVal、Inspector の AMI スキャン</p>
+<p class="src">出典: <a href="https://qiita.com/hathibei7/items/1061a3dfbf4adda84cf5" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>Anthropicは会話履歴を保持するMessages APIのメッセージスレッドのベータ版を発表しました。</li><li>OpenAIは日常生活タスクでモデルの性能を測定する新たな評価セットLifeValを公開しました。</li><li>AWSはAmazon Inspectorで起動前のEC2のAMIを脆弱性スキャンできる機能を追加しました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>API</dt><dd>ソフトウェア同士が互いに機能やデータを連携・呼び出すための仕組み。</dd><dt>AMI</dt><dd>AWSの仮想サーバー（EC2）を起動する際の元となる起動用イメージ。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/ccq/articles/6ca97030e6c8fd" target="_blank" rel="noopener noreferrer">Ruby向けAI購入委任検証SDKの1.0.0が公開</a></h3>
+<p class="orig">原題: AIエージェントの購入委任をRubyで扱う — AP2対応SDK v1.0.0を公開しました</p>
+<p class="src">出典: <a href="https://zenn.dev/ccq/articles/6ca97030e6c8fd" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-02</p>
+<ul class="points"><li>AIエージェントによる購入委任プロトコルAP2を扱うRuby用Gemのv1.0.0が公開されました。</li><li>直前承認と事前条件承認の2種類の委任に対応し署名検証や結果の生成などを一連で扱えます。</li><li>Railsに依存せずRuby 3.4.12や4.0.9などで動作しサンプルで処理の流れを確認できます。</li></ul><p class="impact"><b>影響</b>RubyでAIエージェントの購入委任を実装する開発者は、Gemをインストールしてサンプルで確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SDK</dt><dd>開発者が特定の機能やサービスを利用したソフトを作るための開発キット。</dd><dt>Gem</dt><dd>プログラミング言語Ruby向けに提供されているライブラリのパッケージ形式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/shu15511551/items/aa66286ba2daf4e50259" target="_blank" rel="noopener noreferrer">ブラウザを使わずにGASの不具合を検知して修正するマネージャー</a></h3>
+<p class="orig">原題: 本番WebアプリをAIにブラウザゼロで直させたら、0.5秒の連打にも完全追従する怪物になった話 ―― 秀GASマネージャー実戦証明と『からくりポケット』の同梱公開</p>
+<p class="src">出典: <a href="https://qiita.com/shu15511551/items/aa66286ba2daf4e50259" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>Google Apps ScriptのWebアプリで発生していた引数不一致やIndexedDBの古いデータ保持による不具合を修正した。</li><li>ブラウザを開かずにサーバー側とHTML側のコードをアトミックに更新し、本番環境への再デプロイを完了させた。</li><li>フロントエンドの実機シミュレーション機能を活用し、削除や復元処理が高速に同期する仕組みを構築した。</li></ul><p class="impact"><b>影響</b>GASの開発者はブラウザを開く手間を省き、AIを活用した迅速な不具合調査と修正を行える。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>IndexedDB</dt><dd>ブラウザ内に大量の構造化データを保存できるクライアント側のデータベース。</dd><dt>アトミック</dt><dd>複数の処理がすべて成功するか、まったく実行されないかのどちらかになる性質。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/rinku/articles/evm-simulation-policy-decisions" target="_blank" rel="noopener noreferrer">AIエージェントのEVMシミュレーション判定設計について</a></h3>
+<p class="orig">原題: EVM simulationが成功しても止める：AIエージェントのALLOW・WARN・BLOCK設計</p>
+<p class="src">出典: <a href="https://zenn.dev/rinku/articles/evm-simulation-policy-decisions" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-02</p>
+<ul class="points"><li>EVMトランザクションのシミュレーション成功時における、ポリシーに基づいたALLOW・WARN・BLOCKの判定層を解説している。</li><li>無制限のERC-20承認などを検出した場合に、設定に応じて異なる判定結果を出力する仕組みをローカルモデルで再現した。</li><li>判定層ではRPCの失敗や結果不明を警告として通さず、安全性のためにブロックする設計を採用している。</li></ul><p class="impact"><b>影響</b>TypeScriptを用いたEVM関連の開発者は、AIエージェントによるトランザクションの安全性評価やポリシー分岐を実装できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>EVM</dt><dd>スマートコントラクトを実行するための仮想マシン環境。</dd><dt>シミュレーション</dt><dd>実際にトランザクションを送信する前に、チェーン上でどのような結果になるかを事前に検証すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/atsushi_apps/articles/claude-code-pretooluse-hook" target="_blank" rel="noopener noreferrer">Claude CodeのPreToolUseフックでツールの実行を制限する</a></h3>
+<p class="orig">原題: Claude CodeのPreToolUseフックで、AIに「やらせない」を仕組みにする</p>
+<p class="src">出典: <a href="https://zenn.dev/atsushi_apps/articles/claude-code-pretooluse-hook" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-02</p>
+<ul class="points"><li>AIがツールを使う前に独自のスクリプトを実行し、条件に応じて操作を拒否するPreToolUseフックの仕組みを解説している。</li><li>設定ファイルにコマンドやターゲットを指定することで、長時間のセッションでも守るべき決まりを自動で強制できる。</li><li>複数のセッションが同じiOSシミュレーターを同時に操作してデータを壊さないよう、UDIDとロックファイルで排他制御を行っている。</li></ul><p class="impact"><b>影響</b>複数のAIセッションを同時に動かす開発者は、誤ったコマンドの実行やリソースの競合を自動で防ぐことができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>フック</dt><dd>プログラムの特定の処理の前後で、独自の処理を割り込ませる仕組み。</dd><dt>JSON</dt><dd>データをテキスト形式で表現するための軽量なデータ構造。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/renderjanction/articles/ec63143140a969" target="_blank" rel="noopener noreferrer">AIとMCPを使ってBlenderのシーンをレンダリングする手順</a></h3>
+<p class="orig">原題: Cursor から 50 MB の .blend を 1080p で仕上げるまで、MCP の道具が返した数字を全部書く</p>
+<p class="src">出典: <a href="https://zenn.dev/renderjanction/articles/ec63143140a969" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-02</p>
+<ul class="points"><li>CursorなどのAIからMCP経由でBlenderのシーン情報を読み取り、プレビューや本番のレンダリングを実行した実測値を公開している。</li><li>シーンの読み取りや数コマの無料プレビューで確認してから、見積もりと上限費用を設定して連続アニメーションを出力した。</li><li>テスト用の短いレンダリングを挟むことで、予測が難しい全体の仕上げ費用を正確に見積もることができる。</li></ul><p class="impact"><b>影響</b>3D制作を行う開発者は、AIとMCPツール連携を活用してBlenderのレンダリング作業を効率化できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルが外部のデータやツールと安全に連携するための標準プロトコル。</dd><dt>レンダリング</dt><dd>3Dデータなどの情報から計算を行い、最終的な画像や映像を生成すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast" target="_blank" rel="noopener noreferrer">AIコーディングエージェント向け検出器impeccableでHTMLを検査した</a></h3>
+<p class="orig">原題: AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-034-impeccable-detect-contrast" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-02</p>
+<ul class="points"><li>impeccableはAI生成UI特有のデザインパターンをLLMなしで検出するCLIツールである。</li><li>自前のシェアカードHTMLを検査したところ、low-contrastなどの指摘が140件検出された。</li><li>共通のCSS変数を1箇所修正したところ、検出数が0件になり終了コードも0に改善した。</li></ul><p class="impact"><b>影響</b>フロントエンド開発者はAIが生成したUIのコントラスト不足などを自動で検出・修正できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>CLIツール</dt><dd>画面を持たず、文字入力によって操作や命令を実行するプログラムのこと。</dd><dt>WCAG</dt><dd>ウェブコンテンツを障害のある人にとってもアクセスしやすくするための国際的なガイドライン。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-27-nuxt-data-middleware" target="_blank" rel="noopener noreferrer">NuxtのuseFetchやサーバーAPI、ミドルウェアの仕組みを学べる</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #27 - Nuxt②（useFetch・サーバーAPI・ミドルウェア）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-27-nuxt-data-middleware" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-02</p>
+<ul class="points"><li>useFetchを使うとサーバー側でデータを取り、その結果をHTMLに埋め込んで返すことができる。</li><li>server/api/にファイルを置くだけでNuxtの中に独自のAPIサーバーを作ることができる。</li><li>ページ表示時はuseFetch、ボタン押下などの単発処理は$fetchを使い分ける。</li></ul><p class="impact"><b>影響</b>Nuxt開発者はデータの効率的な取得やAPIの実装方法を理解し、適切に使い分ける必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SSR</dt><dd>サーバー側でHTMLを組み立ててからブラウザへ送信して表示する仕組みのこと。</dd><dt>REST API</dt><dd>Webシステム間でデータをやり取りするための設計原則やルールのこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/" target="_blank" rel="noopener noreferrer">AWS LambdaがセルフマネージドKafkaのキューイングをサポートした</a></h3>
+<p class="orig">原題: AWS Lambda now supports queues for Apache Kafka in self-managed Kafka event sources</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-queue-kafka-esm/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-03</p>
+<ul class="points"><li>セルフマネージドなKafkaイベントソースでパーティション数を超えた処理のスケールが可能になった。</li><li>Apache Kafka 4.2のシェアグループを利用し、1つのパーティションを複数のポーラーが同時に処理できる。</li><li>ConsumptionModeをQueueに設定することで、トラフィック急増時のスループットと耐障害性が向上する。</li></ul><p class="impact"><b>影響</b>Kafkaを用いたイベント駆動型システムを構築している開発者は、処理のスループットを向上させられる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>パーティション</dt><dd>Kafkaのトピックを分割し、並列処理を可能にするためのデータ単位のこと。</dd><dt>スループット</dt><dd>単位時間あたりに処理できるデータの量や能力のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/03/2000002830/" target="_blank" rel="noopener noreferrer">米Marvellが光通信のLumentumを約18兆円で買収すると発表した</a></h3>
+<p class="orig">原題: Marvell、光通信技術のLumentumを約18兆円で買収 AIデータセンターの高速化に対応</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/03/2000002830/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-03</p>
+<ul class="points"><li>MarvellがLumentumを買収し、半導体と光通信技術を統合してAIデータセンターの通信需要に対応する。</li><li>買収は全額株式交換で行われ、企業価値は約1150億ドルに上る。</li><li>両社の統合により年間10億ドル以上のコスト削減効果を見込み、2028年上半期の完了を予定している。</li></ul><p class="impact"><b>影響</b>AIインフラ関連企業やデータセンターに関わる事業者は、光通信技術を軸としたアーキテクチャの転換に対応が求められる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>光トランシーバー</dt><dd>電気信号と光信号を相互に変換し、高速なデータ通信を行うための装置のこと。</dd><dt>株式交換</dt><dd>買収企業が自社の株式を相手企業の株主に交付することで、完全子会社化する手法のこと。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/" target="_blank" rel="noopener noreferrer">BYDの10月のEV販売台数が月間30万台を突破した</a></h3>
+<p class="orig">原題: BYD sold more EVs last month than the US did all quarter</p>
+<p class="src">出典: <a href="https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-03</p>
+<ul class="points"><li>BYDの10月の新エネルギー車全体の販売台数は前年同月比11%増の490,168台となった。</li><li>主力のバッテリー電気自動車の販売台数は前年同月比37%増の305,743台で、初の30万台超えを記録した。</li><li>10月の海外への車両輸出台数は170,194台に達した。</li></ul><p class="impact"><b>影響</b>海外市場でのシェア拡大を進める同社の最新の販売実績や輸出動向を確認できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>EV</dt><dd>電気を動力源としてモーターのみで走行する自動車（バッテリー電気自動車）のこと。</dd><dt>PHEV</dt><dd>外部からの充電とガソリン給油の両方が可能なプラグインハイブリッド自動車のこと。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git" target="_blank" rel="noopener noreferrer">日本の全法令の改正履歴をGitで管理するリポジトリが公開された</a></h3>
+<p class="orig">原題: 日本の全法令を git の履歴にしてみた</p>
+<p class="src">出典: <a href="https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-02</p>
+<ul class="points"><li>e-Govの法令データを基に、全法令の履歴を管理する「houritsu」が作成された。</li><li>法令ファイルは8,982個、コミット数は23,338個で、毎朝自動で差分が追加される。</li><li>1970年より前のコミットは日付を調整し、実際の施行日はトレーラー等に記載している。</li></ul><p class="impact"><b>影響</b>開発者や研究者がgitコマンドを使って法令の変遷や差分を確認できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Git</dt><dd>プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システム。</dd><dt>diff</dt><dd>ファイル同士の内容の差分を表示したり、変更点を比較したりすること。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://pc.watch.impress.co.jp/docs/news/2153055.html" target="_blank" rel="noopener noreferrer">写真1枚から裏側まで3Dモデルを生成するAI「Idol」が無償公開された</a></h3>
+<p class="orig">原題: 写真1枚から“裏側まで”3D化するAI「Idol」無償公開、VRAM10GBでも動く</p>
+<p class="src">出典: <a href="https://pc.watch.impress.co.jp/docs/news/2153055.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-02</p>
+<ul class="points"><li>Speridlabsが画像1枚から3Dオブジェクトを生成するAIモデル「Idol」を発表した。</li><li>消費VRAMは最大7.2GBで、コンシューマ向けGPUでも動作する。</li><li>出力は標準的な.plyファイル形式で行われる。</li></ul><p class="impact"><b>影響</b>商用利用可能なモデルを使って、手元の写真から3Dガウシアンスプラッティング形式のデータを作成できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>3Dガウシアンスプラッティング</dt><dd>大量の3Dの点（ガウシアン）を使って立体的なシーンや物体を効率よく表現・レンダリングする技術。</dd><dt>VRAM</dt><dd>画像描画やAIの処理などで主に使用される、GPU専用のメモリのこと。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-02/">← 2026-11-02</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（34）</summary><ul><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
