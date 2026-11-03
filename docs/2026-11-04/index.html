@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-04</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月4日(水)</p>
+<p class="meta">更新 2026-11-04 07:19 · 取得ソース 23/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">3</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/" target="_blank" rel="noopener noreferrer">AWSが2026年10月26日週の主要アップデートを公開</a></h3>
+<p class="orig">原題: 週刊AWS – 2026/10/26週</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-03</p>
+<ul class="points"><li>AWS GlueやAWS KMSなど複数サービスで機能更新が発表されました。</li><li>BedrockにてOpenAI GPT-6.1 Terraの一般提供が開始されました。</li><li>Amazon ECSでのGPU共有やEKS Auto Modeの拡張が行われました。</li></ul><p class="impact"><b>影響</b>AWSの最新機能を利用したい開発者は公式ブログで各アップデートの詳細を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ML-KEM</dt><dd>ポスト量子暗号において秘密鍵を安全に共有するための標準規格</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" target="_blank" rel="noopener noreferrer">AgentCoreでユーザー権限を維持する認証連携構成が公開</a></h3>
+<p class="orig">原題: ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>Bedrock AgentCore Gatewayによる代理トークン交換の設定手順が公開されました。</li><li>AIエージェントがユーザー識別情報を保持してServiceNow APIを呼び出せます。</li><li>認証にはMicrosoft Entra IDのOAuthインバウンド統合を利用します。</li></ul><p class="impact"><b>影響</b>ユーザー権限を保持したAIエージェントを構築する開発者は設定手順を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>OAuth</dt><dd>ユーザーの資格情報を渡さずにWebサービス間での権限認可を行う規格</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/" target="_blank" rel="noopener noreferrer">Gen社がBedrock Web Search活用事例を公開</a></h3>
+<p class="orig">原題: How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>Gen社がNorton Revampのニュースエンジン構築事例を公開しました。</li><li>Bedrock AgentCore Web Searchにより最新のWeb知識を安全に参照します。</li><li>2026年3月に開始されリアルタイムなWeb情報を基にコンテンツを提案します。</li></ul><p class="impact"><b>影響</b>リアルタイム検索を伴うAIエージェントを構築する開発者は活用事例として参考にできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルと外部データソースやツールを安全に接続するための標準規格</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/" target="_blank" rel="noopener noreferrer">AWSが2026年10月26日週の主要アップデートを公開</a></h3>
+<p class="orig">原題: 週刊AWS – 2026/10/26週</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-03</p>
+<ul class="points"><li>AWS GlueやAWS KMSなど複数サービスで機能更新が発表されました。</li><li>BedrockにてOpenAI GPT-6.1 Terraの一般提供が開始されました。</li><li>Amazon ECSでのGPU共有やEKS Auto Modeの拡張が行われました。</li></ul><p class="impact"><b>影響</b>AWSの最新機能を利用したい開発者は公式ブログで各アップデートの詳細を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ML-KEM</dt><dd>ポスト量子暗号において秘密鍵を安全に共有するための標準規格</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" target="_blank" rel="noopener noreferrer">AgentCoreでユーザー権限を維持する認証連携構成が公開</a></h3>
+<p class="orig">原題: ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>Bedrock AgentCore Gatewayによる代理トークン交換の設定手順が公開されました。</li><li>AIエージェントがユーザー識別情報を保持してServiceNow APIを呼び出せます。</li><li>認証にはMicrosoft Entra IDのOAuthインバウンド統合を利用します。</li></ul><p class="impact"><b>影響</b>ユーザー権限を保持したAIエージェントを構築する開発者は設定手順を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>OAuth</dt><dd>ユーザーの資格情報を渡さずにWebサービス間での権限認可を行う規格</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/" target="_blank" rel="noopener noreferrer">Gen社がBedrock Web Search活用事例を公開</a></h3>
+<p class="orig">原題: How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>Gen社がNorton Revampのニュースエンジン構築事例を公開しました。</li><li>Bedrock AgentCore Web Searchにより最新のWeb知識を安全に参照します。</li><li>2026年3月に開始されリアルタイムなWeb情報を基にコンテンツを提案します。</li></ul><p class="impact"><b>影響</b>リアルタイム検索を伴うAIエージェントを構築する開発者は活用事例として参考にできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルと外部データソースやツールを安全に接続するための標準規格</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">EDB Postgres AIによるAI向けセマンティック層構築手法を公開</a></h3>
+<p class="orig">原題: Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>EDB Postgres AIを用いたセマンティック層の構築手法が解説されました。</li><li>AIDB拡張によりデータベース内のコメント等でビジネス定義を直接管理します。</li><li>AgentCore Gateway経由のMCP接続で外部エージェントに公開できます。</li></ul><p class="impact"><b>影響</b>データベース連携AIエージェントを開発するエンジニアは権限制御や構築手順を参照できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>セマンティックレイヤー</dt><dd>データ構造をビジネスの概念や定義に変換して扱いやすくする仕組み</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">Amazon Bedrockでマルチエージェントによる部品代替案の検証を自動化する</a></h3>
+<p class="orig">原題: Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-03</p>
+<ul class="points"><li>Amazon Bedrock AgentCoreやAmazon Nova Multimodal Embeddingsなどを活用したマルチエージェントシステムを構築した。</li><li>カタログ検索、公差ルールに基づく評価、知識ベースの3つの専門エージェントが連携して証拠書類を収集する。</li><li>システムは証拠の収集と文書のドラフト作成を行うのみで、最終的な代替承認は人間が行う。</li></ul><p class="impact"><b>影響</b>航空宇宙分野などのエンジニアが、部品代替の仕様確認や文書作成にかかる手作業の負担を軽減できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>マルチエージェントシステム</dt><dd>複数の独立したAIエージェントが協調して、複雑なタスクや問題解決を行う仕組みのこと。</dd><dt>RAG</dt><dd>外部の知識ベースから関連情報を検索し、そのデータをもとに大規模言語モデルが回答を生成する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/" target="_blank" rel="noopener noreferrer">Crawl4AIを活用してWebコンテンツをAmazon Bedrockの知識ベースに取り込む</a></h3>
+<p class="orig">原題: Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-03</p>
+<ul class="points"><li>Amazon Bedrock Knowledge BasesのデータソースとしてWebコンテンツを取り込む方法を解説している。</li><li>Crawl4AIを用いて主要なコンテンツの抽出や構造化Markdownへの変換、カスタムメタデータの付与を行う。</li><li>前処理されたデータはAmazon S3を経由してマネージド知識ベースに取り込まれ、検索品質の検証に利用される。</li></ul><p class="impact"><b>影響</b>開発者は不要なボイラープレートを除外しつつ、目的に応じて整形したWebページを知識ベースにインデキシングできる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Markdown</dt><dd>文章の構造をシンプルな記号で表現し、読みやすい文書を作成できる軽量マークアップ言語のこと。</dd><dt>メタデータ</dt><dd>あるデータに関する付加的な情報や属性データであり、データの管理や検索を容易にするもの。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/" target="_blank" rel="noopener noreferrer">Google Antigravityのケミニフォーマティクススキルで医薬品の分子設計を加速する</a></h3>
+<p class="orig">原題: Agentic cheminformatics with Google Antigravity</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-04</p>
+<ul class="points"><li>Google Antigravityに新しく追加されたケミニフォーマティクススキルにより創薬ワークフローを効率化する。</li><li>肺がん治療薬の事例において、AIエージェントが数千の化合物を検索し、剛直化された新規分子を提案する。</li><li>大規模言語モデルによるワークフローのオーケストレーションと、RDKitベースの決定論的計算ツールを組み合わせている。</li></ul><p class="impact"><b>影響</b>科学者はデータ整理の作業負担を減らし、仮説検証や分子設計などのコア業務に集中できるようになる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ケミニフォーマティクス</dt><dd>コンピュータや情報科学の手法を用いて、化学や薬学のデータを分析・活用する学問分野のこと。</dd><dt>RDKit</dt><dd>化学情報学や機械学習で広く利用されている、オープンソースの分子構造処理ツールキットのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/boluoji/articles/02ba9ecb8dced3" target="_blank" rel="noopener noreferrer">固定テストハーネスを用いてLLMが生成したCSVインポーターコードの再現性を担保する</a></h3>
+<p class="orig">原題: GPT-5.6 Sol vs Claude Opus 4.8：CSVインポーターをテストで固めて再現性を担保する</p>
+<p class="src">出典: <a href="https://zenn.dev/boluoji/articles/02ba9ecb8dced3" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>GPT-5.6 SolとClaude Opus 4.8に同一仕様のCSVからJSONへのインポーターコードを書かせた。</li><li>モデルIDやプロンプト、応答を固定し、23種類のローカル入力フィクスチャを用いてバッチ検証を行った。</li><li>ソースコードの変更有無や終了コード、エラー出力をスクリプトで自動的に比較し合否を判定する。</li></ul><p class="impact"><b>影響</b>開発者はLLMが出力するコードの品質と再現性を客観的なテストにより担保し、安心してパイプラインに組み込める。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>テストハーネス</dt><dd>プログラムの動作をテストするために、実行環境や入力データ、検証手順をまとめて自動化する仕組み。</dd><dt>フィクスチャ</dt><dd>テストを実行する際に使用する、あらかじめ用意された固定の入力データや設定ファイルのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/fuji1009_REBELL/items/a9753094edbf22685518" target="_blank" rel="noopener noreferrer">AIが生成したPHPUnitテストの失敗原因を3系統に分類し対処法を整理</a></h3>
+<p class="orig">原題: AIが生成したPHPUnitテストの「落ちる15%」を3系統に分類する——直す・捨てる・人間が引き取るの判断基準</p>
+<p class="src">出典: <a href="https://qiita.com/fuji1009_REBELL/items/a9753094edbf22685518" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-04</p>
+<ul class="points"><li>Claude Codeで生成したテストのうち落ちた15%を、生成ミス・仕様の読み違い・仕様が曖昧の3系統に分類した。</li><li>PHPUnitのerror（例外）を生成ミス候補、failure（失敗）を仕様確認対象として一次仕分けに活用している。</li><li>JUnit XMLログから失敗内容を抽出し、分類候補を自動で判定・出力するNode.jsスクリプトを作成した。</li></ul><p class="impact"><b>影響</b>PHPUnitテストをAI生成する開発者は、落ちたテストを機械的に直さず仕様を確認してから対処を決める必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>PHPUnit</dt><dd>PHP言語で書かれたプログラムの動作を自動でテストするための標準的なフレームワーク。</dd><dt>JUnit XML</dt><dd>テストの実行結果や成否情報を、異なるツール間で共有・解析するために標準化されたXML形式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/genhiroko/articles/tool-definition-api-differences" target="_blank" rel="noopener noreferrer">主要AIのツール定義における記法の違いと設定の注意点を整理</a></h3>
+<p class="orig">原題: AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること</p>
+<p class="src">出典: <a href="https://zenn.dev/genhiroko/articles/tool-definition-api-differences" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>OpenAI、Anthropic、Geminiでツール定義のJSON構造や名前の命名規則、引数の指定方法が異なる。</li><li>strictモードの条件違反や入力例の不一致、二重指定など送る前に失敗しやすい決まりを解説している。</li><li>Ollama等のローカルモデルでツールを使うには、toolsラベルが付与されているか調べる必要がある。</li></ul><p class="impact"><b>影響</b>AIツール呼び出しを実装する開発者は、利用するAPIやモデルの仕様に合わせたツール定義を事前に確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ツール呼び出し</dt><dd>AIモデルが独自の判断で関数などの実行をシステム側に依頼する仕組みのこと。</dd><dt>JSON Schema</dt><dd>JSON形式データの構造や型、必須項目などのルールを定義するための仕様。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios" target="_blank" rel="noopener noreferrer">Claude Code向け開発テンプレートを検証しゲーム制作を実践</a></h3>
+<p class="orig">原題: Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>CCGSは49体のエージェントと74個のスキルでゲーム開発を自動化・支援するテンプレートである。</li><li>ディレクトリ移動だけでCLAUDE.md等が自動読み込みされる挙動や、クラウド環境での実行制限を確認した。</li><li>既存Unityのバージョン検出や2段階のコードレビューが機能し、指示に沿ったゲーム試作が行えた。</li></ul><p class="impact"><b>影響</b>Claude Codeで他者のテンプレートや設定を使う開発者は、意図しない設定ファイルの自動読み込みに注意する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Claude Code</dt><dd>コマンドラインからAIを使ってコード記述や操作を行える対話型開発ツール。</dd><dt>サブエージェント</dt><dd>メインのAIから特定の専門タスクを委譲されて独立して処理を実行する子AI機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/ryuyanishino/articles/d92dcefe1ac746e08f68b06bdbe8af9f" target="_blank" rel="noopener noreferrer">Claude CodeでAIが迷走した際の中断・復元コマンドの使い分けを解説</a></h3>
+<p class="orig">原題: AIの作業が迷走したとき、止める・戻す・やり直すを使い分ける：Esc・/rewind・/clearと、戻せない範囲</p>
+<p class="src">出典: <a href="https://zenn.dev/ryuyanishino/articles/d92dcefe1ac746e08f68b06bdbe8af9f" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-03</p>
+<ul class="points"><li>作業停止にはEsc、コードや会話の復元には/rewind、会話の初期化には/clearを使い分ける。</li><li>修正が2回失敗した場合は会話を重ねず、/clearして条件をまとめた新しいプロンプトを送るとよい。</li><li>Bash操作やサブエージェントによるファイル変更は/rewindで戻らないためGitでの管理が必要となる。</li></ul><p class="impact"><b>影響</b>Claude Codeを利用する開発者は、状況に応じて操作コマンドを使い分けつつ重要変更はGitで管理する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>チェックポイント</dt><dd>作業途中の状態を自動保存し、失敗時にその時点までコードや会話を復元できる機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/" target="_blank" rel="noopener noreferrer">KiroがLeanを用いて自身のハーネスコードの性質を自動証明</a></h3>
+<p class="orig">原題: Kiro が自身のハーネスの性質を Lean で証明する</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-03</p>
+<ul class="points"><li>26個の関数モデルで96件の性質を分析し70件を証明、18件で反証に成功しました。</li><li>証明支援系Lean 4を用いてテストで届かない不具合や反例を検証しました。</li><li>プロンプトキャッシュや並行処理などの複雑な挙動の正当性を確認しました。</li></ul><p class="impact"><b>影響</b>ハーネス開発者や利用者はテストで発見しにくい潜在バグの改善を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Lean</dt><dd>コンピュータ上で数学的証明の記述と検証を行う証明支援言語。</dd><dt>ハーネス</dt><dd>システムやプログラムを制御・テストするために周囲を取り囲む基盤コード。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/03/this-week-in-spring-november-3rd-2026" target="_blank" rel="noopener noreferrer">Cloud Foundryのローカル実行手順とSpringの最新情報を公開</a></h3>
+<p class="orig">原題: This Week in Spring - November 3rd, 2026</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/03/this-week-in-spring-november-3rd-2026" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-03</p>
+<ul class="points"><li>Dockerとkindを使いローカル環境でCloud Foundryを動かす手順を説明しました。</li><li>cf CLIのインストールからSpring Bootアプリのデプロイ方法を解説しました。</li><li>Spring Boot 4への移行ガイドや4.2 RCなど最新情報を紹介しました。</li></ul><p class="impact"><b>影響</b>Spring BootやCloud Foundryを使う開発者は最新情報や移行手順を確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Cloud Foundry</dt><dd>アプリケーションのデプロイや運用を自動化するクラウドプラットフォーム。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-28-rendering-strategy" target="_blank" rel="noopener noreferrer">NuxtにおけるCSR・SSR・SSGの違いと選び方を実測解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #28 - レンダリング戦略（CSR/SSR/SSG・ハイドレーション）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-28-rendering-strategy" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-03</p>
+<ul class="points"><li>CSR・SSR・SSGの違いを「HTMLをいつ・どこで作るか」で整理しました。</li><li>実装とcurlコマンドでのレスポンス比較を通して出力の違いを実測検証しました。</li><li>ページの性質や更新頻度に応じたレンダリング戦略の使い分けを提示しました。</li></ul><p class="impact"><b>影響</b>Web開発者は作成するサイトの要件に合わせて適切なレンダリング戦略を選択できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SSR</dt><dd>リクエストに応じてサーバー上で動的にHTMLを生成して返す手法。</dd><dt>SSG</dt><dd>ビルド時にあらかじめ静的なHTMLファイルを生成しておく手法。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://webkit.org/blog/18541/introducing-adaptive-dark-mode/" target="_blank" rel="noopener noreferrer">Safari 27.3 betaがウェブを自動で暗色化する機能を搭載</a></h3>
+<p class="orig">原題: Safari introduces Adaptive Dark Mode in 27.3</p>
+<p class="src">出典: <a href="https://webkit.org/blog/18541/introducing-adaptive-dark-mode/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-04</p>
+<ul class="points"><li>ライトモードのWebサイトを自動解析しダークモード表示に変換します。</li><li>テキストのコントラスト維持やSVGの色変換など表示の崩れを防ぐ工夫を導入しました。</li><li>サイト側で独自対応したい場合はCSSのcolor-scheme設定を利用可能です。</li></ul><p class="impact"><b>影響</b>Web制作者は自身のサイトが適応型ダークモードで正しく表示されるか確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>WCAG</dt><dd>Webコンテンツのアクセシビリティに関する国際的なガイドライン。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types" target="_blank" rel="noopener noreferrer">AWS Configが新たに10種類のリソースタイプに対応</a></h3>
+<p class="orig">原題: AWS Config now supports 10 new resource types</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-04</p>
+<ul class="points"><li>AWS ConfigがAmazon ElastiCacheなど新たな10種類のリソースタイプのサポートを開始しました。</li><li>全リソース記録を有効にしている場合、新タイプは自動的に追跡対象に追加されます。</li><li>追加されたリソースは、ConfigルールやConfigアグリゲーターでも利用可能です。</li></ul><p class="impact"><b>影響</b>AWSユーザーは、新規サポートされたリソースの監視や評価にAWS Configを活用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AWS Config</dt><dd>AWS上のリソースの設定情報を記録しコンプライアンスを評価するサービス。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener noreferrer">Postmanが同意なしにAIプラグインを無断導入したと判明</a></h3>
+<p class="orig">原題: Postman silently auto-installs AI plugins and attempts to share all API data</p>
+<p class="src">出典: <a href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-04</p>
+<ul class="points"><li>Mac版Postmanがユーザーの同意なくCodexなどのAIプラグインを自動でインストールしていました。</li><li>自動導入されたプラグインは外部設定を書き換え、一般的なAPI開発作業を自社ツールへ誘導していました。</li><li>インストーラーは自身で追加したフックのハッシュ値を自動で承認する処理を行っていました。</li></ul><p class="impact"><b>影響</b>Postmanを使用しているMacユーザーは、設定ファイルやログを確認し意図しない変更がないか点検する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルが外部のツールやデータソースと連携するための共通プロトコル。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://neufangled.com/" target="_blank" rel="noopener noreferrer">天井のワイヤーで部屋全体を移動する格安ロボットが登場</a></h3>
+<p class="orig">原題: Stringman, an $800 open-source room scale gripper robot</p>
+<p class="src">出典: <a href="https://neufangled.com/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-04</p>
+<ul class="points"><li>天井の四隅から伸ばしたワイヤーと4つのモーターで部屋内を移動するロボット「Stringman」が発表されました。</li><li>価格は約795ドルで、部屋の全域を移動しながら平均1.9kgの物体を搬送できます。</li><li>設計やコードはオープンソースで公開され、ローカルネットワークのみで運用可能です。</li></ul><p class="impact"><b>影響</b>ホームラボを構築する開発者は、自室の壁や柱に固定器具を取り付けることで本ロボットを設置できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>オープンソース</dt><dd>ソフトウェアのプログラムやハードウェアの設計図を無償で公開する仕組み。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://techcrunch.com/2026/11/03/orbital-matter-3d-printed-the-first-rigid-beam-in-the-vacuum-of-space/" target="_blank" rel="noopener noreferrer">Orbital Matterが宇宙の真空中での3Dプリントに成功</a></h3>
+<p class="orig">原題: Orbital Matter 3D printed the first rigid beam in the vacuum of space</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/03/orbital-matter-3d-printed-the-first-rigid-beam-in-the-vacuum-of-space/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-04</p>
+<ul class="points"><li>ドイツのスタートアップが、宇宙の真空中において小型衛星上で長さ半メートルの構造体を3Dプリントしました。</li><li>特殊な樹脂を押し出して紫外線で硬化させる仕組みで、最大100メートルの構造物作成を目指しています。</li><li>軌道上でパーツを製作することで、ロケットのサイズ制限を受けずに大型太陽光パネルなどを展開できます。</li></ul><p class="impact"><b>影響</b>大型太陽光パネルなどの搭載を検討する衛星事業者は、本技術を活用した展開システムの導入を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>軌道上製造</dt><dd>地上ではなく宇宙空間の軌道上で宇宙機の部品や構造物を直接製造すること。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-03/">← 2026-11-03</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（35）</summary><ul><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

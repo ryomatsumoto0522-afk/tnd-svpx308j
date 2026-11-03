@@ -1,0 +1,518 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-03T22:19:39.591Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-weekly-20261026/",
+      "title": "週刊AWS – 2026/10/26週",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T04:00:20.000Z",
+      "summary": "AWS GlueやAWS KMSなど複数サービスで機能更新が発表されました。BedrockにてOpenAI GPT-6.1 Terraの一般提供が開始されました。Amazon ECSでのGPU共有やEKS Auto Modeの拡張が行われました。",
+      "headline": "AWSが2026年10月26日週の主要アップデートを公開",
+      "points": [
+        "AWS GlueやAWS KMSなど複数サービスで機能更新が発表されました。",
+        "BedrockにてOpenAI GPT-6.1 Terraの一般提供が開始されました。",
+        "Amazon ECSでのGPU共有やEKS Auto Modeの拡張が行われました。"
+      ],
+      "impact": "AWSの最新機能を利用したい開発者は公式ブログで各アップデートの詳細を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "ML-KEM",
+          "explanation": "ポスト量子暗号において秘密鍵を安全に共有するための標準規格"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/",
+      "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T16:47:40.000Z",
+      "summary": "Bedrock AgentCore Gatewayによる代理トークン交換の設定手順が公開されました。AIエージェントがユーザー識別情報を保持してServiceNow APIを呼び出せます。認証にはMicrosoft Entra IDのOAuthインバウンド統合を利用します。",
+      "headline": "AgentCoreでユーザー権限を維持する認証連携構成が公開",
+      "points": [
+        "Bedrock AgentCore Gatewayによる代理トークン交換の設定手順が公開されました。",
+        "AIエージェントがユーザー識別情報を保持してServiceNow APIを呼び出せます。",
+        "認証にはMicrosoft Entra IDのOAuthインバウンド統合を利用します。"
+      ],
+      "impact": "ユーザー権限を保持したAIエージェントを構築する開発者は設定手順を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "OAuth",
+          "explanation": "ユーザーの資格情報を渡さずにWebサービス間での権限認可を行う規格"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/",
+      "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T16:43:20.000Z",
+      "summary": "Gen社がNorton Revampのニュースエンジン構築事例を公開しました。Bedrock AgentCore Web Searchにより最新のWeb知識を安全に参照します。2026年3月に開始されリアルタイムなWeb情報を基にコンテンツを提案します。",
+      "headline": "Gen社がBedrock Web Search活用事例を公開",
+      "points": [
+        "Gen社がNorton Revampのニュースエンジン構築事例を公開しました。",
+        "Bedrock AgentCore Web Searchにより最新のWeb知識を安全に参照します。",
+        "2026年3月に開始されリアルタイムなWeb情報を基にコンテンツを提案します。"
+      ],
+      "impact": "リアルタイム検索を伴うAIエージェントを構築する開発者は活用事例として参考にできます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部データソースやツールを安全に接続するための標準規格"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/",
+      "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T16:41:13.000Z",
+      "summary": "EDB Postgres AIを用いたセマンティック層の構築手法が解説されました。AIDB拡張によりデータベース内のコメント等でビジネス定義を直接管理します。AgentCore Gateway経由のMCP接続で外部エージェントに公開できます。",
+      "headline": "EDB Postgres AIによるAI向けセマンティック層構築手法を公開",
+      "points": [
+        "EDB Postgres AIを用いたセマンティック層の構築手法が解説されました。",
+        "AIDB拡張によりデータベース内のコメント等でビジネス定義を直接管理します。",
+        "AgentCore Gateway経由のMCP接続で外部エージェントに公開できます。"
+      ],
+      "impact": "データベース連携AIエージェントを開発するエンジニアは権限制御や構築手順を参照できます。",
+      "glossary": [
+        {
+          "term": "セマンティックレイヤー",
+          "explanation": "データ構造をビジネスの概念や定義に変換して扱いやすくする仕組み"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/",
+      "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T17:01:16.000Z",
+      "summary": "Amazon Bedrock AgentCoreやAmazon Nova Multimodal Embeddingsなどを活用したマルチエージェントシステムを構築した。カタログ検索、公差ルールに基づく評価、知識ベースの3つの専門エージェントが連携して証拠書類を収集する。システムは証拠の収集と文書のドラフト作成を行うのみで、最終的な代替承認は人間が行う。",
+      "headline": "Amazon Bedrockでマルチエージェントによる部品代替案の検証を自動化する",
+      "points": [
+        "Amazon Bedrock AgentCoreやAmazon Nova Multimodal Embeddingsなどを活用したマルチエージェントシステムを構築した。",
+        "カタログ検索、公差ルールに基づく評価、知識ベースの3つの専門エージェントが連携して証拠書類を収集する。",
+        "システムは証拠の収集と文書のドラフト作成を行うのみで、最終的な代替承認は人間が行う。"
+      ],
+      "impact": "航空宇宙分野などのエンジニアが、部品代替の仕様確認や文書作成にかかる手作業の負担を軽減できる。",
+      "glossary": [
+        {
+          "term": "マルチエージェントシステム",
+          "explanation": "複数の独立したAIエージェントが協調して、複雑なタスクや問題解決を行う仕組みのこと。"
+        },
+        {
+          "term": "RAG",
+          "explanation": "外部の知識ベースから関連情報を検索し、そのデータをもとに大規模言語モデルが回答を生成する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
+      "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-02T17:11:21.000Z",
+      "summary": "Amazon Bedrock Knowledge BasesのデータソースとしてWebコンテンツを取り込む方法を解説している。Crawl4AIを用いて主要なコンテンツの抽出や構造化Markdownへの変換、カスタムメタデータの付与を行う。前処理されたデータはAmazon S3を経由してマネージド知識ベースに取り込まれ、検索品質の検証に利用される。",
+      "headline": "Crawl4AIを活用してWebコンテンツをAmazon Bedrockの知識ベースに取り込む",
+      "points": [
+        "Amazon Bedrock Knowledge BasesのデータソースとしてWebコンテンツを取り込む方法を解説している。",
+        "Crawl4AIを用いて主要なコンテンツの抽出や構造化Markdownへの変換、カスタムメタデータの付与を行う。",
+        "前処理されたデータはAmazon S3を経由してマネージド知識ベースに取り込まれ、検索品質の検証に利用される。"
+      ],
+      "impact": "開発者は不要なボイラープレートを除外しつつ、目的に応じて整形したWebページを知識ベースにインデキシングできる。",
+      "glossary": [
+        {
+          "term": "Markdown",
+          "explanation": "文章の構造をシンプルな記号で表現し、読みやすい文書を作成できる軽量マークアップ言語のこと。"
+        },
+        {
+          "term": "メタデータ",
+          "explanation": "あるデータに関する付加的な情報や属性データであり、データの管理や検索を容易にするもの。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "summary": "Google Antigravityに新しく追加されたケミニフォーマティクススキルにより創薬ワークフローを効率化する。肺がん治療薬の事例において、AIエージェントが数千の化合物を検索し、剛直化された新規分子を提案する。大規模言語モデルによるワークフローのオーケストレーションと、RDKitベースの決定論的計算ツールを組み合わせている。",
+      "headline": "Google Antigravityのケミニフォーマティクススキルで医薬品の分子設計を加速する",
+      "points": [
+        "Google Antigravityに新しく追加されたケミニフォーマティクススキルにより創薬ワークフローを効率化する。",
+        "肺がん治療薬の事例において、AIエージェントが数千の化合物を検索し、剛直化された新規分子を提案する。",
+        "大規模言語モデルによるワークフローのオーケストレーションと、RDKitベースの決定論的計算ツールを組み合わせている。"
+      ],
+      "impact": "科学者はデータ整理の作業負担を減らし、仮説検証や分子設計などのコア業務に集中できるようになる。",
+      "glossary": [
+        {
+          "term": "ケミニフォーマティクス",
+          "explanation": "コンピュータや情報科学の手法を用いて、化学や薬学のデータを分析・活用する学問分野のこと。"
+        },
+        {
+          "term": "RDKit",
+          "explanation": "化学情報学や機械学習で広く利用されている、オープンソースの分子構造処理ツールキットのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/boluoji/articles/02ba9ecb8dced3",
+      "title": "GPT-5.6 Sol vs Claude Opus 4.8：CSVインポーターをテストで固めて再現性を担保する",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T11:23:16.000Z",
+      "summary": "GPT-5.6 SolとClaude Opus 4.8に同一仕様のCSVからJSONへのインポーターコードを書かせた。モデルIDやプロンプト、応答を固定し、23種類のローカル入力フィクスチャを用いてバッチ検証を行った。ソースコードの変更有無や終了コード、エラー出力をスクリプトで自動的に比較し合否を判定する。",
+      "headline": "固定テストハーネスを用いてLLMが生成したCSVインポーターコードの再現性を担保する",
+      "points": [
+        "GPT-5.6 SolとClaude Opus 4.8に同一仕様のCSVからJSONへのインポーターコードを書かせた。",
+        "モデルIDやプロンプト、応答を固定し、23種類のローカル入力フィクスチャを用いてバッチ検証を行った。",
+        "ソースコードの変更有無や終了コード、エラー出力をスクリプトで自動的に比較し合否を判定する。"
+      ],
+      "impact": "開発者はLLMが出力するコードの品質と再現性を客観的なテストにより担保し、安心してパイプラインに組み込める。",
+      "glossary": [
+        {
+          "term": "テストハーネス",
+          "explanation": "プログラムの動作をテストするために、実行環境や入力データ、検証手順をまとめて自動化する仕組み。"
+        },
+        {
+          "term": "フィクスチャ",
+          "explanation": "テストを実行する際に使用する、あらかじめ用意された固定の入力データや設定ファイルのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://qiita.com/fuji1009_REBELL/items/a9753094edbf22685518",
+      "title": "AIが生成したPHPUnitテストの「落ちる15%」を3系統に分類する——直す・捨てる・人間が引き取るの判断基準",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T22:05:06.000Z",
+      "summary": "Claude Codeで生成したテストのうち落ちた15%を、生成ミス・仕様の読み違い・仕様が曖昧の3系統に分類した。PHPUnitのerror（例外）を生成ミス候補、failure（失敗）を仕様確認対象として一次仕分けに活用している。JUnit XMLログから失敗内容を抽出し、分類候補を自動で判定・出力するNode.jsスクリプトを作成した。",
+      "headline": "AIが生成したPHPUnitテストの失敗原因を3系統に分類し対処法を整理",
+      "points": [
+        "Claude Codeで生成したテストのうち落ちた15%を、生成ミス・仕様の読み違い・仕様が曖昧の3系統に分類した。",
+        "PHPUnitのerror（例外）を生成ミス候補、failure（失敗）を仕様確認対象として一次仕分けに活用している。",
+        "JUnit XMLログから失敗内容を抽出し、分類候補を自動で判定・出力するNode.jsスクリプトを作成した。"
+      ],
+      "impact": "PHPUnitテストをAI生成する開発者は、落ちたテストを機械的に直さず仕様を確認してから対処を決める必要がある。",
+      "glossary": [
+        {
+          "term": "PHPUnit",
+          "explanation": "PHP言語で書かれたプログラムの動作を自動でテストするための標準的なフレームワーク。"
+        },
+        {
+          "term": "JUnit XML",
+          "explanation": "テストの実行結果や成否情報を、異なるツール間で共有・解析するために標準化されたXML形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/genhiroko/articles/tool-definition-api-differences",
+      "title": "AI に渡すツール定義の書き方——API ごとの違いと、ローカルモデルにできること",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T14:23:45.000Z",
+      "summary": "OpenAI、Anthropic、Geminiでツール定義のJSON構造や名前の命名規則、引数の指定方法が異なる。strictモードの条件違反や入力例の不一致、二重指定など送る前に失敗しやすい決まりを解説している。Ollama等のローカルモデルでツールを使うには、toolsラベルが付与されているか調べる必要がある。",
+      "headline": "主要AIのツール定義における記法の違いと設定の注意点を整理",
+      "points": [
+        "OpenAI、Anthropic、Geminiでツール定義のJSON構造や名前の命名規則、引数の指定方法が異なる。",
+        "strictモードの条件違反や入力例の不一致、二重指定など送る前に失敗しやすい決まりを解説している。",
+        "Ollama等のローカルモデルでツールを使うには、toolsラベルが付与されているか調べる必要がある。"
+      ],
+      "impact": "AIツール呼び出しを実装する開発者は、利用するAPIやモデルの仕様に合わせたツール定義を事前に確認する必要がある。",
+      "glossary": [
+        {
+          "term": "ツール呼び出し",
+          "explanation": "AIモデルが独自の判断で関数などの実行をシステム側に依頼する仕組みのこと。"
+        },
+        {
+          "term": "JSON Schema",
+          "explanation": "JSON形式データの構造や型、必須項目などのルールを定義するための仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/matsushima_a/articles/day-035-claude-code-game-studios",
+      "title": "Claude Codeを49エージェントのゲームスタジオにするテンプレートで、実際に1本作ってみた",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T14:17:31.000Z",
+      "summary": "CCGSは49体のエージェントと74個のスキルでゲーム開発を自動化・支援するテンプレートである。ディレクトリ移動だけでCLAUDE.md等が自動読み込みされる挙動や、クラウド環境での実行制限を確認した。既存Unityのバージョン検出や2段階のコードレビューが機能し、指示に沿ったゲーム試作が行えた。",
+      "headline": "Claude Code向け開発テンプレートを検証しゲーム制作を実践",
+      "points": [
+        "CCGSは49体のエージェントと74個のスキルでゲーム開発を自動化・支援するテンプレートである。",
+        "ディレクトリ移動だけでCLAUDE.md等が自動読み込みされる挙動や、クラウド環境での実行制限を確認した。",
+        "既存Unityのバージョン検出や2段階のコードレビューが機能し、指示に沿ったゲーム試作が行えた。"
+      ],
+      "impact": "Claude Codeで他者のテンプレートや設定を使う開発者は、意図しない設定ファイルの自動読み込みに注意する必要がある。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "コマンドラインからAIを使ってコード記述や操作を行える対話型開発ツール。"
+        },
+        {
+          "term": "サブエージェント",
+          "explanation": "メインのAIから特定の専門タスクを委譲されて独立して処理を実行する子AI機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://zenn.dev/ryuyanishino/articles/d92dcefe1ac746e08f68b06bdbe8af9f",
+      "title": "AIの作業が迷走したとき、止める・戻す・やり直すを使い分ける：Esc・/rewind・/clearと、戻せない範囲",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T11:48:43.000Z",
+      "summary": "作業停止にはEsc、コードや会話の復元には/rewind、会話の初期化には/clearを使い分ける。修正が2回失敗した場合は会話を重ねず、/clearして条件をまとめた新しいプロンプトを送るとよい。Bash操作やサブエージェントによるファイル変更は/rewindで戻らないためGitでの管理が必要となる。",
+      "headline": "Claude CodeでAIが迷走した際の中断・復元コマンドの使い分けを解説",
+      "points": [
+        "作業停止にはEsc、コードや会話の復元には/rewind、会話の初期化には/clearを使い分ける。",
+        "修正が2回失敗した場合は会話を重ねず、/clearして条件をまとめた新しいプロンプトを送るとよい。",
+        "Bash操作やサブエージェントによるファイル変更は/rewindで戻らないためGitでの管理が必要となる。"
+      ],
+      "impact": "Claude Codeを利用する開発者は、状況に応じて操作コマンドを使い分けつつ重要変更はGitで管理する必要がある。",
+      "glossary": [
+        {
+          "term": "チェックポイント",
+          "explanation": "作業途中の状態を自動保存し、失敗時にその時点までコードや会話を復元できる機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/",
+      "title": "Kiro が自身のハーネスの性質を Lean で証明する",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T02:03:10.000Z",
+      "summary": "26個の関数モデルで96件の性質を分析し70件を証明、18件で反証に成功しました。証明支援系Lean 4を用いてテストで届かない不具合や反例を検証しました。プロンプトキャッシュや並行処理などの複雑な挙動の正当性を確認しました。",
+      "headline": "KiroがLeanを用いて自身のハーネスコードの性質を自動証明",
+      "points": [
+        "26個の関数モデルで96件の性質を分析し70件を証明、18件で反証に成功しました。",
+        "証明支援系Lean 4を用いてテストで届かない不具合や反例を検証しました。",
+        "プロンプトキャッシュや並行処理などの複雑な挙動の正当性を確認しました。"
+      ],
+      "impact": "ハーネス開発者や利用者はテストで発見しにくい潜在バグの改善を確認できます。",
+      "glossary": [
+        {
+          "term": "Lean",
+          "explanation": "コンピュータ上で数学的証明の記述と検証を行う証明支援言語。"
+        },
+        {
+          "term": "ハーネス",
+          "explanation": "システムやプログラムを制御・テストするために周囲を取り囲む基盤コード。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://spring.io/blog/2026/11/03/this-week-in-spring-november-3rd-2026",
+      "title": "This Week in Spring - November 3rd, 2026",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "summary": "Dockerとkindを使いローカル環境でCloud Foundryを動かす手順を説明しました。cf CLIのインストールからSpring Bootアプリのデプロイ方法を解説しました。Spring Boot 4への移行ガイドや4.2 RCなど最新情報を紹介しました。",
+      "headline": "Cloud Foundryのローカル実行手順とSpringの最新情報を公開",
+      "points": [
+        "Dockerとkindを使いローカル環境でCloud Foundryを動かす手順を説明しました。",
+        "cf CLIのインストールからSpring Bootアプリのデプロイ方法を解説しました。",
+        "Spring Boot 4への移行ガイドや4.2 RCなど最新情報を紹介しました。"
+      ],
+      "impact": "Spring BootやCloud Foundryを使う開発者は最新情報や移行手順を確認できます。",
+      "glossary": [
+        {
+          "term": "Cloud Foundry",
+          "explanation": "アプリケーションのデプロイや運用を自動化するクラウドプラットフォーム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-28-rendering-strategy",
+      "title": "35日でフロントエンドの基礎を完全に理解する #28 - レンダリング戦略（CSR/SSR/SSG・ハイドレーション）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-03T02:24:17.000Z",
+      "summary": "CSR・SSR・SSGの違いを「HTMLをいつ・どこで作るか」で整理しました。実装とcurlコマンドでのレスポンス比較を通して出力の違いを実測検証しました。ページの性質や更新頻度に応じたレンダリング戦略の使い分けを提示しました。",
+      "headline": "NuxtにおけるCSR・SSR・SSGの違いと選び方を実測解説",
+      "points": [
+        "CSR・SSR・SSGの違いを「HTMLをいつ・どこで作るか」で整理しました。",
+        "実装とcurlコマンドでのレスポンス比較を通して出力の違いを実測検証しました。",
+        "ページの性質や更新頻度に応じたレンダリング戦略の使い分けを提示しました。"
+      ],
+      "impact": "Web開発者は作成するサイトの要件に合わせて適切なレンダリング戦略を選択できます。",
+      "glossary": [
+        {
+          "term": "SSR",
+          "explanation": "リクエストに応じてサーバー上で動的にHTMLを生成して返す手法。"
+        },
+        {
+          "term": "SSG",
+          "explanation": "ビルド時にあらかじめ静的なHTMLファイルを生成しておく手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "source": "Hacker News",
+      "genre": "frontend",
+      "publishedAt": "2026-11-03T21:39:05Z",
+      "summary": "ライトモードのWebサイトを自動解析しダークモード表示に変換します。テキストのコントラスト維持やSVGの色変換など表示の崩れを防ぐ工夫を導入しました。サイト側で独自対応したい場合はCSSのcolor-scheme設定を利用可能です。",
+      "headline": "Safari 27.3 betaがウェブを自動で暗色化する機能を搭載",
+      "points": [
+        "ライトモードのWebサイトを自動解析しダークモード表示に変換します。",
+        "テキストのコントラスト維持やSVGの色変換など表示の崩れを防ぐ工夫を導入しました。",
+        "サイト側で独自対応したい場合はCSSのcolor-scheme設定を利用可能です。"
+      ],
+      "impact": "Web制作者は自身のサイトが適応型ダークモードで正しく表示されるか確認できます。",
+      "glossary": [
+        {
+          "term": "WCAG",
+          "explanation": "Webコンテンツのアクセシビリティに関する国際的なガイドライン。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-config-new-resource-types",
+      "title": "AWS Config now supports 10 new resource types",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-03T16:00:00.000Z",
+      "summary": "AWS ConfigがAmazon ElastiCacheなど新たな10種類のリソースタイプのサポートを開始しました。全リソース記録を有効にしている場合、新タイプは自動的に追跡対象に追加されます。追加されたリソースは、ConfigルールやConfigアグリゲーターでも利用可能です。",
+      "headline": "AWS Configが新たに10種類のリソースタイプに対応",
+      "points": [
+        "AWS ConfigがAmazon ElastiCacheなど新たな10種類のリソースタイプのサポートを開始しました。",
+        "全リソース記録を有効にしている場合、新タイプは自動的に追跡対象に追加されます。",
+        "追加されたリソースは、ConfigルールやConfigアグリゲーターでも利用可能です。"
+      ],
+      "impact": "AWSユーザーは、新規サポートされたリソースの監視や評価にAWS Configを活用できます。",
+      "glossary": [
+        {
+          "term": "AWS Config",
+          "explanation": "AWS上のリソースの設定情報を記録しコンプライアンスを評価するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-03T17:22:37Z",
+      "summary": "Mac版Postmanがユーザーの同意なくCodexなどのAIプラグインを自動でインストールしていました。自動導入されたプラグインは外部設定を書き換え、一般的なAPI開発作業を自社ツールへ誘導していました。インストーラーは自身で追加したフックのハッシュ値を自動で承認する処理を行っていました。",
+      "headline": "Postmanが同意なしにAIプラグインを無断導入したと判明",
+      "points": [
+        "Mac版Postmanがユーザーの同意なくCodexなどのAIプラグインを自動でインストールしていました。",
+        "自動導入されたプラグインは外部設定を書き換え、一般的なAPI開発作業を自社ツールへ誘導していました。",
+        "インストーラーは自身で追加したフックのハッシュ値を自動で承認する処理を行っていました。"
+      ],
+      "impact": "Postmanを使用しているMacユーザーは、設定ファイルやログを確認し意図しない変更がないか点検する必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のツールやデータソースと連携するための共通プロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://neufangled.com/",
+      "title": "Stringman, an $800 open-source room scale gripper robot",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-03T16:47:29Z",
+      "summary": "天井の四隅から伸ばしたワイヤーと4つのモーターで部屋内を移動するロボット「Stringman」が発表されました。価格は約795ドルで、部屋の全域を移動しながら平均1.9kgの物体を搬送できます。設計やコードはオープンソースで公開され、ローカルネットワークのみで運用可能です。",
+      "headline": "天井のワイヤーで部屋全体を移動する格安ロボットが登場",
+      "points": [
+        "天井の四隅から伸ばしたワイヤーと4つのモーターで部屋内を移動するロボット「Stringman」が発表されました。",
+        "価格は約795ドルで、部屋の全域を移動しながら平均1.9kgの物体を搬送できます。",
+        "設計やコードはオープンソースで公開され、ローカルネットワークのみで運用可能です。"
+      ],
+      "impact": "ホームラボを構築する開発者は、自室の壁や柱に固定器具を取り付けることで本ロボットを設置できます。",
+      "glossary": [
+        {
+          "term": "オープンソース",
+          "explanation": "ソフトウェアのプログラムやハードウェアの設計図を無償で公開する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://techcrunch.com/2026/11/03/orbital-matter-3d-printed-the-first-rigid-beam-in-the-vacuum-of-space/",
+      "title": "Orbital Matter 3D printed the first rigid beam in the vacuum of space",
+      "source": "TechCrunch",
+      "genre": "tech",
+      "publishedAt": "2026-11-03T20:57:17.000Z",
+      "summary": "ドイツのスタートアップが、宇宙の真空中において小型衛星上で長さ半メートルの構造体を3Dプリントしました。特殊な樹脂を押し出して紫外線で硬化させる仕組みで、最大100メートルの構造物作成を目指しています。軌道上でパーツを製作することで、ロケットのサイズ制限を受けずに大型太陽光パネルなどを展開できます。",
+      "headline": "Orbital Matterが宇宙の真空中での3Dプリントに成功",
+      "points": [
+        "ドイツのスタートアップが、宇宙の真空中において小型衛星上で長さ半メートルの構造体を3Dプリントしました。",
+        "特殊な樹脂を押し出して紫外線で硬化させる仕組みで、最大100メートルの構造物作成を目指しています。",
+        "軌道上でパーツを製作することで、ロケットのサイズ制限を受けずに大型太陽光パネルなどを展開できます。"
+      ],
+      "impact": "大型太陽光パネルなどの搭載を検討する衛星事業者は、本技術を活用した展開システムの導入を検討できます。",
+      "glossary": [
+        {
+          "term": "軌道上製造",
+          "explanation": "地上ではなく宇宙空間の軌道上で宇宙機の部品や構造物を直接製造すること。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 139,
+    "shortlisted": 80,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 33932,
+    "outputTokens": 14525
+  },
+  "offline": false
+}
