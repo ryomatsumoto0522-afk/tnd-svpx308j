@@ -1,0 +1,530 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-04T22:39:14.468Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002869/",
+      "title": "GitHub、「Copilot Fusion」正式リリース タスクに応じて最適なAIモデル選択、高性能・低コスト両立",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T04:13:20.000Z",
+      "summary": "Copilot Fusionはタスクの特性に応じて単一または複数のAIモデルを組み合わせて実行するSingle、Cascade、Critiqueの3つのパターンでAIモデルを使い分ける品質やコストを調整する負荷レベルとしてStandard、High、Max、Fastが用意されている",
+      "headline": "GitHubがCopilot Fusionを正式リリース、タスクごとに最適なAIモデルを組み合わせる",
+      "points": [
+        "Copilot Fusionはタスクの特性に応じて単一または複数のAIモデルを組み合わせて実行する",
+        "Single、Cascade、Critiqueの3つのパターンでAIモデルを使い分ける",
+        "品質やコストを調整する負荷レベルとしてStandard、High、Max、Fastが用意されている"
+      ],
+      "impact": "開発者は個別にAIモデルを選択する負担を軽減し、性能とコストのバランスを考慮した開発を進められる。",
+      "glossary": [
+        {
+          "term": "AIモデル",
+          "explanation": "機械学習アルゴリズムを用いてデータからパターンを学習し、予測や生成を行うプログラム。"
+        },
+        {
+          "term": "デバッグ",
+          "explanation": "コンピュータプログラムのバグや欠陥を見つけて修正し、正常に動作させる作業。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+      "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock、エージェントツールとしての Step Functions など (2026 年 11 月 2 日)",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T09:25:26.000Z",
+      "summary": "AWS Step FunctionsがAmazon Bedrock AgentCore Gatewayを介してエージェントツールとして利用可能になったAmazon BedrockでOpenAI GPT-6.1 Terraの一般提供が開始されたAWS Key Management Serviceがポスト量子キーカプセル化のためのML-KEMのサポートを開始した",
+      "headline": "AWSがエージェント連携や新モデル提供など複数の新機能やアップデートを発表",
+      "points": [
+        "AWS Step FunctionsがAmazon Bedrock AgentCore Gatewayを介してエージェントツールとして利用可能になった",
+        "Amazon BedrockでOpenAI GPT-6.1 Terraの一般提供が開始された",
+        "AWS Key Management Serviceがポスト量子キーカプセル化のためのML-KEMのサポートを開始した"
+      ],
+      "impact": "AWSユーザーは、既存のワークフローを書き換えることなくAIエージェントから安全に呼び出して活用できる。",
+      "glossary": [
+        {
+          "term": "AWS Step Functions",
+          "explanation": "複数のAWSサービスやコンポーネントを組み合わせて、視覚的なワークフローを構築できるサービス。"
+        },
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "多様な基盤モデルをAPI経由で利用できるようにするAWSのフルマネージドサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "title": "Progress on provable inference for large language models",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T11:27:53.000Z",
+      "summary": "zkSNARKを活用したプロトコルシステムFlashProveの構築により推論の暗号学的証明の高速化を実現した4ビット量子化された大規模モデルを用いた単一のH100 GPUでの証明生成速度は110トークン/秒であるブログ記事や技術レポート、C++やLeanで書かれた検証コードなど5つの成果物をApache 2.0ライセンスで公開した",
+      "headline": "AnthropicがLLMの推論結果を暗号技術で証明する手法の開発進捗を公開",
+      "points": [
+        "zkSNARKを活用したプロトコルシステムFlashProveの構築により推論の暗号学的証明の高速化を実現した",
+        "4ビット量子化された大規模モデルを用いた単一のH100 GPUでの証明生成速度は110トークン/秒である",
+        "ブログ記事や技術レポート、C++やLeanで書かれた検証コードなど5つの成果物をApache 2.0ライセンスで公開した"
+      ],
+      "impact": "開発者や評価者は、AIモデルの応答が偽造されず指定されたモデルから生成されたものであるかを検証できる。",
+      "glossary": [
+        {
+          "term": "zkSNARK",
+          "explanation": "ある計算が正しく実行されたことを、詳細を明かさずに証明できる暗号技術の仕組み。"
+        },
+        {
+          "term": "量子化",
+          "explanation": "モデルの重みデータのビット数を減らし、メモリ使用量の削減や処理の高速化を図る技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "title": "Kimi K3.1 Pro model weights are out",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T15:30:30Z",
+      "summary": "Kimi K3.1 Proは最大100万トークンのコンテキストウィンドウを持つ3TクラスのマルチモーダルエージェントモデルであるMixture-of-Expertsアーキテクチャを採用し、合計パラメータ数は2.8T、アクティブパラメータ数は104Bであるコーディングや金融リサーチ、事実的正確性などのタスクにおいて大幅な性能向上の結果が示されている",
+      "headline": "Moonshot AIがオープンウェイトのマルチモーダルモデルKimi K3.1 Proを公開",
+      "points": [
+        "Kimi K3.1 Proは最大100万トークンのコンテキストウィンドウを持つ3Tクラスのマルチモーダルエージェントモデルである",
+        "Mixture-of-Expertsアーキテクチャを採用し、合計パラメータ数は2.8T、アクティブパラメータ数は104Bである",
+        "コーディングや金融リサーチ、事実的正確性などのタスクにおいて大幅な性能向上の結果が示されている"
+      ],
+      "impact": "開発者や研究者は、公開されたモデルウェイトを利用して多様なエージェントタスクやマルチモーダル処理を実行できる。",
+      "glossary": [
+        {
+          "term": "マルチモーダル",
+          "explanation": "テキストや画像など、異なる形式のデータを同時に理解して処理できる仕組み。"
+        },
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度に読み込んで処理できるテキストやデータの最大容量。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.ricursive.com/ripple",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T18:53:29Z",
+      "summary": "SFTと強化学習の改善により計算効率を高めたモデルのプレビュー版を公開しました。事後学習データの購入を避け、独自の合成データパイプラインと品質フィルタリングを活用しました。TerminalBench 2.1で80.5点を記録し、従来のSOTAの約70分の1となる1.4Mロールアウトで達成しました。",
+      "headline": "Ricursiveが計算効率を高めたモデルRipple-65Bを公開",
+      "points": [
+        "SFTと強化学習の改善により計算効率を高めたモデルのプレビュー版を公開しました。",
+        "事後学習データの購入を避け、独自の合成データパイプラインと品質フィルタリングを活用しました。",
+        "TerminalBench 2.1で80.5点を記録し、従来のSOTAの約70分の1となる1.4Mロールアウトで達成しました。"
+      ],
+      "glossary": [
+        {
+          "term": "SOTA",
+          "explanation": "特定の課題やベンチマークにおいて、現時点で最高性能を達成している状態のことです。"
+        },
+        {
+          "term": "SFT",
+          "explanation": "事前学習済みモデルに目的の指示と回答例を与えて追加学習させ、応答の質を高める手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T22:41:03.000Z",
+      "summary": "生成された回答が特定のAIモデルに由来することを数学的に保証するオープンソース技術「FlashProve」を発表しました。運営元が安価なモデルへ秘密裏に差し替えるといった不正や、なりすましを防ぐことができます。モデルの重み（パラメーター）を公開せずに指紋情報のみを公開するため、商用モデルでも利用可能です。",
+      "headline": "Anthropicが出力元AIモデルを数学的に証明する仕組みを公開",
+      "points": [
+        "生成された回答が特定のAIモデルに由来することを数学的に保証するオープンソース技術「FlashProve」を発表しました。",
+        "運営元が安価なモデルへ秘密裏に差し替えるといった不正や、なりすましを防ぐことができます。",
+        "モデルの重み（パラメーター）を公開せずに指紋情報のみを公開するため、商用モデルでも利用可能です。"
+      ],
+      "impact": "研究段階のため提供予定はありませんが、GitHubで公開されたコードを開発者が検証や改良に利用できます。",
+      "glossary": [
+        {
+          "term": "暗号学的証明",
+          "explanation": "数学的な暗号理論を使い、データの改ざんやなりすましがないことを第三者が確実に検証できる仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "title": "v2.1.318",
+      "source": "Claude Code",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T00:01:03.000Z",
+      "summary": "Modの並行処理における負荷設定の追加や、サインイン有効期限の表示などに対応しました。macOSで多数のBashコマンド実行時に動作が重くなりメモリーが増加する不具合を修正しました。ツール呼び出しの再試行失敗後に過去の会話履歴が失われる問題など、多数のバグを修正しました。",
+      "headline": "Claude Codeのバージョン2.1.318が公開",
+      "points": [
+        "Modの並行処理における負荷設定の追加や、サインイン有効期限の表示などに対応しました。",
+        "macOSで多数のBashコマンド実行時に動作が重くなりメモリーが増加する不具合を修正しました。",
+        "ツール呼び出しの再試行失敗後に過去の会話履歴が失われる問題など、多数のバグを修正しました。"
+      ],
+      "impact": "Claude Code利用者は最新版へ更新することで、macOSでのメモリー増加や認証関連の不具合を解消できます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを標準化された手順で接続するための仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/orivanai/articles/claude-code-2026-10-updates",
+      "title": "Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T13:15:04.000Z",
+      "summary": "動作を拡張できるModsの追加や、GitHubのPRを自動レビューするCode Reviewが正式提供されました。入力100万トークンあたり0.10ドルで利用できる新モデルHaiku 5.5が追加されました。放置された会話の要約を事前に作成する機能「idle compaction」が導入されました。",
+      "headline": "Claude Codeの2026年10月アップデート内容がまとめられる",
+      "points": [
+        "動作を拡張できるModsの追加や、GitHubのPRを自動レビューするCode Reviewが正式提供されました。",
+        "入力100万トークンあたり0.10ドルで利用できる新モデルHaiku 5.5が追加されました。",
+        "放置された会話の要約を事前に作成する機能「idle compaction」が導入されました。"
+      ],
+      "impact": "Opus 4.8のfast mode利用者は11月30日の廃止までに設定変更が必要なほか、版を固定している人は最新版への更新が必要です。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIが文章を処理する際の最小単位で、文字や単語のまとまりを指します。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/scalar_sol_blog/articles/20261103-104939-claude-code-model-split",
+      "title": "Claude Code を Sonnet で動かし、判断だけ Opus に相談させ、下働きは Haiku に任せる設定を検証する",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T19:13:41.000Z",
+      "summary": "Claude Codeで会話・アドバイザー・サブエージェントのモデルを分離する設定の挙動を検証しました。Exploreサブエージェントは指定したHaikuにならずSonnetで動く仕様であることがわかりました。アドバイザー機能は有効化されていても、明確に指示しない限り自動では呼び出されませんでした。",
+      "headline": "Claude Codeでモデルを役割別に分ける設定の実際の挙動が検証された",
+      "points": [
+        "Claude Codeで会話・アドバイザー・サブエージェントのモデルを分離する設定の挙動を検証しました。",
+        "Exploreサブエージェントは指定したHaikuにならずSonnetで動く仕様であることがわかりました。",
+        "アドバイザー機能は有効化されていても、明確に指示しない限り自動では呼び出されませんでした。"
+      ],
+      "impact": "Claude Codeでモデルごとの役割分担を設定したい利用者は、サブエージェントの適用仕様を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供する、ターミナル上で対話しながらコードの編集や実行を行うAIツール。"
+        },
+        {
+          "term": "サブエージェント",
+          "explanation": "メインの処理から分離され、特定の調査やタスクをバックグラウンドで実行するAIの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search",
+      "title": "MCPツール定義の「スキーマ税」でトークンが溶ける！「全32ツール一括投入」vs「オンデマンド検索」で入力92.7%削減",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T18:13:21.000Z",
+      "summary": "32個のMCPツールを一括投入する方式と検索で動的展開する方式を比較検証しました。オンデマンド検索により累積入力トークンを92.7％削減しAPIコストも84.8％削減できました。必要なツールのみを展開することで類似した非推奨ツールの誤呼び出しをゼロに抑えました。",
+      "headline": "MCPツールのオンデマンド検索により入力トークンを92.7％削減した",
+      "points": [
+        "32個のMCPツールを一括投入する方式と検索で動的展開する方式を比較検証しました。",
+        "オンデマンド検索により累積入力トークンを92.7％削減しAPIコストも84.8％削減できました。",
+        "必要なツールのみを展開することで類似した非推奨ツールの誤呼び出しをゼロに抑えました。"
+      ],
+      "impact": "多数のMCPツールを連携させて処理を行う開発者は、ツール定義のオンデマンド検索の導入を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータ源を安全に接続するための標準化された通信プロトコル。"
+        },
+        {
+          "term": "JSON Schema",
+          "explanation": "JSONデータの構造やデータ型、必須項目などを定義して検証するための仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/honabochi/articles/ai-review-votes-and-evidence",
+      "title": "複数AIレビューで、モデルと「何を見るか」を分けている",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T12:36:59.000Z",
+      "summary": "視点の異なるレビューを得るため、使用するAIモデルと評価する観点（ハーネス）を分けて運用しています。スキルや検証手順をまとめた専門ハーネスを育てることで、具体的な問いに基づいた指摘を引き出します。実際にClaudeからの指摘を受け、参照先の保存情報を追加する改善を行った事例が示されました。",
+      "headline": "複数AIでのレビューにおいてモデル変更とチェック観点の分離手法が紹介された",
+      "points": [
+        "視点の異なるレビューを得るため、使用するAIモデルと評価する観点（ハーネス）を分けて運用しています。",
+        "スキルや検証手順をまとめた専門ハーネスを育てることで、具体的な問いに基づいた指摘を引き出します。",
+        "実際にClaudeからの指摘を受け、参照先の保存情報を追加する改善を行った事例が示されました。"
+      ],
+      "impact": "AIを活用したコードや文章のレビュー精度を改善したい開発者は、モデルと評価観点を分離した設計を検討するとよい。",
+      "glossary": [
+        {
+          "term": "レビュー",
+          "explanation": "作成した成果物やコードの内容をチェックし、問題点や改善点を指摘する作業のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
+      "title": "Four layers of context engineering for production AI agents: How Deep Insight applies them in working code",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T16:30:40.000Z",
+      "summary": "複雑なタスクでコンテキスト長が消費される課題に対し、4つの層で管理する手法を解説しました。参照実装のDeep Insightではツールの活用により文脈トークンを約95％削減しました。オンデマンドなスキルの読込によりシステムプロンプトのサイズを約97％削減しています。",
+      "headline": "AWSが本番AIエージェント向けコンテキスト管理の4層手法を解説した",
+      "points": [
+        "複雑なタスクでコンテキスト長が消費される課題に対し、4つの層で管理する手法を解説しました。",
+        "参照実装のDeep Insightではツールの活用により文脈トークンを約95％削減しました。",
+        "オンデマンドなスキルの読込によりシステムプロンプトのサイズを約97％削減しています。"
+      ],
+      "impact": "本番環境でAIエージェントを運用する開発者は、文脈溢れやコスト増を防ぐ4層のコンテキスト管理手法を確認・適用するとよい。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "LLMが一度の処理で受け取って参照できるトークン（文字情報）の最大許容量。"
+        },
+        {
+          "term": "システムプロンプト",
+          "explanation": "AIエージェントの役割や振る舞い、制約条件などを初期命令として与えるテキスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://qiita.com/ojisantech/items/680216ff077c57755f7b",
+      "title": "LAN内AIボットの「嘘（ハルシネーション）」を許さない。CI/CDで回す事実整合性ベンチマークテスト自動化スイート（TC01〜TC10）",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T22:30:14.000Z",
+      "summary": "実DBの正解データと照合し必須キーワードを自動採点する10のテスト項目を定義した。大文字小文字を無視した完全包含判定を採用し合格率100%未満でCIを停止する。",
+      "headline": "LAN内AIボットの誤回答を防ぐ自動テスト手法が公開",
+      "points": [
+        "実DBの正解データと照合し必須キーワードを自動採点する10のテスト項目を定義した。",
+        "大文字小文字を無視した完全包含判定を採用し合格率100%未満でCIを停止する。"
+      ],
+      "impact": "LAN内AIボットを構築・運用する開発者が、プロンプト変更時のデグレ防止に導入する。",
+      "glossary": [
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実に基づかない偽の情報や嘘を生成してしまう現象のこと。"
+        },
+        {
+          "term": "CI/CD",
+          "explanation": "ソフトウェアの構築やテスト、デプロイを自動化して継続的に行う手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://gigazine.net/news/20261104-openai-git-pando/",
+      "title": "OpenAIがGitで超大規模リポジトリを運用するためのバックエンド「Pando」を開発",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "backend",
+      "publishedAt": "2026-11-04T04:33:36.000Z",
+      "summary": "コミット数増大による遅延解消のためGitバックエンドPandoを開発した。ブランチ単位の順序調整等でプッシュ遅延を約80%削減し1日約1PBを処理する。Codexを用いてRustで10週間で実装されマージ成功率は100%近くに向上した。",
+      "headline": "OpenAIがGitの超大規模運用に向けたバックエンドを開発",
+      "points": [
+        "コミット数増大による遅延解消のためGitバックエンドPandoを開発した。",
+        "ブランチ単位の順序調整等でプッシュ遅延を約80%削減し1日約1PBを処理する。",
+        "Codexを用いてRustで10週間で実装されマージ成功率は100%近くに向上した。"
+      ],
+      "glossary": [
+        {
+          "term": "モノレポ",
+          "explanation": "複数のプロジェクトやサービスのコードを単一のリポジトリで管理する手法。"
+        },
+        {
+          "term": "バックエンド",
+          "explanation": "ユーザーからは見えない、データ処理やシステム連携を担うサーバー側の仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://go.dev/blog/jsonv2",
+      "title": "A new Go API for JSON",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-11-04T17:52:11Z",
+      "summary": "従来の標準ライブラリの課題を改善した新しいJSONパッケージが開発された。不正なUTF-8や重複キーの拒否などRFC 8259規格への準拠と安全性を高めた。encoding/json/v2およびjsontextがGo 1.27で安定版として提供される。",
+      "headline": "Go 1.27で標準JSON処理を刷新した新パッケージが利用可能に",
+      "points": [
+        "従来の標準ライブラリの課題を改善した新しいJSONパッケージが開発された。",
+        "不正なUTF-8や重複キーの拒否などRFC 8259規格への準拠と安全性を高めた。",
+        "encoding/json/v2およびjsontextがGo 1.27で安定版として提供される。"
+      ],
+      "impact": "Go言語を利用する開発者が、新バージョンで提供されるJSONパッケージを確認する。",
+      "glossary": [
+        {
+          "term": "UTF-8",
+          "explanation": "世界中の文字を表現するために広く使われている標準的な文字コード規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-29-frontend-auth",
+      "title": "35日でフロントエンドの基礎を完全に理解する #29 - フロントエンドの認証（トークンの置き場・Cookie属性・OIDC）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-04T03:22:21.000Z",
+      "summary": "トークンの保存先としてメモリ、localStorage、Cookieの特性を比較した。JavaScriptから読めないHttpOnly属性付きCookieの使用を推奨している。盗聴やCSRFを防ぐためSecureやSameSite属性の併用手順を提示した。",
+      "headline": "フロントエンド認証でのトークン保存場所と安全な属性を解説",
+      "points": [
+        "トークンの保存先としてメモリ、localStorage、Cookieの特性を比較した。",
+        "JavaScriptから読めないHttpOnly属性付きCookieの使用を推奨している。",
+        "盗聴やCSRFを防ぐためSecureやSameSite属性の併用手順を提示した。"
+      ],
+      "impact": "Webアプリを開発するエンジニアが、トークンの保存場所やCookie属性の設定を見直す。",
+      "glossary": [
+        {
+          "term": "XSS",
+          "explanation": "Webサイトに悪意あるスクリプトを注入しユーザーのブラウザ上で実行させる攻撃。"
+        },
+        {
+          "term": "CSRF",
+          "explanation": "ユーザーの意図しないリクエストを別のサイト経由で送信させる攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/",
+      "title": "Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-04T21:29:00.000Z",
+      "summary": "Amazon ECS Managed InstancesとManaged Daemonsでjson-fileログドライバーとログドライバーボリュームが利用可能になったアプリケーションコンテナのログを標準のDocker json-file形式でローカルファイルに出力できる追加料金なしで利用でき、AWS Management ConsoleやAWS CLIなどで設定可能である",
+      "headline": "Amazon ECSが Managed Instancesでjson-fileログドライバーをサポート",
+      "points": [
+        "Amazon ECS Managed InstancesとManaged Daemonsでjson-fileログドライバーとログドライバーボリュームが利用可能になった",
+        "アプリケーションコンテナのログを標準のDocker json-file形式でローカルファイルに出力できる",
+        "追加料金なしで利用でき、AWS Management ConsoleやAWS CLIなどで設定可能である"
+      ],
+      "impact": "Amazon ECSでManaged Instancesを利用している開発者は、任意のオブザーバビリティエージェントを使ってアプリケーションログを収集できる。",
+      "glossary": [
+        {
+          "term": "ログドライバー",
+          "explanation": "コンテナが出力するログの収集や転送の仕組みを管理する機能のこと。"
+        },
+        {
+          "term": "ボリューム",
+          "explanation": "コンテナ間でデータを共有したり永続化したりするための記憶領域のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-oracle-cross-region-snapshot-copy-option-group/",
+      "title": "Amazon RDS for Oracle now supports copying option groups during cross-Region snapshot copy",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-04T18:40:00.000Z",
+      "summary": "DBスナップショットを別のAWSリージョンへコピーする際、関連するオプション群も同時にコピーできるようになったCopyDBSnapshot APIなどのCopyOptionGroupパラメータをtrueに設定することで利用できるAmazon RDS for Oracleのすべての商用AWSリージョンおよびAWS GovCloudリージョンで利用可能である",
+      "headline": "Amazon RDS for Oracleがクロスリージョンでのスナップショットコピー時のオプション群コピーに対応",
+      "points": [
+        "DBスナップショットを別のAWSリージョンへコピーする際、関連するオプション群も同時にコピーできるようになった",
+        "CopyDBSnapshot APIなどのCopyOptionGroupパラメータをtrueに設定することで利用できる",
+        "Amazon RDS for Oracleのすべての商用AWSリージョンおよびAWS GovCloudリージョンで利用可能である"
+      ],
+      "impact": "Amazon RDS for Oracleを利用するユーザーは、別リージョンへのバックアップ複製時にオプション群を再作成する手間が省ける。",
+      "glossary": [
+        {
+          "term": "スナップショット",
+          "explanation": "特定時点におけるストレージやデータベースの状態をそのまま保存したデータのコピーのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/",
+      "title": "AWS announces AWS Interconnect - last mile preview with Equinix",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-04T17:00:00.000Z",
+      "summary": "EquinixのグローバルなデータセンターからAWSへマネージドでプライベートな接続を提供開始した2つのロケーションと4つのリンクによる四重冗長構成と99.99%の可用性SLAを備えているプレビュー期間中はUS WestおよびUS Eastの一部リージョン向け1 Gbps接続を無料で注文できる",
+      "headline": "AWS Interconnect - last mileのプレビュー提供をEquinixと共同で発表",
+      "points": [
+        "EquinixのグローバルなデータセンターからAWSへマネージドでプライベートな接続を提供開始した",
+        "2つのロケーションと4つのリンクによる四重冗長構成と99.99%の可用性SLAを備えている",
+        "プレビュー期間中はUS WestおよびUS Eastの一部リージョン向け1 Gbps接続を無料で注文できる"
+      ],
+      "impact": "AWSとEquinixを利用するユーザーは、クロスコネクトの手配やルーターの設定なしで冗長性の高い専用接続を構築できる。",
+      "glossary": [
+        {
+          "term": "SLA",
+          "explanation": "サービス提供者が利用者に対して保証するサービスの品質や可用性に関する約束のこと。"
+        },
+        {
+          "term": "MACsec",
+          "explanation": "ネットワークのレイヤー2レベルでデータの暗号化と改ざん検知を行うセキュリティ規格のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://qiita.com/quotidia/items/8d5b93dcffef645bf041",
+      "title": "宇宙のTPUが最初に地上へ返したのは俳句だった。Googleの試作衛星、軌道上でGemma 4を動かす",
+      "source": "Qiita（AI）",
+      "genre": "tech",
+      "publishedAt": "2026-11-04T21:00:57.000Z",
+      "summary": "GoogleはProject Suncatcherの試作衛星に搭載したTPU上でAIモデルを動作させることに成功した衛星に搭載されたGemma 4に宇宙についての俳句を作成させ、ノルウェー上空で地上へ送信した試作衛星はPlanetと共同で開発され、2026年10月1日にSpaceXのロケットで打ち上げられた",
+      "headline": "GoogleがProject Suncatcherの試作衛星で軌道上のTPUとAIを活用した実験に成功",
+      "points": [
+        "GoogleはProject Suncatcherの試作衛星に搭載したTPU上でAIモデルを動作させることに成功した",
+        "衛星に搭載されたGemma 4に宇宙についての俳句を作成させ、ノルウェー上空で地上へ送信した",
+        "試作衛星はPlanetと共同で開発され、2026年10月1日にSpaceXのロケットで打ち上げられた"
+      ],
+      "glossary": [
+        {
+          "term": "TPU",
+          "explanation": "機械学習の計算を高速に処理するためにGoogleが開発した専用のプロセッサのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 155,
+    "shortlisted": 80,
+    "bodyFailures": 4,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 31398,
+    "outputTokens": 10750
+  },
+  "offline": false
+}

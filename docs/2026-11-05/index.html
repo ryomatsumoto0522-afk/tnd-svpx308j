@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-05</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月5日(木)</p>
+<p class="meta">更新 2026-11-05 07:39 · 取得ソース 23/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">1</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.itmedia.co.jp/news/article/2611/04/2000002869/" target="_blank" rel="noopener noreferrer">GitHubがCopilot Fusionを正式リリース、タスクごとに最適なAIモデルを組み合わせる</a></h3>
+<p class="orig">原題: GitHub、「Copilot Fusion」正式リリース タスクに応じて最適なAIモデル選択、高性能・低コスト両立</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/04/2000002869/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-04</p>
+<ul class="points"><li>Copilot Fusionはタスクの特性に応じて単一または複数のAIモデルを組み合わせて実行する</li><li>Single、Cascade、Critiqueの3つのパターンでAIモデルを使い分ける</li><li>品質やコストを調整する負荷レベルとしてStandard、High、Max、Fastが用意されている</li></ul><p class="impact"><b>影響</b>開発者は個別にAIモデルを選択する負担を軽減し、性能とコストのバランスを考慮した開発を進められる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIモデル</dt><dd>機械学習アルゴリズムを用いてデータからパターンを学習し、予測や生成を行うプログラム。</dd><dt>デバッグ</dt><dd>コンピュータプログラムのバグや欠陥を見つけて修正し、正常に動作させる作業。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/" target="_blank" rel="noopener noreferrer">AWSがエージェント連携や新モデル提供など複数の新機能やアップデートを発表</a></h3>
+<p class="orig">原題: AWS Weekly Roundup: GPT-6.1 Terra on Bedrock、エージェントツールとしての Step Functions など (2026 年 11 月 2 日)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>AWS Step FunctionsがAmazon Bedrock AgentCore Gatewayを介してエージェントツールとして利用可能になった</li><li>Amazon BedrockでOpenAI GPT-6.1 Terraの一般提供が開始された</li><li>AWS Key Management Serviceがポスト量子キーカプセル化のためのML-KEMのサポートを開始した</li></ul><p class="impact"><b>影響</b>AWSユーザーは、既存のワークフローを書き換えることなくAIエージェントから安全に呼び出して活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Step Functions</dt><dd>複数のAWSサービスやコンポーネントを組み合わせて、視覚的なワークフローを構築できるサービス。</dd><dt>Amazon Bedrock</dt><dd>多様な基盤モデルをAPI経由で利用できるようにするAWSのフルマネージドサービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener noreferrer">AnthropicがLLMの推論結果を暗号技術で証明する手法の開発進捗を公開</a></h3>
+<p class="orig">原題: Progress on provable inference for large language models</p>
+<p class="src">出典: <a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-03</p>
+<ul class="points"><li>zkSNARKを活用したプロトコルシステムFlashProveの構築により推論の暗号学的証明の高速化を実現した</li><li>4ビット量子化された大規模モデルを用いた単一のH100 GPUでの証明生成速度は110トークン/秒である</li><li>ブログ記事や技術レポート、C++やLeanで書かれた検証コードなど5つの成果物をApache 2.0ライセンスで公開した</li></ul><p class="impact"><b>影響</b>開発者や評価者は、AIモデルの応答が偽造されず指定されたモデルから生成されたものであるかを検証できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>zkSNARK</dt><dd>ある計算が正しく実行されたことを、詳細を明かさずに証明できる暗号技術の仕組み。</dd><dt>量子化</dt><dd>モデルの重みデータのビット数を減らし、メモリ使用量の削減や処理の高速化を図る技術。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/04/2000002869/" target="_blank" rel="noopener noreferrer">GitHubがCopilot Fusionを正式リリース、タスクごとに最適なAIモデルを組み合わせる</a></h3>
+<p class="orig">原題: GitHub、「Copilot Fusion」正式リリース タスクに応じて最適なAIモデル選択、高性能・低コスト両立</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/04/2000002869/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-04</p>
+<ul class="points"><li>Copilot Fusionはタスクの特性に応じて単一または複数のAIモデルを組み合わせて実行する</li><li>Single、Cascade、Critiqueの3つのパターンでAIモデルを使い分ける</li><li>品質やコストを調整する負荷レベルとしてStandard、High、Max、Fastが用意されている</li></ul><p class="impact"><b>影響</b>開発者は個別にAIモデルを選択する負担を軽減し、性能とコストのバランスを考慮した開発を進められる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIモデル</dt><dd>機械学習アルゴリズムを用いてデータからパターンを学習し、予測や生成を行うプログラム。</dd><dt>デバッグ</dt><dd>コンピュータプログラムのバグや欠陥を見つけて修正し、正常に動作させる作業。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/" target="_blank" rel="noopener noreferrer">AWSがエージェント連携や新モデル提供など複数の新機能やアップデートを発表</a></h3>
+<p class="orig">原題: AWS Weekly Roundup: GPT-6.1 Terra on Bedrock、エージェントツールとしての Step Functions など (2026 年 11 月 2 日)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-04</p>
+<ul class="points"><li>AWS Step FunctionsがAmazon Bedrock AgentCore Gatewayを介してエージェントツールとして利用可能になった</li><li>Amazon BedrockでOpenAI GPT-6.1 Terraの一般提供が開始された</li><li>AWS Key Management Serviceがポスト量子キーカプセル化のためのML-KEMのサポートを開始した</li></ul><p class="impact"><b>影響</b>AWSユーザーは、既存のワークフローを書き換えることなくAIエージェントから安全に呼び出して活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Step Functions</dt><dd>複数のAWSサービスやコンポーネントを組み合わせて、視覚的なワークフローを構築できるサービス。</dd><dt>Amazon Bedrock</dt><dd>多様な基盤モデルをAPI経由で利用できるようにするAWSのフルマネージドサービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener noreferrer">AnthropicがLLMの推論結果を暗号技術で証明する手法の開発進捗を公開</a></h3>
+<p class="orig">原題: Progress on provable inference for large language models</p>
+<p class="src">出典: <a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-03</p>
+<ul class="points"><li>zkSNARKを活用したプロトコルシステムFlashProveの構築により推論の暗号学的証明の高速化を実現した</li><li>4ビット量子化された大規模モデルを用いた単一のH100 GPUでの証明生成速度は110トークン/秒である</li><li>ブログ記事や技術レポート、C++やLeanで書かれた検証コードなど5つの成果物をApache 2.0ライセンスで公開した</li></ul><p class="impact"><b>影響</b>開発者や評価者は、AIモデルの応答が偽造されず指定されたモデルから生成されたものであるかを検証できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>zkSNARK</dt><dd>ある計算が正しく実行されたことを、詳細を明かさずに証明できる暗号技術の仕組み。</dd><dt>量子化</dt><dd>モデルの重みデータのビット数を減らし、メモリ使用量の削減や処理の高速化を図る技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener noreferrer">Moonshot AIがオープンウェイトのマルチモーダルモデルKimi K3.1 Proを公開</a></h3>
+<p class="orig">原題: Kimi K3.1 Pro model weights are out</p>
+<p class="src">出典: <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-05</p>
+<ul class="points"><li>Kimi K3.1 Proは最大100万トークンのコンテキストウィンドウを持つ3Tクラスのマルチモーダルエージェントモデルである</li><li>Mixture-of-Expertsアーキテクチャを採用し、合計パラメータ数は2.8T、アクティブパラメータ数は104Bである</li><li>コーディングや金融リサーチ、事実的正確性などのタスクにおいて大幅な性能向上の結果が示されている</li></ul><p class="impact"><b>影響</b>開発者や研究者は、公開されたモデルウェイトを利用して多様なエージェントタスクやマルチモーダル処理を実行できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>マルチモーダル</dt><dd>テキストや画像など、異なる形式のデータを同時に理解して処理できる仕組み。</dd><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度に読み込んで処理できるテキストやデータの最大容量。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.ricursive.com/ripple" target="_blank" rel="noopener noreferrer">Ricursiveが計算効率を高めたモデルRipple-65Bを公開</a></h3>
+<p class="orig">原題: Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding</p>
+<p class="src">出典: <a href="https://www.ricursive.com/ripple" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-05</p>
+<ul class="points"><li>SFTと強化学習の改善により計算効率を高めたモデルのプレビュー版を公開しました。</li><li>事後学習データの購入を避け、独自の合成データパイプラインと品質フィルタリングを活用しました。</li><li>TerminalBench 2.1で80.5点を記録し、従来のSOTAの約70分の1となる1.4Mロールアウトで達成しました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SOTA</dt><dd>特定の課題やベンチマークにおいて、現時点で最高性能を達成している状態のことです。</dd><dt>SFT</dt><dd>事前学習済みモデルに目的の指示と回答例を与えて追加学習させ、応答の質を高める手法です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/" target="_blank" rel="noopener noreferrer">Anthropicが出力元AIモデルを数学的に証明する仕組みを公開</a></h3>
+<p class="orig">原題: Anthropic is working on a system to prove AI models’ identity</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-04</p>
+<ul class="points"><li>生成された回答が特定のAIモデルに由来することを数学的に保証するオープンソース技術「FlashProve」を発表しました。</li><li>運営元が安価なモデルへ秘密裏に差し替えるといった不正や、なりすましを防ぐことができます。</li><li>モデルの重み（パラメーター）を公開せずに指紋情報のみを公開するため、商用モデルでも利用可能です。</li></ul><p class="impact"><b>影響</b>研究段階のため提供予定はありませんが、GitHubで公開されたコードを開発者が検証や改良に利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>暗号学的証明</dt><dd>数学的な暗号理論を使い、データの改ざんやなりすましがないことを第三者が確実に検証できる仕組みです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.318" target="_blank" rel="noopener noreferrer">Claude Codeのバージョン2.1.318が公開</a></h3>
+<p class="orig">原題: v2.1.318</p>
+<p class="src">出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.318" target="_blank" rel="noopener noreferrer">Claude Code</a> · 2026-11-04</p>
+<ul class="points"><li>Modの並行処理における負荷設定の追加や、サインイン有効期限の表示などに対応しました。</li><li>macOSで多数のBashコマンド実行時に動作が重くなりメモリーが増加する不具合を修正しました。</li><li>ツール呼び出しの再試行失敗後に過去の会話履歴が失われる問題など、多数のバグを修正しました。</li></ul><p class="impact"><b>影響</b>Claude Code利用者は最新版へ更新することで、macOSでのメモリー増加や認証関連の不具合を解消できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを標準化された手順で接続するための仕組みです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/orivanai/articles/claude-code-2026-10-updates" target="_blank" rel="noopener noreferrer">Claude Codeの2026年10月アップデート内容がまとめられる</a></h3>
+<p class="orig">原題: Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5</p>
+<p class="src">出典: <a href="https://zenn.dev/orivanai/articles/claude-code-2026-10-updates" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-04</p>
+<ul class="points"><li>動作を拡張できるModsの追加や、GitHubのPRを自動レビューするCode Reviewが正式提供されました。</li><li>入力100万トークンあたり0.10ドルで利用できる新モデルHaiku 5.5が追加されました。</li><li>放置された会話の要約を事前に作成する機能「idle compaction」が導入されました。</li></ul><p class="impact"><b>影響</b>Opus 4.8のfast mode利用者は11月30日の廃止までに設定変更が必要なほか、版を固定している人は最新版への更新が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIが文章を処理する際の最小単位で、文字や単語のまとまりを指します。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/scalar_sol_blog/articles/20261103-104939-claude-code-model-split" target="_blank" rel="noopener noreferrer">Claude Codeでモデルを役割別に分ける設定の実際の挙動が検証された</a></h3>
+<p class="orig">原題: Claude Code を Sonnet で動かし、判断だけ Opus に相談させ、下働きは Haiku に任せる設定を検証する</p>
+<p class="src">出典: <a href="https://zenn.dev/scalar_sol_blog/articles/20261103-104939-claude-code-model-split" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-05</p>
+<ul class="points"><li>Claude Codeで会話・アドバイザー・サブエージェントのモデルを分離する設定の挙動を検証しました。</li><li>Exploreサブエージェントは指定したHaikuにならずSonnetで動く仕様であることがわかりました。</li><li>アドバイザー機能は有効化されていても、明確に指示しない限り自動では呼び出されませんでした。</li></ul><p class="impact"><b>影響</b>Claude Codeでモデルごとの役割分担を設定したい利用者は、サブエージェントの適用仕様を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Claude Code</dt><dd>Anthropicが提供する、ターミナル上で対話しながらコードの編集や実行を行うAIツール。</dd><dt>サブエージェント</dt><dd>メインの処理から分離され、特定の調査やタスクをバックグラウンドで実行するAIの機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search" target="_blank" rel="noopener noreferrer">MCPツールのオンデマンド検索により入力トークンを92.7％削減した</a></h3>
+<p class="orig">原題: MCPツール定義の「スキーマ税」でトークンが溶ける！「全32ツール一括投入」vs「オンデマンド検索」で入力92.7%削減</p>
+<p class="src">出典: <a href="https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-05</p>
+<ul class="points"><li>32個のMCPツールを一括投入する方式と検索で動的展開する方式を比較検証しました。</li><li>オンデマンド検索により累積入力トークンを92.7％削減しAPIコストも84.8％削減できました。</li><li>必要なツールのみを展開することで類似した非推奨ツールの誤呼び出しをゼロに抑えました。</li></ul><p class="impact"><b>影響</b>多数のMCPツールを連携させて処理を行う開発者は、ツール定義のオンデマンド検索の導入を検討する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータ源を安全に接続するための標準化された通信プロトコル。</dd><dt>JSON Schema</dt><dd>JSONデータの構造やデータ型、必須項目などを定義して検証するための仕様。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/honabochi/articles/ai-review-votes-and-evidence" target="_blank" rel="noopener noreferrer">複数AIでのレビューにおいてモデル変更とチェック観点の分離手法が紹介された</a></h3>
+<p class="orig">原題: 複数AIレビューで、モデルと「何を見るか」を分けている</p>
+<p class="src">出典: <a href="https://zenn.dev/honabochi/articles/ai-review-votes-and-evidence" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-04</p>
+<ul class="points"><li>視点の異なるレビューを得るため、使用するAIモデルと評価する観点（ハーネス）を分けて運用しています。</li><li>スキルや検証手順をまとめた専門ハーネスを育てることで、具体的な問いに基づいた指摘を引き出します。</li><li>実際にClaudeからの指摘を受け、参照先の保存情報を追加する改善を行った事例が示されました。</li></ul><p class="impact"><b>影響</b>AIを活用したコードや文章のレビュー精度を改善したい開発者は、モデルと評価観点を分離した設計を検討するとよい。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>レビュー</dt><dd>作成した成果物やコードの内容をチェックし、問題点や改善点を指摘する作業のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/" target="_blank" rel="noopener noreferrer">AWSが本番AIエージェント向けコンテキスト管理の4層手法を解説した</a></h3>
+<p class="orig">原題: Four layers of context engineering for production AI agents: How Deep Insight applies them in working code</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-05</p>
+<ul class="points"><li>複雑なタスクでコンテキスト長が消費される課題に対し、4つの層で管理する手法を解説しました。</li><li>参照実装のDeep Insightではツールの活用により文脈トークンを約95％削減しました。</li><li>オンデマンドなスキルの読込によりシステムプロンプトのサイズを約97％削減しています。</li></ul><p class="impact"><b>影響</b>本番環境でAIエージェントを運用する開発者は、文脈溢れやコスト増を防ぐ4層のコンテキスト管理手法を確認・適用するとよい。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コンテキストウィンドウ</dt><dd>LLMが一度の処理で受け取って参照できるトークン（文字情報）の最大許容量。</dd><dt>システムプロンプト</dt><dd>AIエージェントの役割や振る舞い、制約条件などを初期命令として与えるテキスト。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/ojisantech/items/680216ff077c57755f7b" target="_blank" rel="noopener noreferrer">LAN内AIボットの誤回答を防ぐ自動テスト手法が公開</a></h3>
+<p class="orig">原題: LAN内AIボットの「嘘（ハルシネーション）」を許さない。CI/CDで回す事実整合性ベンチマークテスト自動化スイート（TC01〜TC10）</p>
+<p class="src">出典: <a href="https://qiita.com/ojisantech/items/680216ff077c57755f7b" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-05</p>
+<ul class="points"><li>実DBの正解データと照合し必須キーワードを自動採点する10のテスト項目を定義した。</li><li>大文字小文字を無視した完全包含判定を採用し合格率100%未満でCIを停止する。</li></ul><p class="impact"><b>影響</b>LAN内AIボットを構築・運用する開発者が、プロンプト変更時のデグレ防止に導入する。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ハルシネーション</dt><dd>AIが事実に基づかない偽の情報や嘘を生成してしまう現象のこと。</dd><dt>CI/CD</dt><dd>ソフトウェアの構築やテスト、デプロイを自動化して継続的に行う手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://gigazine.net/news/20261104-openai-git-pando/" target="_blank" rel="noopener noreferrer">OpenAIがGitの超大規模運用に向けたバックエンドを開発</a></h3>
+<p class="orig">原題: OpenAIがGitで超大規模リポジトリを運用するためのバックエンド「Pando」を開発</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261104-openai-git-pando/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-04</p>
+<ul class="points"><li>コミット数増大による遅延解消のためGitバックエンドPandoを開発した。</li><li>ブランチ単位の順序調整等でプッシュ遅延を約80%削減し1日約1PBを処理する。</li><li>Codexを用いてRustで10週間で実装されマージ成功率は100%近くに向上した。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のプロジェクトやサービスのコードを単一のリポジトリで管理する手法。</dd><dt>バックエンド</dt><dd>ユーザーからは見えない、データ処理やシステム連携を担うサーバー側の仕組み。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://go.dev/blog/jsonv2" target="_blank" rel="noopener noreferrer">Go 1.27で標準JSON処理を刷新した新パッケージが利用可能に</a></h3>
+<p class="orig">原題: A new Go API for JSON</p>
+<p class="src">出典: <a href="https://go.dev/blog/jsonv2" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-05</p>
+<ul class="points"><li>従来の標準ライブラリの課題を改善した新しいJSONパッケージが開発された。</li><li>不正なUTF-8や重複キーの拒否などRFC 8259規格への準拠と安全性を高めた。</li><li>encoding/json/v2およびjsontextがGo 1.27で安定版として提供される。</li></ul><p class="impact"><b>影響</b>Go言語を利用する開発者が、新バージョンで提供されるJSONパッケージを確認する。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>UTF-8</dt><dd>世界中の文字を表現するために広く使われている標準的な文字コード規格。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-29-frontend-auth" target="_blank" rel="noopener noreferrer">フロントエンド認証でのトークン保存場所と安全な属性を解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #29 - フロントエンドの認証（トークンの置き場・Cookie属性・OIDC）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-29-frontend-auth" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-04</p>
+<ul class="points"><li>トークンの保存先としてメモリ、localStorage、Cookieの特性を比較した。</li><li>JavaScriptから読めないHttpOnly属性付きCookieの使用を推奨している。</li><li>盗聴やCSRFを防ぐためSecureやSameSite属性の併用手順を提示した。</li></ul><p class="impact"><b>影響</b>Webアプリを開発するエンジニアが、トークンの保存場所やCookie属性の設定を見直す。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>XSS</dt><dd>Webサイトに悪意あるスクリプトを注入しユーザーのブラウザ上で実行させる攻撃。</dd><dt>CSRF</dt><dd>ユーザーの意図しないリクエストを別のサイト経由で送信させる攻撃手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/" target="_blank" rel="noopener noreferrer">Amazon ECSが Managed Instancesでjson-fileログドライバーをサポート</a></h3>
+<p class="orig">原題: Amazon ECS Managed Daemons can now collect json-file logs from application containers on Amazon ECS Managed Instances</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-05</p>
+<ul class="points"><li>Amazon ECS Managed InstancesとManaged Daemonsでjson-fileログドライバーとログドライバーボリュームが利用可能になった</li><li>アプリケーションコンテナのログを標準のDocker json-file形式でローカルファイルに出力できる</li><li>追加料金なしで利用でき、AWS Management ConsoleやAWS CLIなどで設定可能である</li></ul><p class="impact"><b>影響</b>Amazon ECSでManaged Instancesを利用している開発者は、任意のオブザーバビリティエージェントを使ってアプリケーションログを収集できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ログドライバー</dt><dd>コンテナが出力するログの収集や転送の仕組みを管理する機能のこと。</dd><dt>ボリューム</dt><dd>コンテナ間でデータを共有したり永続化したりするための記憶領域のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-oracle-cross-region-snapshot-copy-option-group/" target="_blank" rel="noopener noreferrer">Amazon RDS for Oracleがクロスリージョンでのスナップショットコピー時のオプション群コピーに対応</a></h3>
+<p class="orig">原題: Amazon RDS for Oracle now supports copying option groups during cross-Region snapshot copy</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-oracle-cross-region-snapshot-copy-option-group/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-05</p>
+<ul class="points"><li>DBスナップショットを別のAWSリージョンへコピーする際、関連するオプション群も同時にコピーできるようになった</li><li>CopyDBSnapshot APIなどのCopyOptionGroupパラメータをtrueに設定することで利用できる</li><li>Amazon RDS for Oracleのすべての商用AWSリージョンおよびAWS GovCloudリージョンで利用可能である</li></ul><p class="impact"><b>影響</b>Amazon RDS for Oracleを利用するユーザーは、別リージョンへのバックアップ複製時にオプション群を再作成する手間が省ける。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>スナップショット</dt><dd>特定時点におけるストレージやデータベースの状態をそのまま保存したデータのコピーのこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/" target="_blank" rel="noopener noreferrer">AWS Interconnect - last mileのプレビュー提供をEquinixと共同で発表</a></h3>
+<p class="orig">原題: AWS announces AWS Interconnect - last mile preview with Equinix</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-05</p>
+<ul class="points"><li>EquinixのグローバルなデータセンターからAWSへマネージドでプライベートな接続を提供開始した</li><li>2つのロケーションと4つのリンクによる四重冗長構成と99.99%の可用性SLAを備えている</li><li>プレビュー期間中はUS WestおよびUS Eastの一部リージョン向け1 Gbps接続を無料で注文できる</li></ul><p class="impact"><b>影響</b>AWSとEquinixを利用するユーザーは、クロスコネクトの手配やルーターの設定なしで冗長性の高い専用接続を構築できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SLA</dt><dd>サービス提供者が利用者に対して保証するサービスの品質や可用性に関する約束のこと。</dd><dt>MACsec</dt><dd>ネットワークのレイヤー2レベルでデータの暗号化と改ざん検知を行うセキュリティ規格のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://qiita.com/quotidia/items/8d5b93dcffef645bf041" target="_blank" rel="noopener noreferrer">GoogleがProject Suncatcherの試作衛星で軌道上のTPUとAIを活用した実験に成功</a></h3>
+<p class="orig">原題: 宇宙のTPUが最初に地上へ返したのは俳句だった。Googleの試作衛星、軌道上でGemma 4を動かす</p>
+<p class="src">出典: <a href="https://qiita.com/quotidia/items/8d5b93dcffef645bf041" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-05</p>
+<ul class="points"><li>GoogleはProject Suncatcherの試作衛星に搭載したTPU上でAIモデルを動作させることに成功した</li><li>衛星に搭載されたGemma 4に宇宙についての俳句を作成させ、ノルウェー上空で地上へ送信した</li><li>試作衛星はPlanetと共同で開発され、2026年10月1日にSpaceXのロケットで打ち上げられた</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>TPU</dt><dd>機械学習の計算を高速に処理するためにGoogleが開発した専用のプロセッサのこと。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-04/">← 2026-11-04</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（36）</summary><ul><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
