@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-05T22:41:06.253Z",
+  "items": [
+    {
+      "rank": 2,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "source": "Google AI Blog",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "summary": "Gemini Omni 1.1から価格を30％値下げし720p動画を1秒あたり0.07ドルで提供します。最大15秒の動画生成に対応し会話形式での部分編集や一貫性の維持が可能です。人物の会話表現やリップシンクの精度が向上し複数話者の設定にも対応しました。",
+      "headline": "Googleが動画生成AI「Gemini Omni 1.2 Flash」を公開",
+      "points": [
+        "Gemini Omni 1.1から価格を30％値下げし720p動画を1秒あたり0.07ドルで提供します。",
+        "最大15秒の動画生成に対応し会話形式での部分編集や一貫性の維持が可能です。",
+        "人物の会話表現やリップシンクの精度が向上し複数話者の設定にも対応しました。"
+      ],
+      "impact": "動画コンテンツを作成する開発者や事業者は生成コストを抑えながら長尺の動画編集機能を活用できます。",
+      "glossary": [
+        {
+          "term": "Gemini API",
+          "explanation": "Googleが提供する高度なAIモデルを外部プログラムから利用するための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.itmedia.co.jp/news/article/2611/05/2000002894/",
+      "title": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T01:59:38.000Z",
+      "summary": "前バージョンと比べて画像生成速度が50％向上し編集時の細部の一貫性も高まりました。GIFアニメーションの生成機能や画像を保存して別チャットで再利用できる機能を追加しました。無料プランを含むChatGPTとCodexで利用でき開発者向けAPIも提供されます。",
+      "headline": "OpenAIが画像生成AI「ChatGPT Images 2.6」を発表",
+      "points": [
+        "前バージョンと比べて画像生成速度が50％向上し編集時の細部の一貫性も高まりました。",
+        "GIFアニメーションの生成機能や画像を保存して別チャットで再利用できる機能を追加しました。",
+        "無料プランを含むChatGPTとCodexで利用でき開発者向けAPIも提供されます。"
+      ],
+      "impact": "ChatGPTやCodexの利用者は高速化された画像生成機能やGIF作成などの新機能を利用できます。",
+      "glossary": [
+        {
+          "term": "GIFアニメーション",
+          "explanation": "複数の静止画を連続で切り替えることで動きを表現する画像フォーマット。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
+      "title": "Announcing Web Answer on Amazon Bedrock AgentCore",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T20:56:00.000Z",
+      "summary": "自然言語の質問に対してWeb情報を元にした引用付き回答を1度の呼び出しで返します。独自の検索や要約パイプラインを構築・運用する手間を削減できます。米国東部（バージニア北部）リージョンで利用可能で呼び出しごとの従量課金制です。",
+      "headline": "AWSがAmazon Bedrock AgentCoreのWeb Answer機能を公開",
+      "points": [
+        "自然言語の質問に対してWeb情報を元にした引用付き回答を1度の呼び出しで返します。",
+        "独自の検索や要約パイプラインを構築・運用する手間を削減できます。",
+        "米国東部（バージニア北部）リージョンで利用可能で呼び出しごとの従量課金制です。"
+      ],
+      "impact": "Amazon Bedrockを利用する開発者は自前で検索機能を構築することなくエージェントへ回答機能を統合できます。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "AWSが提供する、複数の基盤モデルを安全に利用・カスタマイズできるクラウドサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore/",
+      "title": "How U Mobile built agentic telco operations with Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T16:23:33.000Z",
+      "summary": "Amazon Bedrock AgentCore基盤の自律型ヘルプデスクシステムを構築しました。複数システムにまたがるログ解析や規約参照を自動化し150以上の運用シナリオに対応します。主要な問い合わせカテゴリにおいてトラブルチケット発生数を最大84.5％削減しました。",
+      "headline": "マレーシアのU MobileがAI活用でトラブル件数を最大84.5%削減",
+      "points": [
+        "Amazon Bedrock AgentCore基盤の自律型ヘルプデスクシステムを構築しました。",
+        "複数システムにまたがるログ解析や規約参照を自動化し150以上の運用シナリオに対応します。",
+        "主要な問い合わせカテゴリにおいてトラブルチケット発生数を最大84.5％削減しました。"
+      ],
+      "impact": "通信事業者の運用担当者は複数システムの手動確認作業を削減し障害対応を効率化できます。",
+      "glossary": [
+        {
+          "term": "トラブルチケット",
+          "explanation": "システムの不具合や顧客からの問い合わせ内容と対応履歴を記録した管理単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/taichiendoh/articles/role-based-effort-level-subagent-design",
+      "title": "役割ごとに、強さも変えるべきだった ― 複数のClaude Codeサブエージェントに、医療機器リスク判断の3軸でeffortを割り振る",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T22:10:20.000Z",
+      "summary": "Claude Codeのサブエージェントで、役割ごとにeffortレベル（AIの強さ）を最適化する設計手法が示された。YAMLフロントマターでeffortレベルを指定し、探索を行うPlannerにはhighなどを設定して広く調べさせる。検証を行うEvaluatorでは強さを上げるより、人の承認を経由する設計などを優先することが推奨されている。",
+      "headline": "Claude CodeのサブエージェントごとにAIの強さを変える設計指針が提示された",
+      "points": [
+        "Claude Codeのサブエージェントで、役割ごとにeffortレベル（AIの強さ）を最適化する設計手法が示された。",
+        "YAMLフロントマターでeffortレベルを指定し、探索を行うPlannerにはhighなどを設定して広く調べさせる。",
+        "検証を行うEvaluatorでは強さを上げるより、人の承認を経由する設計などを優先することが推奨されている。"
+      ],
+      "impact": "Claude Codeでサブエージェントを構成する開発者は、役割ごとにeffort設定や人の承認プロセスを見直す必要がある。",
+      "glossary": [
+        {
+          "term": "サブエージェント",
+          "explanation": "大きなタスクを分割し、特定の役割や処理を専門に担当するAIエージェントのこと。"
+        },
+        {
+          "term": "YAMLフロントマター",
+          "explanation": "ファイルの冒頭に配置し、設定情報などを記述するためのテキスト形式データのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://zenn.dev/singularity/articles/llm-evals-basics",
+      "title": "AI をどう評価するか ── 自分のシステムのための evals 入門",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T20:55:41.000Z",
+      "summary": "AIの出力を独自の基準で測る「evals」は、目的に合った安く速いモデル選定や精度の維持に不可欠です。評価データはプロンプト用の手本・改善用・最終評価用に分け、言い換え問題の重複を避ける必要があります。公開ベンチマークだけでなく自社専用の問題集を作成し、設定変更時などに定期運用することが重要です。",
+      "headline": "独自のAIシステムに合わせた評価（evals）の構築法や注意点が解説された",
+      "points": [
+        "AIの出力を独自の基準で測る「evals」は、目的に合った安く速いモデル選定や精度の維持に不可欠です。",
+        "評価データはプロンプト用の手本・改善用・最終評価用に分け、言い換え問題の重複を避ける必要があります。",
+        "公開ベンチマークだけでなく自社専用の問題集を作成し、設定変更時などに定期運用することが重要です。"
+      ],
+      "impact": "AIアプリ開発者は、自社システム専用の評価データを作成し、プロンプト変更やモデル更新のたびにテストを行う必要があります。",
+      "glossary": [
+        {
+          "term": "evals",
+          "explanation": "AIモデルやシステムの出力精度を、用意した問題と基準で計測・評価する仕組み。"
+        },
+        {
+          "term": "ベンチマーク",
+          "explanation": "システムやモデルの性能を客観的に比較・採点するために用いる標準的な問題と正解のセット。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/jfp_mesh/articles/pup-100-dollar-challenge-postmortem",
+      "title": "Claude Code に $100 分のクレジットを渡して「稼いで」と頼んだら、26 日後の売上は 0 円だった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T17:36:53.000Z",
+      "summary": "AI5つと人間でnote有料記事を販売する実験を行ったが、26日間で売上は0本に終わりました。100ドルの予算中85ドルを制作や品質確認に費やし、集客やプロモーションにリソースを割けませんでした。複数AIによる相互点検やスクリプトでの誤り防止など、自動化された品質管理体制は機能しました。",
+      "headline": "Claude Codeを用いた収益化の実験で26日間の売上が0円に終わる",
+      "points": [
+        "AI5つと人間でnote有料記事を販売する実験を行ったが、26日間で売上は0本に終わりました。",
+        "100ドルの予算中85ドルを制作や品質確認に費やし、集客やプロモーションにリソースを割けませんでした。",
+        "複数AIによる相互点検やスクリプトでの誤り防止など、自動化された品質管理体制は機能しました。"
+      ],
+      "impact": "AIエージェントに業務を委任する人は、制作や品質向上だけでなく事前に集客経路や検証基準を準備する必要があります。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供する、指示に応じて開発作業やタスクを自律的にこなすAIツール。"
+        },
+        {
+          "term": "AIエージェント",
+          "explanation": "与えられた目標に向けて自律的に計画を立て、判断や作業を実行するAIシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://zenn.dev/sde_lab/articles/ai-research-environment",
+      "title": "私の普段のAIによる研究開発環境を公開します",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T16:54:31.000Z",
+      "summary": "データ解析や論文執筆の作業をClaude CodeとSnowflakeを中心に行うAI研究開発環境の構成が紹介されました。月20ドルのProプランのClaude CodeとSnowflakeを使い、GPUなしのPCで数十億行の集計を行っています。論文ごとのリポジトリをgit submoduleで束ね、CLAUDE.mdや共通スキルを用いて横断的に作業しています。",
+      "headline": "SnowflakeとClaude Codeによる研究開発環境の構成が公開",
+      "points": [
+        "データ解析や論文執筆の作業をClaude CodeとSnowflakeを中心に行うAI研究開発環境の構成が紹介されました。",
+        "月20ドルのProプランのClaude CodeとSnowflakeを使い、GPUなしのPCで数十億行の集計を行っています。",
+        "論文ごとのリポジトリをgit submoduleで束ね、CLAUDE.mdや共通スキルを用いて横断的に作業しています。"
+      ],
+      "glossary": [
+        {
+          "term": "Snowflake",
+          "explanation": "クラウド上で大量のデータを保存・分析できるマネージド型のデータプラットフォームサービス。"
+        },
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のデータソースやツールを接続して相互連携できるようにするための標準規格。"
+        },
+        {
+          "term": "git submodule",
+          "explanation": "1つのGitリポジトリの中に別のGitリポジトリを子ディレクトリとして組み込んで管理する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/toshibowie/articles/9244c8f317a7a9",
+      "title": "Jevでプロンプトを仕分けして、Claudeのモデルを自動で切り替える",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T15:25:20.000Z",
+      "summary": "Jevで難易度を判定しClaude Codeのモデルを自動選択する。簡単なタスクにはHaiku、難易度が高い場合はOpusを割り振る。会話が15万トークンを超えた場合はHaikuをSonnetに変更する。",
+      "headline": "Claude Codeのモデルを自作プラグインで自動切替",
+      "points": [
+        "Jevで難易度を判定しClaude Codeのモデルを自動選択する。",
+        "簡単なタスクにはHaiku、難易度が高い場合はOpusを割り振る。",
+        "会話が15万トークンを超えた場合はHaikuをSonnetに変更する。"
+      ],
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供するコード生成や対話を支援するツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002928/",
+      "title": "OpenAI、データセンター立地地域への約束と政策提言を発表 電力費の全額負担や公職者とのNDA不使用など",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T22:03:55.000Z",
+      "summary": "地域社会への約束として電力費全額負担や原則NDA不使用を明記。ジョージア州やオハイオ州で給食や保育支援の資金拠出を実施する。政府に対して大口電力利用者の送電網負担など共通ルールを提言した。",
+      "headline": "OpenAIがデータセンター立地地域への約束と政策提言を発表",
+      "points": [
+        "地域社会への約束として電力費全額負担や原則NDA不使用を明記。",
+        "ジョージア州やオハイオ州で給食や保育支援の資金拠出を実施する。",
+        "政府に対して大口電力利用者の送電網負担など共通ルールを提言した。"
+      ],
+      "glossary": [
+        {
+          "term": "秘密保持契約（NDA）",
+          "explanation": "取引や交渉で知得した秘密情報を第三者へ漏洩させない契約。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "title": "How “reverse game theory” could keep AI agents in check",
+      "source": "MIT Technology Review",
+      "genre": "ai",
+      "publishedAt": "2026-11-03T10:43:41.000Z",
+      "summary": "モデル内部の解析でなく望ましい行動を誘導するルール設計を行う。他モデルの回答予測や競合関係を利用して性能の偽装を防ぐ。モデルを解決者と監査者に分ける相互監視メカニズムを提案した。",
+      "headline": "逆ゲーム理論を活用しAIモデルを制御する新たな研究が登場",
+      "points": [
+        "モデル内部の解析でなく望ましい行動を誘導するルール設計を行う。",
+        "他モデルの回答予測や競合関係を利用して性能の偽装を防ぐ。",
+        "モデルを解決者と監査者に分ける相互監視メカニズムを提案した。"
+      ],
+      "glossary": [
+        {
+          "term": "逆ゲーム理論",
+          "explanation": "望ましい結果を導くために参加者のルールや制度を設計する理論。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://sshhole.com/",
+      "title": "*sshole · sshhole.com",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-05T12:50:42.000Z",
+      "summary": "256バイト超のパスワード処理時にmuslが星印を返す仕様が原因。OpenSSHのサイドチャネル対策と組み合わさり認証異常が起きる。パスワード無効化されたアカウントで認証が成功する危険がある。",
+      "headline": "musl Linux環境のOpenSSHに存在する認証問題を解説",
+      "points": [
+        "256バイト超のパスワード処理時にmuslが星印を返す仕様が原因。",
+        "OpenSSHのサイドチャネル対策と組み合わさり認証異常が起きる。",
+        "パスワード無効化されたアカウントで認証が成功する危険がある。"
+      ],
+      "glossary": [
+        {
+          "term": "musl",
+          "explanation": "軽量なLinux標準Cライブラリの実装でAlpine等で用いられる。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+      "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-05T14:44:20Z",
+      "summary": "Alpine LinuxのOpenSSHでパスワード入力なしにログインできる脆弱性が発見されました。パスワード未設定のアカウントと特定のハッシュを持つアカウントが存在すると悪用可能です。パッケージの更新とsshd再起動、またはパスワード認証の無効化で対処できます。",
+      "headline": "Alpine LinuxのOpenSSHでパスワード認証を回避される脆弱性が発覚",
+      "points": [
+        "Alpine LinuxのOpenSSHでパスワード入力なしにログインできる脆弱性が発見されました。",
+        "パスワード未設定のアカウントと特定のハッシュを持つアカウントが存在すると悪用可能です。",
+        "パッケージの更新とsshd再起動、またはパスワード認証の無効化で対処できます。"
+      ],
+      "impact": "Alpine Linuxでsshdを実行している管理者は、パッケージの更新と再起動または設定変更が必要です。",
+      "glossary": [
+        {
+          "term": "SSH",
+          "explanation": "ネットワーク経由で他のコンピュータに安全にアクセスし操作するためのプロトコル。"
+        },
+        {
+          "term": "脆弱性",
+          "explanation": "コンピュータのOSやプログラムに存在する安全上の欠陥や問題点のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.phileweb.com/news/d-av/202611/05/66309.html",
+      "title": "データ転送量が約4倍となる新規格「Bluetooth HDT」正式承認。ロスレスオーディオの標準化へ - PHILE WEB",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-05T06:36:03.000Z",
+      "summary": "Bluetooth SIGが通信速度を約4倍に引き上げる新規格Bluetooth HDTを承認しました。最大7.5Mbpsの転送速度によりロスレスオーディオや大容量データの高速通信が可能になります。通信時間の短縮による消費電力の削減や接続安定性の向上も期待され2027年の製品化が見込まれます。",
+      "headline": "Bluetooth SIGが最大7.5Mbpsを実現する新規格HDTを正式承認",
+      "points": [
+        "Bluetooth SIGが通信速度を約4倍に引き上げる新規格Bluetooth HDTを承認しました。",
+        "最大7.5Mbpsの転送速度によりロスレスオーディオや大容量データの高速通信が可能になります。",
+        "通信時間の短縮による消費電力の削減や接続安定性の向上も期待され2027年の製品化が見込まれます。"
+      ],
+      "impact": "無線機器メーカーや開発者は、2027年の製品化に向け新規格Bluetooth HDTへの対応を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "ロスレス",
+          "explanation": "圧縮したデータを解凍した際に、元のデータを完全に復元できるデータ形式。"
+        },
+        {
+          "term": "ビットレート",
+          "explanation": "1秒間に送受信できるデータ量を示す数値で、大きいほど通信速度が速くなる。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://eetimes.itmedia.co.jp/ee/articles/2611/05/news089.html",
+      "title": "ソニー「複数シナリオを想定」、SamsungのApple向けCIS参入報道の中",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-05T11:56:45.000Z",
+      "summary": "ソニーが主要顧客向けイメージセンサーの供給体制変化に備え複数シナリオを策定していると発表しました。Apple向けセンサー市場へのSamsung参入報道を受け、2028年3月期以降の市場変化を想定しています。技術面とコスト面の優位性を維持しつつ、TSMCとの協業などで競争力を確保する方針です。",
+      "headline": "ソニーが主要顧客向けイメージセンサーの競合参入を見越し複数シナリオを準備",
+      "points": [
+        "ソニーが主要顧客向けイメージセンサーの供給体制変化に備え複数シナリオを策定していると発表しました。",
+        "Apple向けセンサー市場へのSamsung参入報道を受け、2028年3月期以降の市場変化を想定しています。",
+        "技術面とコスト面の優位性を維持しつつ、TSMCとの協業などで競争力を確保する方針です。"
+      ],
+      "impact": "ソニーの投資家や取引先は、同社が推進する2027年度以降の事業計画や競合動向を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "CMOSイメージセンサー",
+          "explanation": "光を電気信号に変換してデジタル画像を作成する半導体素子のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 162,
+    "shortlisted": 80,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29122,
+    "outputTokens": 17436
+  },
+  "offline": false
+}
