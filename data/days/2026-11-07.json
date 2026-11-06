@@ -1,0 +1,498 @@
+{
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-06T22:08:27.676Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "summary": "Googleが動画生成モデルGemini Omni 1.2 Flashの一般提供を開始した。生成可能な動画長が最長15秒になり前バージョン比で30%値下げされた。対話形式での動画修正や、画像と動画全体の高い一貫性保持に対応する。",
+      "headline": "Googleが動画生成AI「Gemini Omni 1.2 Flash」の一般提供を開始",
+      "points": [
+        "Googleが動画生成モデルGemini Omni 1.2 Flashの一般提供を開始した。",
+        "生成可能な動画長が最長15秒になり前バージョン比で30%値下げされた。",
+        "対話形式での動画修正や、画像と動画全体の高い一貫性保持に対応する。"
+      ],
+      "impact": "Gemini APIやGemini for businessの利用者は、最大15秒の動画生成や対話型の編集機能を利用できる。",
+      "glossary": [
+        {
+          "term": "アップスケール",
+          "explanation": "解像度の低い画像や動画を高解像度の映像へ変換拡大する処理のこと。"
+        },
+        {
+          "term": "リップシンク",
+          "explanation": "映像内の人物の口の動きと同期するように音声のタイミングを合わせること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002931/",
+      "title": "OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T22:57:34.000Z",
+      "summary": "OpenAIはセキュリティ研究に特化したモデルGPT-6 Cyberを発表し限定提供を始めました。Firefoxの未知の脆弱性81件の発見やLinuxカーネルにおけるエクスプロイトの開発を達成しました。指示逸脱率が0.07％へ低下した一方、警告に従う割合が73.0％にとどまるなどの課題も残ります。",
+      "headline": "OpenAIがセキュリティ特化型モデルGPT-6 Cyberを発表した",
+      "points": [
+        "OpenAIはセキュリティ研究に特化したモデルGPT-6 Cyberを発表し限定提供を始めました。",
+        "Firefoxの未知の脆弱性81件の発見やLinuxカーネルにおけるエクスプロイトの開発を達成しました。",
+        "指示逸脱率が0.07％へ低下した一方、警告に従う割合が73.0％にとどまるなどの課題も残ります。"
+      ],
+      "impact": "利用を希望する組織は審査の通過に加え多要素認証やシングルサインオン等のセキュリティ対策を導入する必要があります。",
+      "glossary": [
+        {
+          "term": "エクスプロイト",
+          "explanation": "ソフトウェアなどの脆弱性を悪用して不正攻撃を行うためのプログラム。"
+        },
+        {
+          "term": "シングルサインオン",
+          "explanation": "一度の認証で複数のアプリケーションやWebサービスを利用可能にする仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002935/",
+      "title": "Anthropic、「Claude」に家計管理機能「Personal Finance」 銀行口座と連携、米国でβ提供",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T23:49:28.000Z",
+      "summary": "米Plaid経由で最大16行の口座を接続し、残高や最大2年分の取引履歴をもとに質問に回答できます。米国のPro、Max、Ultraプラン向けに順次提供され、資金の移動を行わない読み取り専用機能です。専用ハブ画面での会話はAIの学習に使われず、接続は利用者がいつでも解除できます。",
+      "headline": "AnthropicがClaudeに銀行口座と連携する家計管理機能を米国でβ提供",
+      "points": [
+        "米Plaid経由で最大16行の口座を接続し、残高や最大2年分の取引履歴をもとに質問に回答できます。",
+        "米国のPro、Max、Ultraプラン向けに順次提供され、資金の移動を行わない読み取り専用機能です。",
+        "専用ハブ画面での会話はAIの学習に使われず、接続は利用者がいつでも解除できます。"
+      ],
+      "impact": "米国の有料プラン利用者は機能を使える一方、Claudeが誤る可能性に備えて重要な数字は元の取引記録を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "β版",
+          "explanation": "正式公開前にユーザーに試用してもらい、不具合の発見やフィードバックを得るために提供されるテスト版。"
+        },
+        {
+          "term": "Plaid",
+          "explanation": "銀行口座などの金融データを外部のアプリやサービスと安全に連携・接続するためのサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002939/",
+      "title": "MetaのAIエージェント「Muse」に音声対話機能 表情豊かなアバターと会話、まず米国で提供",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T01:39:30.000Z",
+      "summary": "MetaはAI「Muse」にリアルタイムの音声対話機能と、会話に合わせて表情を変えるアバター機能を追加しました。まずは米国のモバイル、Web、Mac向けアプリで提供され、会話の声は数百種類から選択可能です。ユーザーの割り込み発話にも対応しており、今後はAIグラスなどへの展開も予定されています。",
+      "headline": "MetaがAIエージェント「Muse」に音声対話とアバター機能を追加",
+      "points": [
+        "MetaはAI「Muse」にリアルタイムの音声対話機能と、会話に合わせて表情を変えるアバター機能を追加しました。",
+        "まずは米国のモバイル、Web、Mac向けアプリで提供され、会話の声は数百種類から選択可能です。",
+        "ユーザーの割り込み発話にも対応しており、今後はAIグラスなどへの展開も予定されています。"
+      ],
+      "impact": "米国でMuseアプリを利用している人は、アバターを表示した状態での音声対話機能を利用できます。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "指示に基づいて自律的に計画を立て、実際の作業まで進める人工知能のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+      "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T16:45:58.000Z",
+      "summary": "AWSアカウント内の独立セッションでClaude Codeをリモート実行する構成を提示した。タスクを非同期処理し結果をGitHubのプルリクエストとして返却する仕組みを構築した。各タスクは最大3回の試行で停止し、信頼できるリポジトリでの機能開発やバグ修正に適する。",
+      "headline": "Claude CodeをAmazon Bedrock AgentCore上でリモート実行可能に",
+      "points": [
+        "AWSアカウント内の独立セッションでClaude Codeをリモート実行する構成を提示した。",
+        "タスクを非同期処理し結果をGitHubのプルリクエストとして返却する仕組みを構築した。",
+        "各タスクは最大3回の試行で停止し、信頼できるリポジトリでの機能開発やバグ修正に適する。"
+      ],
+      "impact": "リモートで安全にコード生成タスクを自動化したい開発チームが、構成サンプルを活用する。",
+      "glossary": [
+        {
+          "term": "AgentCore",
+          "explanation": "AIエージェントを大規模に構築・接続・最適化するためのAmazon Bedrockのプラットフォーム機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/",
+      "title": "Serverless MCP server for AI agent data lake access on Amazon ECS Fargate",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T17:13:13.000Z",
+      "summary": "Amazon ECS Fargate上にサーバーレスなMCPサーバーを配置しアクセスを中央一元化した。新しいデータセットの追加はJSONメタデータファイルの配置のみで自動認識される仕組みにした。マルチテナント環境において複数のクライアントやエージェントから共通で利用できる。",
+      "headline": "AIエージェントのデータアクセスを統合するMCPサーバーを構築",
+      "points": [
+        "Amazon ECS Fargate上にサーバーレスなMCPサーバーを配置しアクセスを中央一元化した。",
+        "新しいデータセットの追加はJSONメタデータファイルの配置のみで自動認識される仕組みにした。",
+        "マルチテナント環境において複数のクライアントやエージェントから共通で利用できる。"
+      ],
+      "impact": "データレイクを活用するAIエージェントを開発・運用するチームが、連携基盤として導入を検討する。",
+      "glossary": [
+        {
+          "term": "Model Context Protocol",
+          "explanation": "AIエージェントと外部データソースやツールを安全に接続するための標準プロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T17:09:23.000Z",
+      "summary": "AgentCore Gatewayを単一の窓口とし、Oktaの認可付与を一括で引き換える構成に拡張した。Cedarポリシーを用いてツール実行前にアクセス権限を評価し、不必要なトークン交換を防止する。CloudWatchおよびAgentCore Observabilityで監査トレースを集約管理可能にした。",
+      "headline": "OktaとAgentCore Gatewayで多数のAIエージェント権限管理を一元化",
+      "points": [
+        "AgentCore Gatewayを単一の窓口とし、Oktaの認可付与を一括で引き換える構成に拡張した。",
+        "Cedarポリシーを用いてツール実行前にアクセス権限を評価し、不必要なトークン交換を防止する。",
+        "CloudWatchおよびAgentCore Observabilityで監査トレースを集約管理可能にした。"
+      ],
+      "impact": "多数のAIエージェントとツールを全社的に統制・運用したいセキュリティ管理者が確認する必要がある。",
+      "glossary": [
+        {
+          "term": "Cedar",
+          "explanation": "アクセス制御ルールを表現・評価するためにAWSが開発したオープンソースのポリシー言語。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 1",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T17:09:18.000Z",
+      "summary": "Okta Cross App AccessとAgentCore Identityを連携させユーザー代理アクセスを制御した。割り当て解除後約1秒で新規リクエストが拒否され発行済みトークンは5分以内に即失効する。AgentCore Identityによるトークン引き換えのオーバーヘッドは約0.6秒であると測定された。",
+      "headline": "Okta XAAとAgentCoreでユーザー代理AIエージェントの権限を制御",
+      "points": [
+        "Okta Cross App AccessとAgentCore Identityを連携させユーザー代理アクセスを制御した。",
+        "割り当て解除後約1秒で新規リクエストが拒否され発行済みトークンは5分以内に即失効する。",
+        "AgentCore Identityによるトークン引き換えのオーバーヘッドは約0.6秒であると測定された。"
+      ],
+      "impact": "ユーザー権限に基づく操作を行うAIエージェントの安全性を確保したいセキュリティ担当者が確認する。",
+      "glossary": [
+        {
+          "term": "RFC 8693",
+          "explanation": "アイデンティティプロバイダ間でトークンを交換するための標準化されたOAuth 2.0拡張規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/",
+      "title": "How Indegene is modernizing and scaling enterprise data quality in life sciences",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T16:25:57.000Z",
+      "summary": "IndegeneがNEXT UDP上にLLM搭載のData Quality Agentを構築した。エージェントは文脈に応じた品質ルールを生成し実行可能なSQLやPythonコードを出力する。人による統制のもとでデータ品質プログラムの構築や維持の手間を削減する。",
+      "headline": "IndegeneがAWS上にデータ品質管理用LLMエージェントを構築した",
+      "points": [
+        "IndegeneがNEXT UDP上にLLM搭載のData Quality Agentを構築した。",
+        "エージェントは文脈に応じた品質ルールを生成し実行可能なSQLやPythonコードを出力する。",
+        "人による統制のもとでデータ品質プログラムの構築や維持の手間を削減する。"
+      ],
+      "impact": "ライフサイエンス組織の担当者がデータ品質向上と運用負荷の削減に活用できる。",
+      "glossary": [
+        {
+          "term": "LLM",
+          "explanation": "大規模なテキストデータから言語のパターンを学習した人工知能モデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://qiita.com/maya-bot/items/66a95877f8a17e1fb7d0",
+      "title": "AIが書いたコードは「β版」：設計書から実装・単体テストまでをエージェントに任せる仕組み",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T20:56:34.000Z",
+      "summary": "AI作成のコードをβ版と位置づけ人のレビューと機械的検証で品質を担保する仕組み。開発を5フェーズに分け役割別のAIエージェントと個別の人のレビューを組み合わせる。CIの決定論ゲートで判定しアサーションの弱体化やテスト無効化を機械的に禁止する。",
+      "headline": "設計書から実装やテストの生成と検証を分担するAI開発手法が公開",
+      "points": [
+        "AI作成のコードをβ版と位置づけ人のレビューと機械的検証で品質を担保する仕組み。",
+        "開発を5フェーズに分け役割別のAIエージェントと個別の人のレビューを組み合わせる。",
+        "CIの決定論ゲートで判定しアサーションの弱体化やテスト無効化を機械的に禁止する。"
+      ],
+      "impact": "AI支援開発を行う開発者が品質担保の仕組みや自動検証ルールを参考にできる。",
+      "glossary": [
+        {
+          "term": "CI",
+          "explanation": "コード変更時に自動でテストやビルドを実行し品質を維持する開発手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/rescuenow/articles/4c03a548cd6589",
+      "title": "タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T08:59:24.000Z",
+      "summary": "司令塔AIがGitHubやNotionのタスクを整理し着手順の決定と確認待ち作成を行う。開発者は自作パネルで選択肢を確認し番号と一言を返して承認作業を簡略化する。人の目に触れる手前の段階や手作業・許可待ちの発生時に確認待ちが追加される。",
+      "headline": "司令塔AIがタスク全体を管理し人間が確認待ちに答える運用法を導入",
+      "points": [
+        "司令塔AIがGitHubやNotionのタスクを整理し着手順の決定と確認待ち作成を行う。",
+        "開発者は自作パネルで選択肢を確認し番号と一言を返して承認作業を簡略化する。",
+        "人の目に触れる手前の段階や手作業・許可待ちの発生時に確認待ちが追加される。"
+      ],
+      "impact": "AIでタスク管理を自動化したい開発者が画面構成や運用の設計に活用できる。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "ターミナル上でコード生成やタスク処理を自動化・支援するAIツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/hungld10/articles/6f3ed6b6cf64ee",
+      "title": "チームで Claude Code を使うと壊れる4つのパターンと、それを防ぐ3層構造",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T07:13:53.000Z",
+      "summary": "要件の誤認識や巨大差分などチームでAIを使う際の失敗パターンと原因を解説した。40行以内の設定ファイルと作業フェーズ別スキルおよびロールブロックの3層構造を提案。チェンジログ更新フックやセルフレビュー先行確認のルールで設定の形骸化を防ぐ。",
+      "headline": "チームでのClaude Code運用崩壊を防ぐ3層構造の設計手法が提示",
+      "points": [
+        "要件の誤認識や巨大差分などチームでAIを使う際の失敗パターンと原因を解説した。",
+        "40行以内の設定ファイルと作業フェーズ別スキルおよびロールブロックの3層構造を提案。",
+        "チェンジログ更新フックやセルフレビュー先行確認のルールで設定の形骸化を防ぐ。"
+      ],
+      "impact": "AIツールをチームで導入する開発リーダーが運用ルールの構築方針の参考にできる。",
+      "glossary": [
+        {
+          "term": "CLAUDE.md",
+          "explanation": "Claude Codeへプロジェクトの基本ルールや構成を指示する設定ファイル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/globalway_blog/articles/2a90475115e146",
+      "title": "MuleSoft × MCP",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T09:04:39.000Z",
+      "summary": "MuleSoftのMCP Connectorにより既存API等をAIエージェント用ツールとして公開できますMuleアプリはMCPサーバーおよびクライアントの両方として動作し追加ホスティングが不要ですベータ版から強化が重ねられバージョン1.7.2ではセッション管理やセキュリティ面が修正されました",
+      "headline": "MuleSoftのMCP Connectorを用いたAI連携検証結果が公開",
+      "points": [
+        "MuleSoftのMCP Connectorにより既存API等をAIエージェント用ツールとして公開できます",
+        "MuleアプリはMCPサーバーおよびクライアントの両方として動作し追加ホスティングが不要です",
+        "ベータ版から強化が重ねられバージョン1.7.2ではセッション管理やセキュリティ面が修正されました"
+      ],
+      "impact": "MuleSoftでAIエージェント連携を検討する開発者はMCP Connectorの動作要件や連携手順を確認するとよいです",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のデータソースやツールを共通方式で接続するためのオープンプロトコルです。"
+        },
+        {
+          "term": "MuleSoft",
+          "explanation": "さまざまなシステムやAPIを統合・連携するためのエンタープライズ向けプラットフォームです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://spring.io/blog/2026/11/06/spring-boot-4-2-0-RC2-available-now",
+      "title": "Spring Boot 4.2.0-RC2 available now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "summary": "Spring Boot 4.2.0-RC2がリリースされMaven Centralで公開されました機能強化やバグ修正など合計99件の改善が含まれていますReactor NettyでのX-Forwarded-Prefix対応やRedis設定の適用拡大が行われました",
+      "headline": "Spring Boot 4.2.0-RC2が公開され主要機能が改善",
+      "points": [
+        "Spring Boot 4.2.0-RC2がリリースされMaven Centralで公開されました",
+        "機能強化やバグ修正など合計99件の改善が含まれています",
+        "Reactor NettyでのX-Forwarded-Prefix対応やRedis設定の適用拡大が行われました"
+      ],
+      "impact": "Spring Bootを利用する開発者はリリースノートを確認し最新版へのアップグレードやテストを実施する必要があります",
+      "glossary": [
+        {
+          "term": "Spring Boot",
+          "explanation": "Javaアプリケーションを迅速かつ簡単に構築するためのオープンソースフレームワークです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released",
+      "title": "Spring Cloud 2026.0.0-RC2 (aka Paddington) Has Been Released",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "summary": "Spring Cloudの最新リリース候補2026.0.0-RC2が公開されました本リリースはSpring Boot 4.2.0-RC2を基盤として構成されていますConfigでのGoogle Cloud Storage対応やGatewayへのフィルタ追加などが実施されました",
+      "headline": "Spring Cloud 2026.0.0-RC2が公開",
+      "points": [
+        "Spring Cloudの最新リリース候補2026.0.0-RC2が公開されました",
+        "本リリースはSpring Boot 4.2.0-RC2を基盤として構成されています",
+        "ConfigでのGoogle Cloud Storage対応やGatewayへのフィルタ追加などが実施されました"
+      ],
+      "impact": "Spring Cloudを利用する開発者はマイルストーンリポジトリから依存関係を設定してテストを実施できます",
+      "glossary": [
+        {
+          "term": "Spring Cloud",
+          "explanation": "分散システムやマイクロサービス構築に必要な機能群を提供するフレームワークです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://inside.java/2026/11/04/devoxxbelgium-project-detroit/",
+      "title": "Project Detroit: From Foreign Libraries to Foreign Language Runtimes",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "summary": "Java上でJavaScript等の外部言語ランタイムを動作させる新プロジェクトが紹介されましたFFM APIを活用してV8やCPythonといった標準ネイティブランタイムを埋め込みますJava 15で削除されたNashornのようにJavaで再実装する手法からの転換を目指します",
+      "headline": "Javaから他言語ランタイムを組み込むProject Detroitが発表",
+      "points": [
+        "Java上でJavaScript等の外部言語ランタイムを動作させる新プロジェクトが紹介されました",
+        "FFM APIを活用してV8やCPythonといった標準ネイティブランタイムを埋め込みます",
+        "Java 15で削除されたNashornのようにJavaで再実装する手法からの転換を目指します"
+      ],
+      "impact": "Javaアプリへの他言語ランタイム埋め込みに関心のある開発者はセッションの録画映像を確認するとよいです",
+      "glossary": [
+        {
+          "term": "FFM API",
+          "explanation": "Javaコードから外部のネイティブライブラリやメモリに安全かつ効率的にアクセスするための機能です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-31-performance",
+      "title": "35日でフロントエンドの基礎を完全に理解する #31 - パフォーマンスと計測（Core Web Vitals・コード分割・エラー監視）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-06T05:20:58.000Z",
+      "summary": "パフォーマンス改善は感想ではなくCore Web Vitalsなどの数値で現状を特定して行う。動的importを使ったコード分割により最初の表示に必要なJS読み込み量を削減できる。windowのerrorイベントの監視により本番環境で発生したエラーを捕獲・収集できる。",
+      "headline": "Web性能改善に向けた計測やコード分割の手法が解説された",
+      "points": [
+        "パフォーマンス改善は感想ではなくCore Web Vitalsなどの数値で現状を特定して行う。",
+        "動的importを使ったコード分割により最初の表示に必要なJS読み込み量を削減できる。",
+        "windowのerrorイベントの監視により本番環境で発生したエラーを捕獲・収集できる。"
+      ],
+      "impact": "Web開発者は計測指標や動的importを確認して表示速度向上とエラー監視を検討する",
+      "glossary": [
+        {
+          "term": "Core Web Vitals",
+          "explanation": "ユーザーの利便性を向上させる目的でGoogleが定めたWeb性能の指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
+      "title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-06T15:00:00.000Z",
+      "summary": "CUR 2.0やCost Explorerで前払い費用の分散割り当て表示が可能になった。使用したワークロードへのコスト割り当てや未使用容量の把握が容易になる。GovCloudと中国を除く全AWSリージョンで追加料金なしで利用できる。",
+      "headline": "EC2 Capacity Blocks for MLの前払い費用の償却表示に対応した",
+      "points": [
+        "CUR 2.0やCost Explorerで前払い費用の分散割り当て表示が可能になった。",
+        "使用したワークロードへのコスト割り当てや未使用容量の把握が容易になる。",
+        "GovCloudと中国を除く全AWSリージョンで追加料金なしで利用できる。"
+      ],
+      "impact": "AWSのコスト管理担当者はCost Explorer等で償却表示の設定を確認・活用する",
+      "glossary": [
+        {
+          "term": "償却（Amortization）",
+          "explanation": "一括で支払った前払い費用を対応する利用期間にわたって分割して計上すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
+      "title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-06T19:48:00.000Z",
+      "summary": "Bedrock AgentCoreのAgent RegistryがGovCloud米国西部で利用可能になった。ツールやエージェント等を集中管理・検出できるカタログ機能を提供する。承認ワークフローやCloudTrailの監査ログによりコンプライアンス要件を満たせる。",
+      "headline": "AWS Agent RegistryがGovCloud米国西部で一般提供を開始した",
+      "points": [
+        "Bedrock AgentCoreのAgent RegistryがGovCloud米国西部で利用可能になった。",
+        "ツールやエージェント等を集中管理・検出できるカタログ機能を提供する。",
+        "承認ワークフローやCloudTrailの監査ログによりコンプライアンス要件を満たせる。"
+      ],
+      "impact": "GovCloudを利用する公共部門の管理者はAgent Registryの導入とガバナンス管理を検討する",
+      "glossary": [
+        {
+          "term": "AWS GovCloud",
+          "explanation": "米国政府機関とそのパートナー向けにコンプライアンス要件を満たすよう分離された環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+      "title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-06T16:00:00.000Z",
+      "summary": "MSK ReplicatorがGovCloudの米国東部および米国西部で利用可能になった。Apache Kafkaクラスタ間のデータ複製を自動化しインフラ管理の手間を削減する。トピック設定やACLなどのメタデータも自動で複製されリージョン跨ぎの障害に備えられる。",
+      "headline": "Amazon MSK ReplicatorがGovCloudの2リージョンで提供された",
+      "points": [
+        "MSK ReplicatorがGovCloudの米国東部および米国西部で利用可能になった。",
+        "Apache Kafkaクラスタ間のデータ複製を自動化しインフラ管理の手間を削減する。",
+        "トピック設定やACLなどのメタデータも自動で複製されリージョン跨ぎの障害に備えられる。"
+      ],
+      "impact": "GovCloudでMSKを使うインフラ担当者はMSK Replicatorによるクロスリージョン複製を検証する",
+      "glossary": [
+        {
+          "term": "Apache Kafka",
+          "explanation": "大量のデータをリアルタイムでメッセージとして処理・配信するための分散システム。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 165,
+    "shortlisted": 80,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 28755,
+    "outputTokens": 19395
+  },
+  "offline": false
+}

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-07</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月7日(土)</p>
+<p class="meta">更新 2026-11-07 07:08 · 取得ソース 23/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/" target="_blank" rel="noopener noreferrer">Googleが動画生成AI「Gemini Omni 1.2 Flash」の一般提供を開始</a></h3>
+<p class="orig">原題: Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-06</p>
+<ul class="points"><li>Googleが動画生成モデルGemini Omni 1.2 Flashの一般提供を開始した。</li><li>生成可能な動画長が最長15秒になり前バージョン比で30%値下げされた。</li><li>対話形式での動画修正や、画像と動画全体の高い一貫性保持に対応する。</li></ul><p class="impact"><b>影響</b>Gemini APIやGemini for businessの利用者は、最大15秒の動画生成や対話型の編集機能を利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>アップスケール</dt><dd>解像度の低い画像や動画を高解像度の映像へ変換拡大する処理のこと。</dd><dt>リップシンク</dt><dd>映像内の人物の口の動きと同期するように音声のタイミングを合わせること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.itmedia.co.jp/news/article/2611/06/2000002931/" target="_blank" rel="noopener noreferrer">OpenAIがセキュリティ特化型モデルGPT-6 Cyberを発表した</a></h3>
+<p class="orig">原題: OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/06/2000002931/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-06</p>
+<ul class="points"><li>OpenAIはセキュリティ研究に特化したモデルGPT-6 Cyberを発表し限定提供を始めました。</li><li>Firefoxの未知の脆弱性81件の発見やLinuxカーネルにおけるエクスプロイトの開発を達成しました。</li><li>指示逸脱率が0.07％へ低下した一方、警告に従う割合が73.0％にとどまるなどの課題も残ります。</li></ul><p class="impact"><b>影響</b>利用を希望する組織は審査の通過に加え多要素認証やシングルサインオン等のセキュリティ対策を導入する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>エクスプロイト</dt><dd>ソフトウェアなどの脆弱性を悪用して不正攻撃を行うためのプログラム。</dd><dt>シングルサインオン</dt><dd>一度の認証で複数のアプリケーションやWebサービスを利用可能にする仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.itmedia.co.jp/news/article/2611/06/2000002935/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeに銀行口座と連携する家計管理機能を米国でβ提供</a></h3>
+<p class="orig">原題: Anthropic、「Claude」に家計管理機能「Personal Finance」 銀行口座と連携、米国でβ提供</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/06/2000002935/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-06</p>
+<ul class="points"><li>米Plaid経由で最大16行の口座を接続し、残高や最大2年分の取引履歴をもとに質問に回答できます。</li><li>米国のPro、Max、Ultraプラン向けに順次提供され、資金の移動を行わない読み取り専用機能です。</li><li>専用ハブ画面での会話はAIの学習に使われず、接続は利用者がいつでも解除できます。</li></ul><p class="impact"><b>影響</b>米国の有料プラン利用者は機能を使える一方、Claudeが誤る可能性に備えて重要な数字は元の取引記録を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>β版</dt><dd>正式公開前にユーザーに試用してもらい、不具合の発見やフィードバックを得るために提供されるテスト版。</dd><dt>Plaid</dt><dd>銀行口座などの金融データを外部のアプリやサービスと安全に連携・接続するためのサービス。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/" target="_blank" rel="noopener noreferrer">Googleが動画生成AI「Gemini Omni 1.2 Flash」の一般提供を開始</a></h3>
+<p class="orig">原題: Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-06</p>
+<ul class="points"><li>Googleが動画生成モデルGemini Omni 1.2 Flashの一般提供を開始した。</li><li>生成可能な動画長が最長15秒になり前バージョン比で30%値下げされた。</li><li>対話形式での動画修正や、画像と動画全体の高い一貫性保持に対応する。</li></ul><p class="impact"><b>影響</b>Gemini APIやGemini for businessの利用者は、最大15秒の動画生成や対話型の編集機能を利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>アップスケール</dt><dd>解像度の低い画像や動画を高解像度の映像へ変換拡大する処理のこと。</dd><dt>リップシンク</dt><dd>映像内の人物の口の動きと同期するように音声のタイミングを合わせること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/06/2000002931/" target="_blank" rel="noopener noreferrer">OpenAIがセキュリティ特化型モデルGPT-6 Cyberを発表した</a></h3>
+<p class="orig">原題: OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表 Firefoxの未知の脆弱性81件を発見</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/06/2000002931/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-06</p>
+<ul class="points"><li>OpenAIはセキュリティ研究に特化したモデルGPT-6 Cyberを発表し限定提供を始めました。</li><li>Firefoxの未知の脆弱性81件の発見やLinuxカーネルにおけるエクスプロイトの開発を達成しました。</li><li>指示逸脱率が0.07％へ低下した一方、警告に従う割合が73.0％にとどまるなどの課題も残ります。</li></ul><p class="impact"><b>影響</b>利用を希望する組織は審査の通過に加え多要素認証やシングルサインオン等のセキュリティ対策を導入する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>エクスプロイト</dt><dd>ソフトウェアなどの脆弱性を悪用して不正攻撃を行うためのプログラム。</dd><dt>シングルサインオン</dt><dd>一度の認証で複数のアプリケーションやWebサービスを利用可能にする仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/06/2000002935/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeに銀行口座と連携する家計管理機能を米国でβ提供</a></h3>
+<p class="orig">原題: Anthropic、「Claude」に家計管理機能「Personal Finance」 銀行口座と連携、米国でβ提供</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/06/2000002935/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-06</p>
+<ul class="points"><li>米Plaid経由で最大16行の口座を接続し、残高や最大2年分の取引履歴をもとに質問に回答できます。</li><li>米国のPro、Max、Ultraプラン向けに順次提供され、資金の移動を行わない読み取り専用機能です。</li><li>専用ハブ画面での会話はAIの学習に使われず、接続は利用者がいつでも解除できます。</li></ul><p class="impact"><b>影響</b>米国の有料プラン利用者は機能を使える一方、Claudeが誤る可能性に備えて重要な数字は元の取引記録を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>β版</dt><dd>正式公開前にユーザーに試用してもらい、不具合の発見やフィードバックを得るために提供されるテスト版。</dd><dt>Plaid</dt><dd>銀行口座などの金融データを外部のアプリやサービスと安全に連携・接続するためのサービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/06/2000002939/" target="_blank" rel="noopener noreferrer">MetaがAIエージェント「Muse」に音声対話とアバター機能を追加</a></h3>
+<p class="orig">原題: MetaのAIエージェント「Muse」に音声対話機能 表情豊かなアバターと会話、まず米国で提供</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/06/2000002939/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-06</p>
+<ul class="points"><li>MetaはAI「Muse」にリアルタイムの音声対話機能と、会話に合わせて表情を変えるアバター機能を追加しました。</li><li>まずは米国のモバイル、Web、Mac向けアプリで提供され、会話の声は数百種類から選択可能です。</li><li>ユーザーの割り込み発話にも対応しており、今後はAIグラスなどへの展開も予定されています。</li></ul><p class="impact"><b>影響</b>米国でMuseアプリを利用している人は、アバターを表示した状態での音声対話機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AIエージェント</dt><dd>指示に基づいて自律的に計画を立て、実際の作業まで進める人工知能のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/" target="_blank" rel="noopener noreferrer">Claude CodeをAmazon Bedrock AgentCore上でリモート実行可能に</a></h3>
+<p class="orig">原題: Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>AWSアカウント内の独立セッションでClaude Codeをリモート実行する構成を提示した。</li><li>タスクを非同期処理し結果をGitHubのプルリクエストとして返却する仕組みを構築した。</li><li>各タスクは最大3回の試行で停止し、信頼できるリポジトリでの機能開発やバグ修正に適する。</li></ul><p class="impact"><b>影響</b>リモートで安全にコード生成タスクを自動化したい開発チームが、構成サンプルを活用する。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AgentCore</dt><dd>AIエージェントを大規模に構築・接続・最適化するためのAmazon Bedrockのプラットフォーム機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/" target="_blank" rel="noopener noreferrer">AIエージェントのデータアクセスを統合するMCPサーバーを構築</a></h3>
+<p class="orig">原題: Serverless MCP server for AI agent data lake access on Amazon ECS Fargate</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>Amazon ECS Fargate上にサーバーレスなMCPサーバーを配置しアクセスを中央一元化した。</li><li>新しいデータセットの追加はJSONメタデータファイルの配置のみで自動認識される仕組みにした。</li><li>マルチテナント環境において複数のクライアントやエージェントから共通で利用できる。</li></ul><p class="impact"><b>影響</b>データレイクを活用するAIエージェントを開発・運用するチームが、連携基盤として導入を検討する。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Model Context Protocol</dt><dd>AIエージェントと外部データソースやツールを安全に接続するための標準プロトコル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/" target="_blank" rel="noopener noreferrer">OktaとAgentCore Gatewayで多数のAIエージェント権限管理を一元化</a></h3>
+<p class="orig">原題: Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>AgentCore Gatewayを単一の窓口とし、Oktaの認可付与を一括で引き換える構成に拡張した。</li><li>Cedarポリシーを用いてツール実行前にアクセス権限を評価し、不必要なトークン交換を防止する。</li><li>CloudWatchおよびAgentCore Observabilityで監査トレースを集約管理可能にした。</li></ul><p class="impact"><b>影響</b>多数のAIエージェントとツールを全社的に統制・運用したいセキュリティ管理者が確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Cedar</dt><dd>アクセス制御ルールを表現・評価するためにAWSが開発したオープンソースのポリシー言語。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/" target="_blank" rel="noopener noreferrer">Okta XAAとAgentCoreでユーザー代理AIエージェントの権限を制御</a></h3>
+<p class="orig">原題: Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 1</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>Okta Cross App AccessとAgentCore Identityを連携させユーザー代理アクセスを制御した。</li><li>割り当て解除後約1秒で新規リクエストが拒否され発行済みトークンは5分以内に即失効する。</li><li>AgentCore Identityによるトークン引き換えのオーバーヘッドは約0.6秒であると測定された。</li></ul><p class="impact"><b>影響</b>ユーザー権限に基づく操作を行うAIエージェントの安全性を確保したいセキュリティ担当者が確認する。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RFC 8693</dt><dd>アイデンティティプロバイダ間でトークンを交換するための標準化されたOAuth 2.0拡張規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/" target="_blank" rel="noopener noreferrer">IndegeneがAWS上にデータ品質管理用LLMエージェントを構築した</a></h3>
+<p class="orig">原題: How Indegene is modernizing and scaling enterprise data quality in life sciences</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-05</p>
+<ul class="points"><li>IndegeneがNEXT UDP上にLLM搭載のData Quality Agentを構築した。</li><li>エージェントは文脈に応じた品質ルールを生成し実行可能なSQLやPythonコードを出力する。</li><li>人による統制のもとでデータ品質プログラムの構築や維持の手間を削減する。</li></ul><p class="impact"><b>影響</b>ライフサイエンス組織の担当者がデータ品質向上と運用負荷の削減に活用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LLM</dt><dd>大規模なテキストデータから言語のパターンを学習した人工知能モデル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/maya-bot/items/66a95877f8a17e1fb7d0" target="_blank" rel="noopener noreferrer">設計書から実装やテストの生成と検証を分担するAI開発手法が公開</a></h3>
+<p class="orig">原題: AIが書いたコードは「β版」：設計書から実装・単体テストまでをエージェントに任せる仕組み</p>
+<p class="src">出典: <a href="https://qiita.com/maya-bot/items/66a95877f8a17e1fb7d0" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-07</p>
+<ul class="points"><li>AI作成のコードをβ版と位置づけ人のレビューと機械的検証で品質を担保する仕組み。</li><li>開発を5フェーズに分け役割別のAIエージェントと個別の人のレビューを組み合わせる。</li><li>CIの決定論ゲートで判定しアサーションの弱体化やテスト無効化を機械的に禁止する。</li></ul><p class="impact"><b>影響</b>AI支援開発を行う開発者が品質担保の仕組みや自動検証ルールを参考にできる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CI</dt><dd>コード変更時に自動でテストやビルドを実行し品質を維持する開発手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/rescuenow/articles/4c03a548cd6589" target="_blank" rel="noopener noreferrer">司令塔AIがタスク全体を管理し人間が確認待ちに答える運用法を導入</a></h3>
+<p class="orig">原題: タスク管理までAIエージェントに任せたら、確認待ちに答えるだけになった</p>
+<p class="src">出典: <a href="https://zenn.dev/rescuenow/articles/4c03a548cd6589" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-06</p>
+<ul class="points"><li>司令塔AIがGitHubやNotionのタスクを整理し着手順の決定と確認待ち作成を行う。</li><li>開発者は自作パネルで選択肢を確認し番号と一言を返して承認作業を簡略化する。</li><li>人の目に触れる手前の段階や手作業・許可待ちの発生時に確認待ちが追加される。</li></ul><p class="impact"><b>影響</b>AIでタスク管理を自動化したい開発者が画面構成や運用の設計に活用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Claude Code</dt><dd>ターミナル上でコード生成やタスク処理を自動化・支援するAIツール。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/hungld10/articles/6f3ed6b6cf64ee" target="_blank" rel="noopener noreferrer">チームでのClaude Code運用崩壊を防ぐ3層構造の設計手法が提示</a></h3>
+<p class="orig">原題: チームで Claude Code を使うと壊れる4つのパターンと、それを防ぐ3層構造</p>
+<p class="src">出典: <a href="https://zenn.dev/hungld10/articles/6f3ed6b6cf64ee" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-06</p>
+<ul class="points"><li>要件の誤認識や巨大差分などチームでAIを使う際の失敗パターンと原因を解説した。</li><li>40行以内の設定ファイルと作業フェーズ別スキルおよびロールブロックの3層構造を提案。</li><li>チェンジログ更新フックやセルフレビュー先行確認のルールで設定の形骸化を防ぐ。</li></ul><p class="impact"><b>影響</b>AIツールをチームで導入する開発リーダーが運用ルールの構築方針の参考にできる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CLAUDE.md</dt><dd>Claude Codeへプロジェクトの基本ルールや構成を指示する設定ファイル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/globalway_blog/articles/2a90475115e146" target="_blank" rel="noopener noreferrer">MuleSoftのMCP Connectorを用いたAI連携検証結果が公開</a></h3>
+<p class="orig">原題: MuleSoft × MCP</p>
+<p class="src">出典: <a href="https://zenn.dev/globalway_blog/articles/2a90475115e146" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-06</p>
+<ul class="points"><li>MuleSoftのMCP Connectorにより既存API等をAIエージェント用ツールとして公開できます</li><li>MuleアプリはMCPサーバーおよびクライアントの両方として動作し追加ホスティングが不要です</li><li>ベータ版から強化が重ねられバージョン1.7.2ではセッション管理やセキュリティ面が修正されました</li></ul><p class="impact"><b>影響</b>MuleSoftでAIエージェント連携を検討する開発者はMCP Connectorの動作要件や連携手順を確認するとよいです</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のデータソースやツールを共通方式で接続するためのオープンプロトコルです。</dd><dt>MuleSoft</dt><dd>さまざまなシステムやAPIを統合・連携するためのエンタープライズ向けプラットフォームです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/06/spring-boot-4-2-0-RC2-available-now" target="_blank" rel="noopener noreferrer">Spring Boot 4.2.0-RC2が公開され主要機能が改善</a></h3>
+<p class="orig">原題: Spring Boot 4.2.0-RC2 available now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/06/spring-boot-4-2-0-RC2-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-06</p>
+<ul class="points"><li>Spring Boot 4.2.0-RC2がリリースされMaven Centralで公開されました</li><li>機能強化やバグ修正など合計99件の改善が含まれています</li><li>Reactor NettyでのX-Forwarded-Prefix対応やRedis設定の適用拡大が行われました</li></ul><p class="impact"><b>影響</b>Spring Bootを利用する開発者はリリースノートを確認し最新版へのアップグレードやテストを実施する必要があります</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Spring Boot</dt><dd>Javaアプリケーションを迅速かつ簡単に構築するためのオープンソースフレームワークです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released" target="_blank" rel="noopener noreferrer">Spring Cloud 2026.0.0-RC2が公開</a></h3>
+<p class="orig">原題: Spring Cloud 2026.0.0-RC2 (aka Paddington) Has Been Released</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-05</p>
+<ul class="points"><li>Spring Cloudの最新リリース候補2026.0.0-RC2が公開されました</li><li>本リリースはSpring Boot 4.2.0-RC2を基盤として構成されています</li><li>ConfigでのGoogle Cloud Storage対応やGatewayへのフィルタ追加などが実施されました</li></ul><p class="impact"><b>影響</b>Spring Cloudを利用する開発者はマイルストーンリポジトリから依存関係を設定してテストを実施できます</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Spring Cloud</dt><dd>分散システムやマイクロサービス構築に必要な機能群を提供するフレームワークです。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/11/04/devoxxbelgium-project-detroit/" target="_blank" rel="noopener noreferrer">Javaから他言語ランタイムを組み込むProject Detroitが発表</a></h3>
+<p class="orig">原題: Project Detroit: From Foreign Libraries to Foreign Language Runtimes</p>
+<p class="src">出典: <a href="https://inside.java/2026/11/04/devoxxbelgium-project-detroit/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-11-04</p>
+<ul class="points"><li>Java上でJavaScript等の外部言語ランタイムを動作させる新プロジェクトが紹介されました</li><li>FFM APIを活用してV8やCPythonといった標準ネイティブランタイムを埋め込みます</li><li>Java 15で削除されたNashornのようにJavaで再実装する手法からの転換を目指します</li></ul><p class="impact"><b>影響</b>Javaアプリへの他言語ランタイム埋め込みに関心のある開発者はセッションの録画映像を確認するとよいです</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>FFM API</dt><dd>Javaコードから外部のネイティブライブラリやメモリに安全かつ効率的にアクセスするための機能です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-31-performance" target="_blank" rel="noopener noreferrer">Web性能改善に向けた計測やコード分割の手法が解説された</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #31 - パフォーマンスと計測（Core Web Vitals・コード分割・エラー監視）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-31-performance" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-06</p>
+<ul class="points"><li>パフォーマンス改善は感想ではなくCore Web Vitalsなどの数値で現状を特定して行う。</li><li>動的importを使ったコード分割により最初の表示に必要なJS読み込み量を削減できる。</li><li>windowのerrorイベントの監視により本番環境で発生したエラーを捕獲・収集できる。</li></ul><p class="impact"><b>影響</b>Web開発者は計測指標や動的importを確認して表示速度向上とエラー監視を検討する</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Core Web Vitals</dt><dd>ユーザーの利便性を向上させる目的でGoogleが定めたWeb性能の指標。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/" target="_blank" rel="noopener noreferrer">EC2 Capacity Blocks for MLの前払い費用の償却表示に対応した</a></h3>
+<p class="orig">原題: AWS launches support for amortization of EC2 Capacity Blocks for ML</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-07</p>
+<ul class="points"><li>CUR 2.0やCost Explorerで前払い費用の分散割り当て表示が可能になった。</li><li>使用したワークロードへのコスト割り当てや未使用容量の把握が容易になる。</li><li>GovCloudと中国を除く全AWSリージョンで追加料金なしで利用できる。</li></ul><p class="impact"><b>影響</b>AWSのコスト管理担当者はCost Explorer等で償却表示の設定を確認・活用する</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>償却（Amortization）</dt><dd>一括で支払った前払い費用を対応する利用期間にわたって分割して計上すること。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/" target="_blank" rel="noopener noreferrer">AWS Agent RegistryがGovCloud米国西部で一般提供を開始した</a></h3>
+<p class="orig">原題: Agent Registry is now generally available in AWS GovCloud (US-West) Region</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-07</p>
+<ul class="points"><li>Bedrock AgentCoreのAgent RegistryがGovCloud米国西部で利用可能になった。</li><li>ツールやエージェント等を集中管理・検出できるカタログ機能を提供する。</li><li>承認ワークフローやCloudTrailの監査ログによりコンプライアンス要件を満たせる。</li></ul><p class="impact"><b>影響</b>GovCloudを利用する公共部門の管理者はAgent Registryの導入とガバナンス管理を検討する</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AWS GovCloud</dt><dd>米国政府機関とそのパートナー向けにコンプライアンス要件を満たすよう分離された環境。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions" target="_blank" rel="noopener noreferrer">Amazon MSK ReplicatorがGovCloudの2リージョンで提供された</a></h3>
+<p class="orig">原題: Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-07</p>
+<ul class="points"><li>MSK ReplicatorがGovCloudの米国東部および米国西部で利用可能になった。</li><li>Apache Kafkaクラスタ間のデータ複製を自動化しインフラ管理の手間を削減する。</li><li>トピック設定やACLなどのメタデータも自動で複製されリージョン跨ぎの障害に備えられる。</li></ul><p class="impact"><b>影響</b>GovCloudでMSKを使うインフラ担当者はMSK Replicatorによるクロスリージョン複製を検証する</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Apache Kafka</dt><dd>大量のデータをリアルタイムでメッセージとして処理・配信するための分散システム。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-06/">← 2026-11-06</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（38）</summary><ul><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
