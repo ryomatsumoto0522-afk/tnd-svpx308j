@@ -1,0 +1,541 @@
+{
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-07T20:55:28.683Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+      "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T22:47:00.000Z",
+      "summary": "Bedrock上で高速版Kimi K3.1 Pro (Highspeed)の利用が可能になった。100万トークンの文脈窓を持つオープンウェイトの3兆パラメータ級モデル。明示的なプロンプトキャッシュに対応し、クロスリージョン推論で全地域へ提供される。",
+      "headline": "AWSがAmazon Bedrockで「Kimi K3.1 Pro」を提供開始",
+      "points": [
+        "Bedrock上で高速版Kimi K3.1 Pro (Highspeed)の利用が可能になった。",
+        "100万トークンの文脈窓を持つオープンウェイトの3兆パラメータ級モデル。",
+        "明示的なプロンプトキャッシュに対応し、クロスリージョン推論で全地域へ提供される。"
+      ],
+      "impact": "Amazon Bedrockの利用者は、コンソールからコーディングや文書処理などのエージェント用途に利用できる。",
+      "glossary": [
+        {
+          "term": "オープンウェイトモデル",
+          "explanation": "学習済みのパラメータ（重み）が公開され、自由に利用・検証できる機械学習モデル。"
+        },
+        {
+          "term": "プロンプトキャッシング",
+          "explanation": "過去の入力データを一時保存して再利用し、処理速度の向上や費用の低減を図る技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2154238.html",
+      "title": "OpenAI、セキュリティ特化AIモデル「GPT-6 Cyber」を発表、一部顧客に限定提供／Firefox、Linuxカーネル、Brotliの脆弱性発見・検証に活躍",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T05:56:31.000Z",
+      "summary": "脆弱性の発見や攻撃コード開発、ペネトレーションテスト向けに訓練された。FirefoxやLinuxカーネルの脆弱性検証で成果を上げ、従来モデルを上回る。許可された範囲外への不正なシステム侵入を防ぐ安全対策も施されている。",
+      "headline": "OpenAIがセキュリティ特化AI「GPT-6 Cyber」を発表",
+      "points": [
+        "脆弱性の発見や攻撃コード開発、ペネトレーションテスト向けに訓練された。",
+        "FirefoxやLinuxカーネルの脆弱性検証で成果を上げ、従来モデルを上回る。",
+        "許可された範囲外への不正なシステム侵入を防ぐ安全対策も施されている。"
+      ],
+      "impact": "セキュリティプログラム「Daybreak Red」の承認済み顧客の一部がAPIやCodex経由で利用できる。",
+      "glossary": [
+        {
+          "term": "ペネトレーションテスト",
+          "explanation": "システムに実際に擬似攻撃を行って侵入を試み、セキュリティ上の弱点を検証する手法。"
+        },
+        {
+          "term": "エクスプロイト",
+          "explanation": "ソフトウェアの脆弱性を突いて不正な動作を行わせるためのプログラムや攻撃手法。"
+        },
+        {
+          "term": "ゼロデイ脆弱性",
+          "explanation": "修正プログラムが提供されていない、開発元が把握する前の未知の脆弱性。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/",
+      "title": "Getting started with Web Answer on Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T21:04:24.000Z",
+      "summary": "1度の呼び出しでWeb情報を検索し、出典を紐づけた回答を迅速に生成する。検索から要約、引用の抽出までを自前でパイプライン構築する手間を省ける。検索結果のみを返すWeb Searchに対し、モデルが回答生成まで担う点が異なる。",
+      "headline": "AWSがAmazon Bedrock AgentCoreの「Web Answer」を提供",
+      "points": [
+        "1度の呼び出しでWeb情報を検索し、出典を紐づけた回答を迅速に生成する。",
+        "検索から要約、引用の抽出までを自前でパイプライン構築する手間を省ける。",
+        "検索結果のみを返すWeb Searchに対し、モデルが回答生成まで担う点が異なる。"
+      ],
+      "impact": "エージェント開発者は、AgentCore GatewayのターゲットにWeb Answerを追加して呼び出せる。",
+      "glossary": [
+        {
+          "term": "Model Context Protocol (MCP)",
+          "explanation": "AIモデルと外部のツールやデータソースを安全かつ統一的に接続するための通信規約。"
+        },
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実に基づかない誤った情報を、もっともらしく事実であるかのように生成する現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
+      "title": "How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T16:55:05.000Z",
+      "summary": "月最大4,000件のセキュリティ案件の90％以上を人手を介さず自動で解決する。Bedrock AgentCoreを使い、30以上の専門エージェントを階層的に連携させた。流出カードの検知やアクセスの異常など、複数領域の事案を数秒でトリアージできる。",
+      "headline": "GreenlightがBedrockを活用し自律型SOCを構築",
+      "points": [
+        "月最大4,000件のセキュリティ案件の90％以上を人手を介さず自動で解決する。",
+        "Bedrock AgentCoreを使い、30以上の専門エージェントを階層的に連携させた。",
+        "流出カードの検知やアクセスの異常など、複数領域の事案を数秒でトリアージできる。"
+      ],
+      "glossary": [
+        {
+          "term": "SOC",
+          "explanation": "企業の情報システムやネットワークを監視し、セキュリティ脅威の検知や分析を行う専門組織。"
+        },
+        {
+          "term": "トリアージ",
+          "explanation": "発生したインシデントやアラートの深刻度を評価し、対応の優先順位を判断する作業。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/",
+      "title": "Use decision models with Amazon Bedrock AgentCore Evaluations",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T18:46:36.000Z",
+      "summary": "AgentCore Evaluationsのコードベース評価機能により、決定モデルを接続可能になりました。決定モデルは固定の選択肢に対し確率を返すため、一貫したスコアリングやスクリーニングに適します。TypeSafeのJevやオープンソースのStrands Decider 2Bとの連携方法が示されています。",
+      "headline": "Amazon Bedrock AgentCoreで決定モデルを評価に使う方法が公開された",
+      "points": [
+        "AgentCore Evaluationsのコードベース評価機能により、決定モデルを接続可能になりました。",
+        "決定モデルは固定の選択肢に対し確率を返すため、一貫したスコアリングやスクリーニングに適します。",
+        "TypeSafeのJevやオープンソースのStrands Decider 2Bとの連携方法が示されています。"
+      ],
+      "impact": "AgentCoreでエージェントを評価する開発者は、Lambda経由で決定モデルを組み込み、信頼性の高いスコアリングを行えます。",
+      "glossary": [
+        {
+          "term": "決定モデル",
+          "explanation": "自由記述ではなく、あらかじめ定義された選択肢の中から確率を割り当てて判定を行う特化型モデル。"
+        },
+        {
+          "term": "LLM-as-a-judge",
+          "explanation": "大規模言語モデル自身を審査役として利用し、他のモデルやエージェントの出力品質を評価する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+      "title": "Smart Approvals in Amazon Quick: Human oversight where it matters",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-04T16:33:03.000Z",
+      "summary": "Smart ApprovalsはAIエージェントの提案操作を評価し、自動承認またはユーザー確認を行います。既存のポリシーや権限の範囲内で動作し、機密データの移動や外部送信など重要な判断は人間に委ねられます。専用の分類器モデルがリクエスト内容やナレッジグラフを検証し、間接的なプロンプトインジェクションも防ぎます。",
+      "headline": "Amazon Quickに操作の自動承認を行うSmart Approvalsが導入された",
+      "points": [
+        "Smart ApprovalsはAIエージェントの提案操作を評価し、自動承認またはユーザー確認を行います。",
+        "既存のポリシーや権限の範囲内で動作し、機密データの移動や外部送信など重要な判断は人間に委ねられます。",
+        "専用の分類器モデルがリクエスト内容やナレッジグラフを検証し、間接的なプロンプトインジェクションも防ぎます。"
+      ],
+      "impact": "管理者はカスタムアクセス許可で利用者を設定でき、ユーザー自身も自動承認機能のオン・オフを切り替えられます。",
+      "glossary": [
+        {
+          "term": "ナレッジグラフ",
+          "explanation": "人物や組織、概念などの要素とそれらの関係性をネットワーク状に表現したデータ構造。"
+        },
+        {
+          "term": "プロンプトインジェクション",
+          "explanation": "悪意のある指示を入力に紛れ込ませて、AIモデルに意図しない動作をさせる攻撃手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
+      "title": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T16:49:42.000Z",
+      "summary": "暗号資産税務プラットフォームのTaxbitが、製品ダッシュボードに組み込むAIアシスタントを構築しました。Amazon Bedrock AgentCoreのランタイムやGuardrailsを活用し、役割制御や回答の根拠提示を実現しています。利用者の55%以上が24時間以内に再質問するなど、高い利用実績を記録しています。",
+      "headline": "TaxbitがAgentCoreを活用した税務AIアシスタントを開発した",
+      "points": [
+        "暗号資産税務プラットフォームのTaxbitが、製品ダッシュボードに組み込むAIアシスタントを構築しました。",
+        "Amazon Bedrock AgentCoreのランタイムやGuardrailsを活用し、役割制御や回答の根拠提示を実現しています。",
+        "利用者の55%以上が24時間以内に再質問するなど、高い利用実績を記録しています。"
+      ],
+      "glossary": [
+        {
+          "term": "AgentCore",
+          "explanation": "Amazon Bedrock上でAIエージェントの構築、接続、最適化を支援する統合実行基盤。"
+        },
+        {
+          "term": "データレジデンシー",
+          "explanation": "データを特定の国や地域の法管轄内に保管・処理しなければならないという規制や要件のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/jp/blogs/news/model-cascade/",
+      "title": "Kiro の Auto がモデルカスケードで作業に合ったモデルを使い分ける仕組み",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T01:51:29.000Z",
+      "summary": "効率的なモデルで作業を開始し、独立したモデルが問題検知した際により高性能なモデルへ自動で引き継ぎます。引き継ぎ時には作業内容の要点が渡されるため、最初からやり直すことなく現在の状態から作業を継続できます。評価では約8割のタスクを引き継ぎなしで完了し、高性能モデル単独とほぼ同等の成功率を達成しました。",
+      "headline": "KiroのAutoがモデルカスケードによる段階的なモデル切替を導入した",
+      "points": [
+        "効率的なモデルで作業を開始し、独立したモデルが問題検知した際により高性能なモデルへ自動で引き継ぎます。",
+        "引き継ぎ時には作業内容の要点が渡されるため、最初からやり直すことなく現在の状態から作業を継続できます。",
+        "評価では約8割のタスクを引き継ぎなしで完了し、高性能モデル単独とほぼ同等の成功率を達成しました。"
+      ],
+      "impact": "KiroのユーザーはAutoを選択することで、追加の判断をすることなく品質を保ちながら作業を進められます。",
+      "glossary": [
+        {
+          "term": "モデルカスケード",
+          "explanation": "作業の難易度や進捗に応じて、軽量モデルから高性能モデルへと段階的に処理を切り替える手法。"
+        },
+        {
+          "term": "pass@1",
+          "explanation": "モデルが1回の試行でタスクを正しく解決できた割合を示す評価指標。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://sizu.me/laiso/posts/k59is4cnd77f",
+      "title": "ISUCON2026をClaude Codeが優勝したらしい｜laiso",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T10:00:45.000Z",
+      "summary": "元Wantedly CTOのkawasy氏が3ヶ月以上準備したハーネスを8時間自律動作させ1位を獲得した。競技エージェントは動的コード生成でデバッグを行い、残り時間から自動停止する仕組みも備えていた。過去問を用いた検証や評価ループの設計など、入念な事前準備が勝因の本質と分析されている。",
+      "headline": "kawasy氏が自律実行ハーネスを用いISUCON2026で優勝",
+      "points": [
+        "元Wantedly CTOのkawasy氏が3ヶ月以上準備したハーネスを8時間自律動作させ1位を獲得した。",
+        "競技エージェントは動的コード生成でデバッグを行い、残り時間から自動停止する仕組みも備えていた。",
+        "過去問を用いた検証や評価ループの設計など、入念な事前準備が勝因の本質と分析されている。"
+      ],
+      "glossary": [
+        {
+          "term": "ISUCON",
+          "explanation": "Webサービスの負荷対策やパフォーマンス改善の腕を競うプログラミングコンテスト。"
+        },
+        {
+          "term": "ハーネス",
+          "explanation": "プログラムの自動実行やテスト、評価のループを制御・補助するための枠組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/nekonote328/articles/claude-code-vscode-getting-started",
+      "title": "はじめての Claude ③【育てる】CLAUDE.md を書いて、安全に任せよう（2026年11月）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T09:41:29.000Z",
+      "summary": "CLAUDE.mdはプロジェクト固有のルールや好みをAIに事前把握させるための取扱説明書である。プロジェクト直下に置く個別設定とホームフォルダに置く共通設定があり、200行以内が推奨される。.envなどの見られたくない機密ファイルは、settings.jsonのdeny設定で除外できる。",
+      "headline": "Claude Codeへの指示書CLAUDE.mdの書き方と安全対策が公開",
+      "points": [
+        "CLAUDE.mdはプロジェクト固有のルールや好みをAIに事前把握させるための取扱説明書である。",
+        "プロジェクト直下に置く個別設定とホームフォルダに置く共通設定があり、200行以内が推奨される。",
+        ".envなどの見られたくない機密ファイルは、settings.jsonのdeny設定で除外できる。"
+      ],
+      "impact": "Claude Codeを利用する開発者は、CLAUDE.mdの記述や除外設定を行い安全性を確認する必要がある。",
+      "glossary": [
+        {
+          "term": ".env",
+          "explanation": "APIキーやパスワードなどの機密情報を環境変数として定義・保持するためのファイル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://qiita.com/everyinfra/items/958e65092246086cb469",
+      "title": "GPT-6のIntelligent UIでRedditとXのブランドレポートを作る：MCPの設定例とデータ検証",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T19:24:48.000Z",
+      "summary": "Intelligent UIはモデルが回答に合わせてグラフやボタンなどのUIを自動構築する機能である。カスタムMCPのデータをそのままUI化する仕様はなく、JSON文字列をモデル自身が解釈する必要がある。APIから返る生データに不要情報が混入しやすいため、モデルの誤りを防ぐ前処理が重要となる。",
+      "headline": "GPT-6のIntelligent UIとMCP連携のデータ検証結果が報告",
+      "points": [
+        "Intelligent UIはモデルが回答に合わせてグラフやボタンなどのUIを自動構築する機能である。",
+        "カスタムMCPのデータをそのままUI化する仕様はなく、JSON文字列をモデル自身が解釈する必要がある。",
+        "APIから返る生データに不要情報が混入しやすいため、モデルの誤りを防ぐ前処理が重要となる。"
+      ],
+      "impact": "MCPでレポートを作成する開発者は、APIから取得したデータの前処理や指示プロンプトを確認する必要がある。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルが外部のデータやツールと安全に接続してやり取りするための共通規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://qiita.com/supportapp3/items/cd1f04df4b681507e3e1",
+      "title": "API キーをコマンド引数に書くと別ユーザーの ps から丸見え：curl -H は隠れず -u だけ隠れる（実機確認）",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T20:12:25.000Z",
+      "summary": "コマンド引数にAPIキーを直接書くと、psコマンドにより同一マシンの別ユーザーから丸見えになる。curlの-H指定や--api-keyは露出する一方、環境変数は他ユーザーから閲覧不可だった。対策として、curlは-H @ファイル形式で渡すか、環境変数やファイルから読み込むことが推奨される。",
+      "headline": "APIキーのコマンド引数指定により他ユーザーへ露出する危険が判明",
+      "points": [
+        "コマンド引数にAPIキーを直接書くと、psコマンドにより同一マシンの別ユーザーから丸見えになる。",
+        "curlの-H指定や--api-keyは露出する一方、環境変数は他ユーザーから閲覧不可だった。",
+        "対策として、curlは-H @ファイル形式で渡すか、環境変数やファイルから読み込むことが推奨される。"
+      ],
+      "impact": "Linuxサーバーでツールを扱う開発者は、APIキーを引数に書かずファイル等から渡す運用を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "psコマンド",
+          "explanation": "Linux環境で現在動作しているプロセスの状態や実行時のコマンドラインを表示するツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/dev_to_earn/articles/92c1f67ad02ec2",
+      "title": "「実装完了」のはずが、中心機能が動いていなかった話",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T12:41:21.000Z",
+      "summary": "AIが設計と実装を分担した際、中身のない架空のnpmパッケージが使われてもエラーにならず見落とされた。実装側が読み込み失敗時にnullを返す設計にしたため、型チェックを通過して未実装が隠蔽された。AI任せにせず、指定された部品の実在確認や実機テストを初期工程に含める対策が提言されている。",
+      "headline": "AI生成アプリで中心機能の未実装が型チェックをすり抜けた教訓",
+      "points": [
+        "AIが設計と実装を分担した際、中身のない架空のnpmパッケージが使われてもエラーにならず見落とされた。",
+        "実装側が読み込み失敗時にnullを返す設計にしたため、型チェックを通過して未実装が隠蔽された。",
+        "AI任せにせず、指定された部品の実在確認や実機テストを初期工程に含める対策が提言されている。"
+      ],
+      "impact": "AIを活用して開発する人は、提案されたパッケージの実在確認や実機での動作確認を徹底する必要があります。",
+      "glossary": [
+        {
+          "term": "HealthKit",
+          "explanation": "Appleが提供する、iPhoneなどで健康や活動データを一元管理するための仕組み。"
+        },
+        {
+          "term": "型チェック",
+          "explanation": "プログラム内のデータの種類が合っているかを実行前に検証し、エラーを防ぐ仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-32-build",
+      "title": "35日でフロントエンドの基礎を完全に理解する #32 - ビルドを理解する（Viteの仕組み・環境変数・モジュール解決）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-07T05:23:19.000Z",
+      "summary": "開発時はファイルを束ねずに即座に反映し、本番時は複数モジュールを1つに圧縮して配信する仕組みを説明した。環境変数は「VITE_」の接頭辞が付いた値のみが本番バンドルに含まれ、秘密鍵の漏洩を防ぐ仕様になっている。import文の解決方法として相対パス、node_modules参照、設定ファイルによる別名の3種類を示した。",
+      "headline": "Viteのビルド処理と環境変数の露出仕様を初心者向けに解説",
+      "points": [
+        "開発時はファイルを束ねずに即座に反映し、本番時は複数モジュールを1つに圧縮して配信する仕組みを説明した。",
+        "環境変数は「VITE_」の接頭辞が付いた値のみが本番バンドルに含まれ、秘密鍵の漏洩を防ぐ仕様になっている。",
+        "import文の解決方法として相対パス、node_modules参照、設定ファイルによる別名の3種類を示した。"
+      ],
+      "impact": "Viteを使う開発者は、秘密情報を保護するため環境変数に「VITE_」接頭辞を付けるルールを正しく確認する必要があります。",
+      "glossary": [
+        {
+          "term": "ビルドツール",
+          "explanation": "ソースコードをブラウザが解釈・実行できる形に変換や圧縮して束ねる道具。"
+        },
+        {
+          "term": "環境変数",
+          "explanation": "プログラムの外部から設定値を与え、動作環境ごとに挙動を変えるための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+      "title": "Asahi Linux Progress Linux 7.3",
+      "source": "Hacker News",
+      "genre": "infra",
+      "publishedAt": "2026-11-07T05:20:18Z",
+      "summary": "約13000行に及ぶAVDドライバなどの提出に加え、M5などの初期Devicetreeが公開された。M3搭載機への対応が一般提供となり、DCPの有効化によってスリープやノッチ周辺の表示に対応した。m1n1の機能拡張により、M4やM5の仮想化とリバースエンジニアリングが可能になった。",
+      "headline": "Asahi LinuxがLinux 7.3対応やM3の一般提供を発表",
+      "points": [
+        "約13000行に及ぶAVDドライバなどの提出に加え、M5などの初期Devicetreeが公開された。",
+        "M3搭載機への対応が一般提供となり、DCPの有効化によってスリープやノッチ周辺の表示に対応した。",
+        "m1n1の機能拡張により、M4やM5の仮想化とリバースエンジニアリングが可能になった。"
+      ],
+      "impact": "M3搭載MacでLinuxを利用するユーザーは、近々提供されるm1n1とカーネルの更新を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "アップストリーム",
+          "explanation": "開発した修正や機能を、派生版から本家のソフトウェア本体へ反映させること。"
+        },
+        {
+          "term": "Devicetree",
+          "explanation": "OSに対してコンピュータ内のハードウェア構成や接続情報を伝えるデータ構造。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "title": "Libghostty 1.0",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-07T11:09:17.000Z",
+      "summary": "Ghosttyのコアから抽出されたC言語向け端末エミュレーションライブラリで、ABIの安定性が保証された。JetBrains製IDEの端末やNeovimのPRなど、すでに多数の開発ツールで採用が進んでいる。構造体のパディング確保やCIでの互換性検証により、将来の機能追加時にもABIの破壊を防ぐ設計とした。",
+      "headline": "端末エミュレータ基盤libghosttyの1.0が公開",
+      "points": [
+        "Ghosttyのコアから抽出されたC言語向け端末エミュレーションライブラリで、ABIの安定性が保証された。",
+        "JetBrains製IDEの端末やNeovimのPRなど、すでに多数の開発ツールで採用が進んでいる。",
+        "構造体のパディング確保やCIでの互換性検証により、将来の機能追加時にもABIの破壊を防ぐ設計とした。"
+      ],
+      "impact": "端末機能を組み込むアプリ開発者やOSパッケージ管理者は、安定したC ABIを通じて本ライブラリを利用できます。",
+      "glossary": [
+        {
+          "term": "ABI",
+          "explanation": "プログラムがコンパイルされたバイナリ同士で正しく連携するためのインターフェース規格。"
+        },
+        {
+          "term": "ターミナルエミュレータ",
+          "explanation": "コンピュータを文字入力で操作する端末画面を、OS上で再現するソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-07T09:46:03Z",
+      "summary": "2022年以降のMacには連絡先や行動履歴等からナレッジグラフを作るデーモンが常駐しています。端末内の51個のSQLiteデータベースに個人や関係性の情報が保存され、LLMの参照に使われます。筆者らはMac内のナレッジグラフ内容を閲覧できるローカルダッシュボード「iKnow」を公開しました。",
+      "headline": "Macに人間関係を構築する未文書化デーモンが搭載と判明",
+      "points": [
+        "2022年以降のMacには連絡先や行動履歴等からナレッジグラフを作るデーモンが常駐しています。",
+        "端末内の51個のSQLiteデータベースに個人や関係性の情報が保存され、LLMの参照に使われます。",
+        "筆者らはMac内のナレッジグラフ内容を閲覧できるローカルダッシュボード「iKnow」を公開しました。"
+      ],
+      "impact": "MacユーザーはiKnowなどを使い、自端末に保存された個人情報グラフの内容を確認できます。",
+      "glossary": [
+        {
+          "term": "ナレッジグラフ",
+          "explanation": "実体とそれらの関係性をグラフ構造で表現した知識ベース。"
+        },
+        {
+          "term": "デーモン",
+          "explanation": "バックグラウンドで常駐して特定の処理を実行するプログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 29,
+      "url": "https://hunch.net/?p=13764006",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-07T18:02:17Z",
+      "summary": "マイクロソフトリサーチのAI Frontiers組織が9月初めにMicrosoft AIへと統合されました。同部門は約50人で自律エージェントのAutoGenや計算効率化モデルなどの基礎研究を行っていました。著者は研究開発よりも規模拡大を最優先とする統合先の方針との不一致を指摘しています。",
+      "headline": "MSリサーチのAIフロンティアズ部門が解散し別組織に統合",
+      "points": [
+        "マイクロソフトリサーチのAI Frontiers組織が9月初めにMicrosoft AIへと統合されました。",
+        "同部門は約50人で自律エージェントのAutoGenや計算効率化モデルなどの基礎研究を行っていました。",
+        "著者は研究開発よりも規模拡大を最優先とする統合先の方針との不一致を指摘しています。"
+      ],
+      "glossary": [
+        {
+          "term": "スケーリング",
+          "explanation": "計算資源やモデル規模、データ量を増やして性能向上を図る手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 30,
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "title": "The Components of Agent Memory",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-07T06:39:04Z",
+      "summary": "人間の睡眠中の記憶定着に倣い、対話の合間にログを整理して記憶ノートを作成する手法が提案されました。セッションをまたいで保持されるファイルから必要な規則や失敗の記録を参照可能にしています。評価実験では失敗を記録して仮説を検証し、未来の回答規則を作成する学習ループが確認されました。",
+      "headline": "AnthropicがAIエージェントの記憶構造と設計手法を公開",
+      "points": [
+        "人間の睡眠中の記憶定着に倣い、対話の合間にログを整理して記憶ノートを作成する手法が提案されました。",
+        "セッションをまたいで保持されるファイルから必要な規則や失敗の記録を参照可能にしています。",
+        "評価実験では失敗を記録して仮説を検証し、未来の回答規則を作成する学習ループが確認されました。"
+      ],
+      "glossary": [
+        {
+          "term": "コンテキスト",
+          "explanation": "AIが対話や推論を行う際に一度に参照できる文脈や情報範囲。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 31,
+      "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+      "title": "Weight-Space Programming やってみた(やらせてみた)",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-07T02:39:58.000Z",
+      "summary": "汎用LLMにコード作成と検証を自律実行させ、別モデルの重みを直接編集する実験が行われました。内部活性の差分を解析し、全体の約0.486%の重みを変更することで目標の語尾変更を達成しました。編集されたモデルはHugging Face上で公開されています。",
+      "headline": "LLMによるモデル重みの直接編集で口調を変更する実験が成功",
+      "points": [
+        "汎用LLMにコード作成と検証を自律実行させ、別モデルの重みを直接編集する実験が行われました。",
+        "内部活性の差分を解析し、全体の約0.486%の重みを変更することで目標の語尾変更を達成しました。",
+        "編集されたモデルはHugging Face上で公開されています。"
+      ],
+      "impact": "モデルを試したいユーザーはHugging Faceで公開中のモデルを利用できます。",
+      "glossary": [
+        {
+          "term": "重み",
+          "explanation": "ニューラルネットワーク内で入力信号の重要度を調整する内部パラメータ。"
+        },
+        {
+          "term": "内部活性",
+          "explanation": "ニューラルネットワークの各層において入力に応じて計算される中間出力の値。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 104,
+    "shortlisted": 71,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 33994,
+    "outputTokens": 15281
+  },
+  "offline": false
+}
