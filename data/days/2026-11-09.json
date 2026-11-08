@@ -1,0 +1,517 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-08T21:13:02.758Z",
+  "items": [
+    {
+      "rank": 2,
+      "url": "https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets",
+      "title": "Claude Codeの「今後確認しない」が秘密情報をGitHubに漏らす — 1,122件の公開ファイルに1,379件の秘密情報 - Dev & Gadget Note",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T10:31:52.000Z",
+      "summary": "コマンド承認時に平文保存されたパスワードなどがGitHubに流出しました。公開リポジトリのファイル1,122件から1,379件の秘密情報が検出されました。関連フォルダや履歴を含めると漏洩は2,539件にのぼります。",
+      "headline": "Claude Codeの設定ファイルから秘密情報がGitHubに流出した",
+      "points": [
+        "コマンド承認時に平文保存されたパスワードなどがGitHubに流出しました。",
+        "公開リポジトリのファイル1,122件から1,379件の秘密情報が検出されました。",
+        "関連フォルダや履歴を含めると漏洩は2,539件にのぼります。"
+      ],
+      "impact": "利用組織は設定ファイルを検索し、該当する認証情報を即座にローテーションする必要があります。",
+      "glossary": [
+        {
+          "term": "ローテーション",
+          "explanation": "セキュリティ確保のため、認証鍵やパスワードを再発行して定期的に更新すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T18:16:07Z",
+      "summary": "トレーダーらへのClaude CodeやGitHubの提供を停止し、技術者に限定しました。10月に指針を更新し、生産性とリスクの検証結果を受けて制限を決定しました。一方で同行は、Anthropic社の新規株式公開で主幹事を務めています。",
+      "headline": "米ゴールドマンがAIコーディングツールの利用を技術者に限定した",
+      "points": [
+        "トレーダーらへのClaude CodeやGitHubの提供を停止し、技術者に限定しました。",
+        "10月に指針を更新し、生産性とリスクの検証結果を受けて制限を決定しました。",
+        "一方で同行は、Anthropic社の新規株式公開で主幹事を務めています。"
+      ],
+      "impact": "該当する行員やトレーダーは、コード生成ツールの利用を取りやめ既存ツールの運用を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "IPO",
+          "explanation": "企業が自社の株式を証券取引所に上場し、一般の投資家へ売り出すこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-08T20:26:43Z",
+      "summary": "フアンCEOが外国の諜報活動の標的になったとの報道を受け、独立調査を開始しました。独立取締役による委員会と外部法律顧問が調査を主導します。取締役会は国家安全保障や自社の機密情報への侵害は確認されていないとしています。",
+      "headline": "米エヌビディア取締役会がフアンCEOへの外国諜報疑惑で独立調査を開始",
+      "points": [
+        "フアンCEOが外国の諜報活動の標的になったとの報道を受け、独立調査を開始しました。",
+        "独立取締役による委員会と外部法律顧問が調査を主導します。",
+        "取締役会は国家安全保障や自社の機密情報への侵害は確認されていないとしています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "source": "TechCrunch",
+      "genre": "tech",
+      "publishedAt": "2026-11-08T21:00:11.000Z",
+      "summary": "中国のスパイとされる元半導体企業幹部との不倫報道を受け、独立調査を開始しました。フアンCEOは不倫関係を認め、家族や会社、株主に対して謝罪の声明を出しました。取締役会は国家安全保障や社内機密の漏洩を示す根拠はないと説明しています。",
+      "headline": "米エヌビディア取締役会がフアンCEOと中国スパイ疑惑の女性の関係を調査",
+      "points": [
+        "中国のスパイとされる元半導体企業幹部との不倫報道を受け、独立調査を開始しました。",
+        "フアンCEOは不倫関係を認め、家族や会社、株主に対して謝罪の声明を出しました。",
+        "取締役会は国家安全保障や社内機密の漏洩を示す根拠はないと説明しています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "source": "GitHub Blog（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "summary": "コミット数が急増する一方、PRレビュー時間が441%増大するなどの負担が生じています。計画や検証を含む工程全体でAIエージェントを活用する手法を提案しています。CopilotのPlan Modeやクラウド環境を利用し、複数作業を並行して進められます。",
+      "headline": "GitHubがAIを活用した開発プロセス全体の自動化指針を提示",
+      "points": [
+        "コミット数が急増する一方、PRレビュー時間が441%増大するなどの負担が生じています。",
+        "計画や検証を含む工程全体でAIエージェントを活用する手法を提案しています。",
+        "CopilotのPlan Modeやクラウド環境を利用し、複数作業を並行して進められます。"
+      ],
+      "impact": "AI生成コードの確認や計画に追われる開発者は、Copilotを活用した工程全体の効率化を検討できます。",
+      "glossary": [
+        {
+          "term": "プルリクエスト",
+          "explanation": "自身のコード変更を他の開発者にレビューしてもらい、本体へ統合を依頼する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/",
+      "title": "Taxonomy of agentic primitives in Amazon Quick",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T17:34:45.000Z",
+      "summary": "Amazon Quickの開発経験をもとに、エージェント動作の共通概念を定義しました。いつ・何を担う「トリガー」、誰にあたる「エージェント」、方法を示す「機能」に分類しています。人による指示や定期実行、外部イベントなどトリガーの種類に応じた実行形態を整理しています。",
+      "headline": "AWSがエージェント構築の基本要素を整理した分類体系を公開",
+      "points": [
+        "Amazon Quickの開発経験をもとに、エージェント動作の共通概念を定義しました。",
+        "いつ・何を担う「トリガー」、誰にあたる「エージェント」、方法を示す「機能」に分類しています。",
+        "人による指示や定期実行、外部イベントなどトリガーの種類に応じた実行形態を整理しています。"
+      ],
+      "impact": "AIエージェントを設計・開発するエンジニアは、機能や役割の共通定義として設計に活用できます。",
+      "glossary": [
+        {
+          "term": "エージェント",
+          "explanation": "自律的に状況を認識し、目標達成のために行動や判断を行うAIシステム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-06T18:01:00.000Z",
+      "summary": "NVIDIAのMIGを活用し、物理GPUをハードウェア単位で独立した領域に分割可能になりました。1基のGPUで複数モデルを互いに影響を与えずに実行でき、計算リソースの無駄を省けます。本機能はInference Componentsを利用したエンドポイントで適用されます。",
+      "headline": "SageMaker推論がMIGによるGPU分割ホスティングに対応",
+      "points": [
+        "NVIDIAのMIGを活用し、物理GPUをハードウェア単位で独立した領域に分割可能になりました。",
+        "1基のGPUで複数モデルを互いに影響を与えずに実行でき、計算リソースの無駄を省けます。",
+        "本機能はInference Componentsを利用したエンドポイントで適用されます。"
+      ],
+      "impact": "SageMakerでGPU推論エンドポイントを運用する開発者は、リソース効率化に向けてMIGの利用を検討できます。",
+      "glossary": [
+        {
+          "term": "Multi-Instance GPU",
+          "explanation": "1基の物理GPUをハードウェアレベルで複数の独立したインスタンスに分割するNVIDIAの技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/",
+      "title": "How Amazon Marketplace evaluates content quality with Amazon SageMaker AI",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-05T18:06:43.000Z",
+      "summary": "A+コンテンツ全体を1枚の画像としてVLMで総合的に評価する手法を導入しました。VLMのスコアとOCRによる読みやすさをCatBoostで統合し品質を判定します。SHAPを活用して判定理由を可視化し、出品者へ具体的な改善提案を提供します。",
+      "headline": "AmazonがSageMakerとVLMで商品コンテンツの品質評価基盤を構築",
+      "points": [
+        "A+コンテンツ全体を1枚の画像としてVLMで総合的に評価する手法を導入しました。",
+        "VLMのスコアとOCRによる読みやすさをCatBoostで統合し品質を判定します。",
+        "SHAPを活用して判定理由を可視化し、出品者へ具体的な改善提案を提供します。"
+      ],
+      "impact": "Amazonに出品する事業者は、提示される具体的な改善提案を確認してコンテンツの品質向上に活かせます。",
+      "glossary": [
+        {
+          "term": "Vision-Language Model",
+          "explanation": "画像とテキストの双方を同時に理解・処理できるように学習されたマルチモーダルAIモデル。"
+        },
+        {
+          "term": "SHAP",
+          "explanation": "機械学習モデルの予測結果に対して、各特徴量がどの程度影響を与えたかを算出する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://hiraoku.dev/blog/mcp-cli-cloud/",
+      "title": "MCPはなぜ復権したのか：CLIが支持された理由と、流れを変えた仕様変更 | Hiraoku.dev",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T02:33:33.000Z",
+      "summary": "コンテキスト圧迫や管理の負担からCLIが選ばれる場面があったものの、MCPへの再評価が進んでいます。2026年7月28日版では初期化のやり取りやプロトコル上のセッションが撤去され、分散運用が容易になりました。ツール定義の遅延読み込みやステートレス化など、AIアプリ側の工夫も復権の後押しとなっています。",
+      "headline": "MCPが仕様変更や実装の工夫により再評価される",
+      "points": [
+        "コンテキスト圧迫や管理の負担からCLIが選ばれる場面があったものの、MCPへの再評価が進んでいます。",
+        "2026年7月28日版では初期化のやり取りやプロトコル上のセッションが撤去され、分散運用が容易になりました。",
+        "ツール定義の遅延読み込みやステートレス化など、AIアプリ側の工夫も復権の後押しとなっています。"
+      ],
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータを接続するための共通仕様。"
+        },
+        {
+          "term": "CLI",
+          "explanation": "文字によるコマンド入力と出力でソフトウェアを操作する方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/eliri/articles/fad5a22342fdce",
+      "title": "CodexでAI駆動開発を始めて1か月、失敗から学んだこと",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T13:18:13.000Z",
+      "summary": "Codexを使った開発で一度に大きな作業を依頼した結果、変更内容の把握が困難になる失敗を経験しました。レビューできる小さな単位へのタスク分割や方針確認を導入し、理解を伴う開発手順へ改善しました。AGENTS.mdやSkillsを活用して、作業ルールの指示や定型タスクの実行を効率化しました。",
+      "headline": "Codexによる開発で得た課題とタスク管理の工夫",
+      "points": [
+        "Codexを使った開発で一度に大きな作業を依頼した結果、変更内容の把握が困難になる失敗を経験しました。",
+        "レビューできる小さな単位へのタスク分割や方針確認を導入し、理解を伴う開発手順へ改善しました。",
+        "AGENTS.mdやSkillsを活用して、作業ルールの指示や定型タスクの実行を効率化しました。"
+      ],
+      "impact": "AIコーディングを行う開発者は、指示の分割やリポジトリ内の不要な設定ファイルの整理に注意する必要があります。",
+      "glossary": [
+        {
+          "term": "Codex",
+          "explanation": "プログラムコードの生成や修正を支援するAIモデルおよびツール。"
+        },
+        {
+          "term": "PR",
+          "explanation": "コードの変更内容を本体へ統合するよう提案しレビューを促す仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://qiita.com/ohisama@github/items/01be914e184f847f4106",
+      "title": "自作MCPサーバー その3",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T19:36:04.000Z",
+      "summary": "MCPサーバー自作とAlexaスキル開発は、AIと外部ツールをつなぐインターフェース設計で共通しています。ツールのスキーマ定義や自然言語の解釈をAIに任せる構造が両者で酷似しています。MCPはツールの自律的な連続実行が可能で、ローカル環境でも手軽に動かせる点が異なります。",
+      "headline": "自作MCPサーバー開発とAlexaスキルの共通点を整理",
+      "points": [
+        "MCPサーバー自作とAlexaスキル開発は、AIと外部ツールをつなぐインターフェース設計で共通しています。",
+        "ツールのスキーマ定義や自然言語の解釈をAIに任せる構造が両者で酷似しています。",
+        "MCPはツールの自律的な連続実行が可能で、ローカル環境でも手軽に動かせる点が異なります。"
+      ],
+      "impact": "Alexaスキルの開発経験者は、プロンプト設計などのノウハウを活かしてMCPサーバーをスムーズに自作できます。",
+      "glossary": [
+        {
+          "term": "MCPサーバー",
+          "explanation": "AIが外部のデータやプログラムを実行できるように機能を提供する側。"
+        },
+        {
+          "term": "スキーマ",
+          "explanation": "データの構造や受け渡し可能な引数の形式を定義した仕様情報。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.techno-edge.net/article/2026/11/06/5679.html",
+      "title": "数百ページのPDF文書を一括解析できるローカルAI「Unlimited OCR 2」、NVIDIA開発の文字起こし音声AI「Nemotron 3.5 Transcribe」など生成AI技術5つを解説（生成AIウィークリー） | テクノエッジ TechnoEdge",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-07T00:46:51.000Z",
+      "summary": "Baiduが数百ページの文書を一括解析できる「Unlimited OCR 2」をMITライセンスで発表しました。NVIDIAは商用利用可能な音声認識AI「Nemotron 3.5 Transcribe」を公開しました。Mistral AIは1兆パラメータモデル「Mistral Large 4」を、Liquid AIは軽量な「LFM3」を公開しました。",
+      "headline": "長文OCRや音声認識など最新生成AI技術が公開",
+      "points": [
+        "Baiduが数百ページの文書を一括解析できる「Unlimited OCR 2」をMITライセンスで発表しました。",
+        "NVIDIAは商用利用可能な音声認識AI「Nemotron 3.5 Transcribe」を公開しました。",
+        "Mistral AIは1兆パラメータモデル「Mistral Large 4」を、Liquid AIは軽量な「LFM3」を公開しました。"
+      ],
+      "impact": "Model as a Serviceを提供する事業者は、Mistral Large 4の商用利用前に別途ライセンスを取得する必要があります。",
+      "glossary": [
+        {
+          "term": "オープンウェイト",
+          "explanation": "学習済みのパラメータ（重み）が外部に公開されているモデルの状態。"
+        },
+        {
+          "term": "OCR",
+          "explanation": "画像や文書内の文字を読み取ってテキストデータに変換する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/girigiri_se/articles/8dedadbc54a425",
+      "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（10/31〜11/6）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T14:00:44.000Z",
+      "summary": "Open WebUI 0.13.0はセキュリティ修正やDB変更を含む大型更新となった。Claude CodeはOpus 4.8のfast modeを非推奨化し11月30日に削除する。Ollamaやllama.cpp、OpenAI Codexでも機能追加や改善が行われた。",
+      "headline": "Open WebUI 0.13.0などローカルLLMツールの更新情報が公開",
+      "points": [
+        "Open WebUI 0.13.0はセキュリティ修正やDB変更を含む大型更新となった。",
+        "Claude CodeはOpus 4.8のfast modeを非推奨化し11月30日に削除する。",
+        "Ollamaやllama.cpp、OpenAI Codexでも機能追加や改善が行われた。"
+      ],
+      "impact": "Open WebUIを更新する利用者は、事前にDBのバックアップを取る必要がある。",
+      "glossary": [
+        {
+          "term": "スキーマ",
+          "explanation": "データベースの構造やテーブル設計などの定義のこと。"
+        },
+        {
+          "term": "サブエージェント",
+          "explanation": "主となるAIから指示を受け、特定のタスクを分担実行する補助AI。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html",
+      "title": "【図解あり】マルチエージェント設計「15のパターン」 GitHub、Google、Siemensの知見を一気に整理",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T06:14:17.000Z",
+      "summary": "GitHubやGoogle、Siemensの知見からエージェント設計手法を整理。GitHubは型付きスキーマや操作を絞るアクションスキーマを提示した。Googleは直列処理や並列集約など8つの基本設計パターンを公開した。",
+      "headline": "マルチエージェント設計の15パターンと原則が整理・公開",
+      "points": [
+        "GitHubやGoogle、Siemensの知見からエージェント設計手法を整理。",
+        "GitHubは型付きスキーマや操作を絞るアクションスキーマを提示した。",
+        "Googleは直列処理や並列集約など8つの基本設計パターンを公開した。"
+      ],
+      "impact": "複数のAIエージェントを連携させたシステムを設計・運用する開発者が参照できる。",
+      "glossary": [
+        {
+          "term": "マルチエージェント",
+          "explanation": "複数の自律的なAIが協調して複雑な処理を実行する仕組み。"
+        },
+        {
+          "term": "スキーマ",
+          "explanation": "送受信するデータの形式や構造のルールを定義したもの。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://zenn.dev/shinai/articles/claude-code-token-saving-7habits",
+      "title": "Claude Codeのトークンを減らす7つの習慣：公式ドキュメントで確かめ、CLAUDE.mdを半分近くに減らした",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-08T18:07:11.000Z",
+      "summary": "作業の区切りでの/clearや会話の/compactによる履歴整理を推奨。CLAUDE.mdを200行未満に抑え、手順はスキルやルールに分割する。未使用のMCPサーバー停止やCLIツールの活用でコンテキストを節約する。",
+      "headline": "Claude Codeの消費トークンを削減する7つの習慣が紹介",
+      "points": [
+        "作業の区切りでの/clearや会話の/compactによる履歴整理を推奨。",
+        "CLAUDE.mdを200行未満に抑え、手順はスキルやルールに分割する。",
+        "未使用のMCPサーバー停止やCLIツールの活用でコンテキストを節約する。"
+      ],
+      "impact": "Claude Codeの利用上限やAPI費用を抑えたい開発者が、指示ファイルの配置や運用を見直す際に役立つ。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIモデルが文章を理解・生成する際の最小の処理単位。"
+        },
+        {
+          "term": "プロンプトキャッシュ",
+          "explanation": "共通の指示や文脈を保存して再利用し、処理費用や時間を削減する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://inside.java/2026/11/08/devoxxbelgium-java-next-programming-models/",
+      "title": "Java and the Next Generation of Programming Models",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-11-08T00:00:00.000Z",
+      "summary": "FFM APIとjextractによりJVM外部のランタイムと安全に対話できる。Project BabylonのコードリフレクションでAIモデルをJavaで記述可能。外部モデルファイルやグルーコードなしに推論エンジンへ展開できる。",
+      "headline": "Javaで外部ランタイムやAIモデルを直接扱う次世代手法が提示",
+      "points": [
+        "FFM APIとjextractによりJVM外部のランタイムと安全に対話できる。",
+        "Project BabylonのコードリフレクションでAIモデルをJavaで記述可能。",
+        "外部モデルファイルやグルーコードなしに推論エンジンへ展開できる。"
+      ],
+      "impact": "Java環境でAI推論やネイティブライブラリ連携を行う開発者が、最新動向を確認するのに適している。",
+      "glossary": [
+        {
+          "term": "JVM",
+          "explanation": "Javaプログラムを各OS上で動作させるための仮想実行環境。"
+        },
+        {
+          "term": "FFM API",
+          "explanation": "Javaからネイティブコードや外部メモリに安全に接続するための標準API。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis",
+      "title": "A Bootiful Podcast: Temporal.io's Cornelia Davis",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "summary": "TemporalのCornelia Davis氏を迎え、ワークフロー基盤の進化を議論しました。Temporalは実行履歴を保持し、障害発生後も中断箇所から処理を再開できます。AIエージェント基盤への適合やTemporal Agent Harnessなども紹介されました。",
+      "headline": "ポッドキャストでTemporalの仕組みやAI応用が語られる",
+      "points": [
+        "TemporalのCornelia Davis氏を迎え、ワークフロー基盤の進化を議論しました。",
+        "Temporalは実行履歴を保持し、障害発生後も中断箇所から処理を再開できます。",
+        "AIエージェント基盤への適合やTemporal Agent Harnessなども紹介されました。"
+      ],
+      "glossary": [
+        {
+          "term": "Temporal",
+          "explanation": "長時間稼働する非同期処理を耐障害性高く実行できるオープンソース基盤。"
+        },
+        {
+          "term": "イベントソーシング",
+          "explanation": "状態の変化をイベントの連続した履歴としてすべて記録・永続化する設計手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://inside.java/2026/11/05/podcast-074/",
+      "title": "Episode 74 “Ask the Architects at Devoxx” [AtA]",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "summary": "Devoxx Belgium 2026での質疑応答を収録したポッドキャストが公開されました。仮想スレッドやAI対応、文字列機能や自動ヒープ調整など多岐にわたる話題が扱われました。",
+      "headline": "Java設計者がDevoxxでAI時代の方針や新機能を語る",
+      "points": [
+        "Devoxx Belgium 2026での質疑応答を収録したポッドキャストが公開されました。",
+        "仮想スレッドやAI対応、文字列機能や自動ヒープ調整など多岐にわたる話題が扱われました。"
+      ],
+      "glossary": [
+        {
+          "term": "仮想スレッド",
+          "explanation": "OSのスレッドよりも軽量に扱えるJavaの並行処理の仕組み。"
+        },
+        {
+          "term": "OpenJDK",
+          "explanation": "オープンソースで開発が進められているJava環境のリファレンス実装。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://speakerdeck.com/takuros/jaws-festa-2026-public",
+      "title": "生成AI時代のIAMのマニアックな話",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-07T02:15:16.000Z",
+      "summary": "JAWS FESTA 2026 in AKITAの登壇資料として、AI向けのIAM設計が解説されました。LLMに鍵を直接渡さず、代理実行や専用ロールで権限を安全に付与する考え方を提示しています。",
+      "headline": "生成AIエージェントに安全な権限を渡すIAM設計資料が公開",
+      "points": [
+        "JAWS FESTA 2026 in AKITAの登壇資料として、AI向けのIAM設計が解説されました。",
+        "LLMに鍵を直接渡さず、代理実行や専用ロールで権限を安全に付与する考え方を提示しています。"
+      ],
+      "impact": "AIエージェントからAWSを操作する開発者は、鍵ではなく専用ロールや代理実行による権限設計を確認できます。",
+      "glossary": [
+        {
+          "term": "IAM",
+          "explanation": "クラウドサービスなどのリソースに対する認証やアクセス権限を集中管理する仕組み。"
+        },
+        {
+          "term": "LLM",
+          "explanation": "大量のテキストを学習し自然な文章生成や推論を行う大規模言語モデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 28,
+      "url": "https://speakerdeck.com/nagisa53/aws-o-riyou-suru-ue-de-shi-te-okitai-namae-kaiketsu-no-hanashi-2026",
+      "title": "AWSを利用する上で知っておきたい名前解決の話 2026",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-07T13:51:49.000Z",
+      "summary": "AWSリソース接続に不可欠なDNS名前解決の仕組みと障害切り分けの基本が解説されました。名前解決が行われる場所と返却されるIPアドレスの種類を4パターンに分類しています。Route 53 Resolverの委任やVPC Latticeの仕様差なども整理されています。",
+      "headline": "AWSにおける名前解決の仕組みを4パターンで整理した資料が公開",
+      "points": [
+        "AWSリソース接続に不可欠なDNS名前解決の仕組みと障害切り分けの基本が解説されました。",
+        "名前解決が行われる場所と返却されるIPアドレスの種類を4パターンに分類しています。",
+        "Route 53 Resolverの委任やVPC Latticeの仕様差なども整理されています。"
+      ],
+      "impact": "AWSで環境構築やトラブルシューティングを行う利用者は、DNSの応答内容や経路設計を確認できます。",
+      "glossary": [
+        {
+          "term": "FQDN",
+          "explanation": "ホスト名からトップレベルドメイン名までを省略せずにすべて表記した完全修飾ドメイン名。"
+        },
+        {
+          "term": "VPC",
+          "explanation": "クラウド上に構築する、論理的に他のネットワークから分離された仮想ネットワーク環境。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 95,
+    "shortlisted": 68,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29503,
+    "outputTokens": 12533
+  },
+  "offline": false
+}

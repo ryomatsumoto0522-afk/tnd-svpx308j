@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-09</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月9日(月)</p>
+<p class="meta">更新 2026-11-09 06:13 · 取得ソース 22/23 · 選定 20件（候補 68件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets" target="_blank" rel="noopener noreferrer">Claude Codeの設定ファイルから秘密情報がGitHubに流出した</a></h3>
+<p class="orig">原題: Claude Codeの「今後確認しない」が秘密情報をGitHubに漏らす — 1,122件の公開ファイルに1,379件の秘密情報 - Dev &amp; Gadget Note</p>
+<p class="src">出典: <a href="https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-08</p>
+<ul class="points"><li>コマンド承認時に平文保存されたパスワードなどがGitHubに流出しました。</li><li>公開リポジトリのファイル1,122件から1,379件の秘密情報が検出されました。</li><li>関連フォルダや履歴を含めると漏洩は2,539件にのぼります。</li></ul><p class="impact"><b>影響</b>利用組織は設定ファイルを検索し、該当する認証情報を即座にローテーションする必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ローテーション</dt><dd>セキュリティ確保のため、認証鍵やパスワードを再発行して定期的に更新すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">米ゴールドマンがAIコーディングツールの利用を技術者に限定した</a></h3>
+<p class="orig">原題: Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders</p>
+<p class="src">出典: <a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-09</p>
+<ul class="points"><li>トレーダーらへのClaude CodeやGitHubの提供を停止し、技術者に限定しました。</li><li>10月に指針を更新し、生産性とリスクの検証結果を受けて制限を決定しました。</li><li>一方で同行は、Anthropic社の新規株式公開で主幹事を務めています。</li></ul><p class="impact"><b>影響</b>該当する行員やトレーダーは、コード生成ツールの利用を取りやめ既存ツールの運用を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>企業が自社の株式を証券取引所に上場し、一般の投資家へ売り出すこと。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><span class="num">3</span><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank" rel="noopener noreferrer">米エヌビディア取締役会がフアンCEOへの外国諜報疑惑で独立調査を開始</a></h3>
+<p class="orig">原題: Nvidia Board of Directors Is Investigating Jensen Huang</p>
+<p class="src">出典: <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-09</p>
+<ul class="points"><li>フアンCEOが外国の諜報活動の標的になったとの報道を受け、独立調査を開始しました。</li><li>独立取締役による委員会と外部法律顧問が調査を主導します。</li><li>取締役会は国家安全保障や自社の機密情報への侵害は確認されていないとしています。</li></ul>
+
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets" target="_blank" rel="noopener noreferrer">Claude Codeの設定ファイルから秘密情報がGitHubに流出した</a></h3>
+<p class="orig">原題: Claude Codeの「今後確認しない」が秘密情報をGitHubに漏らす — 1,122件の公開ファイルに1,379件の秘密情報 - Dev &amp; Gadget Note</p>
+<p class="src">出典: <a href="https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-08</p>
+<ul class="points"><li>コマンド承認時に平文保存されたパスワードなどがGitHubに流出しました。</li><li>公開リポジトリのファイル1,122件から1,379件の秘密情報が検出されました。</li><li>関連フォルダや履歴を含めると漏洩は2,539件にのぼります。</li></ul><p class="impact"><b>影響</b>利用組織は設定ファイルを検索し、該当する認証情報を即座にローテーションする必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ローテーション</dt><dd>セキュリティ確保のため、認証鍵やパスワードを再発行して定期的に更新すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">米ゴールドマンがAIコーディングツールの利用を技術者に限定した</a></h3>
+<p class="orig">原題: Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders</p>
+<p class="src">出典: <a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-09</p>
+<ul class="points"><li>トレーダーらへのClaude CodeやGitHubの提供を停止し、技術者に限定しました。</li><li>10月に指針を更新し、生産性とリスクの検証結果を受けて制限を決定しました。</li><li>一方で同行は、Anthropic社の新規株式公開で主幹事を務めています。</li></ul><p class="impact"><b>影響</b>該当する行員やトレーダーは、コード生成ツールの利用を取りやめ既存ツールの運用を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>企業が自社の株式を証券取引所に上場し、一般の投資家へ売り出すこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/" target="_blank" rel="noopener noreferrer">GitHubがAIを活用した開発プロセス全体の自動化指針を提示</a></h3>
+<p class="orig">原題: Beyond code generation: A developer’s guide to agentic engineering</p>
+<p class="src">出典: <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/" target="_blank" rel="noopener noreferrer">GitHub Blog（AI）</a> · 2026-11-07</p>
+<ul class="points"><li>コミット数が急増する一方、PRレビュー時間が441%増大するなどの負担が生じています。</li><li>計画や検証を含む工程全体でAIエージェントを活用する手法を提案しています。</li><li>CopilotのPlan Modeやクラウド環境を利用し、複数作業を並行して進められます。</li></ul><p class="impact"><b>影響</b>AI生成コードの確認や計画に追われる開発者は、Copilotを活用した工程全体の効率化を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>プルリクエスト</dt><dd>自身のコード変更を他の開発者にレビューしてもらい、本体へ統合を依頼する仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/" target="_blank" rel="noopener noreferrer">AWSがエージェント構築の基本要素を整理した分類体系を公開</a></h3>
+<p class="orig">原題: Taxonomy of agentic primitives in Amazon Quick</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>Amazon Quickの開発経験をもとに、エージェント動作の共通概念を定義しました。</li><li>いつ・何を担う「トリガー」、誰にあたる「エージェント」、方法を示す「機能」に分類しています。</li><li>人による指示や定期実行、外部イベントなどトリガーの種類に応じた実行形態を整理しています。</li></ul><p class="impact"><b>影響</b>AIエージェントを設計・開発するエンジニアは、機能や役割の共通定義として設計に活用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>エージェント</dt><dd>自律的に状況を認識し、目標達成のために行動や判断を行うAIシステム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/" target="_blank" rel="noopener noreferrer">SageMaker推論がMIGによるGPU分割ホスティングに対応</a></h3>
+<p class="orig">原題: SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-07</p>
+<ul class="points"><li>NVIDIAのMIGを活用し、物理GPUをハードウェア単位で独立した領域に分割可能になりました。</li><li>1基のGPUで複数モデルを互いに影響を与えずに実行でき、計算リソースの無駄を省けます。</li><li>本機能はInference Componentsを利用したエンドポイントで適用されます。</li></ul><p class="impact"><b>影響</b>SageMakerでGPU推論エンドポイントを運用する開発者は、リソース効率化に向けてMIGの利用を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Multi-Instance GPU</dt><dd>1基の物理GPUをハードウェアレベルで複数の独立したインスタンスに分割するNVIDIAの技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/" target="_blank" rel="noopener noreferrer">AmazonがSageMakerとVLMで商品コンテンツの品質評価基盤を構築</a></h3>
+<p class="orig">原題: How Amazon Marketplace evaluates content quality with Amazon SageMaker AI</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-06</p>
+<ul class="points"><li>A+コンテンツ全体を1枚の画像としてVLMで総合的に評価する手法を導入しました。</li><li>VLMのスコアとOCRによる読みやすさをCatBoostで統合し品質を判定します。</li><li>SHAPを活用して判定理由を可視化し、出品者へ具体的な改善提案を提供します。</li></ul><p class="impact"><b>影響</b>Amazonに出品する事業者は、提示される具体的な改善提案を確認してコンテンツの品質向上に活かせます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Vision-Language Model</dt><dd>画像とテキストの双方を同時に理解・処理できるように学習されたマルチモーダルAIモデル。</dd><dt>SHAP</dt><dd>機械学習モデルの予測結果に対して、各特徴量がどの程度影響を与えたかを算出する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://hiraoku.dev/blog/mcp-cli-cloud/" target="_blank" rel="noopener noreferrer">MCPが仕様変更や実装の工夫により再評価される</a></h3>
+<p class="orig">原題: MCPはなぜ復権したのか：CLIが支持された理由と、流れを変えた仕様変更 | Hiraoku.dev</p>
+<p class="src">出典: <a href="https://hiraoku.dev/blog/mcp-cli-cloud/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-08</p>
+<ul class="points"><li>コンテキスト圧迫や管理の負担からCLIが選ばれる場面があったものの、MCPへの再評価が進んでいます。</li><li>2026年7月28日版では初期化のやり取りやプロトコル上のセッションが撤去され、分散運用が容易になりました。</li><li>ツール定義の遅延読み込みやステートレス化など、AIアプリ側の工夫も復権の後押しとなっています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータを接続するための共通仕様。</dd><dt>CLI</dt><dd>文字によるコマンド入力と出力でソフトウェアを操作する方式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/eliri/articles/fad5a22342fdce" target="_blank" rel="noopener noreferrer">Codexによる開発で得た課題とタスク管理の工夫</a></h3>
+<p class="orig">原題: CodexでAI駆動開発を始めて1か月、失敗から学んだこと</p>
+<p class="src">出典: <a href="https://zenn.dev/eliri/articles/fad5a22342fdce" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-08</p>
+<ul class="points"><li>Codexを使った開発で一度に大きな作業を依頼した結果、変更内容の把握が困難になる失敗を経験しました。</li><li>レビューできる小さな単位へのタスク分割や方針確認を導入し、理解を伴う開発手順へ改善しました。</li><li>AGENTS.mdやSkillsを活用して、作業ルールの指示や定型タスクの実行を効率化しました。</li></ul><p class="impact"><b>影響</b>AIコーディングを行う開発者は、指示の分割やリポジトリ内の不要な設定ファイルの整理に注意する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Codex</dt><dd>プログラムコードの生成や修正を支援するAIモデルおよびツール。</dd><dt>PR</dt><dd>コードの変更内容を本体へ統合するよう提案しレビューを促す仕組み。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/ohisama@github/items/01be914e184f847f4106" target="_blank" rel="noopener noreferrer">自作MCPサーバー開発とAlexaスキルの共通点を整理</a></h3>
+<p class="orig">原題: 自作MCPサーバー その3</p>
+<p class="src">出典: <a href="https://qiita.com/ohisama@github/items/01be914e184f847f4106" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-09</p>
+<ul class="points"><li>MCPサーバー自作とAlexaスキル開発は、AIと外部ツールをつなぐインターフェース設計で共通しています。</li><li>ツールのスキーマ定義や自然言語の解釈をAIに任せる構造が両者で酷似しています。</li><li>MCPはツールの自律的な連続実行が可能で、ローカル環境でも手軽に動かせる点が異なります。</li></ul><p class="impact"><b>影響</b>Alexaスキルの開発経験者は、プロンプト設計などのノウハウを活かしてMCPサーバーをスムーズに自作できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCPサーバー</dt><dd>AIが外部のデータやプログラムを実行できるように機能を提供する側。</dd><dt>スキーマ</dt><dd>データの構造や受け渡し可能な引数の形式を定義した仕様情報。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.techno-edge.net/article/2026/11/06/5679.html" target="_blank" rel="noopener noreferrer">長文OCRや音声認識など最新生成AI技術が公開</a></h3>
+<p class="orig">原題: 数百ページのPDF文書を一括解析できるローカルAI「Unlimited OCR 2」、NVIDIA開発の文字起こし音声AI「Nemotron 3.5 Transcribe」など生成AI技術5つを解説（生成AIウィークリー） | テクノエッジ TechnoEdge</p>
+<p class="src">出典: <a href="https://www.techno-edge.net/article/2026/11/06/5679.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-07</p>
+<ul class="points"><li>Baiduが数百ページの文書を一括解析できる「Unlimited OCR 2」をMITライセンスで発表しました。</li><li>NVIDIAは商用利用可能な音声認識AI「Nemotron 3.5 Transcribe」を公開しました。</li><li>Mistral AIは1兆パラメータモデル「Mistral Large 4」を、Liquid AIは軽量な「LFM3」を公開しました。</li></ul><p class="impact"><b>影響</b>Model as a Serviceを提供する事業者は、Mistral Large 4の商用利用前に別途ライセンスを取得する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>オープンウェイト</dt><dd>学習済みのパラメータ（重み）が外部に公開されているモデルの状態。</dd><dt>OCR</dt><dd>画像や文書内の文字を読み取ってテキストデータに変換する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/girigiri_se/articles/8dedadbc54a425" target="_blank" rel="noopener noreferrer">Open WebUI 0.13.0などローカルLLMツールの更新情報が公開</a></h3>
+<p class="orig">原題: 週刊 ローカルLLM＆AIコーディングツール更新まとめ（10/31〜11/6）</p>
+<p class="src">出典: <a href="https://zenn.dev/girigiri_se/articles/8dedadbc54a425" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-08</p>
+<ul class="points"><li>Open WebUI 0.13.0はセキュリティ修正やDB変更を含む大型更新となった。</li><li>Claude CodeはOpus 4.8のfast modeを非推奨化し11月30日に削除する。</li><li>Ollamaやllama.cpp、OpenAI Codexでも機能追加や改善が行われた。</li></ul><p class="impact"><b>影響</b>Open WebUIを更新する利用者は、事前にDBのバックアップを取る必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>スキーマ</dt><dd>データベースの構造やテーブル設計などの定義のこと。</dd><dt>サブエージェント</dt><dd>主となるAIから指示を受け、特定のタスクを分担実行する補助AI。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html" target="_blank" rel="noopener noreferrer">マルチエージェント設計の15パターンと原則が整理・公開</a></h3>
+<p class="orig">原題: 【図解あり】マルチエージェント設計「15のパターン」 GitHub、Google、Siemensの知見を一気に整理</p>
+<p class="src">出典: <a href="https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-08</p>
+<ul class="points"><li>GitHubやGoogle、Siemensの知見からエージェント設計手法を整理。</li><li>GitHubは型付きスキーマや操作を絞るアクションスキーマを提示した。</li><li>Googleは直列処理や並列集約など8つの基本設計パターンを公開した。</li></ul><p class="impact"><b>影響</b>複数のAIエージェントを連携させたシステムを設計・運用する開発者が参照できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>マルチエージェント</dt><dd>複数の自律的なAIが協調して複雑な処理を実行する仕組み。</dd><dt>スキーマ</dt><dd>送受信するデータの形式や構造のルールを定義したもの。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/shinai/articles/claude-code-token-saving-7habits" target="_blank" rel="noopener noreferrer">Claude Codeの消費トークンを削減する7つの習慣が紹介</a></h3>
+<p class="orig">原題: Claude Codeのトークンを減らす7つの習慣：公式ドキュメントで確かめ、CLAUDE.mdを半分近くに減らした</p>
+<p class="src">出典: <a href="https://zenn.dev/shinai/articles/claude-code-token-saving-7habits" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-09</p>
+<ul class="points"><li>作業の区切りでの/clearや会話の/compactによる履歴整理を推奨。</li><li>CLAUDE.mdを200行未満に抑え、手順はスキルやルールに分割する。</li><li>未使用のMCPサーバー停止やCLIツールの活用でコンテキストを節約する。</li></ul><p class="impact"><b>影響</b>Claude Codeの利用上限やAPI費用を抑えたい開発者が、指示ファイルの配置や運用を見直す際に役立つ。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIモデルが文章を理解・生成する際の最小の処理単位。</dd><dt>プロンプトキャッシュ</dt><dd>共通の指示や文脈を保存して再利用し、処理費用や時間を削減する機能。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/11/08/devoxxbelgium-java-next-programming-models/" target="_blank" rel="noopener noreferrer">Javaで外部ランタイムやAIモデルを直接扱う次世代手法が提示</a></h3>
+<p class="orig">原題: Java and the Next Generation of Programming Models</p>
+<p class="src">出典: <a href="https://inside.java/2026/11/08/devoxxbelgium-java-next-programming-models/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-11-08</p>
+<ul class="points"><li>FFM APIとjextractによりJVM外部のランタイムと安全に対話できる。</li><li>Project BabylonのコードリフレクションでAIモデルをJavaで記述可能。</li><li>外部モデルファイルやグルーコードなしに推論エンジンへ展開できる。</li></ul><p class="impact"><b>影響</b>Java環境でAI推論やネイティブライブラリ連携を行う開発者が、最新動向を確認するのに適している。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JVM</dt><dd>Javaプログラムを各OS上で動作させるための仮想実行環境。</dd><dt>FFM API</dt><dd>Javaからネイティブコードや外部メモリに安全に接続するための標準API。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis" target="_blank" rel="noopener noreferrer">ポッドキャストでTemporalの仕組みやAI応用が語られる</a></h3>
+<p class="orig">原題: A Bootiful Podcast: Temporal.io&#39;s Cornelia Davis</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-05</p>
+<ul class="points"><li>TemporalのCornelia Davis氏を迎え、ワークフロー基盤の進化を議論しました。</li><li>Temporalは実行履歴を保持し、障害発生後も中断箇所から処理を再開できます。</li><li>AIエージェント基盤への適合やTemporal Agent Harnessなども紹介されました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Temporal</dt><dd>長時間稼働する非同期処理を耐障害性高く実行できるオープンソース基盤。</dd><dt>イベントソーシング</dt><dd>状態の変化をイベントの連続した履歴としてすべて記録・永続化する設計手法。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/11/05/podcast-074/" target="_blank" rel="noopener noreferrer">Java設計者がDevoxxでAI時代の方針や新機能を語る</a></h3>
+<p class="orig">原題: Episode 74 “Ask the Architects at Devoxx” [AtA]</p>
+<p class="src">出典: <a href="https://inside.java/2026/11/05/podcast-074/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-11-05</p>
+<ul class="points"><li>Devoxx Belgium 2026での質疑応答を収録したポッドキャストが公開されました。</li><li>仮想スレッドやAI対応、文字列機能や自動ヒープ調整など多岐にわたる話題が扱われました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>仮想スレッド</dt><dd>OSのスレッドよりも軽量に扱えるJavaの並行処理の仕組み。</dd><dt>OpenJDK</dt><dd>オープンソースで開発が進められているJava環境のリファレンス実装。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://speakerdeck.com/takuros/jaws-festa-2026-public" target="_blank" rel="noopener noreferrer">生成AIエージェントに安全な権限を渡すIAM設計資料が公開</a></h3>
+<p class="orig">原題: 生成AI時代のIAMのマニアックな話</p>
+<p class="src">出典: <a href="https://speakerdeck.com/takuros/jaws-festa-2026-public" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-07</p>
+<ul class="points"><li>JAWS FESTA 2026 in AKITAの登壇資料として、AI向けのIAM設計が解説されました。</li><li>LLMに鍵を直接渡さず、代理実行や専用ロールで権限を安全に付与する考え方を提示しています。</li></ul><p class="impact"><b>影響</b>AIエージェントからAWSを操作する開発者は、鍵ではなく専用ロールや代理実行による権限設計を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>IAM</dt><dd>クラウドサービスなどのリソースに対する認証やアクセス権限を集中管理する仕組み。</dd><dt>LLM</dt><dd>大量のテキストを学習し自然な文章生成や推論を行う大規模言語モデル。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://speakerdeck.com/nagisa53/aws-o-riyou-suru-ue-de-shi-te-okitai-namae-kaiketsu-no-hanashi-2026" target="_blank" rel="noopener noreferrer">AWSにおける名前解決の仕組みを4パターンで整理した資料が公開</a></h3>
+<p class="orig">原題: AWSを利用する上で知っておきたい名前解決の話 2026</p>
+<p class="src">出典: <a href="https://speakerdeck.com/nagisa53/aws-o-riyou-suru-ue-de-shi-te-okitai-namae-kaiketsu-no-hanashi-2026" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-07</p>
+<ul class="points"><li>AWSリソース接続に不可欠なDNS名前解決の仕組みと障害切り分けの基本が解説されました。</li><li>名前解決が行われる場所と返却されるIPアドレスの種類を4パターンに分類しています。</li><li>Route 53 Resolverの委任やVPC Latticeの仕様差なども整理されています。</li></ul><p class="impact"><b>影響</b>AWSで環境構築やトラブルシューティングを行う利用者は、DNSの応答内容や経路設計を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>FQDN</dt><dd>ホスト名からトップレベルドメイン名までを省略せずにすべて表記した完全修飾ドメイン名。</dd><dt>VPC</dt><dd>クラウド上に構築する、論理的に他のネットワークから分離された仮想ネットワーク環境。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank" rel="noopener noreferrer">米エヌビディア取締役会がフアンCEOへの外国諜報疑惑で独立調査を開始</a></h3>
+<p class="orig">原題: Nvidia Board of Directors Is Investigating Jensen Huang</p>
+<p class="src">出典: <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-09</p>
+<ul class="points"><li>フアンCEOが外国の諜報活動の標的になったとの報道を受け、独立調査を開始しました。</li><li>独立取締役による委員会と外部法律顧問が調査を主導します。</li><li>取締役会は国家安全保障や自社の機密情報への侵害は確認されていないとしています。</li></ul>
+
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/" target="_blank" rel="noopener noreferrer">米エヌビディア取締役会がフアンCEOと中国スパイ疑惑の女性の関係を調査</a></h3>
+<p class="orig">原題: Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-09</p>
+<ul class="points"><li>中国のスパイとされる元半導体企業幹部との不倫報道を受け、独立調査を開始しました。</li><li>フアンCEOは不倫関係を認め、家族や会社、株主に対して謝罪の声明を出しました。</li><li>取締役会は国家安全保障や社内機密の漏洩を示す根拠はないと説明しています。</li></ul>
+
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-08/">← 2026-11-08</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（40）</summary><ul><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
