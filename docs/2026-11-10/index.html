@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-10</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月10日(火)</p>
+<p class="meta">更新 2026-11-10 09:42 · 取得ソース 22/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener noreferrer">AnthropicがClaude Fable 5.2とMythos 5.2を発表</a></h3>
+<p class="orig">原題: Introducing Claude Fable 5.2 and Claude Mythos 5.2</p>
+<p class="src">出典: <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-11-09</p>
+<ul class="points"><li>コーディングや推論能力が向上し、フェルマーの最終定理の証明を30時間で形式化しました。</li><li>出力速度は5.1比で最大30%向上し、入力100万トークン8ドル、出力40ドルに値下げされました。</li><li>最大2.5倍高速なfast modeの提供や、セーフガードの誤検知低減も図られています。</li></ul><p class="impact"><b>影響</b>高度な技術課題を扱う組織は、用途に応じてFableの導入やMythosの利用申請を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>形式化</dt><dd>数学の証明などを論理体系に基づきコンピュータで検証可能な形に記述すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.itmedia.co.jp/news/article/2611/10/2000003042/" target="_blank" rel="noopener noreferrer">AnthropicがClaude Fable 5.2などを発表しAPIを2割値下げ</a></h3>
+<p class="orig">原題: Anthropic、「Claude Fable 5.2」と「Claude Mythos 5.2」発表 API料金2割下げ、出力は最大30％高速化</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/10/2000003042/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-10</p>
+<ul class="points"><li>最上位モデルの新版で、Fable 5.2は一般向け、Mythos 5.2は審査制で提供されます。</li><li>出力速度が最大30％高速化し、API料金は入力100万トークン8ドル、出力40ドルになりました。</li><li>コーディング等で高い性能を示した一方、AI研究能力の向上はトレーニング段階で抑制されました。</li></ul><p class="impact"><b>影響</b>Claudeの有料プランやAPIの利用者は、各環境でFable 5.2の利用や切り替えを確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>セーフガード</dt><dd>AIの悪用や危険な出力の生成を防ぐために設けられた制限や安全機能のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.321" target="_blank" rel="noopener noreferrer">Claude Code v2.1.321が公開されFable 5.2に対応</a></h3>
+<p class="orig">原題: v2.1.321</p>
+<p class="src">出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.321" target="_blank" rel="noopener noreferrer">Claude Code</a> · 2026-11-10</p>
+<ul class="points"><li>「Claude Fable 5.2」が追加され、デフォルトのFableモデルとして利用可能になりました。</li><li>コンテキスト長は1Mで、料金は100万トークンあたり入力8ドル、出力40ドルです。</li><li>OAuthトークン漏洩や、確認なしでのコマンド実行といったセキュリティ関連の不具合が修正されました。</li></ul><p class="impact"><b>影響</b>Claude Code利用者は、新バージョンへ更新することでFable 5.2の利用や各修正を反映できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>サンドボックス</dt><dd>セキュリティ保護のため、プログラムを外部から隔離して安全に実行する制限環境。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener noreferrer">AnthropicがClaude Fable 5.2とMythos 5.2を発表</a></h3>
+<p class="orig">原題: Introducing Claude Fable 5.2 and Claude Mythos 5.2</p>
+<p class="src">出典: <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-11-09</p>
+<ul class="points"><li>コーディングや推論能力が向上し、フェルマーの最終定理の証明を30時間で形式化しました。</li><li>出力速度は5.1比で最大30%向上し、入力100万トークン8ドル、出力40ドルに値下げされました。</li><li>最大2.5倍高速なfast modeの提供や、セーフガードの誤検知低減も図られています。</li></ul><p class="impact"><b>影響</b>高度な技術課題を扱う組織は、用途に応じてFableの導入やMythosの利用申請を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>形式化</dt><dd>数学の証明などを論理体系に基づきコンピュータで検証可能な形に記述すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/10/2000003042/" target="_blank" rel="noopener noreferrer">AnthropicがClaude Fable 5.2などを発表しAPIを2割値下げ</a></h3>
+<p class="orig">原題: Anthropic、「Claude Fable 5.2」と「Claude Mythos 5.2」発表 API料金2割下げ、出力は最大30％高速化</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/10/2000003042/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-10</p>
+<ul class="points"><li>最上位モデルの新版で、Fable 5.2は一般向け、Mythos 5.2は審査制で提供されます。</li><li>出力速度が最大30％高速化し、API料金は入力100万トークン8ドル、出力40ドルになりました。</li><li>コーディング等で高い性能を示した一方、AI研究能力の向上はトレーニング段階で抑制されました。</li></ul><p class="impact"><b>影響</b>Claudeの有料プランやAPIの利用者は、各環境でFable 5.2の利用や切り替えを確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>セーフガード</dt><dd>AIの悪用や危険な出力の生成を防ぐために設けられた制限や安全機能のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.321" target="_blank" rel="noopener noreferrer">Claude Code v2.1.321が公開されFable 5.2に対応</a></h3>
+<p class="orig">原題: v2.1.321</p>
+<p class="src">出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.321" target="_blank" rel="noopener noreferrer">Claude Code</a> · 2026-11-10</p>
+<ul class="points"><li>「Claude Fable 5.2」が追加され、デフォルトのFableモデルとして利用可能になりました。</li><li>コンテキスト長は1Mで、料金は100万トークンあたり入力8ドル、出力40ドルです。</li><li>OAuthトークン漏洩や、確認なしでのコマンド実行といったセキュリティ関連の不具合が修正されました。</li></ul><p class="impact"><b>影響</b>Claude Code利用者は、新バージョンへ更新することでFable 5.2の利用や各修正を反映できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>サンドボックス</dt><dd>セキュリティ保護のため、プログラムを外部から隔離して安全に実行する制限環境。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/" target="_blank" rel="noopener noreferrer">AWSがClaude Fable 5.2などの提供をAmazon Bedrockで開始</a></h3>
+<p class="orig">原題: Introducing Claude Fable 5.2 on AWS</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-10</p>
+<ul class="points"><li>Claude Fable 5.2と審査制のMythos 5.2がAmazon Bedrock等で利用可能になりました。</li><li>長時間稼働するエージェントや科学研究向けで、拒否時のフォールバッククレジットにも対応します。</li><li>利用には最大30日間のデータ保持と安全審査が既定で適用され、個別設定も可能です。</li></ul><p class="impact"><b>影響</b>Amazon Bedrockで利用する開発者は、前提条件を満たした上でデータ保持モードの設定が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Amazon Bedrock</dt><dd>AWS上でさまざまな高性能AIモデルをAPI経由で利用・管理できるフルマネージドサービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/10/2000003044/" target="_blank" rel="noopener noreferrer">Metaが最小・低コストのAIモデルMuse Emberを発表した</a></h3>
+<p class="orig">原題: Meta、最小・低コストのAIモデル「Muse Ember」発表 「Muse Spark 1.3」に迫る性能を約17分の1のコストで</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/10/2000003044/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-10</p>
+<ul class="points"><li>AIエージェントの反復処理に特化した最小・高効率モデルです。</li><li>最大100万トークンの入力や動画・PDF等の解析に対応します。</li><li>Meta Model APIやMuse Codeにて提供を開始しました。</li></ul><p class="impact"><b>影響</b>開発者はMeta Model APIやMuse Codeで低コストに新モデルを利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIがテキストなどのデータを処理する際の最小の単位のこと。</dd><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度の処理で把握・参照できる情報量の上限のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank" rel="noopener noreferrer">Metaがエージェント処理向けの軽量モデルMuse Emberを公開した</a></h3>
+<p class="orig">原題: Meta releases Muse Ember, a new lightweight model for agent execution</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-10</p>
+<ul class="points"><li>AIエージェントが反復する日常的な推論やタスク実行に特化しています。</li><li>大型モデルと連携し、数万件の処理を低コストで適用する構成を想定します。</li><li>テキストのほか画像や音声など複数種類の入力に対応しています。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マルチモーダル</dt><dd>テキストや画像、音声など複数の異なる形式の情報を同時に扱う技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener noreferrer">Metaが低コスト推論に特化したMuse Emberの提供を開始した</a></h3>
+<p class="orig">原題: Our Smallest, Most Efficient Model: Muse Ember</p>
+<p class="src">出典: <a href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-10</p>
+<ul class="points"><li>エージェントのツール呼び出しや反復処理を高効率に行う新モデルです。</li><li>100万トークンのコンテキストと最大51万2000トークンの出力を備えます。</li><li>Meta Model APIにて入力100万トークンあたり0.10ドルで提供されます。</li></ul><p class="impact"><b>影響</b>開発者はMeta Model APIを利用して業務ワークフローやコード作成を実行できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>API</dt><dd>ソフトウェア同士が機能やデータをやり取りするための接続仕様。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/10/2000003043/" target="_blank" rel="noopener noreferrer">Googleが第8世代TPUに8txと8i Maxの2機種を追加した</a></h3>
+<p class="orig">原題: Google、第8世代TPUに「8tx」と「8i Max」を追加 機密データ処理と大規模AIエージェントに特化</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/10/2000003043/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-10</p>
+<ul class="points"><li>機密データ保護向けの8txと大規模処理に特化した8i Maxを発表しました。</li><li>8txは保護機能を備え、8i Maxは演算性能やメモリ性能等を2倍に強化しました。</li><li>ソフトウェアの強化も発表されましたが、提供開始時期や料金は未定です。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>TPU</dt><dd>Googleが開発した、AIや機械学習の計算に特化した専用プロセッサ。</dd><dt>ファインチューニング</dt><dd>学習済みモデルに特定のデータを追加学習させ、特定用途向けに調整すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/nekonote328/articles/claude-code-figma-mcp" target="_blank" rel="noopener noreferrer">デザイナーがFigmaとClaude Codeを連携しアプリを開発</a></h3>
+<p class="orig">原題: Webデザイナーが Figma と Claude Code を MCP でつないで、デザインからアプリを作った話（2026年11月）</p>
+<p class="src">出典: <a href="https://zenn.dev/nekonote328/articles/claude-code-figma-mcp" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-09</p>
+<ul class="points"><li>Figma公式MCPサーバーを介してClaude Codeがデザインを読み取り、コードを生成した。</li><li>利用制限があり無料プランは月20回まで、プロ向けDevシート等は1日200回まで利用できる。</li><li>50日間の開発を通じ、デザインを明確な指示書として活用することで修正が迅速に進んだ。</li></ul><p class="impact"><b>影響</b>本格的に連携してアプリ開発を行う場合は、FigmaのDevシートやフルシートの契約を検討する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIと外部ツールやデータを安全に連携するためのオープンな共通規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/how-rivian-accelerated-finance-operations-with-ai-agents-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">RivianがBedrock製AIエージェントで決算作業を大幅削減</a></h3>
+<p class="orig">原題: Rivian が Amazon Bedrock 上の AI エージェントで財務オペレーションを加速した方法</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/how-rivian-accelerated-finance-operations-with-ai-agents-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-09</p>
+<ul class="points"><li>Amazon Bedrock AgentCore上のAIエージェントで月次決算の手作業を15日以上削減した。</li><li>自然言語の標準作業手順書をAIが解釈し、発注の会計計上などを動的に自動処理する。</li><li>最終的な仕訳伝票の転記前に財務マネージャーが承認を行う仕組みで内部統制を維持している。</li></ul><p class="impact"><b>影響</b>財務プロセスの自動化を目指す組織は、SOPを整備してAIに読み込ませる基盤設計を参考にできます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ERP</dt><dd>企業の会計や人事、生産などの基幹業務を一元管理する統合型システム。</dd><dt>SOP</dt><dd>業務を標準化し誰でも同様に行えるように手順を詳細に記した作業手順書。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/daisuke7/articles/41940336b06cc7" target="_blank" rel="noopener noreferrer">Claude Codeを用いてコードを読まずに麻雀アプリを開発</a></h3>
+<p class="orig">原題: コードを一行も読まずに Flutter アプリを開発してみた ― 完全バイブコーディング実験の記録</p>
+<p class="src">出典: <a href="https://zenn.dev/daisuke7/articles/41940336b06cc7" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>コードを読まずPRレビューも行わない条件で、Flutter製の麻雀対戦アプリを約4か月で制作した。</li><li>ロジックテストを仕様書としたが、テスト自体が誤った仕様を固定化してしまう課題が生じた。</li><li>発生した不具合の半数以上はAIではなく、人間が実機を操作して初めて検知された。</li></ul><p class="impact"><b>影響</b>AIによるバイブコーディングを行う際は、人間が実機動作の検証やルールの妥当性判断を行う必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>バイブコーディング</dt><dd>人間が詳細なコードを書かず、AIへの指示と対話を中心に進める開発手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/ai_hack_lab/items/26040759fd3e6acd797a" target="_blank" rel="noopener noreferrer">Claude APIでプロンプトを自動生成・評価するパイプラインを公開</a></h3>
+<p class="orig">原題: 【Python×Claude API】プロンプト販売・業務自動化で即戦力になる「プロンプト自動生成・品質検証パイプライン」の実装</p>
+<p class="src">出典: <a href="https://qiita.com/ai_hack_lab/items/26040759fd3e6acd797a" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>生成役と評価役のAIを分離し、自動でテストとリファクタリングを反復する仕組みを構築した。</li><li>評価役LLMが4基準で採点し、100点中85点以上の合格基準に達するまで自動で修正を繰り返す。</li><li>Python 3.10以降やanthropicライブラリを利用し、Claude 3.5 Sonnet等を呼び出している。</li></ul><p class="impact"><b>影響</b>プロンプト販売や業務自動化を行う開発者は、提供されたコードを利用して品質検証を自動化できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LLM-as-a-Judge</dt><dd>大規模言語モデル自体を評価者として使い、AIの出力品質を自動判定する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/meursyphus/items/f3c05ced6a6815c1cf0c" target="_blank" rel="noopener noreferrer">AIが生成したテストがミューテーションテストで変異の半分を見逃した</a></h3>
+<p class="orig">原題: AIが書いたテストでは変異の半分を検出できなかった</p>
+<p class="src">出典: <a href="https://qiita.com/meursyphus/items/f3c05ced6a6815c1cf0c" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>AIが作成したテストに対してミューテーションテストを実行したところ、変異体の検出率は49.6%にとどまりました。</li><li>ソースコードの文字列の存在確認やモックの呼出確認だけで、実際の動作や境界値を検証していないテストが多数見つかりました。</li></ul><p class="impact"><b>影響</b>AIにテスト生成を任せる開発者は、テストの実行結果だけでなく何を検証しているか確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ミューテーションテスト</dt><dd>コードを微小に変更した変異体を作成し、テストがその変更を検出できるか検証する手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/09/spring-ai-2-1-0-RC2-available-now" target="_blank" rel="noopener noreferrer">Spring AI 2.1.0-RC2が公開され決定用APIなどが追加された</a></h3>
+<p class="orig">原題: Spring AI 2.1.0-RC2 Available Now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/09/spring-ai-2-1-0-RC2-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-09</p>
+<ul class="points"><li>分類やガードレール等に使える型付きの判定APIであるDecisionModelが新たに追加されました。</li><li>ツール呼び出しのストリーミングや5種類のベクトルストアへの対応拡充、MCPプロトコル改訂への対応が含まれます。</li></ul><p class="impact"><b>影響</b>Spring AIを利用する開発者は、Maven Centralから2.1.0-RC2を入手して新機能を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ベクトルストア</dt><dd>テキストなどのデータを数値ベクトルとして保存し、類似度による高速な検索を可能にするデータベース。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/tssdev/articles/tssgrid-click-lost-on-commit" target="_blank" rel="noopener noreferrer">入力確定によるボタンの移動でクリックが無効化される不具合を解決した</a></h3>
+<p class="orig">原題: ［保存］を押したのに保存されない ― クリックは、押した場所と離した場所が同じときだけ起きる</p>
+<p class="src">出典: <a href="https://zenn.dev/tssdev/articles/tssgrid-click-lost-on-commit" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-09</p>
+<ul class="points"><li>表の入力確定時に空行が追加されてボタンが移動し、マウスの押下時と離した時で位置がずれて保存が走りませんでした。</li><li>mousedown時のフォーカス移動を抑止し、クリック直前にグリッドを確定させることでボタンのずれを防ぎました。</li></ul><p class="impact"><b>影響</b>ボタン押下時にレイアウトが変化する画面を開発する人は、確定処理やイベント発火のタイミングを確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>blur</dt><dd>入力欄などのUI要素からフォーカス（選択状態）が外れたときに発生するイベント。</dd></dl></details>
+</article>
+<article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin" target="_blank" rel="noopener noreferrer">Shopifyのネイティブ移行設計Reflexの検証記事が公開された</a></h3>
+<p class="orig">原題: ShopifyのReact Native→ネイティブ移行を支える「Reflex」をSwiftとKotlinで試す</p>
+<p class="src">出典: <a href="https://zenn.dev/tellernovel_inc/articles/reflex-native-swift-kotlin" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-09</p>
+<ul class="points"><li>ロジックはSwiftとKotlinで別個に実装し、振る舞いテストをTypeScriptで共通化して両OSの挙動をそろえます。</li><li>UIとロジックを分離したElm風の単方向データフローを採用し、外部通信を遮断して高速な検証を実現しています。</li></ul><p class="impact"><b>影響</b>iOSとAndroidをネイティブで並行開発するエンジニアは、テスト共通化や設計の参考として確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Elmアーキテクチャ</dt><dd>状態、状態を更新する更新関数、描画処理を分離し、データを一方向に流す設計パターン。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/" target="_blank" rel="noopener noreferrer">AWSがAgentCore Runtime V2やS3移行機能などを発表</a></h3>
+<p class="orig">原題: AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/" target="_blank" rel="noopener noreferrer">AWS News Blog</a> · 2026-11-10</p>
+<ul class="points"><li>AgentCore Runtime V2を提供開始し、コールドスタート時間を短縮した。</li><li>S3 Tablesにより、HiveからIcebergへのフルマネージド移行が可能になった。</li><li>DynamoDBはS3から既存テーブルへの一括読み込みに対応した。</li></ul><p class="impact"><b>影響</b>AgentCore利用者は、platformVersionをV2に設定することでメモリ効率化などを活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>コールドスタート</dt><dd>停止状態のコンテナや実行環境が初期化されて立ち上がる処理のこと。</dd><dt>Apache Iceberg</dt><dd>大規模なデータセットを高速かつ安全に管理するためのテーブル形式。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/09/2000003001/" target="_blank" rel="noopener noreferrer">2026年第3四半期のクラウド市場でAWSのシェアが26％に後退</a></h3>
+<p class="orig">原題: クラウドインフラのシェア、AWSが26％に後退 Google Cloudは16％に上昇 市場全体は過去最大の高成長率へ 2026年第3四半期調査</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/09/2000003001/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-09</p>
+<ul class="points"><li>2026年第3四半期のクラウド市場は前年比55％増の1680億ドルで過去最高を記録した。</li><li>AWSのシェアは26％に低下し、Google Cloudは16％に上昇した。</li><li>AI特化の「ネオクラウド」が台頭し、SpaceXSIが収益トップ10に入った。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ネオクラウド</dt><dd>AI向けワークロードの計算資源提供に特化した新興クラウド事業者のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/" target="_blank" rel="noopener noreferrer">DeepXが5W未満で動作する第2世代エッジAIチップを設計完了</a></h3>
+<p class="orig">原題: DeepX claims inference up to 100B parameters at less than 5 W</p>
+<p class="src">出典: <a href="https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-10</p>
+<ul class="points"><li>韓国DeepXがエッジ向けAIアクセラレータ「DX-M2」をテープアウトした。</li><li>5Wの消費電力で最大1000億パラメータのモデルの推論に対応する。</li><li>サムスンのLPDDR5x-PIMとの統合により、推論速度が最大6.7倍に向上する。</li></ul><p class="impact"><b>影響</b>エッジ機器を開発する企業は、低消費電力な環境で大規模な生成AIモデルを端末上で動作させられる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>テープアウト</dt><dd>半導体チップの設計作業が完了し、製造工程へデータを引き渡す段階のこと。</dd><dt>PIM</dt><dd>メモリ内部で直接演算を行うことで、データ転送の負荷を減らす技術のこと。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.infineon.com/press-release/2026/infpr202611-028" target="_blank" rel="noopener noreferrer">インフィニオンが300mm炭化ケイ素ウエハーでの試作に成功</a></h3>
+<p class="orig">原題: Infineon marks innovation milestone with 300mm power silicon carbide wafer</p>
+<p class="src">出典: <a href="https://www.infineon.com/press-release/2026/infpr202611-028" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-10</p>
+<ul class="points"><li>オーストリアの拠点で300mm炭化ケイ素ウエハーによる機能デバイスの製造に成功した。</li><li>従来の200mmと比べ、ウエハー1枚から得られるチップ数が2.3倍に向上する。</li><li>材料ロスを抑えてウエハーを切り出すCold Split技術の実証も完了した。</li></ul><p class="impact"><b>影響</b>自動車やAIデータセンターなどの顧客は、将来的に高性能なSiC半導体を安定して調達できるようになる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SiC</dt><dd>炭化ケイ素のこと。高電圧や高温に耐え、電力損失を大幅に抑えられる半導体材料。</dd><dt>ウエハー</dt><dd>半導体素子を製造するために、円盤状に薄くスライスされた結晶基板のこと。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-09/">← 2026-11-09</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（41）</summary><ul><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
