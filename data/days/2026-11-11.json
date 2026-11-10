@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T22:23:39.785Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/",
+      "title": "Anthropicが新AI「Claude Fable 5.2」をリリース。ぶっちぎりの高性能、実用例はもはや異次元 | ギズモード・ジャパン",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T02:43:46.000Z",
+      "summary": "Anthropicが新しい最先端AIモデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースした。コーディング、科学、サイバーセキュリティなどの分野で高いパフォーマンスを発揮し、ロボティクスでも大きな伸びを見せている。有料ユーザーや各種プラットフォームですでに利用可能となっている。",
+      "headline": "Anthropicが新AIモデルClaude Fable 5.2をリリース",
+      "points": [
+        "Anthropicが新しい最先端AIモデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースした。",
+        "コーディング、科学、サイバーセキュリティなどの分野で高いパフォーマンスを発揮し、ロボティクスでも大きな伸びを見せている。",
+        "有料ユーザーや各種プラットフォームですでに利用可能となっている。"
+      ],
+      "impact": "有料ユーザーや開発者は、新しい最先端モデルを利用して高度なタスクや開発に活用することができる。",
+      "glossary": [
+        {
+          "term": "ベンチマーク",
+          "explanation": "コンピュータのハードウェアやソフトウェアの性能を測定し、比較するためのテストのこと。"
+        },
+        {
+          "term": "API料金",
+          "explanation": "プログラムから外部のサービスやAI機能を利用した際に発生する使用料金のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2154982.html",
+      "title": "Anthropic、「Claude Fable 5.2」「Claude Mythos 5.2」を発表 ～最強モデルがより高速・安価に／ほぼすべての評価で「Opus 5.5」を凌駕、物理学の未解決問題を解いた実績も",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T00:58:59.000Z",
+      "summary": "Anthropicが最上位モデル「Claude Fable 5.2」と「Claude Mythos 5.2」を発表した。出力の生成速度が最大30%高速になり、API標準料金は入力が100万トークンあたり8米ドル、出力が40米ドルとなった。コーディング、推論、画像認識などの分野で前モデルを上回る性能を発揮する。",
+      "headline": "Anthropicが新AIモデルClaude Fable 5.2などを発表",
+      "points": [
+        "Anthropicが最上位モデル「Claude Fable 5.2」と「Claude Mythos 5.2」を発表した。",
+        "出力の生成速度が最大30%高速になり、API標準料金は入力が100万トークンあたり8米ドル、出力が40米ドルとなった。",
+        "コーディング、推論、画像認識などの分野で前モデルを上回る性能を発揮する。"
+      ],
+      "impact": "開発者や企業は、新しいAPIや各プラットフォームを通じて最新モデルを利用できる。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストを処理する際のデータの単位であり、文字や単語の断片に分割される。"
+        },
+        {
+          "term": "セーフガード",
+          "explanation": "システムやデータの悪用を防ぐための安全装置や保護機能のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://qiita.com/quotidia/items/3fd1e9686609a066e009",
+      "title": "Claude Fable 5.2の要点：API料金8ドル/40ドル、出力最大30%高速、1,000エージェントでOS試作",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T21:00:54.000Z",
+      "summary": "Anthropicが最上位モデルの新版「Claude Fable 5.2」と「Mythos 5.2」を発表した。API料金は入力100万トークンあたり8ドル、出力40ドルで、出力速度は最大30%高速化した。1,000体を超えるAIを指揮してノートPCで起動するOSの試作品を作るなどの実験結果が示された。",
+      "headline": "Anthropicが最上位AIモデルClaude Fable 5.2を発表",
+      "points": [
+        "Anthropicが最上位モデルの新版「Claude Fable 5.2」と「Mythos 5.2」を発表した。",
+        "API料金は入力100万トークンあたり8ドル、出力40ドルで、出力速度は最大30%高速化した。",
+        "1,000体を超えるAIを指揮してノートPCで起動するOSの試作品を作るなどの実験結果が示された。"
+      ],
+      "impact": "開発者は新しいAPI料金や性能を確認し、必要に応じてシステムに組み込んで利用することができる。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "source": "Anthropic News",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "AnthropicがクラスA普通株式の新規株式公開（IPO）に向けたロードショーを開始した。提案されている公募株式数は825,000,000株であり、そのうち801,351,354株を同社が提供する。想定される初回公募価格は1株あたり70.00米ドルから78.00米ドルの範囲となっている。",
+      "headline": "Anthropicが新規株式公開に向けたロードショーを開始",
+      "points": [
+        "AnthropicがクラスA普通株式の新規株式公開（IPO）に向けたロードショーを開始した。",
+        "提案されている公募株式数は825,000,000株であり、そのうち801,351,354株を同社が提供する。",
+        "想定される初回公募価格は1株あたり70.00米ドルから78.00米ドルの範囲となっている。"
+      ],
+      "impact": "投資家や関係者は、米国証券取引委員会への登録状況や公募価格に関する情報を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "新規株式公開",
+          "explanation": "企業が株式を証券取引所に上場し、一般の投資家が売買できるようにすること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow",
+      "title": "【個人向け】AnthropicのIPOは買える？投資前に知りたい価格とリスク",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T12:07:29.000Z",
+      "summary": "AnthropicはIPOの想定価格帯を1株70〜78ドルと示した。SBI証券は日本国内の個人向けに募集の取扱いを予定している。公開価格と上場後の市場価格は異なり、為替変動の影響も受ける。",
+      "headline": "Anthropicが新規株式公開に向けた想定価格帯を提示",
+      "points": [
+        "AnthropicはIPOの想定価格帯を1株70〜78ドルと示した。",
+        "SBI証券は日本国内の個人向けに募集の取扱いを予定している。",
+        "公開価格と上場後の市場価格は異なり、為替変動の影響も受ける。"
+      ],
+      "impact": "日本国内の個人投資家は、証券会社の正式な申込条件や目論見書を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "IPO",
+          "explanation": "新規株式公開のことで、未上場の企業が株式を証券取引所に上場し、誰でも買えるようにすること。"
+        },
+        {
+          "term": "想定価格帯",
+          "explanation": "IPOを行う際に、公開価格を決めるための目安となる株価の範囲のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T19:57:52.000Z",
+      "summary": "7人の共同創業者全員がIPO時にそれぞれ約250万株を売却する予定である。中間価格の74ドルで計算した場合、各創業者は約2億5000万ドルを受け取る。創業者グループはクラスF株を通じて51.1%の議決権を維持する。",
+      "headline": "AnthropicのIPOで創業者の株式売却計画が明らかに",
+      "points": [
+        "7人の共同創業者全員がIPO時にそれぞれ約250万株を売却する予定である。",
+        "中間価格の74ドルで計算した場合、各創業者は約2億5000万ドルを受け取る。",
+        "創業者グループはクラスF株を通じて51.1%の議決権を維持する。"
+      ],
+      "impact": "投資家は目論見書の記載から、創業者の保有割合や議決権の状況を確認できる。",
+      "glossary": [
+        {
+          "term": "クラスA株",
+          "explanation": "一般的な議決権を持つ株式のクラスの一つで、今回のIPOで一般向けにも流通するもの。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T17:30:00.000Z",
+      "summary": "新機能のClaude Meetingsにより、Claudeがビデオ通話に参加してリアルタイムで作業を行う。Claude WhiteboardsやClaude Sheetsを通じて、共同でのボード作業や表計算が可能になる。Claude Dataとしてダッシュボード作成機能などが正式に提供開始された。",
+      "headline": "Anthropicがビデオ通話に対応する会議支援機能などを発表",
+      "points": [
+        "新機能のClaude Meetingsにより、Claudeがビデオ通話に参加してリアルタイムで作業を行う。",
+        "Claude WhiteboardsやClaude Sheetsを通じて、共同でのボード作業や表計算が可能になる。",
+        "Claude Dataとしてダッシュボード作成機能などが正式に提供開始された。"
+      ],
+      "impact": "TeamおよびEnterpriseプランの利用者は、ビデオ通話やワークスペースで新しい生産性機能を使える。",
+      "glossary": [
+        {
+          "term": "ベータ",
+          "explanation": "正式版を公開する前に、テストを目的としてユーザーに限定提供される段階のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T17:55:07Z",
+      "summary": "Claude WhiteboardsとClaude Sheetsのベータ版がすべての有料プランで提供される。Claude DashboardsはClaude Dataに名称を変更し、正式に一般提供が開始された。チームでのリアルタイムな共同編集や、外部ツールとの連携が強化された。",
+      "headline": "AnthropicがClaudeの新機能とデータ連携ツールを発表",
+      "points": [
+        "Claude WhiteboardsとClaude Sheetsのベータ版がすべての有料プランで提供される。",
+        "Claude DashboardsはClaude Dataに名称を変更し、正式に一般提供が開始された。",
+        "チームでのリアルタイムな共同編集や、外部ツールとの連携が強化された。"
+      ],
+      "impact": "有料プランのユーザーは、ドキュメントやデータをClaude上で直接管理・編集できるようになる。",
+      "glossary": [
+        {
+          "term": "ダッシュボード",
+          "explanation": "重要なデータや指標を1つの画面にまとめて視覚的に表示する一覧画面のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+      "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T18:49:52.000Z",
+      "summary": "企業が製品やサービスの情報を確認・更新できるビジネスプロフィール機能をベータ版として提供開始した条件を満たす企業はChatGPT上で質問に答える専用のビジネスエージェントを作成できるプロフィール閲覧数やウェブサイトのクリック数などの利用インサイトを確認できる",
+      "headline": "OpenAIがChatGPTに企業の信頼性向上を図る新しいビジネスプロフィールを導入",
+      "points": [
+        "企業が製品やサービスの情報を確認・更新できるビジネスプロフィール機能をベータ版として提供開始した",
+        "条件を満たす企業はChatGPT上で質問に答える専用のビジネスエージェントを作成できる",
+        "プロフィール閲覧数やウェブサイトのクリック数などの利用インサイトを確認できる"
+      ],
+      "impact": "対象となる企業は、ビジネスプロフィールの認証や専用エージェントの設定を通じてChatGPT内での情報発信を行える。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/oikon/articles/claude-code-recipe",
+      "title": "Claude Codeで最近使っているTips【2026/11】",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T03:58:52.000Z",
+      "summary": "/btwコマンドを使うと会話履歴に残さずに現在のセッションについて質問できるHTML形式を採用することでドキュメントの視認性を高めArtifacts経由で確認できるClaude Modsやprompt-cache-controlを使うとカスタマイズやプロンプトキャッシュの状態管理ができる",
+      "headline": "Claude Codeの効率的な開発を支える5つの便利なTipsと機能を紹介",
+      "points": [
+        "/btwコマンドを使うと会話履歴に残さずに現在のセッションについて質問できる",
+        "HTML形式を採用することでドキュメントの視認性を高めArtifacts経由で確認できる",
+        "Claude Modsやprompt-cache-controlを使うとカスタマイズやプロンプトキャッシュの状態管理ができる"
+      ],
+      "impact": "Claude Codeを利用する開発者は、紹介されたコマンドやプラグインを活用して作業効率やキャッシュ状態の管理を改善できる。",
+      "glossary": [
+        {
+          "term": "プロンプトキャッシュ",
+          "explanation": "過去のやり取りを一時保存し、同じ内容の再処理コストや遅延を抑える仕組みのこと"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://gigazine.net/news/20261110-claude-opus-nerf/",
+      "title": "Claude Opus 5.5の推論能力が11月3日から急激に低下したとの指摘、1400件の利用履歴から変化が判明",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T08:05:52.000Z",
+      "summary": "開発者が約1400件の利用履歴を分析したところ2026年11月3日頃から思考を示す文章や推論量に変化が見つかった最初の操作までに使用する思考トークン数が約36％減少しエラー指標が増加したとの報告がある別の調査ではAnthropicが思考内容の要約仕組みをアカウントごとに変更したことが原因ではないかとも指摘されている",
+      "headline": "Claude Opus 5.5の推論能力低下が指摘され利用履歴に基づく調査が行われた",
+      "points": [
+        "開発者が約1400件の利用履歴を分析したところ2026年11月3日頃から思考を示す文章や推論量に変化が見つかった",
+        "最初の操作までに使用する思考トークン数が約36％減少しエラー指標が増加したとの報告がある",
+        "別の調査ではAnthropicが思考内容の要約仕組みをアカウントごとに変更したことが原因ではないかとも指摘されている"
+      ],
+      "impact": "開発者や利用者は、モデルの挙動や思考プロセスの変化に注意しながらAIの出力を確認する必要がある。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy",
+      "title": "Claude Code CLIを文脈圧縮プロキシでラップしたら、圧縮は動いたがキャッシュが壊れた話",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T14:23:17.000Z",
+      "summary": "billion-contextプロキシを介してClaude Codeを実行したところ長大なやり取りの可逆圧縮が動作した短い検証スコープでは圧縮によってプロンプトキャッシュの前提が壊れトータルコストがかえって増加したベンチマークで示される大幅なコスト削減効果は、キャッシュの再構築コストを上回る非常に長いセッションでのみ発揮される",
+      "headline": "コンテキスト圧縮プロキシを導入すると圧縮は成功するがキャッシュが壊れる検証結果",
+      "points": [
+        "billion-contextプロキシを介してClaude Codeを実行したところ長大なやり取りの可逆圧縮が動作した",
+        "短い検証スコープでは圧縮によってプロンプトキャッシュの前提が壊れトータルコストがかえって増加した",
+        "ベンチマークで示される大幅なコスト削減効果は、キャッシュの再構築コストを上回る非常に長いセッションでのみ発揮される"
+      ],
+      "impact": "開発者は、エージェントとAPIの間に圧縮プロキシを導入する際、セッションの規模やキャッシュへの影響を考慮する必要がある。",
+      "glossary": [
+        {
+          "term": "プロキシ",
+          "explanation": "クライアントとサーバーの間に入り、通信を中継・代行するシステムのこと"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2",
+      "title": "Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T12:44:52.000Z",
+      "summary": "APIのデフォルトのエフォートレベルはhighであり、トークン消費や思考時間を考慮して調整する。コードの所有権の提示やシステムプロンプトの工夫により、モデルの出力や安全性の挙動が変わる。",
+      "headline": "Claude Fable 5.2のプロンプトガイドと機能の特徴",
+      "points": [
+        "APIのデフォルトのエフォートレベルはhighであり、トークン消費や思考時間を考慮して調整する。",
+        "コードの所有権の提示やシステムプロンプトの工夫により、モデルの出力や安全性の挙動が変わる。"
+      ],
+      "impact": "Claude Fable 5.2を利用する開発者は、エフォート設定やシステムプロンプトの記述を調整する必要がある。",
+      "glossary": [
+        {
+          "term": "プロンプト",
+          "explanation": "AIモデルに対して指示や入力を行うためのテキスト。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+      "title": "Amazon Bedrock AgentCore now offers a Web Search API",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "単一のAPI呼び出しでウェブ検索を実行できるInvokeWebSearch APIが一般提供された。リクエストはドメインや公開日時で絞り込め、料金は1,000クエリあたり7ドルである。",
+      "headline": "Amazon Bedrock AgentCoreのWeb Search API提供開始",
+      "points": [
+        "単一のAPI呼び出しでウェブ検索を実行できるInvokeWebSearch APIが一般提供された。",
+        "リクエストはドメインや公開日時で絞り込め、料金は1,000クエリあたり7ドルである。"
+      ],
+      "impact": "AWSユーザーは、追加のリソース構築なしでアプリケーションやデータパイプラインからウェブ検索機能を利用できる。",
+      "glossary": [
+        {
+          "term": "API",
+          "explanation": "ソフトウェア同士が機能を共有するための仕組みや窓口のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/jp/blogs/news/why-policy-in-amazon-bedrock-agentcore-chose-cedar-for-securing-agentic-workflows/",
+      "title": "Amazon Bedrock AgentCore Policy がエージェンティックワークフローの保護に Cedar を採用した理由",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-10T00:09:29.000Z",
+      "summary": "LLMの非決定論的な動作やセキュリティリスクに対応するため、外部の認可レイヤーが必要となる。Cedar言語と自動推論機能を用いて、エージェントが呼び出すツールへのアクセスを安全に制御する。",
+      "headline": "Amazon Bedrock AgentCore PolicyにおけるCedarの採用",
+      "points": [
+        "LLMの非決定論的な動作やセキュリティリスクに対応するため、外部の認可レイヤーが必要となる。",
+        "Cedar言語と自動推論機能を用いて、エージェントが呼び出すツールへのアクセスを安全に制御する。"
+      ],
+      "impact": "エージェントのツールアクセスを管理する管理者は、Cedarポリシーを用いて安全境界を設定できる。",
+      "glossary": [
+        {
+          "term": "LLM",
+          "explanation": "膨大なテキストデータを学習して自然言語処理を行う大規模言語モデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://inside.java/2026/11/09/inside-java-ticker-value-class/",
+      "title": "A Valhalla Ticker in One int",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "summary": "JEP 401のバリュークラスを用いて、1〜5文字の金融ティッカーシンボルを1つのint型に格納する。アルファベットや数字などの文字を6ビットずつパックし、オブジェクトの割り当てなしで処理効率を高める。",
+      "headline": "Java Valhallaのバリュークラスによるティッカーの表現",
+      "points": [
+        "JEP 401のバリュークラスを用いて、1〜5文字の金融ティッカーシンボルを1つのint型に格納する。",
+        "アルファベットや数字などの文字を6ビットずつパックし、オブジェクトの割り当てなしで処理効率を高める。"
+      ],
+      "impact": "JDK 28のプレビュー機能を使う開発者は、メモリ効率のよいデータ構造を実装できる。",
+      "glossary": [
+        {
+          "term": "バリュークラス",
+          "explanation": "識別子を持たず、値そのものとして扱われるJavaの新しいクラス形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://spring.io/blog/2026/11/10/spring-pulsar-new-home-asf",
+      "title": "Announcing a New Home for Spring for Apache Pulsar",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "プロジェクトがApache Pulsarプロジェクトのサブプロジェクトとして移管されました。バージョン2.0.8がSpringプロジェクト傘下での最後のリリースとなります。今後の更新や新機能を受け取るには依存関係やパッケージのインポート変更が必要です。",
+      "headline": "Spring for Apache PulsarがApache Software Foundationへ移行",
+      "points": [
+        "プロジェクトがApache Pulsarプロジェクトのサブプロジェクトとして移管されました。",
+        "バージョン2.0.8がSpringプロジェクト傘下での最後のリリースとなります。",
+        "今後の更新や新機能を受け取るには依存関係やパッケージのインポート変更が必要です。"
+      ],
+      "impact": "開発者は今後のアップデートのために依存関係やインポート先を新しいプロジェクトへ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "サブプロジェクト",
+          "explanation": "メインとなる大きなプロジェクトの下で独立して開発・管理される小規模なプロジェクトのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
+      "title": "What's new in the .NET 11 runtime",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-11-10T12:20:07Z",
+      "summary": ".NET 11のランタイムにおいて、x86/x64およびArm64アーキテクチャの最小ハードウェア要件が引き上げられました。x86/x64のベースラインがx86-64-v1からx86-64-v2へ変更されました。コードベースの保守複雑性を軽減し、OSの要件と合わせるためにこの更新が行われました。",
+      "headline": ".NET 11ランタイムで最小ハードウェア要件が更新",
+      "points": [
+        ".NET 11のランタイムにおいて、x86/x64およびArm64アーキテクチャの最小ハードウェア要件が引き上げられました。",
+        "x86/x64のベースラインがx86-64-v1からx86-64-v2へ変更されました。",
+        "コードベースの保守複雑性を軽減し、OSの要件と合わせるためにこの更新が行われました。"
+      ],
+      "impact": "古いハードウェアを使用している環境では.NET 11が動作しなくなるため、対応CPUの確認が必要です。",
+      "glossary": [
+        {
+          "term": "ランタイム",
+          "explanation": "プログラムを実行するために必要なソフトウェアや環境のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 27,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/",
+      "title": "AWS Nitro Sandboxes: Amazon EKS で実現するハードウェア強制型ワークロード分離",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-10T04:22:48.000Z",
+      "summary": "ポッドごとにハードウェアで強制されるセキュリティ境界を提供するAWS Nitro Sandboxesが発表されました。EKS Auto Modeではポッド仕様を1行変更するだけで有効化できます。分離モードと機密モードの2つのモードを備え、予測可能なパフォーマンスを実現します。",
+      "headline": "Amazon EKS向けAWS Nitro Sandboxesの提供を開始",
+      "points": [
+        "ポッドごとにハードウェアで強制されるセキュリティ境界を提供するAWS Nitro Sandboxesが発表されました。",
+        "EKS Auto Modeではポッド仕様を1行変更するだけで有効化できます。",
+        "分離モードと機密モードの2つのモードを備え、予測可能なパフォーマンスを実現します。"
+      ],
+      "impact": "管理者は専用マシンを用意せずに、共有クラスター上で強力な分離を必要とするワークロードを実行できます。",
+      "glossary": [
+        {
+          "term": "サンドボックス",
+          "explanation": "外部から隔離された安全な環境でプログラムを実行する仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 29,
+      "url": "https://www.blender.org/download/releases/5-3/",
+      "title": "Blender 5.3 released with Gaussian Splat support",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-10T16:15:43Z",
+      "summary": "Blender 5.3で3D Gaussian Splatsのネイティブサポートが追加されました。PLY、SPZ、glTFファイルからのインポートやGeometry Nodesでの処理が可能です。Principled BSDFでのDispersionサポートやDLSS 4.5 Ray Reconstructionの統合が行われました。",
+      "headline": "Gaussian Splatに対応したBlender 5.3がリリース",
+      "points": [
+        "Blender 5.3で3D Gaussian Splatsのネイティブサポートが追加されました。",
+        "PLY、SPZ、glTFファイルからのインポートやGeometry Nodesでの処理が可能です。",
+        "Principled BSDFでのDispersionサポートやDLSS 4.5 Ray Reconstructionの統合が行われました。"
+      ],
+      "impact": "ユーザーはBlender上で3D Gaussian Splatsのインポートやレンダリングなどを直接行えるようになります。",
+      "glossary": [
+        {
+          "term": "ポイントクラウド",
+          "explanation": "3次元空間上の点の集まりによって形状を表現するデータ形式のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 166,
+    "shortlisted": 80,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 32337,
+    "outputTokens": 4685
+  },
+  "offline": false
+}

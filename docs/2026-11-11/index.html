@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-11</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月11日(水)</p>
+<p class="meta">更新 2026-11-11 07:23 · 取得ソース 22/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">1</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/" target="_blank" rel="noopener noreferrer">Anthropicが新AIモデルClaude Fable 5.2をリリース</a></h3>
+<p class="orig">原題: Anthropicが新AI「Claude Fable 5.2」をリリース。ぶっちぎりの高性能、実用例はもはや異次元 | ギズモード・ジャパン</p>
+<p class="src">出典: <a href="https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>Anthropicが新しい最先端AIモデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースした。</li><li>コーディング、科学、サイバーセキュリティなどの分野で高いパフォーマンスを発揮し、ロボティクスでも大きな伸びを見せている。</li><li>有料ユーザーや各種プラットフォームですでに利用可能となっている。</li></ul><p class="impact"><b>影響</b>有料ユーザーや開発者は、新しい最先端モデルを利用して高度なタスクや開発に活用することができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ベンチマーク</dt><dd>コンピュータのハードウェアやソフトウェアの性能を測定し、比較するためのテストのこと。</dd><dt>API料金</dt><dd>プログラムから外部のサービスやAI機能を利用した際に発生する使用料金のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://forest.watch.impress.co.jp/docs/news/2154982.html" target="_blank" rel="noopener noreferrer">Anthropicが新AIモデルClaude Fable 5.2などを発表</a></h3>
+<p class="orig">原題: Anthropic、「Claude Fable 5.2」「Claude Mythos 5.2」を発表 ～最強モデルがより高速・安価に／ほぼすべての評価で「Opus 5.5」を凌駕、物理学の未解決問題を解いた実績も</p>
+<p class="src">出典: <a href="https://forest.watch.impress.co.jp/docs/news/2154982.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>Anthropicが最上位モデル「Claude Fable 5.2」と「Claude Mythos 5.2」を発表した。</li><li>出力の生成速度が最大30%高速になり、API標準料金は入力が100万トークンあたり8米ドル、出力が40米ドルとなった。</li><li>コーディング、推論、画像認識などの分野で前モデルを上回る性能を発揮する。</li></ul><p class="impact"><b>影響</b>開発者や企業は、新しいAPIや各プラットフォームを通じて最新モデルを利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIがテキストを処理する際のデータの単位であり、文字や単語の断片に分割される。</dd><dt>セーフガード</dt><dd>システムやデータの悪用を防ぐための安全装置や保護機能のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://qiita.com/quotidia/items/3fd1e9686609a066e009" target="_blank" rel="noopener noreferrer">Anthropicが最上位AIモデルClaude Fable 5.2を発表</a></h3>
+<p class="orig">原題: Claude Fable 5.2の要点：API料金8ドル/40ドル、出力最大30%高速、1,000エージェントでOS試作</p>
+<p class="src">出典: <a href="https://qiita.com/quotidia/items/3fd1e9686609a066e009" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-11</p>
+<ul class="points"><li>Anthropicが最上位モデルの新版「Claude Fable 5.2」と「Mythos 5.2」を発表した。</li><li>API料金は入力100万トークンあたり8ドル、出力40ドルで、出力速度は最大30%高速化した。</li><li>1,000体を超えるAIを指揮してノートPCで起動するOSの試作品を作るなどの実験結果が示された。</li></ul><p class="impact"><b>影響</b>開発者は新しいAPI料金や性能を確認し、必要に応じてシステムに組み込んで利用することができる。</p>
+
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/" target="_blank" rel="noopener noreferrer">Anthropicが新AIモデルClaude Fable 5.2をリリース</a></h3>
+<p class="orig">原題: Anthropicが新AI「Claude Fable 5.2」をリリース。ぶっちぎりの高性能、実用例はもはや異次元 | ギズモード・ジャパン</p>
+<p class="src">出典: <a href="https://www.gizmodo.jp/article/2611-claude-fable-5-2-release/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>Anthropicが新しい最先端AIモデル「Claude Fable 5.2」と「Claude Mythos 5.2」をリリースした。</li><li>コーディング、科学、サイバーセキュリティなどの分野で高いパフォーマンスを発揮し、ロボティクスでも大きな伸びを見せている。</li><li>有料ユーザーや各種プラットフォームですでに利用可能となっている。</li></ul><p class="impact"><b>影響</b>有料ユーザーや開発者は、新しい最先端モデルを利用して高度なタスクや開発に活用することができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ベンチマーク</dt><dd>コンピュータのハードウェアやソフトウェアの性能を測定し、比較するためのテストのこと。</dd><dt>API料金</dt><dd>プログラムから外部のサービスやAI機能を利用した際に発生する使用料金のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://forest.watch.impress.co.jp/docs/news/2154982.html" target="_blank" rel="noopener noreferrer">Anthropicが新AIモデルClaude Fable 5.2などを発表</a></h3>
+<p class="orig">原題: Anthropic、「Claude Fable 5.2」「Claude Mythos 5.2」を発表 ～最強モデルがより高速・安価に／ほぼすべての評価で「Opus 5.5」を凌駕、物理学の未解決問題を解いた実績も</p>
+<p class="src">出典: <a href="https://forest.watch.impress.co.jp/docs/news/2154982.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>Anthropicが最上位モデル「Claude Fable 5.2」と「Claude Mythos 5.2」を発表した。</li><li>出力の生成速度が最大30%高速になり、API標準料金は入力が100万トークンあたり8米ドル、出力が40米ドルとなった。</li><li>コーディング、推論、画像認識などの分野で前モデルを上回る性能を発揮する。</li></ul><p class="impact"><b>影響</b>開発者や企業は、新しいAPIや各プラットフォームを通じて最新モデルを利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIがテキストを処理する際のデータの単位であり、文字や単語の断片に分割される。</dd><dt>セーフガード</dt><dd>システムやデータの悪用を防ぐための安全装置や保護機能のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/quotidia/items/3fd1e9686609a066e009" target="_blank" rel="noopener noreferrer">Anthropicが最上位AIモデルClaude Fable 5.2を発表</a></h3>
+<p class="orig">原題: Claude Fable 5.2の要点：API料金8ドル/40ドル、出力最大30%高速、1,000エージェントでOS試作</p>
+<p class="src">出典: <a href="https://qiita.com/quotidia/items/3fd1e9686609a066e009" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-11</p>
+<ul class="points"><li>Anthropicが最上位モデルの新版「Claude Fable 5.2」と「Mythos 5.2」を発表した。</li><li>API料金は入力100万トークンあたり8ドル、出力40ドルで、出力速度は最大30%高速化した。</li><li>1,000体を超えるAIを指揮してノートPCで起動するOSの試作品を作るなどの実験結果が示された。</li></ul><p class="impact"><b>影響</b>開発者は新しいAPI料金や性能を確認し、必要に応じてシステムに組み込んで利用することができる。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.anthropic.com/news/roadshow-launch" target="_blank" rel="noopener noreferrer">Anthropicが新規株式公開に向けたロードショーを開始</a></h3>
+<p class="orig">原題: Anthropic launches roadshow for proposed initial public offering</p>
+<p class="src">出典: <a href="https://www.anthropic.com/news/roadshow-launch" target="_blank" rel="noopener noreferrer">Anthropic News</a> · 2026-11-10</p>
+<ul class="points"><li>AnthropicがクラスA普通株式の新規株式公開（IPO）に向けたロードショーを開始した。</li><li>提案されている公募株式数は825,000,000株であり、そのうち801,351,354株を同社が提供する。</li><li>想定される初回公募価格は1株あたり70.00米ドルから78.00米ドルの範囲となっている。</li></ul><p class="impact"><b>影響</b>投資家や関係者は、米国証券取引委員会への登録状況や公募価格に関する情報を確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>新規株式公開</dt><dd>企業が株式を証券取引所に上場し、一般の投資家が売買できるようにすること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow" target="_blank" rel="noopener noreferrer">Anthropicが新規株式公開に向けた想定価格帯を提示</a></h3>
+<p class="orig">原題: 【個人向け】AnthropicのIPOは買える？投資前に知りたい価格とリスク</p>
+<p class="src">出典: <a href="https://zenn.dev/student_blog/articles/anthropic-ipo-claude-money-flow" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>AnthropicはIPOの想定価格帯を1株70〜78ドルと示した。</li><li>SBI証券は日本国内の個人向けに募集の取扱いを予定している。</li><li>公開価格と上場後の市場価格は異なり、為替変動の影響も受ける。</li></ul><p class="impact"><b>影響</b>日本国内の個人投資家は、証券会社の正式な申込条件や目論見書を確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>IPO</dt><dd>新規株式公開のことで、未上場の企業が株式を証券取引所に上場し、誰でも買えるようにすること。</dd><dt>想定価格帯</dt><dd>IPOを行う際に、公開価格を決めるための目安となる株価の範囲のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/" target="_blank" rel="noopener noreferrer">AnthropicのIPOで創業者の株式売却計画が明らかに</a></h3>
+<p class="orig">原題: All 7 Anthropic founders will each cash out about $250M in IPO</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-11</p>
+<ul class="points"><li>7人の共同創業者全員がIPO時にそれぞれ約250万株を売却する予定である。</li><li>中間価格の74ドルで計算した場合、各創業者は約2億5000万ドルを受け取る。</li><li>創業者グループはクラスF株を通じて51.1%の議決権を維持する。</li></ul><p class="impact"><b>影響</b>投資家は目論見書の記載から、創業者の保有割合や議決権の状況を確認できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>クラスA株</dt><dd>一般的な議決権を持つ株式のクラスの一つで、今回のIPOで一般向けにも流通するもの。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank" rel="noopener noreferrer">Anthropicがビデオ通話に対応する会議支援機能などを発表</a></h3>
+<p class="orig">原題: Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-11</p>
+<ul class="points"><li>新機能のClaude Meetingsにより、Claudeがビデオ通話に参加してリアルタイムで作業を行う。</li><li>Claude WhiteboardsやClaude Sheetsを通じて、共同でのボード作業や表計算が可能になる。</li><li>Claude Dataとしてダッシュボード作成機能などが正式に提供開始された。</li></ul><p class="impact"><b>影響</b>TeamおよびEnterpriseプランの利用者は、ビデオ通話やワークスペースで新しい生産性機能を使える。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ベータ</dt><dd>正式版を公開する前に、テストを目的としてユーザーに限定提供される段階のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://claude.com/resources/articles/sheets-whiteboards-data" target="_blank" rel="noopener noreferrer">AnthropicがClaudeの新機能とデータ連携ツールを発表</a></h3>
+<p class="orig">原題: Claude Whiteboards, Claude Sheets, and Claude Data</p>
+<p class="src">出典: <a href="https://claude.com/resources/articles/sheets-whiteboards-data" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-11</p>
+<ul class="points"><li>Claude WhiteboardsとClaude Sheetsのベータ版がすべての有料プランで提供される。</li><li>Claude DashboardsはClaude Dataに名称を変更し、正式に一般提供が開始された。</li><li>チームでのリアルタイムな共同編集や、外部ツールとの連携が強化された。</li></ul><p class="impact"><b>影響</b>有料プランのユーザーは、ドキュメントやデータをClaude上で直接管理・編集できるようになる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ダッシュボード</dt><dd>重要なデータや指標を1つの画面にまとめて視覚的に表示する一覧画面のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/" target="_blank" rel="noopener noreferrer">OpenAIがChatGPTに企業の信頼性向上を図る新しいビジネスプロフィールを導入</a></h3>
+<p class="orig">原題: OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-11</p>
+<ul class="points"><li>企業が製品やサービスの情報を確認・更新できるビジネスプロフィール機能をベータ版として提供開始した</li><li>条件を満たす企業はChatGPT上で質問に答える専用のビジネスエージェントを作成できる</li><li>プロフィール閲覧数やウェブサイトのクリック数などの利用インサイトを確認できる</li></ul><p class="impact"><b>影響</b>対象となる企業は、ビジネスプロフィールの認証や専用エージェントの設定を通じてChatGPT内での情報発信を行える。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/oikon/articles/claude-code-recipe" target="_blank" rel="noopener noreferrer">Claude Codeの効率的な開発を支える5つの便利なTipsと機能を紹介</a></h3>
+<p class="orig">原題: Claude Codeで最近使っているTips【2026/11】</p>
+<p class="src">出典: <a href="https://zenn.dev/oikon/articles/claude-code-recipe" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>/btwコマンドを使うと会話履歴に残さずに現在のセッションについて質問できる</li><li>HTML形式を採用することでドキュメントの視認性を高めArtifacts経由で確認できる</li><li>Claude Modsやprompt-cache-controlを使うとカスタマイズやプロンプトキャッシュの状態管理ができる</li></ul><p class="impact"><b>影響</b>Claude Codeを利用する開発者は、紹介されたコマンドやプラグインを活用して作業効率やキャッシュ状態の管理を改善できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>プロンプトキャッシュ</dt><dd>過去のやり取りを一時保存し、同じ内容の再処理コストや遅延を抑える仕組みのこと</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://gigazine.net/news/20261110-claude-opus-nerf/" target="_blank" rel="noopener noreferrer">Claude Opus 5.5の推論能力低下が指摘され利用履歴に基づく調査が行われた</a></h3>
+<p class="orig">原題: Claude Opus 5.5の推論能力が11月3日から急激に低下したとの指摘、1400件の利用履歴から変化が判明</p>
+<p class="src">出典: <a href="https://gigazine.net/news/20261110-claude-opus-nerf/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-10</p>
+<ul class="points"><li>開発者が約1400件の利用履歴を分析したところ2026年11月3日頃から思考を示す文章や推論量に変化が見つかった</li><li>最初の操作までに使用する思考トークン数が約36％減少しエラー指標が増加したとの報告がある</li><li>別の調査ではAnthropicが思考内容の要約仕組みをアカウントごとに変更したことが原因ではないかとも指摘されている</li></ul><p class="impact"><b>影響</b>開発者や利用者は、モデルの挙動や思考プロセスの変化に注意しながらAIの出力を確認する必要がある。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy" target="_blank" rel="noopener noreferrer">コンテキスト圧縮プロキシを導入すると圧縮は成功するがキャッシュが壊れる検証結果</a></h3>
+<p class="orig">原題: Claude Code CLIを文脈圧縮プロキシでラップしたら、圧縮は動いたがキャッシュが壊れた話</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-042-billion-context-compression-proxy" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>billion-contextプロキシを介してClaude Codeを実行したところ長大なやり取りの可逆圧縮が動作した</li><li>短い検証スコープでは圧縮によってプロンプトキャッシュの前提が壊れトータルコストがかえって増加した</li><li>ベンチマークで示される大幅なコスト削減効果は、キャッシュの再構築コストを上回る非常に長いセッションでのみ発揮される</li></ul><p class="impact"><b>影響</b>開発者は、エージェントとAPIの間に圧縮プロキシを導入する際、セッションの規模やキャッシュへの影響を考慮する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>プロキシ</dt><dd>クライアントとサーバーの間に入り、通信を中継・代行するシステムのこと</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2" target="_blank" rel="noopener noreferrer">Claude Fable 5.2のプロンプトガイドと機能の特徴</a></h3>
+<p class="orig">原題: Claude Fable 5.2のプロンプトガイドを読んで正直に思ったことを書く</p>
+<p class="src">出典: <a href="https://zenn.dev/tree_and_tree/articles/thoughts-on-claude-fable-5-2" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-10</p>
+<ul class="points"><li>APIのデフォルトのエフォートレベルはhighであり、トークン消費や思考時間を考慮して調整する。</li><li>コードの所有権の提示やシステムプロンプトの工夫により、モデルの出力や安全性の挙動が変わる。</li></ul><p class="impact"><b>影響</b>Claude Fable 5.2を利用する開発者は、エフォート設定やシステムプロンプトの記述を調整する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>プロンプト</dt><dd>AIモデルに対して指示や入力を行うためのテキスト。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://inside.java/2026/11/09/inside-java-ticker-value-class/" target="_blank" rel="noopener noreferrer">Java Valhallaのバリュークラスによるティッカーの表現</a></h3>
+<p class="orig">原題: A Valhalla Ticker in One int</p>
+<p class="src">出典: <a href="https://inside.java/2026/11/09/inside-java-ticker-value-class/" target="_blank" rel="noopener noreferrer">Inside Java</a> · 2026-11-09</p>
+<ul class="points"><li>JEP 401のバリュークラスを用いて、1〜5文字の金融ティッカーシンボルを1つのint型に格納する。</li><li>アルファベットや数字などの文字を6ビットずつパックし、オブジェクトの割り当てなしで処理効率を高める。</li></ul><p class="impact"><b>影響</b>JDK 28のプレビュー機能を使う開発者は、メモリ効率のよいデータ構造を実装できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>バリュークラス</dt><dd>識別子を持たず、値そのものとして扱われるJavaの新しいクラス形式。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/10/spring-pulsar-new-home-asf" target="_blank" rel="noopener noreferrer">Spring for Apache PulsarがApache Software Foundationへ移行</a></h3>
+<p class="orig">原題: Announcing a New Home for Spring for Apache Pulsar</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/10/spring-pulsar-new-home-asf" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-10</p>
+<ul class="points"><li>プロジェクトがApache Pulsarプロジェクトのサブプロジェクトとして移管されました。</li><li>バージョン2.0.8がSpringプロジェクト傘下での最後のリリースとなります。</li><li>今後の更新や新機能を受け取るには依存関係やパッケージのインポート変更が必要です。</li></ul><p class="impact"><b>影響</b>開発者は今後のアップデートのために依存関係やインポート先を新しいプロジェクトへ移行する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>サブプロジェクト</dt><dd>メインとなる大きなプロジェクトの下で独立して開発・管理される小規模なプロジェクトのこと。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime" target="_blank" rel="noopener noreferrer">.NET 11ランタイムで最小ハードウェア要件が更新</a></h3>
+<p class="orig">原題: What&#39;s new in the .NET 11 runtime</p>
+<p class="src">出典: <a href="https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-10</p>
+<ul class="points"><li>.NET 11のランタイムにおいて、x86/x64およびArm64アーキテクチャの最小ハードウェア要件が引き上げられました。</li><li>x86/x64のベースラインがx86-64-v1からx86-64-v2へ変更されました。</li><li>コードベースの保守複雑性を軽減し、OSの要件と合わせるためにこの更新が行われました。</li></ul><p class="impact"><b>影響</b>古いハードウェアを使用している環境では.NET 11が動作しなくなるため、対応CPUの確認が必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ランタイム</dt><dd>プログラムを実行するために必要なソフトウェアや環境のこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/" target="_blank" rel="noopener noreferrer">Amazon Bedrock AgentCoreのWeb Search API提供開始</a></h3>
+<p class="orig">原題: Amazon Bedrock AgentCore now offers a Web Search API</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-10</p>
+<ul class="points"><li>単一のAPI呼び出しでウェブ検索を実行できるInvokeWebSearch APIが一般提供された。</li><li>リクエストはドメインや公開日時で絞り込め、料金は1,000クエリあたり7ドルである。</li></ul><p class="impact"><b>影響</b>AWSユーザーは、追加のリソース構築なしでアプリケーションやデータパイプラインからウェブ検索機能を利用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>API</dt><dd>ソフトウェア同士が機能を共有するための仕組みや窓口のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/why-policy-in-amazon-bedrock-agentcore-chose-cedar-for-securing-agentic-workflows/" target="_blank" rel="noopener noreferrer">Amazon Bedrock AgentCore PolicyにおけるCedarの採用</a></h3>
+<p class="orig">原題: Amazon Bedrock AgentCore Policy がエージェンティックワークフローの保護に Cedar を採用した理由</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/why-policy-in-amazon-bedrock-agentcore-chose-cedar-for-securing-agentic-workflows/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-10</p>
+<ul class="points"><li>LLMの非決定論的な動作やセキュリティリスクに対応するため、外部の認可レイヤーが必要となる。</li><li>Cedar言語と自動推論機能を用いて、エージェントが呼び出すツールへのアクセスを安全に制御する。</li></ul><p class="impact"><b>影響</b>エージェントのツールアクセスを管理する管理者は、Cedarポリシーを用いて安全境界を設定できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LLM</dt><dd>膨大なテキストデータを学習して自然言語処理を行う大規模言語モデル。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/" target="_blank" rel="noopener noreferrer">Amazon EKS向けAWS Nitro Sandboxesの提供を開始</a></h3>
+<p class="orig">原題: AWS Nitro Sandboxes: Amazon EKS で実現するハードウェア強制型ワークロード分離</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-10</p>
+<ul class="points"><li>ポッドごとにハードウェアで強制されるセキュリティ境界を提供するAWS Nitro Sandboxesが発表されました。</li><li>EKS Auto Modeではポッド仕様を1行変更するだけで有効化できます。</li><li>分離モードと機密モードの2つのモードを備え、予測可能なパフォーマンスを実現します。</li></ul><p class="impact"><b>影響</b>管理者は専用マシンを用意せずに、共有クラスター上で強力な分離を必要とするワークロードを実行できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>サンドボックス</dt><dd>外部から隔離された安全な環境でプログラムを実行する仕組みのこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.blender.org/download/releases/5-3/" target="_blank" rel="noopener noreferrer">Gaussian Splatに対応したBlender 5.3がリリース</a></h3>
+<p class="orig">原題: Blender 5.3 released with Gaussian Splat support</p>
+<p class="src">出典: <a href="https://www.blender.org/download/releases/5-3/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-11</p>
+<ul class="points"><li>Blender 5.3で3D Gaussian Splatsのネイティブサポートが追加されました。</li><li>PLY、SPZ、glTFファイルからのインポートやGeometry Nodesでの処理が可能です。</li><li>Principled BSDFでのDispersionサポートやDLSS 4.5 Ray Reconstructionの統合が行われました。</li></ul><p class="impact"><b>影響</b>ユーザーはBlender上で3D Gaussian Splatsのインポートやレンダリングなどを直接行えるようになります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ポイントクラウド</dt><dd>3次元空間上の点の集まりによって形状を表現するデータ形式のこと。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-10/">← 2026-11-10</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（42）</summary><ul><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
