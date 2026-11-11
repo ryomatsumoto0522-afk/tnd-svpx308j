@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-12</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月12日(木)</p>
+<p class="meta">更新 2026-11-12 08:28 · 取得ソース 23/23 · 選定 18件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">3</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003089/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeにSheetsとWhiteboardsを追加</a></h3>
+<p class="orig">原題: 「Claude」に共同編集の「Sheets」「Whiteboards」 外部アプリもClaude内で開いて作業可能に</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003089/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>チームで共同編集できるスプレッドシートやホワイトボード機能が全有料プラン向けにβ版として順次提供されます。</li><li>ダッシュボード機能はClaude Dataと改称し、一般提供を開始しました。</li><li>外部アプリをClaude内で直接開いて操作できる機能も拡張されました。</li></ul><p class="impact"><b>影響</b>Claude有料プランの利用者は順次新機能を使え、Enterprise管理者は有効化設定の確認ができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP（Model Context Protocol）</dt><dd>AIモデルが外部のデータソースやツールと連携するための共通規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003083/" target="_blank" rel="noopener noreferrer">Googleが最上位AIモデルのGemini 4 Carbonを提供開始</a></h3>
+<p class="orig">原題: Google、「Gemini 4 Carbon」一般提供開始 Geminiアプリでは最上位「AI Ultra」限定</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003083/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>Googleは複雑なコーディングや科学研究向けの最上位AIモデルGemini 4 Carbonの提供を開始しました。</li><li>一般ユーザーは月額1万4500円のGoogle AI Ultra契約者のみ利用可能です。</li><li>開発者向け有料APIでは11月30日まで100万入力トークン当たり2ドルで提供されます。</li></ul><p class="impact"><b>影響</b>一般利用者はGoogle AI Ultraへの加入、開発者はGoogle AI Studioでの利用手続きが必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIがテキストなどのデータを処理する際の最小の単位のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003085/" target="_blank" rel="noopener noreferrer">AnthropicがIPOの仮条件を1株70〜78ドルに設定</a></h3>
+<p class="orig">原題: Anthropic、IPOの仮条件を1株70?78ドルに 調達額は最大約644億ドル、GoogleとNVIDIAは各100億ドルを別途出資</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003085/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>米Anthropicが新規株式公開に向け、1株当たり70〜78ドルの仮条件を米証券取引委員会に届け出ました。</li><li>調達総額は最大約644億ドルで、GoogleやNVIDIAなど戦略パートナー7社も計260億ドル分を出資します。</li><li>新株と既存株主の売出分を合わせたクラスA普通株式8億2500万株が売り出されます。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>未上場企業が自社の株式を証券市場に新規公開して資金調達すること。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003089/" target="_blank" rel="noopener noreferrer">AnthropicがClaudeにSheetsとWhiteboardsを追加</a></h3>
+<p class="orig">原題: 「Claude」に共同編集の「Sheets」「Whiteboards」 外部アプリもClaude内で開いて作業可能に</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003089/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>チームで共同編集できるスプレッドシートやホワイトボード機能が全有料プラン向けにβ版として順次提供されます。</li><li>ダッシュボード機能はClaude Dataと改称し、一般提供を開始しました。</li><li>外部アプリをClaude内で直接開いて操作できる機能も拡張されました。</li></ul><p class="impact"><b>影響</b>Claude有料プランの利用者は順次新機能を使え、Enterprise管理者は有効化設定の確認ができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP（Model Context Protocol）</dt><dd>AIモデルが外部のデータソースやツールと連携するための共通規格。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003083/" target="_blank" rel="noopener noreferrer">Googleが最上位AIモデルのGemini 4 Carbonを提供開始</a></h3>
+<p class="orig">原題: Google、「Gemini 4 Carbon」一般提供開始 Geminiアプリでは最上位「AI Ultra」限定</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003083/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>Googleは複雑なコーディングや科学研究向けの最上位AIモデルGemini 4 Carbonの提供を開始しました。</li><li>一般ユーザーは月額1万4500円のGoogle AI Ultra契約者のみ利用可能です。</li><li>開発者向け有料APIでは11月30日まで100万入力トークン当たり2ドルで提供されます。</li></ul><p class="impact"><b>影響</b>一般利用者はGoogle AI Ultraへの加入、開発者はGoogle AI Studioでの利用手続きが必要です。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>トークン</dt><dd>AIがテキストなどのデータを処理する際の最小の単位のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/11/2000003085/" target="_blank" rel="noopener noreferrer">AnthropicがIPOの仮条件を1株70〜78ドルに設定</a></h3>
+<p class="orig">原題: Anthropic、IPOの仮条件を1株70?78ドルに 調達額は最大約644億ドル、GoogleとNVIDIAは各100億ドルを別途出資</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/11/2000003085/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-11</p>
+<ul class="points"><li>米Anthropicが新規株式公開に向け、1株当たり70〜78ドルの仮条件を米証券取引委員会に届け出ました。</li><li>調達総額は最大約644億ドルで、GoogleやNVIDIAなど戦略パートナー7社も計260億ドル分を出資します。</li><li>新株と既存株主の売出分を合わせたクラスA普通株式8億2500万株が売り出されます。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IPO</dt><dd>未上場企業が自社の株式を証券市場に新規公開して資金調達すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener noreferrer">Googleが高速な判定を行うGemini Decisions APIを発表</a></h3>
+<p class="orig">原題: Gemini Decisions API: Fast, calibrated multimodal decisions</p>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener noreferrer">Google AI Blog</a> · 2026-11-12</p>
+<ul class="points"><li>Googleは二者択一や選択肢の判定を高速に行うGemini Decisions APIを発表しました。</li><li>1入力につき最大1000問の判定を、150〜250ミリ秒のレイテンシで処理します。</li><li>費用は100万入力トークン当たり0.10ドルで、出力トークンの課金はありません。</li></ul><p class="impact"><b>影響</b>開発者はGoogle AI StudioからGemini API経由で新エンドポイントを利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>レイテンシ</dt><dd>データの処理要求を送ってから結果が返ってくるまでの遅延時間のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" target="_blank" rel="noopener noreferrer">Googleが最上位AI「Gemini 4 Carbon」の提供を開始</a></h3>
+<p class="orig">原題: Gemini 4 Carbon is now available</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-11</p>
+<ul class="points"><li>複雑なコーディングや科学的推論に対応するフロンティアモデルです。</li><li>複数ベンチマークで首位を獲得し競合比2倍以上低コストで動作します。</li><li>APIは入力100万トークンあたり2ドルなどの価格で提供されます。</li></ul><p class="impact"><b>影響</b>開発者や企業はGoogle AI Studio等を通じて本モデルを利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>エージェント型ワークフロー</dt><dd>AIが自律的に計画を立て、ツール操作や検証を繰り返しながら進める作業工程。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/" target="_blank" rel="noopener noreferrer">Googleがロボット向けAI「Gemini Robotics 2.5」を発表</a></h3>
+<p class="orig">原題: Gemini Robotics 2.5 accelerates real-world general dexterity</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-10</p>
+<ul class="points"><li>視覚と行動を統合しロボットの作業適応力や学習速度を強化しました。</li><li>メルセデス工場の実証では部品仕分けで成功率96%を記録しました。</li><li>従来モデルと比べ成功率が最大100%向上し作業時間も短縮しました。</li></ul><p class="impact"><b>影響</b>提携ロボット開発企業は順次展開される本モデルを自社システムで利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>VLAモデル</dt><dd>画像などの視覚情報と言語指示を解釈し、ロボットの具体的な物理行動を出力するAIモデル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener noreferrer">Googleがソフトを数学的に厳密検証するAlphaProof Codeを発表</a></h3>
+<p class="orig">原題: Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-10</p>
+<ul class="points"><li>AI群が暗号プロトコルの実装コードを数学的に検証する新技術です。</li><li>Signalのコードを対象に4週間で検証を完了させ安全性を証明しました。</li><li>証明言語Leanのコードを600万行超生成し人の確認範囲を1%に抑えました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>形式検証</dt><dd>プログラムが仕様通りに正しく動作することを、数学的な証明によって厳密に確かめる手法。</dd><dt>Lean</dt><dd>数学の定理証明を記述し、その正しさをコンピュータで自動検査するための専用プログラミング言語。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWSがBedrock AgentCore向けのWeb Search APIを提供開始</a></h3>
+<p class="orig">原題: Introducing the Web Search API on Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-12</p>
+<ul class="points"><li>ゲートウェイ構築なしで単一のAPIから最新Web検索結果を取得できます。</li><li>Amazon運用のWeb検索基盤を使いAWSのIAM認証やSDKに対応します。</li><li>独自の自律エージェントや検索ダッシュボード等に直接組み込みが可能です。</li></ul><p class="impact"><b>影響</b>開発者はIAM権限を付与することで自社アプリ等から直接Web検索を実行できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>IAM</dt><dd>AWSリソースへのアクセスを認証し、誰にどの操作を許可するかを一元管理するセキュリティ機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/ghorbelhamdi/items/9bc8cdf716fce6799b9a" target="_blank" rel="noopener noreferrer">AIがAndroid端末を操作できるOSSアプリ「Buddy」が公開された</a></h3>
+<p class="orig">原題: AIエージェントにAndroidスマホを操作させるOSSアプリ「Buddy」を作った（Claude Code / Codex / MCP）</p>
+<p class="src">出典: <a href="https://qiita.com/ghorbelhamdi/items/9bc8cdf716fce6799b9a" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-12</p>
+<ul class="points"><li>AccessibilityServiceや内蔵Linuxを使い、AIが画面の読み取りやタップ操作を行います。</li><li>Claude Codeなど5種のエージェントに対応し、Android 11以上の端末でroot化不要で動作します。</li><li>バージョン2.3では仮想ディスプレイによるバックグラウンド操作機能も追加されました。</li></ul><p class="impact"><b>影響</b>利用したい人はGitHubからAPKを導入し、ユーザー補助サービスやエージェントを設定して使います。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを接続するための標準的な通信規約。</dd><dt>AccessibilityService</dt><dd>支援技術向けに画面情報の取得や操作を可能にするAndroidの機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/clairechenrin/articles/b1d3a4b4a620d7" target="_blank" rel="noopener noreferrer">人とAIが並行作業できる新ブラウザ「ego lite」が開発される</a></h3>
+<p class="orig">原題: AIにブラウザを任せている間、自分は何を使う？ego liteを作った理由</p>
+<p class="src">出典: <a href="https://zenn.dev/clairechenrin/articles/b1d3a4b4a620d7" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-11</p>
+<ul class="points"><li>作業領域を分けるSpace機能により、同一のログイン状態を保ちながら人とAIが別々に作業できます。</li><li>画面要素を構造化テキストで返すSnapshotなどを使い、AIに必要な情報だけを渡して操作します。</li><li>ego liteはmacOSとWindows向けに無料で提供されています。</li></ul><p class="impact"><b>影響</b>ブラウザでの画面確認や調査をAIと分担したい開発者は、公式サイトから無料で導入して利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Chromium</dt><dd>Google ChromeなどのベースになっているオープンソースのWebブラウザ基盤。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/numachang/articles/vscode-claude-code-worktree-parallel" target="_blank" rel="noopener noreferrer">Claude Codeをworktree別に並列実行できるアプリが自作された</a></h3>
+<p class="orig">原題: VS Codeのウィンドウだらけで限界だったから、Claude Codeをworktreeごとに並列で回せる開発環境を自作した話</p>
+<p class="src">出典: <a href="https://zenn.dev/numachang/articles/vscode-claude-code-worktree-parallel" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-11</p>
+<ul class="points"><li>「Worktabs」はworktreeごとのVS Codeを1画面のタブにまとめ、全セッションの状態を表示します。</li><li>承認待ちや作業完了をバッジとOS通知で知らせることで、進行状況の見回り作業をなくします。</li><li>WindowsとmacOSで動作し、独自環境を作らずVS Codeの公式拡張をそのまま活用できます。</li></ul><p class="impact"><b>影響</b>複数のworktreeでClaude Codeを並列稼働させている開発者は、ウィンドウ管理の負担を減らせます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>git worktree</dt><dd>1つのリポジトリから複数のブランチを別々のフォルダに同時に展開して作業できるGitの機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/soloraid/articles/1a3cc3034c6252" target="_blank" rel="noopener noreferrer">Claude Codeを無人で定期実行する際に決めるべき要点が解説された</a></h3>
+<p class="orig">原題: Claude Code を定期実行で回す前に決めておく 5 つのこと</p>
+<p class="src">出典: <a href="https://zenn.dev/soloraid/articles/1a3cc3034c6252" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-11</p>
+<ul class="points"><li>人が確認できない環境での事故を防ぐため、実行前に整理すべき5つの設計ポイントを解説しています。</li><li>実行可能な権限を厳格に絞り、プロンプトではなくコードに手順順序を持たせる手法などが紹介されています。</li><li>二重起動や途中停止を想定した設計や、失敗時だけ通知を目立たせる監視の重要性を強調しています。</li></ul><p class="impact"><b>影響</b>Claude CodeをcronやCIで自動実行したい人は、権限や通知の設計を見直す必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>定期実行</dt><dd>指定した時刻や間隔に合わせて、システムやスクリプトを自動的に起動・処理させること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" target="_blank" rel="noopener noreferrer">ユナイテッド航空がAIエージェントによる航空券の代理予約を禁止</a></h3>
+<p class="orig">原題: United Airlines bans AI agents from booking flights on behalf of travelers</p>
+<p class="src">出典: <a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-12</p>
+<ul class="points"><li>個人情報漏洩のリスクや連邦規則への抵触を理由に、第三者AIによる航空券の代理予約を禁止しました。</li><li>自社のデジタル基盤に加え、旅行代理店や集約サイトを経由する不正なAIエージェントのアクセスを制限します。</li><li>KayakやGoogle Flightsなど既存の集約サイトを通じた航空券予約は引き続き利用可能です。</li></ul><p class="impact"><b>影響</b>AIによる自動予約を利用している旅行者は、ユナイテッド航空の予約では直接または既存の提携サイトを使う必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIエージェント</dt><dd>指示に基づいて自律的にタスクを判断し、人の代わりに調査や手続きを実行するプログラム。</dd><dt>アグリゲーター</dt><dd>複数の航空会社や予約サイトから料金や運航情報を集約し、比較・検索できるサービス。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://sterfield.co.jp/blog/blog-44/" target="_blank" rel="noopener noreferrer">主要ブラウザすべてで使えるようになった注目の新CSS機能5選</a></h3>
+<p class="orig">原題: 2026 年、すべての主要ブラウザで使えるようになった CSS 機能</p>
+<p class="src">出典: <a href="https://sterfield.co.jp/blog/blog-44/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-11</p>
+<ul class="points"><li>主要全ブラウザでBaselineとなった注目のCSS機能5つが、JS不要の実装例とともに紹介されました。</li><li>文字数に応じて伸縮するfield-sizingや、開いた状態を表す:open疑似クラスなどが登場しました。</li><li>要素の順番を扱う関数や文字の上下余白トリム、light-dark()での画像切り替えも解説されています。</li></ul><p class="impact"><b>影響</b>Web開発者は、JSを多用していた入力欄の自動伸縮や順次表示などをCSSのみで簡潔に実装できるようになります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Baseline Newly available</dt><dd>主要ブラウザすべての最新安定版で機能がサポートされ、安全に利用可能になった状態のこと。</dd><dt>疑似クラス</dt><dd>特定の状態（クリック中や開いている状態など）にある要素を指定して装飾するためのCSSの仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/" target="_blank" rel="noopener noreferrer">AWS Cloud WANがFlow Logsに対応し通信の集中可視化が可能に</a></h3>
+<p class="orig">原題: AWS Cloud WAN now supports Flow Logs</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-12</p>
+<ul class="points"><li>コアネットワーク全体のIPトラフィック情報を一元的に取得できるようになりました。</li><li>IPアドレスやポート、パケット損失数に加えCloud WANのメタデータも記録されます。</li><li>ログはCloudWatch LogsやS3、Firehoseへ出力でき、機能自体の追加料金は不要です。</li></ul><p class="impact"><b>影響</b>Cloud WANの管理者は、マネジメントコンソールやCLIから設定し通信監視やトラブル対応に活用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AWS Cloud WAN</dt><dd>クラウドとオンプレミスを接続する広域ネットワークを一元管理・構築できるAWSのサービス。</dd><dt>VPC Flow Logs</dt><dd>ネットワークインターフェイスを行き交うIPトラフィックの情報を取得・記録する機能。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.47news.jp/15215659.html" target="_blank" rel="noopener noreferrer">政府が高性能AIのリスクに対処するため開発事業者への罰則新設を検討</a></h3>
+<p class="orig">原題: 【速報】政府、AI開発事業者に罰則検討</p>
+<p class="src">出典: <a href="https://www.47news.jp/15215659.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-11</p>
+<ul class="points"><li>政府が高性能AIのリスクに対処するため、サービス開発事業者への罰則新設を検討していることが明らかになりました。</li><li>悪質な事業者への対抗手段として、法改正を視野に入れています。</li></ul>
+
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://pietromiotti.com/latest/maya-site" target="_blank" rel="noopener noreferrer">AIエージェントが公開データからマヤ遺跡を特定</a></h3>
+<p class="orig">原題: My AI agents found an unmapped Maya site</p>
+<p class="src">出典: <a href="https://pietromiotti.com/latest/maya-site" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-11</p>
+<ul class="points"><li>48のAIエージェントがNASAのライダーデータを分析し、未登録とみられたマヤ遺跡を特定しました。</li><li>約1,200平方キロメートルの密林データを画像化し、ピラミッドや広場などの人工的構造を探索しました。</li><li>その後の調査で、同遺跡は2025年の文献でマッピング済みだったことが判明しました。</li></ul><p class="impact"><b>影響</b>ライダーデータとAIを活用して考古学調査や遺跡探索を行いたい人は、既存の学術文献の調査手順を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ライダー（Lidar）</dt><dd>レーザー光を照射し、その反射光から対象物までの距離や形状を三次元で計測する技術です。</dd><dt>AIエージェント</dt><dd>指示された目標を達成するために、自律的に判断して一連の作業や情報収集を行うAIシステムです。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener noreferrer">Google DeepMindが細胞ごとのDNA変異影響を予測するAlphaGenome 2を発表</a></h3>
+<p class="orig">原題: AlphaGenome 2: Deciphering how cells read DNA to better understand disease</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-12</p>
+<ul class="points"><li>DNA変異が特定のヒト細胞型や状態に及ぼす影響を予測する次世代モデルです。</li><li>68組織の1億以上の細胞データを学習し、変異の特定数が従来比で約2倍に向上しました。</li><li>条件付きモデルへの刷新により、未測定の実験データの予測や補完も可能となりました。</li></ul><p class="impact"><b>影響</b>研究者はAlphaGenome APIを介して非商用研究で利用でき、商用向けにはプライベートプレビューが提供されます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>遺伝子変異</dt><dd>DNAの塩基配列が変化し、本来の配列と異なる状態になることです。</dd><dt>単一細胞解析</dt><dd>組織全体ではなく、個々の細胞ごとに遺伝子発現などを詳しく調べる手法です。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-11/">← 2026-11-11</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（43）</summary><ul><li><a href="../2026-11-12/">2026-11-12</a></li><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-11T23:28:57.140Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003089/",
+      "title": "「Claude」に共同編集の「Sheets」「Whiteboards」 外部アプリもClaude内で開いて作業可能に",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T00:33:03.000Z",
+      "summary": "チームで共同編集できるスプレッドシートやホワイトボード機能が全有料プラン向けにβ版として順次提供されます。ダッシュボード機能はClaude Dataと改称し、一般提供を開始しました。外部アプリをClaude内で直接開いて操作できる機能も拡張されました。",
+      "headline": "AnthropicがClaudeにSheetsとWhiteboardsを追加",
+      "points": [
+        "チームで共同編集できるスプレッドシートやホワイトボード機能が全有料プラン向けにβ版として順次提供されます。",
+        "ダッシュボード機能はClaude Dataと改称し、一般提供を開始しました。",
+        "外部アプリをClaude内で直接開いて操作できる機能も拡張されました。"
+      ],
+      "impact": "Claude有料プランの利用者は順次新機能を使え、Enterprise管理者は有効化設定の確認ができます。",
+      "glossary": [
+        {
+          "term": "MCP（Model Context Protocol）",
+          "explanation": "AIモデルが外部のデータソースやツールと連携するための共通規格。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/",
+      "title": "Google、「Gemini 4 Carbon」一般提供開始 Geminiアプリでは最上位「AI Ultra」限定",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T22:03:30.000Z",
+      "summary": "Googleは複雑なコーディングや科学研究向けの最上位AIモデルGemini 4 Carbonの提供を開始しました。一般ユーザーは月額1万4500円のGoogle AI Ultra契約者のみ利用可能です。開発者向け有料APIでは11月30日まで100万入力トークン当たり2ドルで提供されます。",
+      "headline": "Googleが最上位AIモデルのGemini 4 Carbonを提供開始",
+      "points": [
+        "Googleは複雑なコーディングや科学研究向けの最上位AIモデルGemini 4 Carbonの提供を開始しました。",
+        "一般ユーザーは月額1万4500円のGoogle AI Ultra契約者のみ利用可能です。",
+        "開発者向け有料APIでは11月30日まで100万入力トークン当たり2ドルで提供されます。"
+      ],
+      "impact": "一般利用者はGoogle AI Ultraへの加入、開発者はGoogle AI Studioでの利用手続きが必要です。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストなどのデータを処理する際の最小の単位のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003085/",
+      "title": "Anthropic、IPOの仮条件を1株70?78ドルに 調達額は最大約644億ドル、GoogleとNVIDIAは各100億ドルを別途出資",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T23:02:05.000Z",
+      "summary": "米Anthropicが新規株式公開に向け、1株当たり70〜78ドルの仮条件を米証券取引委員会に届け出ました。調達総額は最大約644億ドルで、GoogleやNVIDIAなど戦略パートナー7社も計260億ドル分を出資します。新株と既存株主の売出分を合わせたクラスA普通株式8億2500万株が売り出されます。",
+      "headline": "AnthropicがIPOの仮条件を1株70〜78ドルに設定",
+      "points": [
+        "米Anthropicが新規株式公開に向け、1株当たり70〜78ドルの仮条件を米証券取引委員会に届け出ました。",
+        "調達総額は最大約644億ドルで、GoogleやNVIDIAなど戦略パートナー7社も計260億ドル分を出資します。",
+        "新株と既存株主の売出分を合わせたクラスA普通株式8億2500万株が売り出されます。"
+      ],
+      "glossary": [
+        {
+          "term": "IPO",
+          "explanation": "未上場企業が自社の株式を証券市場に新規公開して資金調達すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "source": "Google AI Blog",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "summary": "Googleは二者択一や選択肢の判定を高速に行うGemini Decisions APIを発表しました。1入力につき最大1000問の判定を、150〜250ミリ秒のレイテンシで処理します。費用は100万入力トークン当たり0.10ドルで、出力トークンの課金はありません。",
+      "headline": "Googleが高速な判定を行うGemini Decisions APIを発表",
+      "points": [
+        "Googleは二者択一や選択肢の判定を高速に行うGemini Decisions APIを発表しました。",
+        "1入力につき最大1000問の判定を、150〜250ミリ秒のレイテンシで処理します。",
+        "費用は100万入力トークン当たり0.10ドルで、出力トークンの課金はありません。"
+      ],
+      "impact": "開発者はGoogle AI StudioからGemini API経由で新エンドポイントを利用できます。",
+      "glossary": [
+        {
+          "term": "レイテンシ",
+          "explanation": "データの処理要求を送ってから結果が返ってくるまでの遅延時間のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "title": "Gemini 4 Carbon is now available",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T16:03:47.000Z",
+      "summary": "複雑なコーディングや科学的推論に対応するフロンティアモデルです。複数ベンチマークで首位を獲得し競合比2倍以上低コストで動作します。APIは入力100万トークンあたり2ドルなどの価格で提供されます。",
+      "headline": "Googleが最上位AI「Gemini 4 Carbon」の提供を開始",
+      "points": [
+        "複雑なコーディングや科学的推論に対応するフロンティアモデルです。",
+        "複数ベンチマークで首位を獲得し競合比2倍以上低コストで動作します。",
+        "APIは入力100万トークンあたり2ドルなどの価格で提供されます。"
+      ],
+      "impact": "開発者や企業はGoogle AI Studio等を通じて本モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "エージェント型ワークフロー",
+          "explanation": "AIが自律的に計画を立て、ツール操作や検証を繰り返しながら進める作業工程。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-09T19:51:47.000Z",
+      "summary": "視覚と行動を統合しロボットの作業適応力や学習速度を強化しました。メルセデス工場の実証では部品仕分けで成功率96%を記録しました。従来モデルと比べ成功率が最大100%向上し作業時間も短縮しました。",
+      "headline": "Googleがロボット向けAI「Gemini Robotics 2.5」を発表",
+      "points": [
+        "視覚と行動を統合しロボットの作業適応力や学習速度を強化しました。",
+        "メルセデス工場の実証では部品仕分けで成功率96%を記録しました。",
+        "従来モデルと比べ成功率が最大100%向上し作業時間も短縮しました。"
+      ],
+      "impact": "提携ロボット開発企業は順次展開される本モデルを自社システムで利用できます。",
+      "glossary": [
+        {
+          "term": "VLAモデル",
+          "explanation": "画像などの視覚情報と言語指示を解釈し、ロボットの具体的な物理行動を出力するAIモデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-10T12:02:28.000Z",
+      "summary": "AI群が暗号プロトコルの実装コードを数学的に検証する新技術です。Signalのコードを対象に4週間で検証を完了させ安全性を証明しました。証明言語Leanのコードを600万行超生成し人の確認範囲を1%に抑えました。",
+      "headline": "Googleがソフトを数学的に厳密検証するAlphaProof Codeを発表",
+      "points": [
+        "AI群が暗号プロトコルの実装コードを数学的に検証する新技術です。",
+        "Signalのコードを対象に4週間で検証を完了させ安全性を証明しました。",
+        "証明言語Leanのコードを600万行超生成し人の確認範囲を1%に抑えました。"
+      ],
+      "glossary": [
+        {
+          "term": "形式検証",
+          "explanation": "プログラムが仕様通りに正しく動作することを、数学的な証明によって厳密に確かめる手法。"
+        },
+        {
+          "term": "Lean",
+          "explanation": "数学の定理証明を記述し、その正しさをコンピュータで自動検査するための専用プログラミング言語。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+      "title": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T23:13:16.000Z",
+      "summary": "ゲートウェイ構築なしで単一のAPIから最新Web検索結果を取得できます。Amazon運用のWeb検索基盤を使いAWSのIAM認証やSDKに対応します。独自の自律エージェントや検索ダッシュボード等に直接組み込みが可能です。",
+      "headline": "AWSがBedrock AgentCore向けのWeb Search APIを提供開始",
+      "points": [
+        "ゲートウェイ構築なしで単一のAPIから最新Web検索結果を取得できます。",
+        "Amazon運用のWeb検索基盤を使いAWSのIAM認証やSDKに対応します。",
+        "独自の自律エージェントや検索ダッシュボード等に直接組み込みが可能です。"
+      ],
+      "impact": "開発者はIAM権限を付与することで自社アプリ等から直接Web検索を実行できます。",
+      "glossary": [
+        {
+          "term": "IAM",
+          "explanation": "AWSリソースへのアクセスを認証し、誰にどの操作を許可するかを一元管理するセキュリティ機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://qiita.com/ghorbelhamdi/items/9bc8cdf716fce6799b9a",
+      "title": "AIエージェントにAndroidスマホを操作させるOSSアプリ「Buddy」を作った（Claude Code / Codex / MCP）",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T23:08:20.000Z",
+      "summary": "AccessibilityServiceや内蔵Linuxを使い、AIが画面の読み取りやタップ操作を行います。Claude Codeなど5種のエージェントに対応し、Android 11以上の端末でroot化不要で動作します。バージョン2.3では仮想ディスプレイによるバックグラウンド操作機能も追加されました。",
+      "headline": "AIがAndroid端末を操作できるOSSアプリ「Buddy」が公開された",
+      "points": [
+        "AccessibilityServiceや内蔵Linuxを使い、AIが画面の読み取りやタップ操作を行います。",
+        "Claude Codeなど5種のエージェントに対応し、Android 11以上の端末でroot化不要で動作します。",
+        "バージョン2.3では仮想ディスプレイによるバックグラウンド操作機能も追加されました。"
+      ],
+      "impact": "利用したい人はGitHubからAPKを導入し、ユーザー補助サービスやエージェントを設定して使います。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを接続するための標準的な通信規約。"
+        },
+        {
+          "term": "AccessibilityService",
+          "explanation": "支援技術向けに画面情報の取得や操作を可能にするAndroidの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/clairechenrin/articles/b1d3a4b4a620d7",
+      "title": "AIにブラウザを任せている間、自分は何を使う？ego liteを作った理由",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T13:32:21.000Z",
+      "summary": "作業領域を分けるSpace機能により、同一のログイン状態を保ちながら人とAIが別々に作業できます。画面要素を構造化テキストで返すSnapshotなどを使い、AIに必要な情報だけを渡して操作します。ego liteはmacOSとWindows向けに無料で提供されています。",
+      "headline": "人とAIが並行作業できる新ブラウザ「ego lite」が開発される",
+      "points": [
+        "作業領域を分けるSpace機能により、同一のログイン状態を保ちながら人とAIが別々に作業できます。",
+        "画面要素を構造化テキストで返すSnapshotなどを使い、AIに必要な情報だけを渡して操作します。",
+        "ego liteはmacOSとWindows向けに無料で提供されています。"
+      ],
+      "impact": "ブラウザでの画面確認や調査をAIと分担したい開発者は、公式サイトから無料で導入して利用できます。",
+      "glossary": [
+        {
+          "term": "Chromium",
+          "explanation": "Google ChromeなどのベースになっているオープンソースのWebブラウザ基盤。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/numachang/articles/vscode-claude-code-worktree-parallel",
+      "title": "VS Codeのウィンドウだらけで限界だったから、Claude Codeをworktreeごとに並列で回せる開発環境を自作した話",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T14:24:10.000Z",
+      "summary": "「Worktabs」はworktreeごとのVS Codeを1画面のタブにまとめ、全セッションの状態を表示します。承認待ちや作業完了をバッジとOS通知で知らせることで、進行状況の見回り作業をなくします。WindowsとmacOSで動作し、独自環境を作らずVS Codeの公式拡張をそのまま活用できます。",
+      "headline": "Claude Codeをworktree別に並列実行できるアプリが自作された",
+      "points": [
+        "「Worktabs」はworktreeごとのVS Codeを1画面のタブにまとめ、全セッションの状態を表示します。",
+        "承認待ちや作業完了をバッジとOS通知で知らせることで、進行状況の見回り作業をなくします。",
+        "WindowsとmacOSで動作し、独自環境を作らずVS Codeの公式拡張をそのまま活用できます。"
+      ],
+      "impact": "複数のworktreeでClaude Codeを並列稼働させている開発者は、ウィンドウ管理の負担を減らせます。",
+      "glossary": [
+        {
+          "term": "git worktree",
+          "explanation": "1つのリポジトリから複数のブランチを別々のフォルダに同時に展開して作業できるGitの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/soloraid/articles/1a3cc3034c6252",
+      "title": "Claude Code を定期実行で回す前に決めておく 5 つのこと",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T14:16:18.000Z",
+      "summary": "人が確認できない環境での事故を防ぐため、実行前に整理すべき5つの設計ポイントを解説しています。実行可能な権限を厳格に絞り、プロンプトではなくコードに手順順序を持たせる手法などが紹介されています。二重起動や途中停止を想定した設計や、失敗時だけ通知を目立たせる監視の重要性を強調しています。",
+      "headline": "Claude Codeを無人で定期実行する際に決めるべき要点が解説された",
+      "points": [
+        "人が確認できない環境での事故を防ぐため、実行前に整理すべき5つの設計ポイントを解説しています。",
+        "実行可能な権限を厳格に絞り、プロンプトではなくコードに手順順序を持たせる手法などが紹介されています。",
+        "二重起動や途中停止を想定した設計や、失敗時だけ通知を目立たせる監視の重要性を強調しています。"
+      ],
+      "impact": "Claude CodeをcronやCIで自動実行したい人は、権限や通知の設計を見直す必要があります。",
+      "glossary": [
+        {
+          "term": "定期実行",
+          "explanation": "指定した時刻や間隔に合わせて、システムやスクリプトを自動的に起動・処理させること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.47news.jp/15215659.html",
+      "title": "【速報】政府、AI開発事業者に罰則検討",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-11T09:55:01.000Z",
+      "summary": "政府が高性能AIのリスクに対処するため、サービス開発事業者への罰則新設を検討していることが明らかになりました。悪質な事業者への対抗手段として、法改正を視野に入れています。",
+      "headline": "政府が高性能AIのリスクに対処するため開発事業者への罰則新設を検討",
+      "points": [
+        "政府が高性能AIのリスクに対処するため、サービス開発事業者への罰則新設を検討していることが明らかになりました。",
+        "悪質な事業者への対抗手段として、法改正を視野に入れています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T21:24:35Z",
+      "summary": "個人情報漏洩のリスクや連邦規則への抵触を理由に、第三者AIによる航空券の代理予約を禁止しました。自社のデジタル基盤に加え、旅行代理店や集約サイトを経由する不正なAIエージェントのアクセスを制限します。KayakやGoogle Flightsなど既存の集約サイトを通じた航空券予約は引き続き利用可能です。",
+      "headline": "ユナイテッド航空がAIエージェントによる航空券の代理予約を禁止",
+      "points": [
+        "個人情報漏洩のリスクや連邦規則への抵触を理由に、第三者AIによる航空券の代理予約を禁止しました。",
+        "自社のデジタル基盤に加え、旅行代理店や集約サイトを経由する不正なAIエージェントのアクセスを制限します。",
+        "KayakやGoogle Flightsなど既存の集約サイトを通じた航空券予約は引き続き利用可能です。"
+      ],
+      "impact": "AIによる自動予約を利用している旅行者は、ユナイテッド航空の予約では直接または既存の提携サイトを使う必要があります。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "指示に基づいて自律的にタスクを判断し、人の代わりに調査や手続きを実行するプログラム。"
+        },
+        {
+          "term": "アグリゲーター",
+          "explanation": "複数の航空会社や予約サイトから料金や運航情報を集約し、比較・検索できるサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://pietromiotti.com/latest/maya-site",
+      "title": "My AI agents found an unmapped Maya site",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-11T12:05:22Z",
+      "summary": "48のAIエージェントがNASAのライダーデータを分析し、未登録とみられたマヤ遺跡を特定しました。約1,200平方キロメートルの密林データを画像化し、ピラミッドや広場などの人工的構造を探索しました。その後の調査で、同遺跡は2025年の文献でマッピング済みだったことが判明しました。",
+      "headline": "AIエージェントが公開データからマヤ遺跡を特定",
+      "points": [
+        "48のAIエージェントがNASAのライダーデータを分析し、未登録とみられたマヤ遺跡を特定しました。",
+        "約1,200平方キロメートルの密林データを画像化し、ピラミッドや広場などの人工的構造を探索しました。",
+        "その後の調査で、同遺跡は2025年の文献でマッピング済みだったことが判明しました。"
+      ],
+      "impact": "ライダーデータとAIを活用して考古学調査や遺跡探索を行いたい人は、既存の学術文献の調査手順を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "ライダー（Lidar）",
+          "explanation": "レーザー光を照射し、その反射光から対象物までの距離や形状を三次元で計測する技術です。"
+        },
+        {
+          "term": "AIエージェント",
+          "explanation": "指示された目標を達成するために、自律的に判断して一連の作業や情報収集を行うAIシステムです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "source": "Google DeepMind",
+      "genre": "tech",
+      "publishedAt": "2026-11-11T15:00:15.000Z",
+      "summary": "DNA変異が特定のヒト細胞型や状態に及ぼす影響を予測する次世代モデルです。68組織の1億以上の細胞データを学習し、変異の特定数が従来比で約2倍に向上しました。条件付きモデルへの刷新により、未測定の実験データの予測や補完も可能となりました。",
+      "headline": "Google DeepMindが細胞ごとのDNA変異影響を予測するAlphaGenome 2を発表",
+      "points": [
+        "DNA変異が特定のヒト細胞型や状態に及ぼす影響を予測する次世代モデルです。",
+        "68組織の1億以上の細胞データを学習し、変異の特定数が従来比で約2倍に向上しました。",
+        "条件付きモデルへの刷新により、未測定の実験データの予測や補完も可能となりました。"
+      ],
+      "impact": "研究者はAlphaGenome APIを介して非商用研究で利用でき、商用向けにはプライベートプレビューが提供されます。",
+      "glossary": [
+        {
+          "term": "遺伝子変異",
+          "explanation": "DNAの塩基配列が変化し、本来の配列と異なる状態になることです。"
+        },
+        {
+          "term": "単一細胞解析",
+          "explanation": "組織全体ではなく、個々の細胞ごとに遺伝子発現などを詳しく調べる手法です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/",
+      "title": "AWS Cloud WAN now supports Flow Logs",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-11T20:05:00.000Z",
+      "summary": "コアネットワーク全体のIPトラフィック情報を一元的に取得できるようになりました。IPアドレスやポート、パケット損失数に加えCloud WANのメタデータも記録されます。ログはCloudWatch LogsやS3、Firehoseへ出力でき、機能自体の追加料金は不要です。",
+      "headline": "AWS Cloud WANがFlow Logsに対応し通信の集中可視化が可能に",
+      "points": [
+        "コアネットワーク全体のIPトラフィック情報を一元的に取得できるようになりました。",
+        "IPアドレスやポート、パケット損失数に加えCloud WANのメタデータも記録されます。",
+        "ログはCloudWatch LogsやS3、Firehoseへ出力でき、機能自体の追加料金は不要です。"
+      ],
+      "impact": "Cloud WANの管理者は、マネジメントコンソールやCLIから設定し通信監視やトラブル対応に活用できます。",
+      "glossary": [
+        {
+          "term": "AWS Cloud WAN",
+          "explanation": "クラウドとオンプレミスを接続する広域ネットワークを一元管理・構築できるAWSのサービス。"
+        },
+        {
+          "term": "VPC Flow Logs",
+          "explanation": "ネットワークインターフェイスを行き交うIPトラフィックの情報を取得・記録する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://sterfield.co.jp/blog/blog-44/",
+      "title": "2026 年、すべての主要ブラウザで使えるようになった CSS 機能",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-11-11T10:02:13.000Z",
+      "summary": "主要全ブラウザでBaselineとなった注目のCSS機能5つが、JS不要の実装例とともに紹介されました。文字数に応じて伸縮するfield-sizingや、開いた状態を表す:open疑似クラスなどが登場しました。要素の順番を扱う関数や文字の上下余白トリム、light-dark()での画像切り替えも解説されています。",
+      "headline": "主要ブラウザすべてで使えるようになった注目の新CSS機能5選",
+      "points": [
+        "主要全ブラウザでBaselineとなった注目のCSS機能5つが、JS不要の実装例とともに紹介されました。",
+        "文字数に応じて伸縮するfield-sizingや、開いた状態を表す:open疑似クラスなどが登場しました。",
+        "要素の順番を扱う関数や文字の上下余白トリム、light-dark()での画像切り替えも解説されています。"
+      ],
+      "impact": "Web開発者は、JSを多用していた入力欄の自動伸縮や順次表示などをCSSのみで簡潔に実装できるようになります。",
+      "glossary": [
+        {
+          "term": "Baseline Newly available",
+          "explanation": "主要ブラウザすべての最新安定版で機能がサポートされ、安全に利用可能になった状態のこと。"
+        },
+        {
+          "term": "疑似クラス",
+          "explanation": "特定の状態（クリック中や開いている状態など）にある要素を指定して装飾するためのCSSの仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 169,
+    "shortlisted": 80,
+    "bodyFailures": 3,
+    "summaryFailures": 2
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 30606,
+    "outputTokens": 14330
+  },
+  "offline": false
+}
