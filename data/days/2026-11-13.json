@@ -1,0 +1,515 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-12T22:45:08.072Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "source": "Google AI Blog",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "summary": "Google検索に最大のモデル更新Gemini 4 Hydrogenが全ユーザーへ提供されました。誤字を含む複雑な質問の意図理解や指示追従能力が大幅に向上しています。画像や比較表を含む視覚的な回答を表示し多様な関連リンクを提示します。",
+      "headline": "Google検索にGemini 4 Hydrogenが導入",
+      "points": [
+        "Google検索に最大のモデル更新Gemini 4 Hydrogenが全ユーザーへ提供されました。",
+        "誤字を含む複雑な質問の意図理解や指示追従能力が大幅に向上しています。",
+        "画像や比較表を含む視覚的な回答を表示し多様な関連リンクを提示します。"
+      ],
+      "impact": "Google検索の利用者は、検索画面から複雑な質問を入力して機能を試すことができます。",
+      "glossary": [
+        {
+          "term": "クエリファンアウト",
+          "explanation": "検索クエリを関連する複数のサブトピックに分解して同時に検索する技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "title": "Gemini 4 Hydrogen",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T18:01:48Z",
+      "summary": "エージェント処理や日常コーディング向けに高速性と効率性を備えたモデルです。AI StudioやGemini APIなど各種サービスで即日利用可能となりました。前モデル比で2.5倍高速化しTerminal-Bench 4.1のスコアは57%に向上しました。",
+      "headline": "Googleが高速なAIモデルGemini 4 Hydrogenを発表",
+      "points": [
+        "エージェント処理や日常コーディング向けに高速性と効率性を備えたモデルです。",
+        "AI StudioやGemini APIなど各種サービスで即日利用可能となりました。",
+        "前モデル比で2.5倍高速化しTerminal-Bench 4.1のスコアは57%に向上しました。"
+      ],
+      "impact": "開発者や企業ユーザーは、Gemini APIやGoogle AI Studioなどを通じてモデルを利用できます。",
+      "glossary": [
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIモデルが一度に処理・参照できるテキストデータの最大量のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.itmedia.co.jp/news/article/2611/12/2000003126/",
+      "title": "Amazon、AWSのAPIを手元で再現する「AWS Emulator」を無償公開 コードはすべてAIエージェントが記述",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T00:56:17.000Z",
+      "summary": "ローカル環境でAWS向けアプリの構築や統合テストをアカウント不要で行えます。全コードが自律型AIエージェントによって記述されGitHubで公開されました。IAM等の評価は再現されないためセキュリティテストや本番環境への使用は推奨されません。",
+      "headline": "AWSがAPIをローカル再現するエミュレータを無償公開",
+      "points": [
+        "ローカル環境でAWS向けアプリの構築や統合テストをアカウント不要で行えます。",
+        "全コードが自律型AIエージェントによって記述されGitHubで公開されました。",
+        "IAM等の評価は再現されないためセキュリティテストや本番環境への使用は推奨されません。"
+      ],
+      "impact": "開発者はLinuxパッケージやDockerを利用してローカル環境に導入してテストできます。",
+      "glossary": [
+        {
+          "term": "CI/CD",
+          "explanation": "ソフトウェアの構築やテストおよびデプロイを自動化して連続的に行う手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://dev.classmethod.jp/articles/aws-emulator-local-try/",
+      "title": "AWS Emulator がリリースされたので試してみた | DevelopersIO",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T03:47:53.000Z",
+      "summary": "Dockerfileの作成からコンテナ起動およびヘルスチェックの手順が解説されています。環境変数を設定してAWS CLIの接続先をエミュレータに切り替える方法を示しています。S3のバケット作成やファイル操作および署名付きURLの発行などの動作を確認しています。",
+      "headline": "Dockerを用いたAWS Emulatorの起動と基本操作手順が公開",
+      "points": [
+        "Dockerfileの作成からコンテナ起動およびヘルスチェックの手順が解説されています。",
+        "環境変数を設定してAWS CLIの接続先をエミュレータに切り替える方法を示しています。",
+        "S3のバケット作成やファイル操作および署名付きURLの発行などの動作を確認しています。"
+      ],
+      "impact": "AWS Emulatorを試す開発者は、記載されたDockerfileと環境設定を参考に検証できます。",
+      "glossary": [
+        {
+          "term": "署名付きURL",
+          "explanation": "特定の有効期限内に限りリソースへのアクセス権限を付与するURLのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "title": "v2.1.323",
+      "source": "Claude Code",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T22:12:13.000Z",
+      "summary": "ClaudeがJavaScriptを書いてツールを実行する実験的なCode Modeが追加されました。プラグインの対応バージョン制限やTypeScriptフックの型チェック機能が追加されました。長時間フック実行時のハートビートや.docxファイルのサポートなど多数の改善が行われました。",
+      "headline": "Claude Codeのv2.1.323が公開されCode Modeなどが追加",
+      "points": [
+        "ClaudeがJavaScriptを書いてツールを実行する実験的なCode Modeが追加されました。",
+        "プラグインの対応バージョン制限やTypeScriptフックの型チェック機能が追加されました。",
+        "長時間フック実行時のハートビートや.docxファイルのサポートなど多数の改善が行われました。"
+      ],
+      "impact": "プラグイン開発者やClaude Codeを利用するユーザーは、新機能の有効化設定や互換性の仕様を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "Code Mode",
+          "explanation": "AIがJavaScriptを生成してツールを呼び出す実験的な機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
+      "title": "The next generation AgentCore runtime is now the default",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T05:00:00.000Z",
+      "summary": "アイドル状態の自動ゼロスケールやスナップショット復元により、起動時間が2秒未満に短縮されました。最大8 vCPUと32 GBメモリに対応し、セッションあたりの請求メモリを最大68%削減できます。東京を含む対応リージョンで新規ランタイムのデフォルトとなり、既存環境はplatformVersionの更新で移行できます。",
+      "headline": "Amazon Bedrock AgentCoreの次世代ランタイムが標準提供開始",
+      "points": [
+        "アイドル状態の自動ゼロスケールやスナップショット復元により、起動時間が2秒未満に短縮されました。",
+        "最大8 vCPUと32 GBメモリに対応し、セッションあたりの請求メモリを最大68%削減できます。",
+        "東京を含む対応リージョンで新規ランタイムのデフォルトとなり、既存環境はplatformVersionの更新で移行できます。"
+      ],
+      "impact": "既存のAgentCoreランタイムを更新したい開発者は、platformVersionをV2に設定して新しいランタイムへ移行する必要があります。",
+      "glossary": [
+        {
+          "term": "MicroVM",
+          "explanation": "軽量な仮想マシン技術で、高速起動とハードウェアレベルの安全な隔離を実現します。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai/",
+      "title": "Build autonomous AI agents with Amazon Bedrock and Spring AI",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T01:18:23.000Z",
+      "summary": "Java開発者が既存の技術やエコシステムを活かして本番仕様のAIエージェントを構築するパターンが紹介されました。エージェントに必要な要素として計画、ツール利用、メモリの3つの機能を挙げています。前提条件としてJDK 21やSpring Boot 4.1、Spring AI 2.0などの環境設定が必要です。",
+      "headline": "Spring AIとAmazon Bedrockによる自律型AI構築手法が公開",
+      "points": [
+        "Java開発者が既存の技術やエコシステムを活かして本番仕様のAIエージェントを構築するパターンが紹介されました。",
+        "エージェントに必要な要素として計画、ツール利用、メモリの3つの機能を挙げています。",
+        "前提条件としてJDK 21やSpring Boot 4.1、Spring AI 2.0などの環境設定が必要です。"
+      ],
+      "impact": "JavaでAIエージェントを構築する開発者は、JDK 21や必要なライブラリ構成を準備して解説のパターンを試すことができます。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "検索技術と生成AIを組み合わせ、外部知識を参照して回答精度を高める手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm/",
+      "title": "Building a self-service LLM gateway with Amazon Bedrock and LiteLLM",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T18:41:12.000Z",
+      "summary": "AWS Fargate上のLiteLLMを用いてAmazon BedrockをOpenAI互換APIとして提供する構成が紹介されました。セルフサービスポータルを通じて、ユーザーごとのコスト制御やAPIキーの発行が可能です。RDSやElastiCache、Langfuseを組み合わせることで利用状況や遅延の可視化を実現します。",
+      "headline": "Amazon BedrockとLiteLLMによるLLMゲートウェイ構築例が公開",
+      "points": [
+        "AWS Fargate上のLiteLLMを用いてAmazon BedrockをOpenAI互換APIとして提供する構成が紹介されました。",
+        "セルフサービスポータルを通じて、ユーザーごとのコスト制御やAPIキーの発行が可能です。",
+        "RDSやElastiCache、Langfuseを組み合わせることで利用状況や遅延の可視化を実現します。"
+      ],
+      "impact": "LLM基盤を提供するプラットフォームエンジニアは、提示された構成やAWS CDKコードを参考に自社向けのゲートウェイを構築できます。",
+      "glossary": [
+        {
+          "term": "LLMゲートウェイ",
+          "explanation": "複数モデルへのアクセスや認証、コスト管理を中央で一元化する中継システム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/",
+      "title": "Build composable, interoperable multi-agent systems with A2A on AWS",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T15:42:21.000Z",
+      "summary": "組織やフレームワークを超えるエージェント連携を行うA2AプロトコルのAWS構成が公表された。Amazon CognitoやOAuth 2.0を用い秘密情報を共有せず相互に認証を行う。エージェント追加時も既存構成を変更せずAgent Card登録のみで機能拡張が可能。",
+      "headline": "A2AでAWS上の異なるエージェント間連携を実現する構成が公開",
+      "points": [
+        "組織やフレームワークを超えるエージェント連携を行うA2AプロトコルのAWS構成が公表された。",
+        "Amazon CognitoやOAuth 2.0を用い秘密情報を共有せず相互に認証を行う。",
+        "エージェント追加時も既存構成を変更せずAgent Card登録のみで機能拡張が可能。"
+      ],
+      "impact": "異なるフレームワークや組織間でエージェントを相互連携させたい開発者が参照できる。",
+      "glossary": [
+        {
+          "term": "Agent-to-Agent (A2A)",
+          "explanation": "異なるフレームワークや組織のエージェント同士が相互運用するための標準プロトコル。"
+        },
+        {
+          "term": "OAuth 2.0",
+          "explanation": "ユーザーの資格情報を渡さずにサードパーティへアクセス権限を付与する標準認可プロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/",
+      "title": "OpenAI Codex on Amazon Bedrock",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-11T23:35:47.000Z",
+      "summary": "Amazon Bedrock上で動作するOpenAIモデルをCodexから呼び出す構築手法が示された。Native AWS AccessやAgentCore Gatewayなど組織の要件に応じた3つの経路を提示。IAM Identity Centerや既存のOkta等と連携し既存の認証基盤をそのまま使える。",
+      "headline": "BedrockでOpenAI Codexを利用する構成パターンが公開",
+      "points": [
+        "Amazon Bedrock上で動作するOpenAIモデルをCodexから呼び出す構築手法が示された。",
+        "Native AWS AccessやAgentCore Gatewayなど組織の要件に応じた3つの経路を提示。",
+        "IAM Identity Centerや既存のOkta等と連携し既存の認証基盤をそのまま使える。"
+      ],
+      "impact": "既存のAWS認証基盤や制御方針を維持したままCodexを導入したいプラットフォームチームが活用できる。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "様々な生成AIモデルをAPI経由で安全に呼び出して利用できるAWSのフルマネージドサービス。"
+        },
+        {
+          "term": "IAM Identity Center",
+          "explanation": "複数のAWSアカウントやアプリケーションへのアクセスを一元管理する認証サービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/chukidx_dev/articles/claude-md-user-and-repo-split",
+      "title": "CLAUDE.md をユーザー共通とリポジトリごとに分けて運用している話 — 何をどちらに書くか",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T14:04:04.000Z",
+      "summary": "Claude Codeの設定ファイルCLAUDE.mdを共通設定とリポジトリ固有設定に分ける判断基準が示された。他のリポジトリで読んだ際に誤解を生じる内容かどうかを基準に記述場所を決定する。/contextコマンドを実行することで両方の設定が正しく読み込まれているか確認できる。",
+      "headline": "Claude Codeの設定を共通とリポジトリ毎に分ける手法が公開",
+      "points": [
+        "Claude Codeの設定ファイルCLAUDE.mdを共通設定とリポジトリ固有設定に分ける判断基準が示された。",
+        "他のリポジトリで読んだ際に誤解を生じる内容かどうかを基準に記述場所を決定する。",
+        "/contextコマンドを実行することで両方の設定が正しく読み込まれているか確認できる。"
+      ],
+      "impact": "複数の社内ツールを運用しCLAUDE.mdの重複や長大化に悩む開発者が設定を整理する際に活用できる。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供する、ターミナル上で操作を実行できるAIコーディングエージェント。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/joemike/articles/claude-code-fork-subagent-guide-2026",
+      "title": "Claude Code fork() の使いどき — 並列エージェント設計の判断基準",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T10:00:00.000Z",
+      "summary": "Claude Codeで並列処理を行う際にfork()とfresh agentを使い分ける基準が示された。fork()は親のコンテキストを継承しPrompt Cachingの活用で低コストに動作する。独立した視点や別モデルが必要な場合はコンテキストを持たないfresh agentを利用する。",
+      "headline": "Claude Codeでサブエージェントを並列実行する判断基準が公開",
+      "points": [
+        "Claude Codeで並列処理を行う際にfork()とfresh agentを使い分ける基準が示された。",
+        "fork()は親のコンテキストを継承しPrompt Cachingの活用で低コストに動作する。",
+        "独立した視点や別モデルが必要な場合はコンテキストを持たないfresh agentを利用する。"
+      ],
+      "impact": "Claude Codeを用いて並列タスク処理を行うエージェントを設計・実装する開発者が選択基準として利用できる。",
+      "glossary": [
+        {
+          "term": "Prompt Caching",
+          "explanation": "プロンプトの共通部分をキャッシュして再利用することで計算コストと応答時間を削減する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/soliperse/articles/8f3e21e9d26f92",
+      "title": "中国・10年物PHPのEC基幹を4人×2週間でJavaへ——AIを「865行のルール」と「差分比較コマンド」で縛った移行手順",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T13:42:27.000Z",
+      "summary": "ベテラン4人がAIを活用し、約54万行のPHPで書かれたEC基幹システムを約22万行のJavaへ移行しました。AIの同じミスを防ぐため865行のルールファイルを作成し、コードの出力精度を90%超まで高めました。新旧システムに同じリクエストを送る差分比較コマンドなどを自作し、テスト無しの状態から検証を進めました。",
+      "headline": "ベテラン4人がAIを活用し54万行のPHPをJavaへ短期間で移行した",
+      "points": [
+        "ベテラン4人がAIを活用し、約54万行のPHPで書かれたEC基幹システムを約22万行のJavaへ移行しました。",
+        "AIの同じミスを防ぐため865行のルールファイルを作成し、コードの出力精度を90%超まで高めました。",
+        "新旧システムに同じリクエストを送る差分比較コマンドなどを自作し、テスト無しの状態から検証を進めました。"
+      ],
+      "impact": "古いシステムの移行を進める開発チームは、AIの指示ルール作成や差分比較コマンドの整備から着手できます。",
+      "glossary": [
+        {
+          "term": "DTO",
+          "explanation": "システム間や層の間でデータを転送するために用いられる、データ保持専用のオブジェクト。"
+        },
+        {
+          "term": "A/Bテスト",
+          "explanation": "複数の異なるパターンを用意し、実際の運用環境でどちらが良い結果を出すか比較検証する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://spring.io/blog/2026/11/10/this-week-in-spring-november-10th-2026",
+      "title": "This Week in Spring - November 10th, 2026",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "Spring AIやJava向けフォーマッターに関する最新記事、動画、書籍などが紹介されました。Craig Walls氏によるSpring AIのセッションメモリ移行やRAG高速化の解説記事が掲載されています。John Blum氏の新著「Building Intelligent Applications with Spring AI」なども取り上げられています。",
+      "headline": "Spring関連の最新記事や学習リソースが公開",
+      "points": [
+        "Spring AIやJava向けフォーマッターに関する最新記事、動画、書籍などが紹介されました。",
+        "Craig Walls氏によるSpring AIのセッションメモリ移行やRAG高速化の解説記事が掲載されています。",
+        "John Blum氏の新著「Building Intelligent Applications with Spring AI」なども取り上げられています。"
+      ],
+      "glossary": [
+        {
+          "term": "Spring AI",
+          "explanation": "Springアプリケーションに人工知能機能を容易に統合するためのライブラリ。"
+        },
+        {
+          "term": "RAG",
+          "explanation": "外部データの検索結果を言語モデルに与えて回答の精度を向上させる技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-33-monorepo",
+      "title": "35日でフロントエンドの基礎を完全に理解する #33 - モノレポを読む（pnpm workspace・共通基盤+製品別構成）",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-12T16:07:45.000Z",
+      "summary": "複数アプリと共通部品を1リポジトリで管理するモノレポの概念や利点を解説した。pnpm workspaceはシンボリックリンクを用い共通部品の変更を即座に全アプリに反映させる。依存関係にworkspace:*と記述しpnpm-workspace.yamlで管理対象を指定する。",
+      "headline": "モノレポの構成とpnpm workspaceの仕組みを解説",
+      "points": [
+        "複数アプリと共通部品を1リポジトリで管理するモノレポの概念や利点を解説した。",
+        "pnpm workspaceはシンボリックリンクを用い共通部品の変更を即座に全アプリに反映させる。",
+        "依存関係にworkspace:*と記述しpnpm-workspace.yamlで管理対象を指定する。"
+      ],
+      "glossary": [
+        {
+          "term": "モノレポ",
+          "explanation": "複数のアプリケーションやライブラリのコードを1つのリポジトリでまとめて管理する手法。"
+        },
+        {
+          "term": "シンボリックリンク",
+          "explanation": "ファイルシステム上で、別のファイルやフォルダの場所を指し示す参照の仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration",
+      "title": "EC2 Image Builder console now integrates with the DevOps Agent for troubleshooting and resource creation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-12T08:00:00.000Z",
+      "summary": "失敗したパイプラインのトラブルシューティングやリソース作成が、コンソールのチャットから実行可能になった。ログ等を解析して最大50個の失敗を一度に診断し、根本原因と修正手順をチャット上で提示する。指示文によるリソース作成に対応するほか、独自AI向けにAgent Toolkitのスキルも提供される。",
+      "headline": "EC2 Image BuilderコンソールにDevOps Agentが統合",
+      "points": [
+        "失敗したパイプラインのトラブルシューティングやリソース作成が、コンソールのチャットから実行可能になった。",
+        "ログ等を解析して最大50個の失敗を一度に診断し、根本原因と修正手順をチャット上で提示する。",
+        "指示文によるリソース作成に対応するほか、独自AI向けにAgent Toolkitのスキルも提供される。"
+      ],
+      "impact": "イメージを作成する管理者は、EC2 Image Builderコンソール画面のパネルからDevOps Agentを利用できる。",
+      "glossary": [
+        {
+          "term": "EC2 Image Builder",
+          "explanation": "AWS上で仮想マシンのカスタムイメージ構築や更新を自動化するサービス。"
+        },
+        {
+          "term": "DevOps Agent",
+          "explanation": "システム開発や運用のタスクを自動化し、作業を支援するAI機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/",
+      "title": "AWS Backup now supports resource modifiers for Amazon EKS restores",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-12T08:00:00.000Z",
+      "summary": "AWS BackupでAmazon EKSのバックアップ復元時にリソースを変換する機能が追加されました。YAMLファイルで定義したルールにより、異環境間の復元時にIAMロールなどの参照を自動書き換えできます。商用の全AWSリージョンおよびAWS GovCloud（US）リージョンで利用可能です。",
+      "headline": "AWS BackupがEKSリストアでのリソースモディファイアに対応",
+      "points": [
+        "AWS BackupでAmazon EKSのバックアップ復元時にリソースを変換する機能が追加されました。",
+        "YAMLファイルで定義したルールにより、異環境間の復元時にIAMロールなどの参照を自動書き換えできます。",
+        "商用の全AWSリージョンおよびAWS GovCloud（US）リージョンで利用可能です。"
+      ],
+      "impact": "EKSバックアップを別環境へ復元する担当者は、YAMLで変換ルールを定義することで作業の自動化が可能です。",
+      "glossary": [
+        {
+          "term": "Amazon EKS",
+          "explanation": "KubernetesをAWS上で容易に実行できるようにする管理型サービス。"
+        },
+        {
+          "term": "AWS Backup",
+          "explanation": "AWS上のデータのバックアップ管理を自動化・一元化するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://www.itmedia.co.jp/news/article/2611/12/2000003160/",
+      "title": "NVIDIA、“革ジャンCEO”ことフアン氏が辞任 クレスCFOが暫定CEOに",
+      "source": "ITmedia NEWS",
+      "genre": "tech",
+      "publishedAt": "2026-11-12T14:53:52.000Z",
+      "summary": "米NVIDIAのジェンスン・フアン社長兼CEOが11月12日に辞任し、コレット・クレスCFOが暫定CEOに就任しました。新議長のJones氏は、事業運営や製品ロードマップは途切れることなく続き、決算も17日に発表するとしています。フアン氏を巡っては不倫報道や、外国情報機関の工作標的になっていたとする報道などが相次いでいました。",
+      "headline": "NVIDIAのフアンCEOが即日辞任しクレスCFOが暫定CEOに就任",
+      "points": [
+        "米NVIDIAのジェンスン・フアン社長兼CEOが11月12日に辞任し、コレット・クレスCFOが暫定CEOに就任しました。",
+        "新議長のJones氏は、事業運営や製品ロードマップは途切れることなく続き、決算も17日に発表するとしています。",
+        "フアン氏を巡っては不倫報道や、外国情報機関の工作標的になっていたとする報道などが相次いでいました。"
+      ],
+      "glossary": [
+        {
+          "term": "CEO",
+          "explanation": "最高経営責任者のことで、企業の経営方針の決定や事業全体の統括を行う最高権限者です。"
+        },
+        {
+          "term": "CFO",
+          "explanation": "最高財務責任者のことで、企業の財務戦略や資金管理を統括する役職を指します。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "source": "MIT Technology Review",
+      "genre": "tech",
+      "publishedAt": "2026-11-12T20:16:24.000Z",
+      "summary": "米議員のビル・フォスター氏によると、Nvidiaはチップセキュリティ法案が要求する密輸防止追跡技術を実装可能だと認めた。業界団体のSIAは法案の要件を実現不可能と非難していたが、Nvidiaは非公式な協議で技術の実現可能性を示した。法案が通過した場合、位置情報通信によりチップの所在を特定する仕組みなどの導入が検討されている。",
+      "headline": "NvidiaがAIチップの密輸防止追跡技術の実装可能性を非公式に認める",
+      "points": [
+        "米議員のビル・フォスター氏によると、Nvidiaはチップセキュリティ法案が要求する密輸防止追跡技術を実装可能だと認めた。",
+        "業界団体のSIAは法案の要件を実現不可能と非難していたが、Nvidiaは非公式な協議で技術の実現可能性を示した。",
+        "法案が通過した場合、位置情報通信によりチップの所在を特定する仕組みなどの導入が検討されている。"
+      ],
+      "impact": "法案が成立した場合、調査官は新たな追跡メカニズムを用いて密輸されたチップの所在を確認する必要がある。",
+      "glossary": [
+        {
+          "term": "GPU",
+          "explanation": "画像処理やAIの計算処理を高速で行うための半導体プロセッサ。"
+        },
+        {
+          "term": "ping",
+          "explanation": "ネットワークを通じて対象機器へ信号を送り通信状態を確認する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/",
+      "title": "Microsoft 365で大規模障害 「Outlook」でメールにアクセスできず、「Teams」など複数サービスに影響",
+      "source": "ITmedia NEWS",
+      "genre": "tech",
+      "publishedAt": "2026-11-12T21:41:21.000Z",
+      "summary": "米MicrosoftのExchange Onlineで接続障害が起き、OutlookやTeamsなどの複数サービスに影響が及んでいます。原因は多数のサーバが応答しなくなったことで負荷が集中したためで、構成変更が影響した可能性も調査されています。Microsoftはヘルスチェック方法の変更等で一部サーバを復旧させ、自動復旧の導入準備を進めています。",
+      "headline": "Microsoft 365で障害が起きOutlookやTeams等の利用に影響",
+      "points": [
+        "米MicrosoftのExchange Onlineで接続障害が起き、OutlookやTeamsなどの複数サービスに影響が及んでいます。",
+        "原因は多数のサーバが応答しなくなったことで負荷が集中したためで、構成変更が影響した可能性も調査されています。",
+        "Microsoftはヘルスチェック方法の変更等で一部サーバを復旧させ、自動復旧の導入準備を進めています。"
+      ],
+      "impact": "管理センターが利用できない管理者は、公開ステータスページで状況を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "ヘルスチェック",
+          "explanation": "システムやサーバが正常に動作しているかを定期的に確認し異常を検知する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 164,
+    "shortlisted": 80,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 30388,
+    "outputTokens": 21927
+  },
+  "offline": false
+}

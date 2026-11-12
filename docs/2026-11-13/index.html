@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-13</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月13日(金)</p>
+<p class="meta">更新 2026-11-13 07:45 · 取得ソース 22/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">3</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener noreferrer">Google検索にGemini 4 Hydrogenが導入</a></h3>
+<p class="orig">原題: Google Search gets a major upgrade with Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener noreferrer">Google AI Blog</a> · 2026-11-13</p>
+<ul class="points"><li>Google検索に最大のモデル更新Gemini 4 Hydrogenが全ユーザーへ提供されました。</li><li>誤字を含む複雑な質問の意図理解や指示追従能力が大幅に向上しています。</li><li>画像や比較表を含む視覚的な回答を表示し多様な関連リンクを提示します。</li></ul><p class="impact"><b>影響</b>Google検索の利用者は、検索画面から複雑な質問を入力して機能を試すことができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>クエリファンアウト</dt><dd>検索クエリを関連する複数のサブトピックに分解して同時に検索する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Googleが高速なAIモデルGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-13</p>
+<ul class="points"><li>エージェント処理や日常コーディング向けに高速性と効率性を備えたモデルです。</li><li>AI StudioやGemini APIなど各種サービスで即日利用可能となりました。</li><li>前モデル比で2.5倍高速化しTerminal-Bench 4.1のスコアは57%に向上しました。</li></ul><p class="impact"><b>影響</b>開発者や企業ユーザーは、Gemini APIやGoogle AI Studioなどを通じてモデルを利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度に処理・参照できるテキストデータの最大量のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://www.itmedia.co.jp/news/article/2611/12/2000003126/" target="_blank" rel="noopener noreferrer">AWSがAPIをローカル再現するエミュレータを無償公開</a></h3>
+<p class="orig">原題: Amazon、AWSのAPIを手元で再現する「AWS Emulator」を無償公開 コードはすべてAIエージェントが記述</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/12/2000003126/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-12</p>
+<ul class="points"><li>ローカル環境でAWS向けアプリの構築や統合テストをアカウント不要で行えます。</li><li>全コードが自律型AIエージェントによって記述されGitHubで公開されました。</li><li>IAM等の評価は再現されないためセキュリティテストや本番環境への使用は推奨されません。</li></ul><p class="impact"><b>影響</b>開発者はLinuxパッケージやDockerを利用してローカル環境に導入してテストできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CI/CD</dt><dd>ソフトウェアの構築やテストおよびデプロイを自動化して連続的に行う手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener noreferrer">Google検索にGemini 4 Hydrogenが導入</a></h3>
+<p class="orig">原題: Google Search gets a major upgrade with Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener noreferrer">Google AI Blog</a> · 2026-11-13</p>
+<ul class="points"><li>Google検索に最大のモデル更新Gemini 4 Hydrogenが全ユーザーへ提供されました。</li><li>誤字を含む複雑な質問の意図理解や指示追従能力が大幅に向上しています。</li><li>画像や比較表を含む視覚的な回答を表示し多様な関連リンクを提示します。</li></ul><p class="impact"><b>影響</b>Google検索の利用者は、検索画面から複雑な質問を入力して機能を試すことができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>クエリファンアウト</dt><dd>検索クエリを関連する複数のサブトピックに分解して同時に検索する技術。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Googleが高速なAIモデルGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-13</p>
+<ul class="points"><li>エージェント処理や日常コーディング向けに高速性と効率性を備えたモデルです。</li><li>AI StudioやGemini APIなど各種サービスで即日利用可能となりました。</li><li>前モデル比で2.5倍高速化しTerminal-Bench 4.1のスコアは57%に向上しました。</li></ul><p class="impact"><b>影響</b>開発者や企業ユーザーは、Gemini APIやGoogle AI Studioなどを通じてモデルを利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>コンテキストウィンドウ</dt><dd>AIモデルが一度に処理・参照できるテキストデータの最大量のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/12/2000003126/" target="_blank" rel="noopener noreferrer">AWSがAPIをローカル再現するエミュレータを無償公開</a></h3>
+<p class="orig">原題: Amazon、AWSのAPIを手元で再現する「AWS Emulator」を無償公開 コードはすべてAIエージェントが記述</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/12/2000003126/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-12</p>
+<ul class="points"><li>ローカル環境でAWS向けアプリの構築や統合テストをアカウント不要で行えます。</li><li>全コードが自律型AIエージェントによって記述されGitHubで公開されました。</li><li>IAM等の評価は再現されないためセキュリティテストや本番環境への使用は推奨されません。</li></ul><p class="impact"><b>影響</b>開発者はLinuxパッケージやDockerを利用してローカル環境に導入してテストできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>CI/CD</dt><dd>ソフトウェアの構築やテストおよびデプロイを自動化して連続的に行う手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://dev.classmethod.jp/articles/aws-emulator-local-try/" target="_blank" rel="noopener noreferrer">Dockerを用いたAWS Emulatorの起動と基本操作手順が公開</a></h3>
+<p class="orig">原題: AWS Emulator がリリースされたので試してみた | DevelopersIO</p>
+<p class="src">出典: <a href="https://dev.classmethod.jp/articles/aws-emulator-local-try/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-12</p>
+<ul class="points"><li>Dockerfileの作成からコンテナ起動およびヘルスチェックの手順が解説されています。</li><li>環境変数を設定してAWS CLIの接続先をエミュレータに切り替える方法を示しています。</li><li>S3のバケット作成やファイル操作および署名付きURLの発行などの動作を確認しています。</li></ul><p class="impact"><b>影響</b>AWS Emulatorを試す開発者は、記載されたDockerfileと環境設定を参考に検証できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>署名付きURL</dt><dd>特定の有効期限内に限りリソースへのアクセス権限を付与するURLのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.323" target="_blank" rel="noopener noreferrer">Claude Codeのv2.1.323が公開されCode Modeなどが追加</a></h3>
+<p class="orig">原題: v2.1.323</p>
+<p class="src">出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.323" target="_blank" rel="noopener noreferrer">Claude Code</a> · 2026-11-13</p>
+<ul class="points"><li>ClaudeがJavaScriptを書いてツールを実行する実験的なCode Modeが追加されました。</li><li>プラグインの対応バージョン制限やTypeScriptフックの型チェック機能が追加されました。</li><li>長時間フック実行時のハートビートや.docxファイルのサポートなど多数の改善が行われました。</li></ul><p class="impact"><b>影響</b>プラグイン開発者やClaude Codeを利用するユーザーは、新機能の有効化設定や互換性の仕様を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Code Mode</dt><dd>AIがJavaScriptを生成してツールを呼び出す実験的な機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/" target="_blank" rel="noopener noreferrer">Amazon Bedrock AgentCoreの次世代ランタイムが標準提供開始</a></h3>
+<p class="orig">原題: The next generation AgentCore runtime is now the default</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-12</p>
+<ul class="points"><li>アイドル状態の自動ゼロスケールやスナップショット復元により、起動時間が2秒未満に短縮されました。</li><li>最大8 vCPUと32 GBメモリに対応し、セッションあたりの請求メモリを最大68%削減できます。</li><li>東京を含む対応リージョンで新規ランタイムのデフォルトとなり、既存環境はplatformVersionの更新で移行できます。</li></ul><p class="impact"><b>影響</b>既存のAgentCoreランタイムを更新したい開発者は、platformVersionをV2に設定して新しいランタイムへ移行する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MicroVM</dt><dd>軽量な仮想マシン技術で、高速起動とハードウェアレベルの安全な隔離を実現します。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai/" target="_blank" rel="noopener noreferrer">Spring AIとAmazon Bedrockによる自律型AI構築手法が公開</a></h3>
+<p class="orig">原題: Build autonomous AI agents with Amazon Bedrock and Spring AI</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-12</p>
+<ul class="points"><li>Java開発者が既存の技術やエコシステムを活かして本番仕様のAIエージェントを構築するパターンが紹介されました。</li><li>エージェントに必要な要素として計画、ツール利用、メモリの3つの機能を挙げています。</li><li>前提条件としてJDK 21やSpring Boot 4.1、Spring AI 2.0などの環境設定が必要です。</li></ul><p class="impact"><b>影響</b>JavaでAIエージェントを構築する開発者は、JDK 21や必要なライブラリ構成を準備して解説のパターンを試すことができます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>RAG</dt><dd>検索技術と生成AIを組み合わせ、外部知識を参照して回答精度を高める手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm/" target="_blank" rel="noopener noreferrer">Amazon BedrockとLiteLLMによるLLMゲートウェイ構築例が公開</a></h3>
+<p class="orig">原題: Building a self-service LLM gateway with Amazon Bedrock and LiteLLM</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-13</p>
+<ul class="points"><li>AWS Fargate上のLiteLLMを用いてAmazon BedrockをOpenAI互換APIとして提供する構成が紹介されました。</li><li>セルフサービスポータルを通じて、ユーザーごとのコスト制御やAPIキーの発行が可能です。</li><li>RDSやElastiCache、Langfuseを組み合わせることで利用状況や遅延の可視化を実現します。</li></ul><p class="impact"><b>影響</b>LLM基盤を提供するプラットフォームエンジニアは、提示された構成やAWS CDKコードを参考に自社向けのゲートウェイを構築できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LLMゲートウェイ</dt><dd>複数モデルへのアクセスや認証、コスト管理を中央で一元化する中継システム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" target="_blank" rel="noopener noreferrer">A2AでAWS上の異なるエージェント間連携を実現する構成が公開</a></h3>
+<p class="orig">原題: Build composable, interoperable multi-agent systems with A2A on AWS</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-13</p>
+<ul class="points"><li>組織やフレームワークを超えるエージェント連携を行うA2AプロトコルのAWS構成が公表された。</li><li>Amazon CognitoやOAuth 2.0を用い秘密情報を共有せず相互に認証を行う。</li><li>エージェント追加時も既存構成を変更せずAgent Card登録のみで機能拡張が可能。</li></ul><p class="impact"><b>影響</b>異なるフレームワークや組織間でエージェントを相互連携させたい開発者が参照できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Agent-to-Agent (A2A)</dt><dd>異なるフレームワークや組織のエージェント同士が相互運用するための標準プロトコル。</dd><dt>OAuth 2.0</dt><dd>ユーザーの資格情報を渡さずにサードパーティへアクセス権限を付与する標準認可プロトコル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">BedrockでOpenAI Codexを利用する構成パターンが公開</a></h3>
+<p class="orig">原題: OpenAI Codex on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-12</p>
+<ul class="points"><li>Amazon Bedrock上で動作するOpenAIモデルをCodexから呼び出す構築手法が示された。</li><li>Native AWS AccessやAgentCore Gatewayなど組織の要件に応じた3つの経路を提示。</li><li>IAM Identity Centerや既存のOkta等と連携し既存の認証基盤をそのまま使える。</li></ul><p class="impact"><b>影響</b>既存のAWS認証基盤や制御方針を維持したままCodexを導入したいプラットフォームチームが活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon Bedrock</dt><dd>様々な生成AIモデルをAPI経由で安全に呼び出して利用できるAWSのフルマネージドサービス。</dd><dt>IAM Identity Center</dt><dd>複数のAWSアカウントやアプリケーションへのアクセスを一元管理する認証サービス。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/chukidx_dev/articles/claude-md-user-and-repo-split" target="_blank" rel="noopener noreferrer">Claude Codeの設定を共通とリポジトリ毎に分ける手法が公開</a></h3>
+<p class="orig">原題: CLAUDE.md をユーザー共通とリポジトリごとに分けて運用している話 — 何をどちらに書くか</p>
+<p class="src">出典: <a href="https://zenn.dev/chukidx_dev/articles/claude-md-user-and-repo-split" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-12</p>
+<ul class="points"><li>Claude Codeの設定ファイルCLAUDE.mdを共通設定とリポジトリ固有設定に分ける判断基準が示された。</li><li>他のリポジトリで読んだ際に誤解を生じる内容かどうかを基準に記述場所を決定する。</li><li>/contextコマンドを実行することで両方の設定が正しく読み込まれているか確認できる。</li></ul><p class="impact"><b>影響</b>複数の社内ツールを運用しCLAUDE.mdの重複や長大化に悩む開発者が設定を整理する際に活用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Claude Code</dt><dd>Anthropicが提供する、ターミナル上で操作を実行できるAIコーディングエージェント。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/joemike/articles/claude-code-fork-subagent-guide-2026" target="_blank" rel="noopener noreferrer">Claude Codeでサブエージェントを並列実行する判断基準が公開</a></h3>
+<p class="orig">原題: Claude Code fork() の使いどき — 並列エージェント設計の判断基準</p>
+<p class="src">出典: <a href="https://zenn.dev/joemike/articles/claude-code-fork-subagent-guide-2026" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-12</p>
+<ul class="points"><li>Claude Codeで並列処理を行う際にfork()とfresh agentを使い分ける基準が示された。</li><li>fork()は親のコンテキストを継承しPrompt Cachingの活用で低コストに動作する。</li><li>独立した視点や別モデルが必要な場合はコンテキストを持たないfresh agentを利用する。</li></ul><p class="impact"><b>影響</b>Claude Codeを用いて並列タスク処理を行うエージェントを設計・実装する開発者が選択基準として利用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Prompt Caching</dt><dd>プロンプトの共通部分をキャッシュして再利用することで計算コストと応答時間を削減する機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/soliperse/articles/8f3e21e9d26f92" target="_blank" rel="noopener noreferrer">ベテラン4人がAIを活用し54万行のPHPをJavaへ短期間で移行した</a></h3>
+<p class="orig">原題: 中国・10年物PHPのEC基幹を4人×2週間でJavaへ——AIを「865行のルール」と「差分比較コマンド」で縛った移行手順</p>
+<p class="src">出典: <a href="https://zenn.dev/soliperse/articles/8f3e21e9d26f92" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-12</p>
+<ul class="points"><li>ベテラン4人がAIを活用し、約54万行のPHPで書かれたEC基幹システムを約22万行のJavaへ移行しました。</li><li>AIの同じミスを防ぐため865行のルールファイルを作成し、コードの出力精度を90%超まで高めました。</li><li>新旧システムに同じリクエストを送る差分比較コマンドなどを自作し、テスト無しの状態から検証を進めました。</li></ul><p class="impact"><b>影響</b>古いシステムの移行を進める開発チームは、AIの指示ルール作成や差分比較コマンドの整備から着手できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>DTO</dt><dd>システム間や層の間でデータを転送するために用いられる、データ保持専用のオブジェクト。</dd><dt>A/Bテスト</dt><dd>複数の異なるパターンを用意し、実際の運用環境でどちらが良い結果を出すか比較検証する手法。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/10/this-week-in-spring-november-10th-2026" target="_blank" rel="noopener noreferrer">Spring関連の最新記事や学習リソースが公開</a></h3>
+<p class="orig">原題: This Week in Spring - November 10th, 2026</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/10/this-week-in-spring-november-10th-2026" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-10</p>
+<ul class="points"><li>Spring AIやJava向けフォーマッターに関する最新記事、動画、書籍などが紹介されました。</li><li>Craig Walls氏によるSpring AIのセッションメモリ移行やRAG高速化の解説記事が掲載されています。</li><li>John Blum氏の新著「Building Intelligent Applications with Spring AI」なども取り上げられています。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Spring AI</dt><dd>Springアプリケーションに人工知能機能を容易に統合するためのライブラリ。</dd><dt>RAG</dt><dd>外部データの検索結果を言語モデルに与えて回答の精度を向上させる技術。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-33-monorepo" target="_blank" rel="noopener noreferrer">モノレポの構成とpnpm workspaceの仕組みを解説</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #33 - モノレポを読む（pnpm workspace・共通基盤+製品別構成）</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-33-monorepo" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-13</p>
+<ul class="points"><li>複数アプリと共通部品を1リポジトリで管理するモノレポの概念や利点を解説した。</li><li>pnpm workspaceはシンボリックリンクを用い共通部品の変更を即座に全アプリに反映させる。</li><li>依存関係にworkspace:*と記述しpnpm-workspace.yamlで管理対象を指定する。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>モノレポ</dt><dd>複数のアプリケーションやライブラリのコードを1つのリポジトリでまとめて管理する手法。</dd><dt>シンボリックリンク</dt><dd>ファイルシステム上で、別のファイルやフォルダの場所を指し示す参照の仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration" target="_blank" rel="noopener noreferrer">EC2 Image BuilderコンソールにDevOps Agentが統合</a></h3>
+<p class="orig">原題: EC2 Image Builder console now integrates with the DevOps Agent for troubleshooting and resource creation</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-12</p>
+<ul class="points"><li>失敗したパイプラインのトラブルシューティングやリソース作成が、コンソールのチャットから実行可能になった。</li><li>ログ等を解析して最大50個の失敗を一度に診断し、根本原因と修正手順をチャット上で提示する。</li><li>指示文によるリソース作成に対応するほか、独自AI向けにAgent Toolkitのスキルも提供される。</li></ul><p class="impact"><b>影響</b>イメージを作成する管理者は、EC2 Image Builderコンソール画面のパネルからDevOps Agentを利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>EC2 Image Builder</dt><dd>AWS上で仮想マシンのカスタムイメージ構築や更新を自動化するサービス。</dd><dt>DevOps Agent</dt><dd>システム開発や運用のタスクを自動化し、作業を支援するAI機能。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/" target="_blank" rel="noopener noreferrer">AWS BackupがEKSリストアでのリソースモディファイアに対応</a></h3>
+<p class="orig">原題: AWS Backup now supports resource modifiers for Amazon EKS restores</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-12</p>
+<ul class="points"><li>AWS BackupでAmazon EKSのバックアップ復元時にリソースを変換する機能が追加されました。</li><li>YAMLファイルで定義したルールにより、異環境間の復元時にIAMロールなどの参照を自動書き換えできます。</li><li>商用の全AWSリージョンおよびAWS GovCloud（US）リージョンで利用可能です。</li></ul><p class="impact"><b>影響</b>EKSバックアップを別環境へ復元する担当者は、YAMLで変換ルールを定義することで作業の自動化が可能です。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon EKS</dt><dd>KubernetesをAWS上で容易に実行できるようにする管理型サービス。</dd><dt>AWS Backup</dt><dd>AWS上のデータのバックアップ管理を自動化・一元化するサービス。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/12/2000003160/" target="_blank" rel="noopener noreferrer">NVIDIAのフアンCEOが即日辞任しクレスCFOが暫定CEOに就任</a></h3>
+<p class="orig">原題: NVIDIA、“革ジャンCEO”ことフアン氏が辞任 クレスCFOが暫定CEOに</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/12/2000003160/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-12</p>
+<ul class="points"><li>米NVIDIAのジェンスン・フアン社長兼CEOが11月12日に辞任し、コレット・クレスCFOが暫定CEOに就任しました。</li><li>新議長のJones氏は、事業運営や製品ロードマップは途切れることなく続き、決算も17日に発表するとしています。</li><li>フアン氏を巡っては不倫報道や、外国情報機関の工作標的になっていたとする報道などが相次いでいました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>CEO</dt><dd>最高経営責任者のことで、企業の経営方針の決定や事業全体の統括を行う最高権限者です。</dd><dt>CFO</dt><dd>最高財務責任者のことで、企業の財務戦略や資金管理を統括する役職を指します。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener noreferrer">NvidiaがAIチップの密輸防止追跡技術の実装可能性を非公式に認める</a></h3>
+<p class="orig">原題: Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility</p>
+<p class="src">出典: <a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener noreferrer">MIT Technology Review</a> · 2026-11-13</p>
+<ul class="points"><li>米議員のビル・フォスター氏によると、Nvidiaはチップセキュリティ法案が要求する密輸防止追跡技術を実装可能だと認めた。</li><li>業界団体のSIAは法案の要件を実現不可能と非難していたが、Nvidiaは非公式な協議で技術の実現可能性を示した。</li><li>法案が通過した場合、位置情報通信によりチップの所在を特定する仕組みなどの導入が検討されている。</li></ul><p class="impact"><b>影響</b>法案が成立した場合、調査官は新たな追跡メカニズムを用いて密輸されたチップの所在を確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>GPU</dt><dd>画像処理やAIの計算処理を高速で行うための半導体プロセッサ。</dd><dt>ping</dt><dd>ネットワークを通じて対象機器へ信号を送り通信状態を確認する手法。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003161/" target="_blank" rel="noopener noreferrer">Microsoft 365で障害が起きOutlookやTeams等の利用に影響</a></h3>
+<p class="orig">原題: Microsoft 365で大規模障害 「Outlook」でメールにアクセスできず、「Teams」など複数サービスに影響</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/13/2000003161/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-13</p>
+<ul class="points"><li>米MicrosoftのExchange Onlineで接続障害が起き、OutlookやTeamsなどの複数サービスに影響が及んでいます。</li><li>原因は多数のサーバが応答しなくなったことで負荷が集中したためで、構成変更が影響した可能性も調査されています。</li><li>Microsoftはヘルスチェック方法の変更等で一部サーバを復旧させ、自動復旧の導入準備を進めています。</li></ul><p class="impact"><b>影響</b>管理センターが利用できない管理者は、公開ステータスページで状況を確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ヘルスチェック</dt><dd>システムやサーバが正常に動作しているかを定期的に確認し異常を検知する仕組み。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-12/">← 2026-11-12</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（44）</summary><ul><li><a href="../2026-11-13/">2026-11-13</a></li><li><a href="../2026-11-12/">2026-11-12</a></li><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
