@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-14</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月14日(土)</p>
+<p class="meta">更新 2026-11-14 07:40 · 取得ソース 23/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">11</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">4</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Googleが高速なAIモデルGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Introducing Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-13</p>
+<ul class="points"><li>日常的なコーディングやエージェント作業に特化したAIモデルです。</li><li>思考レベルhighで指標スコア51を記録し、前世代より2.5倍高速です。</li><li>料金は100万トークンあたり入力1.50ドル、出力7.50ドルです。</li></ul><p class="impact"><b>影響</b>開発者や利用者は、Google AI StudioやGeminiアプリ等で利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIが文章を処理する際の文字や単語などの最小単位のことです。</dd><dt>コンテキストウィンドウ</dt><dd>AIが一度に記憶・処理できる入力情報の最大長のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003162/" target="_blank" rel="noopener noreferrer">Googleが安価で高速なGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Google、高速で低価格の「Gemini 4 Hydrogen」発表 無料ユーザーも利用可能</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/13/2000003162/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-13</p>
+<ul class="points"><li>日常的な開発やエージェント作業向けに速度とコスト効率を重視しました。</li><li>API料金は100万トークンあたり入力1.5ドル、出力7.5ドルの一律です。</li><li>Google検索や無料版Geminiアプリから企業向けまで幅広く提供されます。</li></ul><p class="impact"><b>影響</b>一般利用者や開発者は、GeminiアプリやAPIを通じて順次利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マルチモーダル</dt><dd>テキストだけでなく画像、音声、動画など複数種類のデータを扱う性質です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener noreferrer">OpenAIがChatGPTによる代理購入機能を米国で公開</a></h3>
+<p class="orig">原題: ChatGPT’s new Wallet lets AI agents shop and check out for you</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-14</p>
+<ul class="points"><li>AIエージェントがユーザーに代わって商品の選定から決済まで代行します。</li><li>利用時は生体認証で承認し、店舗に実際のカード番号は共有されません。</li><li>米国の18歳以上のChatGPT Pro加入者など一部を対象に先行提供されます。</li></ul><p class="impact"><b>影響</b>米国の対象ChatGPT Pro利用者は、Walletを設定して買い物代行を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>決済トークン</dt><dd>本来のクレジットカード番号の代わりに発行される代替データのことです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Googleが高速なAIモデルGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Introducing Gemini 4 Hydrogen</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-13</p>
+<ul class="points"><li>日常的なコーディングやエージェント作業に特化したAIモデルです。</li><li>思考レベルhighで指標スコア51を記録し、前世代より2.5倍高速です。</li><li>料金は100万トークンあたり入力1.50ドル、出力7.50ドルです。</li></ul><p class="impact"><b>影響</b>開発者や利用者は、Google AI StudioやGeminiアプリ等で利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>トークン</dt><dd>AIが文章を処理する際の文字や単語などの最小単位のことです。</dd><dt>コンテキストウィンドウ</dt><dd>AIが一度に記憶・処理できる入力情報の最大長のことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003162/" target="_blank" rel="noopener noreferrer">Googleが安価で高速なGemini 4 Hydrogenを発表</a></h3>
+<p class="orig">原題: Google、高速で低価格の「Gemini 4 Hydrogen」発表 無料ユーザーも利用可能</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/13/2000003162/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-13</p>
+<ul class="points"><li>日常的な開発やエージェント作業向けに速度とコスト効率を重視しました。</li><li>API料金は100万トークンあたり入力1.5ドル、出力7.5ドルの一律です。</li><li>Google検索や無料版Geminiアプリから企業向けまで幅広く提供されます。</li></ul><p class="impact"><b>影響</b>一般利用者や開発者は、GeminiアプリやAPIを通じて順次利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>マルチモーダル</dt><dd>テキストだけでなく画像、音声、動画など複数種類のデータを扱う性質です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener noreferrer">OpenAIがChatGPTによる代理購入機能を米国で公開</a></h3>
+<p class="orig">原題: ChatGPT’s new Wallet lets AI agents shop and check out for you</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-14</p>
+<ul class="points"><li>AIエージェントがユーザーに代わって商品の選定から決済まで代行します。</li><li>利用時は生体認証で承認し、店舗に実際のカード番号は共有されません。</li><li>米国の18歳以上のChatGPT Pro加入者など一部を対象に先行提供されます。</li></ul><p class="impact"><b>影響</b>米国の対象ChatGPT Pro利用者は、Walletを設定して買い物代行を利用できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>決済トークン</dt><dd>本来のクレジットカード番号の代わりに発行される代替データのことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://ktlog.net/posts/claude-code-ai-ecosystem" target="_blank" rel="noopener noreferrer">Claude Codeを中心とする安全なAI作業環境の設計が公開</a></h3>
+<p class="orig">原題: Claude Codeのおすすめ環境を全体図で解説。ハーネス・スキル・MCPの仕組みと実例</p>
+<p class="src">出典: <a href="https://ktlog.net/posts/claude-code-ai-ecosystem" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-13</p>
+<ul class="points"><li>Claude Codeを入口とし、判断AIや安全規則を通して仕事を振り分けます。</li><li>判断AIが作業内容を即座に判定し、設定ファイルで危険な操作を禁止します。</li><li>APIキーは1Password参照を用い、AIに直接見せない運用にしています。</li></ul><p class="impact"><b>影響</b>Claude Codeの作業精度や安全性を改善したい開発者は、環境設計の参考にできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ハーネス</dt><dd>AIが指示を実行する前に、安全性や権限を検査・制御する仕組みのことです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/tottoko_hamu/articles/2026-11-14-000106" target="_blank" rel="noopener noreferrer">Claude Codeで手順書が読まれない課題への対策が共有された</a></h3>
+<p class="orig">原題: Claude Codeの手順書は、指定しても読まれない——教訓を「読ませる」から「貼る」「止める」へ変えた3か月の記録</p>
+<p class="src">出典: <a href="https://zenn.dev/tottoko_hamu/articles/2026-11-14-000106" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-14</p>
+<ul class="points"><li>指定しても読まれないなど教訓が効かない失敗を分析しました。</li><li>12回の委任記録中、指定した手順書が読まれたのは2回でした。</li><li>受け手に読ませず該当箇所を抜粋して貼る対策が有効でした。</li></ul><p class="impact"><b>影響</b>Claude Codeで手順書を運用する開発者は、教訓の渡し方を見直す必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Claude Code</dt><dd>Anthropicが提供するエージェント型の開発支援ツール。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/sotatek_jp/articles/cdfba2572f7818" target="_blank" rel="noopener noreferrer">AIエージェントの本番導入に向けた重要設計ポイントが整理された</a></h3>
+<p class="orig">原題: AIエージェントを本番導入する前に考えたい設計ポイント：コンテキスト管理・権限制御・実行ログ</p>
+<p class="src">出典: <a href="https://zenn.dev/sotatek_jp/articles/cdfba2572f7818" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-14</p>
+<ul class="points"><li>本番運用にはLLMの精度だけでなく権限制御やログ設計が必要です。</li><li>RAGのメタデータ管理やツール実行前の認可確認が重要です。</li><li>リトライ時の冪等性の考慮や実行制限、人的承認も求められます。</li></ul><p class="impact"><b>影響</b>AIエージェントを本番導入する開発者は、権限制御やログの仕組みを設計する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>RAG</dt><dd>外部の文書データを検索し、回答生成に活用する技術。</dd><dt>冪等性</dt><dd>同じ操作を何度実行しても同じ結果が得られる性質。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/fine-grained-access-control-for-amazon-bedrock-managed-knowledge-base-tools/" target="_blank" rel="noopener noreferrer">BedrockのKBツールでユーザーごとのアクセス制御手法が公開</a></h3>
+<p class="orig">原題: Fine-grained access control for Amazon Bedrock Managed Knowledge Base tools</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/fine-grained-access-control-for-amazon-bedrock-managed-knowledge-base-tools/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-13</p>
+<ul class="points"><li>ユーザー権限外の社内文書の参照を防ぐ設計手法が紹介されました。</li><li>LLMの判断に依存せず検証済み属性をツール層で注入します。</li><li>Bedrock AgentCore GatewayとKBの機能を活用します。</li></ul><p class="impact"><b>影響</b>Bedrockで社内向けエージェントを構築するエンジニアは、ツール層での権限検証を実装する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータを安全に連携させるプロトコル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/" target="_blank" rel="noopener noreferrer">AWS Quickのリソースをアカウント間で昇格するツールが公開</a></h3>
+<p class="orig">原題: AWS Quick をエンタープライズ対応に: 自動化され監査も可能な、アカウント間のリソース昇格</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-13</p>
+<ul class="points"><li>開発から本番環境へのQuickリソース移行を自動化します。</li><li>AgentCore上で動くMCPサーバーとして1回の呼び出しで昇格可能です。</li><li>権限を再現し、変更前にはS3へバックアップを保存します。</li></ul><p class="impact"><b>影響</b>AWS Quickのリソース移行を手作業で行っている運用担当者は、自動化ツールの導入を検討できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>昇格</dt><dd>開発環境で作成したリソースを検証環境や本番環境へ移行すること。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/" target="_blank" rel="noopener noreferrer">AWSがエージェント向けモデル振分構成を公開</a></h3>
+<p class="orig">原題: Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-14</p>
+<ul class="points"><li>NeMo SwitchyardとLiteLLMを連携させBedrockモデルへ振り分ける。</li><li>履歴からモデルを選ぶステージ戦略や重み付きランダム戦略に対応する。</li><li>解決タスクあたりのコストを測定し評価するサンプルが提供される。</li></ul><p class="impact"><b>影響</b>Bedrock利用者は非本番環境にサンプルを配備して効果を検証できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>LiteLLM</dt><dd>複数の大規模言語モデルへのアクセス方法を共通化するオープンソース製品。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003110/" target="_blank" rel="noopener noreferrer">Googleが社内特化のコーディングAIを開発</a></h3>
+<p class="orig">原題: Googleの社内専用コーディングAI「GfG」、その全容 Geminiに社内データ1兆トークン学習させ開発 所要時間半減の業務も</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/13/2000003110/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-13</p>
+<ul class="points"><li>Geminiに1兆トークン規模の社内開発データを学習させGfGを構築した。</li><li>A/Bテストでやり取り回数が23.1%減り、コード生存率は16.8%向上した。</li><li>推論能力の低下を防ぐため中間学習介入とデータリプレイを併用した。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>破滅的忘却</dt><dd>AIが新しい知識を学習した際に、過去に学習した知識を忘失してしまう現象。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" rel="noopener noreferrer">LangChainが評価額30億ドルで資金調達</a></h3>
+<p class="orig">原題: AI agent startup LangChain hits $3B valuation</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-14</p>
+<ul class="points"><li>LangChainがCapitalG主導のシリーズCで3億ドルを調達した。</li><li>企業評価額は前回の12.5億ドルから30億ドルへと2倍以上に増加した。</li><li>エージェント管理ツールLangSmithの顧客数は7000社に達している。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>シリーズC</dt><dd>事業が軌道に乗った新興企業がさらなる成長に向けて行う資金調達段階。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/12/a-bootiful-podcast-guy-pardon" target="_blank" rel="noopener noreferrer">Spring公式配信で分散トランザクションを議論</a></h3>
+<p class="orig">原題: A Bootiful Podcast: Atomikos founder Guy Pardon on distributed transactions, data integrity, and more</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/12/a-bootiful-podcast-guy-pardon" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-12</p>
+<ul class="points"><li>Atomikos創業者が登壇し分散トランザクションの技術や重要性を解説した。</li><li>2相コミットの仕組みやXA規格の必要性、整合性の確保方法を議論した。</li><li>Atomikosのオープンソース機能やSpring Boot連携についても取り上げた。</li></ul><p class="impact"><b>影響</b>データ整合性を重視する開発者は配信から保証の仕組みを確認できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>2相コミット</dt><dd>複数の独立したシステム間で処理の一貫性を保証するための合意手順。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://zenn.dev/kipcop/articles/f35-vue-34-comprehensive" target="_blank" rel="noopener noreferrer">フロントエンドの基礎を試す実務的な総合演習問題が公開</a></h3>
+<p class="orig">原題: 35日でフロントエンドの基礎を完全に理解する #34 - 総合演習</p>
+<p class="src">出典: <a href="https://zenn.dev/kipcop/articles/f35-vue-34-comprehensive" target="_blank" rel="noopener noreferrer">Zenn（Vue）</a> · 2026-11-14</p>
+<ul class="points"><li>複数回の知識を組み合わせて解く、表示遅延やVueのバグ調査などの実践的な問題が提示されています。</li><li>表示遅延では計測結果に基づくコード分割などを、Vueでは分割代入による監視の外れを解説しています。</li><li>非同期検索での追い越しによる上書き問題と、最新のリクエストを判別して防ぐ対策が紹介されています。</li></ul><p class="impact"><b>影響</b>フロントエンドの知識を定着させたい学習者が、問題を通じて仮説検証やバグ特定の力を確認できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>LCP</dt><dd>Webページのメインコンテンツが表示されるまでの時間を示す指標。</dd><dt>リアクティブ</dt><dd>データの変化に応じて画面表示などの関連する処理が自動的に更新される仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/" target="_blank" rel="noopener noreferrer">CloudFormationがAurora PostgreSQLのexpress設定に対応</a></h3>
+<p class="orig">原題: Aurora PostgreSQL with express configuration now supported in CloudFormation</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-14</p>
+<ul class="points"><li>CloudFormationでAurora PostgreSQLの高速なクラスター作成設定が利用可能になりました。</li><li>単一のプロパティ指定で、クラスターとプライマリデータベースインスタンスを同時に作成できます。</li><li>本機能はexpress configurationが提供されている全AWSリージョンで利用可能です。</li></ul><p class="impact"><b>影響</b>CloudFormationを利用する開発者が、テンプレートを簡素化して環境構築を自動化できます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>AWS CloudFormation</dt><dd>テンプレートを記述することでAWS上のリソース群を自動構築できるIaCサービス。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/" target="_blank" rel="noopener noreferrer">AWS Batch on EKSでセキュリティコンテキスト機能が拡充</a></h3>
+<p class="orig">原題: AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-13</p>
+<ul class="points"><li>Amazon EKS上のAWS BatchでLinuxケーパビリティやseccompプロファイルが設定可能になりました。</li><li>コンテナ単位の設定に加えて、Pod全体に対するセキュリティ設定もサポートされます。</li><li>厳しいセキュリティ要件を満たしながら、ジョブを必要最小限の権限で実行できるようになります。</li></ul><p class="impact"><b>影響</b>EKS上でAWS Batchを利用する管理者が、要件に合わせてより安全な権限設定を行えます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>seccomp</dt><dd>アプリケーションが実行できるシステムコールを制限して安全性を高めるLinuxの機能。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://future-architect.github.io/articles/20261113a/" target="_blank" rel="noopener noreferrer">新ツールaws-emulatorでTerraformを動かす検証記事が公開</a></h3>
+<p class="orig">原題: aws-emulatorにTerraformでリソースを作成できるか試してみる | フューチャー技術ブログ</p>
+<p class="src">出典: <a href="https://future-architect.github.io/articles/20261113a/" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-13</p>
+<ul class="points"><li>AWS公式のエミュレーター環境をDockerで立ち上げ、Terraformから操作できるか検証されています。</li><li>環境変数やファイルパスを調整することで、Terraformを用いたVPCリソースの作成に成功しています。</li><li>検証にはMacbook M2 AirやTerraform v1.17.2などの環境が用いられています。</li></ul><p class="impact"><b>影響</b>ローカルでAWSをエミュレートしたい開発者が、Terraformとの連携手順を参考にできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Terraform</dt><dd>クラウドなどのインフラリソースをコードで宣言して自動管理できるIaCツール。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/" target="_blank" rel="noopener noreferrer">OpenAIがロボット専任チームを解散し汎用AIへ統合</a></h3>
+<p class="orig">原題: OpenAI disbands its robotics team as its general models start running robots</p>
+<p class="src">出典: <a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-14</p>
+<ul class="points"><li>研究者を主力研究チームや応用部門など既存の組織へ再編した。</li><li>GPT-6 Astraなど汎用モデルが直接ロボットに適用可能と判断された。</li><li>自社製人型ロボットの開発は継続し、2027年の公開実演を目指す。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AGI</dt><dd>人間と同等の汎用的な知的能力を持ち、多様な課題を自律してこなせる人工知能。</dd><dt>エンボディドAI</dt><dd>ロボットなどの物理的な身体を持ち、実世界で行動や知覚を行う人工知能のこと。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://haddyalchaer.com/jepa" target="_blank" rel="noopener noreferrer">JEPA世界モデルの長期課題を解決する計画手法が判明</a></h3>
+<p class="orig">原題: After 600 experiments, here&#39;s what I discovered about JEPA world models</p>
+<p class="src">出典: <a href="https://haddyalchaer.com/jepa" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-14</p>
+<ul class="points"><li>追加学習を行わず、計画手法の改良だけで成功率を22%から85%に向上させた。</li><li>25ステップごとに中間目標を設定する手法などが長期タスクで高い効果を示した。</li><li>検証により、モデルの予測精度は物理シミュレーターと同等と確認された。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>JEPA</dt><dd>観測データを要約したベクトルに変換し、潜在空間で未来予測を行うAIの設計手法。</dd><dt>世界モデル</dt><dd>環境の規則性や自身の行動に伴う状態変化を予測・シミュレーションするAIモデル。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/" target="_blank" rel="noopener noreferrer">米新興企業が海洋温度差発電を用いた洋上データセンターを計画</a></h3>
+<p class="orig">原題: This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-14</p>
+<ul class="points"><li>海の表層の温水と深層の冷水の温度差を利用して発電し、サーバーを稼働させる。</li><li>創業6か月で2,000万ドルを調達し、2028年初頭に実証船を洋上展開する予定。</li><li>陸上グリッド接続の長期化を避け、急増するAIの電力需要に対応することを目指す。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>海洋温度差発電</dt><dd>海の表層と深層にある海水の温度差を利用してタービンを回し、発電するクリーン技術。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003200/" target="_blank" rel="noopener noreferrer">NTT系など4社がデータセンターの排熱を活用したエビ養殖を実験</a></h3>
+<p class="orig">原題: データセンターの排熱でエビ養殖、NTT系が実験 育ったら食べられる？ 担当者に聞いてみた</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/13/2000003200/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-13</p>
+<ul class="points"><li>冷却設備の排熱を回収して飼育水を温め、バナメイエビの陸上養殖に利用する。</li><li>2026年度に熱回収方法を検証し、2027年度に飼育や省エネ効果を実証する。</li><li>実証期間は2028年3月までで、他のデータセンターへの事業展開も視野に入れる。</li></ul>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>陸上養殖</dt><dd>海洋や河川ではなく、陸上に設けた人工水槽などの施設で水産物を育てる手法。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-13/">← 2026-11-13</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（45）</summary><ul><li><a href="../2026-11-14/">2026-11-14</a></li><li><a href="../2026-11-13/">2026-11-13</a></li><li><a href="../2026-11-12/">2026-11-12</a></li><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

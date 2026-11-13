@@ -1,0 +1,496 @@
+{
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-13T22:40:42.965Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T18:00:50.000Z",
+      "summary": "日常的なコーディングやエージェント作業に特化したAIモデルです。思考レベルhighで指標スコア51を記録し、前世代より2.5倍高速です。料金は100万トークンあたり入力1.50ドル、出力7.50ドルです。",
+      "headline": "Googleが高速なAIモデルGemini 4 Hydrogenを発表",
+      "points": [
+        "日常的なコーディングやエージェント作業に特化したAIモデルです。",
+        "思考レベルhighで指標スコア51を記録し、前世代より2.5倍高速です。",
+        "料金は100万トークンあたり入力1.50ドル、出力7.50ドルです。"
+      ],
+      "impact": "開発者や利用者は、Google AI StudioやGeminiアプリ等で利用できます。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIが文章を処理する際の文字や単語などの最小単位のことです。"
+        },
+        {
+          "term": "コンテキストウィンドウ",
+          "explanation": "AIが一度に記憶・処理できる入力情報の最大長のことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003162/",
+      "title": "Google、高速で低価格の「Gemini 4 Hydrogen」発表 無料ユーザーも利用可能",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T23:04:46.000Z",
+      "summary": "日常的な開発やエージェント作業向けに速度とコスト効率を重視しました。API料金は100万トークンあたり入力1.5ドル、出力7.5ドルの一律です。Google検索や無料版Geminiアプリから企業向けまで幅広く提供されます。",
+      "headline": "Googleが安価で高速なGemini 4 Hydrogenを発表",
+      "points": [
+        "日常的な開発やエージェント作業向けに速度とコスト効率を重視しました。",
+        "API料金は100万トークンあたり入力1.5ドル、出力7.5ドルの一律です。",
+        "Google検索や無料版Geminiアプリから企業向けまで幅広く提供されます。"
+      ],
+      "impact": "一般利用者や開発者は、GeminiアプリやAPIを通じて順次利用できます。",
+      "glossary": [
+        {
+          "term": "マルチモーダル",
+          "explanation": "テキストだけでなく画像、音声、動画など複数種類のデータを扱う性質です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T16:00:12.000Z",
+      "summary": "AIエージェントがユーザーに代わって商品の選定から決済まで代行します。利用時は生体認証で承認し、店舗に実際のカード番号は共有されません。米国の18歳以上のChatGPT Pro加入者など一部を対象に先行提供されます。",
+      "headline": "OpenAIがChatGPTによる代理購入機能を米国で公開",
+      "points": [
+        "AIエージェントがユーザーに代わって商品の選定から決済まで代行します。",
+        "利用時は生体認証で承認し、店舗に実際のカード番号は共有されません。",
+        "米国の18歳以上のChatGPT Pro加入者など一部を対象に先行提供されます。"
+      ],
+      "impact": "米国の対象ChatGPT Pro利用者は、Walletを設定して買い物代行を利用できます。",
+      "glossary": [
+        {
+          "term": "決済トークン",
+          "explanation": "本来のクレジットカード番号の代わりに発行される代替データのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://ktlog.net/posts/claude-code-ai-ecosystem",
+      "title": "Claude Codeのおすすめ環境を全体図で解説。ハーネス・スキル・MCPの仕組みと実例",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T05:21:58.000Z",
+      "summary": "Claude Codeを入口とし、判断AIや安全規則を通して仕事を振り分けます。判断AIが作業内容を即座に判定し、設定ファイルで危険な操作を禁止します。APIキーは1Password参照を用い、AIに直接見せない運用にしています。",
+      "headline": "Claude Codeを中心とする安全なAI作業環境の設計が公開",
+      "points": [
+        "Claude Codeを入口とし、判断AIや安全規則を通して仕事を振り分けます。",
+        "判断AIが作業内容を即座に判定し、設定ファイルで危険な操作を禁止します。",
+        "APIキーは1Password参照を用い、AIに直接見せない運用にしています。"
+      ],
+      "impact": "Claude Codeの作業精度や安全性を改善したい開発者は、環境設計の参考にできます。",
+      "glossary": [
+        {
+          "term": "ハーネス",
+          "explanation": "AIが指示を実行する前に、安全性や権限を検査・制御する仕組みのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-14-000106",
+      "title": "Claude Codeの手順書は、指定しても読まれない——教訓を「読ませる」から「貼る」「止める」へ変えた3か月の記録",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T15:07:12.000Z",
+      "summary": "指定しても読まれないなど教訓が効かない失敗を分析しました。12回の委任記録中、指定した手順書が読まれたのは2回でした。受け手に読ませず該当箇所を抜粋して貼る対策が有効でした。",
+      "headline": "Claude Codeで手順書が読まれない課題への対策が共有された",
+      "points": [
+        "指定しても読まれないなど教訓が効かない失敗を分析しました。",
+        "12回の委任記録中、指定した手順書が読まれたのは2回でした。",
+        "受け手に読ませず該当箇所を抜粋して貼る対策が有効でした。"
+      ],
+      "impact": "Claude Codeで手順書を運用する開発者は、教訓の渡し方を見直す必要があります。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが提供するエージェント型の開発支援ツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://zenn.dev/sotatek_jp/articles/cdfba2572f7818",
+      "title": "AIエージェントを本番導入する前に考えたい設計ポイント：コンテキスト管理・権限制御・実行ログ",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T15:18:18.000Z",
+      "summary": "本番運用にはLLMの精度だけでなく権限制御やログ設計が必要です。RAGのメタデータ管理やツール実行前の認可確認が重要です。リトライ時の冪等性の考慮や実行制限、人的承認も求められます。",
+      "headline": "AIエージェントの本番導入に向けた重要設計ポイントが整理された",
+      "points": [
+        "本番運用にはLLMの精度だけでなく権限制御やログ設計が必要です。",
+        "RAGのメタデータ管理やツール実行前の認可確認が重要です。",
+        "リトライ時の冪等性の考慮や実行制限、人的承認も求められます。"
+      ],
+      "impact": "AIエージェントを本番導入する開発者は、権限制御やログの仕組みを設計する必要があります。",
+      "glossary": [
+        {
+          "term": "RAG",
+          "explanation": "外部の文書データを検索し、回答生成に活用する技術。"
+        },
+        {
+          "term": "冪等性",
+          "explanation": "同じ操作を何度実行しても同じ結果が得られる性質。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/blogs/machine-learning/fine-grained-access-control-for-amazon-bedrock-managed-knowledge-base-tools/",
+      "title": "Fine-grained access control for Amazon Bedrock Managed Knowledge Base tools",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T15:40:24.000Z",
+      "summary": "ユーザー権限外の社内文書の参照を防ぐ設計手法が紹介されました。LLMの判断に依存せず検証済み属性をツール層で注入します。Bedrock AgentCore GatewayとKBの機能を活用します。",
+      "headline": "BedrockのKBツールでユーザーごとのアクセス制御手法が公開",
+      "points": [
+        "ユーザー権限外の社内文書の参照を防ぐ設計手法が紹介されました。",
+        "LLMの判断に依存せず検証済み属性をツール層で注入します。",
+        "Bedrock AgentCore GatewayとKBの機能を活用します。"
+      ],
+      "impact": "Bedrockで社内向けエージェントを構築するエンジニアは、ツール層での権限検証を実装する必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータを安全に連携させるプロトコル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://aws.amazon.com/jp/blogs/news/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
+      "title": "AWS Quick をエンタープライズ対応に: 自動化され監査も可能な、アカウント間のリソース昇格",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T01:56:04.000Z",
+      "summary": "開発から本番環境へのQuickリソース移行を自動化します。AgentCore上で動くMCPサーバーとして1回の呼び出しで昇格可能です。権限を再現し、変更前にはS3へバックアップを保存します。",
+      "headline": "AWS Quickのリソースをアカウント間で昇格するツールが公開",
+      "points": [
+        "開発から本番環境へのQuickリソース移行を自動化します。",
+        "AgentCore上で動くMCPサーバーとして1回の呼び出しで昇格可能です。",
+        "権限を再現し、変更前にはS3へバックアップを保存します。"
+      ],
+      "impact": "AWS Quickのリソース移行を手作業で行っている運用担当者は、自動化ツールの導入を検討できます。",
+      "glossary": [
+        {
+          "term": "昇格",
+          "explanation": "開発環境で作成したリソースを検証環境や本番環境へ移行すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+      "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T22:30:12.000Z",
+      "summary": "NeMo SwitchyardとLiteLLMを連携させBedrockモデルへ振り分ける。履歴からモデルを選ぶステージ戦略や重み付きランダム戦略に対応する。解決タスクあたりのコストを測定し評価するサンプルが提供される。",
+      "headline": "AWSがエージェント向けモデル振分構成を公開",
+      "points": [
+        "NeMo SwitchyardとLiteLLMを連携させBedrockモデルへ振り分ける。",
+        "履歴からモデルを選ぶステージ戦略や重み付きランダム戦略に対応する。",
+        "解決タスクあたりのコストを測定し評価するサンプルが提供される。"
+      ],
+      "impact": "Bedrock利用者は非本番環境にサンプルを配備して効果を検証できます。",
+      "glossary": [
+        {
+          "term": "LiteLLM",
+          "explanation": "複数の大規模言語モデルへのアクセス方法を共通化するオープンソース製品。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003110/",
+      "title": "Googleの社内専用コーディングAI「GfG」、その全容 Geminiに社内データ1兆トークン学習させ開発 所要時間半減の業務も",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T03:00:00.000Z",
+      "summary": "Geminiに1兆トークン規模の社内開発データを学習させGfGを構築した。A/Bテストでやり取り回数が23.1%減り、コード生存率は16.8%向上した。推論能力の低下を防ぐため中間学習介入とデータリプレイを併用した。",
+      "headline": "Googleが社内特化のコーディングAIを開発",
+      "points": [
+        "Geminiに1兆トークン規模の社内開発データを学習させGfGを構築した。",
+        "A/Bテストでやり取り回数が23.1%減り、コード生存率は16.8%向上した。",
+        "推論能力の低下を防ぐため中間学習介入とデータリプレイを併用した。"
+      ],
+      "glossary": [
+        {
+          "term": "破滅的忘却",
+          "explanation": "AIが新しい知識を学習した際に、過去に学習した知識を忘失してしまう現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T19:37:57.000Z",
+      "summary": "LangChainがCapitalG主導のシリーズCで3億ドルを調達した。企業評価額は前回の12.5億ドルから30億ドルへと2倍以上に増加した。エージェント管理ツールLangSmithの顧客数は7000社に達している。",
+      "headline": "LangChainが評価額30億ドルで資金調達",
+      "points": [
+        "LangChainがCapitalG主導のシリーズCで3億ドルを調達した。",
+        "企業評価額は前回の12.5億ドルから30億ドルへと2倍以上に増加した。",
+        "エージェント管理ツールLangSmithの顧客数は7000社に達している。"
+      ],
+      "glossary": [
+        {
+          "term": "シリーズC",
+          "explanation": "事業が軌道に乗った新興企業がさらなる成長に向けて行う資金調達段階。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://spring.io/blog/2026/11/12/a-bootiful-podcast-guy-pardon",
+      "title": "A Bootiful Podcast: Atomikos founder Guy Pardon on distributed transactions, data integrity, and more",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "summary": "Atomikos創業者が登壇し分散トランザクションの技術や重要性を解説した。2相コミットの仕組みやXA規格の必要性、整合性の確保方法を議論した。Atomikosのオープンソース機能やSpring Boot連携についても取り上げた。",
+      "headline": "Spring公式配信で分散トランザクションを議論",
+      "points": [
+        "Atomikos創業者が登壇し分散トランザクションの技術や重要性を解説した。",
+        "2相コミットの仕組みやXA規格の必要性、整合性の確保方法を議論した。",
+        "Atomikosのオープンソース機能やSpring Boot連携についても取り上げた。"
+      ],
+      "impact": "データ整合性を重視する開発者は配信から保証の仕組みを確認できます。",
+      "glossary": [
+        {
+          "term": "2相コミット",
+          "explanation": "複数の独立したシステム間で処理の一貫性を保証するための合意手順。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-34-comprehensive",
+      "title": "35日でフロントエンドの基礎を完全に理解する #34 - 総合演習",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-13T16:21:39.000Z",
+      "summary": "複数回の知識を組み合わせて解く、表示遅延やVueのバグ調査などの実践的な問題が提示されています。表示遅延では計測結果に基づくコード分割などを、Vueでは分割代入による監視の外れを解説しています。非同期検索での追い越しによる上書き問題と、最新のリクエストを判別して防ぐ対策が紹介されています。",
+      "headline": "フロントエンドの基礎を試す実務的な総合演習問題が公開",
+      "points": [
+        "複数回の知識を組み合わせて解く、表示遅延やVueのバグ調査などの実践的な問題が提示されています。",
+        "表示遅延では計測結果に基づくコード分割などを、Vueでは分割代入による監視の外れを解説しています。",
+        "非同期検索での追い越しによる上書き問題と、最新のリクエストを判別して防ぐ対策が紹介されています。"
+      ],
+      "impact": "フロントエンドの知識を定着させたい学習者が、問題を通じて仮説検証やバグ特定の力を確認できます。",
+      "glossary": [
+        {
+          "term": "LCP",
+          "explanation": "Webページのメインコンテンツが表示されるまでの時間を示す指標。"
+        },
+        {
+          "term": "リアクティブ",
+          "explanation": "データの変化に応じて画面表示などの関連する処理が自動的に更新される仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/",
+      "title": "Aurora PostgreSQL with express configuration now supported in CloudFormation",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-13T16:00:00.000Z",
+      "summary": "CloudFormationでAurora PostgreSQLの高速なクラスター作成設定が利用可能になりました。単一のプロパティ指定で、クラスターとプライマリデータベースインスタンスを同時に作成できます。本機能はexpress configurationが提供されている全AWSリージョンで利用可能です。",
+      "headline": "CloudFormationがAurora PostgreSQLのexpress設定に対応",
+      "points": [
+        "CloudFormationでAurora PostgreSQLの高速なクラスター作成設定が利用可能になりました。",
+        "単一のプロパティ指定で、クラスターとプライマリデータベースインスタンスを同時に作成できます。",
+        "本機能はexpress configurationが提供されている全AWSリージョンで利用可能です。"
+      ],
+      "impact": "CloudFormationを利用する開発者が、テンプレートを簡素化して環境構築を自動化できます。",
+      "glossary": [
+        {
+          "term": "AWS CloudFormation",
+          "explanation": "テンプレートを記述することでAWS上のリソース群を自動構築できるIaCサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/",
+      "title": "AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-13T08:00:00.000Z",
+      "summary": "Amazon EKS上のAWS BatchでLinuxケーパビリティやseccompプロファイルが設定可能になりました。コンテナ単位の設定に加えて、Pod全体に対するセキュリティ設定もサポートされます。厳しいセキュリティ要件を満たしながら、ジョブを必要最小限の権限で実行できるようになります。",
+      "headline": "AWS Batch on EKSでセキュリティコンテキスト機能が拡充",
+      "points": [
+        "Amazon EKS上のAWS BatchでLinuxケーパビリティやseccompプロファイルが設定可能になりました。",
+        "コンテナ単位の設定に加えて、Pod全体に対するセキュリティ設定もサポートされます。",
+        "厳しいセキュリティ要件を満たしながら、ジョブを必要最小限の権限で実行できるようになります。"
+      ],
+      "impact": "EKS上でAWS Batchを利用する管理者が、要件に合わせてより安全な権限設定を行えます。",
+      "glossary": [
+        {
+          "term": "seccomp",
+          "explanation": "アプリケーションが実行できるシステムコールを制限して安全性を高めるLinuxの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://future-architect.github.io/articles/20261113a/",
+      "title": "aws-emulatorにTerraformでリソースを作成できるか試してみる | フューチャー技術ブログ",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-13T06:21:05.000Z",
+      "summary": "AWS公式のエミュレーター環境をDockerで立ち上げ、Terraformから操作できるか検証されています。環境変数やファイルパスを調整することで、Terraformを用いたVPCリソースの作成に成功しています。検証にはMacbook M2 AirやTerraform v1.17.2などの環境が用いられています。",
+      "headline": "新ツールaws-emulatorでTerraformを動かす検証記事が公開",
+      "points": [
+        "AWS公式のエミュレーター環境をDockerで立ち上げ、Terraformから操作できるか検証されています。",
+        "環境変数やファイルパスを調整することで、Terraformを用いたVPCリソースの作成に成功しています。",
+        "検証にはMacbook M2 AirやTerraform v1.17.2などの環境が用いられています。"
+      ],
+      "impact": "ローカルでAWSをエミュレートしたい開発者が、Terraformとの連携手順を参考にできます。",
+      "glossary": [
+        {
+          "term": "Terraform",
+          "explanation": "クラウドなどのインフラリソースをコードで宣言して自動管理できるIaCツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "title": "OpenAI disbands its robotics team as its general models start running robots",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-13T17:55:23Z",
+      "summary": "研究者を主力研究チームや応用部門など既存の組織へ再編した。GPT-6 Astraなど汎用モデルが直接ロボットに適用可能と判断された。自社製人型ロボットの開発は継続し、2027年の公開実演を目指す。",
+      "headline": "OpenAIがロボット専任チームを解散し汎用AIへ統合",
+      "points": [
+        "研究者を主力研究チームや応用部門など既存の組織へ再編した。",
+        "GPT-6 Astraなど汎用モデルが直接ロボットに適用可能と判断された。",
+        "自社製人型ロボットの開発は継続し、2027年の公開実演を目指す。"
+      ],
+      "glossary": [
+        {
+          "term": "AGI",
+          "explanation": "人間と同等の汎用的な知的能力を持ち、多様な課題を自律してこなせる人工知能。"
+        },
+        {
+          "term": "エンボディドAI",
+          "explanation": "ロボットなどの物理的な身体を持ち、実世界で行動や知覚を行う人工知能のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://haddyalchaer.com/jepa",
+      "title": "After 600 experiments, here's what I discovered about JEPA world models",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-13T17:55:28Z",
+      "summary": "追加学習を行わず、計画手法の改良だけで成功率を22%から85%に向上させた。25ステップごとに中間目標を設定する手法などが長期タスクで高い効果を示した。検証により、モデルの予測精度は物理シミュレーターと同等と確認された。",
+      "headline": "JEPA世界モデルの長期課題を解決する計画手法が判明",
+      "points": [
+        "追加学習を行わず、計画手法の改良だけで成功率を22%から85%に向上させた。",
+        "25ステップごとに中間目標を設定する手法などが長期タスクで高い効果を示した。",
+        "検証により、モデルの予測精度は物理シミュレーターと同等と確認された。"
+      ],
+      "glossary": [
+        {
+          "term": "JEPA",
+          "explanation": "観測データを要約したベクトルに変換し、潜在空間で未来予測を行うAIの設計手法。"
+        },
+        {
+          "term": "世界モデル",
+          "explanation": "環境の規則性や自身の行動に伴う状態変化を予測・シミュレーションするAIモデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
+      "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
+      "source": "TechCrunch",
+      "genre": "tech",
+      "publishedAt": "2026-11-13T20:07:24.000Z",
+      "summary": "海の表層の温水と深層の冷水の温度差を利用して発電し、サーバーを稼働させる。創業6か月で2,000万ドルを調達し、2028年初頭に実証船を洋上展開する予定。陸上グリッド接続の長期化を避け、急増するAIの電力需要に対応することを目指す。",
+      "headline": "米新興企業が海洋温度差発電を用いた洋上データセンターを計画",
+      "points": [
+        "海の表層の温水と深層の冷水の温度差を利用して発電し、サーバーを稼働させる。",
+        "創業6か月で2,000万ドルを調達し、2028年初頭に実証船を洋上展開する予定。",
+        "陸上グリッド接続の長期化を避け、急増するAIの電力需要に対応することを目指す。"
+      ],
+      "glossary": [
+        {
+          "term": "海洋温度差発電",
+          "explanation": "海の表層と深層にある海水の温度差を利用してタービンを回し、発電するクリーン技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003200/",
+      "title": "データセンターの排熱でエビ養殖、NTT系が実験 育ったら食べられる？ 担当者に聞いてみた",
+      "source": "ITmedia NEWS",
+      "genre": "tech",
+      "publishedAt": "2026-11-13T10:45:49.000Z",
+      "summary": "冷却設備の排熱を回収して飼育水を温め、バナメイエビの陸上養殖に利用する。2026年度に熱回収方法を検証し、2027年度に飼育や省エネ効果を実証する。実証期間は2028年3月までで、他のデータセンターへの事業展開も視野に入れる。",
+      "headline": "NTT系など4社がデータセンターの排熱を活用したエビ養殖を実験",
+      "points": [
+        "冷却設備の排熱を回収して飼育水を温め、バナメイエビの陸上養殖に利用する。",
+        "2026年度に熱回収方法を検証し、2027年度に飼育や省エネ効果を実証する。",
+        "実証期間は2028年3月までで、他のデータセンターへの事業展開も視野に入れる。"
+      ],
+      "glossary": [
+        {
+          "term": "陸上養殖",
+          "explanation": "海洋や河川ではなく、陸上に設けた人工水槽などの施設で水産物を育てる手法。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 163,
+    "shortlisted": 80,
+    "bodyFailures": 5,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 31698,
+    "outputTokens": 12028
+  },
+  "offline": false
+}
