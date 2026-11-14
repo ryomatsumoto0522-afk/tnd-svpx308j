@@ -1,0 +1,548 @@
+{
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-14T21:32:11.761Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2156117.html",
+      "title": "Google、高速・高効率な「Gemini 4 Hydrogen」を発表 ～「Claude Sonnet 5.5」「GPT-6.1 Terra」のライバル／前世代「3.8 Flash」の2.5倍の速さでタスクを完了",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T02:57:17.000Z",
+      "summary": "日常的なコーディングや作業向けに速度とコストの均衡を図ったモデルを公開しました。前世代の3.8 Flashと比べ、既定設定でタスクを2.5倍速く完了できます。開発者や企業、一般ユーザー向けに同日より提供を開始しました。",
+      "headline": "Googleが日常業務向けのGemini 4 Hydrogenを発表",
+      "points": [
+        "日常的なコーディングや作業向けに速度とコストの均衡を図ったモデルを公開しました。",
+        "前世代の3.8 Flashと比べ、既定設定でタスクを2.5倍速く完了できます。",
+        "開発者や企業、一般ユーザー向けに同日より提供を開始しました。"
+      ],
+      "impact": "開発者や企業はAPIやGoogle Antigravityなどを通じて新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIが自然言語を処理する際に扱う、単語や文字などの最小単位。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://gihyo.jp/article/2026/11/a2ui-1.0",
+      "title": "Google、AIエージェント向けUIプロトコル「A2UI」バージョン1.0を公開 | gihyo.jp",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T00:18:33.000Z",
+      "summary": "AIエージェントがアプリ内にフォームやグラフなどの対話型画面を描画する仕様の初版です。エージェントと描画側の双方向な関数呼び出しや複数カタログの連携に対応しました。Webやモバイル向け描画SDKやPythonなどのエージェント向け開発キットを提供します。",
+      "headline": "GoogleがAI向け対話型UIプロトコルA2UI 1.0を公開",
+      "points": [
+        "AIエージェントがアプリ内にフォームやグラフなどの対話型画面を描画する仕様の初版です。",
+        "エージェントと描画側の双方向な関数呼び出しや複数カタログの連携に対応しました。",
+        "Webやモバイル向け描画SDKやPythonなどのエージェント向け開発キットを提供します。"
+      ],
+      "impact": "エージェント開発者は公開されたSDKを用いて各端末向けに対話型画面を実装できます。",
+      "glossary": [
+        {
+          "term": "SDK",
+          "explanation": "特定のプラットフォーム向け開発に必要なプログラムや道具のセット。"
+        },
+        {
+          "term": "レンダラー",
+          "explanation": "データやコードを解釈して画面に実際の表示を描き出す処理系。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
+      "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-14T10:07:16.000Z",
+      "summary": "日本語回答に中国語が混ざる問題を、出力層の重みを書き換えて解消しました。対象の25,451行のみを未使用行で置換し、混入率を27％から0％に抑えました。他の重みは変更せず、オープンソースツールのKestromで書き換えと検証を実施しました。",
+      "headline": "出力層の書き換えでQwen3.8の中国語混入が解消",
+      "points": [
+        "日本語回答に中国語が混ざる問題を、出力層の重みを書き換えて解消しました。",
+        "対象の25,451行のみを未使用行で置換し、混入率を27％から0％に抑えました。",
+        "他の重みは変更せず、オープンソースツールのKestromで書き換えと検証を実施しました。"
+      ],
+      "impact": "Qwen系モデルの日本語出力に混ざる不要な中国語を抑制したい開発者に有用です。",
+      "glossary": [
+        {
+          "term": "出力層",
+          "explanation": "ニューラルネットワークの最終段で、次の単語候補の確率を算出する部分。"
+        },
+        {
+          "term": "重み",
+          "explanation": "AIモデル内部で入力データの重要度や影響度を調整する数値パラメータ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "source": "GitHub Blog（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T22:54:52.000Z",
+      "summary": "再利用可能な指示をSKILL.mdを中心としたディレクトリにまとめる手法を提唱しました。明確な入出力を定義し、検証役などを別スキルとして連携させる設計を推奨しています。設定値はスキルに埋め込まず、外部ファイルに持たせて共有しやすくします。",
+      "headline": "GitHubがエージェント用指示書を再利用する仕組みを解説",
+      "points": [
+        "再利用可能な指示をSKILL.mdを中心としたディレクトリにまとめる手法を提唱しました。",
+        "明確な入出力を定義し、検証役などを別スキルとして連携させる設計を推奨しています。",
+        "設定値はスキルに埋め込まず、外部ファイルに持たせて共有しやすくします。"
+      ],
+      "impact": "AIエージェントの作業手順をチーム内で再利用・共有したい開発者が参考にできます。",
+      "glossary": [
+        {
+          "term": "マニフェスト",
+          "explanation": "システムやプロジェクトの設定情報や構成内容を記述した定義ファイル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://zenn.dev/hayato498/articles/claude-code-demo-video-hyperframes",
+      "title": "【簡単】Claude Code×HyperFramesで展示会・商談用のデモ動画を作成する方法（ナレーション・字幕付き）",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-14T12:10:44.000Z",
+      "summary": "Claude CodeやHyperFramesなどを組み合わせ、字幕や音声付きのデモ動画をコードから生成する手法が公開された。約30秒の動画1本あたりのAPI費用は約0.31米ドルで、生成APIの待機とレンダリングは各約1分で完了する。手順やスクリプトはGitHubで公開されており、利用者は指示書をエージェントに渡すことで再現できる。",
+      "headline": "Claude CodeとHyperFrames等で動画を作る手法が公開",
+      "points": [
+        "Claude CodeやHyperFramesなどを組み合わせ、字幕や音声付きのデモ動画をコードから生成する手法が公開された。",
+        "約30秒の動画1本あたりのAPI費用は約0.31米ドルで、生成APIの待機とレンダリングは各約1分で完了する。",
+        "手順やスクリプトはGitHubで公開されており、利用者は指示書をエージェントに渡すことで再現できる。"
+      ],
+      "impact": "展示会などの動画を低コストで作成・修正したい利用者は、公開されたリポジトリを利用して再現を試すことができる。",
+      "glossary": [
+        {
+          "term": "HyperFrames",
+          "explanation": "HTMLやアニメーションのコードから動画をレンダリングして出力するオープンソースのフレームワーク。"
+        },
+        {
+          "term": "TTS",
+          "explanation": "テキスト・トゥ・スピーチの略で、入力されたテキストデータを人工的な音声として読み上げる技術。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/itoken_lab/articles/excel-read-fast-light",
+      "title": "AI に Excel を読ませるなら、Python より3〜13倍速く、メモリ使用量は最大92%減",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-14T12:30:35.000Z",
+      "summary": "AIエージェント向けに、Excelファイルを高速かつ省メモリで読み込んでCSV等に変換するツールが公開された。Python利用時と比較して3〜11倍高速化し、メモリ使用量は84〜92%削減されたことが検証されている。Rust製の実行ファイルを用いて行ごとに処理するため、ファイルが大きくなってもメモリ消費が抑えられる。",
+      "headline": "AI向けExcel処理ツールexcel-readが公開",
+      "points": [
+        "AIエージェント向けに、Excelファイルを高速かつ省メモリで読み込んでCSV等に変換するツールが公開された。",
+        "Python利用時と比較して3〜11倍高速化し、メモリ使用量は84〜92%削減されたことが検証されている。",
+        "Rust製の実行ファイルを用いて行ごとに処理するため、ファイルが大きくなってもメモリ消費が抑えられる。"
+      ],
+      "impact": "ExcelデータをAIエージェントに効率よく扱わせたい開発者は、CLI経由でツールを導入して利用できる。",
+      "glossary": [
+        {
+          "term": "Rust",
+          "explanation": "処理速度の速さとメモリ安全性を両立させた、システム開発などに広く用いられるオープンソースのプログラミング言語。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+      "title": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T22:02:39.000Z",
+      "summary": "AWSがAmazon Bedrock AgentCore runtimeにおけるセッション起動の高速化アーキテクチャを解説した。新プラットフォームV2では、環境初期化後にスナップショットを作成・復元することで起動時間を大幅に短縮する。要件に応じて初期化タイミングの変更やビルドフックの追加、事前のセッション起動などの対策が示されている。",
+      "headline": "Bedrock AgentCoreの起動高速化パターンが公開",
+      "points": [
+        "AWSがAmazon Bedrock AgentCore runtimeにおけるセッション起動の高速化アーキテクチャを解説した。",
+        "新プラットフォームV2では、環境初期化後にスナップショットを作成・復元することで起動時間を大幅に短縮する。",
+        "要件に応じて初期化タイミングの変更やビルドフックの追加、事前のセッション起動などの対策が示されている。"
+      ],
+      "impact": "AgentCore上で応答性を高めたい開発者は、プラットフォームV2への移行やコードの初期化処理の見直しを検討できる。",
+      "glossary": [
+        {
+          "term": "microVM",
+          "explanation": "軽量化された仮想マシンで、コンテナに近い起動速度とハードウェア仮想化による高い分離性を両立する技術。"
+        },
+        {
+          "term": "スナップショット",
+          "explanation": "ある時点における仮想マシンやシステムのメモリ、ディスクなどの状態を丸ごと記録して保存したデータ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://aws.amazon.com/jp/blogs/news/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+      "title": "脅威アクターが ARTEX の AI エージェントで展開するサイバー犯罪キャンペーンを Amazon Threat Intelligence が観測",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-13T22:39:34.000Z",
+      "summary": "脅威アクターがARTEXのAIエージェントを悪用し、認証情報窃取などのサイバー犯罪を展開している様子が観測された。おとりのセンサーから得られた記録により、盗んだ認証情報でLLM推論費用を賄い自律的に活動を継続する構造が判明した。ナレッジグラフを共有する複数のエージェントが連携し、LLMゲートウェイなどを標的に攻撃を行っていた。",
+      "headline": "脅威アクターによるAI悪用のサイバー犯罪をAmazonが観測",
+      "points": [
+        "脅威アクターがARTEXのAIエージェントを悪用し、認証情報窃取などのサイバー犯罪を展開している様子が観測された。",
+        "おとりのセンサーから得られた記録により、盗んだ認証情報でLLM推論費用を賄い自律的に活動を継続する構造が判明した。",
+        "ナレッジグラフを共有する複数のエージェントが連携し、LLMゲートウェイなどを標的に攻撃を行っていた。"
+      ],
+      "impact": "影響を受けるAI関連プラットフォームを運用する組織は、公開された調査結果や侵害指標を確認し自社環境を点検する必要がある。",
+      "glossary": [
+        {
+          "term": "ペネトレーションテスト",
+          "explanation": "システムの安全性を確認するため、実際のサイバー攻撃と同様の手法を用いて侵入を試みるセキュリティテスト。"
+        },
+        {
+          "term": "侵害指標 (IOC)",
+          "explanation": "システムやネットワークがサイバー攻撃を受けた痕跡や証拠を示す技術的情報のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/",
+      "title": "How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T21:47:07.000Z",
+      "summary": "検査機器の保守知識を組織全体で共有・展開するAIシステム「SWARM」を構築しました。チケット初回応答時間を約130倍高速化し、自動対応率は96.2%を達成しました。自律型のswarm-agentと対話型のswarm-hiveが共通のスキルを利用します。",
+      "headline": "NateraがBedrock AgentCoreで検査運用AIを構築",
+      "points": [
+        "検査機器の保守知識を組織全体で共有・展開するAIシステム「SWARM」を構築しました。",
+        "チケット初回応答時間を約130倍高速化し、自動対応率は96.2%を達成しました。",
+        "自律型のswarm-agentと対話型のswarm-hiveが共通のスキルを利用します。"
+      ],
+      "impact": "検査運用の技術者は、チケット到着時に即座に診断情報や組織の知見を参照して対応できます。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "生成AIモデルを活用したアプリケーションを構築するためのAWSのマネージドサービス。"
+        },
+        {
+          "term": "AIエージェント",
+          "explanation": "自律的にタスクを理解し、外部ツールの実行や判断を行って目的を達成するプログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+      "title": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T19:29:55.000Z",
+      "summary": "アプリケーションの独自コードなしに、AWS標準機能のみでBedrockの支出を管理します。IAMのプリンシパルタグやセッションタグを用いて、利用者ごとの利用費を可視化します。AWS Budgetsのアクションを使い、予算超過時に拒否ポリシーを自動で適用します。",
+      "headline": "AWSがBedrock利用費をIAM単位で制限する手法を解説",
+      "points": [
+        "アプリケーションの独自コードなしに、AWS標準機能のみでBedrockの支出を管理します。",
+        "IAMのプリンシパルタグやセッションタグを用いて、利用者ごとの利用費を可視化します。",
+        "AWS Budgetsのアクションを使い、予算超過時に拒否ポリシーを自動で適用します。"
+      ],
+      "impact": "Bedrockの支出を管理する担当者は、IAMタグやコスト配分タグ、AWS Budgetsを設定する必要があります。",
+      "glossary": [
+        {
+          "term": "IAMプリンシパル",
+          "explanation": "AWSリクエストを実行できるIAMユーザーやIAMロールなどの識別エンティティ。"
+        },
+        {
+          "term": "AWS Budgets",
+          "explanation": "AWSの利用コストや使用量を追跡し、設定した上限値を超えた際に通知や自動制御を行うサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+      "title": "Optimizing cost per task and proving agent ROI on Amazon Bedrock",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-12T18:43:19.000Z",
+      "summary": "トークン単価ではなくタスク完了までにかかる総コストに着目した費用対効果の測定法を解説しました。トークナイザーの効率やエージェントのループ回数など、料金表に出ない4つの隠れコスト要因を提示しました。キャッシュやルーティング、出力制限によってタスクあたりの費用を抑える手法を紹介しています。",
+      "headline": "Bedrockでのタスク単位のコスト最適化とROI測定法が公開",
+      "points": [
+        "トークン単価ではなくタスク完了までにかかる総コストに着目した費用対効果の測定法を解説しました。",
+        "トークナイザーの効率やエージェントのループ回数など、料金表に出ない4つの隠れコスト要因を提示しました。",
+        "キャッシュやルーティング、出力制限によってタスクあたりの費用を抑える手法を紹介しています。"
+      ],
+      "impact": "Bedrockを利用するエンジニアやFinOps担当者は、タスクごとの費用を算出してモデル最適化を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "大規模言語モデルがテキストを処理する際の最小単位となる単語や文字の断片。"
+        },
+        {
+          "term": "FinOps",
+          "explanation": "クラウド利用の費用対効果を最大化するため、財務とエンジニアリングを連携させる運用手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/matsushima_a/articles/day-046-locally-uncensored-coding-agent-model-size",
+      "title": "locally-uncensoredのコーディングエージェントを3B/7B/14Bで試したら、直せたのは14Bだけだった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-14T14:27:19.000Z",
+      "summary": "locally-uncensoredを使い、モデルサイズごとのコーディングエージェントの能力を検証しました。3Bモデルでのチャットは実用速度でしたが、簡単なバグ修正タスクでは3Bと7Bが失敗しました。テストを通過させる修正に成功したのは14Bモデルのみで、成否はモデルの能力に依存していました。",
+      "headline": "ローカルAIツールのコード修正実験で14Bのみが成功",
+      "points": [
+        "locally-uncensoredを使い、モデルサイズごとのコーディングエージェントの能力を検証しました。",
+        "3Bモデルでのチャットは実用速度でしたが、簡単なバグ修正タスクでは3Bと7Bが失敗しました。",
+        "テストを通過させる修正に成功したのは14Bモデルのみで、成否はモデルの能力に依存していました。"
+      ],
+      "impact": "ローカル環境でコード修正エージェントの活用を試みる開発者は、14B以上のモデル利用を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "パラメータ数（B）",
+          "explanation": "モデルの規模を表す指標で、BはBillion（10億）個の学習パラメータを意味する。"
+        },
+        {
+          "term": "Ollama",
+          "explanation": "大規模言語モデルをローカルPC環境で簡単にセットアップして実行できるオープンソース基盤。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://zenn.dev/rimonoa/articles/8974167fe581c2",
+      "title": "GPTBotは0回、OAI-SearchBotは4,847回。AIクローラーを30日間観測して分かったこと",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-14T17:33:16.000Z",
+      "summary": "リモノアがAIクローラーのアクセスを30日間集計し、検索用と学習用の巡回傾向や集計時の注意点をまとめた。全9,500件のうちOAI-SearchBotが4,847件を占め、GPTBotは0件でAI検索向けが79.2%だった。記事形式のURLだけでなく、ツールやDatasetなどの公開HTMLページにもリクエストが到達していた。",
+      "headline": "リモノアが30日間のAIクローラーによるアクセス観測結果を公表",
+      "points": [
+        "リモノアがAIクローラーのアクセスを30日間集計し、検索用と学習用の巡回傾向や集計時の注意点をまとめた。",
+        "全9,500件のうちOAI-SearchBotが4,847件を占め、GPTBotは0件でAI検索向けが79.2%だった。",
+        "記事形式のURLだけでなく、ツールやDatasetなどの公開HTMLページにもリクエストが到達していた。"
+      ],
+      "impact": "サイト運営者は、AI検索への対応やログ分析の際、Botの用途や自身の操作による内部アクセスの除外を考慮する必要がある。",
+      "glossary": [
+        {
+          "term": "クローラー",
+          "explanation": "Webサイトを自動で巡回し、文書や画像などのデータを収集・保存するプログラムのこと。"
+        },
+        {
+          "term": "User-Agent",
+          "explanation": "Webサーバーに対し、アクセス元のブラウザやBotの種類などの情報を伝える文字列。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://inside.java/newscast/117/",
+      "title": "Adaptive Heap Sizing + Numeric Conversion + Primitive Patterns - Inside Java Newscast #117",
+      "source": "Inside Java",
+      "genre": "backend",
+      "publishedAt": "2026-11-14T00:00:00.000Z",
+      "summary": "ZGCの適応型ヒープサイズ調整によりほぼ設定不要でCPUとメモリの利用が動的に最適化されます。カスタム数値型の変換課題等によりプリミティブパターンはJDK 28には搭載されず撤回されます。",
+      "headline": "JDK 28のZGC適応型ヒープ調整やプリミティブパターンの撤回が発表",
+      "points": [
+        "ZGCの適応型ヒープサイズ調整によりほぼ設定不要でCPUとメモリの利用が動的に最適化されます。",
+        "カスタム数値型の変換課題等によりプリミティブパターンはJDK 28には搭載されず撤回されます。"
+      ],
+      "glossary": [
+        {
+          "term": "ZGC",
+          "explanation": "Javaで大容量メモリを低遅延で処理するために設計されたガベージコレクター。"
+        },
+        {
+          "term": "ヒープ",
+          "explanation": "プログラム実行時にオブジェクトなどを動的に配置するために確保されるメモリ領域。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+      "title": "PyPI's redesigned project pages with clearer security signals are now live",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-11-14T15:40:52Z",
+      "summary": "PyPIはUIの更新を完了し、パッケージのセキュリティ状態を分かりやすく確認できる専用タブなどの機能を正式公開しました。新設されたセキュリティタブでは、全ファイルの検証状況を示すFull Provenanceなどの出所状態が表示されます。一部ファイルの証明書欠落やリポジトリ変更などを検知した場合は警告が表示され、出所の検証が容易になります。",
+      "headline": "PyPIがプロジェクトページを刷新しセキュリティ信号を明確化",
+      "points": [
+        "PyPIはUIの更新を完了し、パッケージのセキュリティ状態を分かりやすく確認できる専用タブなどの機能を正式公開しました。",
+        "新設されたセキュリティタブでは、全ファイルの検証状況を示すFull Provenanceなどの出所状態が表示されます。",
+        "一部ファイルの証明書欠落やリポジトリ変更などを検知した場合は警告が表示され、出所の検証が容易になります。"
+      ],
+      "impact": "パッケージ利用者は導入前にセキュリティタブで出所を確認し、メンテナは証明書を生成するTrusted Publishingの導入を検討する必要があります。",
+      "glossary": [
+        {
+          "term": "PyPI",
+          "explanation": "Pythonのライブラリやパッケージを管理・配布するための公式リポジトリ。"
+        },
+        {
+          "term": "Attestation",
+          "explanation": "ソフトウェアの構築環境やソースコードの出所が正当であることを証明する電子データ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-35-summary",
+      "title": "35日でフロントエンドの基礎を完全に理解する #35 - 総まとめ・知識の総点検",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-14T17:20:38.000Z",
+      "summary": "シリーズ最終回として新知識の追加は行わず、35日分の学びを1つの体系として総点検する内容を公開した。実務でのトラブルから対応する回を探せる逆引き表と、主要テーマを30秒で説明できるかのチェックリストを掲載している。基礎を定着させるため、ブラウザの描画やリアクティビティ、CSR・SSR・SSGの違いなど8つのテーマの解説例を示している。",
+      "headline": "フロントエンド基礎学習の最終回として35日分の総点検と逆引き方法を解説",
+      "points": [
+        "シリーズ最終回として新知識の追加は行わず、35日分の学びを1つの体系として総点検する内容を公開した。",
+        "実務でのトラブルから対応する回を探せる逆引き表と、主要テーマを30秒で説明できるかのチェックリストを掲載している。",
+        "基礎を定着させるため、ブラウザの描画やリアクティビティ、CSR・SSR・SSGの違いなど8つのテーマの解説例を示している。"
+      ],
+      "impact": "シリーズの読者は、30秒で説明できるかのチェックリストを活用し、理解が曖昧な回を復習して知識を定着させることができる。",
+      "glossary": [
+        {
+          "term": "ハイドレーション",
+          "explanation": "サーバー側で作成された静的なHTMLに対し、ブラウザ側でJavaScriptを実行して動的な機能を割り当てる処理。"
+        },
+        {
+          "term": "SSR",
+          "explanation": "ユーザーからのリクエストに応じて、サーバー側でHTMLを動的に生成してブラウザに送信するレンダリング手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://zenn.dev/extmax/articles/be3d468e660c36",
+      "title": "Nuxt 4の多言語SSGサイトで、ハイドレーション後に言語設定を反映する",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-14T09:29:00.000Z",
+      "summary": "静的生成（SSG）における初期HTMLとブラウザ保存言語の食い違いを防ぐため、ハイドレーション後に言語変更を行う。ルートパス（/）アクセス時のみ、Cookieやブラウザ設定に基づいて自動で該当言語へ切り替える仕組みを構築。クエリやハッシュ等のURL情報を保持したまま非破壊的にリダイレクトするプラグイン実装例が示されている。",
+      "headline": "Nuxt 4のSSGサイトでハイドレーション後に言語設定を反映する手法が公開",
+      "points": [
+        "静的生成（SSG）における初期HTMLとブラウザ保存言語の食い違いを防ぐため、ハイドレーション後に言語変更を行う。",
+        "ルートパス（/）アクセス時のみ、Cookieやブラウザ設定に基づいて自動で該当言語へ切り替える仕組みを構築。",
+        "クエリやハッシュ等のURL情報を保持したまま非破壊的にリダイレクトするプラグイン実装例が示されている。"
+      ],
+      "impact": "Nuxt 4とSSGで多言語サイトを構築する開発者は、初期描画の食い違いを防ぐ実装手順を確認できる。",
+      "glossary": [
+        {
+          "term": "ハイドレーション",
+          "explanation": "静的に生成されたHTMLにJavaScriptを結びつけ、操作可能な状態にする処理。"
+        },
+        {
+          "term": "SSG",
+          "explanation": "WebサイトのHTMLをビルド時にあらかじめ生成しておく静的サイト生成の手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://zenn.dev/shougo/articles/ng-nvim-simple-gui",
+      "title": "ng: Neovim のためのシンプルな GUI",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-11-13T11:38:14.000Z",
+      "summary": "機能をあえて削ぎ落とし、端末（TUI）と同じ画面を高速かつ正確に描画することに特化したLinux向けGUI。画面表示の遅延を抑え、キー入力から表示までの応答時間を中央値約7.95msという高速さを実現。全角文字の正確な表示やカーソル位置でのIME変換表示など、日本語環境に配慮した設計が特徴。",
+      "headline": "Linux向けに不要機能を排したシンプルなNeovim GUI「ng」が開発される",
+      "points": [
+        "機能をあえて削ぎ落とし、端末（TUI）と同じ画面を高速かつ正確に描画することに特化したLinux向けGUI。",
+        "画面表示の遅延を抑え、キー入力から表示までの応答時間を中央値約7.95msという高速さを実現。",
+        "全角文字の正確な表示やカーソル位置でのIME変換表示など、日本語環境に配慮した設計が特徴。"
+      ],
+      "impact": "Linux上で高速かつ日本語環境に優れたNeovimのGUI環境を求める開発者が利用を検討できる。",
+      "glossary": [
+        {
+          "term": "Neovim",
+          "explanation": "テキストエディタVimから派生し、拡張性やパフォーマンスを向上させたオープンソースのエディタ。"
+        },
+        {
+          "term": "IME",
+          "explanation": "キーボードから日本語などの複雑な文字を入力・変換するためのソフトウェア。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+      "title": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+      "source": "AWS 機械学習ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-13T19:35:35.000Z",
+      "summary": "AssemblyAIが大規模な音声認識推論基盤において、コスト削減とSLA維持を両立する構成を公開。Amazon ECS、EC2 Spotインスタンス、Amazon SQSを用いた再試行機構で中断リスクを吸収。データの所在地制限に対応するため、米国および欧州の複数リージョンで分散配置を行っている。",
+      "headline": "AssemblyAIがAWSのSpotインスタンスを活用し音声推論コストを最適化",
+      "points": [
+        "AssemblyAIが大規模な音声認識推論基盤において、コスト削減とSLA維持を両立する構成を公開。",
+        "Amazon ECS、EC2 Spotインスタンス、Amazon SQSを用いた再試行機構で中断リスクを吸収。",
+        "データの所在地制限に対応するため、米国および欧州の複数リージョンで分散配置を行っている。"
+      ],
+      "impact": "AWS上で大規模なAI推論基盤のコスト削減と可用性向上を図るインフラエンジニアが参考にできる。",
+      "glossary": [
+        {
+          "term": "スポットインスタンス",
+          "explanation": "クラウド上の余剰計算リソースを大幅な割引価格で利用できるが、中断される可能性がある仕組み。"
+        },
+        {
+          "term": "推論",
+          "explanation": "学習済みのAIモデルに新しいデータを入力し、予測や分類などの結果を出力する処理。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://qiita.com/yama3133/items/11a360fc97ed3ec09742",
+      "title": "AWSでゼロトラスト構成を作る手順を5つのパートに分けて整理してみた - Qiita",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-13T22:56:39.000Z",
+      "summary": "境界型防御に頼らず、すべてのアクセスを検証するゼロトラスト構成をAWSで構築する具体的なリソースと手順を解説。IAM Roles Anywhereでの証明書検証やVPC Latticeによる認可など、検証対象に応じた5つのパートに分割。AWS CLIコマンドと設定に必要なJSONの例が示され、構築から試行・削除までの流れを扱っている。",
+      "headline": "AWS環境でゼロトラスト構成を構築する具体手順が5つのパートで整理される",
+      "points": [
+        "境界型防御に頼らず、すべてのアクセスを検証するゼロトラスト構成をAWSで構築する具体的なリソースと手順を解説。",
+        "IAM Roles Anywhereでの証明書検証やVPC Latticeによる認可など、検証対象に応じた5つのパートに分割。",
+        "AWS CLIコマンドと設定に必要なJSONの例が示され、構築から試行・削除までの流れを扱っている。"
+      ],
+      "impact": "AWS環境のセキュリティを向上させ、ゼロトラストアーキテクチャを導入したいエンジニアが確認・実践できる。",
+      "glossary": [
+        {
+          "term": "ゼロトラスト",
+          "explanation": "ネットワークの内外を問わず、すべてのアクセスや通信を信頼せず毎回検証するセキュリティの考え方。"
+        },
+        {
+          "term": "IAM",
+          "explanation": "クラウド上のリソースに対するユーザーやサービスのアクセス権限を一括管理する機能。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 114,
+    "shortlisted": 74,
+    "bodyFailures": 2,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 39109,
+    "outputTokens": 15453
+  },
+  "offline": false
+}
