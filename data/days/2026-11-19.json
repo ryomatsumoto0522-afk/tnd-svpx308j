@@ -1,0 +1,369 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-18T23:25:13.607Z",
+  "items": [
+    {
+      "rank": 3,
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "title": "Seven new models at scalable price-performance",
+      "source": "Hacker News",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T16:08:24Z",
+      "summary": "Microsoftは高い費用対効果を実現する新たなAIモデル7種を発表しました。開発向けのMAI Code 2はGPT-6.1 Solの約40%の価格で98%の性能を発揮します。セキュリティ用のMAI Cyber 2 Flashは従来より出力トークン価格を86%引き下げました。",
+      "headline": "Microsoftが費用対効果を高めた新しいAIモデル7種を発表",
+      "points": [
+        "Microsoftは高い費用対効果を実現する新たなAIモデル7種を発表しました。",
+        "開発向けのMAI Code 2はGPT-6.1 Solの約40%の価格で98%の性能を発揮します。",
+        "セキュリティ用のMAI Cyber 2 Flashは従来より出力トークン価格を86%引き下げました。"
+      ],
+      "impact": "開発者はGitHub CopilotやMicrosoft Foundryで新モデルを利用できます。",
+      "glossary": [
+        {
+          "term": "トークン",
+          "explanation": "AIモデルが文章を読み書きする際に処理する最小の文字単位のことです。"
+        },
+        {
+          "term": "ベンチマーク",
+          "explanation": "システムやAIモデルの性能を客観的に比較・評価するための標準的なテストのことです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://aws.amazon.com/blogs/machine-learning/private-certificate-authority-support-in-amazon-bedrock-agentcore-identity/",
+      "title": "Private certificate authority support in Amazon Bedrock AgentCore Identity",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T20:53:41.000Z",
+      "summary": "AgentCore IdentityがプライベートCAで署名されたIdPとの接続に対応しました。PEM形式のCA証明書をSecrets ManagerやAmazon S3に保存して参照設定を行います。利用にはAmazon VPC Latticeを通じたプライベート接続が必要です。",
+      "headline": "Amazon Bedrock AgentCore IdentityがプライベートCAをサポート",
+      "points": [
+        "AgentCore IdentityがプライベートCAで署名されたIdPとの接続に対応しました。",
+        "PEM形式のCA証明書をSecrets ManagerやAmazon S3に保存して参照設定を行います。",
+        "利用にはAmazon VPC Latticeを通じたプライベート接続が必要です。"
+      ],
+      "impact": "自社ホストのIdPを利用する開発者は、証明書をSecrets Manager等に配置して設定する必要があります。",
+      "glossary": [
+        {
+          "term": "IdP",
+          "explanation": "ユーザーの識別情報を管理し、認証サービスを提供する仕組みです。"
+        },
+        {
+          "term": "プライベートCA",
+          "explanation": "特定の組織内のみで有効な証明書を発行・管理する独自の認証局です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+      "title": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T19:56:39.000Z",
+      "summary": "SnapchatはClaude CodeやCursorなどのAIアシスタントでARレンズを作成できるEasy Lens CLIを発表しました。開発者は自然言語で指示するだけで、コードを書かずにレンズの構築やテスト、公開までを行えます。Mac、Windows、Linuxに対応し、100以上のAR構築ブロックや50のAI生成ツールを活用可能です。",
+      "headline": "SnapchatがAIアシスタント等でARレンズを開発できる新ツールを発表",
+      "points": [
+        "SnapchatはClaude CodeやCursorなどのAIアシスタントでARレンズを作成できるEasy Lens CLIを発表しました。",
+        "開発者は自然言語で指示するだけで、コードを書かずにレンズの構築やテスト、公開までを行えます。",
+        "Mac、Windows、Linuxに対応し、100以上のAR構築ブロックや50のAI生成ツールを活用可能です。"
+      ],
+      "impact": "AR開発者や企業は、使い慣れたAIツールを用いてSnapchat向けARコンテンツの制作時間を大幅に短縮できます。",
+      "glossary": [
+        {
+          "term": "AR",
+          "explanation": "現実の風景や映像にデジタルの情報や画像を重ねて表示する技術のこと。"
+        },
+        {
+          "term": "CLI",
+          "explanation": "画面に文字コマンドを入力してコンピュータやツールを操作する仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/dantarg/articles/claude-code-playbook-gates",
+      "title": "「検査は走っていた。それでもpushされた」——Claude Codeの3か月の記録と、SAPの移送ゲート",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T10:33:11.000Z",
+      "summary": "Claude Codeの運用において手順書を読む判断を受け手に任せると事故が起きることが分かった。委任文へ注意点の本文を貼る対策と2回起きた事故を機械で止める仕組みが効果を示した。単なる検査実行だけでなく問題検出時に処理をブロックする配線設定が重要とされる。",
+      "headline": "AIへの指示漏れや未読を防ぐため手順の抽出と機械的制限が有効と判明した",
+      "points": [
+        "Claude Codeの運用において手順書を読む判断を受け手に任せると事故が起きることが分かった。",
+        "委任文へ注意点の本文を貼る対策と2回起きた事故を機械で止める仕組みが効果を示した。",
+        "単なる検査実行だけでなく問題検出時に処理をブロックする配線設定が重要とされる。"
+      ],
+      "impact": "AIエージェントを活用する開発者は、注意点の抜き出しやフック機能による自動停止の仕組みを導入する必要がある。",
+      "glossary": [
+        {
+          "term": "Claude Code",
+          "explanation": "Anthropicが開発した、ターミナル等で直接コードを生成・編集できるAIツール。"
+        },
+        {
+          "term": "PreToolUseフック",
+          "explanation": "AIエージェントが特定のツールやコマンドを実行する直前に、処理を制御するための仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/tzp/articles/eecb5507534410",
+      "title": "Copilot が「承認推奨」とした PR に、マイグレーションを止める穴があった。AI のレビューを 3 段に重ねる",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T14:34:59.000Z",
+      "summary": "GitHub Copilot、独立したサブエージェント、リリース前監査の3段階でAIレビューを実施した。独立レビューは文脈を持たせないルールで運用し、Copilotが見逃した重大な不具合を検出した。132本のPR検証ではCopilotの60件に対し独立レビューが181件の指摘を出した。",
+      "headline": "AIによるコードレビューを3段階に重ねる運用体制を構築した",
+      "points": [
+        "GitHub Copilot、独立したサブエージェント、リリース前監査の3段階でAIレビューを実施した。",
+        "独立レビューは文脈を持たせないルールで運用し、Copilotが見逃した重大な不具合を検出した。",
+        "132本のPR検証ではCopilotの60件に対し独立レビューが181件の指摘を出した。"
+      ],
+      "impact": "AIツールを活用して開発を進めるエンジニアは、文脈を持たない別のAIにレビューさせる工夫が役に立つ。",
+      "glossary": [
+        {
+          "term": "PR（プルリクエスト）",
+          "explanation": "開発者がコードの変更内容を共有し、本番環境等へ統合を提案する仕組み。"
+        },
+        {
+          "term": "マイグレーション",
+          "explanation": "データベースの構造やデータを新しい環境や仕様に合わせて移行・更新すること。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/kyto64/articles/notion-ai-ssot-aboutme",
+      "title": "AI ツールごとに前提がずれるので、自分の情報を Notion の SSOT に集約した",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T11:00:06.000Z",
+      "summary": "自分に関する事実や回答ルールをNotionのページに置き、各AIツールから参照させる運用を開始した。ページは情報の変化の速さと公開範囲で分け、最初に読むCoreページと状態DBに切り離した。新しいAIツールを導入する際も、事前説明なしで同じ前提を共有できるようになりました。",
+      "headline": "AIごとの前提ズレを防ぐため自身の情報をNotionへ集約した",
+      "points": [
+        "自分に関する事実や回答ルールをNotionのページに置き、各AIツールから参照させる運用を開始した。",
+        "ページは情報の変化の速さと公開範囲で分け、最初に読むCoreページと状態DBに切り離した。",
+        "新しいAIツールを導入する際も、事前説明なしで同じ前提を共有できるようになりました。"
+      ],
+      "impact": "複数のAIツールを日常的に使う開発者は、自身の前提情報を1箇所に集約して参照させると便利である。",
+      "glossary": [
+        {
+          "term": "SSOT",
+          "explanation": "組織やシステム内で「信頼できる唯一の情報源」として定義されたデータ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://gigazine.net/news/20261119-cloudflare-tunnel-local-ai/",
+      "title": "メインPCのローカルAIをVPN・ポート開放なしで外出先のHermes Agentから使えるように「Cloudflare Tunnel＋Access」を設定してみた",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T16:38:39.000Z",
+      "summary": "ルーターのポート開放をせずに自宅のローカルAIへ接続するためCloudflare Tunnel等を導入した。Hermes Agentの設定ファイルにCloudflareの認証情報とOpen WebUIのAPIキーを追加した。外部の端末から指示を送信し、自宅PCのGPUを動かしてAI回答を取得することに成功した。",
+      "headline": "ローカルAIを外部から安全に利用する環境を構築した",
+      "points": [
+        "ルーターのポート開放をせずに自宅のローカルAIへ接続するためCloudflare Tunnel等を導入した。",
+        "Hermes Agentの設定ファイルにCloudflareの認証情報とOpen WebUIのAPIキーを追加した。",
+        "外部の端末から指示を送信し、自宅PCのGPUを動かしてAI回答を取得することに成功した。"
+      ],
+      "impact": "外出先から自宅のローカルAI環境へアクセスしたい開発者は、設定ファイルの書き換えと認証設定を行う必要がある。",
+      "glossary": [
+        {
+          "term": "ポート開放",
+          "explanation": "外部のネットワークから特定の機器やサービスへ接続を許可するために通信路を開くこと。"
+        },
+        {
+          "term": "Cloudflare Tunnel",
+          "explanation": "ポート開放をせずにローカル環境と外部ネットワークを安全に接続するサービス。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://zenn.dev/andyailab/articles/e8a69f84e5961d",
+      "title": "AIを活用した社内マニュアル作成で属人化を防ぐ構造化手順と改訂チェックリスト【コピペ用プロンプト2本＋5項目チェック】",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T10:38:58.000Z",
+      "summary": "音声入力などの雑多な業務手順を、目的や前提条件、実行手順などの型に沿ってAIで構造化する。ハルシネーションを防ぐため、情報不足時は推測させず不備を明記させる制約をプロンプトに入れる。機密情報のマスキングやオプトアウト設定など、情報漏洩を防ぐ安全な運用の重要性を示した。",
+      "headline": "生成AIを活用して業務手順を構造化マニュアルへ変換する手法を解説した",
+      "points": [
+        "音声入力などの雑多な業務手順を、目的や前提条件、実行手順などの型に沿ってAIで構造化する。",
+        "ハルシネーションを防ぐため、情報不足時は推測させず不備を明記させる制約をプロンプトに入れる。",
+        "機密情報のマスキングやオプトアウト設定など、情報漏洩を防ぐ安全な運用の重要性を示した。"
+      ],
+      "impact": "マニュアルの作成や業務の標準化を進めたいバックオフィス担当者は、AIへのプロンプト指示方法や運用ルールを確認する必要がある。",
+      "glossary": [
+        {
+          "term": "ハルシネーション",
+          "explanation": "AIが事実とは異なる情報や嘘を、もっともらしく出力してしまう現象のこと。"
+        },
+        {
+          "term": "属人化",
+          "explanation": "特定の業務の手順やノウハウが担当者しか分からず、標準化されていない状態。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 15,
+      "url": "https://forest.watch.impress.co.jp/docs/news/2157510.html",
+      "title": "「Google Apps Script」のコードをGeminiで開発する機能が一般提供開始／専門知識なしで業務自動化が可能に",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T10:29:18.000Z",
+      "summary": "日常の言葉で指示を出すだけで業務自動化のプログラムを作成できるエラー発生時は実行ログ画面からワンクリックでGeminiに診断を依頼できる指定されたGoogle Workspaceなどのプランやアドオンを利用しているユーザーが対象となる",
+      "headline": "Google Apps ScriptのコードをGeminiで開発する機能が一般提供開始",
+      "points": [
+        "日常の言葉で指示を出すだけで業務自動化のプログラムを作成できる",
+        "エラー発生時は実行ログ画面からワンクリックでGeminiに診断を依頼できる",
+        "指定されたGoogle Workspaceなどのプランやアドオンを利用しているユーザーが対象となる"
+      ],
+      "impact": "対象プランやアドオンを利用するユーザーは、専門知識がなくても数分で業務自動化のプログラムを作成・修正できるようになる。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://zenn.dev/studio/articles/vue-typecheck-vize-tsrs",
+      "title": "vue-tscの壁を越える：vizeとtsrsでVueの型検査を高速化した",
+      "source": "Zenn（Vue）",
+      "genre": "frontend",
+      "publishedAt": "2026-11-18T14:26:28.000Z",
+      "summary": "Vueのプロジェクトで型検査をvue-tscからtsrsとvizeに置き換えたCIのtypecheckジョブの中央値が570秒から123秒になったTypeScript 7.1のcontent mapperという仕組みを利用して型検査を高速化した",
+      "headline": "vizeとtsrsによりVueの型検査が高速化",
+      "points": [
+        "Vueのプロジェクトで型検査をvue-tscからtsrsとvizeに置き換えた",
+        "CIのtypecheckジョブの中央値が570秒から123秒になった",
+        "TypeScript 7.1のcontent mapperという仕組みを利用して型検査を高速化した"
+      ],
+      "impact": "Vueプロジェクトの開発者は、CIでの型検査の待ち時間を大幅に短縮できるようになる。",
+      "glossary": [
+        {
+          "term": "型検査",
+          "explanation": "プログラムのコードにデータの型の矛盾がないかを自動でチェックする仕組みです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/jp/blogs/news/announcing-updates-to-the-aws-well-architected-framework-3/",
+      "title": "AWS Well-Architected Framework のアップデートを発表",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-18T06:45:01.000Z",
+      "summary": "6つの柱のすべてにわたって新しいガイダンスを追加し既存のガイダンスを改善したFrameworkをCloud FoundationsとCloud Workloadsの2つの領域に整理したセキュアコーディングやバックアップのサイバーレジリエンスなどの新しいベストプラクティスを追加した",
+      "headline": "AWS Well-Architected Frameworkのアップデートを発表",
+      "points": [
+        "6つの柱のすべてにわたって新しいガイダンスを追加し既存のガイダンスを改善した",
+        "FrameworkをCloud FoundationsとCloud Workloadsの2つの領域に整理した",
+        "セキュアコーディングやバックアップのサイバーレジリエンスなどの新しいベストプラクティスを追加した"
+      ],
+      "impact": "クラウドアーキテクチャを設計・運用するチームは、環境全体と個々のワークロードのレビューを効率的に実施できるようになる。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "title": "Unauthenticated Remote Code Execution in NGINX: CVE-2026-123633 and CVE-2026-123007 | Wiz Blog",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-18T15:27:17.000Z",
+      "summary": "CVE-2026-123633とCVE-2026-123007の2つの重大な脆弱性が発見されたいずれの脆弱性も影響を受けるNGINXサーバーでHTTP/2が有効になっている必要がある攻撃者が影響を受けたサーバーを乗っ取り、データを盗むなどの危険性がある",
+      "headline": "NGINXに重大なリモートコード実行の脆弱性が発見された",
+      "points": [
+        "CVE-2026-123633とCVE-2026-123007の2つの重大な脆弱性が発見された",
+        "いずれの脆弱性も影響を受けるNGINXサーバーでHTTP/2が有効になっている必要がある",
+        "攻撃者が影響を受けたサーバーを乗っ取り、データを盗むなどの危険性がある"
+      ],
+      "impact": "NGINXを使用している組織は、影響を受けるデプロイを特定し、セキュリティアップデートを適用する必要がある。",
+      "glossary": [
+        {
+          "term": "リモートコード実行",
+          "explanation": "ネットワークを介して外部から任意のプログラムを勝手に実行されてしまう脆弱性です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://energy-based-reasoners.github.io/",
+      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-18T09:29:32Z",
+      "summary": "EBRsは、潜在状態上のエネルギー関数と勾配降下法を用いて推論や自動停止を行うモデルです。1.8MパラメータでSudoku-Extremeの精度99.9%を達成し、推論計算量を345分の一に削減しました。勾配が閾値を下回ると停止する仕組みにより、固定深度のEBRsより計算量を10.9倍削減できます。",
+      "headline": "研究チームが計算効率に優れた推論モデルEBRsを発表",
+      "points": [
+        "EBRsは、潜在状態上のエネルギー関数と勾配降下法を用いて推論や自動停止を行うモデルです。",
+        "1.8MパラメータでSudoku-Extremeの精度99.9%を達成し、推論計算量を345分の一に削減しました。",
+        "勾配が閾値を下回ると停止する仕組みにより、固定深度のEBRsより計算量を10.9倍削減できます。"
+      ],
+      "glossary": [
+        {
+          "term": "勾配降下法",
+          "explanation": "関数の値を最小化するため、勾配と反対の方向に変数を繰り返し更新していく最適化の手法。"
+        },
+        {
+          "term": "エネルギーベースモデル",
+          "explanation": "状態同士の適合度をエネルギー値として表現し、適切な状態を探索・予測する機械学習モデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+      "title": "The x86 CPU: From 4004 to 486",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-18T14:47:53Z",
+      "summary": "x86のレジスタやアドレス指定などの設計は、過去の互換性を維持するための工夫に由来します。1971年の4ビットCPUである4004から、8086や80386などを経て80486へと進化しました。8086でセグメンテーション、80386で32ビット化やページング機能などが順次追加されました。",
+      "headline": "4004から486に至るx86アーキテクチャの進化の歴史が解説された",
+      "points": [
+        "x86のレジスタやアドレス指定などの設計は、過去の互換性を維持するための工夫に由来します。",
+        "1971年の4ビットCPUである4004から、8086や80386などを経て80486へと進化しました。",
+        "8086でセグメンテーション、80386で32ビット化やページング機能などが順次追加されました。"
+      ],
+      "impact": "x86アセンブリ言語やDOS環境のプログラミングを学ぶ人は、各仕様の歴史的経緯を確認する必要があります。",
+      "glossary": [
+        {
+          "term": "x86",
+          "explanation": "インテルの8086を出発点とする、パソコンなどで広く使われているプロセッサの命令セットアーキテクチャ。"
+        },
+        {
+          "term": "レジスタ",
+          "explanation": "CPU内部に配置されている、データの処理や保持を非常に高速に行うための記憶領域。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 177,
+    "shortlisted": 80,
+    "bodyFailures": 5,
+    "summaryFailures": 4
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 29433,
+    "outputTokens": 13473
+  },
+  "offline": false
+}
