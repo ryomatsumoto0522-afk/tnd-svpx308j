@@ -1,0 +1,537 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T01:19:24.214Z",
+  "items": [
+    {
+      "rank": 2,
+      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003279/",
+      "title": "OpenAI、「GPT-6.2」の「Astra」と「Sol」を公開 AI自己改善能力は初の「High」に",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T22:47:14.000Z",
+      "summary": "専門業務向けの最上位モデルAstraと日常業務向けのSolの2つの新モデルが公開された。AstraのAPI料金は入力が100万トークン当たり8ドル、出力が40ドルに引き下げられた。両モデルはChatGPTの各プランや開発者向けAPIなどで発表当日から利用できる。",
+      "headline": "OpenAIが新AIモデルのAstraとSolを発表",
+      "points": [
+        "専門業務向けの最上位モデルAstraと日常業務向けのSolの2つの新モデルが公開された。",
+        "AstraのAPI料金は入力が100万トークン当たり8ドル、出力が40ドルに引き下げられた。",
+        "両モデルはChatGPTの各プランや開発者向けAPIなどで発表当日から利用できる。"
+      ],
+      "impact": "ChatGPTの有料プラン利用者や開発者は、新しいAstraやSolを業務やAPI経由で利用できる。",
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "人間からの指示に基づき、自律的に判断して複数の作業を連続して処理するAIシステムのこと。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIがテキストを処理する際のデータの最小単位で、文字や単語の断片に分割されるもの。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/",
+      "title": "OpenAI GPT-6.2 Astra, and GPT-6.2 Sol are now generally available on Amazon Bedrock",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T17:17:00.000Z",
+      "summary": "OpenAIのGPT-6.2 AstraとGPT-6.2 SolがAmazon Bedrockで一般提供を開始した。GPT-6.2 Astraは高度な推論や判断力と超高速モードを備え複雑な業務や研究に向いている。GPT-6.2 Solは速度とコストを重視した反復的なコーディングや定型作業向けに設計されている。",
+      "headline": "OpenAIのモデルがAmazon Bedrockで利用可能になった",
+      "points": [
+        "OpenAIのGPT-6.2 AstraとGPT-6.2 SolがAmazon Bedrockで一般提供を開始した。",
+        "GPT-6.2 Astraは高度な推論や判断力と超高速モードを備え複雑な業務や研究に向いている。",
+        "GPT-6.2 Solは速度とコストを重視した反復的なコーディングや定型作業向けに設計されている。"
+      ],
+      "impact": "Amazon Bedrockの利用者や開発者は、コンソールやAPIを通じて新しいモデルを利用しワークフローに組み込むことができる。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "様々な基盤モデルをAPI経由で利用できるAWSのマネージドサービスです。"
+        },
+        {
+          "term": "レイテンシ",
+          "explanation": "システムに指示を出してから応答が返ってくるまでの遅延時間を指します。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "title": "Put Gemini to work for you",
+      "source": "Google AI Blog",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "summary": "新しいGemini 4 Hydrogenモデルを使用し、米国や日本など数百万人向けに無料で提供が開始された。Googleの各種サービスと連携し、ディーラーへの電話予約や電気代の請求書分析、商品の購入などを代行する。Agent Payments Protocolを活用し、カードのポイント獲得や支出上限の設定に対応しながら安全に決済を行う。",
+      "headline": "Geminiが電話や支払いなどの日常の作業を代行する新機能を提供",
+      "points": [
+        "新しいGemini 4 Hydrogenモデルを使用し、米国や日本など数百万人向けに無料で提供が開始された。",
+        "Googleの各種サービスと連携し、ディーラーへの電話予約や電気代の請求書分析、商品の購入などを代行する。",
+        "Agent Payments Protocolを活用し、カードのポイント獲得や支出上限の設定に対応しながら安全に決済を行う。"
+      ],
+      "impact": "Googleエコシステムを利用するユーザーは、日常のタスクや買い物の代行機能を無料で確認して活用できる。",
+      "glossary": [
+        {
+          "term": "Agent Payments Protocol",
+          "explanation": "AIエージェントがユーザーの代理で安全にオンライン決済を行うための通信プロトコル。"
+        },
+        {
+          "term": "Google Wallet",
+          "explanation": "クレジットカードやチケットなどを一元管理できるGoogleのデジタルウォレットアプリ。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
+      "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
+      "source": "TechCrunch",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T19:02:20.000Z",
+      "summary": "Geminiの切り替えスイッチを使って、電話予約やGoogle Payでの買い物代行などの秘書業務を行わせることができます。初期は限定されたテストユーザー向けでしたが、新モデルGemini 4 Hydrogenを利用する何億人ものユーザーへ無料で提供されます。ユーザーはアプリ内でチャットからTasksへ切り替えるだけで、テキスト入力や音声通話で指示を出せるようになります。",
+      "headline": "GoogleがAIアシスタントのGeminiに実務を代行するTasks機能の提供を拡大",
+      "points": [
+        "Geminiの切り替えスイッチを使って、電話予約やGoogle Payでの買い物代行などの秘書業務を行わせることができます。",
+        "初期は限定されたテストユーザー向けでしたが、新モデルGemini 4 Hydrogenを利用する何億人ものユーザーへ無料で提供されます。",
+        "ユーザーはアプリ内でチャットからTasksへ切り替えるだけで、テキスト入力や音声通話で指示を出せるようになります。"
+      ],
+      "impact": "新モデルGemini 4 Hydrogenを利用するユーザーは、アプリ内の切り替えでTasks機能を使えるようになります。",
+      "glossary": [
+        {
+          "term": "Gemini",
+          "explanation": "Googleが開発した高度な対話型AIアシスタントおよびその基盤となるAIモデルの名称です。"
+        },
+        {
+          "term": "Google Pay",
+          "explanation": "スマートフォンやオンラインで安全に支払いを行えるGoogleの決済サービスです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "title": "v2.1.327",
+      "source": "Claude Code",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T23:17:45.000Z",
+      "summary": "GitHub Appの変更時やMCPサーバー追加のJSON入力機能などが追加されました。ワークツリーモードでのサーバー停止時にgit-ignoredファイルが削除される不具合などを修正しました。設定の保存失敗時の警告表示やセッション管理の改善が行われました。",
+      "headline": "Claude Codeのバージョン2.1.327がリリース",
+      "points": [
+        "GitHub Appの変更時やMCPサーバー追加のJSON入力機能などが追加されました。",
+        "ワークツリーモードでのサーバー停止時にgit-ignoredファイルが削除される不具合などを修正しました。",
+        "設定の保存失敗時の警告表示やセッション管理の改善が行われました。"
+      ],
+      "impact": "Claude Codeを利用している開発者は、新機能の追加や複数の不具合修正が適用された最新バージョンを確認する必要があります。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部データソースやツールを安全に連携させるためのオープン標準規格です。"
+        },
+        {
+          "term": "ワークツリー",
+          "explanation": "一つのリポジトリ内で複数のGitブランチを同時にチェックアウトして作業できる機能です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://zenn.dev/yhmp/articles/288cf79f232c8b",
+      "title": "AI APIの料金を「円」で見積もれるツールを作った【Gemini / Claude / OpenAIの6モデル対応】",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T14:01:36.000Z",
+      "summary": "Google、Anthropic、OpenAIの6モデルに対応し、1回あたりや月額の日本円で見積もれます。写真認識やチャットの用途別プリセットに加え、トークン数や為替レートも自由に変更可能です。外部ライブラリを使わない静的なHTMLファイルで構成され、GitHub Pagesで公開されています。",
+      "headline": "主要なAI APIの料金を日本円で手軽に見積もれるツールを開発",
+      "points": [
+        "Google、Anthropic、OpenAIの6モデルに対応し、1回あたりや月額の日本円で見積もれます。",
+        "写真認識やチャットの用途別プリセットに加え、トークン数や為替レートも自由に変更可能です。",
+        "外部ライブラリを使わない静的なHTMLファイルで構成され、GitHub Pagesで公開されています。"
+      ],
+      "impact": "対応モデルを利用中で料金や変更を確認したい開発者は、ツールや公式ページを確認する余地があります。",
+      "glossary": [
+        {
+          "term": "API",
+          "explanation": "プログラム同士が機能を連携し合うための仕組みや窓口のことです。"
+        },
+        {
+          "term": "トークン",
+          "explanation": "AIが文章を処理する際のテキストの分割単位で、料金計算の基準になります。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/kuwashima/articles/ax-28-coding-agents-comparison",
+      "title": "28種のAIコーディングCLIを徹底比較！ハーネスの性格と裏の顔",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T16:15:50.000Z",
+      "summary": "Claude CodeやCodexなどの王道グループは、高い問題解決力と独自の履歴管理機能を持つ。OpenCode系譜などのDB爆食いグループは、SQLiteへの集中保存によりディスク容量が肥大化しやすい。ツールごとにセッションの保存場所や再開オプション、ファイル構造の仕様が大きく異なる。",
+      "headline": "28種のAIコーディングCLIツールと各ストレージ仕様の比較",
+      "points": [
+        "Claude CodeやCodexなどの王道グループは、高い問題解決力と独自の履歴管理機能を持つ。",
+        "OpenCode系譜などのDB爆食いグループは、SQLiteへの集中保存によりディスク容量が肥大化しやすい。",
+        "ツールごとにセッションの保存場所や再開オプション、ファイル構造の仕様が大きく異なる。"
+      ],
+      "impact": "複数のAIコーディングCLIを使い分ける開発者は、ツールごとの履歴保存場所やディスク容量の消費に注意する必要がある。",
+      "glossary": [
+        {
+          "term": "CLI",
+          "explanation": "Command Line Interfaceの略で、文字入力によってコンピュータを操作する仕組み。"
+        },
+        {
+          "term": "ハーネス",
+          "explanation": "AIモデルを外部のシステムや環境と連携させるための枠組みや周辺ツールのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://qiita.com/IT-love-pug/items/bbf0bbb173807f54bdee",
+      "title": "MCPサーバーに関して③：サーバーが提供する3つの機能",
+      "source": "Qiita（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T01:19:10.000Z",
+      "summary": "MCPサーバーはTools、Resources、Promptsの3つの機能を提供し、機能ごとに主導権を持つ存在が異なります。ToolsはLLM自身が実行を判断する操作であり、Resourcesはアプリが読ませる読み取り専用データです。Promptsはユーザーが選択して利用する引数付きの定型指示テンプレートです。",
+      "headline": "MCPサーバーが提供する3つの機能と使い分け",
+      "points": [
+        "MCPサーバーはTools、Resources、Promptsの3つの機能を提供し、機能ごとに主導権を持つ存在が異なります。",
+        "ToolsはLLM自身が実行を判断する操作であり、Resourcesはアプリが読ませる読み取り専用データです。",
+        "Promptsはユーザーが選択して利用する引数付きの定型指示テンプレートです。"
+      ],
+      "impact": "サーバー設計や機能選択を行う開発者は、操作ならTools、データの読み込みならResources、定型指示ならPromptsを使い分ける必要があります。",
+      "glossary": [
+        {
+          "term": "LLM",
+          "explanation": "膨大なテキストデータを学習し、人間のような自然な文章生成や対話を行う大規模言語モデルのこと。"
+        },
+        {
+          "term": "JSON Schema",
+          "explanation": "JSONデータの構造や形式を定義し、データの妥当性を検証するための仕様のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/matsushima_a/articles/day-049-openworker-local-governance",
+      "title": "OpenWorkerの承認ゲートをOllamaのQwen2.5 7B/14B/32Bで試したら、一番仕事をしたのは14Bだった",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T14:28:53.000Z",
+      "summary": "OpenWorkerをOllamaのQwen2.5モデルと組み合わせ、CLI経由で承認ゲートとログ出力を検証した。検証した3つのモデルのうち、タスクを最も正確にこなしたのは14Bモデルであった。端末がない状態で実行した際、承認モードがaskであれば提案は正しく拒否され記録された。",
+      "headline": "OpenWorkerの承認ゲートとローカルQwen2.5の動作検証",
+      "points": [
+        "OpenWorkerをOllamaのQwen2.5モデルと組み合わせ、CLI経由で承認ゲートとログ出力を検証した。",
+        "検証した3つのモデルのうち、タスクを最も正確にこなしたのは14Bモデルであった。",
+        "端末がない状態で実行した際、承認モードがaskであれば提案は正しく拒否され記録された。"
+      ],
+      "impact": "ローカル環境でAIエージェントを動かし、承認ゲートや操作ログが意図通りに機能するか確認する際に役立つ。",
+      "glossary": [
+        {
+          "term": "OpenWorker",
+          "explanation": "ユーザーが管理できるオープンソースのAIエージェントフレームワーク。"
+        },
+        {
+          "term": "Ollama",
+          "explanation": "ローカル環境で大規模言語モデルを手軽に実行するためのツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/lastlight/articles/e4a240a8c904d0",
+      "title": "文字を崩さず局所修正する AI画像編集 モデルの選定基準と MMDiT 構造の整理",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T14:36:21.000Z",
+      "summary": "Qwen-Image-Edit系は、画像全体の再生成を防ぎながら局所的な文字やスタイルの修正を行うための編集専用モデルである。入力画像の意味制御にはマルチモーダル言語モデル、外観保持にはVAEエンコーダの二重構造を採用している。2509および2511のアップデートにより、複数画像入力やドリフト抑制機能が追加された。",
+      "headline": "文字修正と外観保持を両立するAI画像編集モデルの選定",
+      "points": [
+        "Qwen-Image-Edit系は、画像全体の再生成を防ぎながら局所的な文字やスタイルの修正を行うための編集専用モデルである。",
+        "入力画像の意味制御にはマルチモーダル言語モデル、外観保持にはVAEエンコーダの二重構造を採用している。",
+        "2509および2511のアップデートにより、複数画像入力やドリフト抑制機能が追加された。"
+      ],
+      "impact": "画像内の文字や特定の部分だけを自然に修正したい開発者やデザイナーは、モデルの選定基準として活用できる。",
+      "glossary": [
+        {
+          "term": "MMDiT",
+          "explanation": "テキストと画像の情報を同時に処理して画像を生成・編集する拡散モデルのアーキテクチャ。"
+        },
+        {
+          "term": "LoRA",
+          "explanation": "モデルの一部分を効率的に追加学習させることで、特定のスタイルや特徴を付加する手法。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-whatsapp-ai-agents-with-amazon-bedrock-agentcore/",
+      "title": "Build WhatsApp AI agents with Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T18:48:50.000Z",
+      "summary": "SMARTツールキットにより、Amazon Bedrock AgentCoreとWhatsAppの連携基盤を容易に構築できる。Webhookの処理やメディア管理、会話メモリ、スケジュール管理などを自動で処理する。Terraformを使ってインフラ全体を自分のAWSアカウントに1つのコマンドでデプロイ可能である。",
+      "headline": "Amazon Bedrockを用いたWhatsApp向けAIエージェントの開発基盤",
+      "points": [
+        "SMARTツールキットにより、Amazon Bedrock AgentCoreとWhatsAppの連携基盤を容易に構築できる。",
+        "Webhookの処理やメディア管理、会話メモリ、スケジュール管理などを自動で処理する。",
+        "Terraformを使ってインフラ全体を自分のAWSアカウントに1つのコマンドでデプロイ可能である。"
+      ],
+      "impact": "WhatsApp上で動作するAIエージェントを自社開発するチームは、複雑なチャネル連携部分の開発負担を軽減できる。",
+      "glossary": [
+        {
+          "term": "Webhook",
+          "explanation": "外部サービスでイベントが発生した際、別のシステムに自動で通知を送る仕組み。"
+        },
+        {
+          "term": "Terraform",
+          "explanation": "コードによってインフラストラクチャを構築・管理するためのツール。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+      "title": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-16T17:29:29.000Z",
+      "summary": "Amazon BedrockやAWS Transformなどを使い、メインフレームのAssemblerコードをJavaに近代化する。Assemblerから直接Javaにするのではなく、中間段階としてCOBOLを経由することで信頼性を高める。AI支援によるコード解析や専門家による検証チェックポイントを組み込んだ5つのフェーズで移行を進める。",
+      "headline": "Amazon Bedrock等を活用したメインフレームのJava移行手法",
+      "points": [
+        "Amazon BedrockやAWS Transformなどを使い、メインフレームのAssemblerコードをJavaに近代化する。",
+        "Assemblerから直接Javaにするのではなく、中間段階としてCOBOLを経由することで信頼性を高める。",
+        "AI支援によるコード解析や専門家による検証チェックポイントを組み込んだ5つのフェーズで移行を進める。"
+      ],
+      "impact": "レガシーなメインフレーム資産を抱える組織の担当者は、ビジネスロジックを維持しながらJavaへの移行を進められる。",
+      "glossary": [
+        {
+          "term": "Assembler",
+          "explanation": "コンピュータのCPU命令に近い低水準のプログラミング言語。"
+        },
+        {
+          "term": "Spring Boot",
+          "explanation": "Javaでのアプリケーション開発を迅速に行うためのフレームワーク。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/",
+      "title": "How LoanPro built an agentic AI loan servicing assistant with Amazon Bedrock AgentCore",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-17T17:01:08.000Z",
+      "summary": "LoanProはAWSおよびAllCloudと協力し、マルチエージェント型AIローン対応アシスタントを開発した。Amazon BedrockとAmazon Bedrock AgentCoreを基盤として採用している。初期の導入結果として、顧客の通話時間が最大15パーセント短縮されたことが示されている。",
+      "headline": "LoanProがAmazon Bedrockを活用したAIアシスタントを構築",
+      "points": [
+        "LoanProはAWSおよびAllCloudと協力し、マルチエージェント型AIローン対応アシスタントを開発した。",
+        "Amazon BedrockとAmazon Bedrock AgentCoreを基盤として採用している。",
+        "初期の導入結果として、顧客の通話時間が最大15パーセント短縮されたことが示されている。"
+      ],
+      "impact": "金融機関のサービス担当者は、顧客との通話時間を短縮し、一貫した対応を行うためにAIアシスタントを活用できる。",
+      "glossary": [
+        {
+          "term": "Amazon Bedrock",
+          "explanation": "優れた基盤モデルを利用して生成AIアプリケーションを構築できるフルマネージドサービスです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://calif.io/java4shell/",
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "source": "Hacker News",
+      "genre": "backend",
+      "publishedAt": "2026-11-17T21:11:28Z",
+      "summary": "影響を受けるOpenJDKのビルドでは、不正なBase64データの処理時にヒープメモリの上書きが発生する。x86-64のBase64イントリンシックにおけるパディング部分のストアマスクの計算ミスが原因である。攻撃者はこの脆弱性を悪用してヒープリークを引き起こし、リモートコード実行につなげることができる。",
+      "headline": "OpenJDKのBase64処理におけるメモリ破損の脆弱性が発見された",
+      "points": [
+        "影響を受けるOpenJDKのビルドでは、不正なBase64データの処理時にヒープメモリの上書きが発生する。",
+        "x86-64のBase64イントリンシックにおけるパディング部分のストアマスクの計算ミスが原因である。",
+        "攻撃者はこの脆弱性を悪用してヒープリークを引き起こし、リモートコード実行につなげることができる。"
+      ],
+      "impact": "OpenJDKを使用する開発者やシステム管理者は、影響を受けるバージョンを確認し、速やかにアップデートを行う必要がある。",
+      "glossary": [
+        {
+          "term": "Base64",
+          "explanation": "バイナリデータをアルファベットや数字などの文字列に変換するエンコード方式です。"
+        },
+        {
+          "term": "リモートコード実行",
+          "explanation": "ネットワークを介して遠隔から任意のプログラムやコードを実行されるセキュリティ上の脆弱性です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://oxc.rs/blog/2026-11-17-faster-type-aware-linting-with-tsrs",
+      "title": "Faster type-aware linting with tsrs",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "frontend",
+      "publishedAt": "2026-11-17T16:08:06.000Z",
+      "summary": "CloudflareとVoidZeroが発表したTypeScriptのRust製実装であるtsrsがOxlintに追加された。tsrsにより、最大7倍高速化され、メモリ使用量を最大75パーセント削減できる。tsgolintの全61ルールを実装しており、既存の設定から最小限の労力で移行できる。",
+      "headline": "Oxlintに高速な型認識リント機能を提供するtsrsが統合された",
+      "points": [
+        "CloudflareとVoidZeroが発表したTypeScriptのRust製実装であるtsrsがOxlintに追加された。",
+        "tsrsにより、最大7倍高速化され、メモリ使用量を最大75パーセント削減できる。",
+        "tsgolintの全61ルールを実装しており、既存の設定から最小限の労力で移行できる。"
+      ],
+      "impact": "開発者やプラットフォームチームは、Oxilintのコマンドを実行してより高速な型認識リントと型チェックを利用できる。",
+      "glossary": [
+        {
+          "term": "リント",
+          "explanation": "ソースコードを解析して、文法的な誤りやコーディング規約の違反を見つけ出す作業です。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 22,
+      "url": "https://aws.amazon.com/jp/blogs/news/nitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload/",
+      "title": "Nitro Sandboxes: すべての EKS ポッド、ECS タスク、EC2 ワークロードをハードウェアで分離",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-18T00:51:49.000Z",
+      "summary": "AWS Nitro Sandboxesは、各コンテナにハードウェアで分離された仮想マシンの境界を提供する。Amazon EKSやAmazon ECSにネイティブ統合されており、追加料金なしで利用できる。親インスタンスやクラスター管理者からメモリが保護され、ネイティブに近いパフォーマンスを発揮する。",
+      "headline": "AWSがコンテナをハードウェアレベルで分離するNitro Sandboxesを発表",
+      "points": [
+        "AWS Nitro Sandboxesは、各コンテナにハードウェアで分離された仮想マシンの境界を提供する。",
+        "Amazon EKSやAmazon ECSにネイティブ統合されており、追加料金なしで利用できる。",
+        "親インスタンスやクラスター管理者からメモリが保護され、ネイティブに近いパフォーマンスを発揮する。"
+      ],
+      "impact": "EKSやECS上で機密性の高いワークロードを実行するユーザーは、個別のインスタンスを増やさずに強力な分離とセキュリティを確保できる。",
+      "glossary": [
+        {
+          "term": "Amazon EKS",
+          "explanation": "AWS上でKubernetesのコンテナ管理環境を簡単にあらかじめ実行できるようにするマネージドサービスです。"
+        },
+        {
+          "term": "仮想マシン",
+          "explanation": "ソフトウェアによってコンピューター内部に構築された、独立して動作する仮想的なコンピュータです。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 23,
+      "url": "https://aws.amazon.com/jp/blogs/news/caching-kms-data-keys-in-multi-thread-environments-per-tenant-encryption-for-event-driven-systems-at-scale/",
+      "title": "マルチスレッド環境での AWS KMS データキーのキャッシュ: 大規模なイベント駆動型システムにおけるテナントごとの暗号化",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-18T00:08:52.000Z",
+      "summary": "大規模なイベント駆動型システムで発生するキャッシュスタンピード問題について説明している。AWSが推奨する階層キーリングパターンとカスタムキャッシュのアプローチを紹介している。NICE Actimizeは暗号化キーのキャッシュ方法を見直すことでAWS KMSのコストを77%削減した。",
+      "headline": "マルチスレッド環境でのAWS KMSデータキーキャッシュにおける課題と解決策",
+      "points": [
+        "大規模なイベント駆動型システムで発生するキャッシュスタンピード問題について説明している。",
+        "AWSが推奨する階層キーリングパターンとカスタムキャッシュのアプローチを紹介している。",
+        "NICE Actimizeは暗号化キーのキャッシュ方法を見直すことでAWS KMSのコストを77%削減した。"
+      ],
+      "impact": "マルチテナントのSaaS環境や高スループットのシステムでAWS KMSを使用する開発者が確認する必要がある。",
+      "glossary": [
+        {
+          "term": "エンベロープ暗号化",
+          "explanation": "データキーでデータを暗号化し、そのデータキーをさらにマスターキーで暗号化する2層構造の暗号化方式。"
+        },
+        {
+          "term": "キャッシュスタンピード",
+          "explanation": "キャッシュの有効期限切れなどに伴い、多数のスレッドが同時にバックエンドへアクセスし負荷が急増する現象。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 24,
+      "url": "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html",
+      "title": "当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "infra",
+      "publishedAt": "2026-11-17T08:41:53.000Z",
+      "summary": "2026年11月16日にテスト環境のシステム内で管理していた情報の一部が外部に漏えいしたおそれがあることを確認した。ログインに必要なパスワードや暗証番号、取引に関する情報の漏えいは確認されていない。影響が確認された顧客には個別に報告を行う予定である。",
+      "headline": "楽天証券でテスト環境への不正アクセスによる情報漏えいの可能性を確認",
+      "points": [
+        "2026年11月16日にテスト環境のシステム内で管理していた情報の一部が外部に漏えいしたおそれがあることを確認した。",
+        "ログインに必要なパスワードや暗証番号、取引に関する情報の漏えいは確認されていない。",
+        "影響が確認された顧客には個別に報告を行う予定である。"
+      ],
+      "impact": "楽天証券を利用するユーザーは、不審なメールや連絡に注意しパスキー認証の設定などを確認する必要がある。",
+      "glossary": [
+        {
+          "term": "パスキー認証",
+          "explanation": "パスワードを使わず、端末の生体認証などを用いて安全にログインする認証方式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 25,
+      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003280/",
+      "title": "NVIDIA、フアン氏退任後初の決算 取締役会「正式なCEOは急がず適任者を選ぶ」",
+      "source": "ITmedia NEWS",
+      "genre": "tech",
+      "publishedAt": "2026-11-18T00:38:00.000Z",
+      "summary": "取締役会はジェンスン・フアン氏をCEOに復帰させる意向はないと表明し適任者の選定を進めている。第3四半期の売上高は前年同期比103％増の1158億ドル、純利益は105％増の653億ドルとなった。第4四半期の売上高は1300億ドルを見込んでおり、需要が供給を大きく上回っている。",
+      "headline": "NVIDIAがジェンスン・フアン氏退任後初の決算を発表し業績は堅調",
+      "points": [
+        "取締役会はジェンスン・フアン氏をCEOに復帰させる意向はないと表明し適任者の選定を進めている。",
+        "第3四半期の売上高は前年同期比103％増の1158億ドル、純利益は105％増の653億ドルとなった。",
+        "第4四半期の売上高は1300億ドルを見込んでおり、需要が供給を大きく上回っている。"
+      ],
+      "impact": "株主や取引先企業は今後の経営体制の移行や業績の動向を確認する必要がある。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 26,
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2157234.html",
+      "title": "SWITCHBOT、オールシーズン温度を自動調整する「moera スマートマットレストッパー」を発表",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "tech",
+      "publishedAt": "2026-11-17T10:59:06.000Z",
+      "summary": "内部で加温または冷却した水を循環させることでベッドの温度を調整するデバイスである。加温時は最大49度、冷却時は最低10度まで設定でき、左右で分けて異なる温度に調整できる。睡眠解析技術Sleep Cycleを搭載し、Matter規格に対応している。",
+      "headline": "SWITCHBOTが温度自動調整機能を持つスマートマットレストッパーを発表",
+      "points": [
+        "内部で加温または冷却した水を循環させることでベッドの温度を調整するデバイスである。",
+        "加温時は最大49度、冷却時は最低10度まで設定でき、左右で分けて異なる温度に調整できる。",
+        "睡眠解析技術Sleep Cycleを搭載し、Matter規格に対応している。"
+      ],
+      "impact": "スマートホーム製品や睡眠環境の改善に関心のあるユーザーが利用を検討できる。",
+      "glossary": [
+        {
+          "term": "Matter規格",
+          "explanation": "異なるメーカーのスマートホーム製品同士を互換性をもって連携させるための統一通信規格。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 22,
+    "sourcesTotal": 23,
+    "candidates": 206,
+    "shortlisted": 80,
+    "bodyFailures": 3,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 33777,
+    "outputTokens": 5315
+  },
+  "offline": false
+}

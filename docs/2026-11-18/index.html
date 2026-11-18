@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-18</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月18日(水)</p>
+<p class="meta">更新 2026-11-18 10:19 · 取得ソース 22/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="frontend" aria-selected="false" aria-controls="panel-frontend">フロントエンド<span class="n">1</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.itmedia.co.jp/news/article/2611/18/2000003279/" target="_blank" rel="noopener noreferrer">OpenAIが新AIモデルのAstraとSolを発表</a></h3>
+<p class="orig">原題: OpenAI、「GPT-6.2」の「Astra」と「Sol」を公開 AI自己改善能力は初の「High」に</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/18/2000003279/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-18</p>
+<ul class="points"><li>専門業務向けの最上位モデルAstraと日常業務向けのSolの2つの新モデルが公開された。</li><li>AstraのAPI料金は入力が100万トークン当たり8ドル、出力が40ドルに引き下げられた。</li><li>両モデルはChatGPTの各プランや開発者向けAPIなどで発表当日から利用できる。</li></ul><p class="impact"><b>影響</b>ChatGPTの有料プラン利用者や開発者は、新しいAstraやSolを業務やAPI経由で利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIエージェント</dt><dd>人間からの指示に基づき、自律的に判断して複数の作業を連続して処理するAIシステムのこと。</dd><dt>トークン</dt><dd>AIがテキストを処理する際のデータの最小単位で、文字や単語の断片に分割されるもの。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/" target="_blank" rel="noopener noreferrer">OpenAIのモデルがAmazon Bedrockで利用可能になった</a></h3>
+<p class="orig">原題: OpenAI GPT-6.2 Astra, and GPT-6.2 Sol are now generally available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-18</p>
+<ul class="points"><li>OpenAIのGPT-6.2 AstraとGPT-6.2 SolがAmazon Bedrockで一般提供を開始した。</li><li>GPT-6.2 Astraは高度な推論や判断力と超高速モードを備え複雑な業務や研究に向いている。</li><li>GPT-6.2 Solは速度とコストを重視した反復的なコーディングや定型作業向けに設計されている。</li></ul><p class="impact"><b>影響</b>Amazon Bedrockの利用者や開発者は、コンソールやAPIを通じて新しいモデルを利用しワークフローに組み込むことができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon Bedrock</dt><dd>様々な基盤モデルをAPI経由で利用できるAWSのマネージドサービスです。</dd><dt>レイテンシ</dt><dd>システムに指示を出してから応答が返ってくるまでの遅延時間を指します。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener noreferrer">Geminiが電話や支払いなどの日常の作業を代行する新機能を提供</a></h3>
+<p class="orig">原題: Put Gemini to work for you</p>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener noreferrer">Google AI Blog</a> · 2026-11-18</p>
+<ul class="points"><li>新しいGemini 4 Hydrogenモデルを使用し、米国や日本など数百万人向けに無料で提供が開始された。</li><li>Googleの各種サービスと連携し、ディーラーへの電話予約や電気代の請求書分析、商品の購入などを代行する。</li><li>Agent Payments Protocolを活用し、カードのポイント獲得や支出上限の設定に対応しながら安全に決済を行う。</li></ul><p class="impact"><b>影響</b>Googleエコシステムを利用するユーザーは、日常のタスクや買い物の代行機能を無料で確認して活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Agent Payments Protocol</dt><dd>AIエージェントがユーザーの代理で安全にオンライン決済を行うための通信プロトコル。</dd><dt>Google Wallet</dt><dd>クレジットカードやチケットなどを一元管理できるGoogleのデジタルウォレットアプリ。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/18/2000003279/" target="_blank" rel="noopener noreferrer">OpenAIが新AIモデルのAstraとSolを発表</a></h3>
+<p class="orig">原題: OpenAI、「GPT-6.2」の「Astra」と「Sol」を公開 AI自己改善能力は初の「High」に</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/18/2000003279/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-18</p>
+<ul class="points"><li>専門業務向けの最上位モデルAstraと日常業務向けのSolの2つの新モデルが公開された。</li><li>AstraのAPI料金は入力が100万トークン当たり8ドル、出力が40ドルに引き下げられた。</li><li>両モデルはChatGPTの各プランや開発者向けAPIなどで発表当日から利用できる。</li></ul><p class="impact"><b>影響</b>ChatGPTの有料プラン利用者や開発者は、新しいAstraやSolを業務やAPI経由で利用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIエージェント</dt><dd>人間からの指示に基づき、自律的に判断して複数の作業を連続して処理するAIシステムのこと。</dd><dt>トークン</dt><dd>AIがテキストを処理する際のデータの最小単位で、文字や単語の断片に分割されるもの。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/" target="_blank" rel="noopener noreferrer">OpenAIのモデルがAmazon Bedrockで利用可能になった</a></h3>
+<p class="orig">原題: OpenAI GPT-6.2 Astra, and GPT-6.2 Sol are now generally available on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-18</p>
+<ul class="points"><li>OpenAIのGPT-6.2 AstraとGPT-6.2 SolがAmazon Bedrockで一般提供を開始した。</li><li>GPT-6.2 Astraは高度な推論や判断力と超高速モードを備え複雑な業務や研究に向いている。</li><li>GPT-6.2 Solは速度とコストを重視した反復的なコーディングや定型作業向けに設計されている。</li></ul><p class="impact"><b>影響</b>Amazon Bedrockの利用者や開発者は、コンソールやAPIを通じて新しいモデルを利用しワークフローに組み込むことができる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon Bedrock</dt><dd>様々な基盤モデルをAPI経由で利用できるAWSのマネージドサービスです。</dd><dt>レイテンシ</dt><dd>システムに指示を出してから応答が返ってくるまでの遅延時間を指します。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener noreferrer">Geminiが電話や支払いなどの日常の作業を代行する新機能を提供</a></h3>
+<p class="orig">原題: Put Gemini to work for you</p>
+<p class="src">出典: <a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/" target="_blank" rel="noopener noreferrer">Google AI Blog</a> · 2026-11-18</p>
+<ul class="points"><li>新しいGemini 4 Hydrogenモデルを使用し、米国や日本など数百万人向けに無料で提供が開始された。</li><li>Googleの各種サービスと連携し、ディーラーへの電話予約や電気代の請求書分析、商品の購入などを代行する。</li><li>Agent Payments Protocolを活用し、カードのポイント獲得や支出上限の設定に対応しながら安全に決済を行う。</li></ul><p class="impact"><b>影響</b>Googleエコシステムを利用するユーザーは、日常のタスクや買い物の代行機能を無料で確認して活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Agent Payments Protocol</dt><dd>AIエージェントがユーザーの代理で安全にオンライン決済を行うための通信プロトコル。</dd><dt>Google Wallet</dt><dd>クレジットカードやチケットなどを一元管理できるGoogleのデジタルウォレットアプリ。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/" target="_blank" rel="noopener noreferrer">GoogleがAIアシスタントのGeminiに実務を代行するTasks機能の提供を拡大</a></h3>
+<p class="orig">原題: Google expands access to Gemini Tasks, which can help with calls, purchases</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-18</p>
+<ul class="points"><li>Geminiの切り替えスイッチを使って、電話予約やGoogle Payでの買い物代行などの秘書業務を行わせることができます。</li><li>初期は限定されたテストユーザー向けでしたが、新モデルGemini 4 Hydrogenを利用する何億人ものユーザーへ無料で提供されます。</li><li>ユーザーはアプリ内でチャットからTasksへ切り替えるだけで、テキスト入力や音声通話で指示を出せるようになります。</li></ul><p class="impact"><b>影響</b>新モデルGemini 4 Hydrogenを利用するユーザーは、アプリ内の切り替えでTasks機能を使えるようになります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Gemini</dt><dd>Googleが開発した高度な対話型AIアシスタントおよびその基盤となるAIモデルの名称です。</dd><dt>Google Pay</dt><dd>スマートフォンやオンラインで安全に支払いを行えるGoogleの決済サービスです。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.327" target="_blank" rel="noopener noreferrer">Claude Codeのバージョン2.1.327がリリース</a></h3>
+<p class="orig">原題: v2.1.327</p>
+<p class="src">出典: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.327" target="_blank" rel="noopener noreferrer">Claude Code</a> · 2026-11-18</p>
+<ul class="points"><li>GitHub Appの変更時やMCPサーバー追加のJSON入力機能などが追加されました。</li><li>ワークツリーモードでのサーバー停止時にgit-ignoredファイルが削除される不具合などを修正しました。</li><li>設定の保存失敗時の警告表示やセッション管理の改善が行われました。</li></ul><p class="impact"><b>影響</b>Claude Codeを利用している開発者は、新機能の追加や複数の不具合修正が適用された最新バージョンを確認する必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部データソースやツールを安全に連携させるためのオープン標準規格です。</dd><dt>ワークツリー</dt><dd>一つのリポジトリ内で複数のGitブランチを同時にチェックアウトして作業できる機能です。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/yhmp/articles/288cf79f232c8b" target="_blank" rel="noopener noreferrer">主要なAI APIの料金を日本円で手軽に見積もれるツールを開発</a></h3>
+<p class="orig">原題: AI APIの料金を「円」で見積もれるツールを作った【Gemini / Claude / OpenAIの6モデル対応】</p>
+<p class="src">出典: <a href="https://zenn.dev/yhmp/articles/288cf79f232c8b" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-17</p>
+<ul class="points"><li>Google、Anthropic、OpenAIの6モデルに対応し、1回あたりや月額の日本円で見積もれます。</li><li>写真認識やチャットの用途別プリセットに加え、トークン数や為替レートも自由に変更可能です。</li><li>外部ライブラリを使わない静的なHTMLファイルで構成され、GitHub Pagesで公開されています。</li></ul><p class="impact"><b>影響</b>対応モデルを利用中で料金や変更を確認したい開発者は、ツールや公式ページを確認する余地があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>API</dt><dd>プログラム同士が機能を連携し合うための仕組みや窓口のことです。</dd><dt>トークン</dt><dd>AIが文章を処理する際のテキストの分割単位で、料金計算の基準になります。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/kuwashima/articles/ax-28-coding-agents-comparison" target="_blank" rel="noopener noreferrer">28種のAIコーディングCLIツールと各ストレージ仕様の比較</a></h3>
+<p class="orig">原題: 28種のAIコーディングCLIを徹底比較！ハーネスの性格と裏の顔</p>
+<p class="src">出典: <a href="https://zenn.dev/kuwashima/articles/ax-28-coding-agents-comparison" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-18</p>
+<ul class="points"><li>Claude CodeやCodexなどの王道グループは、高い問題解決力と独自の履歴管理機能を持つ。</li><li>OpenCode系譜などのDB爆食いグループは、SQLiteへの集中保存によりディスク容量が肥大化しやすい。</li><li>ツールごとにセッションの保存場所や再開オプション、ファイル構造の仕様が大きく異なる。</li></ul><p class="impact"><b>影響</b>複数のAIコーディングCLIを使い分ける開発者は、ツールごとの履歴保存場所やディスク容量の消費に注意する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>CLI</dt><dd>Command Line Interfaceの略で、文字入力によってコンピュータを操作する仕組み。</dd><dt>ハーネス</dt><dd>AIモデルを外部のシステムや環境と連携させるための枠組みや周辺ツールのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://qiita.com/IT-love-pug/items/bbf0bbb173807f54bdee" target="_blank" rel="noopener noreferrer">MCPサーバーが提供する3つの機能と使い分け</a></h3>
+<p class="orig">原題: MCPサーバーに関して③：サーバーが提供する3つの機能</p>
+<p class="src">出典: <a href="https://qiita.com/IT-love-pug/items/bbf0bbb173807f54bdee" target="_blank" rel="noopener noreferrer">Qiita（AI）</a> · 2026-11-18</p>
+<ul class="points"><li>MCPサーバーはTools、Resources、Promptsの3つの機能を提供し、機能ごとに主導権を持つ存在が異なります。</li><li>ToolsはLLM自身が実行を判断する操作であり、Resourcesはアプリが読ませる読み取り専用データです。</li><li>Promptsはユーザーが選択して利用する引数付きの定型指示テンプレートです。</li></ul><p class="impact"><b>影響</b>サーバー設計や機能選択を行う開発者は、操作ならTools、データの読み込みならResources、定型指示ならPromptsを使い分ける必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>LLM</dt><dd>膨大なテキストデータを学習し、人間のような自然な文章生成や対話を行う大規模言語モデルのこと。</dd><dt>JSON Schema</dt><dd>JSONデータの構造や形式を定義し、データの妥当性を検証するための仕様のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-049-openworker-local-governance" target="_blank" rel="noopener noreferrer">OpenWorkerの承認ゲートとローカルQwen2.5の動作検証</a></h3>
+<p class="orig">原題: OpenWorkerの承認ゲートをOllamaのQwen2.5 7B/14B/32Bで試したら、一番仕事をしたのは14Bだった</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-049-openworker-local-governance" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-17</p>
+<ul class="points"><li>OpenWorkerをOllamaのQwen2.5モデルと組み合わせ、CLI経由で承認ゲートとログ出力を検証した。</li><li>検証した3つのモデルのうち、タスクを最も正確にこなしたのは14Bモデルであった。</li><li>端末がない状態で実行した際、承認モードがaskであれば提案は正しく拒否され記録された。</li></ul><p class="impact"><b>影響</b>ローカル環境でAIエージェントを動かし、承認ゲートや操作ログが意図通りに機能するか確認する際に役立つ。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>OpenWorker</dt><dd>ユーザーが管理できるオープンソースのAIエージェントフレームワーク。</dd><dt>Ollama</dt><dd>ローカル環境で大規模言語モデルを手軽に実行するためのツール。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/lastlight/articles/e4a240a8c904d0" target="_blank" rel="noopener noreferrer">文字修正と外観保持を両立するAI画像編集モデルの選定</a></h3>
+<p class="orig">原題: 文字を崩さず局所修正する AI画像編集 モデルの選定基準と MMDiT 構造の整理</p>
+<p class="src">出典: <a href="https://zenn.dev/lastlight/articles/e4a240a8c904d0" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-17</p>
+<ul class="points"><li>Qwen-Image-Edit系は、画像全体の再生成を防ぎながら局所的な文字やスタイルの修正を行うための編集専用モデルである。</li><li>入力画像の意味制御にはマルチモーダル言語モデル、外観保持にはVAEエンコーダの二重構造を採用している。</li><li>2509および2511のアップデートにより、複数画像入力やドリフト抑制機能が追加された。</li></ul><p class="impact"><b>影響</b>画像内の文字や特定の部分だけを自然に修正したい開発者やデザイナーは、モデルの選定基準として活用できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MMDiT</dt><dd>テキストと画像の情報を同時に処理して画像を生成・編集する拡散モデルのアーキテクチャ。</dd><dt>LoRA</dt><dd>モデルの一部分を効率的に追加学習させることで、特定のスタイルや特徴を付加する手法。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/build-whatsapp-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">Amazon Bedrockを用いたWhatsApp向けAIエージェントの開発基盤</a></h3>
+<p class="orig">原題: Build WhatsApp AI agents with Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/build-whatsapp-ai-agents-with-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-18</p>
+<ul class="points"><li>SMARTツールキットにより、Amazon Bedrock AgentCoreとWhatsAppの連携基盤を容易に構築できる。</li><li>Webhookの処理やメディア管理、会話メモリ、スケジュール管理などを自動で処理する。</li><li>Terraformを使ってインフラ全体を自分のAWSアカウントに1つのコマンドでデプロイ可能である。</li></ul><p class="impact"><b>影響</b>WhatsApp上で動作するAIエージェントを自社開発するチームは、複雑なチャネル連携部分の開発負担を軽減できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Webhook</dt><dd>外部サービスでイベントが発生した際、別のシステムに自動で通知を送る仕組み。</dd><dt>Terraform</dt><dd>コードによってインフラストラクチャを構築・管理するためのツール。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/" target="_blank" rel="noopener noreferrer">Amazon Bedrock等を活用したメインフレームのJava移行手法</a></h3>
+<p class="orig">原題: Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-17</p>
+<ul class="points"><li>Amazon BedrockやAWS Transformなどを使い、メインフレームのAssemblerコードをJavaに近代化する。</li><li>Assemblerから直接Javaにするのではなく、中間段階としてCOBOLを経由することで信頼性を高める。</li><li>AI支援によるコード解析や専門家による検証チェックポイントを組み込んだ5つのフェーズで移行を進める。</li></ul><p class="impact"><b>影響</b>レガシーなメインフレーム資産を抱える組織の担当者は、ビジネスロジックを維持しながらJavaへの移行を進められる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Assembler</dt><dd>コンピュータのCPU命令に近い低水準のプログラミング言語。</dd><dt>Spring Boot</dt><dd>Javaでのアプリケーション開発を迅速に行うためのフレームワーク。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">LoanProがAmazon Bedrockを活用したAIアシスタントを構築</a></h3>
+<p class="orig">原題: How LoanPro built an agentic AI loan servicing assistant with Amazon Bedrock AgentCore</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-18</p>
+<ul class="points"><li>LoanProはAWSおよびAllCloudと協力し、マルチエージェント型AIローン対応アシスタントを開発した。</li><li>Amazon BedrockとAmazon Bedrock AgentCoreを基盤として採用している。</li><li>初期の導入結果として、顧客の通話時間が最大15パーセント短縮されたことが示されている。</li></ul><p class="impact"><b>影響</b>金融機関のサービス担当者は、顧客との通話時間を短縮し、一貫した対応を行うためにAIアシスタントを活用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Amazon Bedrock</dt><dd>優れた基盤モデルを利用して生成AIアプリケーションを構築できるフルマネージドサービスです。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://calif.io/java4shell/" target="_blank" rel="noopener noreferrer">OpenJDKのBase64処理におけるメモリ破損の脆弱性が発見された</a></h3>
+<p class="orig">原題: Java4Shell: RCE in OpenJDK when processing Base64</p>
+<p class="src">出典: <a href="https://calif.io/java4shell/" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-18</p>
+<ul class="points"><li>影響を受けるOpenJDKのビルドでは、不正なBase64データの処理時にヒープメモリの上書きが発生する。</li><li>x86-64のBase64イントリンシックにおけるパディング部分のストアマスクの計算ミスが原因である。</li><li>攻撃者はこの脆弱性を悪用してヒープリークを引き起こし、リモートコード実行につなげることができる。</li></ul><p class="impact"><b>影響</b>OpenJDKを使用する開発者やシステム管理者は、影響を受けるバージョンを確認し、速やかにアップデートを行う必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Base64</dt><dd>バイナリデータをアルファベットや数字などの文字列に変換するエンコード方式です。</dd><dt>リモートコード実行</dt><dd>ネットワークを介して遠隔から任意のプログラムやコードを実行されるセキュリティ上の脆弱性です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-frontend" role="tabpanel"><h2>フロントエンド</h2><article class="card g-frontend">
+<span class="badge">フロントエンド</span>
+<h3><a href="https://oxc.rs/blog/2026-11-17-faster-type-aware-linting-with-tsrs" target="_blank" rel="noopener noreferrer">Oxlintに高速な型認識リント機能を提供するtsrsが統合された</a></h3>
+<p class="orig">原題: Faster type-aware linting with tsrs</p>
+<p class="src">出典: <a href="https://oxc.rs/blog/2026-11-17-faster-type-aware-linting-with-tsrs" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-18</p>
+<ul class="points"><li>CloudflareとVoidZeroが発表したTypeScriptのRust製実装であるtsrsがOxlintに追加された。</li><li>tsrsにより、最大7倍高速化され、メモリ使用量を最大75パーセント削減できる。</li><li>tsgolintの全61ルールを実装しており、既存の設定から最小限の労力で移行できる。</li></ul><p class="impact"><b>影響</b>開発者やプラットフォームチームは、Oxilintのコマンドを実行してより高速な型認識リントと型チェックを利用できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>リント</dt><dd>ソースコードを解析して、文法的な誤りやコーディング規約の違反を見つけ出す作業です。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/nitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload/" target="_blank" rel="noopener noreferrer">AWSがコンテナをハードウェアレベルで分離するNitro Sandboxesを発表</a></h3>
+<p class="orig">原題: Nitro Sandboxes: すべての EKS ポッド、ECS タスク、EC2 ワークロードをハードウェアで分離</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/nitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-18</p>
+<ul class="points"><li>AWS Nitro Sandboxesは、各コンテナにハードウェアで分離された仮想マシンの境界を提供する。</li><li>Amazon EKSやAmazon ECSにネイティブ統合されており、追加料金なしで利用できる。</li><li>親インスタンスやクラスター管理者からメモリが保護され、ネイティブに近いパフォーマンスを発揮する。</li></ul><p class="impact"><b>影響</b>EKSやECS上で機密性の高いワークロードを実行するユーザーは、個別のインスタンスを増やさずに強力な分離とセキュリティを確保できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon EKS</dt><dd>AWS上でKubernetesのコンテナ管理環境を簡単にあらかじめ実行できるようにするマネージドサービスです。</dd><dt>仮想マシン</dt><dd>ソフトウェアによってコンピューター内部に構築された、独立して動作する仮想的なコンピュータです。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/caching-kms-data-keys-in-multi-thread-environments-per-tenant-encryption-for-event-driven-systems-at-scale/" target="_blank" rel="noopener noreferrer">マルチスレッド環境でのAWS KMSデータキーキャッシュにおける課題と解決策</a></h3>
+<p class="orig">原題: マルチスレッド環境での AWS KMS データキーのキャッシュ: 大規模なイベント駆動型システムにおけるテナントごとの暗号化</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/caching-kms-data-keys-in-multi-thread-environments-per-tenant-encryption-for-event-driven-systems-at-scale/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-18</p>
+<ul class="points"><li>大規模なイベント駆動型システムで発生するキャッシュスタンピード問題について説明している。</li><li>AWSが推奨する階層キーリングパターンとカスタムキャッシュのアプローチを紹介している。</li><li>NICE Actimizeは暗号化キーのキャッシュ方法を見直すことでAWS KMSのコストを77%削減した。</li></ul><p class="impact"><b>影響</b>マルチテナントのSaaS環境や高スループットのシステムでAWS KMSを使用する開発者が確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>エンベロープ暗号化</dt><dd>データキーでデータを暗号化し、そのデータキーをさらにマスターキーで暗号化する2層構造の暗号化方式。</dd><dt>キャッシュスタンピード</dt><dd>キャッシュの有効期限切れなどに伴い、多数のスレッドが同時にバックエンドへアクセスし負荷が急増する現象。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://www.rakuten-sec.co.jp/web/info/info20261117-02.html" target="_blank" rel="noopener noreferrer">楽天証券でテスト環境への不正アクセスによる情報漏えいの可能性を確認</a></h3>
+<p class="orig">原題: 当社お客様の情報漏えいの可能性に関するお詫びとお知らせ:楽天証券</p>
+<p class="src">出典: <a href="https://www.rakuten-sec.co.jp/web/info/info20261117-02.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-17</p>
+<ul class="points"><li>2026年11月16日にテスト環境のシステム内で管理していた情報の一部が外部に漏えいしたおそれがあることを確認した。</li><li>ログインに必要なパスワードや暗証番号、取引に関する情報の漏えいは確認されていない。</li><li>影響が確認された顧客には個別に報告を行う予定である。</li></ul><p class="impact"><b>影響</b>楽天証券を利用するユーザーは、不審なメールや連絡に注意しパスキー認証の設定などを確認する必要がある。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>パスキー認証</dt><dd>パスワードを使わず、端末の生体認証などを用いて安全にログインする認証方式。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/18/2000003280/" target="_blank" rel="noopener noreferrer">NVIDIAがジェンスン・フアン氏退任後初の決算を発表し業績は堅調</a></h3>
+<p class="orig">原題: NVIDIA、フアン氏退任後初の決算 取締役会「正式なCEOは急がず適任者を選ぶ」</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/18/2000003280/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-18</p>
+<ul class="points"><li>取締役会はジェンスン・フアン氏をCEOに復帰させる意向はないと表明し適任者の選定を進めている。</li><li>第3四半期の売上高は前年同期比103％増の1158億ドル、純利益は105％増の653億ドルとなった。</li><li>第4四半期の売上高は1300億ドルを見込んでおり、需要が供給を大きく上回っている。</li></ul><p class="impact"><b>影響</b>株主や取引先企業は今後の経営体制の移行や業績の動向を確認する必要がある。</p>
+
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://k-tai.watch.impress.co.jp/docs/news/2157234.html" target="_blank" rel="noopener noreferrer">SWITCHBOTが温度自動調整機能を持つスマートマットレストッパーを発表</a></h3>
+<p class="orig">原題: SWITCHBOT、オールシーズン温度を自動調整する「moera スマートマットレストッパー」を発表</p>
+<p class="src">出典: <a href="https://k-tai.watch.impress.co.jp/docs/news/2157234.html" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-17</p>
+<ul class="points"><li>内部で加温または冷却した水を循環させることでベッドの温度を調整するデバイスである。</li><li>加温時は最大49度、冷却時は最低10度まで設定でき、左右で分けて異なる温度に調整できる。</li><li>睡眠解析技術Sleep Cycleを搭載し、Matter規格に対応している。</li></ul><p class="impact"><b>影響</b>スマートホーム製品や睡眠環境の改善に関心のあるユーザーが利用を検討できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Matter規格</dt><dd>異なるメーカーのスマートホーム製品同士を互換性をもって連携させるための統一通信規格。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-17/">← 2026-11-17</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（49）</summary><ul><li><a href="../2026-11-18/">2026-11-18</a></li><li><a href="../2026-11-17/">2026-11-17</a></li><li><a href="../2026-11-16/">2026-11-16</a></li><li><a href="../2026-11-15/">2026-11-15</a></li><li><a href="../2026-11-14/">2026-11-14</a></li><li><a href="../2026-11-13/">2026-11-13</a></li><li><a href="../2026-11-12/">2026-11-12</a></li><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>
