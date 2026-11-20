@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<title>テックニュース 2026-11-21</title>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#f6f7f9;--surface:#fff;--text:#1c2430;--muted:#5c6776;--line:#e1e5eb;
+  --accent:#2457d6;--accent-soft:#e8eefc;--warn-bg:#fff4d6;--warn-text:#6b4e00;
+  --impact-bg:#eef6ee;--impact-text:#245a2a;
+  --g-ai:#7c4dff;--g-backend:#0f9d8a;--g-frontend:#e8710a;--g-infra:#1a73e8;--g-tech:#d6336c;--g-other:#6b7686;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b;--surface:#1a2029;--text:#e6eaf0;--muted:#9aa5b4;--line:#2b3442;
+    --accent:#7aa2ff;--accent-soft:#1f2b47;--warn-bg:#3a2f10;--warn-text:#f0d58a;
+    --impact-bg:#1c2e1f;--impact-text:#a8d8ad;
+    --g-ai:#b39dff;--g-backend:#4fd1bd;--g-frontend:#ffa94d;--g-infra:#7aa2ff;--g-tech:#ff8fb8;--g-other:#9aa5b4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 4px}
+h1{font-size:1.25rem;margin:0;letter-spacing:.02em}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted)}
+.meta{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.notice{margin:12px 0 0;padding:8px 12px;border-radius:8px;background:var(--warn-bg);color:var(--warn-text);font-size:.85rem}
+.tabs{display:none;position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  margin:12px -16px 0;padding:0 16px;gap:4px;overflow-x:auto;scrollbar-width:none}
+.js .tabs{display:flex}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:.92rem;font-weight:600;
+  padding:12px 12px;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:6px}
+.tab .n{font-weight:400;font-size:.8rem;margin-left:4px}
+.panel{padding:8px 0 4px}
+.panel[hidden]{display:none}
+.panel>h2{font-size:1rem;margin:20px 0 0;color:var(--muted)}
+.js .panel>h2{display:none}
+.card{--gc:var(--g-other);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gc);border-radius:12px;padding:14px 16px;margin:12px 0}
+.g-ai{--gc:var(--g-ai)}.g-backend{--gc:var(--g-backend)}.g-frontend{--gc:var(--g-frontend)}.g-infra{--gc:var(--g-infra)}.g-tech{--gc:var(--g-tech)}.g-other{--gc:var(--g-other)}
+.badge{display:inline-block;margin:0 0 6px;padding:1px 9px;border-radius:999px;border:1px solid var(--gc);color:var(--gc);font-size:.74rem;font-weight:700}
+.card h3{font-size:1.08rem;line-height:1.5;margin:0 0 4px}
+.card h3 a{text-decoration:none;color:var(--text)}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.orig{margin:0 0 8px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.src{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.src a{color:var(--muted)}
+.tag{display:inline-block;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.72rem}
+.points{margin:8px 0 0;padding-left:1.2em}
+.points li{margin:3px 0}
+.points li::marker{color:var(--gc)}
+.impact{margin:10px 0 0;padding:8px 12px;border-radius:8px;background:var(--impact-bg);color:var(--impact-text);font-size:.9rem;line-height:1.6}
+.impact b{margin-right:6px}
+.summary{margin:0}
+.top3>h2{font-size:.95rem;margin:0 0 4px;color:var(--muted);letter-spacing:.04em}
+.top3 .card{padding:16px 18px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.top3 .card h3{font-size:1.12rem}
+.top3 .num{display:inline-block;margin-right:8px;color:var(--gc);font-weight:800}
+.more{display:inline-block;margin-top:8px;font-size:.82rem}
+details.gloss{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+details.gloss summary{cursor:pointer;color:var(--muted);font-weight:600}
+details.gloss dl{margin:8px 0 0}
+details.gloss dt{font-weight:700;margin-top:6px}
+details.gloss dd{margin:0;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+footer{margin:28px 0 48px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pager span{visibility:hidden}
+.archive summary{cursor:pointer}
+.archive ul{columns:2;padding-left:18px;margin:8px 0 0}
+.fine{font-size:.76rem;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>毎朝のテックニュース</h1>
+<p class="date">2026年11月21日(土)</p>
+<p class="meta">更新 2026-11-21 08:06 · 取得ソース 23/23 · 選定 20件（候補 80件） · LLM 費用 0円（Gemini 無料枠）</p>
+
+<nav class="tabs" role="tablist" aria-label="ジャンル"><button class="tab" role="tab" type="button" data-tab="top" aria-selected="false" aria-controls="panel-top">注目<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="ai" aria-selected="false" aria-controls="panel-ai">AI<span class="n">13</span></button><button class="tab" role="tab" type="button" data-tab="backend" aria-selected="false" aria-controls="panel-backend">バックエンド<span class="n">2</span></button><button class="tab" role="tab" type="button" data-tab="infra" aria-selected="false" aria-controls="panel-infra">インフラ<span class="n">3</span></button><button class="tab" role="tab" type="button" data-tab="tech" aria-selected="false" aria-controls="panel-tech">テック<span class="n">2</span></button></nav>
+</header>
+<main>
+<section class="panel top3" id="panel-top" role="tabpanel"><h2>今日の注目 3選</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">1</span><a href="https://www.itmedia.co.jp/news/article/2611/20/2000003356/" target="_blank" rel="noopener noreferrer">Mac版Geminiにアプリを自動操作する新機能が追加</a></h3>
+<p class="orig">原題: Mac版「Gemini」にユーザーの代わりにアプリを操作する「computer use」機能追加 まず米国で</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/20/2000003356/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-20</p>
+<ul class="points"><li>AIが画面を認識し、ユーザーに代わってクリックや文字入力を行う。</li><li>作業はバックグラウンドで行われ、ユーザーは並行して作業を続けられる。</li><li>米国の有料プラン会員向けで、macOS Sequoia以降に対応する。</li></ul><p class="impact"><b>影響</b>米国の対象プラン契約者は、Mac上でAIにアプリ操作を代行させられる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Apple Silicon</dt><dd>Appleが自社設計したMac向けの独自プロセッサのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">2</span><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/" target="_blank" rel="noopener noreferrer">AWS DevOps AgentがMCPや各種チャットツールに対応</a></h3>
+<p class="orig">原題: AWS DevOps Agent adds new chat capabilities</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-20</p>
+<ul class="points"><li>SlackやTeams、MCP対応クライアントからAgentを操作可能になった。</li><li>GitHubやGitLabなどのツール操作やSlackチャンネルの自動作成に対応する。</li><li>スクリプトを実行できる計算用サンドボックスを利用して作業を行う。</li></ul><p class="impact"><b>影響</b>開発者や運用担当者は、普段使うチャット画面から作業を自動化できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Model Context Protocol (MCP)</dt><dd>AIモデルと外部ツールやデータソースを接続するためのオープン標準規格。</dd><dt>サンドボックス</dt><dd>外部に影響を与えずに安全にプログラムを実行できる隔離された環境。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><span class="num">3</span><a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">Kimi Code CLIがAWSの標準認証でのBedrock接続に対応</a></h3>
+<p class="orig">原題: Use Kimi Code CLI with models on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-20</p>
+<ul class="points"><li>v2.7.0でBedrockのネイティブプロバイダーが追加された。</li><li>個別のAPIキーの代わりにAWS CLIの標準認証やSSOを利用できる。</li><li>一時的な認証情報を自動生成し、手動でのキー管理の手間を軽減する。</li></ul><p class="impact"><b>影響</b>Kimi Code CLI利用者は、追加のAPIキーを発行せずに既存のAWS認証情報を使える。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>シングルサインオン (SSO)</dt><dd>1組の認証情報で複数の異なるサービスにログインできる仕組みのこと。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-ai" role="tabpanel"><h2>AI</h2><article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://www.itmedia.co.jp/news/article/2611/20/2000003356/" target="_blank" rel="noopener noreferrer">Mac版Geminiにアプリを自動操作する新機能が追加</a></h3>
+<p class="orig">原題: Mac版「Gemini」にユーザーの代わりにアプリを操作する「computer use」機能追加 まず米国で</p>
+<p class="src">出典: <a href="https://www.itmedia.co.jp/news/article/2611/20/2000003356/" target="_blank" rel="noopener noreferrer">ITmedia NEWS</a> · 2026-11-20</p>
+<ul class="points"><li>AIが画面を認識し、ユーザーに代わってクリックや文字入力を行う。</li><li>作業はバックグラウンドで行われ、ユーザーは並行して作業を続けられる。</li><li>米国の有料プラン会員向けで、macOS Sequoia以降に対応する。</li></ul><p class="impact"><b>影響</b>米国の対象プラン契約者は、Mac上でAIにアプリ操作を代行させられる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>Apple Silicon</dt><dd>Appleが自社設計したMac向けの独自プロセッサのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/" target="_blank" rel="noopener noreferrer">AWS DevOps AgentがMCPや各種チャットツールに対応</a></h3>
+<p class="orig">原題: AWS DevOps Agent adds new chat capabilities</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-20</p>
+<ul class="points"><li>SlackやTeams、MCP対応クライアントからAgentを操作可能になった。</li><li>GitHubやGitLabなどのツール操作やSlackチャンネルの自動作成に対応する。</li><li>スクリプトを実行できる計算用サンドボックスを利用して作業を行う。</li></ul><p class="impact"><b>影響</b>開発者や運用担当者は、普段使うチャット画面から作業を自動化できる。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Model Context Protocol (MCP)</dt><dd>AIモデルと外部ツールやデータソースを接続するためのオープン標準規格。</dd><dt>サンドボックス</dt><dd>外部に影響を与えずに安全にプログラムを実行できる隔離された環境。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">Kimi Code CLIがAWSの標準認証でのBedrock接続に対応</a></h3>
+<p class="orig">原題: Use Kimi Code CLI with models on Amazon Bedrock</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-20</p>
+<ul class="points"><li>v2.7.0でBedrockのネイティブプロバイダーが追加された。</li><li>個別のAPIキーの代わりにAWS CLIの標準認証やSSOを利用できる。</li><li>一時的な認証情報を自動生成し、手動でのキー管理の手間を軽減する。</li></ul><p class="impact"><b>影響</b>Kimi Code CLI利用者は、追加のAPIキーを発行せずに既存のAWS認証情報を使える。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>シングルサインオン (SSO)</dt><dd>1組の認証情報で複数の異なるサービスにログインできる仕組みのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://deepmind.google/blog/genie-4-is-now-available/" target="_blank" rel="noopener noreferrer">Googleがリアルタイム編集可能な世界モデルGenie 4を公開</a></h3>
+<p class="orig">原題: Genie 4 is now available</p>
+<p class="src">出典: <a href="https://deepmind.google/blog/genie-4-is-now-available/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> · 2026-11-19</p>
+<ul class="points"><li>Project Genieにて探索中のプロンプト入力による環境変更や音声付与が可能になった。</li><li>Genie 3も更新され、探索時間が最大3分に延長されパノラマ画像に対応した。</li><li>Google AI Ultra加入者を対象にブラウザ上で提供される。</li></ul><p class="impact"><b>影響</b>Google AI Ultraの契約者は、対話形式でインタラクティブな世界を生成・編集できる。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>世界モデル</dt><dd>現実や仮想環境の物理法則や状態変化を予測・シミュレーションするAIモデル。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://openai.com/business/customer-stories/hebbia" target="_blank" rel="noopener noreferrer">HebbiaがGPT-6 Astraで金融調査の精度と資料作成を改善</a></h3>
+<p class="orig">原題: Hebbia sees improvements in financial research with GPT-6 Astra</p>
+<p class="src">出典: <a href="https://openai.com/business/customer-stories/hebbia" target="_blank" rel="noopener noreferrer">OpenAI News</a> · 2026-11-20</p>
+<ul class="points"><li>Hebbiaが金融調査ツールでGPT-6 Astraをテストし、情報源の特定や資料作成の精度を向上させました。</li><li>必要な情報源の引用スコアは他モデルより13.6ポイント高く、引用箇所の99.5%が質問に関連していました。</li><li>プレゼン要件の準拠率は97.9%を記録し、最良の代替モデルより14.4ポイント高い結果となりました。</li></ul><p class="impact"><b>影響</b>バンカーなどの利用者は、資料の整形や情報源確認の手間を減らし、案件の評価により多くの時間を割けるようになります。</p>
+
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/nttdata_tech/articles/9562962cc181a1" target="_blank" rel="noopener noreferrer">Claude CodeとCodexを自律作業させる個人ハーネスの構築事例が公開</a></h3>
+<p class="orig">原題: 自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス</p>
+<p class="src">出典: <a href="https://zenn.dev/nttdata_tech/articles/9562962cc181a1" target="_blank" rel="noopener noreferrer">はてなブックマーク テクノロジー</a> · 2026-11-20</p>
+<ul class="points"><li>筆者がClaude CodeやCodexを自律的に動かすためのハーネスを構築し、設計や運用ノウハウを公開しました。</li><li>プロンプトではなくフォルダ構造や規約を整理し、エージェントが自分で読み書きや検査を行えるようにしています。</li><li>約4か月間の運用で、316件のタスクと1,329件のセッションを同基盤上で処理したとのことです。</li></ul><p class="impact"><b>影響</b>自律的なコーディングエージェントを運用したい開発者は、プロンプトの工夫だけでなく構造化の設計を参考にできます。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>ハーネス</dt><dd>AIの分野において、モデルの外側でエージェントを動かすための仕組み全体のこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/murooka_az/articles/failure-scan-two-claude-code-bugs" target="_blank" rel="noopener noreferrer">Claude Codeログ分析により停止原因の9割が自前設定と判明</a></h3>
+<p class="orig">原題: Claude Code のログを分析する仕組みを作ったら、hook の問題から Claude Code の不具合 2 件まで切り分けられた</p>
+<p class="src">出典: <a href="https://zenn.dev/murooka_az/articles/failure-scan-two-claude-code-bugs" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-21</p>
+<ul class="points"><li>Claude CodeのログをスクリプトとLLMで分析し、呼び出しの失敗や停止の原因を切り分ける仕組みを構築しました。</li><li>指摘41件のうち37件は自作のhookや検査規則など自身の設定にあり、Claude Code自体の不具合は4件でした。</li><li>最多の失敗回数はファイルの未読扱いエラーで、854件の発生からツールの不具合と自身の誤りの両方が特定されました。</li></ul><p class="impact"><b>影響</b>Claude Codeで失敗が多発している開発者は、指示の追加だけでなく自作hookや設定の見直しを検討する必要があります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>hook</dt><dd>特定の処理が実行される前後に割り込み、自動で処理を実行させる仕組みのこと。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/masuda_masuo/articles/2026-10-12-ashiato-session-history" target="_blank" rel="noopener noreferrer">LLMの作業ログを細かいイベント単位で検索可能にするツールが開発</a></h3>
+<p class="orig">原題: LLMのセッションは使い捨てにする：JSONLの作業履歴を検索可能にする「ashiato」を作った</p>
+<p class="src">出典: <a href="https://zenn.dev/masuda_masuo/articles/2026-10-12-ashiato-session-history" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-20</p>
+<ul class="points"><li>筆者がLLMエージェントのJSONL作業ログを検索・分析できるツール「ashiato」を開発しました。</li><li>保存時のLLM要約を行わず決定論的に生記録を残し、1ターンより細かいイベント単位でデータを正規化しています。</li><li>単純なキーワード検索とLLMの推論を組み合わせ、過去のセッション文脈を必要な分だけ再構成できます。</li></ul><p class="impact"><b>影響</b>複数のエージェントを扱う開発者は、セッション履歴を要約で失わずに記録し、後から必要な情報を探索できるようになります。</p>
+<details class="gloss"><summary>用語メモ（1）</summary><dl><dt>JSONL</dt><dd>1行に1つの有効なJSONオブジェクトを記述する、ログ等に適したデータ形式。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/dev_to_earn/articles/1e190bbc76803a" target="_blank" rel="noopener noreferrer">副業アプリの市場調査環境をManusからClaude Codeに一本化した</a></h3>
+<p class="orig">原題: Manusを解約して、Claude Codeだけで市場調査する方法</p>
+<p class="src">出典: <a href="https://zenn.dev/dev_to_earn/articles/1e190bbc76803a" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-21</p>
+<ul class="points"><li>調査プロンプトを1つのMarkdownファイルにまとめ1つずつ実行した。</li><li>出典URL必須化などのルールによりAIの誤りを発見・特定できた。</li><li>Claude Codeで201回検索を実行しても追加請求なしで運用できた。</li></ul><p class="impact"><b>影響</b>AIで市場調査を行う個人開発者は、プロンプトの1ファイル化や出典URLの必須化などの検証ルールを導入する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>SaaS</dt><dd>インターネット経由で必要な機能を利用するソフトウェアの提供形態。</dd><dt>Markdown</dt><dd>手軽に文章構造を装飾できる標準的な軽量マークアップ言語。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/jfp_mesh/articles/ai-bulk-read-sample-labels" target="_blank" rel="noopener noreferrer">資料内の見本指示によるAIの誤動作を防ぐ3つの対策が公開された</a></h3>
+<p class="orig">原題: AI に資料を丸ごと読ませても、中の「見本の指示」に従わせないための、ラベルと前置きと機械の検査</p>
+<p class="src">出典: <a href="https://zenn.dev/jfp_mesh/articles/ai-bulk-read-sample-labels" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-20</p>
+<ul class="points"><li>資料に含まれる別のAI向け指示文を誤認識しない対策をまとめた。</li><li>コードブロック直前の見本ラベルや前置き文、Pythonでの自動検査を導入した。</li><li>ChatGPTやGeminiなどで検証し指示の誤認識が起きないことを確認した。</li></ul><p class="impact"><b>影響</b>AI用プロンプト集やマニュアルを作成する人は、資料内の指示文に見本ラベルや前置き文を設置し機械検査を行う必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>プロンプトインジェクション</dt><dd>悪意ある指示を入力してAIに本来と異なる挙動をさせる攻撃手法。</dd><dt>CI</dt><dd>ソフトウェアの変更時に自動でテストや検証を行う継続的インテグレーション。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/matsushima_a/articles/day-052-weight-space-programming-arc" target="_blank" rel="noopener noreferrer">勾配降下を使わずにLLMに重みを書かせる手法の公式コードを再現した</a></h3>
+<p class="orig">原題: 勾配降下なしでLLMに重みを書かせる「Weight-Space Programming」を公式ハーネスで再現した</p>
+<p class="src">出典: <a href="https://zenn.dev/matsushima_a/articles/day-052-weight-space-programming-arc" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-20</p>
+<ul class="points"><li>Claude Opus 5.5にARC例題10問からモデルの重みを直接記述させた。</li><li>仮想環境の配置場所やソケット長などのエラーを修正して環境を構築した。</li><li>テスト正解率50.79%を記録し論文の50.8%とほぼ一致する結果を得た。</li></ul><p class="impact"><b>影響</b>Weight-Space Programmingのコードを動かす開発者は、仮想環境やデータを/opt/wsp等の短いパスに設置する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>勾配降下法</dt><dd>モデルの予測誤差を最小化するようにパラメーターを反復的に更新する手法。</dd><dt>WSL2</dt><dd>Windows上でLinux環境を効率的に実行するためのマイクロソフトの機能。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://zenn.dev/klakix/articles/a10253affc97cf" target="_blank" rel="noopener noreferrer">AIからBlenderを操作する拡張機能Klakix Bridgeが公開された</a></h3>
+<p class="orig">原題: ClaudeやCursorからBlenderを操作する: Klakix Bridgeアドオンの導入と使い方</p>
+<p class="src">出典: <a href="https://zenn.dev/klakix/articles/a10253affc97cf" target="_blank" rel="noopener noreferrer">Zenn（AI）</a> · 2026-11-21</p>
+<ul class="points"><li>MCP対応のAIクライアントからBlenderのシーン操作や画像配置が行える。</li><li>操作はバッチ単位で実行され失敗時は一回の手順で一括ロールバックできる。</li><li>各ステップ実行後にビューポートやカメラの画像を受け取って確認できる。</li></ul><p class="impact"><b>影響</b>BlenderをAIで自動操作したい制作者は、アドオンを導入し接続コードを認証した上でMCP連携を設定する必要がある。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやアプリケーションを安全に接続する標準規格。</dd><dt>アドオン</dt><dd>ソフトウェアに後から追加して機能を拡張するための補助プログラム。</dd></dl></details>
+</article>
+<article class="card g-ai">
+<span class="badge">AI</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/conductor-mode/" target="_blank" rel="noopener noreferrer">Kiro Crewが複数エージェントを束ねる新機能を公開</a></h3>
+<p class="orig">原題: Kiro Crew の Conductor mode のご紹介</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/conductor-mode/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-20</p>
+<ul class="points"><li>ゴール達成に必要なタスクを切り出し、エージェントを取りまとめます。</li><li>コンダクターはコードを書かず、ワーカーが所定の形式で進捗を報告します。</li><li>状態をチャット外で管理し、1つのボードで進捗状況を確認できます。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>AIエージェント</dt><dd>指示された目標に対し、自律的に判断して処理を進めるAIシステム。</dd><dt>プルリクエスト</dt><dd>変更したコードを開発元リポジトリに取り込むよう提案する仕組み。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-backend" role="tabpanel"><h2>バックエンド</h2><article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/20/spring-ai-2-1-0-GA-available-now" target="_blank" rel="noopener noreferrer">Spring AI 2.1.0 GAが公開され新MCPに対応</a></h3>
+<p class="orig">原題: Spring AI 2.1.0 GA and 2.0.3 GA Available Now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/20/spring-ai-2-1-0-GA-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-20</p>
+<ul class="points"><li>Spring Boot 4.2を基盤とし、最新のステートレス版MCPに対応しました。</li><li>判定用のDecision Modelsや新しいSession APIが追加されました。</li><li>13件の脆弱性（CVE）を修正し、Spring AI 2.0.3にも修正を反映しました。</li></ul><p class="impact"><b>影響</b>Spring AIを使う開発者は、Maven Centralから最新版を利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>MCP</dt><dd>AIモデルと外部のツールやデータソースを接続するための共通規格。</dd><dt>CVE</dt><dd>公開されたソフトウェアのセキュリティ脆弱性に付けられる一意識別番号。</dd></dl></details>
+</article>
+<article class="card g-backend">
+<span class="badge">バックエンド</span>
+<h3><a href="https://spring.io/blog/2026/11/20/spring-boot-4-0-10-available-now" target="_blank" rel="noopener noreferrer">Spring Boot 4.0.10の公開が告知される</a></h3>
+<p class="orig">原題: Spring Boot 4.0.10 available now</p>
+<p class="src">出典: <a href="https://spring.io/blog/2026/11/20/spring-boot-4-0-10-available-now" target="_blank" rel="noopener noreferrer">Spring Blog</a> · 2026-11-20</p>
+<ul class="points"><li>Spring Boot 4.0.10がリリースされたことが案内されています。</li><li>本文には権利表記や商標ガイドラインのみが記載されています。</li></ul>
+
+</article></section>
+<section class="panel" id="panel-infra" role="tabpanel"><h2>インフラ</h2><article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-kubernetes-tools/" target="_blank" rel="noopener noreferrer">CloudWatchがEKS上の主要オープンソースの監視に対応</a></h3>
+<p class="orig">原題: Amazon CloudWatch EKS Container Insights now offers built-in monitoring for open source Kubernetes tools</p>
+<p class="src">出典: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-kubernetes-tools/" target="_blank" rel="noopener noreferrer">AWS What&#39;s New</a> · 2026-11-21</p>
+<ul class="points"><li>KarpenterやvLLMなどの稼働状況を監視するダッシュボードを提供します。</li><li>OTel Container Insightsを有効化すると自動で監視が始まります。</li><li>アドオンやHelmチャートのバージョン8.0.0以降で利用可能です。</li></ul><p class="impact"><b>影響</b>EKSの対象ツール運用者は、バージョン8.0.0以降に設定すると使えます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>Amazon EKS</dt><dd>AWS環境でKubernetesコンテナ環境を運用・管理できるサービス。</dd><dt>OpenTelemetry</dt><dd>アプリやシステムの通信記録や稼働指標を収集する標準仕様。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/jp/blogs/news/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/" target="_blank" rel="noopener noreferrer">AWS Lambdaがイベント関数向けにGPUインスタンスのサポートを開始</a></h3>
+<p class="orig">原題: AWS Lambda が Lambda Managed Instances 上のイベント関数向けに GPU インスタンスをサポートするようになりました</p>
+<p class="src">出典: <a href="https://aws.amazon.com/jp/blogs/news/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/" target="_blank" rel="noopener noreferrer">AWS 日本語ブログ</a> · 2026-11-20</p>
+<ul class="points"><li>AWS Lambda Managed Instances上のイベント関数で、EC2 GシリーズGPUの利用が可能になりました。</li><li>コンテナイメージでデプロイし、GPUドライバーの設定やクラスター運用なしで自動スケールします。</li><li>非同期等の呼び出しで最大90分の実行に対応し、最大32GBのイメージやストレージ等をサポートします。</li></ul><p class="impact"><b>影響</b>本機能を利用するユーザーは、利用前にEC2 Gシリーズのクォータ（上限）を確認し申請を行う必要があります。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>CUDA</dt><dd>NVIDIAが提供する、GPUを高度な数値計算などに利用するための並列コンピューティングプラットフォーム。</dd><dt>クォータ</dt><dd>クラウドサービスにおいて、ユーザーごとに設定されている利用リソースの上限値のこと。</dd></dl></details>
+</article>
+<article class="card g-infra">
+<span class="badge">インフラ</span>
+<h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/" target="_blank" rel="noopener noreferrer">AWSがSageMaker HyperPod Global Inference Gatewayを発表</a></h3>
+<p class="orig">原題: Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters</p>
+<p class="src">出典: <a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/" target="_blank" rel="noopener noreferrer">AWS 機械学習ブログ</a> · 2026-11-21</p>
+<ul class="points"><li>複数リージョンやクラスターに跨る推論リクエストを、単一エンドポイントで自動ルーティングする機能です。</li><li>飽和したクラスターのトラフィックを空きのあるクラスターへ転送し、GPUの利用効率を高めます。</li><li>障害発生時の自動フェイルオーバー機能を備え、SigV4やIAM認証、AWS PrivateLinkに対応します。</li></ul><p class="impact"><b>影響</b>複数リージョンやクラスターでHyperPodを運用する開発者は、設定を有効化することで効率的なルーティングを利用できます。</p>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>フェイルオーバー</dt><dd>システムに障害が発生した際、自動的に予備の正常なシステムへ切り替えて運用を継続する仕組み。</dd><dt>エンドポイント</dt><dd>ネットワーク通信において、外部からのリクエストやアクセスを受け付ける接続の窓口。</dd></dl></details>
+</article></section>
+<section class="panel" id="panel-tech" role="tabpanel"><h2>テック</h2><article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://architectlabs.com/blog/frostbite" target="_blank" rel="noopener noreferrer">AIが独自の命令セットを持つ汎用CPU「Frostbite」を開発</a></h3>
+<p class="orig">原題: Frostbite: A new CPU architecture discovered, designed and verified by AI</p>
+<p class="src">出典: <a href="https://architectlabs.com/blog/frostbite" target="_blank" rel="noopener noreferrer">Hacker News</a> · 2026-11-20</p>
+<ul class="points"><li>AIシステムが設計から検証までを自動で行い、新たな汎用CPUコアを開発しました。</li><li>インタラクションネットの特性を活用し、プログラムの依存関係を明示して処理を効率化しました。</li><li>25種類のワークロードで既存コアと比較し、ワットあたりの性能が4.59倍向上しました。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>ISA</dt><dd>CPUが理解して実行できる命令の定義や仕様のこと。</dd><dt>インタラクションネット</dt><dd>計算をノードのグラフと局所的な書き換えルールで表現するモデル。</dd></dl></details>
+</article>
+<article class="card g-tech">
+<span class="badge">テック</span>
+<h3><a href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" target="_blank" rel="noopener noreferrer">Spotify創業者が元AI研究者の核融合新会社へ出資</a></h3>
+<p class="orig">原題: Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</p>
+<p class="src">出典: <a href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" target="_blank" rel="noopener noreferrer">TechCrunch</a> · 2026-11-21</p>
+<ul class="points"><li>Spotify創業者のダニエル・エック氏が、英国の核融合スタートアップ「Europa Fusion」へ出資しました。</li><li>Europa Fusionは元AI研究者が設立し、シミュレーションとデータを重視した手法で核融合発電を目指します。</li><li>同社は巨大な電流サージで燃料を圧縮する「パルスパワー方式」を採用し、二酸化炭素を排出しない電力供給を狙います。</li></ul>
+<details class="gloss"><summary>用語メモ（2）</summary><dl><dt>核融合</dt><dd>軽い原子核同士が結合して別の原子核に変わる際に、膨大なエネルギーを放出する現象。</dd><dt>パルスパワー</dt><dd>蓄積したエネルギーを極めて短い時間内に一気に放出し、巨大な電力を生み出す技術。</dd></dl></details>
+</article></section>
+</main>
+<footer>
+<div class="pager"><a href="../2026-11-20/">← 2026-11-20</a><span>.</span></div>
+<details class="archive"><summary>過去の日付（52）</summary><ul><li><a href="../2026-11-21/">2026-11-21</a></li><li><a href="../2026-11-20/">2026-11-20</a></li><li><a href="../2026-11-19/">2026-11-19</a></li><li><a href="../2026-11-18/">2026-11-18</a></li><li><a href="../2026-11-17/">2026-11-17</a></li><li><a href="../2026-11-16/">2026-11-16</a></li><li><a href="../2026-11-15/">2026-11-15</a></li><li><a href="../2026-11-14/">2026-11-14</a></li><li><a href="../2026-11-13/">2026-11-13</a></li><li><a href="../2026-11-12/">2026-11-12</a></li><li><a href="../2026-11-11/">2026-11-11</a></li><li><a href="../2026-11-10/">2026-11-10</a></li><li><a href="../2026-11-09/">2026-11-09</a></li><li><a href="../2026-11-08/">2026-11-08</a></li><li><a href="../2026-11-07/">2026-11-07</a></li><li><a href="../2026-11-06/">2026-11-06</a></li><li><a href="../2026-11-05/">2026-11-05</a></li><li><a href="../2026-11-04/">2026-11-04</a></li><li><a href="../2026-11-03/">2026-11-03</a></li><li><a href="../2026-11-02/">2026-11-02</a></li><li><a href="../2026-11-01/">2026-11-01</a></li><li><a href="../2026-10-31/">2026-10-31</a></li><li><a href="../2026-10-30/">2026-10-30</a></li><li><a href="../2026-10-29/">2026-10-29</a></li><li><a href="../2026-10-28/">2026-10-28</a></li><li><a href="../2026-10-27/">2026-10-27</a></li><li><a href="../2026-10-26/">2026-10-26</a></li><li><a href="../2026-10-25/">2026-10-25</a></li><li><a href="../2026-10-24/">2026-10-24</a></li><li><a href="../2026-10-23/">2026-10-23</a></li><li><a href="../2026-10-22/">2026-10-22</a></li><li><a href="../2026-10-21/">2026-10-21</a></li><li><a href="../2026-10-20/">2026-10-20</a></li><li><a href="../2026-10-19/">2026-10-19</a></li><li><a href="../2026-10-18/">2026-10-18</a></li><li><a href="../2026-10-17/">2026-10-17</a></li><li><a href="../2026-10-16/">2026-10-16</a></li><li><a href="../2026-10-15/">2026-10-15</a></li><li><a href="../2026-10-14/">2026-10-14</a></li><li><a href="../2026-10-13/">2026-10-13</a></li><li><a href="../2026-10-12/">2026-10-12</a></li><li><a href="../2026-10-11/">2026-10-11</a></li><li><a href="../2026-10-10/">2026-10-10</a></li><li><a href="../2026-10-09/">2026-10-09</a></li><li><a href="../2026-10-08/">2026-10-08</a></li><li><a href="../2026-10-07/">2026-10-07</a></li><li><a href="../2026-10-06/">2026-10-06</a></li><li><a href="../2026-10-05/">2026-10-05</a></li><li><a href="../2026-10-04/">2026-10-04</a></li><li><a href="../2026-10-03/">2026-10-03</a></li><li><a href="../2026-10-02/">2026-10-02</a></li><li><a href="../2026-10-01/">2026-10-01</a></li></ul></details>
+<p class="fine">要約は LLM が生成しています。正確な内容は各記事の出典元で確認してください。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  if(!tabs.length)return;
+  function show(id,push){
+    var ok=false;
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;if(on)ok=true;});
+    if(!ok)return show(tabs[0].dataset.tab,push);
+    panels.forEach(function(p){p.hidden=p.id!=='panel-'+id;});
+    try{if(push)history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.dataset.tab,true);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(!d)return;
+      var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.dataset.tab,true);e.preventDefault();
+    });
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),false);});
+  var start=location.hash.slice(1);
+  show(start||tabs[0].dataset.tab,false);
+})();
+</script>
+</body>
+</html>

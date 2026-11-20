@@ -1,0 +1,515 @@
+{
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-20T23:06:59.217Z",
+  "items": [
+    {
+      "rank": 1,
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003356/",
+      "title": "Mac版「Gemini」にユーザーの代わりにアプリを操作する「computer use」機能追加 まず米国で",
+      "source": "ITmedia NEWS",
+      "genre": "ai",
+      "publishedAt": "2026-11-19T23:41:04.000Z",
+      "summary": "AIが画面を認識し、ユーザーに代わってクリックや文字入力を行う。作業はバックグラウンドで行われ、ユーザーは並行して作業を続けられる。米国の有料プラン会員向けで、macOS Sequoia以降に対応する。",
+      "headline": "Mac版Geminiにアプリを自動操作する新機能が追加",
+      "points": [
+        "AIが画面を認識し、ユーザーに代わってクリックや文字入力を行う。",
+        "作業はバックグラウンドで行われ、ユーザーは並行して作業を続けられる。",
+        "米国の有料プラン会員向けで、macOS Sequoia以降に対応する。"
+      ],
+      "impact": "米国の対象プラン契約者は、Mac上でAIにアプリ操作を代行させられる。",
+      "glossary": [
+        {
+          "term": "Apple Silicon",
+          "explanation": "Appleが自社設計したMac向けの独自プロセッサのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 2,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/",
+      "title": "AWS DevOps Agent adds new chat capabilities",
+      "source": "AWS What's New",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T08:00:00.000Z",
+      "summary": "SlackやTeams、MCP対応クライアントからAgentを操作可能になった。GitHubやGitLabなどのツール操作やSlackチャンネルの自動作成に対応する。スクリプトを実行できる計算用サンドボックスを利用して作業を行う。",
+      "headline": "AWS DevOps AgentがMCPや各種チャットツールに対応",
+      "points": [
+        "SlackやTeams、MCP対応クライアントからAgentを操作可能になった。",
+        "GitHubやGitLabなどのツール操作やSlackチャンネルの自動作成に対応する。",
+        "スクリプトを実行できる計算用サンドボックスを利用して作業を行う。"
+      ],
+      "impact": "開発者や運用担当者は、普段使うチャット画面から作業を自動化できる。",
+      "glossary": [
+        {
+          "term": "Model Context Protocol (MCP)",
+          "explanation": "AIモデルと外部ツールやデータソースを接続するためのオープン標準規格。"
+        },
+        {
+          "term": "サンドボックス",
+          "explanation": "外部に影響を与えずに安全にプログラムを実行できる隔離された環境。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 3,
+      "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+      "title": "Use Kimi Code CLI with models on Amazon Bedrock",
+      "source": "AWS 機械学習ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T00:33:30.000Z",
+      "summary": "v2.7.0でBedrockのネイティブプロバイダーが追加された。個別のAPIキーの代わりにAWS CLIの標準認証やSSOを利用できる。一時的な認証情報を自動生成し、手動でのキー管理の手間を軽減する。",
+      "headline": "Kimi Code CLIがAWSの標準認証でのBedrock接続に対応",
+      "points": [
+        "v2.7.0でBedrockのネイティブプロバイダーが追加された。",
+        "個別のAPIキーの代わりにAWS CLIの標準認証やSSOを利用できる。",
+        "一時的な認証情報を自動生成し、手動でのキー管理の手間を軽減する。"
+      ],
+      "impact": "Kimi Code CLI利用者は、追加のAPIキーを発行せずに既存のAWS認証情報を使える。",
+      "glossary": [
+        {
+          "term": "シングルサインオン (SSO)",
+          "explanation": "1組の認証情報で複数の異なるサービスにログインできる仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 4,
+      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "title": "Genie 4 is now available",
+      "source": "Google DeepMind",
+      "genre": "ai",
+      "publishedAt": "2026-11-18T18:13:42.000Z",
+      "summary": "Project Genieにて探索中のプロンプト入力による環境変更や音声付与が可能になった。Genie 3も更新され、探索時間が最大3分に延長されパノラマ画像に対応した。Google AI Ultra加入者を対象にブラウザ上で提供される。",
+      "headline": "Googleがリアルタイム編集可能な世界モデルGenie 4を公開",
+      "points": [
+        "Project Genieにて探索中のプロンプト入力による環境変更や音声付与が可能になった。",
+        "Genie 3も更新され、探索時間が最大3分に延長されパノラマ画像に対応した。",
+        "Google AI Ultra加入者を対象にブラウザ上で提供される。"
+      ],
+      "impact": "Google AI Ultraの契約者は、対話形式でインタラクティブな世界を生成・編集できる。",
+      "glossary": [
+        {
+          "term": "世界モデル",
+          "explanation": "現実や仮想環境の物理法則や状態変化を予測・シミュレーションするAIモデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 5,
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "source": "OpenAI News",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "summary": "Hebbiaが金融調査ツールでGPT-6 Astraをテストし、情報源の特定や資料作成の精度を向上させました。必要な情報源の引用スコアは他モデルより13.6ポイント高く、引用箇所の99.5%が質問に関連していました。プレゼン要件の準拠率は97.9%を記録し、最良の代替モデルより14.4ポイント高い結果となりました。",
+      "headline": "HebbiaがGPT-6 Astraで金融調査の精度と資料作成を改善",
+      "points": [
+        "Hebbiaが金融調査ツールでGPT-6 Astraをテストし、情報源の特定や資料作成の精度を向上させました。",
+        "必要な情報源の引用スコアは他モデルより13.6ポイント高く、引用箇所の99.5%が質問に関連していました。",
+        "プレゼン要件の準拠率は97.9%を記録し、最良の代替モデルより14.4ポイント高い結果となりました。"
+      ],
+      "impact": "バンカーなどの利用者は、資料の整形や情報源確認の手間を減らし、案件の評価により多くの時間を割けるようになります。",
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 6,
+      "url": "https://zenn.dev/nttdata_tech/articles/9562962cc181a1",
+      "title": "自分の代わりに動くAgentへ。Claude CodeとCodexで作る自律改善ハーネス",
+      "source": "はてなブックマーク テクノロジー",
+      "genre": "ai",
+      "publishedAt": "2026-11-19T23:35:14.000Z",
+      "summary": "筆者がClaude CodeやCodexを自律的に動かすためのハーネスを構築し、設計や運用ノウハウを公開しました。プロンプトではなくフォルダ構造や規約を整理し、エージェントが自分で読み書きや検査を行えるようにしています。約4か月間の運用で、316件のタスクと1,329件のセッションを同基盤上で処理したとのことです。",
+      "headline": "Claude CodeとCodexを自律作業させる個人ハーネスの構築事例が公開",
+      "points": [
+        "筆者がClaude CodeやCodexを自律的に動かすためのハーネスを構築し、設計や運用ノウハウを公開しました。",
+        "プロンプトではなくフォルダ構造や規約を整理し、エージェントが自分で読み書きや検査を行えるようにしています。",
+        "約4か月間の運用で、316件のタスクと1,329件のセッションを同基盤上で処理したとのことです。"
+      ],
+      "impact": "自律的なコーディングエージェントを運用したい開発者は、プロンプトの工夫だけでなく構造化の設計を参考にできます。",
+      "glossary": [
+        {
+          "term": "ハーネス",
+          "explanation": "AIの分野において、モデルの外側でエージェントを動かすための仕組み全体のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 7,
+      "url": "https://zenn.dev/murooka_az/articles/failure-scan-two-claude-code-bugs",
+      "title": "Claude Code のログを分析する仕組みを作ったら、hook の問題から Claude Code の不具合 2 件まで切り分けられた",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T17:37:18.000Z",
+      "summary": "Claude CodeのログをスクリプトとLLMで分析し、呼び出しの失敗や停止の原因を切り分ける仕組みを構築しました。指摘41件のうち37件は自作のhookや検査規則など自身の設定にあり、Claude Code自体の不具合は4件でした。最多の失敗回数はファイルの未読扱いエラーで、854件の発生からツールの不具合と自身の誤りの両方が特定されました。",
+      "headline": "Claude Codeログ分析により停止原因の9割が自前設定と判明",
+      "points": [
+        "Claude CodeのログをスクリプトとLLMで分析し、呼び出しの失敗や停止の原因を切り分ける仕組みを構築しました。",
+        "指摘41件のうち37件は自作のhookや検査規則など自身の設定にあり、Claude Code自体の不具合は4件でした。",
+        "最多の失敗回数はファイルの未読扱いエラーで、854件の発生からツールの不具合と自身の誤りの両方が特定されました。"
+      ],
+      "impact": "Claude Codeで失敗が多発している開発者は、指示の追加だけでなく自作hookや設定の見直しを検討する必要があります。",
+      "glossary": [
+        {
+          "term": "hook",
+          "explanation": "特定の処理が実行される前後に割り込み、自動で処理を実行させる仕組みのこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 8,
+      "url": "https://zenn.dev/masuda_masuo/articles/2026-10-12-ashiato-session-history",
+      "title": "LLMのセッションは使い捨てにする：JSONLの作業履歴を検索可能にする「ashiato」を作った",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T11:13:33.000Z",
+      "summary": "筆者がLLMエージェントのJSONL作業ログを検索・分析できるツール「ashiato」を開発しました。保存時のLLM要約を行わず決定論的に生記録を残し、1ターンより細かいイベント単位でデータを正規化しています。単純なキーワード検索とLLMの推論を組み合わせ、過去のセッション文脈を必要な分だけ再構成できます。",
+      "headline": "LLMの作業ログを細かいイベント単位で検索可能にするツールが開発",
+      "points": [
+        "筆者がLLMエージェントのJSONL作業ログを検索・分析できるツール「ashiato」を開発しました。",
+        "保存時のLLM要約を行わず決定論的に生記録を残し、1ターンより細かいイベント単位でデータを正規化しています。",
+        "単純なキーワード検索とLLMの推論を組み合わせ、過去のセッション文脈を必要な分だけ再構成できます。"
+      ],
+      "impact": "複数のエージェントを扱う開発者は、セッション履歴を要約で失わずに記録し、後から必要な情報を探索できるようになります。",
+      "glossary": [
+        {
+          "term": "JSONL",
+          "explanation": "1行に1つの有効なJSONオブジェクトを記述する、ログ等に適したデータ形式。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 9,
+      "url": "https://zenn.dev/dev_to_earn/articles/1e190bbc76803a",
+      "title": "Manusを解約して、Claude Codeだけで市場調査する方法",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T15:20:28.000Z",
+      "summary": "調査プロンプトを1つのMarkdownファイルにまとめ1つずつ実行した。出典URL必須化などのルールによりAIの誤りを発見・特定できた。Claude Codeで201回検索を実行しても追加請求なしで運用できた。",
+      "headline": "副業アプリの市場調査環境をManusからClaude Codeに一本化した",
+      "points": [
+        "調査プロンプトを1つのMarkdownファイルにまとめ1つずつ実行した。",
+        "出典URL必須化などのルールによりAIの誤りを発見・特定できた。",
+        "Claude Codeで201回検索を実行しても追加請求なしで運用できた。"
+      ],
+      "impact": "AIで市場調査を行う個人開発者は、プロンプトの1ファイル化や出典URLの必須化などの検証ルールを導入する必要がある。",
+      "glossary": [
+        {
+          "term": "SaaS",
+          "explanation": "インターネット経由で必要な機能を利用するソフトウェアの提供形態。"
+        },
+        {
+          "term": "Markdown",
+          "explanation": "手軽に文章構造を装飾できる標準的な軽量マークアップ言語。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 10,
+      "url": "https://zenn.dev/jfp_mesh/articles/ai-bulk-read-sample-labels",
+      "title": "AI に資料を丸ごと読ませても、中の「見本の指示」に従わせないための、ラベルと前置きと機械の検査",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T12:21:21.000Z",
+      "summary": "資料に含まれる別のAI向け指示文を誤認識しない対策をまとめた。コードブロック直前の見本ラベルや前置き文、Pythonでの自動検査を導入した。ChatGPTやGeminiなどで検証し指示の誤認識が起きないことを確認した。",
+      "headline": "資料内の見本指示によるAIの誤動作を防ぐ3つの対策が公開された",
+      "points": [
+        "資料に含まれる別のAI向け指示文を誤認識しない対策をまとめた。",
+        "コードブロック直前の見本ラベルや前置き文、Pythonでの自動検査を導入した。",
+        "ChatGPTやGeminiなどで検証し指示の誤認識が起きないことを確認した。"
+      ],
+      "impact": "AI用プロンプト集やマニュアルを作成する人は、資料内の指示文に見本ラベルや前置き文を設置し機械検査を行う必要がある。",
+      "glossary": [
+        {
+          "term": "プロンプトインジェクション",
+          "explanation": "悪意ある指示を入力してAIに本来と異なる挙動をさせる攻撃手法。"
+        },
+        {
+          "term": "CI",
+          "explanation": "ソフトウェアの変更時に自動でテストや検証を行う継続的インテグレーション。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 11,
+      "url": "https://zenn.dev/matsushima_a/articles/day-052-weight-space-programming-arc",
+      "title": "勾配降下なしでLLMに重みを書かせる「Weight-Space Programming」を公式ハーネスで再現した",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T14:37:43.000Z",
+      "summary": "Claude Opus 5.5にARC例題10問からモデルの重みを直接記述させた。仮想環境の配置場所やソケット長などのエラーを修正して環境を構築した。テスト正解率50.79%を記録し論文の50.8%とほぼ一致する結果を得た。",
+      "headline": "勾配降下を使わずにLLMに重みを書かせる手法の公式コードを再現した",
+      "points": [
+        "Claude Opus 5.5にARC例題10問からモデルの重みを直接記述させた。",
+        "仮想環境の配置場所やソケット長などのエラーを修正して環境を構築した。",
+        "テスト正解率50.79%を記録し論文の50.8%とほぼ一致する結果を得た。"
+      ],
+      "impact": "Weight-Space Programmingのコードを動かす開発者は、仮想環境やデータを/opt/wsp等の短いパスに設置する必要がある。",
+      "glossary": [
+        {
+          "term": "勾配降下法",
+          "explanation": "モデルの予測誤差を最小化するようにパラメーターを反復的に更新する手法。"
+        },
+        {
+          "term": "WSL2",
+          "explanation": "Windows上でLinux環境を効率的に実行するためのマイクロソフトの機能。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 12,
+      "url": "https://zenn.dev/klakix/articles/a10253affc97cf",
+      "title": "ClaudeやCursorからBlenderを操作する: Klakix Bridgeアドオンの導入と使い方",
+      "source": "Zenn（AI）",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T16:17:18.000Z",
+      "summary": "MCP対応のAIクライアントからBlenderのシーン操作や画像配置が行える。操作はバッチ単位で実行され失敗時は一回の手順で一括ロールバックできる。各ステップ実行後にビューポートやカメラの画像を受け取って確認できる。",
+      "headline": "AIからBlenderを操作する拡張機能Klakix Bridgeが公開された",
+      "points": [
+        "MCP対応のAIクライアントからBlenderのシーン操作や画像配置が行える。",
+        "操作はバッチ単位で実行され失敗時は一回の手順で一括ロールバックできる。",
+        "各ステップ実行後にビューポートやカメラの画像を受け取って確認できる。"
+      ],
+      "impact": "BlenderをAIで自動操作したい制作者は、アドオンを導入し接続コードを認証した上でMCP連携を設定する必要がある。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやアプリケーションを安全に接続する標準規格。"
+        },
+        {
+          "term": "アドオン",
+          "explanation": "ソフトウェアに後から追加して機能を拡張するための補助プログラム。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 13,
+      "url": "https://aws.amazon.com/jp/blogs/news/conductor-mode/",
+      "title": "Kiro Crew の Conductor mode のご紹介",
+      "source": "AWS 日本語ブログ",
+      "genre": "ai",
+      "publishedAt": "2026-11-20T12:16:05.000Z",
+      "summary": "ゴール達成に必要なタスクを切り出し、エージェントを取りまとめます。コンダクターはコードを書かず、ワーカーが所定の形式で進捗を報告します。状態をチャット外で管理し、1つのボードで進捗状況を確認できます。",
+      "headline": "Kiro Crewが複数エージェントを束ねる新機能を公開",
+      "points": [
+        "ゴール達成に必要なタスクを切り出し、エージェントを取りまとめます。",
+        "コンダクターはコードを書かず、ワーカーが所定の形式で進捗を報告します。",
+        "状態をチャット外で管理し、1つのボードで進捗状況を確認できます。"
+      ],
+      "glossary": [
+        {
+          "term": "AIエージェント",
+          "explanation": "指示された目標に対し、自律的に判断して処理を進めるAIシステム。"
+        },
+        {
+          "term": "プルリクエスト",
+          "explanation": "変更したコードを開発元リポジトリに取り込むよう提案する仕組み。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 14,
+      "url": "https://spring.io/blog/2026/11/20/spring-ai-2-1-0-GA-available-now",
+      "title": "Spring AI 2.1.0 GA and 2.0.3 GA Available Now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "summary": "Spring Boot 4.2を基盤とし、最新のステートレス版MCPに対応しました。判定用のDecision Modelsや新しいSession APIが追加されました。13件の脆弱性（CVE）を修正し、Spring AI 2.0.3にも修正を反映しました。",
+      "headline": "Spring AI 2.1.0 GAが公開され新MCPに対応",
+      "points": [
+        "Spring Boot 4.2を基盤とし、最新のステートレス版MCPに対応しました。",
+        "判定用のDecision Modelsや新しいSession APIが追加されました。",
+        "13件の脆弱性（CVE）を修正し、Spring AI 2.0.3にも修正を反映しました。"
+      ],
+      "impact": "Spring AIを使う開発者は、Maven Centralから最新版を利用できます。",
+      "glossary": [
+        {
+          "term": "MCP",
+          "explanation": "AIモデルと外部のツールやデータソースを接続するための共通規格。"
+        },
+        {
+          "term": "CVE",
+          "explanation": "公開されたソフトウェアのセキュリティ脆弱性に付けられる一意識別番号。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 16,
+      "url": "https://spring.io/blog/2026/11/20/spring-boot-4-0-10-available-now",
+      "title": "Spring Boot 4.0.10 available now",
+      "source": "Spring Blog",
+      "genre": "backend",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "summary": "Spring Boot 4.0.10がリリースされたことが案内されています。本文には権利表記や商標ガイドラインのみが記載されています。",
+      "headline": "Spring Boot 4.0.10の公開が告知される",
+      "points": [
+        "Spring Boot 4.0.10がリリースされたことが案内されています。",
+        "本文には権利表記や商標ガイドラインのみが記載されています。"
+      ],
+      "glossary": [],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 17,
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-kubernetes-tools/",
+      "title": "Amazon CloudWatch EKS Container Insights now offers built-in monitoring for open source Kubernetes tools",
+      "source": "AWS What's New",
+      "genre": "infra",
+      "publishedAt": "2026-11-20T20:47:00.000Z",
+      "summary": "KarpenterやvLLMなどの稼働状況を監視するダッシュボードを提供します。OTel Container Insightsを有効化すると自動で監視が始まります。アドオンやHelmチャートのバージョン8.0.0以降で利用可能です。",
+      "headline": "CloudWatchがEKS上の主要オープンソースの監視に対応",
+      "points": [
+        "KarpenterやvLLMなどの稼働状況を監視するダッシュボードを提供します。",
+        "OTel Container Insightsを有効化すると自動で監視が始まります。",
+        "アドオンやHelmチャートのバージョン8.0.0以降で利用可能です。"
+      ],
+      "impact": "EKSの対象ツール運用者は、バージョン8.0.0以降に設定すると使えます。",
+      "glossary": [
+        {
+          "term": "Amazon EKS",
+          "explanation": "AWS環境でKubernetesコンテナ環境を運用・管理できるサービス。"
+        },
+        {
+          "term": "OpenTelemetry",
+          "explanation": "アプリやシステムの通信記録や稼働指標を収集する標準仕様。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 18,
+      "url": "https://aws.amazon.com/jp/blogs/news/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+      "title": "AWS Lambda が Lambda Managed Instances 上のイベント関数向けに GPU インスタンスをサポートするようになりました",
+      "source": "AWS 日本語ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-20T02:14:59.000Z",
+      "summary": "AWS Lambda Managed Instances上のイベント関数で、EC2 GシリーズGPUの利用が可能になりました。コンテナイメージでデプロイし、GPUドライバーの設定やクラスター運用なしで自動スケールします。非同期等の呼び出しで最大90分の実行に対応し、最大32GBのイメージやストレージ等をサポートします。",
+      "headline": "AWS Lambdaがイベント関数向けにGPUインスタンスのサポートを開始",
+      "points": [
+        "AWS Lambda Managed Instances上のイベント関数で、EC2 GシリーズGPUの利用が可能になりました。",
+        "コンテナイメージでデプロイし、GPUドライバーの設定やクラスター運用なしで自動スケールします。",
+        "非同期等の呼び出しで最大90分の実行に対応し、最大32GBのイメージやストレージ等をサポートします。"
+      ],
+      "impact": "本機能を利用するユーザーは、利用前にEC2 Gシリーズのクォータ（上限）を確認し申請を行う必要があります。",
+      "glossary": [
+        {
+          "term": "CUDA",
+          "explanation": "NVIDIAが提供する、GPUを高度な数値計算などに利用するための並列コンピューティングプラットフォーム。"
+        },
+        {
+          "term": "クォータ",
+          "explanation": "クラウドサービスにおいて、ユーザーごとに設定されている利用リソースの上限値のこと。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 19,
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+      "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+      "source": "AWS 機械学習ブログ",
+      "genre": "infra",
+      "publishedAt": "2026-11-20T22:35:24.000Z",
+      "summary": "複数リージョンやクラスターに跨る推論リクエストを、単一エンドポイントで自動ルーティングする機能です。飽和したクラスターのトラフィックを空きのあるクラスターへ転送し、GPUの利用効率を高めます。障害発生時の自動フェイルオーバー機能を備え、SigV4やIAM認証、AWS PrivateLinkに対応します。",
+      "headline": "AWSがSageMaker HyperPod Global Inference Gatewayを発表",
+      "points": [
+        "複数リージョンやクラスターに跨る推論リクエストを、単一エンドポイントで自動ルーティングする機能です。",
+        "飽和したクラスターのトラフィックを空きのあるクラスターへ転送し、GPUの利用効率を高めます。",
+        "障害発生時の自動フェイルオーバー機能を備え、SigV4やIAM認証、AWS PrivateLinkに対応します。"
+      ],
+      "impact": "複数リージョンやクラスターでHyperPodを運用する開発者は、設定を有効化することで効率的なルーティングを利用できます。",
+      "glossary": [
+        {
+          "term": "フェイルオーバー",
+          "explanation": "システムに障害が発生した際、自動的に予備の正常なシステムへ切り替えて運用を継続する仕組み。"
+        },
+        {
+          "term": "エンドポイント",
+          "explanation": "ネットワーク通信において、外部からのリクエストやアクセスを受け付ける接続の窓口。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 20,
+      "url": "https://architectlabs.com/blog/frostbite",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "source": "Hacker News",
+      "genre": "tech",
+      "publishedAt": "2026-11-20T10:01:41Z",
+      "summary": "AIシステムが設計から検証までを自動で行い、新たな汎用CPUコアを開発しました。インタラクションネットの特性を活用し、プログラムの依存関係を明示して処理を効率化しました。25種類のワークロードで既存コアと比較し、ワットあたりの性能が4.59倍向上しました。",
+      "headline": "AIが独自の命令セットを持つ汎用CPU「Frostbite」を開発",
+      "points": [
+        "AIシステムが設計から検証までを自動で行い、新たな汎用CPUコアを開発しました。",
+        "インタラクションネットの特性を活用し、プログラムの依存関係を明示して処理を効率化しました。",
+        "25種類のワークロードで既存コアと比較し、ワットあたりの性能が4.59倍向上しました。"
+      ],
+      "glossary": [
+        {
+          "term": "ISA",
+          "explanation": "CPUが理解して実行できる命令の定義や仕様のこと。"
+        },
+        {
+          "term": "インタラクションネット",
+          "explanation": "計算をノードのグラフと局所的な書き換えルールで表現するモデル。"
+        }
+      ],
+      "bodyMode": "full"
+    },
+    {
+      "rank": 21,
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "source": "TechCrunch",
+      "genre": "tech",
+      "publishedAt": "2026-11-20T19:53:41.000Z",
+      "summary": "Spotify創業者のダニエル・エック氏が、英国の核融合スタートアップ「Europa Fusion」へ出資しました。Europa Fusionは元AI研究者が設立し、シミュレーションとデータを重視した手法で核融合発電を目指します。同社は巨大な電流サージで燃料を圧縮する「パルスパワー方式」を採用し、二酸化炭素を排出しない電力供給を狙います。",
+      "headline": "Spotify創業者が元AI研究者の核融合新会社へ出資",
+      "points": [
+        "Spotify創業者のダニエル・エック氏が、英国の核融合スタートアップ「Europa Fusion」へ出資しました。",
+        "Europa Fusionは元AI研究者が設立し、シミュレーションとデータを重視した手法で核融合発電を目指します。",
+        "同社は巨大な電流サージで燃料を圧縮する「パルスパワー方式」を採用し、二酸化炭素を排出しない電力供給を狙います。"
+      ],
+      "glossary": [
+        {
+          "term": "核融合",
+          "explanation": "軽い原子核同士が結合して別の原子核に変わる際に、膨大なエネルギーを放出する現象。"
+        },
+        {
+          "term": "パルスパワー",
+          "explanation": "蓄積したエネルギーを極めて短い時間内に一気に放出し、巨大な電力を生み出す技術。"
+        }
+      ],
+      "bodyMode": "full"
+    }
+  ],
+  "stats": {
+    "sourcesOk": 23,
+    "sourcesTotal": 23,
+    "candidates": 203,
+    "shortlisted": 80,
+    "bodyFailures": 1,
+    "summaryFailures": 0
+  },
+  "cost": {
+    "provider": "gemini",
+    "usd": 0,
+    "jpy": 0,
+    "inputTokens": 36432,
+    "outputTokens": 16800
+  },
+  "offline": false
+}
